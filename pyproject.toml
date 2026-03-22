@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "clawfit"
+version = "1.0.0"
+description = "AI agent + LLM + hardware recommendation engine"
+requires-python = ">=3.7"
+license = "MIT"
+
+[project.scripts]
+clawfit = "clawfit.cli:main"
+
+[tool.setuptools.package-data]
+clawfit = ["registry/*.json"]

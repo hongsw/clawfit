@@ -1,0 +1,42 @@
+[
+  {
+    "id": "react-agent",
+    "name": "ReAct Agent",
+    "description": "Reasoning + acting loop with tool use",
+    "tasks": ["qa", "research", "code-gen"],
+    "latency": "medium",
+    "statefulness": "session",
+    "network": "online",
+    "preferred_llms": ["gpt-4o", "claude-sonnet"]
+  },
+  {
+    "id": "plan-execute",
+    "name": "Plan-and-Execute Agent",
+    "description": "Two-phase planner that decomposes then executes",
+    "tasks": ["research", "data-analysis", "code-gen"],
+    "latency": "high",
+    "statefulness": "persistent",
+    "network": "online",
+    "preferred_llms": ["claude-opus", "gpt-4o"]
+  },
+  {
+    "id": "simple-router",
+    "name": "Simple Router",
+    "description": "Single-step classifier that routes to a tool",
+    "tasks": ["qa", "classification", "summarization"],
+    "latency": "low",
+    "statefulness": "stateless",
+    "network": "online",
+    "preferred_llms": ["claude-haiku", "gpt-4o-mini"]
+  },
+  {
+    "id": "local-rag",
+    "name": "Local RAG Agent",
+    "description": "Retrieval-augmented generation over local docs",
+    "tasks": ["qa", "summarization", "research"],
+    "latency": "medium",
+    "statefulness": "session",
+    "network": "offline",
+    "preferred_llms": ["llama-3-8b", "mistral-7b"]
+  }
+]

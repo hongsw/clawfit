@@ -1,0 +1,47 @@
+[
+  {
+    "id": "aws-gpu-large",
+    "name": "AWS p4d.24xlarge",
+    "type": "cloud",
+    "gpu": true,
+    "ram_gb": 320,
+    "cost_per_hour": 32.77,
+    "latency": "medium"
+  },
+  {
+    "id": "aws-cpu-medium",
+    "name": "AWS m6i.xlarge",
+    "type": "cloud",
+    "gpu": false,
+    "ram_gb": 16,
+    "cost_per_hour": 0.192,
+    "latency": "low"
+  },
+  {
+    "id": "edge-jetson",
+    "name": "NVIDIA Jetson Orin",
+    "type": "edge",
+    "gpu": true,
+    "ram_gb": 32,
+    "cost_per_hour": 0.0,
+    "latency": "low"
+  },
+  {
+    "id": "on-prem-workstation",
+    "name": "On-Prem GPU Workstation",
+    "type": "on-prem",
+    "gpu": true,
+    "ram_gb": 64,
+    "cost_per_hour": 0.0,
+    "latency": "low"
+  },
+  {
+    "id": "cloud-serverless",
+    "name": "Cloud Serverless (Lambda/Cloud Run)",
+    "type": "cloud",
+    "gpu": false,
+    "ram_gb": 8,
+    "cost_per_hour": 0.05,
+    "latency": "low"
+  }
+]

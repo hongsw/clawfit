@@ -1,3 +1,90 @@
 # clawfit
 
-Agent + LLM + Hardware recommendation engine.
+AI agent + LLM + hardware recommendation engine.
+
+Given a task description and constraints (latency, budget, network, statefulness),
+clawfit recommends the best agent pattern, LLM, and hardware combination.
+
+## Install
+
+```bash
+pip install -e .
+```
+
+## CLI Usage
+
+### Get a recommendation
+
+```bash
+clawfit recommend --task qa --latency low --budget 0.01
+```
+
+With all options:
+
+```bash
+clawfit recommend \
+  --task code-gen \
+  --latency medium \
+  --budget 0.01 \
+  --hardware cloud \
+  --network online \
+  --statefulness session \
+  --top 5
+```
+
+### List registry entries
+
+```bash
+clawfit list agents
+clawfit list llms
+clawfit list hardware
+```
+
+### Show registry summary
+
+```bash
+clawfit profile
+```
+
+## Output
+
+`recommend` returns JSON:
+
+```json
+[
+  {
+    "agent": "react-agent",
+    "llm": "claude-sonnet",
+    "hardware": "aws-cpu-medium",
+    "architecture": "cloud-api",
+    "fit_score": 0.85,
+    "why": ["ReAct Agent supports 'qa' with medium latency", ...],
+    "risk": ["High per-token cost — monitor usage"]
+  }
+]
+```
+
+## Python API
+
+```python
+from clawfit.recommend import recommend
+
+results = recommend(task="research", latency="high", network="online")
+```
+
+## Tasks
+
+Supported task categories: `classification`, `code-gen`, `data-analysis`, `qa`, `research`, `summarization`.
+
+## Architecture
+
+1. **Registry** — JSON files define available agents, LLMs, and hardware.
+2. **Filters** — Hard constraints eliminate incompatible options.
+3. **Scoring** — Remaining candidates are scored on latency fit, cost, and preference alignment.
+4. **Recommendation** — Top-N results returned with architecture label, rationale, and risks.
+
+## Tests
+
+```bash
+python -m pytest tests/ -v
+```
