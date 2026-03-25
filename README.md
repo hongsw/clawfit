@@ -90,6 +90,9 @@ clawfit is evolving beyond a simple recommender into a comparison and evidence h
 Reference classification document:
 - `docs/reference-levels.md`
 
+Initial structured registry:
+- `data/tools_registry.json`
+
 It currently organizes references into six levels:
 - Level 1 — core comparison targets
 - Level 2 — workflow wrappers and orchestration tools
