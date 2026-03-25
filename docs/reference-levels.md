@@ -71,6 +71,7 @@ These are not always the main coding engine, but they strongly influence practic
 - claude-code-voice — https://github.com/channprj/claude-code-voice
 - cc-telegram — https://github.com/hada0127/cc-telegram
 - ouroboros — https://github.com/Q00/ouroboros
+- OpenClaw talkmode improvement reference — https://github.com/openclaw/openclaw/pull/53553#issuecomment-4124082023
 
 ## Notes
 - Level 1 should become clawfit's first public comparison matrix.
