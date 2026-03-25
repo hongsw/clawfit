@@ -83,6 +83,21 @@ Supported task categories: `classification`, `code-gen`, `data-analysis`, `qa`, 
 3. **Scoring** — Remaining candidates are scored on latency fit, cost, and preference alignment.
 4. **Recommendation** — Top-N results returned with architecture label, rationale, and risks.
 
+## Ecosystem research
+
+clawfit is evolving beyond a simple recommender into a comparison and evidence hub for AI coding tools.
+
+Reference classification document:
+- `docs/reference-levels.md`
+
+It currently organizes references into six levels:
+- Level 1 — core comparison targets
+- Level 2 — workflow wrappers and orchestration tools
+- Level 3 — architecture and benchmark references
+- Level 4 — memory, context, MCP, and plugin ecosystem
+- Level 5 — data hub, RAG, and evidence infrastructure
+- Level 6 — productivity, input, and human-agent interface tools
+
 ## Tests
 
 ```bash
