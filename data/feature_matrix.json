@@ -1,0 +1,123 @@
+[
+  {
+    "tool_id": "openclaw",
+    "feature": "multi_channel_gateway",
+    "value": true,
+    "support_level": "official",
+    "verification_status": "verified",
+    "evidence_url": "https://docs.openclaw.ai",
+    "evidence_note": "Official docs describe multi-channel gateway support across WhatsApp, Telegram, Discord, iMessage, and more.",
+    "verified_at": "2026-03-25",
+    "tags": ["gateway", "channels"]
+  },
+  {
+    "tool_id": "openclaw",
+    "feature": "mobile_nodes",
+    "value": true,
+    "support_level": "official",
+    "verification_status": "verified",
+    "evidence_url": "https://docs.openclaw.ai",
+    "evidence_note": "Official docs mention iOS and Android nodes for Canvas, camera, and voice-enabled workflows.",
+    "verified_at": "2026-03-25",
+    "tags": ["device", "nodes"]
+  },
+  {
+    "tool_id": "zeroclaw",
+    "feature": "lightweight_runtime",
+    "value": true,
+    "support_level": "official",
+    "verification_status": "partially_verified",
+    "evidence_url": "https://zeroclaw.net/",
+    "evidence_note": "Official site positions ZeroClaw as a lightweight Rust-based runtime with small footprint and fast startup; repo/docs should be checked next.",
+    "verified_at": "2026-03-25",
+    "tags": ["runtime", "edge"]
+  },
+  {
+    "tool_id": "claude_code",
+    "feature": "terminal_execution",
+    "value": true,
+    "support_level": "official",
+    "verification_status": "verified",
+    "evidence_url": "https://github.com/anthropics/claude-code",
+    "evidence_note": "Official repository describes Claude Code as an agentic coding tool that lives in the terminal.",
+    "verified_at": "2026-03-25",
+    "tags": ["cli", "coding"]
+  },
+  {
+    "tool_id": "opencode",
+    "feature": "open_source_coding_agent",
+    "value": true,
+    "support_level": "official",
+    "verification_status": "verified",
+    "evidence_url": "https://github.com/anomalyco/opencode",
+    "evidence_note": "Official repository tagline describes OpenCode as the open source coding agent.",
+    "verified_at": "2026-03-25",
+    "tags": ["coding", "agent"]
+  },
+  {
+    "tool_id": "goose",
+    "feature": "terminal_execution",
+    "value": true,
+    "support_level": "official",
+    "verification_status": "verified",
+    "evidence_url": "https://github.com/block/goose",
+    "evidence_note": "Official repository indicates installation, execution, editing, and testing workflow with any LLM.",
+    "verified_at": "2026-03-25",
+    "tags": ["cli", "agent"]
+  },
+  {
+    "tool_id": "aider",
+    "feature": "multi_file_edit",
+    "value": true,
+    "support_level": "official",
+    "verification_status": "partially_verified",
+    "evidence_url": "https://github.com/paul-gauthier/aider",
+    "evidence_note": "Aider is widely documented as a repo-editing assistant, but the exact feature evidence should be pinned to docs/repo examples.",
+    "verified_at": "2026-03-25",
+    "tags": ["editing", "repo"]
+  },
+  {
+    "tool_id": "cline",
+    "feature": "ide_extension",
+    "value": "vscode",
+    "support_level": "official",
+    "verification_status": "partially_verified",
+    "evidence_url": "https://github.com/cline/cline",
+    "evidence_note": "Cline is a VS Code agentic coding assistant; feature-level docs should be linked more precisely next.",
+    "verified_at": "2026-03-25",
+    "tags": ["ide", "vscode"]
+  },
+  {
+    "tool_id": "continue",
+    "feature": "ide_extension",
+    "value": "vscode_jetbrains",
+    "support_level": "official",
+    "verification_status": "partially_verified",
+    "evidence_url": "https://github.com/continuedev/continue",
+    "evidence_note": "Continue is positioned as an IDE-native assistant; JetBrains/VS Code should be confirmed with official docs pages.",
+    "verified_at": "2026-03-25",
+    "tags": ["ide", "assistant"]
+  },
+  {
+    "tool_id": "superwhisper",
+    "feature": "voice_to_text",
+    "value": true,
+    "support_level": "official",
+    "verification_status": "partially_verified",
+    "evidence_url": "https://superwhisper.com/",
+    "evidence_note": "Official site positions Superwhisper as a speech-to-text / voice productivity tool; detailed feature verification should follow.",
+    "verified_at": "2026-03-25",
+    "tags": ["voice", "input"]
+  },
+  {
+    "tool_id": "ouroboros",
+    "feature": "workflow_loop_support",
+    "value": true,
+    "support_level": "community_documented",
+    "verification_status": "unverified",
+    "evidence_url": "https://github.com/Q00/ouroboros",
+    "evidence_note": "Included as a Level 6 human-agent interaction / loop tool candidate; repository needs direct feature validation.",
+    "verified_at": "2026-03-25",
+    "tags": ["workflow", "loop", "interface"]
+  }
+]

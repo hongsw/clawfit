@@ -93,6 +93,10 @@ Reference classification document:
 Initial structured registry:
 - `data/tools_registry.json`
 
+Initial feature verification dataset:
+- `data/feature_matrix.json`
+- `data/feature_matrix.schema.json`
+
 It currently organizes references into six levels:
 - Level 1 — core comparison targets
 - Level 2 — workflow wrappers and orchestration tools

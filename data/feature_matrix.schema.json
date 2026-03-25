@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/hongsw/clawfit/data/feature_matrix.schema.json",
+  "title": "clawfit Feature Matrix Entry",
+  "description": "Schema for feature verification entries used by clawfit.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "tool_id",
+      "feature",
+      "value",
+      "support_level",
+      "verification_status"
+    ],
+    "properties": {
+      "tool_id": {
+        "type": "string",
+        "description": "Stable tool id matching tools_registry.json"
+      },
+      "feature": {
+        "type": "string",
+        "description": "Feature key such as multi_file_edit, browser, mcp, terminal_execution"
+      },
+      "value": {
+        "type": ["string", "boolean", "number", "null"],
+        "description": "Observed or normalized feature value"
+      },
+      "support_level": {
+        "type": "string",
+        "enum": [
+          "official",
+          "official_limited",
+          "community_documented",
+          "works_with_hacks",
+          "unknown",
+          "not_supported"
+        ]
+      },
+      "verification_status": {
+        "type": "string",
+        "enum": [
+          "unverified",
+          "partially_verified",
+          "verified"
+        ]
+      },
+      "evidence_url": {
+        "type": ["string", "null"],
+        "description": "Documentation, repo, release note, or official reference URL"
+      },
+      "evidence_note": {
+        "type": ["string", "null"],
+        "description": "Short human note explaining the evidence"
+      },
+      "verified_at": {
+        "type": ["string", "null"],
+        "format": "date",
+        "description": "Date of latest manual verification"
+      },
+      "tags": {
+        "type": "array",
+        "items": { "type": "string" },
+        "default": []
+      }
+    },
+    "additionalProperties": false
+  }
+}
