@@ -418,5 +418,17 @@
     "source_type": "github",
     "comparison_priority": "ecosystem",
     "notes": "Curated list of vibe-coding references; useful for discovery, not canonical taxonomy."
+  },
+  {
+    "id": "autoresearch",
+    "name": "AutoResearch",
+    "category": "autonomous_research_workflow",
+    "level": 2,
+    "license": "MIT",
+    "primary_language": "Python",
+    "url": "https://github.com/karpathy/autoresearch",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Karpathy reference repo for autonomous research loops: agent modifies code, runs fixed-budget experiments, keeps or discards changes, and repeats. Important as a research-native workflow signal and origin point for multiple forks."
   }
 ]

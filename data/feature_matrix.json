@@ -318,5 +318,35 @@
       "references",
       "discovery"
     ]
+  },
+  {
+    "tool_id": "autoresearch",
+    "feature": "autonomous_research_loop",
+    "value": true,
+    "support_level": "official",
+    "verification_status": "verified",
+    "evidence_url": "https://github.com/karpathy/autoresearch",
+    "evidence_note": "README describes an AI agent that modifies code, trains for 5 minutes, checks if the result improved, keeps or discards, and repeats autonomously.",
+    "verified_at": "2026-03-27",
+    "tags": [
+      "research",
+      "loop",
+      "agent"
+    ]
+  },
+  {
+    "tool_id": "autoresearch",
+    "feature": "program_md_skill_pattern",
+    "value": true,
+    "support_level": "official",
+    "verification_status": "verified",
+    "evidence_url": "https://github.com/karpathy/autoresearch",
+    "evidence_note": "README states that humans iterate on program.md while agents iterate on train.py, making program.md the lightweight skill/instruction surface.",
+    "verified_at": "2026-03-27",
+    "tags": [
+      "skill",
+      "program-md",
+      "workflow"
+    ]
   }
 ]

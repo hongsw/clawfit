@@ -29,6 +29,7 @@ These matter for multi-agent execution, automation wrappers, and remote operatio
 - SuperClaude Framework — https://github.com/SuperClaude-Org/SuperClaude_Framework
 - claudecodeui — https://github.com/siteboon/claudecodeui
 - agentapi — https://github.com/coder/agentapi
+- autoresearch — https://github.com/karpathy/autoresearch
 
 ## Level 3 — Architecture and benchmark references
 These are especially useful when designing clawfit's abstraction layer and benchmark system.
@@ -160,6 +161,9 @@ When a new repo appears in the vibe-coding ecosystem, classify it by asking:
 
 Important: **do not treat the GitHub topic `vibe-coding` itself as a category system.**
 It is only a discovery signal. clawfit should reclassify discovered repos using its own reference-level model.
+
+## Research-loop signal note
+`karpathy/autoresearch` is an especially important reference because it is not merely another coding assistant. It represents a **research-native autonomous loop**: modify code, run a bounded experiment, evaluate, keep/discard, and repeat. This makes it relevant to clawfit not only as a tool entry, but as an origin point for a broader autoresearch pattern and its growing fork ecosystem.
 
 ## Notes
 - Level 1 should become clawfit's first public comparison matrix.
