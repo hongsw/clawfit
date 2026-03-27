@@ -13,7 +13,21 @@
 
 It started as a lightweight recommendation CLI and is evolving toward a broader **comparison + evidence hub** for AI coding tools, agent runtimes, orchestration frameworks, and supporting infrastructure.
 
-**Jump directly to the ecosystem map:** [`docs/reference-levels.md`](https://github.com/hongsw/clawfit/blob/main/docs/reference-levels.md)
+> [!IMPORTANT]
+> **START HERE — ECOSYSTEM MAP**
+>
+> If you want to understand what `clawfit` is really mapping, comparing, and tracking, **click this first**:
+>
+> ## **[Jump directly to the ecosystem map: `docs/reference-levels.md`](https://github.com/hongsw/clawfit/blob/main/docs/reference-levels.md)**
+>
+> This is the fastest way to see the current landscape of:
+> - base agent runtimes
+> - harness / wrapper layers
+> - research-loop systems
+> - MCP / memory / tool ecosystems
+> - vibe-coding / agent-tool / meta-wrapper trends
+>
+> **If you only click one link in this repo, click this one.**
 
 ---
 
