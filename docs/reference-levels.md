@@ -22,7 +22,7 @@ These are the highest-priority products for clawfit's first comparison matrix.
 These matter for multi-agent execution, automation wrappers, and remote operation.
 
 - <img src="https://github.com/code-yeongyu.png" alt="oh-my-openagent" width="18" /> [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) — ⭐ 43,850
-- <img src="https://github.com/Yeachan-Heo.png" alt="oh-my-claudecode" width="18" /> [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) — ⭐ 12,720
+- <img src="https://github.com/Yeachan-Heo.png" alt="oh-my-claudecode" width="18" /> [oh-my-claudecode](https://github.com/yeachan-heo/oh-my-claudecode) — ⭐ 12,720
 - <img src="https://github.com/AndyMik90.png" alt="Aperant" width="18" /> [Aperant](https://github.com/AndyMik90/Aperant) — ⭐ 13,571
 - <img src="https://github.com/frankbria.png" alt="ralph-claude-code" width="18" /> [ralph-claude-code](https://github.com/frankbria/ralph-claude-code) — ⭐ 8,203
 - <img src="https://github.com/Th0rgal.png" alt="open-ralph-wiggum" width="18" /> [open-ralph-wiggum](https://github.com/Th0rgal/open-ralph-wiggum) — ⭐ 1,347
@@ -95,7 +95,7 @@ These are tools people may directly choose as their main build surface.
 These are strongly relevant to clawfit because they shape practical multi-agent execution patterns.
 
 - oh-my-claudecode — Claude Code multi-agent orchestration  
-  https://github.com/Yeachan-Heo/oh-my-claudecode
+  https://github.com/yeachan-heo/oh-my-claudecode
 - ccpm — GitHub Issues + worktree based parallel agent execution  
   https://github.com/automazeio/ccpm
 - claude-squad — multi-terminal-agent management  
@@ -163,11 +163,29 @@ These repos explicitly package an opinionated upgraded experience around an exis
 - oh-my-openagent — agent harness / meta wrapper / orchestration layer  
   https://github.com/code-yeongyu/oh-my-openagent
 - oh-my-claudecode — Claude Code oriented orchestration wrapper  
-  https://github.com/Yeachan-Heo/oh-my-claudecode
+  https://github.com/yeachan-heo/oh-my-claudecode
 - oh-my-opencode — OpenCode enhancement layer / curated tools / compatibility layer  
   https://github.com/opensoft/oh-my-opencode
 
 **signal:** the naming pattern itself suggests an emerging family of "upgrade the base agent" projects rather than entirely new runtimes.
+
+### A2. Multi-keyword scan signals
+The following keyword bundle was used to probe for this ecosystem pattern:
+`automation opencode multi-agent-systems ai-agents claude parallel-execution vibe-coding claude-code agentic-coding oh-my-opencode`
+
+The direct combined query was noisy, but adjacent narrower searches revealed a wider family of related projects around the same axis.
+
+Representative signals found:
+- `yeachan-heo/oh-my-claudecode` — strong direct hit for Claude Code meta-orchestration
+- `code-yeongyu/oh-my-openagent` — direct hit and renamed lineage from `oh-my-opencode`
+- `opensoft/oh-my-opencode` — OpenCode enhancement / compatibility layer
+- `musistudio/claude-code-router` — routing wrapper around Claude Code
+- `affaan-m/everything-claude-code` — skills/rules/harness optimization layer
+- `can1357/oh-my-pi` — parallel evidence that the `oh-my-*` packaging pattern is spreading beyond Claude/OpenCode
+- `gotalab/cc-sdd` — structured workflow layer across Claude Code, Codex, OpenCode, Cursor, Copilot, Gemini CLI, Windsurf
+- `michaelshimeles/ralphy` — autonomous loop wrapper spanning Claude Code, Codex, OpenCode, Cursor agent, Qwen, Droid
+
+**signal:** this is no longer one repo family; it is becoming a broader packaging pattern for turning base agents into more opinionated operating environments.
 
 ### B. Framework / router / optimization layer
 These repos focus on shaping how an existing base agent behaves, routes, or operates.
