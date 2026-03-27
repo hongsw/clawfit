@@ -5,73 +5,73 @@ This document organizes external tools and projects that clawfit should compare 
 ## Level 1 — Core comparison targets
 These are the highest-priority products for clawfit's first comparison matrix.
 
-- OpenClaw — https://github.com/openclaw/openclaw
-- ZeroClaw — https://github.com/zeroclaw-labs/zeroclaw
-- Claude Code — https://github.com/anthropics/claude-code
-- OpenCode — https://github.com/anomalyco/opencode
-- Goose — https://github.com/block/goose
-- Crush — https://github.com/charmbracelet/crush
-- Aider — https://github.com/paul-gauthier/aider
-- OpenHands — https://github.com/All-Hands-AI/OpenHands
-- Cline — https://github.com/cline/cline
-- Continue — https://github.com/continuedev/continue
+- <img src="https://github.com/openclaw.png" alt="OpenClaw" width="18" /> [OpenClaw](https://github.com/openclaw/openclaw) — ⭐ 337,483
+- <img src="https://github.com/zeroclaw-labs.png" alt="ZeroClaw" width="18" /> [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) — ⭐ 28,890
+- <img src="https://github.com/anthropics.png" alt="Claude Code" width="18" /> [Claude Code](https://github.com/anthropics/claude-code) — ⭐ 83,223
+- <img src="https://github.com/anomalyco.png" alt="OpenCode" width="18" /> [OpenCode](https://github.com/anomalyco/opencode) — ⭐ 130,963
+- <img src="https://github.com/block.png" alt="Goose" width="18" /> [Goose](https://github.com/block/goose) — ⭐ 33,627
+- <img src="https://github.com/charmbracelet.png" alt="Crush" width="18" /> [Crush](https://github.com/charmbracelet/crush) — ⭐ 22,019
+- <img src="https://github.com/paul-gauthier.png" alt="Aider" width="18" /> [Aider](https://github.com/paul-gauthier/aider) — ⭐ 42,419
+- <img src="https://github.com/All-Hands-AI.png" alt="OpenHands" width="18" /> [OpenHands](https://github.com/All-Hands-AI/OpenHands) — ⭐ 69,851
+- <img src="https://github.com/cline.png" alt="Cline" width="18" /> [Cline](https://github.com/cline/cline) — ⭐ 59,428
+- <img src="https://github.com/continuedev.png" alt="Continue" width="18" /> [Continue](https://github.com/continuedev/continue) — ⭐ 32,076
 - Cursor — https://cursor.com/
 - Superwhisper — https://superwhisper.com/
 
 ## Level 2 — Workflow wrappers and orchestration tools
 These matter for multi-agent execution, automation wrappers, and remote operation.
 
-- oh-my-openagent — https://github.com/code-yeongyu/oh-my-openagent
-- oh-my-claudecode — https://github.com/Yeachan-Heo/oh-my-claudecode
-- Aperant — https://github.com/AndyMik90/Aperant
-- ralph-claude-code — https://github.com/frankbria/ralph-claude-code
-- open-ralph-wiggum — https://github.com/Th0rgal/open-ralph-wiggum
-- SuperClaude Framework — https://github.com/SuperClaude-Org/SuperClaude_Framework
-- claudecodeui — https://github.com/siteboon/claudecodeui
-- agentapi — https://github.com/coder/agentapi
-- autoresearch — https://github.com/karpathy/autoresearch
+- <img src="https://github.com/code-yeongyu.png" alt="oh-my-openagent" width="18" /> [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) — ⭐ 43,850
+- <img src="https://github.com/Yeachan-Heo.png" alt="oh-my-claudecode" width="18" /> [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) — ⭐ 12,720
+- <img src="https://github.com/AndyMik90.png" alt="Aperant" width="18" /> [Aperant](https://github.com/AndyMik90/Aperant) — ⭐ 13,571
+- <img src="https://github.com/frankbria.png" alt="ralph-claude-code" width="18" /> [ralph-claude-code](https://github.com/frankbria/ralph-claude-code) — ⭐ 8,203
+- <img src="https://github.com/Th0rgal.png" alt="open-ralph-wiggum" width="18" /> [open-ralph-wiggum](https://github.com/Th0rgal/open-ralph-wiggum) — ⭐ 1,347
+- <img src="https://github.com/SuperClaude-Org.png" alt="SuperClaude Framework" width="18" /> [SuperClaude Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) — ⭐ 21,966
+- <img src="https://github.com/siteboon.png" alt="claudecodeui" width="18" /> [claudecodeui](https://github.com/siteboon/claudecodeui) — ⭐ 8,997
+- <img src="https://github.com/coder.png" alt="agentapi" width="18" /> [agentapi](https://github.com/coder/agentapi) — ⭐ 1,314
+- <img src="https://github.com/karpathy.png" alt="autoresearch" width="18" /> [autoresearch](https://github.com/karpathy/autoresearch) — ⭐ 57,421
 
 ## Level 3 — Architecture and benchmark references
 These are especially useful when designing clawfit's abstraction layer and benchmark system.
 
-- any-agent — https://github.com/mozilla-ai/any-agent
-- any-llm — https://github.com/mozilla-ai/any-llm
-- opencode-bench — https://github.com/anomalyco/opencode-bench
-- lm-evaluation-harness — https://github.com/EleutherAI/lm-evaluation-harness
-- Prometheus — https://github.com/prometheus-eval/prometheus
-- Ko-AgentBench — https://github.com/Hugging-Face-KREW/Ko-AgentBench
-- agent-lightning — https://github.com/microsoft/agent-lightning
-- hoyeon — https://github.com/team-attention/hoyeon
+- <img src="https://github.com/mozilla-ai.png" alt="any-agent" width="18" /> [any-agent](https://github.com/mozilla-ai/any-agent) — ⭐ 1,127
+- <img src="https://github.com/mozilla-ai.png" alt="any-llm" width="18" /> [any-llm](https://github.com/mozilla-ai/any-llm) — ⭐ 1,824
+- <img src="https://github.com/anomalyco.png" alt="opencode-bench" width="18" /> [opencode-bench](https://github.com/anomalyco/opencode-bench) — ⭐ 60
+- <img src="https://github.com/EleutherAI.png" alt="lm-evaluation-harness" width="18" /> [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) — ⭐ 11,863
+- <img src="https://github.com/prometheus-eval.png" alt="Prometheus" width="18" /> [Prometheus](https://github.com/prometheus-eval/prometheus) — ⭐ 312
+- <img src="https://github.com/Hugging-Face-KREW.png" alt="Ko-AgentBench" width="18" /> [Ko-AgentBench](https://github.com/Hugging-Face-KREW/Ko-AgentBench) — ⭐ 65
+- <img src="https://github.com/microsoft.png" alt="agent-lightning" width="18" /> [agent-lightning](https://github.com/microsoft/agent-lightning) — ⭐ 15,544
+- <img src="https://github.com/team-attention.png" alt="hoyeon" width="18" /> [hoyeon](https://github.com/team-attention/hoyeon) — ⭐ 126
 
 ## Level 4 — Memory, context, MCP, and plugin ecosystem
 These shape the real compatibility matrix beyond marketing checkboxes.
 
-- OpenMemory — https://github.com/CaviraOSS/OpenMemory
-- cipher — https://github.com/campfirein/cipher
-- claude-context — https://github.com/zilliztech/claude-context
-- serena — https://github.com/oraios/serena
-- claude-plugins-official — https://github.com/anthropics/claude-plugins-official
-- plugins-for-claude-natives — https://github.com/team-attention/plugins-for-claude-natives
-- mcp-for-beginners — https://github.com/microsoft/mcp-for-beginners
-- mcp-context-forge — https://github.com/IBM/mcp-context-forge
+- <img src="https://github.com/CaviraOSS.png" alt="OpenMemory" width="18" /> [OpenMemory](https://github.com/CaviraOSS/OpenMemory) — ⭐ 3,770
+- <img src="https://github.com/campfirein.png" alt="cipher" width="18" /> [cipher](https://github.com/campfirein/cipher) — ⭐ 3,611
+- <img src="https://github.com/zilliztech.png" alt="claude-context" width="18" /> [claude-context](https://github.com/zilliztech/claude-context) — ⭐ 5,768
+- <img src="https://github.com/oraios.png" alt="serena" width="18" /> [serena](https://github.com/oraios/serena) — ⭐ 22,147
+- <img src="https://github.com/anthropics.png" alt="claude-plugins-official" width="18" /> [claude-plugins-official](https://github.com/anthropics/claude-plugins-official) — ⭐ 14,875
+- <img src="https://github.com/team-attention.png" alt="plugins-for-claude-natives" width="18" /> [plugins-for-claude-natives](https://github.com/team-attention/plugins-for-claude-natives) — ⭐ 691
+- <img src="https://github.com/microsoft.png" alt="mcp-for-beginners" width="18" /> [mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) — ⭐ 15,653
+- <img src="https://github.com/IBM.png" alt="mcp-context-forge" width="18" /> [mcp-context-forge](https://github.com/IBM/mcp-context-forge) — ⭐ 3,479
 
 ## Level 5 — Data hub, RAG, and evidence infrastructure
 These references are useful when clawfit evolves into an evidence hub and simulation system.
 
-- LightRAG — https://github.com/HKUDS/LightRAG
-- RAG-Anything — https://github.com/HKUDS/RAG-Anything
-- airweave — https://github.com/airweave-ai/airweave
-- agentset — https://github.com/agentset-ai/agentset
-- PageIndex — https://github.com/VectifyAI/PageIndex
-- MinerU — https://github.com/opendatalab/MinerU
+- <img src="https://github.com/HKUDS.png" alt="LightRAG" width="18" /> [LightRAG](https://github.com/HKUDS/LightRAG) — ⭐ 30,655
+- <img src="https://github.com/HKUDS.png" alt="RAG-Anything" width="18" /> [RAG-Anything](https://github.com/HKUDS/RAG-Anything) — ⭐ 14,651
+- <img src="https://github.com/airweave-ai.png" alt="airweave" width="18" /> [airweave](https://github.com/airweave-ai/airweave) — ⭐ 6,132
+- <img src="https://github.com/agentset-ai.png" alt="agentset" width="18" /> [agentset](https://github.com/agentset-ai/agentset) — ⭐ 1,928
+- <img src="https://github.com/VectifyAI.png" alt="PageIndex" width="18" /> [PageIndex](https://github.com/VectifyAI/PageIndex) — ⭐ 23,023
+- <img src="https://github.com/opendatalab.png" alt="MinerU" width="18" /> [MinerU](https://github.com/opendatalab/MinerU) — ⭐ 57,333
 
 ## Level 6 — Productivity, input, and human-agent interface tools
 These are not always the main coding engine, but they strongly influence practical developer productivity.
 
 - Superwhisper — https://superwhisper.com/
-- claude-code-voice — https://github.com/channprj/claude-code-voice
-- cc-telegram — https://github.com/hada0127/cc-telegram
-- ouroboros — https://github.com/Q00/ouroboros
+- <img src="https://github.com/channprj.png" alt="claude-code-voice" width="18" /> [claude-code-voice](https://github.com/channprj/claude-code-voice) — ⭐ 8
+- <img src="https://github.com/hada0127.png" alt="cc-telegram" width="18" /> [cc-telegram](https://github.com/hada0127/cc-telegram) — ⭐ 15
+- <img src="https://github.com/Q00.png" alt="ouroboros" width="18" /> [ouroboros](https://github.com/Q00/ouroboros) — ⭐ 1,853
 - OpenClaw talkmode improvement reference — https://github.com/openclaw/openclaw/pull/53553#issuecomment-4124082023
 
 ## Vibe coding topic scan (2026-03-27)
