@@ -31,6 +31,11 @@ It started as a lightweight recommendation CLI and is evolving toward a broader 
 
 ---
 
+## New here?
+
+- **Canonical intro:** [`Introducing clawfit`](https://github.com/hongsw/clawfit/blob/main/docs/posts/2026-03-28-introducing-clawfit.md)
+- **Ecosystem overview:** [`docs/pages/ecosystem-overview.md`](https://github.com/hongsw/clawfit/blob/main/docs/pages/ecosystem-overview.md)
+
 ## Why this exists
 
 The AI tooling landscape is fragmented.
