@@ -143,6 +143,84 @@ These help developers build their own vibe-coding products rather than directly 
 
 **clawfit mapping:** Level 3 or Level 4 depending on whether the emphasis is architecture or capability extension.
 
+## Agent tool scan (2026-03-27)
+The GitHub topic/query space around `agent-tool`, `agent tools`, and `agent toolkit` is also noisy and should not be used as a canonical taxonomy.
+
+Two patterns emerged:
+1. The literal topic `agent-tool` is mostly too sparse / low-signal.
+2. Broader search phrases such as `agent toolkit`, `agent tools`, and `tooling for agents` surface more meaningful repositories.
+
+### A. Tooling platforms and tool-access infrastructure
+These are platforms or tool layers that help agents actually take action.
+
+- Composio — large tool-access / auth / sandbox platform for agents  
+  https://github.com/ComposioHQ/composio
+- Pica — agentic tooling platform  
+  https://github.com/withoneai/pica
+- strands-agents/tools — tools package for agent capabilities  
+  https://github.com/strands-agents/tools
+- modelcontextprotocol/servers — MCP server ecosystem reference  
+  https://github.com/modelcontextprotocol/servers
+
+**clawfit mapping:** usually Level 4 or Level 3 depending on whether the emphasis is capability extension or architectural abstraction.
+
+### B. Agent orchestration / workflow / collaboration tooling
+These are not merely tools used by agents, but systems for coordinating agent work.
+
+- AutoGen — programming framework for agentic AI  
+  https://github.com/microsoft/autogen
+- CrewAI — orchestration framework for collaborative agents  
+  https://github.com/crewAIInc/crewAI
+- Sim — deploy/orchestrate AI agents  
+  https://github.com/simstudioai/sim
+- paperclip — orchestration for zero-human companies  
+  https://github.com/paperclipai/paperclip
+- ruflo — orchestration platform for Claude-centric swarms  
+  https://github.com/ruvnet/ruflo
+
+**clawfit mapping:** usually Level 2 or Level 3.
+
+### C. Coding-agent-specific toolkits and wrappers
+These are especially relevant to clawfit because they sit close to coding workflows.
+
+- serena — semantic retrieval/editing toolkit for coding agents  
+  https://github.com/oraios/serena
+- pi-mono — AI agent toolkit with coding agent CLI / APIs / UIs  
+  https://github.com/badlogic/pi-mono
+- claude-code-router — infrastructure wrapper around Claude Code  
+  https://github.com/musistudio/claude-code-router
+- Dicklesworthstone/agentic_coding_flywheel_setup — bootstrapped multi-agent coding environment  
+  https://github.com/Dicklesworthstone/agentic_coding_flywheel_setup
+
+**clawfit mapping:** usually Level 2, 3, or 4 depending on whether the main value is orchestration, architecture, or tool augmentation.
+
+### D. Catalogs / awesome lists / discovery layers
+These help discovery but should not be treated as direct comparison endpoints.
+
+- awesome-ai-agents  
+  https://github.com/e2b-dev/awesome-ai-agents
+- awesome_ai_agents  
+  https://github.com/jim-schwoebel/awesome_ai_agents
+- ai-agent-tools-catalog  
+  https://github.com/GetStream/ai-agent-tools-catalog
+- awesome-mcp-servers  
+  https://github.com/appcypher/awesome-mcp-servers
+- awesome-openclaw  
+  https://github.com/SamurAIGPT/awesome-openclaw
+
+**clawfit mapping:** support/discovery references, not primary product choices.
+
+## Agent tool scan takeaway
+As with `vibe-coding`, the phrase `agent tool` is better treated as a **discovery surface** than a stable category.
+
+For clawfit, newly discovered repos in this area should be reclassified by asking:
+- Is this a tool-access layer for agents?
+- Is this an orchestration/workflow framework?
+- Is this a coding-agent-specific augmentation layer?
+- Is this only a catalog / discovery resource?
+
+This prevents `agent tool` from collapsing platforms, wrappers, MCP servers, catalogs, and orchestration systems into one bucket.
+
 ## Provisional classification guidance for clawfit
 When a new repo appears in the vibe-coding ecosystem, classify it by asking:
 
