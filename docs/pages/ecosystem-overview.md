@@ -4,6 +4,7 @@ This page is the simplest entry point into the current `clawfit` map.
 
 ## Start here
 - **Main map:** [reference-levels.md](../reference-levels.md)
+- **Adoption maturity map:** [adoption-levels.md](./adoption-levels.md)
 
 ## Core post series
 - [Why `oh-my-claudecode` matters: the start of the agent harness trend](../posts/2026-03-28-oh-my-claudecode-harness-trend.md)
