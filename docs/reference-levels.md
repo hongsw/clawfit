@@ -73,7 +73,96 @@ These are not always the main coding engine, but they strongly influence practic
 - ouroboros — https://github.com/Q00/ouroboros
 - OpenClaw talkmode improvement reference — https://github.com/openclaw/openclaw/pull/53553#issuecomment-4124082023
 
+## Vibe coding topic scan (2026-03-27)
+The GitHub topic `vibe-coding` is broad and noisy. It includes at least five different subfamilies that clawfit should not collapse into one bucket.
+
+### A. Core engines / primary surfaces
+These are tools people may directly choose as their main build surface.
+
+- Onlook — AI-first visual app builder / design-to-code surface  
+  https://github.com/onlook-dev/onlook
+- Superset — multi-agent desktop IDE / orchestration surface  
+  https://github.com/superset-sh/superset
+- Kaku — terminal built for AI coding  
+  https://github.com/tw93/Kaku
+- Crystal (Nimbalyst) — desktop workflow manager for parallel AI coding sessions  
+  https://github.com/stravu/crystal
+
+**clawfit mapping:** usually Level 1 or Level 2 depending on whether the repo is a primary user-facing environment or mostly an orchestration shell.
+
+### B. Workflow wrappers / orchestration / team execution
+These are strongly relevant to clawfit because they shape practical multi-agent execution patterns.
+
+- oh-my-claudecode — Claude Code multi-agent orchestration  
+  https://github.com/Yeachan-Heo/oh-my-claudecode
+- ccpm — GitHub Issues + worktree based parallel agent execution  
+  https://github.com/automazeio/ccpm
+- claude-squad — multi-terminal-agent management  
+  https://github.com/smtg-ai/claude-squad
+- refly — workflow/skills builder across Claude Code, Cursor, Codex, etc.  
+  https://github.com/refly-ai/refly
+
+**clawfit mapping:** mostly Level 2.
+
+### C. Context / memory / MCP support infrastructure
+These are not the main coding engine, but they materially affect agent quality and capability.
+
+- Context7 — up-to-date documentation/context layer for AI coding tools  
+  https://github.com/upstash/context7
+- serena — semantic retrieval/editing toolkit for coding agents  
+  https://github.com/oraios/serena
+- cipher — memory layer for coding agents via MCP  
+  https://github.com/campfirein/cipher
+- claude-context — code search MCP for Claude Code  
+  https://github.com/zilliztech/claude-context
+
+**clawfit mapping:** mostly Level 4.
+
+### D. Guidance / best practices / learning resources
+These are important evidence sources for behavior, workflow norms, onboarding, and ecosystem understanding, but they are not usually recommendation endpoints by themselves.
+
+- claude-code-best-practice — workflow and usage guidance  
+  https://github.com/shanraisshan/claude-code-best-practice
+- awesome-vibe-coding — curated reference list  
+  https://github.com/filipecalegario/awesome-vibe-coding
+- easy-vibe — learning/tutorial resource  
+  https://github.com/datawhalechina/easy-vibe
+- vibe-vibe — systematic learning/tutorial resource  
+  https://github.com/datawhalechina/vibe-vibe
+
+**clawfit mapping:** supporting references; usually Level 2, 3, or 6 context rather than Level 1 comparison targets.
+
+### E. Platform / SDK layer
+These help developers build their own vibe-coding products rather than directly serving as end-user comparison targets.
+
+- vibesdk — platform for building vibe-coding systems  
+  https://github.com/cloudflare/vibesdk
+- ruler — cross-agent rule layer / policy consistency  
+  https://github.com/intellectronica/ruler
+
+**clawfit mapping:** Level 3 or Level 4 depending on whether the emphasis is architecture or capability extension.
+
+## Provisional classification guidance for clawfit
+When a new repo appears in the vibe-coding ecosystem, classify it by asking:
+
+1. Is this a **primary product choice** for users?
+   - Then consider Level 1.
+2. Is it mainly a **wrapper, orchestrator, or multi-agent shell**?
+   - Then consider Level 2.
+3. Is it mainly an **architecture / benchmark / platform abstraction**?
+   - Then consider Level 3.
+4. Is it mainly **memory, MCP, retrieval, context, or plugin support**?
+   - Then consider Level 4.
+5. Is it mainly **evidence/data infrastructure**?
+   - Then consider Level 5.
+6. Is it mainly **interface / productivity / input-layer support**?
+   - Then consider Level 6.
+
+Important: **do not treat the GitHub topic `vibe-coding` itself as a category system.**
+It is only a discovery signal. clawfit should reclassify discovered repos using its own reference-level model.
+
 ## Notes
 - Level 1 should become clawfit's first public comparison matrix.
 - Levels 2–6 provide the surrounding ecosystem needed for a realistic recommendation engine.
 - Feature claims should be stored with evidence links and verification dates, not just yes/no flags.
+- The GitHub topic `vibe-coding` is useful for discovery, but not sufficient as a canonical taxonomy.
