@@ -8,7 +8,10 @@
     "evidence_url": "https://docs.openclaw.ai",
     "evidence_note": "Official docs describe multi-channel gateway support across WhatsApp, Telegram, Discord, iMessage, and more.",
     "verified_at": "2026-03-25",
-    "tags": ["gateway", "channels"]
+    "tags": [
+      "gateway",
+      "channels"
+    ]
   },
   {
     "tool_id": "openclaw",
@@ -19,7 +22,10 @@
     "evidence_url": "https://docs.openclaw.ai",
     "evidence_note": "Official docs mention iOS and Android nodes for Canvas, camera, and voice-enabled workflows.",
     "verified_at": "2026-03-25",
-    "tags": ["device", "nodes"]
+    "tags": [
+      "device",
+      "nodes"
+    ]
   },
   {
     "tool_id": "zeroclaw",
@@ -30,7 +36,10 @@
     "evidence_url": "https://zeroclaw.net/",
     "evidence_note": "Official site positions ZeroClaw as a lightweight Rust-based runtime with small footprint and fast startup; repo/docs should be checked next.",
     "verified_at": "2026-03-25",
-    "tags": ["runtime", "edge"]
+    "tags": [
+      "runtime",
+      "edge"
+    ]
   },
   {
     "tool_id": "claude_code",
@@ -41,7 +50,10 @@
     "evidence_url": "https://github.com/anthropics/claude-code",
     "evidence_note": "Official repository describes Claude Code as an agentic coding tool that lives in the terminal.",
     "verified_at": "2026-03-25",
-    "tags": ["cli", "coding"]
+    "tags": [
+      "cli",
+      "coding"
+    ]
   },
   {
     "tool_id": "opencode",
@@ -52,7 +64,10 @@
     "evidence_url": "https://github.com/anomalyco/opencode",
     "evidence_note": "Official repository tagline describes OpenCode as the open source coding agent.",
     "verified_at": "2026-03-25",
-    "tags": ["coding", "agent"]
+    "tags": [
+      "coding",
+      "agent"
+    ]
   },
   {
     "tool_id": "goose",
@@ -63,7 +78,10 @@
     "evidence_url": "https://github.com/block/goose",
     "evidence_note": "Official repository indicates installation, execution, editing, and testing workflow with any LLM.",
     "verified_at": "2026-03-25",
-    "tags": ["cli", "agent"]
+    "tags": [
+      "cli",
+      "agent"
+    ]
   },
   {
     "tool_id": "aider",
@@ -74,7 +92,10 @@
     "evidence_url": "https://github.com/paul-gauthier/aider",
     "evidence_note": "Aider is widely documented as a repo-editing assistant, but the exact feature evidence should be pinned to docs/repo examples.",
     "verified_at": "2026-03-25",
-    "tags": ["editing", "repo"]
+    "tags": [
+      "editing",
+      "repo"
+    ]
   },
   {
     "tool_id": "cline",
@@ -85,7 +106,10 @@
     "evidence_url": "https://github.com/cline/cline",
     "evidence_note": "Cline is a VS Code agentic coding assistant; feature-level docs should be linked more precisely next.",
     "verified_at": "2026-03-25",
-    "tags": ["ide", "vscode"]
+    "tags": [
+      "ide",
+      "vscode"
+    ]
   },
   {
     "tool_id": "continue",
@@ -96,7 +120,10 @@
     "evidence_url": "https://github.com/continuedev/continue",
     "evidence_note": "Continue is positioned as an IDE-native assistant; JetBrains/VS Code should be confirmed with official docs pages.",
     "verified_at": "2026-03-25",
-    "tags": ["ide", "assistant"]
+    "tags": [
+      "ide",
+      "assistant"
+    ]
   },
   {
     "tool_id": "superwhisper",
@@ -107,7 +134,10 @@
     "evidence_url": "https://superwhisper.com/",
     "evidence_note": "Official site positions Superwhisper as a speech-to-text / voice productivity tool; detailed feature verification should follow.",
     "verified_at": "2026-03-25",
-    "tags": ["voice", "input"]
+    "tags": [
+      "voice",
+      "input"
+    ]
   },
   {
     "tool_id": "ouroboros",
@@ -118,6 +148,175 @@
     "evidence_url": "https://github.com/Q00/ouroboros",
     "evidence_note": "Included as a Level 6 human-agent interaction / loop tool candidate; repository needs direct feature validation.",
     "verified_at": "2026-03-25",
-    "tags": ["workflow", "loop", "interface"]
+    "tags": [
+      "workflow",
+      "loop",
+      "interface"
+    ]
+  },
+  {
+    "tool_id": "context7",
+    "feature": "documentation_context_layer",
+    "value": true,
+    "support_level": "official",
+    "verification_status": "verified",
+    "evidence_url": "https://github.com/upstash/context7",
+    "evidence_note": "Repository tagline positions Context7 as up-to-date code documentation for LLMs and AI code editors.",
+    "verified_at": "2026-03-27",
+    "tags": [
+      "context",
+      "docs",
+      "mcp"
+    ]
+  },
+  {
+    "tool_id": "onlook",
+    "feature": "visual_design_to_code_surface",
+    "value": true,
+    "support_level": "official",
+    "verification_status": "partially_verified",
+    "evidence_url": "https://github.com/onlook-dev/onlook",
+    "evidence_note": "Repository describes Onlook as an open-source AI-first design tool for visually building and editing React apps.",
+    "verified_at": "2026-03-27",
+    "tags": [
+      "design",
+      "frontend",
+      "surface"
+    ]
+  },
+  {
+    "tool_id": "superset",
+    "feature": "parallel_agent_orchestration",
+    "value": true,
+    "support_level": "official",
+    "verification_status": "partially_verified",
+    "evidence_url": "https://github.com/superset-sh/superset",
+    "evidence_note": "Repository tagline describes running an army of Claude Code, Codex, and similar agents on your machine.",
+    "verified_at": "2026-03-27",
+    "tags": [
+      "orchestration",
+      "desktop",
+      "agents"
+    ]
+  },
+  {
+    "tool_id": "ccpm",
+    "feature": "github_issue_worktree_execution",
+    "value": true,
+    "support_level": "official",
+    "verification_status": "partially_verified",
+    "evidence_url": "https://github.com/automazeio/ccpm",
+    "evidence_note": "Repository description states it uses GitHub Issues and Git worktrees for parallel agent execution.",
+    "verified_at": "2026-03-27",
+    "tags": [
+      "github",
+      "worktree",
+      "pm"
+    ]
+  },
+  {
+    "tool_id": "refly",
+    "feature": "agent_skills_builder",
+    "value": true,
+    "support_level": "official",
+    "verification_status": "partially_verified",
+    "evidence_url": "https://github.com/refly-ai/refly",
+    "evidence_note": "Repository description positions Refly as an open-source agent skills builder running across multiple coding agents.",
+    "verified_at": "2026-03-27",
+    "tags": [
+      "skills",
+      "workflow",
+      "builder"
+    ]
+  },
+  {
+    "tool_id": "claude_squad",
+    "feature": "multi_terminal_agent_management",
+    "value": true,
+    "support_level": "official",
+    "verification_status": "partially_verified",
+    "evidence_url": "https://github.com/smtg-ai/claude-squad",
+    "evidence_note": "Repository description states management of multiple AI terminal agents like Claude Code, Codex, and OpenCode.",
+    "verified_at": "2026-03-27",
+    "tags": [
+      "terminal",
+      "multi-agent",
+      "cli"
+    ]
+  },
+  {
+    "tool_id": "vibesdk",
+    "feature": "vibe_coding_platform_sdk",
+    "value": true,
+    "support_level": "official",
+    "verification_status": "partially_verified",
+    "evidence_url": "https://github.com/cloudflare/vibesdk",
+    "evidence_note": "Repository description positions VibeSDK as a platform to build your own vibe-coding platform.",
+    "verified_at": "2026-03-27",
+    "tags": [
+      "sdk",
+      "platform",
+      "architecture"
+    ]
+  },
+  {
+    "tool_id": "kaku",
+    "feature": "ai_coding_terminal",
+    "value": true,
+    "support_level": "official",
+    "verification_status": "partially_verified",
+    "evidence_url": "https://github.com/tw93/Kaku",
+    "evidence_note": "Repository tagline positions Kaku as a fast terminal built for AI coding.",
+    "verified_at": "2026-03-27",
+    "tags": [
+      "terminal",
+      "interface",
+      "productivity"
+    ]
+  },
+  {
+    "tool_id": "crystal",
+    "feature": "parallel_worktree_session_management",
+    "value": true,
+    "support_level": "official",
+    "verification_status": "partially_verified",
+    "evidence_url": "https://github.com/stravu/crystal",
+    "evidence_note": "Repository description states it runs multiple Codex and Claude Code sessions in parallel git worktrees.",
+    "verified_at": "2026-03-27",
+    "tags": [
+      "worktree",
+      "desktop",
+      "parallel"
+    ]
+  },
+  {
+    "tool_id": "claude_code_best_practice",
+    "feature": "workflow_guidance_resource",
+    "value": true,
+    "support_level": "official",
+    "verification_status": "partially_verified",
+    "evidence_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "evidence_note": "Repository positions itself as best-practice guidance for Claude Code usage.",
+    "verified_at": "2026-03-27",
+    "tags": [
+      "guide",
+      "workflow",
+      "best-practice"
+    ]
+  },
+  {
+    "tool_id": "awesome_vibe_coding",
+    "feature": "curated_reference_list",
+    "value": true,
+    "support_level": "official",
+    "verification_status": "partially_verified",
+    "evidence_url": "https://github.com/filipecalegario/awesome-vibe-coding",
+    "evidence_note": "Repository describes itself as a curated list of vibe coding references for collaborating with AI to write code.",
+    "verified_at": "2026-03-27",
+    "tags": [
+      "awesome",
+      "references",
+      "discovery"
+    ]
   }
 ]
