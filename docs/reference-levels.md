@@ -38,6 +38,7 @@ They are the tools users most directly choose as their base environment.
 - <img src="https://github.com/cline.png" alt="Cline" width="18" /> [Cline](https://github.com/cline/cline) — ⭐ 59,433
 - <img src="https://github.com/continuedev.png" alt="Continue" width="18" /> [Continue](https://github.com/continuedev/continue) — ⭐ 32,078
 - Cursor — https://cursor.com/
+- Kiro CLI — https://kiro.dev/
 
 ---
 
