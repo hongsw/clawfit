@@ -13,6 +13,8 @@
 
 It started as a lightweight recommendation CLI and is evolving toward a broader **comparison + evidence hub** for AI coding tools, agent runtimes, orchestration frameworks, and supporting infrastructure.
 
+**Jump directly to the ecosystem map:** [`docs/reference-levels.md`](https://github.com/hongsw/clawfit/blob/main/docs/reference-levels.md)
+
 ---
 
 ## Why this exists
