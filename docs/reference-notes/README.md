@@ -14,3 +14,7 @@ They are often useful as:
 - concept references
 - presentation references
 - taxonomy support material
+
+## Current entries
+- [2026-03-28-agent-patterns-reference.md](./2026-03-28-agent-patterns-reference.md)
+- [2026-03-28-harness-engineering-visual-reference.md](./2026-03-28-harness-engineering-visual-reference.md)
