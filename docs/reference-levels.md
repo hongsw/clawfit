@@ -1,9 +1,31 @@
-# clawfit Reference Levels v0.1
+# clawfit Reference Levels v0.2
 
 This document organizes external tools and projects that clawfit should compare against, learn from, or use as supporting references.
 
-## Level 1 — Core comparison targets
-These are the highest-priority products for clawfit's first comparison matrix.
+The older 1–6 structure was useful, but the ecosystem has shifted.
+In particular, recent patterns such as:
+- `oh-my-openagent`
+- `oh-my-claudecode`
+- `oh-my-codex`
+- `oh-my-gemini-cli`
+- `oh-my-agent`
+- router / harness / skills-pack systems
+
+show that the market is no longer only about choosing a **base agent**.
+It is increasingly about choosing:
+1. a **base runtime**,
+2. a **meta wrapper / harness**,
+3. a **team workflow / executable SSOT layer**,
+4. a **capability layer**,
+5. and sometimes a **human interface layer**.
+
+So this document now uses a more explicit **7-level structure**.
+
+---
+
+## Level 1 — Base runtimes / primary agent surfaces
+These are the main user-facing agent runtimes or primary product choices.
+They are the tools users most directly choose as their base environment.
 
 - <img src="https://github.com/openclaw.png" alt="OpenClaw" width="18" /> [OpenClaw](https://github.com/openclaw/openclaw) — ⭐ 337,483
 - <img src="https://github.com/zeroclaw-labs.png" alt="ZeroClaw" width="18" /> [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) — ⭐ 28,890
@@ -16,35 +38,56 @@ These are the highest-priority products for clawfit's first comparison matrix.
 - <img src="https://github.com/cline.png" alt="Cline" width="18" /> [Cline](https://github.com/cline/cline) — ⭐ 59,428
 - <img src="https://github.com/continuedev.png" alt="Continue" width="18" /> [Continue](https://github.com/continuedev/continue) — ⭐ 32,076
 - Cursor — https://cursor.com/
-- Superwhisper — https://superwhisper.com/
 
-## Level 2 — Workflow wrappers and orchestration tools
-These matter for multi-agent execution, automation wrappers, and remote operation.
+---
+
+## Level 2 — Meta wrappers / harnesses / orchestration layers
+These projects sit on top of existing base agents and transform how they operate.
+They provide orchestration, better defaults, compatibility layers, workflows, routing, multi-agent teams, or opinionated operating conventions.
 
 - <img src="https://github.com/code-yeongyu.png" alt="oh-my-openagent" width="18" /> [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) — ⭐ 43,850
 - <img src="https://github.com/Yeachan-Heo.png" alt="oh-my-claudecode" width="18" /> [oh-my-claudecode](https://github.com/yeachan-heo/oh-my-claudecode) — ⭐ 12,720
+- <img src="https://github.com/Yeachan-Heo.png" alt="oh-my-codex" width="18" /> [oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex) — ⭐ 2,625
+- <img src="https://github.com/Joonghyun-Lee-Frieren.png" alt="oh-my-gemini-cli" width="18" /> [oh-my-gemini-cli](https://github.com/Joonghyun-Lee-Frieren/oh-my-gemini-cli) — ⭐ 78
+- <img src="https://github.com/first-fluke.png" alt="oh-my-agent" width="18" /> [oh-my-agent](https://github.com/first-fluke/oh-my-agent) — ⭐ 504
 - <img src="https://github.com/AndyMik90.png" alt="Aperant" width="18" /> [Aperant](https://github.com/AndyMik90/Aperant) — ⭐ 13,571
 - <img src="https://github.com/frankbria.png" alt="ralph-claude-code" width="18" /> [ralph-claude-code](https://github.com/frankbria/ralph-claude-code) — ⭐ 8,203
 - <img src="https://github.com/Th0rgal.png" alt="open-ralph-wiggum" width="18" /> [open-ralph-wiggum](https://github.com/Th0rgal/open-ralph-wiggum) — ⭐ 1,347
 - <img src="https://github.com/SuperClaude-Org.png" alt="SuperClaude Framework" width="18" /> [SuperClaude Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) — ⭐ 21,966
 - <img src="https://github.com/siteboon.png" alt="claudecodeui" width="18" /> [claudecodeui](https://github.com/siteboon/claudecodeui) — ⭐ 8,997
 - <img src="https://github.com/coder.png" alt="agentapi" width="18" /> [agentapi](https://github.com/coder/agentapi) — ⭐ 1,314
-- <img src="https://github.com/karpathy.png" alt="autoresearch" width="18" /> [autoresearch](https://github.com/karpathy/autoresearch) — ⭐ 57,421
+- <img src="https://github.com/musistudio.png" alt="claude-code-router" width="18" /> [claude-code-router](https://github.com/musistudio/claude-code-router) — ⭐ 30,481
 
-## Level 3 — Architecture and benchmark references
-These are especially useful when designing clawfit's abstraction layer and benchmark system.
+---
 
-- <img src="https://github.com/mozilla-ai.png" alt="any-agent" width="18" /> [any-agent](https://github.com/mozilla-ai/any-agent) — ⭐ 1,127
-- <img src="https://github.com/mozilla-ai.png" alt="any-llm" width="18" /> [any-llm](https://github.com/mozilla-ai/any-llm) — ⭐ 1,824
-- <img src="https://github.com/anomalyco.png" alt="opencode-bench" width="18" /> [opencode-bench](https://github.com/anomalyco/opencode-bench) — ⭐ 60
-- <img src="https://github.com/EleutherAI.png" alt="lm-evaluation-harness" width="18" /> [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) — ⭐ 11,863
-- <img src="https://github.com/prometheus-eval.png" alt="Prometheus" width="18" /> [Prometheus](https://github.com/prometheus-eval/prometheus) — ⭐ 312
-- <img src="https://github.com/Hugging-Face-KREW.png" alt="Ko-AgentBench" width="18" /> [Ko-AgentBench](https://github.com/Hugging-Face-KREW/Ko-AgentBench) — ⭐ 65
-- <img src="https://github.com/microsoft.png" alt="agent-lightning" width="18" /> [agent-lightning](https://github.com/microsoft/agent-lightning) — ⭐ 15,544
-- <img src="https://github.com/team-attention.png" alt="hoyeon" width="18" /> [hoyeon](https://github.com/team-attention/hoyeon) — ⭐ 126
+## Level 3 — Team harness / executable SSOT / governance layer
+This is the level where LLM usage stops being just a personal tool habit and becomes a team operating system.
 
-## Level 4 — Memory, context, MCP, and plugin ecosystem
-These shape the real compatibility matrix beyond marketing checkboxes.
+This level includes:
+- shared skills / rules / commands
+- workflow packs
+- reproducible project conventions
+- review / approval / governance rules
+- executable documentation
+- what Toss describes as a **Harness** for raising team productivity floors
+
+A key idea here is **Executable SSOT**:
+- humans read it as a workflow or operating guide,
+- agents read it as executable instructions.
+
+Representative references:
+- Toss article — *Harness for team productivity*  
+  https://toss.tech/article/harness-for-team-productivity
+- <img src="https://github.com/first-fluke.png" alt="oh-my-agent" width="18" /> [oh-my-agent](https://github.com/first-fluke/oh-my-agent) — ⭐ 504
+- <img src="https://github.com/Joonghyun-Lee-Frieren.png" alt="oh-my-gemini-cli" width="18" /> [oh-my-gemini-cli](https://github.com/Joonghyun-Lee-Frieren/oh-my-gemini-cli) — ⭐ 78
+- <img src="https://github.com/affaan-m.png" alt="everything-claude-code" width="18" /> [everything-claude-code](https://github.com/affaan-m/everything-claude-code)
+- <img src="https://github.com/gotalab.png" alt="cc-sdd" width="18" /> [cc-sdd](https://github.com/gotalab/cc-sdd) — ⭐ 2,977
+
+---
+
+## Level 4 — Capability extension layer (MCP / memory / plugins / tools)
+These systems add capabilities to agents rather than replacing the base runtime.
+This is where context, memory, tools, MCP, plugins, and action-enabling systems live.
 
 - <img src="https://github.com/CaviraOSS.png" alt="OpenMemory" width="18" /> [OpenMemory](https://github.com/CaviraOSS/OpenMemory) — ⭐ 3,770
 - <img src="https://github.com/campfirein.png" alt="cipher" width="18" /> [cipher](https://github.com/campfirein/cipher) — ⭐ 3,611
@@ -54,9 +97,31 @@ These shape the real compatibility matrix beyond marketing checkboxes.
 - <img src="https://github.com/team-attention.png" alt="plugins-for-claude-natives" width="18" /> [plugins-for-claude-natives](https://github.com/team-attention/plugins-for-claude-natives) — ⭐ 691
 - <img src="https://github.com/microsoft.png" alt="mcp-for-beginners" width="18" /> [mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) — ⭐ 15,653
 - <img src="https://github.com/IBM.png" alt="mcp-context-forge" width="18" /> [mcp-context-forge](https://github.com/IBM/mcp-context-forge) — ⭐ 3,479
+- <img src="https://github.com/ComposioHQ.png" alt="Composio" width="18" /> [Composio](https://github.com/ComposioHQ/composio) — ⭐ 27,536
+- <img src="https://github.com/withoneai.png" alt="Pica" width="18" /> [Pica](https://github.com/withoneai/pica) — ⭐ 1,459
+- <img src="https://github.com/modelcontextprotocol.png" alt="MCP Servers" width="18" /> [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) — ⭐ 82,224
 
-## Level 5 — Data hub, RAG, and evidence infrastructure
+---
+
+## Level 5 — Research / evaluation / benchmark / autoresearch patterns
+These are especially useful when designing clawfit's abstraction layer and long-term research model.
+They include evaluation harnesses, benchmark references, and autonomous research loops.
+
+- <img src="https://github.com/karpathy.png" alt="autoresearch" width="18" /> [autoresearch](https://github.com/karpathy/autoresearch) — ⭐ 57,421
+- <img src="https://github.com/mozilla-ai.png" alt="any-agent" width="18" /> [any-agent](https://github.com/mozilla-ai/any-agent) — ⭐ 1,127
+- <img src="https://github.com/mozilla-ai.png" alt="any-llm" width="18" /> [any-llm](https://github.com/mozilla-ai/any-llm) — ⭐ 1,824
+- <img src="https://github.com/anomalyco.png" alt="opencode-bench" width="18" /> [opencode-bench](https://github.com/anomalyco/opencode-bench) — ⭐ 60
+- <img src="https://github.com/EleutherAI.png" alt="lm-evaluation-harness" width="18" /> [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) — ⭐ 11,863
+- <img src="https://github.com/prometheus-eval.png" alt="Prometheus" width="18" /> [Prometheus](https://github.com/prometheus-eval/prometheus) — ⭐ 312
+- <img src="https://github.com/Hugging-Face-KREW.png" alt="Ko-AgentBench" width="18" /> [Ko-AgentBench](https://github.com/Hugging-Face-KREW/Ko-AgentBench) — ⭐ 65
+- <img src="https://github.com/microsoft.png" alt="agent-lightning" width="18" /> [agent-lightning](https://github.com/microsoft/agent-lightning) — ⭐ 15,544
+- <img src="https://github.com/team-attention.png" alt="hoyeon" width="18" /> [hoyeon](https://github.com/team-attention/hoyeon) — ⭐ 126
+
+---
+
+## Level 6 — Data / evidence / knowledge infrastructure
 These references are useful when clawfit evolves into an evidence hub and simulation system.
+They help answer how agents access, structure, retrieve, and reason over external knowledge.
 
 - <img src="https://github.com/HKUDS.png" alt="LightRAG" width="18" /> [LightRAG](https://github.com/HKUDS/LightRAG) — ⭐ 30,655
 - <img src="https://github.com/HKUDS.png" alt="RAG-Anything" width="18" /> [RAG-Anything](https://github.com/HKUDS/RAG-Anything) — ⭐ 14,651
@@ -65,14 +130,19 @@ These references are useful when clawfit evolves into an evidence hub and simula
 - <img src="https://github.com/VectifyAI.png" alt="PageIndex" width="18" /> [PageIndex](https://github.com/VectifyAI/PageIndex) — ⭐ 23,023
 - <img src="https://github.com/opendatalab.png" alt="MinerU" width="18" /> [MinerU](https://github.com/opendatalab/MinerU) — ⭐ 57,333
 
-## Level 6 — Productivity, input, and human-agent interface tools
-These are not always the main coding engine, but they strongly influence practical developer productivity.
+---
+
+## Level 7 — Human interface / voice / input-output layer
+These are not always the main coding engine, but they strongly influence how humans actually operate agents.
+This includes voice input, talk mode, speech interruption, remote relays, terminals, and interaction loops.
 
 - Superwhisper — https://superwhisper.com/
 - <img src="https://github.com/channprj.png" alt="claude-code-voice" width="18" /> [claude-code-voice](https://github.com/channprj/claude-code-voice) — ⭐ 8
 - <img src="https://github.com/hada0127.png" alt="cc-telegram" width="18" /> [cc-telegram](https://github.com/hada0127/cc-telegram) — ⭐ 15
 - <img src="https://github.com/Q00.png" alt="ouroboros" width="18" /> [ouroboros](https://github.com/Q00/ouroboros) — ⭐ 1,853
 - OpenClaw talkmode improvement reference — https://github.com/openclaw/openclaw/pull/53553#issuecomment-4124082023
+
+---
 
 ## Vibe coding topic scan (2026-03-27)
 The GitHub topic `vibe-coding` is broad and noisy. It includes at least five different subfamilies that clawfit should not collapse into one bucket.
@@ -131,7 +201,7 @@ These are important evidence sources for behavior, workflow norms, onboarding, a
 - vibe-vibe — systematic learning/tutorial resource  
   https://github.com/datawhalechina/vibe-vibe
 
-**clawfit mapping:** supporting references; usually Level 2, 3, or 6 context rather than Level 1 comparison targets.
+**clawfit mapping:** supporting references; usually Level 2, 3, or 7 context rather than Level 1 comparison targets.
 
 ### E. Platform / SDK layer
 These help developers build their own vibe-coding products rather than directly serving as end-user comparison targets.
@@ -144,9 +214,9 @@ These help developers build their own vibe-coding products rather than directly 
 **clawfit mapping:** Level 3 or Level 4 depending on whether the emphasis is architecture or capability extension.
 
 ## Meta-wrapper / harness-enhancement scan (2026-03-27)
-A distinct pattern is emerging around repositories such as `oh-my-openagent`, `oh-my-claudecode`, `SuperClaude Framework`, routers, and other wrapper-style projects.
+A distinct pattern is emerging around repositories such as `oh-my-openagent`, `oh-my-claudecode`, `oh-my-codex`, `oh-my-gemini-cli`, `oh-my-agent`, `SuperClaude Framework`, routers, and other wrapper-style projects.
 
-These projects are not usually new base agents from scratch. Instead, they sit **on top of existing agents** (Claude Code, OpenCode, Codex, etc.) and try to transform them through:
+These projects are not usually new base agents from scratch. Instead, they sit **on top of existing agents** (Claude Code, OpenCode, Codex, Gemini CLI, etc.) and try to transform them through:
 - better defaults
 - orchestration layers
 - curated skills / rules / prompts
@@ -154,6 +224,7 @@ These projects are not usually new base agents from scratch. Instead, they sit *
 - model routing
 - compatibility layers
 - project-level workflow conventions
+- team productivity harnesses
 
 This means clawfit should treat them as a separate ecosystem pattern: **meta wrappers / harness enhancers / meta transformation layers**.
 
@@ -164,6 +235,12 @@ These repos explicitly package an opinionated upgraded experience around an exis
   https://github.com/code-yeongyu/oh-my-openagent
 - oh-my-claudecode — Claude Code oriented orchestration wrapper  
   https://github.com/yeachan-heo/oh-my-claudecode
+- oh-my-codex — Codex enhancement / hooks / HUD / agent team layer  
+  https://github.com/Yeachan-Heo/oh-my-codex
+- oh-my-gemini-cli — context-engineering-powered workflow pack for Gemini CLI  
+  https://github.com/Joonghyun-Lee-Frieren/oh-my-gemini-cli
+- oh-my-agent — portable multi-agent harness across multiple base runtimes  
+  https://github.com/first-fluke/oh-my-agent
 - oh-my-opencode — OpenCode enhancement layer / curated tools / compatibility layer  
   https://github.com/opensoft/oh-my-opencode
 
@@ -177,6 +254,9 @@ The direct combined query was noisy, but adjacent narrower searches revealed a w
 
 Representative signals found:
 - `yeachan-heo/oh-my-claudecode` — strong direct hit for Claude Code meta-orchestration
+- `Yeachan-Heo/oh-my-codex` — explicit Codex-side expansion of the same pattern
+- `Joonghyun-Lee-Frieren/oh-my-gemini-cli` — Gemini CLI adaptation of the same packaging logic
+- `first-fluke/oh-my-agent` — runtime-agnostic portable harness form
 - `code-yeongyu/oh-my-openagent` — direct hit and renamed lineage from `oh-my-opencode`
 - `opensoft/oh-my-opencode` — OpenCode enhancement / compatibility layer
 - `musistudio/claude-code-router` — routing wrapper around Claude Code
@@ -202,8 +282,9 @@ These repos focus on shaping how an existing base agent behaves, routes, or oper
 ### C. Why this matters to clawfit
 This pattern is strategically important because it indicates that users do not just pick a base agent anymore.
 They increasingly pick:
-1. a **base runtime** (Claude Code / OpenCode / Codex / etc.)
+1. a **base runtime** (Claude Code / OpenCode / Codex / Gemini CLI / etc.)
 2. a **meta wrapper / enhancement layer** on top of it
+3. often a **team harness / executable SSOT layer** to standardize behavior across an organization
 
 That creates a second-order choice architecture.
 
@@ -213,11 +294,12 @@ In other words, the market is shifting from:
 toward:
 - "Which base agent should I use?"
 - "Which enhancement layer / harness / wrapper should I add on top?"
+- "How do I package that into a reproducible team workflow?"
 
 ### D. clawfit mapping
 These wrapper-style projects usually belong near **Level 2** because they shape orchestration and workflow.
 However, some of them also overlap with:
-- **Level 3** when they function like an architecture/framework reference
+- **Level 3** when they function like a team productivity harness or executable SSOT
 - **Level 4** when they add MCP/context/memory/plugin capability layers
 
 ### E. Meta-wrapper scan takeaway
@@ -312,30 +394,8 @@ For clawfit, newly discovered repos in this area should be reclassified by askin
 
 This prevents `agent tool` from collapsing platforms, wrappers, MCP servers, catalogs, and orchestration systems into one bucket.
 
-## Provisional classification guidance for clawfit
-When a new repo appears in the vibe-coding ecosystem, classify it by asking:
-
-1. Is this a **primary product choice** for users?
-   - Then consider Level 1.
-2. Is it mainly a **wrapper, orchestrator, or multi-agent shell**?
-   - Then consider Level 2.
-3. Is it mainly an **architecture / benchmark / platform abstraction**?
-   - Then consider Level 3.
-4. Is it mainly **memory, MCP, retrieval, context, or plugin support**?
-   - Then consider Level 4.
-5. Is it mainly **evidence/data infrastructure**?
-   - Then consider Level 5.
-6. Is it mainly **interface / productivity / input-layer support**?
-   - Then consider Level 6.
-
-Important: **do not treat the GitHub topic `vibe-coding` itself as a category system.**
-It is only a discovery signal. clawfit should reclassify discovered repos using its own reference-level model.
-
-## Research-loop signal note
-`karpathy/autoresearch` is an especially important reference because it is not merely another coding assistant. It represents a **research-native autonomous loop**: modify code, run a bounded experiment, evaluate, keep/discard, and repeat. This makes it relevant to clawfit not only as a tool entry, but as an origin point for a broader autoresearch pattern and its growing fork ecosystem.
-
 ## Notes
-- Level 1 should become clawfit's first public comparison matrix.
-- Levels 2–6 provide the surrounding ecosystem needed for a realistic recommendation engine.
+- Level 1 is the base runtime / primary product surface.
+- Levels 2 and 3 are increasingly important because the market is clearly developing a harness layer above base agents.
 - Feature claims should be stored with evidence links and verification dates, not just yes/no flags.
-- The GitHub topic `vibe-coding` is useful for discovery, but not sufficient as a canonical taxonomy.
+- Topics like `vibe-coding` and `agent-tool` are useful for discovery, but not sufficient as canonical taxonomy.
