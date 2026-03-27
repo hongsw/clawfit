@@ -143,6 +143,79 @@ These help developers build their own vibe-coding products rather than directly 
 
 **clawfit mapping:** Level 3 or Level 4 depending on whether the emphasis is architecture or capability extension.
 
+## Meta-wrapper / harness-enhancement scan (2026-03-27)
+A distinct pattern is emerging around repositories such as `oh-my-openagent`, `oh-my-claudecode`, `SuperClaude Framework`, routers, and other wrapper-style projects.
+
+These projects are not usually new base agents from scratch. Instead, they sit **on top of existing agents** (Claude Code, OpenCode, Codex, etc.) and try to transform them through:
+- better defaults
+- orchestration layers
+- curated skills / rules / prompts
+- multi-agent coordination
+- model routing
+- compatibility layers
+- project-level workflow conventions
+
+This means clawfit should treat them as a separate ecosystem pattern: **meta wrappers / harness enhancers / meta transformation layers**.
+
+### A. "Oh-my-*" style wrapper family
+These repos explicitly package an opinionated upgraded experience around an existing agent stack.
+
+- oh-my-openagent — agent harness / meta wrapper / orchestration layer  
+  https://github.com/code-yeongyu/oh-my-openagent
+- oh-my-claudecode — Claude Code oriented orchestration wrapper  
+  https://github.com/Yeachan-Heo/oh-my-claudecode
+- oh-my-opencode — OpenCode enhancement layer / curated tools / compatibility layer  
+  https://github.com/opensoft/oh-my-opencode
+
+**signal:** the naming pattern itself suggests an emerging family of "upgrade the base agent" projects rather than entirely new runtimes.
+
+### B. Framework / router / optimization layer
+These repos focus on shaping how an existing base agent behaves, routes, or operates.
+
+- SuperClaude Framework — framework and behavior layer for Claude-centric workflows  
+  https://github.com/SuperClaude-Org/SuperClaude_Framework
+- claude-code-router — routing/infrastructure wrapper around Claude Code  
+  https://github.com/musistudio/claude-code-router
+- everything-claude-code — skill/rules/agent harness optimization system  
+  https://github.com/affaan-m/everything-claude-code
+
+**signal:** these are not merely prompts, but meta-level attempts to standardize or transform the operating envelope of a popular agent.
+
+### C. Why this matters to clawfit
+This pattern is strategically important because it indicates that users do not just pick a base agent anymore.
+They increasingly pick:
+1. a **base runtime** (Claude Code / OpenCode / Codex / etc.)
+2. a **meta wrapper / enhancement layer** on top of it
+
+That creates a second-order choice architecture.
+
+In other words, the market is shifting from:
+- "Which agent should I use?"
+
+toward:
+- "Which base agent should I use?"
+- "Which enhancement layer / harness / wrapper should I add on top?"
+
+### D. clawfit mapping
+These wrapper-style projects usually belong near **Level 2** because they shape orchestration and workflow.
+However, some of them also overlap with:
+- **Level 3** when they function like an architecture/framework reference
+- **Level 4** when they add MCP/context/memory/plugin capability layers
+
+### E. Meta-wrapper scan takeaway
+The `oh-my-open*` family and similar projects should be recognized as a distinct pattern:
+
+**meta transformation of existing agent systems**.
+
+This is not the same as:
+- building a new base agent
+- building a tool for agents
+- building a catalog of agents
+
+Instead, it is about **repackaging, upgrading, routing, and orchestrating existing agents into a more opinionated operating system**.
+
+That makes it an important independent axis in clawfit's ecosystem map.
+
 ## Agent tool scan (2026-03-27)
 The GitHub topic/query space around `agent-tool`, `agent tools`, and `agent toolkit` is also noisy and should not be used as a canonical taxonomy.
 
