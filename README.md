@@ -231,16 +231,19 @@ Important repo documents:
 
 ### Reference levels overview
 
+The current map uses a **7-layer structure**. These are best read as ecosystem layers/lenses, not a sequential maturity ladder.
+
 | Level | Focus |
 |---|---|
-| 1 | Core comparison targets |
-| 2 | Workflow wrappers and orchestration tools |
-| 3 | Architecture and benchmark references |
-| 4 | Memory, context, MCP, and plugin ecosystem |
-| 5 | Data hub, RAG, and evidence infrastructure |
-| 6 | Productivity, input, and human-agent interface tools |
+| 1 | Base runtimes / primary agent surfaces |
+| 2 | Meta wrappers / harnesses / orchestration layers |
+| 3 | Team harness / executable SSOT / governance layer |
+| 4 | Capability extension layer (MCP / memory / plugins / tools) |
+| 5 | Research / evaluation / benchmark / autoresearch patterns |
+| 6 | Data / evidence / knowledge infrastructure |
+| 7 | Human interface / voice / input-output layer |
 
-See full details in [`docs/reference-levels.md`](docs/reference-levels.md).
+See full details in [`docs/reference-levels.md`](docs/reference-levels.md) and the overview hub at [`docs/pages/ecosystem-overview.md`](docs/pages/ecosystem-overview.md).
 
 ---
 
