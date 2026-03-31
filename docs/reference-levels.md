@@ -2,6 +2,26 @@
 
 This document organizes external tools and projects that clawfit should compare against, learn from, or use as supporting references.
 
+## Role of this document
+This file is the **canonical ecosystem map** for clawfit's current reference taxonomy.
+
+It is meant to answer questions like:
+- what kind of thing is this repo/product/project?
+- which major layer of the ecosystem does it belong to?
+- what neighboring systems should it be compared against?
+
+It is **not** the adoption/maturity ladder (that lives separately), and it is also **not** the raw discovery log.
+
+### Current scope
+- primary focus: AI coding agents, LLM agent runtimes, harnesses, workflows, capabilities, interfaces, and closely related infrastructure
+- includes: open-source projects, references, and selected commercial products when they are structurally important to the map
+- excludes for now: a full standalone ontology of LLM models/providers themselves (those may need a separate map/registry)
+- region/language: global by default; local ecosystem items may still appear when strategically relevant
+
+### Important note
+The numbered levels below should be read as **ecosystem layers / lenses**, not as a sequential maturity ladder.
+Date-stamped scans and discovery notes support this map, but they should increasingly live in separate scan documents over time.
+
 The older 1–6 structure was useful, but the ecosystem has shifted.
 In particular, recent patterns such as:
 - `oh-my-openagent`
