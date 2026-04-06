@@ -38,6 +38,21 @@ def _cmd_list(args: argparse.Namespace) -> None:
         print(f"  {item.id:24s} {item.name}")
 
 
+def _cmd_diagnose(args: argparse.Namespace) -> None:
+    import json as _json
+    from .diagnose import run_diagnosis, print_recommendation
+
+    prefilled = _json.loads(args.answers) if args.answers else None
+    interactive = prefilled is None or len(prefilled) < 10
+
+    result = run_diagnosis(answers=prefilled, interactive=interactive, top_per_layer=args.top)
+
+    if args.output_json:
+        print(_json.dumps(result, indent=2))
+    else:
+        print_recommendation(result)
+
+
 def _cmd_profile(args: argparse.Namespace) -> None:
     from .loader import load_agents, load_llms, load_hardware
 
@@ -81,6 +96,16 @@ def build_parser() -> argparse.ArgumentParser:
     ls = sub.add_parser("list", help="List registry entries")
     ls.add_argument("registry", choices=["agents", "llms", "hardware"])
     ls.set_defaults(func=_cmd_list)
+
+    # diagnose
+    diag = sub.add_parser("diagnose", help="Interactive org-fit questionnaire → tool stack recommendation")
+    diag.add_argument(
+        "--answers", metavar="JSON", default=None,
+        help='Pre-filled answers as JSON, e.g. \'{"team_size":"solo","primary_task":"code-gen"}\'',
+    )
+    diag.add_argument("--top", type=int, default=3, help="Tools per layer (default 3)")
+    diag.add_argument("--json", action="store_true", dest="output_json", help="Output raw JSON")
+    diag.set_defaults(func=_cmd_diagnose)
 
     # profile
     prof = sub.add_parser("profile", help="Show registry summary")

@@ -1,0 +1,154 @@
+{
+  "version": "1.0",
+  "description": "Organization-level diagnostic questionnaire. Answers map to org_profile fields used by org_scorer.",
+  "questions": [
+    {
+      "id": "team_size",
+      "phase": "context",
+      "text": "How many people will use this AI tooling?",
+      "short": "Team size",
+      "type": "choice",
+      "options": [
+        {
+          "label": "Just me",
+          "value": "solo",
+          "signals": {"team_size": 1, "statefulness": "stateless", "governance_need": false, "layer_weights": {"L1": 0.4, "L2": 0.3, "L3": 0.0}}
+        },
+        {
+          "label": "2–5 people (small team)",
+          "value": "small",
+          "signals": {"team_size": 4, "statefulness": "session", "governance_need": false, "layer_weights": {"L1": 0.3, "L2": 0.4, "L3": 0.1}}
+        },
+        {
+          "label": "6–20 people (mid-size team)",
+          "value": "mid",
+          "signals": {"team_size": 12, "statefulness": "persistent", "governance_need": true, "layer_weights": {"L1": 0.2, "L2": 0.3, "L3": 0.3}}
+        },
+        {
+          "label": "20+ people (org-wide)",
+          "value": "large",
+          "signals": {"team_size": 40, "statefulness": "persistent", "governance_need": true, "layer_weights": {"L1": 0.1, "L2": 0.2, "L3": 0.5}}
+        }
+      ]
+    },
+    {
+      "id": "primary_role",
+      "phase": "context",
+      "text": "What is the primary role of the people using this?",
+      "short": "Role",
+      "type": "choice",
+      "options": [
+        {"label": "Software developer / engineer", "value": "developer", "signals": {"roles": ["developer"], "task_hint": "code-gen"}},
+        {"label": "Researcher / analyst", "value": "researcher", "signals": {"roles": ["researcher"], "task_hint": "research"}},
+        {"label": "Product manager / designer", "value": "pm", "signals": {"roles": ["pm"], "task_hint": "summarization"}},
+        {"label": "Executive / decision maker", "value": "exec", "signals": {"roles": ["exec"], "task_hint": "qa"}},
+        {"label": "Mixed roles", "value": "mixed", "signals": {"roles": ["developer", "researcher", "pm"], "task_hint": null}}
+      ]
+    },
+    {
+      "id": "current_ai_usage",
+      "phase": "context",
+      "text": "How does your team currently use AI?",
+      "short": "Current AI usage",
+      "type": "choice",
+      "options": [
+        {"label": "Rarely or never", "value": "none", "signals": {"maturity_stage": 1}},
+        {"label": "Chat interfaces (ChatGPT, Claude.ai)", "value": "chat", "signals": {"maturity_stage": 2}},
+        {"label": "AI coding assistants (Copilot, Cursor)", "value": "coding_assistant", "signals": {"maturity_stage": 3}},
+        {"label": "AI coding agents with tools (Claude Code, Aider)", "value": "coding_agent", "signals": {"maturity_stage": 4}},
+        {"label": "Multi-agent workflows", "value": "multi_agent", "signals": {"maturity_stage": 6}},
+        {"label": "Building or deploying AI systems for others", "value": "building", "signals": {"maturity_stage": 8}}
+      ]
+    },
+    {
+      "id": "primary_task",
+      "phase": "usecase",
+      "text": "What is the main thing you want AI to do?",
+      "short": "Primary task",
+      "type": "choice",
+      "options": [
+        {"label": "Write or review code", "value": "code-gen", "signals": {"task": "code-gen"}},
+        {"label": "Research and summarize information", "value": "research", "signals": {"task": "research"}},
+        {"label": "Answer questions from documents / knowledge base", "value": "qa", "signals": {"task": "qa"}},
+        {"label": "Classify or route data automatically", "value": "classification", "signals": {"task": "classification"}},
+        {"label": "Analyze data and produce reports", "value": "data-analysis", "signals": {"task": "data-analysis"}},
+        {"label": "Summarize content at scale", "value": "summarization", "signals": {"task": "summarization"}}
+      ]
+    },
+    {
+      "id": "output_destination",
+      "phase": "usecase",
+      "text": "Who or what does the AI output go to?",
+      "short": "Output destination",
+      "type": "choice",
+      "options": [
+        {"label": "Just me, for my own work", "value": "personal", "signals": {"sharing": false, "layer_weights": {"L3": 0.0}}},
+        {"label": "My immediate team (shared workflow)", "value": "team", "signals": {"sharing": true, "layer_weights": {"L2": 0.2, "L3": 0.2}}},
+        {"label": "An internal product or system", "value": "internal_product", "signals": {"sharing": true, "layer_weights": {"L1": 0.2, "L2": 0.2, "L3": 0.2}}},
+        {"label": "External customers or the public", "value": "external", "signals": {"sharing": true, "layer_weights": {"L1": 0.3, "L2": 0.1, "L3": 0.2, "L6": 0.1}}}
+      ]
+    },
+    {
+      "id": "frequency",
+      "phase": "usecase",
+      "text": "How often will the AI run?",
+      "short": "Run frequency",
+      "type": "choice",
+      "options": [
+        {"label": "Occasionally (ad hoc, when needed)", "value": "occasional", "signals": {"latency": "high", "cost_priority": "low"}},
+        {"label": "Daily, during work hours", "value": "daily", "signals": {"latency": "medium", "cost_priority": "medium"}},
+        {"label": "Continuously or near-real-time", "value": "continuous", "signals": {"latency": "low", "cost_priority": "high"}}
+      ]
+    },
+    {
+      "id": "data_sensitivity",
+      "phase": "constraints",
+      "text": "How sensitive is the data the AI will process?",
+      "short": "Data sensitivity",
+      "type": "choice",
+      "options": [
+        {"label": "Public data — no restrictions", "value": "public", "signals": {"network": "online", "offline_required": false}},
+        {"label": "Internal data — cloud OK with DPA", "value": "internal", "signals": {"network": "online", "offline_required": false}},
+        {"label": "Confidential — must stay on-prem or local", "value": "confidential", "signals": {"network": "offline", "offline_required": true, "hardware_hint": "on-prem"}},
+        {"label": "Regulated / air-gapped required", "value": "regulated", "signals": {"network": "offline", "offline_required": true, "hardware_hint": "on-prem"}}
+      ]
+    },
+    {
+      "id": "monthly_budget",
+      "phase": "constraints",
+      "text": "What is your monthly AI tooling budget per person?",
+      "short": "Budget / person / month",
+      "type": "choice",
+      "options": [
+        {"label": "Free only", "value": "free", "signals": {"budget_tier": "free", "budget": 0.0, "hardware_hint": "edge"}},
+        {"label": "Up to $50 / person", "value": "low", "signals": {"budget_tier": "low", "budget": 0.005}},
+        {"label": "$50–$500 / person", "value": "medium", "signals": {"budget_tier": "medium", "budget": 0.01}},
+        {"label": "$500+ / person or enterprise contract", "value": "high", "signals": {"budget_tier": "high", "budget": 0.05}}
+      ]
+    },
+    {
+      "id": "governance_need",
+      "phase": "constraints",
+      "text": "Do you need governance, audit trails, or policy enforcement for AI usage?",
+      "short": "Governance",
+      "type": "choice",
+      "options": [
+        {"label": "No — individual discretion is fine", "value": "none", "signals": {"governance_need": false, "layer_weights": {"L3": 0.0}}},
+        {"label": "Soft — shared norms or conventions", "value": "soft", "signals": {"governance_need": false, "layer_weights": {"L2": 0.1, "L3": 0.1}}},
+        {"label": "Hard — enforced policies, audit logs required", "value": "hard", "signals": {"governance_need": true, "layer_weights": {"L3": 0.4}}}
+      ]
+    },
+    {
+      "id": "growth_horizon",
+      "phase": "constraints",
+      "text": "How do you expect your AI usage to evolve in the next 12 months?",
+      "short": "Growth horizon",
+      "type": "choice",
+      "options": [
+        {"label": "Stay about the same", "value": "stable", "signals": {"future_maturity_delta": 0}},
+        {"label": "Expand to more people or tasks", "value": "expand", "signals": {"future_maturity_delta": 1}},
+        {"label": "Significantly deepen — build custom agents or systems", "value": "deepen", "signals": {"future_maturity_delta": 2}}
+      ]
+    }
+  ]
+}
