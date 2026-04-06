@@ -262,24 +262,51 @@ clawfit/
 clawfit is evolving beyond a narrow recommender into a broader comparison framework for AI tooling.
 
 Important repo documents:
-- [`docs/reference-levels.md`](docs/reference-levels.md) — classification of comparison targets and ecosystem layers
+- [`docs/reference-levels.md`](docs/reference-levels.md) — canonical tool list organized by ecosystem layer
+- **[`docs/pages/ecosystem-axes.md`](docs/pages/ecosystem-axes.md) — classification axes: how and why each level is defined, sub-axes, boundary rules, and worked examples**
 - `data/tools_registry.json` — initial structured registry
 - `data/feature_matrix.json` — early feature verification matrix
 - `data/feature_matrix.schema.json` — schema for feature data
 
 ### Reference levels overview
 
-The current map uses a **7-layer structure**. These are best read as ecosystem layers/lenses, not a sequential maturity ladder.
+The current map uses a **7-layer structure** with sub-axes. These are ecosystem layers/lenses, not a sequential maturity ladder.
 
-| Level | Focus |
-|---|---|
-| 1 | Base runtimes / primary agent surfaces |
-| 2 | Meta wrappers / harnesses / orchestration layers |
-| 3 | Team harness / executable SSOT / governance layer |
-| 4 | Capability extension layer (MCP / memory / plugins / tools) |
-| 5 | Research / evaluation / benchmark / autoresearch patterns |
-| 6 | Data / evidence / knowledge infrastructure |
-| 7 | Human interface / voice / input-output layer |
+| Level | Focus | Sub-axes |
+|---|---|---|
+| 1 | Base runtimes / primary agent surfaces | interface type · model coupling · autonomy mode · task domain |
+| 2 | Meta wrappers / harnesses / orchestration layers | orchestration pattern · dependency scope · reliability mechanism |
+| 3 | Team harness / executable SSOT / governance layer | SSOT type (workflow / design / git-native / cross-platform) · governance authority |
+| 4a | Memory / persistent context | memory scope · storage backend · integration mechanism |
+| 4b | Skill packs & skill managers | skill type · distribution · activation · scope |
+| 4c | Tool-use / action infrastructure | infrastructure type · safety model · governance |
+| 5 | Research / evaluation / benchmark / autoresearch | evaluation target · research mode · output format |
+| 6 | Data / evidence / knowledge infrastructure | RAG pattern · knowledge scope · integration |
+| 7 | Human interface / voice / computer use | modality · execution scope · inference location |
+
+**Full classification logic** — defining questions, boundary rules, and worked examples for each level:
+→ [`docs/pages/ecosystem-axes.md`](docs/pages/ecosystem-axes.md)
+
+#### Key boundary rules at a glance
+
+- **L1 vs L2:** does the tool require a separate base agent underneath? Yes → L2. No → L1.
+- **L3 vs L4b:** does the artifact govern project-wide agent behavior persistently? Yes → L3 (SSOT). No → L4b (skill).
+- **L4b vs L4c:** does it modify agent *behavior* via prompt convention, or does it mediate *tool calls* to external systems? Behavior → L4b. Tool calls → L4c.
+- **L4a vs L6:** is this agent-facing memory (reads/writes during a session)? Yes → L4a. Is this knowledge infrastructure (pipelines, indexes, extraction)? Yes → L6.
+- **L7 + L1 dual:** tools that operate a UI layer AND are self-contained runtimes get both (L1/L7 boundary collapse pattern).
+
+#### Level 3 SSOT sub-types (as of 2026-04)
+
+| File | Function |
+|------|---------|
+| `CLAUDE.md` | Workflow rules — how the agent executes tasks |
+| `AGENTS.md` | Cross-platform governance — multi-runtime agent specification |
+| `DESIGN.md` | Visual output norms — design system constraints for UI generation |
+| `gitagent` | Git-native distribution — agent definition versioned in Git |
+
+#### Level 4 split
+
+Level 4 has fragmented into three measurably distinct subtypes. A tool is **4a** if it persists context; **4b** if it adds an invocable skill; **4c** if it mediates external system connections. See [`ecosystem-axes.md`](docs/pages/ecosystem-axes.md) for the full decision tree.
 
 See full details in [`docs/reference-levels.md`](docs/reference-levels.md) · [한국어 맵](docs/reference-levels.ko.md) and the overview hub at [`docs/pages/ecosystem-overview.md`](docs/pages/ecosystem-overview.md).
 
