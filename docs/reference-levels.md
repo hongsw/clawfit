@@ -123,6 +123,7 @@ Representative references:
 - <img src="https://github.com/gotalab.png" alt="cc-sdd" width="18" /> [cc-sdd](https://github.com/gotalab/cc-sdd) — ⭐ 3,026
 - <img src="https://github.com/open-gitagent.png" alt="gitagent" width="18" /> [gitagent](https://github.com/open-gitagent/gitagent) — Git-native open standard for agent definition and lifecycle management; `git clone` = agent instantiation
 - **AGENTS.md** — OpenAI's cross-platform agent specification format; part of Agentic AI Foundation (Microsoft + Google + OpenAI + Anthropic + Linux Foundation); competes with / complements CLAUDE.md as executable SSOT
+- <img src="https://github.com/VoltAgent.png" alt="awesome-design-md" width="18" /> [awesome-design-md](https://github.com/VoltAgent/awesome-design-md) — ⭐ 15,900 🔥 55+ DESIGN.md files extracted from popular sites; extends SSOT pattern into visual/UI domain — agents read design system rules before generating UI
 
 ---
 
@@ -156,8 +157,10 @@ Level 4 is splitting into three observable subtypes:
 - <img src="https://github.com/pbakaus.png" alt="Impeccable" width="18" /> [Impeccable](https://github.com/pbakaus/impeccable) — 20 design commands across 7 domains (layout, spacing, color, typography…) for Claude Code + Cursor
 - <img src="https://github.com/NomaDamas.png" alt="K-Skill" width="18" /> [K-Skill](https://github.com/NomaDamas/k-skill) — Korean-localized skill pack (SRT, Seoul subway, KBO, lottery)
 - <img src="https://github.com/team-attention.png" alt="plugins-for-claude-natives" width="18" /> [plugins-for-claude-natives](https://github.com/team-attention/plugins-for-claude-natives) — ⭐ 722
+- <img src="https://github.com/JuliusBrussee.png" alt="caveman" width="18" /> [caveman](https://github.com/JuliusBrussee/caveman) — ⭐ 1,700 🔥 output token compression skill (65–75% prose reduction); three intensity levels (Lite/Full/Ultra); install via `npx skills add`
 
 ### 4c. Tool-use / action infrastructure
+- <img src="https://github.com/rtk-ai.png" alt="rtk" width="18" /> [rtk](https://github.com/rtk-ai/rtk) — Rust CLI token proxy; sits between agent and shell, compresses git/ls/test output 60–90% before the LLM reads it; zero-dependency single binary
 - <img src="https://github.com/millionco.png" alt="Expect" width="18" /> [Expect](https://github.com/millionco/expect) — CLI that auto-generates and executes browser-based test plans from code changes (Claude/Codex backend)
 - <img src="https://github.com/oraios.png" alt="serena" width="18" /> [serena](https://github.com/oraios/serena) — ⭐ 22,504
 - <img src="https://github.com/modelcontextprotocol.png" alt="MCP Servers" width="18" /> [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) — ⭐ 83,039 *(governance: donated to Agentic AI Foundation Dec 2025; 97M monthly SDK downloads)*
@@ -182,6 +185,7 @@ They include evaluation harnesses, benchmark references, autonomous research loo
 - <img src="https://github.com/Hugging-Face-KREW.png" alt="Ko-AgentBench" width="18" /> [Ko-AgentBench](https://github.com/Hugging-Face-KREW/Ko-AgentBench) — ⭐ 65
 - <img src="https://github.com/microsoft.png" alt="agent-lightning" width="18" /> [agent-lightning](https://github.com/microsoft/agent-lightning) — ⭐ 16,545
 - <img src="https://github.com/team-attention.png" alt="hoyeon" width="18" /> [hoyeon](https://github.com/team-attention/hoyeon) — ⭐ 131
+- <img src="https://github.com/HudsonGri.png" alt="mdarena" width="18" /> [mdarena](https://github.com/HudsonGri/mdarena) — empirical benchmarking of CLAUDE.md instruction variants; mines merged PRs, runs agent with/without instruction files, grades by test pass rate + diff overlap; SWE-bench-compatible export
 
 ---
 

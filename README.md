@@ -39,13 +39,16 @@ The ecosystem is moving fast. Here are the signals worth watching this week:
 
 | Signal | Why it matters | Level |
 |--------|---------------|-------|
-| **[claude-mem](https://github.com/thedotmack/claude-mem) ⭐45k** | Cross-session memory for Claude Code via hooks + SQLite + Chroma. Install with `npx claude-mem install`. | L4 Memory |
+| **[claude-mem](https://github.com/thedotmack/claude-mem) ⭐45k** | Cross-session memory for Claude Code via hooks + SQLite + Chroma. Install with `npx claude-mem install`. | L4a Memory |
 | **[deepagents](https://github.com/langchain-ai/deepagents) ⭐19k** | LangChain's batteries-included open-source agent harness. Direct competitor to Claude Code CLI. | L1/L2 |
 | **Agentic AI Foundation** | MCP donated to Linux Foundation consortium (Microsoft + Google + OpenAI + Anthropic). 97M monthly SDK downloads. OpenAI's AGENTS.md is a new cross-platform spec. | Governance |
 | **[oh-my-claudecode](https://github.com/yeachan-heo/oh-my-claudecode) ⭐24k** | Star count doubled — multi-agent Claude Code orchestration gaining serious traction. | L2 |
 | **[everything-claude-code](https://github.com/affaan-m/everything-claude-code) ⭐140k** | Largest known Claude Code resource hub. | L3 |
 | **Claude Computer Use** | First-party desktop control (mouse/keyboard/screen) via Claude Code Desktop + Cowork. Collapses L1/L7 boundary. | L1/L7 |
-| **Skill layer maturing** | [Chops](https://github.com/Shpigford/chops), [skills-cleaner](https://github.com/amebahead/skills-cleaner), [Impeccable](https://github.com/pbakaus/impeccable), [K-Skill](https://github.com/NomaDamas/k-skill) — all in the same week. L4 is fragmenting into skill managers / domain packs / tool infra. | L4 |
+| **Skill layer maturing** | [Chops](https://github.com/Shpigford/chops), [skills-cleaner](https://github.com/amebahead/skills-cleaner), [caveman](https://github.com/JuliusBrussee/caveman) ⭐1.7k (716 HN pts) — token compression as a skill. L4 fragmenting into skill managers / domain packs / tool infra. | L4b |
+| **[awesome-design-md](https://github.com/VoltAgent/awesome-design-md) ⭐15.9k** | 55+ DESIGN.md files for AI agents — extends SSOT pattern to visual/UI design. New L3 sub-pattern alongside CLAUDE.md and AGENTS.md. | L3 |
+| **[mdarena](https://github.com/HudsonGri/mdarena)** | First tool to empirically benchmark CLAUDE.md instruction variants. Finding: per-directory targeted instructions beat monolithic files by ~27%. | L5 |
+| **[rtk](https://github.com/rtk-ai/rtk)** | Rust CLI proxy compressing shell output 60–90% before agent reads it. Changes the cost curve for session-heavy workflows. | L4c |
 | **[Mozilla cq](https://blog.mozilla.ai/cq-stack-overflow-for-agents/)** | "Stack Overflow for agents" — multi-agent shared knowledge commons. New statefulness pattern: *collective*. | L5 |
 
 Full analysis in [`docs/research-watch/`](docs/research-watch/) · Full map in [`docs/reference-levels.md`](docs/reference-levels.md)
@@ -56,6 +59,8 @@ Full analysis in [`docs/research-watch/`](docs/research-watch/) · Full map in [
 
 | Date | What changed |
 |------|-------------|
+| 2026-04-06 | 6 additional research-watch docs: apex-protocol, awesome-design-md, caveman, gemma-gem, mdarena, modo |
+| 2026-04-06 | `reference-levels.md` updated: awesome-design-md → L3, caveman → L4b, rtk → L4c, mdarena → L5 |
 | 2026-04-06 | Star counts verified via GitHub API across all 50+ tracked repos |
 | 2026-04-06 | 13 new research-watch docs: deepagents, claude-mem, Agentic AI Foundation, Codex plugins, Claude Computer Use, oh-my-pi Hashline, cq, gitagent, skill layer cluster, understudy |
 | 2026-04-06 | `reference-levels.md` → v0.3: Level 4 split into 4a/4b/4c subtypes; new L3 AGENTS.md entry; L7 expanded with computer-use agents |
