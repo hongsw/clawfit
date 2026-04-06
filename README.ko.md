@@ -117,19 +117,109 @@ AI 에이전트 및 코딩 도구 에코시스템을 위한 확장 증거 맵을
 
 ### 설치
 
+**방법 A — pipx (권장: 가상환경 없이 전역 설치)**
+
+```bash
+pipx install git+https://github.com/hongsw/clawfit
+```
+
+> pipx가 없으면: `brew install pipx` 또는 `pip install pipx`
+
+**방법 B — 개발용 editable 설치**
+
 ```bash
 git clone https://github.com/hongsw/clawfit.git
 cd clawfit
+python3 -m venv .venv && source .venv/bin/activate
 pip install -e .
 ```
 
-### 추천 실행
+---
+
+### 조직 진단 — 우리 팀에 맞는 도구 스택 찾기
+
+10개 질문에 답하면 팀에 최적화된 도구 조합을 추천합니다.
+
+**TUI** (권장 — 화살표로 탐색, 오른쪽 패널에 결과 실시간 업데이트):
+
+```bash
+clawfit tui
+```
+
+```
+ ████████████░░░░░░  5/10  [USECASE]
+ ──────────────────────────┬──────────────────────────────
+ AI로 주로 무엇을 하고     │ 3단계 — 자동화 입문
+ 싶으신가요?               │
+                           │ [PRIMARY] L1 Base runtime
+  ○ 코드 작성/리뷰         │    45% Claude Code
+  ● 정보 조사 및 요약      │    39% Aider
+  ○ 문서 Q&A               │    38% Goose
+  ○ 데이터 분류            │
+  ○ 데이터 분석            │ NEXT STEP
+  ○ 콘텐츠 요약            │ meta-wrapper(L2) 도입을
+                           │ 고려해보세요...
+ ─ answered ─              │
+  팀 규모: 소규모 팀       │
+ ──────────────────────────┴──────────────────────────────
+  ↑/↓ 이동   Space/Enter 선택+다음   ← 뒤로   → 앞으로   q 종료
+```
+
+| 키 | 동작 |
+|----|------|
+| `↑` / `↓` | 옵션 이동 |
+| `Space` / `Enter` | 선택 + 다음 질문으로 자동 이동 |
+| `←` / `h` | 이전 질문으로 |
+| `→` / `l` | 다음 질문으로 (이미 답변한 경우) |
+| `1` ~ `9` | 해당 번호 질문으로 바로 이동 |
+| `q` / `ESC` | 종료 (터미널에 최종 결과 출력) |
+
+**CLI (답변을 JSON으로 미리 입력):**
+
+```bash
+clawfit diagnose --answers '{
+  "team_size": "small",
+  "primary_role": "developer",
+  "current_ai_usage": "coding_agent",
+  "primary_task": "code-gen",
+  "output_destination": "team",
+  "frequency": "daily",
+  "data_sensitivity": "internal",
+  "monthly_budget": "medium",
+  "governance_need": "soft",
+  "growth_horizon": "deepen"
+}'
+```
+
+답변 옵션값 참고:
+
+| 질문 ID | 선택 가능한 값 |
+|---------|--------------|
+| `team_size` | `solo` / `small` / `mid` / `large` |
+| `primary_role` | `developer` / `researcher` / `pm` / `exec` / `mixed` |
+| `current_ai_usage` | `none` / `chat` / `coding_assistant` / `coding_agent` / `multi_agent` / `building` |
+| `primary_task` | `code-gen` / `research` / `qa` / `classification` / `data-analysis` / `summarization` |
+| `output_destination` | `personal` / `team` / `internal_product` / `external` |
+| `frequency` | `occasional` / `daily` / `continuous` |
+| `data_sensitivity` | `public` / `internal` / `confidential` / `regulated` |
+| `monthly_budget` | `free` / `low` / `medium` / `high` |
+| `governance_need` | `none` / `soft` / `hard` |
+| `growth_horizon` | `stable` / `expand` / `deepen` |
+
+**웹 UI** (브라우저에서 실시간 필터링):
+
+```bash
+clawfit serve          # http://localhost:7771 자동 오픈
+clawfit serve --port 8080
+```
+
+---
+
+### 제약 조건을 이미 알고 있다면 — 직접 추천
 
 ```bash
 clawfit recommend --task qa --latency low --budget 0.01
 ```
-
-### 상세 예시
 
 ```bash
 clawfit recommend \
@@ -139,8 +229,11 @@ clawfit recommend \
   --hardware cloud \
   --network online \
   --statefulness session \
+  --maturity 5 \
   --top 5
 ```
+
+> `--maturity 5` = 서브에이전트 운영 단계. 전체 11단계 정의는 [성숙도 × 레이어 맵](docs/pages/maturity-layer-map.md) 참고.
 
 ### 레지스트리 확인
 

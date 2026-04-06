@@ -125,19 +125,86 @@ The repo also includes an expanding evidence map for AI agent and coding-tool ec
 
 ### Install
 
+**Option A — pipx (recommended, globally available, no venv needed)**
+
+```bash
+pipx install git+https://github.com/hongsw/clawfit
+```
+
+**Option B — editable install (for development / hacking)**
+
 ```bash
 git clone https://github.com/hongsw/clawfit.git
 cd clawfit
+python3 -m venv .venv && source .venv/bin/activate
 pip install -e .
 ```
 
-### Run a recommendation
+---
+
+### Org-Fit Diagnosis — find your team's tool stack
+
+The fastest way to get a recommendation: answer 10 questions about your team.
+
+**TUI** (recommended — navigate with arrow keys, results update live in split pane):
+
+```bash
+clawfit tui
+```
+
+```
+ ████████████░░░░░░  5/10  [USECASE]
+ ──────────────────────────┬──────────────────────────────
+ What is the main thing    │ Stage 4 — Tool-using agent
+ you want AI to do?        │
+                           │ [PRI] L1 Base runtime
+  ○ Write or review code   │    45% Claude Code
+  ● Research & summarize   │    39% Aider
+  ○ Answer questions (QA)  │    38% Goose
+  ○ Classify / route data  │
+  ○ Analyze data           │ [PRI] L4c Tool-use infra
+  ○ Summarize at scale     │    41% Serena
+                           │    35% Context7
+ ─ answered ─              │
+  Team size: small team    │ NEXT STEP
+  Role: developer          │ You're ready for a meta-wrapper...
+ ──────────────────────────┴──────────────────────────────
+  ↑/↓ Move   Space/Enter Select+Next   ← Back   → Next   q Quit
+```
+
+Keys: `↑↓` move · `Space/Enter` select & advance · `←/→` back/next · `1-9` jump · `q` quit
+
+**CLI (non-interactive, pass answers as JSON):**
+
+```bash
+clawfit diagnose --answers '{
+  "team_size": "small",
+  "primary_role": "developer",
+  "current_ai_usage": "coding_agent",
+  "primary_task": "code-gen",
+  "output_destination": "team",
+  "frequency": "daily",
+  "data_sensitivity": "internal",
+  "monthly_budget": "medium",
+  "governance_need": "soft",
+  "growth_horizon": "deepen"
+}'
+```
+
+**Web UI** (browser with live filtering):
+
+```bash
+clawfit serve          # opens http://localhost:7771
+clawfit serve --port 8080
+```
+
+---
+
+### Direct recommendation (if you already know your constraints)
 
 ```bash
 clawfit recommend --task qa --latency low --budget 0.01
 ```
-
-### More detailed example
 
 ```bash
 clawfit recommend \
