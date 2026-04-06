@@ -19,6 +19,7 @@ def recommend(
     hardware: Optional[str] = None,
     network: Optional[str] = None,
     statefulness: Optional[str] = None,
+    maturity_stage: Optional[int] = None,
     top_n: int = 3,
 ) -> List[Dict[str, Any]]:
     agents = filter_agents(
@@ -27,6 +28,7 @@ def recommend(
         latency=latency,
         network=network,
         statefulness=statefulness,
+        maturity_stage=maturity_stage,
     )
     llms = filter_llms(
         load_llms(),
@@ -39,7 +41,7 @@ def recommend(
         load_hardware(),
         hw_type=hardware,
         latency=latency,
-        budget=None,  # budget arg is per-1k-tokens for LLM; hw filtered by type/latency
+        budget=None,
     )
 
     if not agents:
@@ -49,5 +51,10 @@ def recommend(
     if not hw:
         return [{"error": "No hardware matches the given constraints."}]
 
-    ranked = rank(agents, llms, hw, task=task, target_latency=latency)
+    ranked = rank(
+        agents, llms, hw,
+        task=task,
+        target_latency=latency,
+        maturity_stage=maturity_stage,
+    )
     return [asdict(rec) for _, rec in ranked[:top_n]]

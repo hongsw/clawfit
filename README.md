@@ -111,6 +111,7 @@ based on constraints like:
 - hardware preference
 - online/offline network requirement
 - statefulness requirement
+- **user maturity stage (1–11)** — filters and weights agents by fit for that stage
 
 ### 2) Encodes tradeoffs in structured registries
 Instead of burying assumptions in prose, clawfit stores comparison inputs in machine-readable data files.
@@ -146,8 +147,11 @@ clawfit recommend \
   --hardware cloud \
   --network online \
   --statefulness session \
+  --maturity 5 \
   --top 5
 ```
+
+> `--maturity 5` = sub-agent user stage. See the [maturity × layer map](docs/pages/maturity-layer-map.md) for all 11 stages.
 
 ### Inspect the registry
 
@@ -309,6 +313,8 @@ The current map uses a **7-layer structure** with sub-axes. These are ecosystem 
 Level 4 has fragmented into three measurably distinct subtypes. A tool is **4a** if it persists context; **4b** if it adds an invocable skill; **4c** if it mediates external system connections. See [`ecosystem-axes.md`](docs/pages/ecosystem-axes.md) for the full decision tree.
 
 See full details in [`docs/reference-levels.md`](docs/reference-levels.md) · [한국어 맵](docs/reference-levels.ko.md) and the overview hub at [`docs/pages/ecosystem-overview.md`](docs/pages/ecosystem-overview.md).
+
+**New:** [Maturity × Layer integration map](docs/pages/maturity-layer-map.md) — how user maturity stages (1–11) map to clawfit's tool layers (L1–L7).
 
 ---
 

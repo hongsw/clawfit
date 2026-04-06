@@ -7,7 +7,10 @@
     "latency": "medium",
     "statefulness": "session",
     "network": "online",
-    "preferred_llms": ["gpt-4o", "claude-sonnet"]
+    "preferred_llms": ["gpt-4o", "claude-sonnet"],
+    "maturity_min": 4,
+    "maturity_max": 7,
+    "maturity_optimal": 5
   },
   {
     "id": "plan-execute",
@@ -17,7 +20,10 @@
     "latency": "high",
     "statefulness": "persistent",
     "network": "online",
-    "preferred_llms": ["claude-opus", "gpt-4o"]
+    "preferred_llms": ["claude-opus", "gpt-4o"],
+    "maturity_min": 6,
+    "maturity_max": 9,
+    "maturity_optimal": 7
   },
   {
     "id": "simple-router",
@@ -27,7 +33,10 @@
     "latency": "low",
     "statefulness": "stateless",
     "network": "online",
-    "preferred_llms": ["claude-haiku", "gpt-4o-mini"]
+    "preferred_llms": ["claude-haiku", "gpt-4o-mini"],
+    "maturity_min": 1,
+    "maturity_max": 4,
+    "maturity_optimal": 3
   },
   {
     "id": "local-rag",
@@ -37,6 +46,9 @@
     "latency": "medium",
     "statefulness": "session",
     "network": "offline",
-    "preferred_llms": ["llama-3-8b", "mistral-7b"]
+    "preferred_llms": ["llama-3-8b", "mistral-7b"],
+    "maturity_min": 3,
+    "maturity_max": 6,
+    "maturity_optimal": 5
   }
 ]

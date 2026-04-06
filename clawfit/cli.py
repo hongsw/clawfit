@@ -19,6 +19,7 @@ def _cmd_recommend(args: argparse.Namespace) -> None:
         hardware=args.hardware,
         network=args.network,
         statefulness=args.statefulness,
+        maturity_stage=args.maturity,
         top_n=args.top,
     )
     print(json.dumps(results, indent=2))
@@ -68,6 +69,12 @@ def build_parser() -> argparse.ArgumentParser:
     rec.add_argument("--network", default=None, choices=["online", "offline"])
     rec.add_argument("--statefulness", default=None, choices=["stateless", "session", "persistent"])
     rec.add_argument("--top", type=int, default=3, help="Number of results (default 3)")
+    rec.add_argument(
+        "--maturity", type=int, default=None, choices=range(1, 12),
+        metavar="1-11",
+        help="User maturity stage (1=chatbot user → 11=frontier researcher). "
+             "Filters and weights agents by fit for that stage.",
+    )
     rec.set_defaults(func=_cmd_recommend)
 
     # list

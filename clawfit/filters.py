@@ -16,6 +16,7 @@ def filter_agents(
     latency: Optional[str] = None,
     network: Optional[str] = None,
     statefulness: Optional[str] = None,
+    maturity_stage: Optional[int] = None,
 ) -> List[Agent]:
     out = list(agents)
     if task:
@@ -27,6 +28,8 @@ def filter_agents(
         out = [a for a in out if a.network == network or a.network == "hybrid"]
     if statefulness:
         out = [a for a in out if a.statefulness == statefulness]
+    if maturity_stage is not None:
+        out = [a for a in out if a.maturity_min <= maturity_stage <= a.maturity_max]
     return out
 
 
