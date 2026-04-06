@@ -766,7 +766,7 @@
       "optimal_maturity": 6,
       "features": ["team-sharing", "offline"],
       "pricing_tier": "free",
-      "tasks": ["research", "qa", "code-gen"],
+      "tasks": ["research", "qa", "summarization"],
       "roles": ["developer", "researcher"],
       "team_size": ["solo", "small", "mid"],
       "network": "hybrid",
@@ -896,6 +896,56 @@
       "team_size": ["mid", "large"],
       "network": "online",
       "setup_complexity": "medium",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "hermes_agent",
+    "name": "Hermes Agent",
+    "category": "adaptive_base_agent",
+    "level": 1,
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Adaptive open-source agent from NousResearch; designed to grow with the user over sessions.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 9,
+      "optimal_maturity": 6,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": ["code-gen", "research"],
+      "roles": ["developer", "researcher"],
+      "team_size": ["solo", "small"],
+      "network": "online",
+      "setup_complexity": "medium",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "obsidian_skills",
+    "name": "obsidian-skills",
+    "category": "domain_skill_pack",
+    "level": 4,
+    "license": "unknown",
+    "primary_language": "unknown",
+    "url": "https://github.com/kepano/obsidian-skills",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Agent skill pack for Obsidian: teaches agents to use Markdown, Bases, JSON Canvas, and the Obsidian CLI. First-party skill pack from Obsidian CEO.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": ["research", "summarization", "qa"],
+      "roles": ["developer", "researcher", "pm"],
+      "team_size": ["solo", "small", "mid"],
+      "network": "hybrid",
+      "setup_complexity": "low",
       "latency": "medium"
     }
   }

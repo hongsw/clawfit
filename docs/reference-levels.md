@@ -52,6 +52,10 @@ So this document now uses a more explicit **7-level structure**.
 - **Harness reliability as new axis:** `oh-my-pi` Hashline approach and Anthropic sprint-contracts both address the same problem — agent workflow coherence over long sessions. "Harness reliability" is an emerging evaluation criterion beyond latency/cost
 - **Skill marketplace formalization:** claudemarketplaces.com (150+ skills with ratings) + 277k installs on a single Anthropic-published skill signal that skill distribution is at app-store scale
 - **Computer use collapses Level 1/7 boundary:** Claude Computer Use (first-party) and understudy (demo-based) both operate the full desktop — the Layer 7 definition needs to expand to include computer-use agents
+- **Adaptive base agents emerging:** NousResearch Hermes Agent (27k★) positions itself as "grows with you" — signals a new subtype of Level 1 base runtimes that blur into Level 4a memory; adaptive session behavior at the base runtime layer
+- **On-device LLM runtime race:** Google AI Edge LiteRT-LM (1.8k★, +487 today) brings Google's engineering weight to edge/ARM inference, joining llama.cpp and Ollama; offline profiles now have three credible runtime substrates
+- **L4b skill packs cross into knowledge-work:** kepano/obsidian-skills (20k★) is a first-party Obsidian skill pack — the first major L4b entry for knowledge workers (researchers, PMs) beyond pure code-gen contexts
+- **Offline multimodal threshold crossed:** Real-time audio/video-in + voice-out agents now run on consumer Apple Silicon (M3 Pro, Gemma E2B) with no cloud dependency — Level 7 offline multimodal is no longer research-only
 
 ---
 
@@ -74,6 +78,8 @@ They are the tools users most directly choose as their base environment.
 - <img src="https://github.com/langchain-ai.png" alt="deepagents" width="18" /> [deepagents](https://github.com/langchain-ai/deepagents) — ⭐ 19,379 *(also Level 2; CLI mode = base runtime, SDK mode = harness)*
 - <img src="https://github.com/understudy-ai.png" alt="understudy" width="18" /> [understudy](https://github.com/understudy-ai/understudy) — ⭐ 410 — demonstration-based local desktop agent (GUI + browser + shell + filesystem)
 - Claude Computer Use — direct mouse/keyboard/screen control via Claude Code Desktop + Cowork + Dispatch; macOS first *(also Level 7)*
+- <img src="https://github.com/NousResearch.png" alt="Hermes Agent" width="18" /> [Hermes Agent](https://github.com/NousResearch/hermes-agent) — ⭐ 27,234 — adaptive open-source agent from NousResearch; "grows with you" — signals session-persistent adaptation at the base runtime layer
+- <img src="https://github.com/google-ai-edge.png" alt="LiteRT-LM" width="18" /> [LiteRT-LM](https://github.com/google-ai-edge/LiteRT-LM) — ⭐ 1,813 — Google AI Edge on-device LLM inference runtime; ARM-first, mobile + edge; companion to google-ai-edge/gallery
 
 ---
 
@@ -156,6 +162,7 @@ Level 4 is splitting into three observable subtypes:
 **Domain skill packs:**
 - <img src="https://github.com/pbakaus.png" alt="Impeccable" width="18" /> [Impeccable](https://github.com/pbakaus/impeccable) — 20 design commands across 7 domains (layout, spacing, color, typography…) for Claude Code + Cursor
 - <img src="https://github.com/NomaDamas.png" alt="K-Skill" width="18" /> [K-Skill](https://github.com/NomaDamas/k-skill) — Korean-localized skill pack (SRT, Seoul subway, KBO, lottery)
+- <img src="https://github.com/kepano.png" alt="obsidian-skills" width="18" /> [obsidian-skills](https://github.com/kepano/obsidian-skills) — ⭐ 20,148 — first-party agent skill pack from Obsidian CEO; teaches agents Markdown, Bases, JSON Canvas, and Obsidian CLI; signals L4b maturation beyond coding into knowledge-work
 - <img src="https://github.com/team-attention.png" alt="plugins-for-claude-natives" width="18" /> [plugins-for-claude-natives](https://github.com/team-attention/plugins-for-claude-natives) — ⭐ 722
 - <img src="https://github.com/JuliusBrussee.png" alt="caveman" width="18" /> [caveman](https://github.com/JuliusBrussee/caveman) — ⭐ 1,700 🔥 output token compression skill (65–75% prose reduction); three intensity levels (Lite/Full/Ultra); install via `npx skills add`
 
