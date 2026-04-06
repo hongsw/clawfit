@@ -48,6 +48,10 @@ So this document now uses a more explicit **7-level structure**.
 - **Git-native agent standard:** `gitagent` proposes Git as the distribution and versioning layer for agent definitions — a Level 3 SSOT pattern distinct from plugin registries
 - **Collective memory pattern:** Mozilla AI's `cq` introduces multi-agent shared knowledge commons — a Level 5 subtype not previously represented
 - **Anthropic's canonical harness patterns:** The Anthropic engineering article on long-running app harness design (dual-agent, sprint contracts, context reset) is now a reference for Level 2 architecture
+- **Agentic AI Foundation governance shift:** MCP donated to Linux Foundation-backed consortium (Microsoft + Google + OpenAI + Anthropic). 97M monthly downloads. AGENTS.md (OpenAI) is a new cross-platform SSOT spec alongside CLAUDE.md
+- **Harness reliability as new axis:** `oh-my-pi` Hashline approach and Anthropic sprint-contracts both address the same problem — agent workflow coherence over long sessions. "Harness reliability" is an emerging evaluation criterion beyond latency/cost
+- **Skill marketplace formalization:** claudemarketplaces.com (150+ skills with ratings) + 277k installs on a single Anthropic-published skill signal that skill distribution is at app-store scale
+- **Computer use collapses Level 1/7 boundary:** Claude Computer Use (first-party) and understudy (demo-based) both operate the full desktop — the Layer 7 definition needs to expand to include computer-use agents
 
 ---
 
@@ -69,6 +73,7 @@ They are the tools users most directly choose as their base environment.
 - Kiro CLI — https://kiro.dev/
 - <img src="https://github.com/langchain-ai.png" alt="deepagents" width="18" /> [deepagents](https://github.com/langchain-ai/deepagents) — ⭐ 19,400 *(also Level 2; CLI mode = base runtime, SDK mode = harness)*
 - <img src="https://github.com/understudy-ai.png" alt="understudy" width="18" /> [understudy](https://github.com/understudy-ai/understudy) — demonstration-based local desktop agent (GUI + browser + shell + filesystem)
+- Claude Computer Use — direct mouse/keyboard/screen control via Claude Code Desktop + Cowork + Dispatch; macOS first *(also Level 7)*
 
 ---
 
@@ -89,6 +94,7 @@ They provide orchestration, better defaults, compatibility layers, workflows, ro
 - <img src="https://github.com/coder.png" alt="agentapi" width="18" /> [agentapi](https://github.com/coder/agentapi) — ⭐ 1,314
 - <img src="https://github.com/musistudio.png" alt="claude-code-router" width="18" /> [claude-code-router](https://github.com/musistudio/claude-code-router) — ⭐ 30,484
 - <img src="https://github.com/langchain-ai.png" alt="deepagents" width="18" /> [deepagents](https://github.com/langchain-ai/deepagents) — ⭐ 19,400 *(LangGraph-based SDK; also Level 1 as CLI)*
+- <img src="https://github.com/can1357.png" alt="oh-my-pi" width="18" /> [oh-my-pi](https://github.com/can1357/oh-my-pi) — Hashline approach: content-hash verification for concurrent multi-agent file safety; see ["The Harness Problem"](https://blog.can.ac/2026/02/12/the-harness-problem/)
 - Anthropic engineering: [Harness design for long-running applications](https://www.anthropic.com/engineering/harness-design-long-running-apps) — canonical dual-agent + sprint-contract architecture from Anthropic
 
 ---
@@ -116,6 +122,7 @@ Representative references:
 - <img src="https://github.com/affaan-m.png" alt="everything-claude-code" width="18" /> [everything-claude-code](https://github.com/affaan-m/everything-claude-code)
 - <img src="https://github.com/gotalab.png" alt="cc-sdd" width="18" /> [cc-sdd](https://github.com/gotalab/cc-sdd) — ⭐ 2,977
 - <img src="https://github.com/open-gitagent.png" alt="gitagent" width="18" /> [gitagent](https://github.com/open-gitagent/gitagent) — Git-native open standard for agent definition and lifecycle management; `git clone` = agent instantiation
+- **AGENTS.md** — OpenAI's cross-platform agent specification format; part of Agentic AI Foundation (Microsoft + Google + OpenAI + Anthropic + Linux Foundation); competes with / complements CLAUDE.md as executable SSOT
 
 ---
 
@@ -135,21 +142,29 @@ Level 4 is splitting into three observable subtypes:
 - <img src="https://github.com/zilliztech.png" alt="claude-context" width="18" /> [claude-context](https://github.com/zilliztech/claude-context) — ⭐ 5,768
 
 ### 4b. Skill packs & skill managers
+**Skill managers (lifecycle/discovery):**
 - <img src="https://github.com/Shpigford.png" alt="Chops" width="18" /> [Chops](https://github.com/Shpigford/chops) — macOS skill manager across Claude Code, Cursor, Codex, Windsurf, Amp simultaneously
 - <img src="https://github.com/ameahead.png" alt="skills-cleaner" width="18" /> [skills-cleaner](https://github.com/amebahead/skills-cleaner) — Claude plugin for listing, deduplication, and lifecycle management of `.claude/plugin/` skills
+- [claudemarketplaces.com](https://claudemarketplaces.com/) — 150+ skills with ratings (March 2026); first rated marketplace for Claude skills
+- [claude-code-plugins-plus-skills](https://github.com/jeremylongshore/claude-code-plugins-plus-skills) — 340 plugins + 1,367 agent skills catalog
+
+**Platform-native plugin systems:**
+- OpenAI Codex plugin system — Skills + Apps + MCP bundles; official plugins for GitHub, Linear, Vercel, Netlify, Slack, Figma, Notion, Gmail
+- <img src="https://github.com/anthropics.png" alt="claude-plugins-official" width="18" /> [claude-plugins-official](https://github.com/anthropics/claude-plugins-official) — ⭐ 14,884
+
+**Domain skill packs:**
 - <img src="https://github.com/pbakaus.png" alt="Impeccable" width="18" /> [Impeccable](https://github.com/pbakaus/impeccable) — 20 design commands across 7 domains (layout, spacing, color, typography…) for Claude Code + Cursor
 - <img src="https://github.com/NomaDamas.png" alt="K-Skill" width="18" /> [K-Skill](https://github.com/NomaDamas/k-skill) — Korean-localized skill pack (SRT, Seoul subway, KBO, lottery)
-- <img src="https://github.com/anthropics.png" alt="claude-plugins-official" width="18" /> [claude-plugins-official](https://github.com/anthropics/claude-plugins-official) — ⭐ 14,884
 - <img src="https://github.com/team-attention.png" alt="plugins-for-claude-natives" width="18" /> [plugins-for-claude-natives](https://github.com/team-attention/plugins-for-claude-natives) — ⭐ 691
 
 ### 4c. Tool-use / action infrastructure
 - <img src="https://github.com/millionco.png" alt="Expect" width="18" /> [Expect](https://github.com/millionco/expect) — CLI that auto-generates and executes browser-based test plans from code changes (Claude/Codex backend)
 - <img src="https://github.com/oraios.png" alt="serena" width="18" /> [serena](https://github.com/oraios/serena) — ⭐ 22,148
+- <img src="https://github.com/modelcontextprotocol.png" alt="MCP Servers" width="18" /> [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) — ⭐ 82,224 *(governance: donated to Agentic AI Foundation Dec 2025; 97M monthly SDK downloads)*
 - <img src="https://github.com/microsoft.png" alt="mcp-for-beginners" width="18" /> [mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) — ⭐ 15,653
 - <img src="https://github.com/IBM.png" alt="mcp-context-forge" width="18" /> [mcp-context-forge](https://github.com/IBM/mcp-context-forge) — ⭐ 3,479
 - <img src="https://github.com/ComposioHQ.png" alt="Composio" width="18" /> [Composio](https://github.com/ComposioHQ/composio) — ⭐ 27,536
 - <img src="https://github.com/withoneai.png" alt="Pica" width="18" /> [Pica](https://github.com/withoneai/pica) — ⭐ 1,459
-- <img src="https://github.com/modelcontextprotocol.png" alt="MCP Servers" width="18" /> [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) — ⭐ 82,224
 
 ---
 
@@ -188,6 +203,8 @@ These are not always the main coding engine, but they strongly influence how hum
 This includes voice input, talk mode, speech interruption, remote relays, terminals, and interaction loops.
 
 - <img src="https://github.com/langchain-ai.png" alt="deep-agents-ui" width="18" /> [deep-agents-ui](https://github.com/langchain-ai/deep-agents-ui) — ⭐ 1,500 — Next.js web UI for deepagents; chat + file monitor + step-through debug (companion to Level 1/2 deepagents)
+- Claude Computer Use — first-party Anthropic desktop control (mouse + keyboard + screen) via Claude Code Desktop + Cowork *(also Level 1)*
+- [Ghostmeet](https://github.com/Higangssh/ghostmeet) — self-hosted Chrome extension for real-time meeting transcription (Whisper) + AI summary (Claude API); fully local, no audio leaves device
 - Superwhisper — https://superwhisper.com/
 - <img src="https://github.com/channprj.png" alt="claude-code-voice" width="18" /> [claude-code-voice](https://github.com/channprj/claude-code-voice) — ⭐ 8
 - <img src="https://github.com/hada0127.png" alt="cc-telegram" width="18" /> [cc-telegram](https://github.com/hada0127/cc-telegram) — ⭐ 15
