@@ -59,20 +59,20 @@ So this document now uses a more explicit **7-level structure**.
 These are the main user-facing agent runtimes or primary product choices.
 They are the tools users most directly choose as their base environment.
 
-- <img src="https://github.com/openclaw.png" alt="OpenClaw" width="18" /> [OpenClaw](https://github.com/openclaw/openclaw) — ⭐ 337,525
-- <img src="https://github.com/zeroclaw-labs.png" alt="ZeroClaw" width="18" /> [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) — ⭐ 28,897
-- <img src="https://github.com/anthropics.png" alt="Claude Code" width="18" /> [Claude Code](https://github.com/anthropics/claude-code) — ⭐ 83,244
-- <img src="https://github.com/anomalyco.png" alt="OpenCode" width="18" /> [OpenCode](https://github.com/anomalyco/opencode) — ⭐ 130,987
-- <img src="https://github.com/block.png" alt="Goose" width="18" /> [Goose](https://github.com/block/goose) — ⭐ 33,628
-- <img src="https://github.com/charmbracelet.png" alt="Crush" width="18" /> [Crush](https://github.com/charmbracelet/crush) — ⭐ 22,022
-- <img src="https://github.com/paul-gauthier.png" alt="Aider" width="18" /> [Aider](https://github.com/paul-gauthier/aider) — ⭐ 42,419
-- <img src="https://github.com/All-Hands-AI.png" alt="OpenHands" width="18" /> [OpenHands](https://github.com/All-Hands-AI/OpenHands) — ⭐ 69,853
-- <img src="https://github.com/cline.png" alt="Cline" width="18" /> [Cline](https://github.com/cline/cline) — ⭐ 59,433
-- <img src="https://github.com/continuedev.png" alt="Continue" width="18" /> [Continue](https://github.com/continuedev/continue) — ⭐ 32,078
+- <img src="https://github.com/openclaw.png" alt="OpenClaw" width="18" /> [OpenClaw](https://github.com/openclaw/openclaw) — ⭐ 349,119
+- <img src="https://github.com/zeroclaw-labs.png" alt="ZeroClaw" width="18" /> [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) — ⭐ 29,526
+- <img src="https://github.com/anthropics.png" alt="Claude Code" width="18" /> [Claude Code](https://github.com/anthropics/claude-code) — ⭐ 109,423
+- <img src="https://github.com/anomalyco.png" alt="OpenCode" width="18" /> [OpenCode](https://github.com/anomalyco/opencode) — ⭐ 137,788
+- <img src="https://github.com/block.png" alt="Goose" width="18" /> [Goose](https://github.com/block/goose) — ⭐ 37,129
+- <img src="https://github.com/charmbracelet.png" alt="Crush" width="18" /> [Crush](https://github.com/charmbracelet/crush) — ⭐ 22,543
+- <img src="https://github.com/paul-gauthier.png" alt="Aider" width="18" /> [Aider](https://github.com/paul-gauthier/aider) — ⭐ 42,869
+- <img src="https://github.com/All-Hands-AI.png" alt="OpenHands" width="18" /> [OpenHands](https://github.com/All-Hands-AI/OpenHands) — ⭐ 70,632
+- <img src="https://github.com/cline.png" alt="Cline" width="18" /> [Cline](https://github.com/cline/cline) — ⭐ 59,924
+- <img src="https://github.com/continuedev.png" alt="Continue" width="18" /> [Continue](https://github.com/continuedev/continue) — ⭐ 32,309
 - Cursor — https://cursor.com/
 - Kiro CLI — https://kiro.dev/
-- <img src="https://github.com/langchain-ai.png" alt="deepagents" width="18" /> [deepagents](https://github.com/langchain-ai/deepagents) — ⭐ 19,400 *(also Level 2; CLI mode = base runtime, SDK mode = harness)*
-- <img src="https://github.com/understudy-ai.png" alt="understudy" width="18" /> [understudy](https://github.com/understudy-ai/understudy) — demonstration-based local desktop agent (GUI + browser + shell + filesystem)
+- <img src="https://github.com/langchain-ai.png" alt="deepagents" width="18" /> [deepagents](https://github.com/langchain-ai/deepagents) — ⭐ 19,379 *(also Level 2; CLI mode = base runtime, SDK mode = harness)*
+- <img src="https://github.com/understudy-ai.png" alt="understudy" width="18" /> [understudy](https://github.com/understudy-ai/understudy) — ⭐ 410 — demonstration-based local desktop agent (GUI + browser + shell + filesystem)
 - Claude Computer Use — direct mouse/keyboard/screen control via Claude Code Desktop + Cowork + Dispatch; macOS first *(also Level 7)*
 
 ---
@@ -81,20 +81,20 @@ They are the tools users most directly choose as their base environment.
 These projects sit on top of existing base agents and transform how they operate.
 They provide orchestration, better defaults, compatibility layers, workflows, routing, multi-agent teams, or opinionated operating conventions.
 
-- <img src="https://github.com/code-yeongyu.png" alt="oh-my-openagent" width="18" /> [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) — ⭐ 43,867
-- <img src="https://github.com/Yeachan-Heo.png" alt="oh-my-claudecode" width="18" /> [oh-my-claudecode](https://github.com/yeachan-heo/oh-my-claudecode) — ⭐ 12,770
-- <img src="https://github.com/Yeachan-Heo.png" alt="oh-my-codex" width="18" /> [oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex) — ⭐ 2,625
-- <img src="https://github.com/Joonghyun-Lee-Frieren.png" alt="oh-my-gemini-cli" width="18" /> [oh-my-gemini-cli](https://github.com/Joonghyun-Lee-Frieren/oh-my-gemini-cli) — ⭐ 78
-- <img src="https://github.com/first-fluke.png" alt="oh-my-agent" width="18" /> [oh-my-agent](https://github.com/first-fluke/oh-my-agent) — ⭐ 504
-- <img src="https://github.com/AndyMik90.png" alt="Aperant" width="18" /> [Aperant](https://github.com/AndyMik90/Aperant) — ⭐ 13,571
-- <img src="https://github.com/frankbria.png" alt="ralph-claude-code" width="18" /> [ralph-claude-code](https://github.com/frankbria/ralph-claude-code) — ⭐ 8,204
-- <img src="https://github.com/Th0rgal.png" alt="open-ralph-wiggum" width="18" /> [open-ralph-wiggum](https://github.com/Th0rgal/open-ralph-wiggum) — ⭐ 1,347
-- <img src="https://github.com/SuperClaude-Org.png" alt="SuperClaude Framework" width="18" /> [SuperClaude Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) — ⭐ 21,968
-- <img src="https://github.com/siteboon.png" alt="claudecodeui" width="18" /> [claudecodeui](https://github.com/siteboon/claudecodeui) — ⭐ 8,998
-- <img src="https://github.com/coder.png" alt="agentapi" width="18" /> [agentapi](https://github.com/coder/agentapi) — ⭐ 1,314
-- <img src="https://github.com/musistudio.png" alt="claude-code-router" width="18" /> [claude-code-router](https://github.com/musistudio/claude-code-router) — ⭐ 30,484
-- <img src="https://github.com/langchain-ai.png" alt="deepagents" width="18" /> [deepagents](https://github.com/langchain-ai/deepagents) — ⭐ 19,400 *(LangGraph-based SDK; also Level 1 as CLI)*
-- <img src="https://github.com/can1357.png" alt="oh-my-pi" width="18" /> [oh-my-pi](https://github.com/can1357/oh-my-pi) — Hashline approach: content-hash verification for concurrent multi-agent file safety; see ["The Harness Problem"](https://blog.can.ac/2026/02/12/the-harness-problem/)
+- <img src="https://github.com/code-yeongyu.png" alt="oh-my-openagent" width="18" /> [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) — ⭐ 48,590
+- <img src="https://github.com/Yeachan-Heo.png" alt="oh-my-claudecode" width="18" /> [oh-my-claudecode](https://github.com/yeachan-heo/oh-my-claudecode) — ⭐ 24,538
+- <img src="https://github.com/Yeachan-Heo.png" alt="oh-my-codex" width="18" /> [oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex) — ⭐ 16,703
+- <img src="https://github.com/Joonghyun-Lee-Frieren.png" alt="oh-my-gemini-cli" width="18" /> [oh-my-gemini-cli](https://github.com/Joonghyun-Lee-Frieren/oh-my-gemini-cli) — ⭐ 103
+- <img src="https://github.com/first-fluke.png" alt="oh-my-agent" width="18" /> [oh-my-agent](https://github.com/first-fluke/oh-my-agent) — ⭐ 565
+- <img src="https://github.com/AndyMik90.png" alt="Aperant" width="18" /> [Aperant](https://github.com/AndyMik90/Aperant) — ⭐ 13,816
+- <img src="https://github.com/frankbria.png" alt="ralph-claude-code" width="18" /> [ralph-claude-code](https://github.com/frankbria/ralph-claude-code) — ⭐ 8,477
+- <img src="https://github.com/Th0rgal.png" alt="open-ralph-wiggum" width="18" /> [open-ralph-wiggum](https://github.com/Th0rgal/open-ralph-wiggum) — ⭐ 1,421
+- <img src="https://github.com/SuperClaude-Org.png" alt="SuperClaude Framework" width="18" /> [SuperClaude Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) — ⭐ 22,161
+- <img src="https://github.com/siteboon.png" alt="claudecodeui" width="18" /> [claudecodeui](https://github.com/siteboon/claudecodeui) — ⭐ 9,503
+- <img src="https://github.com/coder.png" alt="agentapi" width="18" /> [agentapi](https://github.com/coder/agentapi) — ⭐ 1,338
+- <img src="https://github.com/musistudio.png" alt="claude-code-router" width="18" /> [claude-code-router](https://github.com/musistudio/claude-code-router) — ⭐ 31,571
+- <img src="https://github.com/langchain-ai.png" alt="deepagents" width="18" /> [deepagents](https://github.com/langchain-ai/deepagents) — ⭐ 19,379 *(LangGraph-based SDK; also Level 1 as CLI)*
+- <img src="https://github.com/can1357.png" alt="oh-my-pi" width="18" /> [oh-my-pi](https://github.com/can1357/oh-my-pi) — ⭐ 2,681 — Hashline approach: content-hash verification for concurrent multi-agent file safety; see ["The Harness Problem"](https://blog.can.ac/2026/02/12/the-harness-problem/)
 - Anthropic engineering: [Harness design for long-running applications](https://www.anthropic.com/engineering/harness-design-long-running-apps) — canonical dual-agent + sprint-contract architecture from Anthropic
 
 ---
@@ -117,10 +117,10 @@ A key idea here is **Executable SSOT**:
 Representative references:
 - Toss article — *Harness for team productivity*  
   https://toss.tech/article/harness-for-team-productivity
-- <img src="https://github.com/first-fluke.png" alt="oh-my-agent" width="18" /> [oh-my-agent](https://github.com/first-fluke/oh-my-agent) — ⭐ 504
-- <img src="https://github.com/Joonghyun-Lee-Frieren.png" alt="oh-my-gemini-cli" width="18" /> [oh-my-gemini-cli](https://github.com/Joonghyun-Lee-Frieren/oh-my-gemini-cli) — ⭐ 78
-- <img src="https://github.com/affaan-m.png" alt="everything-claude-code" width="18" /> [everything-claude-code](https://github.com/affaan-m/everything-claude-code)
-- <img src="https://github.com/gotalab.png" alt="cc-sdd" width="18" /> [cc-sdd](https://github.com/gotalab/cc-sdd) — ⭐ 2,977
+- <img src="https://github.com/first-fluke.png" alt="oh-my-agent" width="18" /> [oh-my-agent](https://github.com/first-fluke/oh-my-agent) — ⭐ 565
+- <img src="https://github.com/Joonghyun-Lee-Frieren.png" alt="oh-my-gemini-cli" width="18" /> [oh-my-gemini-cli](https://github.com/Joonghyun-Lee-Frieren/oh-my-gemini-cli) — ⭐ 103
+- <img src="https://github.com/affaan-m.png" alt="everything-claude-code" width="18" /> [everything-claude-code](https://github.com/affaan-m/everything-claude-code) — ⭐ 140,708
+- <img src="https://github.com/gotalab.png" alt="cc-sdd" width="18" /> [cc-sdd](https://github.com/gotalab/cc-sdd) — ⭐ 3,026
 - <img src="https://github.com/open-gitagent.png" alt="gitagent" width="18" /> [gitagent](https://github.com/open-gitagent/gitagent) — Git-native open standard for agent definition and lifecycle management; `git clone` = agent instantiation
 - **AGENTS.md** — OpenAI's cross-platform agent specification format; part of Agentic AI Foundation (Microsoft + Google + OpenAI + Anthropic + Linux Foundation); competes with / complements CLAUDE.md as executable SSOT
 
@@ -137,34 +137,34 @@ Level 4 is splitting into three observable subtypes:
 
 ### 4a. Memory / persistent context
 - <img src="https://github.com/thedotmack.png" alt="claude-mem" width="18" /> [claude-mem](https://github.com/thedotmack/claude-mem) — ⭐ 45,600 🔥 hooks-based persistent memory with SQLite + Chroma, `npx claude-mem install`
-- <img src="https://github.com/CaviraOSS.png" alt="OpenMemory" width="18" /> [OpenMemory](https://github.com/CaviraOSS/OpenMemory) — ⭐ 3,771
-- <img src="https://github.com/campfirein.png" alt="cipher" width="18" /> [cipher](https://github.com/campfirein/cipher) — ⭐ 3,611
-- <img src="https://github.com/zilliztech.png" alt="claude-context" width="18" /> [claude-context](https://github.com/zilliztech/claude-context) — ⭐ 5,768
+- <img src="https://github.com/CaviraOSS.png" alt="OpenMemory" width="18" /> [OpenMemory](https://github.com/CaviraOSS/OpenMemory) — ⭐ 3,871
+- <img src="https://github.com/campfirein.png" alt="cipher" width="18" /> [cipher](https://github.com/campfirein/cipher) — ⭐ 4,178
+- <img src="https://github.com/zilliztech.png" alt="claude-context" width="18" /> [claude-context](https://github.com/zilliztech/claude-context) — ⭐ 5,850
 
 ### 4b. Skill packs & skill managers
 **Skill managers (lifecycle/discovery):**
 - <img src="https://github.com/Shpigford.png" alt="Chops" width="18" /> [Chops](https://github.com/Shpigford/chops) — macOS skill manager across Claude Code, Cursor, Codex, Windsurf, Amp simultaneously
-- <img src="https://github.com/ameahead.png" alt="skills-cleaner" width="18" /> [skills-cleaner](https://github.com/amebahead/skills-cleaner) — Claude plugin for listing, deduplication, and lifecycle management of `.claude/plugin/` skills
+- <img src="https://github.com/amebahead.png" alt="skills-cleaner" width="18" /> [skills-cleaner](https://github.com/amebahead/skills-cleaner) — Claude plugin for listing, deduplication, and lifecycle management of `.claude/plugin/` skills
 - [claudemarketplaces.com](https://claudemarketplaces.com/) — 150+ skills with ratings (March 2026); first rated marketplace for Claude skills
 - [claude-code-plugins-plus-skills](https://github.com/jeremylongshore/claude-code-plugins-plus-skills) — 340 plugins + 1,367 agent skills catalog
 
 **Platform-native plugin systems:**
 - OpenAI Codex plugin system — Skills + Apps + MCP bundles; official plugins for GitHub, Linear, Vercel, Netlify, Slack, Figma, Notion, Gmail
-- <img src="https://github.com/anthropics.png" alt="claude-plugins-official" width="18" /> [claude-plugins-official](https://github.com/anthropics/claude-plugins-official) — ⭐ 14,884
+- <img src="https://github.com/anthropics.png" alt="claude-plugins-official" width="18" /> [claude-plugins-official](https://github.com/anthropics/claude-plugins-official) — ⭐ 16,063
 
 **Domain skill packs:**
 - <img src="https://github.com/pbakaus.png" alt="Impeccable" width="18" /> [Impeccable](https://github.com/pbakaus/impeccable) — 20 design commands across 7 domains (layout, spacing, color, typography…) for Claude Code + Cursor
 - <img src="https://github.com/NomaDamas.png" alt="K-Skill" width="18" /> [K-Skill](https://github.com/NomaDamas/k-skill) — Korean-localized skill pack (SRT, Seoul subway, KBO, lottery)
-- <img src="https://github.com/team-attention.png" alt="plugins-for-claude-natives" width="18" /> [plugins-for-claude-natives](https://github.com/team-attention/plugins-for-claude-natives) — ⭐ 691
+- <img src="https://github.com/team-attention.png" alt="plugins-for-claude-natives" width="18" /> [plugins-for-claude-natives](https://github.com/team-attention/plugins-for-claude-natives) — ⭐ 722
 
 ### 4c. Tool-use / action infrastructure
 - <img src="https://github.com/millionco.png" alt="Expect" width="18" /> [Expect](https://github.com/millionco/expect) — CLI that auto-generates and executes browser-based test plans from code changes (Claude/Codex backend)
-- <img src="https://github.com/oraios.png" alt="serena" width="18" /> [serena](https://github.com/oraios/serena) — ⭐ 22,148
-- <img src="https://github.com/modelcontextprotocol.png" alt="MCP Servers" width="18" /> [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) — ⭐ 82,224 *(governance: donated to Agentic AI Foundation Dec 2025; 97M monthly SDK downloads)*
-- <img src="https://github.com/microsoft.png" alt="mcp-for-beginners" width="18" /> [mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) — ⭐ 15,653
-- <img src="https://github.com/IBM.png" alt="mcp-context-forge" width="18" /> [mcp-context-forge](https://github.com/IBM/mcp-context-forge) — ⭐ 3,479
-- <img src="https://github.com/ComposioHQ.png" alt="Composio" width="18" /> [Composio](https://github.com/ComposioHQ/composio) — ⭐ 27,536
-- <img src="https://github.com/withoneai.png" alt="Pica" width="18" /> [Pica](https://github.com/withoneai/pica) — ⭐ 1,459
+- <img src="https://github.com/oraios.png" alt="serena" width="18" /> [serena](https://github.com/oraios/serena) — ⭐ 22,504
+- <img src="https://github.com/modelcontextprotocol.png" alt="MCP Servers" width="18" /> [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) — ⭐ 83,039 *(governance: donated to Agentic AI Foundation Dec 2025; 97M monthly SDK downloads)*
+- <img src="https://github.com/microsoft.png" alt="mcp-for-beginners" width="18" /> [mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) — ⭐ 15,804
+- <img src="https://github.com/IBM.png" alt="mcp-context-forge" width="18" /> [mcp-context-forge](https://github.com/IBM/mcp-context-forge) — ⭐ 3,526
+- <img src="https://github.com/ComposioHQ.png" alt="Composio" width="18" /> [Composio](https://github.com/ComposioHQ/composio) — ⭐ 27,650
+- <img src="https://github.com/withoneai.png" alt="Pica" width="18" /> [Pica](https://github.com/withoneai/pica) — ⭐ 1,470
 
 ---
 
@@ -173,15 +173,15 @@ These are especially useful when designing clawfit's abstraction layer and long-
 They include evaluation harnesses, benchmark references, autonomous research loops, and **collective agent knowledge systems**.
 
 - <img src="https://github.com/mozilla-ai.png" alt="cq" width="18" /> [cq](https://blog.mozilla.ai/cq-stack-overflow-for-agents/) — Mozilla AI shared knowledge commons for agents; query before acting, contribute after — "Stack Overflow for agents"
-- <img src="https://github.com/karpathy.png" alt="autoresearch" width="18" /> [autoresearch](https://github.com/karpathy/autoresearch) — ⭐ 57,464
-- <img src="https://github.com/mozilla-ai.png" alt="any-agent" width="18" /> [any-agent](https://github.com/mozilla-ai/any-agent) — ⭐ 1,127
-- <img src="https://github.com/mozilla-ai.png" alt="any-llm" width="18" /> [any-llm](https://github.com/mozilla-ai/any-llm) — ⭐ 1,824
+- <img src="https://github.com/karpathy.png" alt="autoresearch" width="18" /> [autoresearch](https://github.com/karpathy/autoresearch) — ⭐ 66,534
+- <img src="https://github.com/mozilla-ai.png" alt="any-agent" width="18" /> [any-agent](https://github.com/mozilla-ai/any-agent) — ⭐ 1,138
+- <img src="https://github.com/mozilla-ai.png" alt="any-llm" width="18" /> [any-llm](https://github.com/mozilla-ai/any-llm) — ⭐ 1,862
 - <img src="https://github.com/anomalyco.png" alt="opencode-bench" width="18" /> [opencode-bench](https://github.com/anomalyco/opencode-bench) — ⭐ 60
-- <img src="https://github.com/EleutherAI.png" alt="lm-evaluation-harness" width="18" /> [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) — ⭐ 11,863
+- <img src="https://github.com/EleutherAI.png" alt="lm-evaluation-harness" width="18" /> [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) — ⭐ 12,017
 - <img src="https://github.com/prometheus-eval.png" alt="Prometheus" width="18" /> [Prometheus](https://github.com/prometheus-eval/prometheus) — ⭐ 312
 - <img src="https://github.com/Hugging-Face-KREW.png" alt="Ko-AgentBench" width="18" /> [Ko-AgentBench](https://github.com/Hugging-Face-KREW/Ko-AgentBench) — ⭐ 65
-- <img src="https://github.com/microsoft.png" alt="agent-lightning" width="18" /> [agent-lightning](https://github.com/microsoft/agent-lightning) — ⭐ 15,544
-- <img src="https://github.com/team-attention.png" alt="hoyeon" width="18" /> [hoyeon](https://github.com/team-attention/hoyeon) — ⭐ 126
+- <img src="https://github.com/microsoft.png" alt="agent-lightning" width="18" /> [agent-lightning](https://github.com/microsoft/agent-lightning) — ⭐ 16,545
+- <img src="https://github.com/team-attention.png" alt="hoyeon" width="18" /> [hoyeon](https://github.com/team-attention/hoyeon) — ⭐ 131
 
 ---
 
@@ -189,12 +189,12 @@ They include evaluation harnesses, benchmark references, autonomous research loo
 These references are useful when clawfit evolves into an evidence hub and simulation system.
 They help answer how agents access, structure, retrieve, and reason over external knowledge.
 
-- <img src="https://github.com/HKUDS.png" alt="LightRAG" width="18" /> [LightRAG](https://github.com/HKUDS/LightRAG) — ⭐ 30,664
-- <img src="https://github.com/HKUDS.png" alt="RAG-Anything" width="18" /> [RAG-Anything](https://github.com/HKUDS/RAG-Anything) — ⭐ 14,651
-- <img src="https://github.com/airweave-ai.png" alt="airweave" width="18" /> [airweave](https://github.com/airweave-ai/airweave) — ⭐ 6,132
+- <img src="https://github.com/HKUDS.png" alt="LightRAG" width="18" /> [LightRAG](https://github.com/HKUDS/LightRAG) — ⭐ 32,300
+- <img src="https://github.com/HKUDS.png" alt="RAG-Anything" width="18" /> [RAG-Anything](https://github.com/HKUDS/RAG-Anything) — ⭐ 15,200
+- <img src="https://github.com/airweave-ai.png" alt="airweave" width="18" /> [airweave](https://github.com/airweave-ai/airweave) — ⭐ 6,200
 - <img src="https://github.com/agentset-ai.png" alt="agentset" width="18" /> [agentset](https://github.com/agentset-ai/agentset) — ⭐ 1,928
-- <img src="https://github.com/VectifyAI.png" alt="PageIndex" width="18" /> [PageIndex](https://github.com/VectifyAI/PageIndex) — ⭐ 23,026
-- <img src="https://github.com/opendatalab.png" alt="MinerU" width="18" /> [MinerU](https://github.com/opendatalab/MinerU) — ⭐ 57,337
+- <img src="https://github.com/VectifyAI.png" alt="PageIndex" width="18" /> [PageIndex](https://github.com/VectifyAI/PageIndex) — ⭐ 24,200
+- <img src="https://github.com/opendatalab.png" alt="MinerU" width="18" /> [MinerU](https://github.com/opendatalab/MinerU) — ⭐ 58,200
 
 ---
 
@@ -204,11 +204,11 @@ This includes voice input, talk mode, speech interruption, remote relays, termin
 
 - <img src="https://github.com/langchain-ai.png" alt="deep-agents-ui" width="18" /> [deep-agents-ui](https://github.com/langchain-ai/deep-agents-ui) — ⭐ 1,500 — Next.js web UI for deepagents; chat + file monitor + step-through debug (companion to Level 1/2 deepagents)
 - Claude Computer Use — first-party Anthropic desktop control (mouse + keyboard + screen) via Claude Code Desktop + Cowork *(also Level 1)*
-- [Ghostmeet](https://github.com/Higangssh/ghostmeet) — self-hosted Chrome extension for real-time meeting transcription (Whisper) + AI summary (Claude API); fully local, no audio leaves device
+- [Ghostmeet](https://github.com/Higangssh/ghostmeet) — ⭐ 32 — self-hosted Chrome extension for real-time meeting transcription (Whisper) + AI summary (Claude API); fully local, no audio leaves device
 - Superwhisper — https://superwhisper.com/
 - <img src="https://github.com/channprj.png" alt="claude-code-voice" width="18" /> [claude-code-voice](https://github.com/channprj/claude-code-voice) — ⭐ 8
 - <img src="https://github.com/hada0127.png" alt="cc-telegram" width="18" /> [cc-telegram](https://github.com/hada0127/cc-telegram) — ⭐ 15
-- <img src="https://github.com/Q00.png" alt="ouroboros" width="18" /> [ouroboros](https://github.com/Q00/ouroboros) — ⭐ 1,855
+- <img src="https://github.com/Q00.png" alt="ouroboros" width="18" /> [ouroboros](https://github.com/Q00/ouroboros) — ⭐ 2,000
 - OpenClaw talkmode improvement reference — https://github.com/openclaw/openclaw/pull/53553#issuecomment-4124082023
 
 ---
