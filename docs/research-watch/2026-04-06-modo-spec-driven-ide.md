@@ -20,9 +20,19 @@ Modo enters the crowded AI IDE space (Cursor, Kiro, Windsurf) with a structurall
 Modo is a Level 1 candidate, but its spec-driven model is closer to Level 2/3 behavior packaged as an IDE. The "Powers" system mirrors the Level 4b skill-pack pattern. The steering files are a project-local SSOT variant (Level 3). This is a synthesis product — one tool trying to occupy Levels 1–3 simultaneously — which is worth tracking as a pattern. If the spec-driven workflow resonates, expect larger tools (Cursor, Kiro) to absorb it. clawfit may need a "workflow philosophy" axis (autocomplete-first vs. spec-first) in future agent evaluations.
 
 ## Preliminary interpretation
-Current best reading:
-- **Level 1 — Base runtime** (full IDE surface, primary user-facing environment)
-- Strong Level 2/3 overlap: steering files (SSOT), Powers (skill packs), hooks (orchestration)
+
+**Primary: Level 1 — Base runtime**
+
+Level 1 is defined as "the main user-facing agent runtimes or primary product choices — the tools users most directly choose as their base environment." Modo is a full IDE (VS Code fork) that users install as their *primary* development environment. The user chooses Modo the way they choose Cursor or Claude Code — as the base surface from which all other agent activity occurs. No separate L1 tool is required underneath it.
+
+**Why not Level 2 (meta wrapper / harness)?**
+L2 tools *sit on top of an existing base agent* — they require a separate L1 underneath (e.g., oh-my-claudecode wraps Claude Code; deepagents SDK wraps an LLM runtime). Modo is self-contained: it IS the base agent. There is no prior L1 tool it orchestrates.
+
+**Why not Level 3 (SSOT / governance)?**
+L3 defines patterns for *sharing workflow rules across a team*, layered on top of existing runtimes. Modo's steering files and spec system are SSOT features *embedded within* a L1 surface — they are features of the product, not a standalone SSOT layer that works across multiple base runtimes.
+
+**L2/L3 overlap (features, not classification)**
+Modo embeds L2 behavior (subagent spawning, lifecycle hooks) and L3 behavior (steering files as per-project SSOT, Powers as skill packs) inside the IDE shell. These are features *within* a L1 surface. This "synthesis product" pattern — one tool trying to occupy L1–L3 simultaneously — is itself worth tracking as a potential signal that the levels are collapsing at the product layer.
 
 ## Status
 - Low adoption currently (13 stars). Architecturally notable. Watch for sustained development or absorption by a larger project.

@@ -18,9 +18,16 @@ mdarena is the first observed tool that treats CLAUDE.md as a variable to be opt
 mdarena is a Level 5 evaluation tool (benchmark / autoresearch pattern), but it is specifically calibrated to the Level 3 SSOT layer — it evaluates CLAUDE.md quality, which is the primary governance artifact in the Level 3 pattern. This creates a feedback loop between Level 3 (instruction definition) and Level 5 (evaluation). The empirical finding that file placement and specificity matter significantly is directly relevant to any team using clawfit to configure agent workflows — it suggests that a well-placed, task-specific CLAUDE.md is worth more than a comprehensive monolithic one.
 
 ## Preliminary interpretation
-Current best reading:
-- **Level 5 — Research / evaluation / benchmark** (empirical grading of instruction file quality)
-- Cross-level: evaluates Level 3 SSOT artifacts using Level 5 methods
+
+**Primary: Level 5 — Research / evaluation / benchmark**
+
+Level 5 is defined as "evaluation harnesses, benchmark references, autonomous research loops." mdarena's core function is evaluation: it runs a controlled experiment (with/without CLAUDE.md variants) against a ground-truth dataset (merged PRs), scores each variant by test pass rate and diff overlap, and outputs a ranked comparison. This is a benchmark harness — the defining L5 function.
+
+**Why not Level 3 (SSOT / governance)?**
+L3 is about *creating and maintaining* SSOT files (CLAUDE.md, AGENTS.md, DESIGN.md). mdarena does not help create CLAUDE.md — it evaluates *existing* ones. The subject of the study is L3, but the function is L5. The distinction: L3 asks "what should the instruction file say?"; L5 asks "does this instruction file actually improve outcomes?"
+
+**Cross-level relationship**
+mdarena creates a feedback loop between L3 (instruction authoring) and L5 (evaluation). This is structurally significant: most L5 tools evaluate model or agent capability; mdarena evaluates the *configuration artifact* (CLAUDE.md). That makes it a novel sub-type within L5 — "SSOT evaluation" — not previously represented in the taxonomy.
 
 ## Status
 - Low stars but structurally novel. The only known tool of this type. Track for adoption.
