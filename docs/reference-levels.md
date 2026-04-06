@@ -1,4 +1,4 @@
-# clawfit Reference Levels v0.2
+# clawfit Reference Levels v0.3
 
 This document organizes external tools and projects that clawfit should compare against, learn from, or use as supporting references.
 
@@ -41,6 +41,14 @@ It is increasingly about choosing:
 
 So this document now uses a more explicit **7-level structure**.
 
+### New patterns as of 2026-04 (v0.3 update)
+- **Institutional harness entry:** LangChain/LangGraph entered Level 2 directly with `deepagents` — a production-ready, batteries-included open-source harness explicitly positioned against proprietary coding assistants
+- **Memory layer productization:** `claude-mem` (45k★) proves Level 4 memory tooling has crossed from research into mainstream plugin adoption
+- **Skill layer maturation:** Level 4 is fragmenting into distinct subtypes — skill managers (lifecycle tools), domain skill packs, and tool-use extensions. `Chops`, `skills-cleaner`, `Impeccable`, `K-Skill`, `Expect` are simultaneous signals of this split
+- **Git-native agent standard:** `gitagent` proposes Git as the distribution and versioning layer for agent definitions — a Level 3 SSOT pattern distinct from plugin registries
+- **Collective memory pattern:** Mozilla AI's `cq` introduces multi-agent shared knowledge commons — a Level 5 subtype not previously represented
+- **Anthropic's canonical harness patterns:** The Anthropic engineering article on long-running app harness design (dual-agent, sprint contracts, context reset) is now a reference for Level 2 architecture
+
 ---
 
 ## Level 1 — Base runtimes / primary agent surfaces
@@ -59,6 +67,8 @@ They are the tools users most directly choose as their base environment.
 - <img src="https://github.com/continuedev.png" alt="Continue" width="18" /> [Continue](https://github.com/continuedev/continue) — ⭐ 32,078
 - Cursor — https://cursor.com/
 - Kiro CLI — https://kiro.dev/
+- <img src="https://github.com/langchain-ai.png" alt="deepagents" width="18" /> [deepagents](https://github.com/langchain-ai/deepagents) — ⭐ 19,400 *(also Level 2; CLI mode = base runtime, SDK mode = harness)*
+- <img src="https://github.com/understudy-ai.png" alt="understudy" width="18" /> [understudy](https://github.com/understudy-ai/understudy) — demonstration-based local desktop agent (GUI + browser + shell + filesystem)
 
 ---
 
@@ -78,6 +88,8 @@ They provide orchestration, better defaults, compatibility layers, workflows, ro
 - <img src="https://github.com/siteboon.png" alt="claudecodeui" width="18" /> [claudecodeui](https://github.com/siteboon/claudecodeui) — ⭐ 8,998
 - <img src="https://github.com/coder.png" alt="agentapi" width="18" /> [agentapi](https://github.com/coder/agentapi) — ⭐ 1,314
 - <img src="https://github.com/musistudio.png" alt="claude-code-router" width="18" /> [claude-code-router](https://github.com/musistudio/claude-code-router) — ⭐ 30,484
+- <img src="https://github.com/langchain-ai.png" alt="deepagents" width="18" /> [deepagents](https://github.com/langchain-ai/deepagents) — ⭐ 19,400 *(LangGraph-based SDK; also Level 1 as CLI)*
+- Anthropic engineering: [Harness design for long-running applications](https://www.anthropic.com/engineering/harness-design-long-running-apps) — canonical dual-agent + sprint-contract architecture from Anthropic
 
 ---
 
@@ -103,6 +115,7 @@ Representative references:
 - <img src="https://github.com/Joonghyun-Lee-Frieren.png" alt="oh-my-gemini-cli" width="18" /> [oh-my-gemini-cli](https://github.com/Joonghyun-Lee-Frieren/oh-my-gemini-cli) — ⭐ 78
 - <img src="https://github.com/affaan-m.png" alt="everything-claude-code" width="18" /> [everything-claude-code](https://github.com/affaan-m/everything-claude-code)
 - <img src="https://github.com/gotalab.png" alt="cc-sdd" width="18" /> [cc-sdd](https://github.com/gotalab/cc-sdd) — ⭐ 2,977
+- <img src="https://github.com/open-gitagent.png" alt="gitagent" width="18" /> [gitagent](https://github.com/open-gitagent/gitagent) — Git-native open standard for agent definition and lifecycle management; `git clone` = agent instantiation
 
 ---
 
@@ -110,12 +123,28 @@ Representative references:
 These systems add capabilities to agents rather than replacing the base runtime.
 This is where context, memory, tools, MCP, plugins, and action-enabling systems live.
 
+Level 4 is splitting into three observable subtypes:
+- **4a. Memory / persistent context** — session or project-level memory systems
+- **4b. Skill packs & skill managers** — domain-specific skill collections and lifecycle tools
+- **4c. Tool-use / action infrastructure** — MCP servers, toolkits, platform connectors
+
+### 4a. Memory / persistent context
+- <img src="https://github.com/thedotmack.png" alt="claude-mem" width="18" /> [claude-mem](https://github.com/thedotmack/claude-mem) — ⭐ 45,600 🔥 hooks-based persistent memory with SQLite + Chroma, `npx claude-mem install`
 - <img src="https://github.com/CaviraOSS.png" alt="OpenMemory" width="18" /> [OpenMemory](https://github.com/CaviraOSS/OpenMemory) — ⭐ 3,771
 - <img src="https://github.com/campfirein.png" alt="cipher" width="18" /> [cipher](https://github.com/campfirein/cipher) — ⭐ 3,611
 - <img src="https://github.com/zilliztech.png" alt="claude-context" width="18" /> [claude-context](https://github.com/zilliztech/claude-context) — ⭐ 5,768
-- <img src="https://github.com/oraios.png" alt="serena" width="18" /> [serena](https://github.com/oraios/serena) — ⭐ 22,148
+
+### 4b. Skill packs & skill managers
+- <img src="https://github.com/Shpigford.png" alt="Chops" width="18" /> [Chops](https://github.com/Shpigford/chops) — macOS skill manager across Claude Code, Cursor, Codex, Windsurf, Amp simultaneously
+- <img src="https://github.com/ameahead.png" alt="skills-cleaner" width="18" /> [skills-cleaner](https://github.com/amebahead/skills-cleaner) — Claude plugin for listing, deduplication, and lifecycle management of `.claude/plugin/` skills
+- <img src="https://github.com/pbakaus.png" alt="Impeccable" width="18" /> [Impeccable](https://github.com/pbakaus/impeccable) — 20 design commands across 7 domains (layout, spacing, color, typography…) for Claude Code + Cursor
+- <img src="https://github.com/NomaDamas.png" alt="K-Skill" width="18" /> [K-Skill](https://github.com/NomaDamas/k-skill) — Korean-localized skill pack (SRT, Seoul subway, KBO, lottery)
 - <img src="https://github.com/anthropics.png" alt="claude-plugins-official" width="18" /> [claude-plugins-official](https://github.com/anthropics/claude-plugins-official) — ⭐ 14,884
 - <img src="https://github.com/team-attention.png" alt="plugins-for-claude-natives" width="18" /> [plugins-for-claude-natives](https://github.com/team-attention/plugins-for-claude-natives) — ⭐ 691
+
+### 4c. Tool-use / action infrastructure
+- <img src="https://github.com/millionco.png" alt="Expect" width="18" /> [Expect](https://github.com/millionco/expect) — CLI that auto-generates and executes browser-based test plans from code changes (Claude/Codex backend)
+- <img src="https://github.com/oraios.png" alt="serena" width="18" /> [serena](https://github.com/oraios/serena) — ⭐ 22,148
 - <img src="https://github.com/microsoft.png" alt="mcp-for-beginners" width="18" /> [mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) — ⭐ 15,653
 - <img src="https://github.com/IBM.png" alt="mcp-context-forge" width="18" /> [mcp-context-forge](https://github.com/IBM/mcp-context-forge) — ⭐ 3,479
 - <img src="https://github.com/ComposioHQ.png" alt="Composio" width="18" /> [Composio](https://github.com/ComposioHQ/composio) — ⭐ 27,536
@@ -126,8 +155,9 @@ This is where context, memory, tools, MCP, plugins, and action-enabling systems 
 
 ## Level 5 — Research / evaluation / benchmark / autoresearch patterns
 These are especially useful when designing clawfit's abstraction layer and long-term research model.
-They include evaluation harnesses, benchmark references, and autonomous research loops.
+They include evaluation harnesses, benchmark references, autonomous research loops, and **collective agent knowledge systems**.
 
+- <img src="https://github.com/mozilla-ai.png" alt="cq" width="18" /> [cq](https://blog.mozilla.ai/cq-stack-overflow-for-agents/) — Mozilla AI shared knowledge commons for agents; query before acting, contribute after — "Stack Overflow for agents"
 - <img src="https://github.com/karpathy.png" alt="autoresearch" width="18" /> [autoresearch](https://github.com/karpathy/autoresearch) — ⭐ 57,464
 - <img src="https://github.com/mozilla-ai.png" alt="any-agent" width="18" /> [any-agent](https://github.com/mozilla-ai/any-agent) — ⭐ 1,127
 - <img src="https://github.com/mozilla-ai.png" alt="any-llm" width="18" /> [any-llm](https://github.com/mozilla-ai/any-llm) — ⭐ 1,824
@@ -157,6 +187,7 @@ They help answer how agents access, structure, retrieve, and reason over externa
 These are not always the main coding engine, but they strongly influence how humans actually operate agents.
 This includes voice input, talk mode, speech interruption, remote relays, terminals, and interaction loops.
 
+- <img src="https://github.com/langchain-ai.png" alt="deep-agents-ui" width="18" /> [deep-agents-ui](https://github.com/langchain-ai/deep-agents-ui) — ⭐ 1,500 — Next.js web UI for deepagents; chat + file monitor + step-through debug (companion to Level 1/2 deepagents)
 - Superwhisper — https://superwhisper.com/
 - <img src="https://github.com/channprj.png" alt="claude-code-voice" width="18" /> [claude-code-voice](https://github.com/channprj/claude-code-voice) — ⭐ 8
 - <img src="https://github.com/hada0127.png" alt="cc-telegram" width="18" /> [cc-telegram](https://github.com/hada0127/cc-telegram) — ⭐ 15
