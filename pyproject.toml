@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "clawfit"
-version = "1.1.1"
+version = "1.1.2"
 description = "AI agent + LLM + hardware recommendation engine"
 requires-python = ">=3.7"
 license = "MIT"

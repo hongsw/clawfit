@@ -1,15 +1,13 @@
 """
-clawfit TUI — terminal questionnaire with live results.
+clawfit TUI — terminal questionnaire with live filtering.
 
-Layout:
-  ┌─ progress ──────────────────────────────────┐
-  │  question + options  │  live results panel  │
-  │                      │                      │
-  ├──────────────────────┴──────────────────────┤
-  │  keybindings hint                           │
-  └─────────────────────────────────────────────┘
+Right panel starts with ALL tools visible, grouped by layer.
+As questions are answered the panel re-scores and filters in real-time:
+  • high-score tools float to the top with a bright score bar
+  • low-score tools are dimmed
+  • very low-score tools fade out completely
 
-Keys: ↑/↓ move  Space/Enter select  ←/→ back/next  q quit
+Keys: ↑/↓ move  Space/Enter select  ←/→ back/next  1-9 jump  q quit
 """
 
 from __future__ import annotations
@@ -19,60 +17,101 @@ import json
 import pathlib
 import textwrap
 from dataclasses import asdict
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
-
-# ── colour pair ids ──────────────────────────────────────────
-C_NORMAL   = 0
-C_HEADER   = 1   # purple on dark
-C_SELECTED = 2   # white on purple
-C_DIM      = 3   # grey
-C_ACCENT   = 4   # bright purple text
-C_PRIMARY  = 5   # layer primary badge
-C_FUTURE   = 6   # layer future badge
-C_SCORE    = 7   # score number
-C_HINT     = 8   # bottom hint bar
-C_DONE     = 9   # green done banner
-C_WARN     = 10  # amber next-step
+# ── colour pair ids ───────────────────────────────────────────
+C_ACCENT   = 1   # bright purple text
+C_SELECTED = 2   # white on purple (selected option)
+C_SCORE_HI = 3   # high score — cyan bold
+C_SCORE_MD = 4   # medium score — normal
+C_DIM      = 5   # dim grey
+C_HINT     = 6   # bottom hint bar (black on white)
+C_DONE     = 7   # green completion
+C_WARN     = 8   # amber next-step
+C_LAYER    = 9   # layer header
+C_BAR_HI   = 10  # score bar fill — high
+C_BAR_LO   = 11  # score bar fill — low
 
 
 def _init_colors() -> None:
     curses.start_color()
     curses.use_default_colors()
-    bg = -1  # transparent background
-
-    curses.init_pair(C_HEADER,   curses.COLOR_MAGENTA, bg)
-    curses.init_pair(C_SELECTED, curses.COLOR_WHITE,   curses.COLOR_MAGENTA)
-    curses.init_pair(C_DIM,      curses.COLOR_WHITE,   bg)   # will use A_DIM
+    bg = -1
     curses.init_pair(C_ACCENT,   curses.COLOR_MAGENTA, bg)
-    curses.init_pair(C_PRIMARY,  curses.COLOR_MAGENTA, bg)
-    curses.init_pair(C_FUTURE,   curses.COLOR_WHITE,   bg)
-    curses.init_pair(C_SCORE,    curses.COLOR_CYAN,    bg)
+    curses.init_pair(C_SELECTED, curses.COLOR_WHITE,   curses.COLOR_MAGENTA)
+    curses.init_pair(C_SCORE_HI, curses.COLOR_CYAN,    bg)
+    curses.init_pair(C_SCORE_MD, curses.COLOR_WHITE,   bg)
+    curses.init_pair(C_DIM,      curses.COLOR_WHITE,   bg)
     curses.init_pair(C_HINT,     curses.COLOR_BLACK,   curses.COLOR_WHITE)
     curses.init_pair(C_DONE,     curses.COLOR_GREEN,   bg)
     curses.init_pair(C_WARN,     curses.COLOR_YELLOW,  bg)
+    curses.init_pair(C_LAYER,    curses.COLOR_MAGENTA, bg)
+    curses.init_pair(C_BAR_HI,   curses.COLOR_CYAN,    bg)
+    curses.init_pair(C_BAR_LO,   curses.COLOR_WHITE,   bg)
 
+
+# ── data loading ──────────────────────────────────────────────
 
 def _load_questions() -> List[Dict[str, Any]]:
     path = pathlib.Path(__file__).parent / "data" / "org_questions.json"
     return json.loads(path.read_text())["questions"]
 
 
-def _fetch_results(answers: Dict[str, str]) -> Optional[Dict[str, Any]]:
+def _load_all_tools() -> List[Dict[str, Any]]:
+    path = pathlib.Path(__file__).parent / "data" / "tools_registry.json"
+    return json.loads(path.read_text())
+
+
+LAYER_LABELS = {
+    "L1": "Base runtime",
+    "L2": "Meta wrapper / harness",
+    "L3": "Team harness / SSOT",
+    "L4": "Memory / skills / tool-use",
+    "L5": "Research / evaluation",
+    "L6": "Data / knowledge infra",
+    "L7": "Human interface",
+}
+
+
+def _layer_key(tool: Dict) -> str:
+    lvl = tool.get("level", 1)
+    # collapse 4a/4b/4c sub-levels into L4 for display
+    if isinstance(lvl, str) and lvl.startswith("4"):
+        return "L4"
+    return f"L{lvl}"
+
+
+def _score_tools(tools: List[Dict], answers: Dict[str, str]) -> List[Tuple[float, Dict]]:
+    """Return (score, tool) pairs. Score 0.0 when no answers yet."""
+    if not answers:
+        return [(0.0, t) for t in tools]
+    try:
+        from .org_scorer import build_profile_from_answers, _score_tool
+        profile = build_profile_from_answers(answers)
+        return [(_score_tool(t, profile), t) for t in tools]
+    except Exception:
+        return [(0.0, t) for t in tools]
+
+
+def _fetch_result_meta(answers: Dict[str, str]) -> Optional[Dict]:
+    """Fetch stage/next-step metadata (lightweight, no full stack needed)."""
     if not answers:
         return None
     try:
-        from .org_scorer import build_profile_from_answers, org_recommend
+        from .org_scorer import build_profile_from_answers, _maturity_label, _next_step_hint
         profile = build_profile_from_answers(answers)
-        return asdict(org_recommend(profile, top_per_layer=3))
+        return {
+            "maturity_stage": profile.maturity_stage,
+            "maturity_label": _maturity_label(profile.maturity_stage),
+            "next_step_hint": _next_step_hint(profile),
+        }
     except Exception:
         return None
 
 
-# ── safe addstr helpers ───────────────────────────────────────
+# ── safe draw helpers ─────────────────────────────────────────
 
 def _addstr(win, y: int, x: int, text: str, attr: int = 0) -> None:
-    """addstr that silently ignores out-of-bounds writes."""
     h, w = win.getmaxyx()
     if y < 0 or y >= h or x < 0 or x >= w:
         return
@@ -98,74 +137,87 @@ def _hline(win, y: int, x: int, ch: int, n: int) -> None:
         pass
 
 
+def _score_bar(score: float, width: int) -> str:
+    """Render a mini bar like [████░░░] for a 0-1 score."""
+    inner = max(0, width - 2)
+    filled = int(inner * score)
+    return "[" + "█" * filled + "░" * (inner - filled) + "]"
+
+
 # ── TUI application ───────────────────────────────────────────
 
 class TUIApp:
     def __init__(self, stdscr):
         self.scr = stdscr
         self.questions = _load_questions()
+        self.all_tools = _load_all_tools()
         self.answers: Dict[str, str] = {}
-        self.current = 0          # question index
-        self.cursor = 0           # option index within current question
-        self.result: Optional[Dict] = None
-        self.dirty = True         # needs redraw
+        self.current = 0
+        self.cursor = 0
+        self.scored: List[Tuple[float, Dict]] = [(0.0, t) for t in self.all_tools]
+        self.meta: Optional[Dict] = None
+        self.dirty = True
+
+    def _recompute(self) -> None:
+        self.scored = _score_tools(self.all_tools, self.answers)
+        self.meta = _fetch_result_meta(self.answers)
 
     # ── layout ───────────────────────────────────────────────
 
     def _dims(self):
         h, w = self.scr.getmaxyx()
-        left_w = max(30, min(44, w // 2))
-        right_w = w - left_w - 1  # -1 for divider
+        left_w = max(28, min(42, w // 2))
+        right_w = w - left_w - 1
         prog_h = 2
         hint_h = 1
         body_h = h - prog_h - hint_h
         return h, w, left_w, right_w, prog_h, hint_h, body_h
 
-    # ── drawing ───────────────────────────────────────────────
+    # ── draw ─────────────────────────────────────────────────
 
     def draw(self) -> None:
         self.scr.erase()
         h, w, lw, rw, prog_h, hint_h, body_h = self._dims()
         q = self.questions[self.current]
         total = len(self.questions)
+        n_answered = len(self.answers)
 
-        # ── progress row ─────────────────────────────────────
-        pct = self.current / total
+        # progress bar
+        pct = n_answered / total
         bar_w = max(10, lw - 2)
         filled = int(bar_w * pct)
         bar = "█" * filled + "░" * (bar_w - filled)
         phase_tag = f"[{q['phase'].upper()}]"
-        _addstr(self.scr, 0, 0, f" {bar} {self.current+1}/{total} {phase_tag}",
+        _addstr(self.scr, 0, 0,
+                f" {bar} {self.current+1}/{total} {phase_tag}",
                 curses.color_pair(C_ACCENT) | curses.A_BOLD)
-
-        # divider line between progress and body
         _hline(self.scr, 1, 0, curses.ACS_HLINE, w)
 
-        # ── left panel: question ──────────────────────────────
+        # left panel
         lwin = self.scr.subwin(body_h, lw, prog_h, 0)
         self._draw_question(lwin, q)
 
-        # ── vertical divider ─────────────────────────────────
+        # vertical divider
         try:
             for row in range(prog_h, h - hint_h):
                 self.scr.addch(row, lw, curses.ACS_VLINE)
         except curses.error:
             pass
 
-        # ── right panel: results ──────────────────────────────
-        if rw > 5:
+        # right panel
+        if rw > 8:
             rwin = self.scr.subwin(body_h, rw, prog_h, lw + 1)
-            self._draw_results(rwin)
+            self._draw_tools(rwin, n_answered, total)
 
-        # ── hint bar ─────────────────────────────────────────
+        # hint bar
         is_last = self.current == total - 1
-        q_answered = self.questions[self.current]["id"] in self.answers
+        q_answered = q["id"] in self.answers
         if is_last and q_answered:
-            hint = "  ↑/↓ Move   Space/Enter/→  FINISH & EXIT   ← Back   q Quit  "
+            hint = "  Space/Enter/→  FINISH & EXIT   ← Back   q Quit  "
         elif is_last:
-            hint = "  ↑/↓ Move   Space/Enter Select (then → to Finish)   ← Back   q Quit  "
+            hint = "  ↑/↓ Move   Space/Enter Select   ← Back   q Quit  "
         else:
-            hint = "  ↑/↓ Move   Space/Enter Select+Next   ← Back   → Next   q Quit  "
+            hint = "  ↑/↓ Move   Space/Enter Select+Next   ← Back   → Next   1-9 Jump   q Quit  "
         _addstr(self.scr, h - 1, 0, hint.ljust(w)[:w - 1],
                 curses.color_pair(C_HINT))
 
@@ -176,17 +228,13 @@ class TUIApp:
         h, w = win.getmaxyx()
         win.erase()
 
-        # question text (word-wrapped)
         lines = textwrap.wrap(q["text"], width=w - 2) or [q["text"]]
         row = 1
         for line in lines:
             _addstr(win, row, 1, line, curses.A_BOLD)
             row += 1
-        row += 1  # blank line
+        row += 1
 
-        # answered chips above question (previous answers)
-        # (shown as small inline breadcrumb at top)
-        # options
         opts = q["options"]
         chosen = self.answers.get(q["id"])
         for i, opt in enumerate(opts):
@@ -196,124 +244,142 @@ class TUIApp:
             is_ans = (opt["value"] == chosen)
 
             if is_sel and is_ans:
-                marker = "●"
-                attr = curses.color_pair(C_SELECTED) | curses.A_BOLD
+                marker, attr = "●", curses.color_pair(C_SELECTED) | curses.A_BOLD
             elif is_sel:
-                marker = "▶"
-                attr = curses.color_pair(C_ACCENT) | curses.A_BOLD
+                marker, attr = "▶", curses.color_pair(C_ACCENT) | curses.A_BOLD
             elif is_ans:
-                marker = "●"
-                attr = curses.color_pair(C_ACCENT)
+                marker, attr = "●", curses.color_pair(C_ACCENT)
             else:
-                marker = "○"
-                attr = curses.A_DIM
+                marker, attr = "○", curses.A_DIM
 
-            label = f" {marker} {opt['label']}"
-            label_lines = textwrap.wrap(label, width=w - 3)
+            label_lines = textwrap.wrap(f" {marker} {opt['label']}", width=w - 3)
             for j, ll in enumerate(label_lines):
                 if row >= h - 1:
                     break
-                prefix = "   " if j > 0 else ""
-                _addstr(win, row, 1, (prefix + ll.lstrip() if j > 0 else ll), attr)
+                _addstr(win, row, 1, ("   " + ll.lstrip() if j > 0 else ll), attr)
                 row += 1
-            row += 0  # no extra gap between options
 
-        # previously answered summary at bottom
-        answered_ids = [self.questions[i]["id"] for i in range(self.current)
+        # previously answered chips at bottom
+        answered_ids = [self.questions[i]["id"]
+                        for i in range(self.current)
                         if self.questions[i]["id"] in self.answers]
         if answered_ids:
-            summary_row = h - len(answered_ids) - 2
-            _addstr(win, max(row + 1, summary_row), 1, "─ answered ─",
-                    curses.A_DIM)
-            for i, qid in enumerate(answered_ids[-5:]):   # show last 5
+            sep_row = h - len(answered_ids[-5:]) - 2
+            _addstr(win, max(row + 1, sep_row), 1, "─ answered ─", curses.A_DIM)
+            for i, qid in enumerate(answered_ids[-5:]):
                 idx = next(j for j, qq in enumerate(self.questions) if qq["id"] == qid)
                 qq = self.questions[idx]
                 val = self.answers[qid]
                 opt_label = next((o["label"] for o in qq["options"] if o["value"] == val), val)
-                short = qq.get("short", qid)
-                line = f" {short}: {opt_label}"
-                r = max(row + 2, summary_row) + i + 1
-                _addstr(win, r, 1, line[:w - 2], curses.A_DIM)
+                r = max(row + 2, sep_row) + i + 1
+                _addstr(win, r, 1,
+                        f" {qq.get('short', qid)}: {opt_label}"[:w - 2],
+                        curses.A_DIM)
 
-    def _draw_results(self, win) -> None:
+    def _draw_tools(self, win, n_answered: int, total: int) -> None:
         h, w = win.getmaxyx()
         win.erase()
-
-        if not self.result:
-            msg = "Answer a question to see live results"
-            _addstr(win, h // 2, max(0, (w - len(msg)) // 2), msg, curses.A_DIM)
-            return
-
-        r = self.result
         row = 0
 
-        # maturity header
-        stage_line = f" Stage {r['maturity_stage']} — {r['maturity_label']}"
-        _addstr(win, row, 0, stage_line[:w - 1],
-                curses.color_pair(C_ACCENT) | curses.A_BOLD)
+        has_scores = n_answered > 0
+
+        # header line
+        if self.meta:
+            stage_txt = f" Stage {self.meta['maturity_stage']} — {self.meta['maturity_label']}"
+            _addstr(win, row, 0, stage_txt[:w - 1],
+                    curses.color_pair(C_ACCENT) | curses.A_BOLD)
+        else:
+            _addstr(win, row, 0, " All tools — answer questions to filter",
+                    curses.A_DIM)
         row += 1
 
-        total_q = len(self.questions)
-        if len(self.answers) >= total_q:
-            done = " ✓ Complete recommendation"
-            _addstr(win, row, 0, done[:w - 1], curses.color_pair(C_DONE))
+        if n_answered >= total:
+            _addstr(win, row, 0, " ✓ Complete recommendation",
+                    curses.color_pair(C_DONE))
             row += 1
+
         row += 1  # blank
 
-        # ── tool stack ───────────────────────────────────────
-        stack = r.get("stack", [])
-        if stack:
-            _addstr(win, row, 0, " TOOL STACK", curses.A_DIM | curses.A_BOLD)
-            row += 1
+        # group tools by layer, sort by score within each group
+        layers_order = ["L1", "L2", "L3", "L4", "L5", "L6", "L7"]
+        by_layer: Dict[str, List[Tuple[float, Dict]]] = {l: [] for l in layers_order}
 
-        for layer in stack:
-            if row >= h - 1:
+        for score, tool in self.scored:
+            lk = _layer_key(tool)
+            if lk in by_layer:
+                by_layer[lk].append((score, tool))
+
+        for lk in layers_order:
+            items = by_layer[lk]
+            if not items:
+                continue
+
+            # sort by score descending when we have scores
+            if has_scores:
+                items.sort(key=lambda x: x[0], reverse=True)
+
+            # filter: hide tools scoring < 5% once we have enough answers
+            if has_scores and n_answered >= 3:
+                visible = [(s, t) for s, t in items if s >= 0.05]
+                if not visible:
+                    continue  # skip whole layer if nothing fits
+            else:
+                visible = items
+
+            if row >= h - 2:
                 break
-            pri = layer["priority"]
-            badge = f"[{pri.upper()[:3]}]"
-            label = f"{layer['layer']} {layer['layer_label']}"
-            badge_attr = (curses.color_pair(C_PRIMARY) | curses.A_BOLD
-                          if pri == "primary"
-                          else curses.color_pair(C_FUTURE) | curses.A_DIM)
-            _addstr(win, row, 1, badge, badge_attr)
-            _addstr(win, row, 7, label[:w - 9], curses.A_BOLD)
+
+            # layer header
+            label = LAYER_LABELS.get(lk, lk)
+            _addstr(win, row, 0, f" {lk} {label}"[:w - 1],
+                    curses.color_pair(C_LAYER) | curses.A_BOLD)
             row += 1
 
-            for t in layer.get("tools", []):
+            # tools
+            bar_w = min(10, max(6, w - 32))
+            shown = 0
+            for score, tool in visible:
                 if row >= h - 1:
                     break
-                score_str = f"{int(t['score']*100):3d}%"
-                name = t["name"]
-                line = f"  {score_str} {name}"
-                _addstr(win, row, 1, line[:w - 2],
-                        curses.color_pair(C_SCORE) if pri == "primary" else curses.A_DIM)
+                name = tool.get("name", tool.get("id", "?"))
+
+                if has_scores:
+                    pct = int(score * 100)
+                    bar = _score_bar(score, bar_w)
+                    score_str = f"{pct:3d}%"
+
+                    if score >= 0.35:
+                        attr = curses.color_pair(C_SCORE_HI) | curses.A_BOLD
+                        bar_attr = curses.color_pair(C_BAR_HI) | curses.A_BOLD
+                    elif score >= 0.15:
+                        attr = curses.color_pair(C_SCORE_MD)
+                        bar_attr = curses.color_pair(C_BAR_LO)
+                    else:
+                        attr = curses.A_DIM
+                        bar_attr = curses.A_DIM
+
+                    # score% [bar] name
+                    col = 1
+                    _addstr(win, row, col, score_str, attr)
+                    col += len(score_str) + 1
+                    _addstr(win, row, col, bar, bar_attr)
+                    col += len(bar) + 1
+                    _addstr(win, row, col, name[:w - col - 1], attr)
+                else:
+                    # no scores yet: show plain list
+                    _addstr(win, row, 2, f"• {name}"[:w - 3], curses.A_DIM)
+
                 row += 1
+                shown += 1
+
             row += 1  # gap between layers
 
-        # ── core agent fit ───────────────────────────────────
-        fits = [f for f in r.get("core_agent_fit", []) if f.get("fit_score", 0) > 0]
-        if fits and row < h - 4:
-            _addstr(win, row, 0, " CORE AGENT", curses.A_DIM | curses.A_BOLD)
-            row += 1
-            for fit in fits[:2]:
-                if row >= h - 1:
-                    break
-                pct = int(fit["fit_score"] * 100)
-                line = f"  {pct}% {fit['agent']} + {fit['llm']}"
-                _addstr(win, row, 1, line[:w - 2], curses.color_pair(C_SCORE))
-                row += 1
-                if fit.get("maturity_note"):
-                    note = f"     {fit['maturity_note']}"
-                    _addstr(win, row, 1, note[:w - 2], curses.A_DIM)
-                    row += 1
-            row += 1
-
-        # ── next step ────────────────────────────────────────
-        hint = r.get("next_step_hint", "")
-        if hint and row < h - 2:
+        # next step hint at bottom if we have meta
+        if self.meta and self.meta.get("next_step_hint") and row < h - 3:
+            hint_lines = textwrap.wrap(self.meta["next_step_hint"], width=w - 3)
             _addstr(win, row, 0, " NEXT STEP", curses.A_DIM | curses.A_BOLD)
             row += 1
-            for line in textwrap.wrap(hint, width=w - 3):
+            for line in hint_lines[:2]:
                 if row >= h - 1:
                     break
                 _addstr(win, row, 1, line, curses.color_pair(C_WARN))
@@ -321,18 +387,14 @@ class TUIApp:
 
     # ── input handling ────────────────────────────────────────
 
-    def _current_opts(self) -> List[Dict]:
-        return self.questions[self.current]["options"]
-
     def _select_current(self) -> None:
         q = self.questions[self.current]
         opts = q["options"]
         if 0 <= self.cursor < len(opts):
             self.answers[q["id"]] = opts[self.cursor]["value"]
-            self.result = _fetch_results(self.answers)
+            self._recompute()
 
     def _restore_cursor(self) -> None:
-        """Set cursor to current answer if any."""
         q = self.questions[self.current]
         val = self.answers.get(q["id"])
         if val:
@@ -346,31 +408,27 @@ class TUIApp:
         _init_colors()
         curses.curs_set(0)
         self.scr.keypad(True)
-        self.scr.timeout(50)   # ms — allows periodic redraw if needed
+        self.scr.timeout(50)
 
         while True:
             if self.dirty:
                 self.draw()
 
             key = self.scr.getch()
-
             if key == curses.ERR:
                 continue
 
             q = self.questions[self.current]
-            opts = self._current_opts()
+            opts = q["options"]
             total = len(self.questions)
 
-            # ── quit ─────────────────────────────────────────
-            if key in (ord('q'), ord('Q'), 27):  # q or ESC
-                return self.result
+            if key in (ord('q'), ord('Q'), 27):
+                return self._final_result()
 
-            # ── resize ───────────────────────────────────────
             elif key == curses.KEY_RESIZE:
                 self.scr.clear()
                 self.dirty = True
 
-            # ── move cursor ──────────────────────────────────
             elif key in (curses.KEY_UP, ord('k')):
                 self.cursor = (self.cursor - 1) % len(opts)
                 self.dirty = True
@@ -379,27 +437,22 @@ class TUIApp:
                 self.cursor = (self.cursor + 1) % len(opts)
                 self.dirty = True
 
-            # ── select option ────────────────────────────────
             elif key in (ord(' '), ord('\n'), curses.KEY_ENTER, 10, 13):
                 self._select_current()
                 self.dirty = True
                 if self.current < total - 1:
-                    # auto-advance to next question
                     self.current += 1
                     self._restore_cursor()
                 else:
-                    # last question: Enter again exits
                     if q["id"] in self.answers:
-                        return self.result
+                        return self._final_result()
 
-            # ── back ─────────────────────────────────────────
             elif key in (curses.KEY_LEFT, ord('h'), ord('b')):
                 if self.current > 0:
                     self.current -= 1
                     self._restore_cursor()
                     self.dirty = True
 
-            # ── next / finish ─────────────────────────────────
             elif key in (curses.KEY_RIGHT, ord('l'), ord('\t'), 9):
                 if q["id"] in self.answers:
                     if self.current < total - 1:
@@ -407,10 +460,8 @@ class TUIApp:
                         self._restore_cursor()
                         self.dirty = True
                     else:
-                        # last question answered → finish
-                        return self.result
+                        return self._final_result()
 
-            # ── jump to question by number (1-9) ─────────────
             elif ord('1') <= key <= ord('9'):
                 idx = key - ord('1')
                 if idx < total:
@@ -418,13 +469,22 @@ class TUIApp:
                     self._restore_cursor()
                     self.dirty = True
 
-        return self.result
+        return self._final_result()
+
+    def _final_result(self) -> Optional[Dict]:
+        if not self.answers:
+            return None
+        try:
+            from .org_scorer import build_profile_from_answers, org_recommend
+            profile = build_profile_from_answers(self.answers)
+            return asdict(org_recommend(profile))
+        except Exception:
+            return None
 
 
 def run_tui() -> Optional[Dict]:
     """Launch TUI and return the final OrgRecommendation dict (or None)."""
     import os
-    # Ensure we have a real terminal
     if not os.isatty(0):
         raise RuntimeError("TUI requires an interactive terminal.")
     return curses.wrapper(lambda scr: TUIApp(scr).run())
