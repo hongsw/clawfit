@@ -295,7 +295,9 @@ def org_recommend(profile: OrgProfile, top_per_layer: int = 3) -> OrgRecommendat
         latency=profile.latency,
         budget=profile.budget if profile.budget > 0 else None,
         network=profile.network if profile.offline_required else None,
-        statefulness=profile.statefulness if profile.statefulness != "stateless" else None,
+        # Only enforce statefulness as a hard filter when persistent storage is required;
+        # "session" and "stateless" profiles should still see persistent-capable agents.
+        statefulness=profile.statefulness if profile.statefulness == "persistent" else None,
         maturity_stage=profile.maturity_stage,
         top_n=2,
     )
