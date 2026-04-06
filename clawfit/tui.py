@@ -159,8 +159,13 @@ class TUIApp:
 
         # ── hint bar ─────────────────────────────────────────
         is_last = self.current == total - 1
-        next_label = "→ Finish" if is_last else "→ Next"
-        hint = "  ↑/↓ Move   Space/Enter Select   ← Back   %s   q Quit  " % next_label
+        q_answered = self.questions[self.current]["id"] in self.answers
+        if is_last and q_answered:
+            hint = "  ↑/↓ Move   Space/Enter/→  FINISH & EXIT   ← Back   q Quit  "
+        elif is_last:
+            hint = "  ↑/↓ Move   Space/Enter Select (then → to Finish)   ← Back   q Quit  "
+        else:
+            hint = "  ↑/↓ Move   Space/Enter Select+Next   ← Back   → Next   q Quit  "
         _addstr(self.scr, h - 1, 0, hint.ljust(w)[:w - 1],
                 curses.color_pair(C_HINT))
 
@@ -378,10 +383,14 @@ class TUIApp:
             elif key in (ord(' '), ord('\n'), curses.KEY_ENTER, 10, 13):
                 self._select_current()
                 self.dirty = True
-                # auto-advance if not last question
                 if self.current < total - 1:
+                    # auto-advance to next question
                     self.current += 1
                     self._restore_cursor()
+                else:
+                    # last question: Enter again exits
+                    if q["id"] in self.answers:
+                        return self.result
 
             # ── back ─────────────────────────────────────────
             elif key in (curses.KEY_LEFT, ord('h'), ord('b')):
@@ -390,12 +399,16 @@ class TUIApp:
                     self._restore_cursor()
                     self.dirty = True
 
-            # ── next (only if answered) ──────────────────────
+            # ── next / finish ─────────────────────────────────
             elif key in (curses.KEY_RIGHT, ord('l'), ord('\t'), 9):
-                if q["id"] in self.answers and self.current < total - 1:
-                    self.current += 1
-                    self._restore_cursor()
-                    self.dirty = True
+                if q["id"] in self.answers:
+                    if self.current < total - 1:
+                        self.current += 1
+                        self._restore_cursor()
+                        self.dirty = True
+                    else:
+                        # last question answered → finish
+                        return self.result
 
             # ── jump to question by number (1-9) ─────────────
             elif ord('1') <= key <= ord('9'):
