@@ -38,6 +38,14 @@ def _cmd_list(args: argparse.Namespace) -> None:
         print(f"  {item.id:24s} {item.name}")
 
 
+def _cmd_tui(args: argparse.Namespace) -> None:
+    from .tui import run_tui
+    from .diagnose import print_recommendation
+    result = run_tui()
+    if result and not args.quiet:
+        print_recommendation(result)
+
+
 def _cmd_serve(args: argparse.Namespace) -> None:
     from .server import serve
     serve(port=args.port, open_browser=not args.no_browser)
@@ -101,6 +109,11 @@ def build_parser() -> argparse.ArgumentParser:
     ls = sub.add_parser("list", help="List registry entries")
     ls.add_argument("registry", choices=["agents", "llms", "hardware"])
     ls.set_defaults(func=_cmd_list)
+
+    # tui
+    tui_p = sub.add_parser("tui", help="Interactive TUI questionnaire with live results")
+    tui_p.add_argument("--quiet", action="store_true", help="Don't print summary after exit")
+    tui_p.set_defaults(func=_cmd_tui)
 
     # serve
     srv = sub.add_parser("serve", help="Launch web UI with live results (localhost:7771)")
