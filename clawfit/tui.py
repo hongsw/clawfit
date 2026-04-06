@@ -104,6 +104,7 @@ def _fetch_result_meta(answers: Dict[str, str]) -> Optional[Dict]:
             "maturity_stage": profile.maturity_stage,
             "maturity_label": _maturity_label(profile.maturity_stage),
             "next_step_hint": _next_step_hint(profile),
+            "profile": profile,
         }
     except Exception:
         return None
@@ -295,9 +296,9 @@ class TUIApp:
         win.erase()
         row = 0
 
-        has_scores = n_answered > 0 or bool(self.answers)
+        has_scores = bool(self.answers) or n_answered > 0
 
-        # header line — show previewed stage if hovering produces a stage
+        # ── header ────────────────────────────────────────────
         if meta:
             stage_txt = f" Stage {meta['maturity_stage']} — {meta['maturity_label']}"
             _addstr(win, row, 0, stage_txt[:w - 1],
@@ -305,53 +306,99 @@ class TUIApp:
         else:
             _addstr(win, row, 0, " All tools — move cursor to preview",
                     curses.A_DIM)
+
+        # tool count on right side of header
+        visible_count = sum(1 for s, _ in scored if s >= (0.10 if n_answered >= 3 else 0))
+        count_txt = f"{visible_count}/{len(scored)} "
+        _addstr(win, row, max(0, w - len(count_txt) - 1), count_txt,
+                curses.color_pair(C_DIM) | curses.A_DIM)
         row += 1
 
         if n_answered >= total:
-            _addstr(win, row, 0, " ✓ Complete recommendation",
+            _addstr(win, row, 0, " ✓ Complete",
                     curses.color_pair(C_DONE))
             row += 1
 
-        row += 1  # blank
+        # ── score breakdown for #1 tool ───────────────────────
+        # show only when we have scores and enough width
+        top_scored = sorted(scored, key=lambda x: x[0], reverse=True)
+        if has_scores and top_scored and top_scored[0][0] > 0 and w >= 36:
+            top_score, top_tool = top_scored[0]
+            profile = meta.get("profile") if meta else None
+            if profile:
+                try:
+                    from .org_scorer import score_breakdown
+                    bd = score_breakdown(top_tool, profile)
+                    name = top_tool.get("name", "?")
+                    _addstr(win, row, 0, f" ┌ {name[:w-5]} {int(top_score*100)}%",
+                            curses.color_pair(C_SCORE_HI) | curses.A_BOLD)
+                    row += 1
+                    dims = [
+                        ("task",    "Task "),
+                        ("role",    "Role "),
+                        ("maturity","Matur"),
+                        ("network", "Net  "),
+                        ("latency", "Lat  "),
+                    ]
+                    bar_w = max(4, w - 14)
+                    for key, label in dims:
+                        if row >= h - 1:
+                            break
+                        val = bd.get(key, 0)
+                        filled = int(bar_w * val)
+                        bar = "█" * filled + "░" * (bar_w - filled)
+                        pct = int(val * 100)
+                        attr = (curses.color_pair(C_SCORE_HI) | curses.A_BOLD if val >= 0.7
+                                else curses.color_pair(C_SCORE_MD) if val >= 0.4
+                                else curses.A_DIM)
+                        _addstr(win, row, 1, f" {label} {bar} {pct:3d}%", attr)
+                        row += 1
+                    row += 1
+                except Exception:
+                    row += 1
+            else:
+                row += 1
+        else:
+            row += 1
 
-        # group tools by layer, sort by score within each group
+        # ── group by layer ────────────────────────────────────
         layers_order = ["L1", "L2", "L3", "L4", "L5", "L6", "L7"]
         by_layer: Dict[str, List[Tuple[float, Dict]]] = {l: [] for l in layers_order}
-
         for score, tool in scored:
             lk = _layer_key(tool)
             if lk in by_layer:
                 by_layer[lk].append((score, tool))
 
+        # threshold: hide weak matches once enough answers given
+        threshold = 0.10 if n_answered >= 3 else 0.0
+
         for lk in layers_order:
             items = by_layer[lk]
             if not items:
                 continue
-
-            # sort by score descending when we have scores
             if has_scores:
                 items.sort(key=lambda x: x[0], reverse=True)
-
-            # filter: hide tools scoring < 5% once we have enough answers
-            if has_scores and n_answered >= 3:
-                visible = [(s, t) for s, t in items if s >= 0.05]
-                if not visible:
-                    continue  # skip whole layer if nothing fits
-            else:
-                visible = items
-
+            visible = [(s, t) for s, t in items if s >= threshold]
+            if not visible:
+                continue
             if row >= h - 2:
                 break
 
-            # layer header
+            # layer header with count
             label = LAYER_LABELS.get(lk, lk)
-            _addstr(win, row, 0, f" {lk} {label}"[:w - 1],
+            n_vis = len(visible)
+            n_tot = len(items)
+            hdr = f" {lk} {label}"
+            cnt = f" {n_vis}/{n_tot}"
+            _addstr(win, row, 0, hdr[:w - len(cnt) - 1],
                     curses.color_pair(C_LAYER) | curses.A_BOLD)
+            _addstr(win, row, max(0, w - len(cnt) - 1), cnt,
+                    curses.A_DIM)
             row += 1
 
-            # tools
-            bar_w = min(10, max(6, w - 32))
-            shown = 0
+            # tier separators: ≥70% strong, 40-70% normal, <40% weak
+            bar_w = max(4, min(8, w - 28))
+            prev_tier = None
             for score, tool in visible:
                 if row >= h - 1:
                     break
@@ -359,41 +406,46 @@ class TUIApp:
 
                 if has_scores:
                     pct = int(score * 100)
+                    tier = "strong" if score >= 0.70 else "mid" if score >= 0.40 else "weak"
+                    # tier separator line
+                    if prev_tier and tier != prev_tier and tier in ("mid", "weak"):
+                        sep = "·" * min(w - 2, 20)
+                        _addstr(win, row, 1, sep, curses.A_DIM)
+                        row += 1
+                        if row >= h - 1:
+                            break
+                    prev_tier = tier
+
                     bar = _score_bar(score, bar_w)
                     score_str = f"{pct:3d}%"
-
-                    if score >= 0.35:
+                    if tier == "strong":
                         attr = curses.color_pair(C_SCORE_HI) | curses.A_BOLD
                         bar_attr = curses.color_pair(C_BAR_HI) | curses.A_BOLD
-                    elif score >= 0.15:
+                    elif tier == "mid":
                         attr = curses.color_pair(C_SCORE_MD)
                         bar_attr = curses.color_pair(C_BAR_LO)
                     else:
                         attr = curses.A_DIM
                         bar_attr = curses.A_DIM
 
-                    # score% [bar] name
                     col = 1
                     _addstr(win, row, col, score_str, attr)
-                    col += len(score_str) + 1
+                    col += 5
                     _addstr(win, row, col, bar, bar_attr)
                     col += len(bar) + 1
                     _addstr(win, row, col, name[:w - col - 1], attr)
                 else:
-                    # no scores yet: show plain list
                     _addstr(win, row, 2, f"• {name}"[:w - 3], curses.A_DIM)
 
                 row += 1
-                shown += 1
 
             row += 1  # gap between layers
 
-        # next step hint at bottom if we have meta
+        # ── next step hint ────────────────────────────────────
         if meta and meta.get("next_step_hint") and row < h - 3:
-            hint_lines = textwrap.wrap(meta["next_step_hint"], width=w - 3)
-            _addstr(win, row, 0, " NEXT STEP", curses.A_DIM | curses.A_BOLD)
+            _addstr(win, row, 0, " ▶ NEXT STEP", curses.A_DIM | curses.A_BOLD)
             row += 1
-            for line in hint_lines[:2]:
+            for line in textwrap.wrap(meta["next_step_hint"], width=w - 3)[:2]:
                 if row >= h - 1:
                     break
                 _addstr(win, row, 1, line, curses.color_pair(C_WARN))

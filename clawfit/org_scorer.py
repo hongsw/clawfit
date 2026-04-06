@@ -108,24 +108,31 @@ def _maturity_label(stage: int) -> str:
     return labels.get(stage, f"Stage {stage}")
 
 
+_LATENCY_RANK = {"low": 1, "medium": 2, "high": 3}
+
+
 def _score_tool(tool: Dict, profile: OrgProfile) -> float:
     """Score a single ecosystem tool against the org profile (0–1).
 
-    Weights (must sum to 1.0):
-      task_fit        0.25
-      maturity_fit    0.20
-      layer_relevance 0.15
-      role_fit        0.15
-      team_size_fit   0.10
-      network_fit     0.08
-      feature_fit     0.07  (governance + team-sharing + offline sub-components)
-      budget_fit      0.05
+    10 weighted dimensions (sum = 1.0):
+      task_fit        0.22  — primary task match
+      maturity_fit    0.18  — maturity stage fit
+      role_fit        0.15  — role overlap
+      layer_relevance 0.12  — profile layer weight
+      team_size_fit   0.09  — team size bucket
+      network_fit     0.08  — online/offline/hybrid
+      latency_fit     0.06  — latency requirement match
+      feature_fit     0.05  — governance/sharing/offline features
+      complexity_fit  0.04  — setup complexity vs maturity
+      budget_fit      0.01  — pricing tier
+
+    Hard multipliers (applied after weighted sum):
+      offline tool required but tool is online-only → × 0.25
+      role mismatch (roles specified, none overlap)  → × 0.75
     """
     org_fit = tool.get("org_fit", {})
 
-    # ------------------------------------------------------------------
-    # 1. task_fit  (0.25)
-    # ------------------------------------------------------------------
+    # ── 1. task_fit (0.22) ────────────────────────────────────
     tasks = org_fit.get("tasks", [])
     if not tasks:
         task_score = 0.5
@@ -134,9 +141,7 @@ def _score_tool(tool: Dict, profile: OrgProfile) -> float:
     else:
         task_score = 0.0
 
-    # ------------------------------------------------------------------
-    # 2. maturity_fit  (0.20)
-    # ------------------------------------------------------------------
+    # ── 2. maturity_fit (0.18) ────────────────────────────────
     min_m = org_fit.get("min_maturity", 1)
     max_m = org_fit.get("max_maturity", 11)
     opt_m = org_fit.get("optimal_maturity", 6)
@@ -145,101 +150,174 @@ def _score_tool(tool: Dict, profile: OrgProfile) -> float:
         half = max(opt_m - min_m, max_m - opt_m, 1)
         maturity_score = max(1.0 - (dist / half) * 0.7, 0.3)
     else:
-        maturity_score = 0.0
+        # gradual falloff beyond range instead of hard 0
+        out = min(abs(profile.maturity_stage - min_m),
+                  abs(profile.maturity_stage - max_m))
+        maturity_score = max(0.0, 0.2 - out * 0.05)
 
-    # ------------------------------------------------------------------
-    # 3. layer_relevance  (0.15)
-    # ------------------------------------------------------------------
+    # ── 3. role_fit (0.15) ────────────────────────────────────
+    roles = org_fit.get("roles", [])
+    role_match = not roles or any(r in roles for r in profile.roles)
+    role_score = 1.0 if role_match else 0.0
+    if not roles:
+        role_score = 0.5   # neutral if unspecified
+
+    # ── 4. layer_relevance (0.12) ─────────────────────────────
     level_key = f"L{tool.get('level', 1)}"
     raw_layer = profile.layer_weights.get(level_key, 0.0)
     max_layer = max(profile.layer_weights.values()) if profile.layer_weights else 1.0
     layer_score = raw_layer / max_layer if max_layer > 0 else 0.0
 
-    # ------------------------------------------------------------------
-    # 4. role_fit  (0.15)
-    # ------------------------------------------------------------------
-    roles = org_fit.get("roles", [])
-    if not roles:
-        role_score = 0.5
-    elif any(r in roles for r in profile.roles):
-        role_score = 1.0
-    else:
-        role_score = 0.0
-
-    # ------------------------------------------------------------------
-    # 5. team_size_fit  (0.10)
-    # ------------------------------------------------------------------
+    # ── 5. team_size_fit (0.09) ───────────────────────────────
     team_sizes = org_fit.get("team_size", [])
     n = profile.team_size
-    if n <= 1:
-        bucket = "solo"
-    elif n <= 5:
-        bucket = "small"
-    elif n <= 20:
-        bucket = "mid"
-    else:
-        bucket = "large"
-
+    bucket = "solo" if n <= 1 else "small" if n <= 5 else "mid" if n <= 20 else "large"
     if not team_sizes:
         team_size_score = 0.5
     elif bucket in team_sizes:
         team_size_score = 1.0
     else:
-        team_size_score = 0.0
+        # partial credit for adjacent buckets
+        order = ["solo", "small", "mid", "large"]
+        bi = order.index(bucket)
+        best = min(abs(bi - order.index(ts)) for ts in team_sizes if ts in order)
+        team_size_score = max(0.0, 1.0 - best * 0.4)
 
-    # ------------------------------------------------------------------
-    # 6. network_fit  (0.08)
-    # ------------------------------------------------------------------
+    # ── 6. network_fit (0.08) ─────────────────────────────────
     tool_network = org_fit.get("network", "online")
     if profile.offline_required:
         network_score = 1.0 if tool_network in ("offline", "hybrid") else 0.0
     else:
-        network_score = 1.0 if tool_network in ("online", "hybrid") else 0.5
+        network_score = 1.0 if tool_network in ("online", "hybrid") else 0.6
 
-    # ------------------------------------------------------------------
-    # 7. budget_fit  (0.05)
-    # ------------------------------------------------------------------
-    pricing_tier = org_fit.get("pricing_tier", "paid")
-    if profile.budget_tier == "free":
-        budget_score = 1.0 if pricing_tier == "free" else max(0.0, 0.7 - 0.3)
-    elif profile.budget_tier == "low":
-        budget_score = 1.0 if pricing_tier in ("free", "freemium") else 0.6
-    elif profile.budget_tier in ("medium", "high"):
-        budget_score = 0.8
-        if pricing_tier in ("paid",):
-            budget_score = 0.9
-        if pricing_tier in ("freemium", "free"):
-            budget_score = 0.85
+    # ── 7. latency_fit (0.06) ─────────────────────────────────
+    tool_latency = org_fit.get("latency", "medium")
+    req_rank = _LATENCY_RANK.get(profile.latency, 2)
+    tool_rank = _LATENCY_RANK.get(tool_latency, 2)
+    latency_diff = tool_rank - req_rank   # positive = tool is slower than needed
+    if latency_diff <= 0:
+        latency_score = 1.0   # tool is at least as fast as required
     else:
-        budget_score = 0.7
+        latency_score = max(0.0, 1.0 - latency_diff * 0.4)
 
-    # ------------------------------------------------------------------
-    # 8. feature_fit  (0.07)
-    # ------------------------------------------------------------------
+    # ── 8. feature_fit (0.05) ─────────────────────────────────
     features = org_fit.get("features", [])
     feature_score = 0.0
-    if profile.governance_need and "governance" in features:
-        feature_score += 1.0 / 3.0
-    if profile.sharing and "team-sharing" in features:
-        feature_score += 1.0 / 3.0
-    if profile.offline_required and "offline" in features:
-        feature_score += 1.0 / 3.0
+    checks = [
+        (profile.governance_need, "governance"),
+        (profile.sharing, "team-sharing"),
+        (profile.offline_required, "offline"),
+    ]
+    n_active = sum(1 for cond, _ in checks if cond)
+    if n_active:
+        matched = sum(1 for cond, feat in checks if cond and feat in features)
+        feature_score = matched / n_active
 
-    # ------------------------------------------------------------------
-    # Weighted sum
-    # ------------------------------------------------------------------
+    # ── 9. complexity_fit (0.04) ──────────────────────────────
+    complexity = org_fit.get("setup_complexity", "medium")
+    # low-maturity teams should prefer low-complexity tools
+    complexity_rank = {"low": 1, "medium": 2, "high": 3}.get(complexity, 2)
+    if profile.maturity_stage <= 3:
+        complexity_score = 1.0 - (complexity_rank - 1) * 0.4   # prefer low
+    elif profile.maturity_stage <= 6:
+        complexity_score = 1.0 - abs(complexity_rank - 2) * 0.2  # prefer medium
+    else:
+        complexity_score = 1.0 - (3 - complexity_rank) * 0.2    # prefer high ok
+
+    # ── 10. budget_fit (0.01) ─────────────────────────────────
+    pricing_tier = org_fit.get("pricing_tier", "paid")
+    if profile.budget_tier == "free":
+        budget_score = 1.0 if pricing_tier == "free" else 0.3
+    elif profile.budget_tier == "low":
+        budget_score = 1.0 if pricing_tier in ("free", "freemium") else 0.5
+    else:
+        budget_score = 1.0 if pricing_tier == "paid" else 0.9
+
+    # ── weighted sum ──────────────────────────────────────────
     score = (
-        task_score        * 0.25
-        + maturity_score  * 0.20
-        + layer_score     * 0.15
-        + role_score      * 0.15
-        + team_size_score * 0.10
-        + network_score   * 0.08
-        + budget_score    * 0.05
-        + feature_score   * 0.07
+        task_score       * 0.22
+        + maturity_score * 0.18
+        + role_score     * 0.15
+        + layer_score    * 0.12
+        + team_size_score* 0.09
+        + network_score  * 0.08
+        + latency_score  * 0.06
+        + feature_score  * 0.05
+        + complexity_score * 0.04
+        + budget_score   * 0.01
     )
 
+    # ── hard multipliers for critical mismatches ───────────────
+    if profile.offline_required and tool_network == "online":
+        score *= 0.25   # online-only tool for air-gapped env: heavy penalty
+    if roles and not any(r in roles for r in profile.roles):
+        score *= 0.75   # role mismatch: significant but not fatal
+
     return round(max(min(score, 1.0), 0.0), 3)
+
+
+def score_breakdown(tool: Dict, profile: OrgProfile) -> Dict[str, float]:
+    """Return per-dimension scores (0-1) for display purposes."""
+    org_fit = tool.get("org_fit", {})
+
+    tasks = org_fit.get("tasks", [])
+    task_s = 1.0 if profile.task in tasks else (0.5 if not tasks else 0.0)
+
+    min_m, max_m, opt_m = org_fit.get("min_maturity", 1), org_fit.get("max_maturity", 11), org_fit.get("optimal_maturity", 6)
+    if min_m <= profile.maturity_stage <= max_m:
+        dist = abs(profile.maturity_stage - opt_m)
+        half = max(opt_m - min_m, max_m - opt_m, 1)
+        mat_s = max(1.0 - (dist / half) * 0.7, 0.3)
+    else:
+        out = min(abs(profile.maturity_stage - min_m), abs(profile.maturity_stage - max_m))
+        mat_s = max(0.0, 0.2 - out * 0.05)
+
+    roles = org_fit.get("roles", [])
+    role_s = 0.5 if not roles else (1.0 if any(r in roles for r in profile.roles) else 0.0)
+
+    level_key = f"L{tool.get('level', 1)}"
+    raw = profile.layer_weights.get(level_key, 0.0)
+    mx = max(profile.layer_weights.values()) if profile.layer_weights else 1.0
+    layer_s = raw / mx if mx > 0 else 0.0
+
+    team_sizes = org_fit.get("team_size", [])
+    n = profile.team_size
+    bucket = "solo" if n <= 1 else "small" if n <= 5 else "mid" if n <= 20 else "large"
+    if not team_sizes:
+        ts_s = 0.5
+    elif bucket in team_sizes:
+        ts_s = 1.0
+    else:
+        order = ["solo", "small", "mid", "large"]
+        best = min(abs(order.index(bucket) - order.index(t)) for t in team_sizes if t in order)
+        ts_s = max(0.0, 1.0 - best * 0.4)
+
+    tool_network = org_fit.get("network", "online")
+    net_s = (1.0 if tool_network in ("offline", "hybrid") else 0.0) if profile.offline_required else (1.0 if tool_network in ("online", "hybrid") else 0.6)
+
+    tool_lat = org_fit.get("latency", "medium")
+    diff = _LATENCY_RANK.get(tool_lat, 2) - _LATENCY_RANK.get(profile.latency, 2)
+    lat_s = 1.0 if diff <= 0 else max(0.0, 1.0 - diff * 0.4)
+
+    cx = org_fit.get("setup_complexity", "medium")
+    cx_rank = {"low": 1, "medium": 2, "high": 3}.get(cx, 2)
+    if profile.maturity_stage <= 3:
+        cx_s = 1.0 - (cx_rank - 1) * 0.4
+    elif profile.maturity_stage <= 6:
+        cx_s = 1.0 - abs(cx_rank - 2) * 0.2
+    else:
+        cx_s = 1.0 - (3 - cx_rank) * 0.2
+
+    return {
+        "task":       round(task_s, 2),
+        "maturity":   round(mat_s, 2),
+        "role":       round(role_s, 2),
+        "layer":      round(layer_s, 2),
+        "team_size":  round(ts_s, 2),
+        "network":    round(net_s, 2),
+        "latency":    round(lat_s, 2),
+        "complexity": round(cx_s, 2),
+    }
 
 
 def _next_step_hint(profile: OrgProfile) -> str:
