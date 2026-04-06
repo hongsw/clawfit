@@ -159,8 +159,17 @@ class TUIApp:
         self.dirty = True
 
     def _recompute(self) -> None:
+        """Recompute scores from confirmed answers."""
         self.scored = _score_tools(self.all_tools, self.answers)
         self.meta = _fetch_result_meta(self.answers)
+
+    def _preview_answers(self) -> Dict[str, str]:
+        """Confirmed answers + hovered (not yet confirmed) option."""
+        q = self.questions[self.current]
+        opts = q["options"]
+        if 0 <= self.cursor < len(opts):
+            return {**self.answers, q["id"]: opts[self.cursor]["value"]}
+        return self.answers
 
     # ── layout ───────────────────────────────────────────────
 
@@ -204,10 +213,13 @@ class TUIApp:
         except curses.error:
             pass
 
-        # right panel
+        # right panel — use hover preview (confirmed answers + hovered option)
         if rw > 8:
             rwin = self.scr.subwin(body_h, rw, prog_h, lw + 1)
-            self._draw_tools(rwin, n_answered, total)
+            preview = self._preview_answers()
+            preview_scored = _score_tools(self.all_tools, preview)
+            preview_meta = _fetch_result_meta(preview)
+            self._draw_tools(rwin, n_answered, total, preview_scored, preview_meta)
 
         # hint bar
         is_last = self.current == total - 1
@@ -276,20 +288,22 @@ class TUIApp:
                         f" {qq.get('short', qid)}: {opt_label}"[:w - 2],
                         curses.A_DIM)
 
-    def _draw_tools(self, win, n_answered: int, total: int) -> None:
+    def _draw_tools(self, win, n_answered: int, total: int,
+                    scored: List[Tuple[float, Dict]],
+                    meta: Optional[Dict]) -> None:
         h, w = win.getmaxyx()
         win.erase()
         row = 0
 
-        has_scores = n_answered > 0
+        has_scores = n_answered > 0 or bool(self.answers)
 
-        # header line
-        if self.meta:
-            stage_txt = f" Stage {self.meta['maturity_stage']} — {self.meta['maturity_label']}"
+        # header line — show previewed stage if hovering produces a stage
+        if meta:
+            stage_txt = f" Stage {meta['maturity_stage']} — {meta['maturity_label']}"
             _addstr(win, row, 0, stage_txt[:w - 1],
                     curses.color_pair(C_ACCENT) | curses.A_BOLD)
         else:
-            _addstr(win, row, 0, " All tools — answer questions to filter",
+            _addstr(win, row, 0, " All tools — move cursor to preview",
                     curses.A_DIM)
         row += 1
 
@@ -304,7 +318,7 @@ class TUIApp:
         layers_order = ["L1", "L2", "L3", "L4", "L5", "L6", "L7"]
         by_layer: Dict[str, List[Tuple[float, Dict]]] = {l: [] for l in layers_order}
 
-        for score, tool in self.scored:
+        for score, tool in scored:
             lk = _layer_key(tool)
             if lk in by_layer:
                 by_layer[lk].append((score, tool))
@@ -375,8 +389,8 @@ class TUIApp:
             row += 1  # gap between layers
 
         # next step hint at bottom if we have meta
-        if self.meta and self.meta.get("next_step_hint") and row < h - 3:
-            hint_lines = textwrap.wrap(self.meta["next_step_hint"], width=w - 3)
+        if meta and meta.get("next_step_hint") and row < h - 3:
+            hint_lines = textwrap.wrap(meta["next_step_hint"], width=w - 3)
             _addstr(win, row, 0, " NEXT STEP", curses.A_DIM | curses.A_BOLD)
             row += 1
             for line in hint_lines[:2]:
