@@ -1,6 +1,6 @@
 [build-system]
 requires = ["setuptools>=64"]
-build-backend = "setuptools.backends._legacy:_Backend"
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "clawfit"
@@ -12,5 +12,8 @@ license = "MIT"
 [project.scripts]
 clawfit = "clawfit.cli:main"
 
+[tool.setuptools.packages.find]
+include = ["clawfit*"]
+
 [tool.setuptools.package-data]
-clawfit = ["registry/*.json"]
+clawfit = ["registry/*.json", "data/*.json"]

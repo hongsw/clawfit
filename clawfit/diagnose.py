@@ -15,7 +15,7 @@ from typing import Any, Dict, List, Optional
 
 
 def _load_questions() -> List[Dict[str, Any]]:
-    path = pathlib.Path(__file__).parent.parent / "data" / "org_questions.json"
+    path = pathlib.Path(__file__).parent / "data" / "org_questions.json"
     with open(path) as f:
         return json.load(f)["questions"]
 

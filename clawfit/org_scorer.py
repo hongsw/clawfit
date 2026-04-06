@@ -86,7 +86,7 @@ class OrgRecommendation:
 
 
 def _load_tools_registry() -> List[Dict]:
-    path = pathlib.Path(__file__).parent.parent / "data" / "tools_registry.json"
+    path = pathlib.Path(__file__).parent / "data" / "tools_registry.json"
     with open(path) as f:
         return json.load(f)
 
@@ -185,7 +185,7 @@ def build_profile_from_answers(answers: Dict[str, str]) -> OrgProfile:
     Convert raw questionnaire answers {question_id: option_value} into an OrgProfile.
     Merges all signals from selected options.
     """
-    path = pathlib.Path(__file__).parent.parent / "data" / "org_questions.json"
+    path = pathlib.Path(__file__).parent / "data" / "org_questions.json"
     with open(path) as f:
         qbank = json.load(f)
 

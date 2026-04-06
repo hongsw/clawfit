@@ -1,0 +1,744 @@
+[
+  {
+    "id": "openclaw",
+    "name": "OpenClaw",
+    "category": "gateway_orchestrator",
+    "level": 1,
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/openclaw/openclaw",
+    "source_type": "github",
+    "comparison_priority": "core",
+    "notes": "Self-hosted AI agent gateway across messaging channels.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [
+        "team-sharing",
+        "governance"
+      ],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "zeroclaw",
+    "name": "ZeroClaw",
+    "category": "lightweight_runtime",
+    "level": 1,
+    "license": "unknown",
+    "primary_language": "Rust",
+    "url": "https://github.com/zeroclaw-labs/zeroclaw",
+    "source_type": "github",
+    "comparison_priority": "core",
+    "notes": "Lightweight edge-oriented agent runtime.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 9,
+      "optimal_maturity": 6,
+      "features": [
+        "offline"
+      ],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "claude_code",
+    "name": "Claude Code",
+    "category": "coding_cli_agent",
+    "level": 1,
+    "license": "Proprietary",
+    "primary_language": "Shell",
+    "url": "https://github.com/anthropics/claude-code",
+    "source_type": "github",
+    "comparison_priority": "core",
+    "notes": "Terminal-based agentic coding tool from Anthropic.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [],
+      "pricing_tier": "paid"
+    }
+  },
+  {
+    "id": "opencode",
+    "name": "OpenCode",
+    "category": "open_source_coding_agent",
+    "level": 1,
+    "license": "unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/anomalyco/opencode",
+    "source_type": "github",
+    "comparison_priority": "core",
+    "notes": "Open-source coding agent.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 7,
+      "optimal_maturity": 4,
+      "features": [],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "goose",
+    "name": "Goose",
+    "category": "extensible_cli_agent",
+    "level": 1,
+    "license": "Apache-2.0",
+    "primary_language": "Rust",
+    "url": "https://github.com/block/goose",
+    "source_type": "github",
+    "comparison_priority": "core",
+    "notes": "Extensible open-source AI agent with strong CLI workflow support.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 7,
+      "optimal_maturity": 4,
+      "features": [
+        "offline"
+      ],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "crush",
+    "name": "Crush",
+    "category": "developer_terminal_agent",
+    "level": 1,
+    "license": "unknown",
+    "primary_language": "Go",
+    "url": "https://github.com/charmbracelet/crush",
+    "source_type": "github",
+    "comparison_priority": "core",
+    "notes": "Terminal-native agentic coding experience.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 6,
+      "optimal_maturity": 4,
+      "features": [],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "aider",
+    "name": "Aider",
+    "category": "repo_editing_cli",
+    "level": 1,
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "url": "https://github.com/paul-gauthier/aider",
+    "source_type": "github",
+    "comparison_priority": "core",
+    "notes": "CLI-first multi-file code editing assistant.",
+    "org_fit": {
+      "min_maturity": 2,
+      "max_maturity": 6,
+      "optimal_maturity": 3,
+      "features": [
+        "offline"
+      ],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "openhands",
+    "name": "OpenHands",
+    "category": "autonomous_coding_agent",
+    "level": 1,
+    "license": "MIT",
+    "primary_language": "Python",
+    "url": "https://github.com/All-Hands-AI/OpenHands",
+    "source_type": "github",
+    "comparison_priority": "core",
+    "notes": "Autonomous coding agent with sandboxed workflow orientation.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [
+        "team-sharing"
+      ],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "cline",
+    "name": "Cline",
+    "category": "ide_coding_assistant",
+    "level": 1,
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/cline/cline",
+    "source_type": "github",
+    "comparison_priority": "core",
+    "notes": "VS Code agentic coding assistant.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 7,
+      "optimal_maturity": 4,
+      "features": [],
+      "pricing_tier": "freemium"
+    }
+  },
+  {
+    "id": "continue",
+    "name": "Continue",
+    "category": "ide_coding_assistant",
+    "level": 1,
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/continuedev/continue",
+    "source_type": "github",
+    "comparison_priority": "core",
+    "notes": "IDE-native coding assistant with model flexibility.",
+    "org_fit": {
+      "min_maturity": 2,
+      "max_maturity": 6,
+      "optimal_maturity": 3,
+      "features": [
+        "offline"
+      ],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "cursor",
+    "name": "Cursor",
+    "category": "ide_coding_assistant",
+    "level": 1,
+    "license": "Proprietary",
+    "primary_language": "unknown",
+    "url": "https://cursor.com/",
+    "source_type": "website",
+    "comparison_priority": "core",
+    "notes": "Commercial editor-centered AI coding assistant.",
+    "org_fit": {
+      "min_maturity": 2,
+      "max_maturity": 6,
+      "optimal_maturity": 3,
+      "features": [],
+      "pricing_tier": "paid"
+    }
+  },
+  {
+    "id": "superwhisper",
+    "name": "Superwhisper",
+    "category": "voice_coding_input",
+    "level": 1,
+    "license": "Proprietary",
+    "primary_language": "unknown",
+    "url": "https://superwhisper.com/",
+    "source_type": "website",
+    "comparison_priority": "core",
+    "notes": "Voice input and speech-to-text productivity layer for developers.",
+    "org_fit": {
+      "min_maturity": 1,
+      "max_maturity": 5,
+      "optimal_maturity": 2,
+      "features": [],
+      "pricing_tier": "paid"
+    }
+  },
+  {
+    "id": "oh_my_openagent",
+    "name": "oh-my-openagent",
+    "category": "agent_harness",
+    "level": 2,
+    "license": "unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Open agent harness and orchestration wrapper.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "oh_my_claudecode",
+    "name": "oh-my-claudecode",
+    "category": "claude_code_orchestration",
+    "level": 2,
+    "license": "unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Teams-first multi-agent orchestration for Claude Code.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [
+        "team-sharing"
+      ],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "aperant",
+    "name": "Aperant",
+    "category": "multi_session_agent",
+    "level": 2,
+    "license": "unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/AndyMik90/Aperant",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Autonomous multi-session AI coding system.",
+    "org_fit": {
+      "min_maturity": 5,
+      "max_maturity": 9,
+      "optimal_maturity": 6,
+      "features": [
+        "team-sharing",
+        "governance"
+      ],
+      "pricing_tier": "freemium"
+    }
+  },
+  {
+    "id": "ralph_claude_code",
+    "name": "ralph-claude-code",
+    "category": "automation_wrapper",
+    "level": 2,
+    "license": "unknown",
+    "primary_language": "Shell",
+    "url": "https://github.com/frankbria/ralph-claude-code",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Autonomous Claude Code loop wrapper.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "open_ralph_wiggum",
+    "name": "open-ralph-wiggum",
+    "category": "agent_loop_wrapper",
+    "level": 2,
+    "license": "unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/Th0rgal/open-ralph-wiggum",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Loop controller for multiple coding agent backends.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "superclaude_framework",
+    "name": "SuperClaude Framework",
+    "category": "agent_configuration_framework",
+    "level": 2,
+    "license": "unknown",
+    "primary_language": "Python",
+    "url": "https://github.com/SuperClaude-Org/SuperClaude_Framework",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Configuration framework enhancing Claude Code workflows.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 8,
+      "optimal_maturity": 6,
+      "features": [
+        "team-sharing"
+      ],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "claudecodeui",
+    "name": "claudecodeui",
+    "category": "remote_agent_ui",
+    "level": 2,
+    "license": "unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/siteboon/claudecodeui",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Web and mobile UI for remote coding agent sessions.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 7,
+      "optimal_maturity": 5,
+      "features": [
+        "team-sharing"
+      ],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "agentapi",
+    "name": "agentapi",
+    "category": "agent_api_abstraction",
+    "level": 2,
+    "license": "unknown",
+    "primary_language": "Go",
+    "url": "https://github.com/coder/agentapi",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "HTTP API abstraction for multiple coding agents.",
+    "org_fit": {
+      "min_maturity": 5,
+      "max_maturity": 9,
+      "optimal_maturity": 7,
+      "features": [
+        "team-sharing",
+        "governance"
+      ],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "openmemory",
+    "name": "OpenMemory",
+    "category": "memory_layer",
+    "level": 4,
+    "license": "unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/CaviraOSS/OpenMemory",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Local persistent memory layer for LLM applications.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 9,
+      "optimal_maturity": 6,
+      "features": [
+        "team-sharing",
+        "offline"
+      ],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "cipher",
+    "name": "cipher",
+    "category": "coding_agent_memory_mcp",
+    "level": 4,
+    "license": "unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/campfirein/cipher",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Memory layer for coding agents via MCP.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 9,
+      "optimal_maturity": 6,
+      "features": [
+        "offline",
+        "governance"
+      ],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "serena",
+    "name": "serena",
+    "category": "semantic_code_toolkit",
+    "level": 4,
+    "license": "unknown",
+    "primary_language": "Python",
+    "url": "https://github.com/oraios/serena",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Semantic retrieval and editing toolkit for coding agents.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "ouroboros",
+    "name": "ouroboros",
+    "category": "interaction_loop_tool",
+    "level": 6,
+    "license": "unknown",
+    "primary_language": "unknown",
+    "url": "https://github.com/Q00/ouroboros",
+    "source_type": "github",
+    "comparison_priority": "interface",
+    "notes": "Workflow or interaction loop utility to support human-agent productivity.",
+    "org_fit": {
+      "min_maturity": 7,
+      "max_maturity": 11,
+      "optimal_maturity": 9,
+      "features": [
+        "governance",
+        "team-sharing"
+      ],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "context7",
+    "name": "Context7",
+    "category": "documentation_context_layer",
+    "level": 4,
+    "license": "Unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/upstash/context7",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Up-to-date documentation and context layer for LLMs and AI code editors; discovery via vibe-coding topic, classified by clawfit as context infrastructure.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [],
+      "pricing_tier": "freemium"
+    }
+  },
+  {
+    "id": "onlook",
+    "name": "Onlook",
+    "category": "ai_first_design_to_code_surface",
+    "level": 1,
+    "license": "Unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/onlook-dev/onlook",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "AI-first visual builder for React apps; a primary build surface rather than just an orchestration wrapper.",
+    "org_fit": {
+      "min_maturity": 1,
+      "max_maturity": 4,
+      "optimal_maturity": 2,
+      "features": [],
+      "pricing_tier": "freemium"
+    }
+  },
+  {
+    "id": "superset",
+    "name": "Superset",
+    "category": "multi_agent_desktop_ide",
+    "level": 2,
+    "license": "Unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/superset-sh/superset",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Desktop IDE / orchestration surface for parallel Claude Code, Codex, and related agents.",
+    "org_fit": {
+      "min_maturity": 5,
+      "max_maturity": 9,
+      "optimal_maturity": 7,
+      "features": [
+        "team-sharing",
+        "governance"
+      ],
+      "pricing_tier": "freemium"
+    }
+  },
+  {
+    "id": "ccpm",
+    "name": "CCPM",
+    "category": "agent_project_management_wrapper",
+    "level": 2,
+    "license": "Unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/automazeio/ccpm",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Project management skill system using GitHub Issues and worktrees for parallel agent execution.",
+    "org_fit": {
+      "min_maturity": 5,
+      "max_maturity": 9,
+      "optimal_maturity": 6,
+      "features": [
+        "team-sharing"
+      ],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "refly",
+    "name": "Refly",
+    "category": "agent_skills_workflow_builder",
+    "level": 2,
+    "license": "Unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/refly-ai/refly",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Open-source skills/workflow builder spanning Claude Code, Cursor, Codex and more.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 8,
+      "optimal_maturity": 6,
+      "features": [
+        "team-sharing"
+      ],
+      "pricing_tier": "freemium"
+    }
+  },
+  {
+    "id": "claude_squad",
+    "name": "Claude Squad",
+    "category": "multi_agent_terminal_manager",
+    "level": 2,
+    "license": "Unknown",
+    "primary_language": "Python",
+    "url": "https://github.com/smtg-ai/claude-squad",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Manager for multiple AI terminal agents including Claude Code, Codex, and OpenCode.",
+    "org_fit": {
+      "min_maturity": 5,
+      "max_maturity": 9,
+      "optimal_maturity": 6,
+      "features": [
+        "team-sharing"
+      ],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "vibesdk",
+    "name": "VibeSDK",
+    "category": "vibe_coding_platform_sdk",
+    "level": 3,
+    "license": "Unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/cloudflare/vibesdk",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Platform SDK for building vibe-coding systems; more architecture/platform than direct end-user comparison target.",
+    "org_fit": {
+      "min_maturity": 6,
+      "max_maturity": 11,
+      "optimal_maturity": 8,
+      "features": [
+        "governance",
+        "team-sharing"
+      ],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "kaku",
+    "name": "Kaku",
+    "category": "ai_coding_terminal",
+    "level": 6,
+    "license": "Unknown",
+    "primary_language": "Rust",
+    "url": "https://github.com/tw93/Kaku",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Terminal application built for AI coding; better understood as interface/productivity layer than core agent runtime.",
+    "org_fit": {
+      "min_maturity": 7,
+      "max_maturity": 11,
+      "optimal_maturity": 9,
+      "features": [
+        "team-sharing"
+      ],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "crystal",
+    "name": "Crystal",
+    "category": "parallel_ai_session_desktop_app",
+    "level": 2,
+    "license": "Unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/stravu/crystal",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Desktop manager for multiple Codex / Claude Code sessions across git worktrees.",
+    "org_fit": {
+      "min_maturity": 5,
+      "max_maturity": 9,
+      "optimal_maturity": 7,
+      "features": [
+        "team-sharing",
+        "governance"
+      ],
+      "pricing_tier": "freemium"
+    }
+  },
+  {
+    "id": "claude_code_best_practice",
+    "name": "Claude Code Best Practice",
+    "category": "workflow_guide",
+    "level": 3,
+    "license": "Unknown",
+    "primary_language": "Markdown",
+    "url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Best-practice and workflow guidance resource; useful as behavioral evidence, not primarily as a product choice.",
+    "org_fit": {
+      "min_maturity": 5,
+      "max_maturity": 10,
+      "optimal_maturity": 7,
+      "features": [
+        "governance",
+        "team-sharing"
+      ],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "awesome_vibe_coding",
+    "name": "Awesome Vibe Coding",
+    "category": "curated_reference_list",
+    "level": 3,
+    "license": "Unknown",
+    "primary_language": "Markdown",
+    "url": "https://github.com/filipecalegario/awesome-vibe-coding",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Curated list of vibe-coding references; useful for discovery, not canonical taxonomy.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 9,
+      "optimal_maturity": 6,
+      "features": [
+        "team-sharing"
+      ],
+      "pricing_tier": "free"
+    }
+  },
+  {
+    "id": "autoresearch",
+    "name": "AutoResearch",
+    "category": "autonomous_research_workflow",
+    "level": 2,
+    "license": "MIT",
+    "primary_language": "Python",
+    "url": "https://github.com/karpathy/autoresearch",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Karpathy reference repo for autonomous research loops: agent modifies code, runs fixed-budget experiments, keeps or discards changes, and repeats. Important as a research-native workflow signal and origin point for multiple forks.",
+    "org_fit": {
+      "min_maturity": 6,
+      "max_maturity": 10,
+      "optimal_maturity": 7,
+      "features": [
+        "team-sharing"
+      ],
+      "pricing_tier": "free"
+    }
+  }
+]
