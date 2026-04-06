@@ -109,42 +109,135 @@ def _maturity_label(stage: int) -> str:
 
 
 def _score_tool(tool: Dict, profile: OrgProfile) -> float:
-    """Score a single ecosystem tool against the org profile (0–1)."""
-    score = 0.0
+    """Score a single ecosystem tool against the org profile (0–1).
+
+    Weights (must sum to 1.0):
+      task_fit        0.25
+      maturity_fit    0.20
+      layer_relevance 0.15
+      role_fit        0.15
+      team_size_fit   0.10
+      network_fit     0.08
+      feature_fit     0.07  (governance + team-sharing + offline sub-components)
+      budget_fit      0.05
+    """
     org_fit = tool.get("org_fit", {})
 
-    # Layer weight contribution
-    level_key = f"L{tool.get('level', 1)}"
-    score += profile.layer_weights.get(level_key, 0.0) * 0.4
+    # ------------------------------------------------------------------
+    # 1. task_fit  (0.25)
+    # ------------------------------------------------------------------
+    tasks = org_fit.get("tasks", [])
+    if not tasks:
+        task_score = 0.5
+    elif profile.task in tasks:
+        task_score = 1.0
+    else:
+        task_score = 0.0
 
-    # Maturity fit
+    # ------------------------------------------------------------------
+    # 2. maturity_fit  (0.20)
+    # ------------------------------------------------------------------
     min_m = org_fit.get("min_maturity", 1)
     max_m = org_fit.get("max_maturity", 11)
     opt_m = org_fit.get("optimal_maturity", 6)
     if min_m <= profile.maturity_stage <= max_m:
         dist = abs(profile.maturity_stage - opt_m)
         half = max(opt_m - min_m, max_m - opt_m, 1)
-        score += max(0.3 - (dist / half) * 0.2, 0.1) * 0.3
+        maturity_score = max(1.0 - (dist / half) * 0.7, 0.3)
     else:
-        score -= 0.1  # out of range penalty
+        maturity_score = 0.0
 
-    # Feature matching
+    # ------------------------------------------------------------------
+    # 3. layer_relevance  (0.15)
+    # ------------------------------------------------------------------
+    level_key = f"L{tool.get('level', 1)}"
+    raw_layer = profile.layer_weights.get(level_key, 0.0)
+    max_layer = max(profile.layer_weights.values()) if profile.layer_weights else 1.0
+    layer_score = raw_layer / max_layer if max_layer > 0 else 0.0
+
+    # ------------------------------------------------------------------
+    # 4. role_fit  (0.15)
+    # ------------------------------------------------------------------
+    roles = org_fit.get("roles", [])
+    if not roles:
+        role_score = 0.5
+    elif any(r in roles for r in profile.roles):
+        role_score = 1.0
+    else:
+        role_score = 0.0
+
+    # ------------------------------------------------------------------
+    # 5. team_size_fit  (0.10)
+    # ------------------------------------------------------------------
+    team_sizes = org_fit.get("team_size", [])
+    n = profile.team_size
+    if n <= 1:
+        bucket = "solo"
+    elif n <= 5:
+        bucket = "small"
+    elif n <= 20:
+        bucket = "mid"
+    else:
+        bucket = "large"
+
+    if not team_sizes:
+        team_size_score = 0.5
+    elif bucket in team_sizes:
+        team_size_score = 1.0
+    else:
+        team_size_score = 0.0
+
+    # ------------------------------------------------------------------
+    # 6. network_fit  (0.08)
+    # ------------------------------------------------------------------
+    tool_network = org_fit.get("network", "online")
+    if profile.offline_required:
+        network_score = 1.0 if tool_network in ("offline", "hybrid") else 0.0
+    else:
+        network_score = 1.0 if tool_network in ("online", "hybrid") else 0.5
+
+    # ------------------------------------------------------------------
+    # 7. budget_fit  (0.05)
+    # ------------------------------------------------------------------
+    pricing_tier = org_fit.get("pricing_tier", "paid")
+    if profile.budget_tier == "free":
+        budget_score = 1.0 if pricing_tier == "free" else max(0.0, 0.7 - 0.3)
+    elif profile.budget_tier == "low":
+        budget_score = 1.0 if pricing_tier in ("free", "freemium") else 0.6
+    elif profile.budget_tier in ("medium", "high"):
+        budget_score = 0.8
+        if pricing_tier in ("paid",):
+            budget_score = 0.9
+        if pricing_tier in ("freemium", "free"):
+            budget_score = 0.85
+    else:
+        budget_score = 0.7
+
+    # ------------------------------------------------------------------
+    # 8. feature_fit  (0.07)
+    # ------------------------------------------------------------------
     features = org_fit.get("features", [])
+    feature_score = 0.0
     if profile.governance_need and "governance" in features:
-        score += 0.1
+        feature_score += 1.0 / 3.0
     if profile.sharing and "team-sharing" in features:
-        score += 0.1
+        feature_score += 1.0 / 3.0
     if profile.offline_required and "offline" in features:
-        score += 0.15
-    elif profile.offline_required and "offline" not in features and tool.get("level") == 1:
-        score -= 0.2  # penalize online-only tools when offline required
+        feature_score += 1.0 / 3.0
 
-    # Budget compatibility
-    budget_tier = org_fit.get("pricing_tier", "paid")
-    if profile.budget_tier == "free" and budget_tier != "free":
-        score -= 0.15
-    elif profile.budget_tier in ("medium", "high") and budget_tier in ("paid", "free"):
-        score += 0.05
+    # ------------------------------------------------------------------
+    # Weighted sum
+    # ------------------------------------------------------------------
+    score = (
+        task_score        * 0.25
+        + maturity_score  * 0.20
+        + layer_score     * 0.15
+        + role_score      * 0.15
+        + team_size_score * 0.10
+        + network_score   * 0.08
+        + budget_score    * 0.05
+        + feature_score   * 0.07
+    )
 
     return round(max(min(score, 1.0), 0.0), 3)
 
