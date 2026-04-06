@@ -38,6 +38,11 @@ def _cmd_list(args: argparse.Namespace) -> None:
         print(f"  {item.id:24s} {item.name}")
 
 
+def _cmd_serve(args: argparse.Namespace) -> None:
+    from .server import serve
+    serve(port=args.port, open_browser=not args.no_browser)
+
+
 def _cmd_diagnose(args: argparse.Namespace) -> None:
     import json as _json
     from .diagnose import run_diagnosis, print_recommendation
@@ -96,6 +101,12 @@ def build_parser() -> argparse.ArgumentParser:
     ls = sub.add_parser("list", help="List registry entries")
     ls.add_argument("registry", choices=["agents", "llms", "hardware"])
     ls.set_defaults(func=_cmd_list)
+
+    # serve
+    srv = sub.add_parser("serve", help="Launch web UI with live results (localhost:7771)")
+    srv.add_argument("--port", type=int, default=7771, help="Port (default 7771)")
+    srv.add_argument("--no-browser", action="store_true", help="Don't open browser automatically")
+    srv.set_defaults(func=_cmd_serve)
 
     # diagnose
     diag = sub.add_parser("diagnose", help="Interactive org-fit questionnaire → tool stack recommendation")
