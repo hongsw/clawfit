@@ -3,23 +3,30 @@
 - Repo/Link: https://github.com/Michaelliv/pi-generative-ui
 - Source: hongsw GitHub stars
 
-## Why this is worth watching
-pi-generative-ui reverse-engineered Claude.ai's internal `show_widget` tool — including extracting Anthropic's 72K production design guidelines verbatim from exported conversation JSON — and rebuilt it for the `pi` macOS agent runtime. The result: LLMs can now generate live, streaming, interactive HTML/SVG widgets that open in native macOS windows (WKWebView). At 876 stars this is a meaningful signal that generative UI outside the browser is gaining traction.
+## 무엇인가
 
-## What stands out immediately
-- Streams partial HTML tokens into a live DOM via morphdom — widgets render as they generate, not after
-- Bidirectional bridge: `window.glimpse.send(data)` lets widgets send data back to the agent
-- Extracted Anthropic's actual design system (typography, color, Chart.js config, SVG patterns) from claude.ai exports
-- macOS-only (Swift/WKWebView); requires Xcode Command Line Tools
-- Two automatic LLM tools: `visualize_read_me` (lazy design guideline loader) + `show_widget` (HTML renderer)
-- Plugin install via `pi install git:github.com/Michaelliv/pi-generative-ui` — one command
+pi-generative-ui는 **Claude.ai의 내부 `show_widget` 도구를 역엔지니어링해 `pi` macOS 에이전트 런타임용으로 재구현한 생성형 UI 플러그인**이다. 대화 내보내기 JSON에서 Anthropic의 72KB 프로덕션 디자인 가이드라인을 추출했으며, LLM이 생성하는 HTML/SVG 위젯을 macOS 네이티브 창(Glimpse/WKWebView)에서 토큰 스트리밍 중에 실시간으로 렌더링한다.
 
-## Why clawfit should care
-This is a strong L7 signal: generative UI is moving from web browsers into native desktop agent surfaces. clawfit's human interface category currently has voice tools (Ghost Pepper) but no interactive visualization / generative UI entry. The Anthropic design system extraction is also a research artifact worth tracking — it reveals how Claude.ai structures visual output constraints internally. Relevant `tasks`: code-gen (for developers building dashboards), qa (for data visualization workflows).
+## 주요 특징
 
-## Preliminary interpretation
-Current best reading:
-- **Level 7 — Human interface / generative UI (native macOS, streaming widget rendering)**
+- **스트리밍 렌더링**: morphdom DOM diffing으로 HTML 토큰이 생성되는 즉시 위젯이 라이브 업데이트 (<50ms 레이턴시)
+- **Anthropic 디자인 시스템 탑재**: typography, color, Chart.js 설정, SVG 패턴 — claude.ai 내보내기에서 추출한 실제 가이드라인
+- **양방향 통신**: `window.glimpse.send(data)`로 위젯에서 에이전트로 데이터 전송
+- **자동 LLM 도구 2개**: `visualize_read_me`(지연 로딩 디자인 가이드라인), `show_widget`(HTML 렌더러)
+- **macOS 전용**: Swift/WKWebView 의존, Xcode Command Line Tools 필요
+- 설치: `pi install git:github.com/Michaelliv/pi-generative-ui` 단일 명령
 
-## Status
-- Tracking: new entry, medium-high signal. 876 stars. macOS-only limits reach; monitor for cross-platform port and whether Anthropic formalizes the `show_widget` API.
+## clawfit 관점에서 의미
+
+- 생성형 UI가 브라우저를 벗어나 **네이티브 데스크톱 에이전트 Surface로 이동**하는 L7 신호
+- 현재 human interface 카테고리에 인터랙티브 시각화/생성형 UI 항목 없음 → 갭
+- Anthropic 디자인 시스템 추출은 Claude.ai가 시각적 출력 제약을 내부적으로 구조화하는 방식을 보여주는 연구 아티팩트
+- 스타 876개: 브라우저 외 생성형 UI 수요 확인
+
+## 분류
+
+**Level 7 — 인간 인터페이스 / 생성형 UI (macOS 네이티브, 스트리밍 위젯 렌더링)**
+
+## 상태
+
+- 추적 중: 신규 등록. 중간-높은 신호. 스타 876개. macOS 전용 제약이 도달 범위를 제한; 크로스 플랫폼 포팅 및 Anthropic의 `show_widget` API 공식화 여부 모니터링.

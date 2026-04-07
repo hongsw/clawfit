@@ -3,22 +3,34 @@
 - Repo/Link: https://github.com/santifer/career-ops
 - Source: hongsw GitHub stars
 
-## Why this is worth watching
-Career-Ops is a 12,103-star Claude Code skill pack that turns the agent into a full job search pipeline — evaluating offers, generating tailored ATS PDFs, scanning portals with Playwright, and maintaining a structured tracker. It was battle-tested on 740+ real offers by its creator and represents one of the most mature, domain-specific skill packs built on Claude Code. The star count signals strong practitioner adoption for a niche use case.
+## 무엇인가
 
-## What stands out immediately
-- 14 skill modes including offer evaluation (A-F scoring, 10 dimensions), CV generation, portal scraping, and negotiation scripting
-- Go dashboard + Node.js/Playwright scraping stack — not a pure Python repo, closer to a full app than a script
-- Explicitly non-spray-and-pray: designed as a filter to reduce noise, not automate mass-applying
-- Accumulates an "interview story bank" of STAR+R stories across evaluations — persistent memory pattern
-- Real case study: creator used it to evaluate 740+ offers and land a Head of Applied AI role
+Career-Ops는 Claude Code 위에 구축된 **취업 자동화 스킬팩**이다. 채용 공고 평가, ATS 최적화 이력서 PDF 생성, 구직 포털 자동 스캔, 면접 준비까지 취업 파이프라인 전체를 하나의 시스템으로 통합한다. 제작자 Santiago가 740개 이상의 실제 채용 공고에 적용해 Head of Applied AI 직책을 얻어낸 검증된 프로덕션 도구다.
 
-## Why clawfit should care
-This is the clearest current example of an L4b skill pack targeting a non-developer persona (job seeker / researcher). clawfit's `tasks` taxonomy currently has `research` and `summarization` but no job-search or career-ops category — this signals a gap. The multi-language stack (Go + Node) also stretches the assumption that skill packs are single-language CLI tools.
+## 주요 기능
 
-## Preliminary interpretation
-Current best reading:
-- **Level 4b — Skill pack operating on top of Claude Code (domain: career / job search)**
+- **채용 공고 평가**: A-F 등급 + 10개 가중 항목으로 정량 평가
+- **이력서 자동 생성**: ATS 통과를 위한 맞춤형 PDF 생성
+- **포털 자동 스캔**: Greenhouse, Ashby, Lever 등 45개 이상 회사의 채용 사이트를 Playwright로 자동 탐색
+- **병렬 처리**: 다수의 Claude 워커가 동시에 여러 공고를 분석
+- **면접 준비 기록**: STAR+Reflection 방식으로 면접 스토리 뱅크 축적
+- **터미널 대시보드**: Bubble Tea 기반 Go 대시보드로 진행 상황 추적
 
-## Status
-- Tracking: new entry, very high signal. 12,103 stars (live count). Strong adoption curve since April 2026. Monitor for enterprise/team features and whether skill modes become reusable primitives.
+## 기술 스택
+
+Go, Node.js, Playwright, Claude Code, Markdown/YAML/TSV. 단순 스크립트가 아닌 다언어 풀스택 애플리케이션.
+
+## clawfit 관점에서 의미
+
+- `tasks` 분류에 `career-ops` / `job-search` 카테고리가 없음 → 갭 발견
+- 개발자 외 페르소나(구직자/연구자)를 대상으로 한 L4b 스킬팩의 가장 성숙한 사례
+- 멀티 언어 스택(Go + Node)은 "스킬팩 = 단일 언어 CLI" 가정을 깨뜨림
+- 12,309개 스타: 실무자 채택이 확인된 높은 신호
+
+## 분류
+
+**Level 4b — Claude Code 위에서 동작하는 도메인 특화 스킬팩 (커리어/채용 분야)**
+
+## 상태
+
+- 추적 중: 신규 등록. 매우 높은 신호. 스타 12,309개. 팀/엔터프라이즈 기능 확장 여부 및 스킬 모드가 재사용 가능한 프리미티브로 분리되는지 모니터링.
