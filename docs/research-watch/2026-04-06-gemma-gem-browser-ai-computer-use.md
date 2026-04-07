@@ -13,7 +13,7 @@ Gemma Gem runs a quantized Gemma 4 model (500MB ONNX) locally in Chrome via WebG
 - Per-site preferences, reasoning mode toggles, iteration limits
 - Privacy: no external transmission for inference; embedding API calls for search are the only outbound traffic
 - ~500MB one-time model download, then fully offline
-- 17 stars — very early
+- 17 stars at 2026-04-06 기록; 2026-04-07 검증: 346 (포크 21, 커밋 13) — rapid early growth
 
 ## Why clawfit should care
 This is a data point in two intersecting trends. First, the browser-as-local-runtime trend: as WebGPU inference matures, browsers become viable edge compute surfaces for small models. Second, the computer-use boundary collapse noted in reference-levels v0.3: tools that operate the full UI layer (Level 7) are increasingly also base runtimes (Level 1). Gemma Gem is a micro-scale version of the Claude Computer Use pattern, fully local and browser-scoped. clawfit's hardware registry currently models cloud vs. local vs. edge; browser-as-edge is a distinct sub-category worth noting.
@@ -31,4 +31,4 @@ L1 is defined as "tools users most directly choose as their base environment." G
 Most L1 tools (Claude Code, Aider, OpenHands) handle code and shell tasks; the user runs them *alongside* a browser. Gemma Gem's defining novelty is that it *operates the browser itself* — the UI operation is the feature, not a side-effect of being a runtime.
 
 ## Status
-- Very early (17 stars). Monitor for WebGPU inference maturation and whether browser-local patterns gain adoption as Gemma 4 performance improves.
+- 17 stars → 346 (2026-04-07 검증). Monitor for WebGPU inference maturation and whether browser-local patterns gain adoption as Gemma 4 performance improves.

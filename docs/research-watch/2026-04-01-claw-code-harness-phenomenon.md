@@ -12,7 +12,7 @@ This proves that the community's energy is aggressively pivoting toward the **ha
 
 ## What stands out immediately
 From the repository metadata:
-- **Massive velocity:** 76,000+ stars, indicating immense pent-up demand for open, modifiable, and high-performance agent harnesses.
+- **Massive velocity:** 76,000+ stars at 2026-04-01 기록; 2026-04-07 검증: ~175,000 (포크 106,000, 커밋 586) — indicating immense pent-up demand for open, modifiable, and high-performance agent harnesses.
 - **Harness-centric mission:** Explicitly focuses on "Better Harness Tools" rather than just the base agent.
 - **Rust rewrite:** The community is migrating from interpreted languages (like JS/TS or Python) to Rust for the execution/harness layer, seeking performance and safety.
 - **Ecosystem crossover:** It explicitly references using `oh-my-codex`, linking it directly to the meta-wrapper trend we are already tracking.

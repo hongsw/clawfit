@@ -11,7 +11,7 @@ A **skill discovery infrastructure layer** has emerged around Claude Code: dedic
 ## What stands out immediately
 - **claudemarketplaces.com:** 150+ skills with ratings (March 2026) — unofficial but structured marketplace
 - **claudecodeplugins.io:** dedicated skills hub/directory
-- **claude-code-plugins-plus-skills:** GitHub repo cataloging 340 plugins + 1,367 agent skills — largest known collection
+- **claude-code-plugins-plus-skills:** GitHub repo cataloging 340 plugins + 1,367 agent skills (2026-03-28 기준); 2026-04-07 검증: 415 plugins + 2,811 skills + 154 agents (스타 1,900+) — largest known collection
 - **Anthropic Frontend-Design Skill:** 277,000+ installs (March 2026) — single skill at app-store scale
 - **Google gws:** Workspace API harness skill with built-in MCP server (March 2026)
 - Security note: claude-mem audit flagged unauthenticated HTTP on port 37777 as HIGH risk — marketplace maturity requires security review norms

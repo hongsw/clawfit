@@ -10,7 +10,7 @@ Sometimes small repositories matter not because they are already dominant, but b
 
 ## Current observable snapshot
 - Repo: `jiyeongjun/socrates-protocol`
-- GitHub stars at observation: **5**
+- GitHub stars at observation: **5** (2026-03-28 기준); 2026-04-07 검증: 15 (커밋 36, v0.4.1)
 - Public description: not yet clearly filled in
 - Maturity: early / low-signal / exploratory
 

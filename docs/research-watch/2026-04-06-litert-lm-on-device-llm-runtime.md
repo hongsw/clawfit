@@ -4,7 +4,7 @@
 - Source: GitHub Trending
 
 ## Why this is worth watching
-LiteRT-LM from Google AI Edge is an on-device LLM inference runtime, part of the same family as the Google AI Edge Gallery (which lets users run Gemma models offline on iOS/Android). At 1,813 stars with 487 added today, it is gaining momentum fast as organizations look for local inference options under data-sensitivity and governance constraints.
+LiteRT-LM from Google AI Edge is an on-device LLM inference runtime, part of the same family as the Google AI Edge Gallery (which lets users run Gemma models offline on iOS/Android). At 1,813 stars with 487 added on 2026-04-06 (2026-04-07 검증: ~2,100), it is gaining momentum fast as organizations look for local inference options under data-sensitivity and governance constraints.
 
 ## What stands out immediately
 - 487 stars in a single day — sharp adoption spike

@@ -4,7 +4,7 @@
 - Source: Hacker News (Show HN, 15 points)
 
 ## Why this is worth watching
-Modo enters the crowded AI IDE space (Cursor, Kiro, Windsurf) with a structurally different proposition: specification-first development. Rather than going prompt-to-code, the workflow is prompt → requirements → design → tasks → code. The architectural emphasis on planning artifacts stored in `.modo/specs/` as first-class project files represents a different philosophy than autocomplete-centric tools. Star count is minimal (13), but the architecture is analytically interesting as a signal of where thoughtful developers want AI IDEs to go.
+Modo enters the crowded AI IDE space (Cursor, Kiro, Windsurf) with a structurally different proposition: specification-first development. Rather than going prompt-to-code, the workflow is prompt → requirements → design → tasks → code. The architectural emphasis on planning artifacts stored in `.modo/specs/` as first-class project files represents a different philosophy than autocomplete-centric tools. Star count is minimal at observation (13; 2026-04-07 검증: 114, 포크 11, 커밋 2,781), but the architecture is analytically interesting as a signal of where thoughtful developers want AI IDEs to go.
 
 ## What stands out immediately
 - Built on Void editor (VS Code fork), adding ~15 TypeScript services on top
@@ -35,4 +35,4 @@ L3 defines patterns for *sharing workflow rules across a team*, layered on top o
 Modo embeds L2 behavior (subagent spawning, lifecycle hooks) and L3 behavior (steering files as per-project SSOT, Powers as skill packs) inside the IDE shell. These are features *within* a L1 surface. This "synthesis product" pattern — one tool trying to occupy L1–L3 simultaneously — is itself worth tracking as a potential signal that the levels are collapsing at the product layer.
 
 ## Status
-- Low adoption currently (13 stars). Architecturally notable. Watch for sustained development or absorption by a larger project.
+- 13 stars → 114 (2026-04-07 검증, 커밋 2,781). Architecturally notable. Watch for sustained development or absorption by a larger project.

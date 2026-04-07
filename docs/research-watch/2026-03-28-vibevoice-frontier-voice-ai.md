@@ -11,7 +11,7 @@ That makes it useful as a strong signal in the voice/runtime layer of the ecosys
 ## What stands out immediately
 From the repository metadata and README:
 - current framing: **Open-Source Frontier Voice AI**
-- GitHub stars at observation: **24,891**
+- GitHub stars at observation: **24,891** (2026-03-28 기준); 2026-04-07 검증: ~37,000
 - emphasis on **real-time TTS**
 - around **300ms first audible latency** in the realtime model
 - support for **streaming text input**

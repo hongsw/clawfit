@@ -13,7 +13,7 @@ Caveman achieves 65–75% output token reduction by constraining how Claude resp
 - Eliminates high-frequency padding: "I'd be happy to help", "The reason this is happening is because", "Certainly!"
 - Cited research suggests constrained brevity can improve accuracy on some benchmarks (claim to inspect — no direct benchmark link in README observed)
 - Installs via `npx skills add JuliusBrussee/caveman` — confirms Level 4b skill distribution model
-- 1.7k stars; not a one-off meme — genuine adoption signal
+- 1.7k stars at 2026-04-06 기록; 2026-04-07 검증: 4.4k (포크 142, 커밋 32) — genuine adoption signal
 
 ## Why clawfit should care
 Together with rtk, caveman represents a second vector on the token-cost axis: rtk compresses agent inputs (shell output); caveman compresses agent outputs (response prose). Both are economic interventions that reduce effective cost without changing the LLM or the task. clawfit's scoring model currently treats output token volume as fixed per task type. If both tools become common defaults, there is a case for a "session token efficiency modifier" that adjusts cost scores when these tools are in use. This also reinforces the Level 4b skill-pack pattern: cost-reduction behaviors packaged as installable skills.

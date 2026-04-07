@@ -14,7 +14,7 @@ That makes it a strong example of a specific ecosystem pattern:
 ## What stands out immediately
 From the site and linked repo framing:
 - positioned as a **Skill Library for Autonomous Biomedical Research**
-- 206 agentic skills across five biomedical domains
+- 206 agentic skills at 2026-03-31 기록; 2026-04-07 검증: 240 skills (14% 증가, 스타 934, 포크 136)
 - composable into autonomous research workflows
 - designed to install directly into OpenClaw
 - explicitly imagines LabClaw as an **always-on lab agent**

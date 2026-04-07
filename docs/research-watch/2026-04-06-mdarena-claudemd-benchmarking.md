@@ -12,7 +12,7 @@ mdarena is the first observed tool that treats CLAUDE.md as a variable to be opt
 - Supports monorepo structures with per-directory instruction files
 - SWE-bench-compatible export (JSONL) and import — connects to existing benchmark ecosystems
 - Real-world finding documented in README: targeted per-directory instructions improved test resolution by ~27% over no-instruction baseline; single consolidated file performed no better than baseline
-- 100% Python, MIT licensed, 11 stars
+- 100% Python, MIT licensed, 11 stars at 2026-04-06 기록; 2026-04-07 검증: 44 (포크 1, 커밋 5)
 
 ## Why clawfit should care
 mdarena is a Level 5 evaluation tool (benchmark / autoresearch pattern), but it is specifically calibrated to the Level 3 SSOT layer — it evaluates CLAUDE.md quality, which is the primary governance artifact in the Level 3 pattern. This creates a feedback loop between Level 3 (instruction definition) and Level 5 (evaluation). The empirical finding that file placement and specificity matter significantly is directly relevant to any team using clawfit to configure agent workflows — it suggests that a well-placed, task-specific CLAUDE.md is worth more than a comprehensive monolithic one.
@@ -30,4 +30,4 @@ L3 is about *creating and maintaining* SSOT files (CLAUDE.md, AGENTS.md, DESIGN.
 mdarena creates a feedback loop between L3 (instruction authoring) and L5 (evaluation). This is structurally significant: most L5 tools evaluate model or agent capability; mdarena evaluates the *configuration artifact* (CLAUDE.md). That makes it a novel sub-type within L5 — "SSOT evaluation" — not previously represented in the taxonomy.
 
 ## Status
-- Low stars but structurally novel. The only known tool of this type. Track for adoption.
+- 11 stars → 44 (2026-04-07 검증). Structurally novel — only known tool of this type. Track for adoption.
