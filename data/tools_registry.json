@@ -14,11 +14,23 @@
       "min_maturity": 3,
       "max_maturity": 8,
       "optimal_maturity": 5,
-      "features": ["team-sharing", "governance"],
+      "features": [
+        "team-sharing",
+        "governance"
+      ],
       "pricing_tier": "free",
-      "tasks": ["code-gen", "research"],
-      "roles": ["developer"],
-      "team_size": ["small", "mid", "large"],
+      "tasks": [
+        "code-gen",
+        "research"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "small",
+        "mid",
+        "large"
+      ],
       "network": "online",
       "setup_complexity": "medium",
       "latency": "medium"
@@ -39,11 +51,20 @@
       "min_maturity": 4,
       "max_maturity": 9,
       "optimal_maturity": 6,
-      "features": ["offline"],
+      "features": [
+        "offline"
+      ],
       "pricing_tier": "free",
-      "tasks": ["code-gen"],
-      "roles": ["developer"],
-      "team_size": ["solo", "small"],
+      "tasks": [
+        "code-gen"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
       "network": "offline",
       "setup_complexity": "high",
       "latency": "low"
@@ -66,9 +87,19 @@
       "optimal_maturity": 5,
       "features": [],
       "pricing_tier": "paid",
-      "tasks": ["code-gen", "research", "qa"],
-      "roles": ["developer"],
-      "team_size": ["solo", "small", "mid"],
+      "tasks": [
+        "code-gen",
+        "research",
+        "qa"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
       "network": "online",
       "setup_complexity": "low",
       "latency": "medium"
@@ -91,9 +122,16 @@
       "optimal_maturity": 4,
       "features": [],
       "pricing_tier": "free",
-      "tasks": ["code-gen"],
-      "roles": ["developer"],
-      "team_size": ["solo", "small"],
+      "tasks": [
+        "code-gen"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
       "network": "online",
       "setup_complexity": "low",
       "latency": "medium"
@@ -114,11 +152,21 @@
       "min_maturity": 3,
       "max_maturity": 7,
       "optimal_maturity": 4,
-      "features": ["offline"],
+      "features": [
+        "offline"
+      ],
       "pricing_tier": "free",
-      "tasks": ["code-gen", "research"],
-      "roles": ["developer"],
-      "team_size": ["solo", "small"],
+      "tasks": [
+        "code-gen",
+        "research"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
       "network": "hybrid",
       "setup_complexity": "low",
       "latency": "medium"
@@ -141,9 +189,16 @@
       "optimal_maturity": 4,
       "features": [],
       "pricing_tier": "free",
-      "tasks": ["code-gen"],
-      "roles": ["developer"],
-      "team_size": ["solo", "small"],
+      "tasks": [
+        "code-gen"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
       "network": "online",
       "setup_complexity": "low",
       "latency": "low"
@@ -164,11 +219,20 @@
       "min_maturity": 2,
       "max_maturity": 6,
       "optimal_maturity": 3,
-      "features": ["offline"],
+      "features": [
+        "offline"
+      ],
       "pricing_tier": "free",
-      "tasks": ["code-gen"],
-      "roles": ["developer"],
-      "team_size": ["solo", "small"],
+      "tasks": [
+        "code-gen"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
       "network": "hybrid",
       "setup_complexity": "low",
       "latency": "medium"
@@ -189,11 +253,23 @@
       "min_maturity": 4,
       "max_maturity": 8,
       "optimal_maturity": 5,
-      "features": ["team-sharing"],
+      "features": [
+        "team-sharing"
+      ],
       "pricing_tier": "free",
-      "tasks": ["code-gen", "research", "qa"],
-      "roles": ["developer", "researcher"],
-      "team_size": ["small", "mid"],
+      "tasks": [
+        "code-gen",
+        "research",
+        "qa"
+      ],
+      "roles": [
+        "developer",
+        "researcher"
+      ],
+      "team_size": [
+        "small",
+        "mid"
+      ],
       "network": "online",
       "setup_complexity": "medium",
       "latency": "high"
@@ -216,9 +292,16 @@
       "optimal_maturity": 4,
       "features": [],
       "pricing_tier": "freemium",
-      "tasks": ["code-gen"],
-      "roles": ["developer"],
-      "team_size": ["solo", "small"],
+      "tasks": [
+        "code-gen"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
       "network": "online",
       "setup_complexity": "low",
       "latency": "medium"
@@ -239,11 +322,21 @@
       "min_maturity": 2,
       "max_maturity": 6,
       "optimal_maturity": 3,
-      "features": ["offline"],
+      "features": [
+        "offline"
+      ],
       "pricing_tier": "free",
-      "tasks": ["code-gen", "summarization"],
-      "roles": ["developer"],
-      "team_size": ["solo", "small"],
+      "tasks": [
+        "code-gen",
+        "summarization"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
       "network": "hybrid",
       "setup_complexity": "low",
       "latency": "medium"
@@ -266,9 +359,17 @@
       "optimal_maturity": 3,
       "features": [],
       "pricing_tier": "paid",
-      "tasks": ["code-gen"],
-      "roles": ["developer", "pm"],
-      "team_size": ["solo", "small"],
+      "tasks": [
+        "code-gen"
+      ],
+      "roles": [
+        "developer",
+        "pm"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
       "network": "online",
       "setup_complexity": "low",
       "latency": "medium"
@@ -291,9 +392,19 @@
       "optimal_maturity": 2,
       "features": [],
       "pricing_tier": "paid",
-      "tasks": ["summarization", "qa"],
-      "roles": ["exec", "pm", "researcher"],
-      "team_size": ["solo", "small"],
+      "tasks": [
+        "summarization",
+        "qa"
+      ],
+      "roles": [
+        "exec",
+        "pm",
+        "researcher"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
       "network": "online",
       "setup_complexity": "low",
       "latency": "low"
@@ -316,9 +427,17 @@
       "optimal_maturity": 2,
       "features": [],
       "pricing_tier": "freemium",
-      "tasks": ["code-gen"],
-      "roles": ["developer", "pm"],
-      "team_size": ["solo", "small"],
+      "tasks": [
+        "code-gen"
+      ],
+      "roles": [
+        "developer",
+        "pm"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
       "network": "online",
       "setup_complexity": "low",
       "latency": "medium"
@@ -341,9 +460,17 @@
       "optimal_maturity": 5,
       "features": [],
       "pricing_tier": "free",
-      "tasks": ["code-gen", "research"],
-      "roles": ["developer"],
-      "team_size": ["solo", "small"],
+      "tasks": [
+        "code-gen",
+        "research"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
       "network": "online",
       "setup_complexity": "medium",
       "latency": "medium"
@@ -364,11 +491,22 @@
       "min_maturity": 4,
       "max_maturity": 8,
       "optimal_maturity": 5,
-      "features": ["team-sharing"],
+      "features": [
+        "team-sharing"
+      ],
       "pricing_tier": "free",
-      "tasks": ["code-gen", "research"],
-      "roles": ["developer"],
-      "team_size": ["solo", "small", "mid"],
+      "tasks": [
+        "code-gen",
+        "research"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
       "network": "online",
       "setup_complexity": "medium",
       "latency": "medium"
@@ -389,11 +527,25 @@
       "min_maturity": 5,
       "max_maturity": 9,
       "optimal_maturity": 6,
-      "features": ["team-sharing", "governance"],
+      "features": [
+        "team-sharing",
+        "governance"
+      ],
       "pricing_tier": "freemium",
-      "tasks": ["code-gen", "research", "data-analysis"],
-      "roles": ["developer", "researcher"],
-      "team_size": ["small", "mid", "large"],
+      "tasks": [
+        "code-gen",
+        "research",
+        "data-analysis"
+      ],
+      "roles": [
+        "developer",
+        "researcher"
+      ],
+      "team_size": [
+        "small",
+        "mid",
+        "large"
+      ],
       "network": "online",
       "setup_complexity": "medium",
       "latency": "medium"
@@ -416,9 +568,16 @@
       "optimal_maturity": 5,
       "features": [],
       "pricing_tier": "free",
-      "tasks": ["code-gen"],
-      "roles": ["developer"],
-      "team_size": ["solo", "small"],
+      "tasks": [
+        "code-gen"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
       "network": "online",
       "setup_complexity": "medium",
       "latency": "medium"
@@ -441,9 +600,16 @@
       "optimal_maturity": 5,
       "features": [],
       "pricing_tier": "free",
-      "tasks": ["code-gen"],
-      "roles": ["developer"],
-      "team_size": ["solo", "small"],
+      "tasks": [
+        "code-gen"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
       "network": "online",
       "setup_complexity": "medium",
       "latency": "medium"
@@ -464,11 +630,23 @@
       "min_maturity": 4,
       "max_maturity": 8,
       "optimal_maturity": 6,
-      "features": ["team-sharing"],
+      "features": [
+        "team-sharing"
+      ],
       "pricing_tier": "free",
-      "tasks": ["code-gen", "research", "qa"],
-      "roles": ["developer"],
-      "team_size": ["solo", "small", "mid"],
+      "tasks": [
+        "code-gen",
+        "research",
+        "qa"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
       "network": "online",
       "setup_complexity": "medium",
       "latency": "medium"
@@ -489,11 +667,22 @@
       "min_maturity": 3,
       "max_maturity": 7,
       "optimal_maturity": 5,
-      "features": ["team-sharing"],
+      "features": [
+        "team-sharing"
+      ],
       "pricing_tier": "free",
-      "tasks": ["code-gen"],
-      "roles": ["developer", "pm"],
-      "team_size": ["solo", "small", "mid"],
+      "tasks": [
+        "code-gen"
+      ],
+      "roles": [
+        "developer",
+        "pm"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
       "network": "online",
       "setup_complexity": "low",
       "latency": "medium"
@@ -514,11 +703,24 @@
       "min_maturity": 5,
       "max_maturity": 9,
       "optimal_maturity": 7,
-      "features": ["team-sharing", "governance"],
+      "features": [
+        "team-sharing",
+        "governance"
+      ],
       "pricing_tier": "free",
-      "tasks": ["code-gen", "research", "data-analysis"],
-      "roles": ["developer"],
-      "team_size": ["small", "mid", "large"],
+      "tasks": [
+        "code-gen",
+        "research",
+        "data-analysis"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "small",
+        "mid",
+        "large"
+      ],
       "network": "online",
       "setup_complexity": "high",
       "latency": "low"
@@ -539,11 +741,24 @@
       "min_maturity": 5,
       "max_maturity": 9,
       "optimal_maturity": 7,
-      "features": ["team-sharing", "governance"],
+      "features": [
+        "team-sharing",
+        "governance"
+      ],
       "pricing_tier": "freemium",
-      "tasks": ["data-analysis", "research"],
-      "roles": ["developer", "researcher", "pm"],
-      "team_size": ["mid", "large"],
+      "tasks": [
+        "code-gen",
+        "research",
+        "data-analysis"
+      ],
+      "roles": [
+        "developer",
+        "researcher"
+      ],
+      "team_size": [
+        "mid",
+        "large"
+      ],
       "network": "online",
       "setup_complexity": "high",
       "latency": "medium"
@@ -564,11 +779,21 @@
       "min_maturity": 5,
       "max_maturity": 9,
       "optimal_maturity": 6,
-      "features": ["team-sharing"],
+      "features": [
+        "team-sharing"
+      ],
       "pricing_tier": "free",
-      "tasks": ["code-gen", "research"],
-      "roles": ["developer"],
-      "team_size": ["small", "mid"],
+      "tasks": [
+        "code-gen",
+        "research"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "small",
+        "mid"
+      ],
       "network": "online",
       "setup_complexity": "medium",
       "latency": "medium"
@@ -589,11 +814,25 @@
       "min_maturity": 4,
       "max_maturity": 8,
       "optimal_maturity": 6,
-      "features": ["team-sharing"],
+      "features": [
+        "team-sharing"
+      ],
       "pricing_tier": "freemium",
-      "tasks": ["research", "summarization", "qa"],
-      "roles": ["researcher", "pm", "exec"],
-      "team_size": ["solo", "small", "mid"],
+      "tasks": [
+        "research",
+        "summarization",
+        "qa"
+      ],
+      "roles": [
+        "researcher",
+        "pm",
+        "exec"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
       "network": "online",
       "setup_complexity": "low",
       "latency": "medium"
@@ -614,11 +853,21 @@
       "min_maturity": 5,
       "max_maturity": 9,
       "optimal_maturity": 6,
-      "features": ["team-sharing"],
+      "features": [
+        "team-sharing"
+      ],
       "pricing_tier": "free",
-      "tasks": ["code-gen", "research"],
-      "roles": ["developer"],
-      "team_size": ["small", "mid"],
+      "tasks": [
+        "code-gen",
+        "research"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "small",
+        "mid"
+      ],
       "network": "online",
       "setup_complexity": "medium",
       "latency": "medium"
@@ -639,11 +888,24 @@
       "min_maturity": 5,
       "max_maturity": 9,
       "optimal_maturity": 7,
-      "features": ["team-sharing", "governance"],
+      "features": [
+        "team-sharing",
+        "governance"
+      ],
       "pricing_tier": "freemium",
-      "tasks": ["code-gen", "research", "data-analysis"],
-      "roles": ["developer", "researcher"],
-      "team_size": ["mid", "large"],
+      "tasks": [
+        "code-gen",
+        "research",
+        "data-analysis"
+      ],
+      "roles": [
+        "developer",
+        "researcher"
+      ],
+      "team_size": [
+        "mid",
+        "large"
+      ],
       "network": "online",
       "setup_complexity": "high",
       "latency": "medium"
@@ -664,11 +926,23 @@
       "min_maturity": 6,
       "max_maturity": 10,
       "optimal_maturity": 7,
-      "features": ["team-sharing"],
+      "features": [
+        "team-sharing"
+      ],
       "pricing_tier": "free",
-      "tasks": ["research", "data-analysis"],
-      "roles": ["researcher", "developer"],
-      "team_size": ["solo", "small", "mid"],
+      "tasks": [
+        "research",
+        "data-analysis"
+      ],
+      "roles": [
+        "researcher",
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
       "network": "online",
       "setup_complexity": "medium",
       "latency": "high"
@@ -689,11 +963,21 @@
       "min_maturity": 6,
       "max_maturity": 11,
       "optimal_maturity": 8,
-      "features": ["governance", "team-sharing"],
+      "features": [
+        "governance",
+        "team-sharing"
+      ],
       "pricing_tier": "free",
-      "tasks": ["code-gen"],
-      "roles": ["developer"],
-      "team_size": ["mid", "large"],
+      "tasks": [
+        "code-gen"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "mid",
+        "large"
+      ],
       "network": "online",
       "setup_complexity": "high",
       "latency": "medium"
@@ -714,11 +998,23 @@
       "min_maturity": 5,
       "max_maturity": 10,
       "optimal_maturity": 7,
-      "features": ["governance", "team-sharing"],
+      "features": [
+        "governance",
+        "team-sharing"
+      ],
       "pricing_tier": "free",
-      "tasks": ["code-gen", "research"],
-      "roles": ["developer"],
-      "team_size": ["small", "mid", "large"],
+      "tasks": [
+        "code-gen",
+        "research"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "small",
+        "mid",
+        "large"
+      ],
       "network": "online",
       "setup_complexity": "low",
       "latency": "medium"
@@ -739,11 +1035,23 @@
       "min_maturity": 4,
       "max_maturity": 9,
       "optimal_maturity": 6,
-      "features": ["team-sharing"],
+      "features": [
+        "team-sharing"
+      ],
       "pricing_tier": "free",
-      "tasks": ["code-gen"],
-      "roles": ["developer", "pm"],
-      "team_size": ["solo", "small", "mid", "large"],
+      "tasks": [
+        "code-gen"
+      ],
+      "roles": [
+        "developer",
+        "pm"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid",
+        "large"
+      ],
       "network": "online",
       "setup_complexity": "low",
       "latency": "medium"
@@ -764,11 +1072,25 @@
       "min_maturity": 4,
       "max_maturity": 9,
       "optimal_maturity": 6,
-      "features": ["team-sharing", "offline"],
+      "features": [
+        "team-sharing",
+        "offline"
+      ],
       "pricing_tier": "free",
-      "tasks": ["research", "qa", "summarization"],
-      "roles": ["developer", "researcher"],
-      "team_size": ["solo", "small", "mid"],
+      "tasks": [
+        "research",
+        "qa",
+        "summarization"
+      ],
+      "roles": [
+        "developer",
+        "researcher"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
       "network": "hybrid",
       "setup_complexity": "medium",
       "latency": "medium"
@@ -789,11 +1111,22 @@
       "min_maturity": 4,
       "max_maturity": 9,
       "optimal_maturity": 6,
-      "features": ["offline", "governance"],
+      "features": [
+        "offline",
+        "governance"
+      ],
       "pricing_tier": "free",
-      "tasks": ["code-gen", "research"],
-      "roles": ["developer"],
-      "team_size": ["solo", "small"],
+      "tasks": [
+        "code-gen",
+        "research"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
       "network": "offline",
       "setup_complexity": "high",
       "latency": "medium"
@@ -816,9 +1149,18 @@
       "optimal_maturity": 5,
       "features": [],
       "pricing_tier": "free",
-      "tasks": ["code-gen", "research"],
-      "roles": ["developer"],
-      "team_size": ["solo", "small", "mid"],
+      "tasks": [
+        "code-gen",
+        "research"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
       "network": "online",
       "setup_complexity": "low",
       "latency": "low"
@@ -841,9 +1183,18 @@
       "optimal_maturity": 5,
       "features": [],
       "pricing_tier": "freemium",
-      "tasks": ["code-gen", "qa"],
-      "roles": ["developer"],
-      "team_size": ["solo", "small", "mid"],
+      "tasks": [
+        "code-gen",
+        "qa"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
       "network": "online",
       "setup_complexity": "low",
       "latency": "low"
@@ -861,14 +1212,25 @@
     "comparison_priority": "interface",
     "notes": "Workflow or interaction loop utility to support human-agent productivity.",
     "org_fit": {
-      "min_maturity": 7,
-      "max_maturity": 11,
-      "optimal_maturity": 9,
-      "features": ["governance", "team-sharing"],
+      "min_maturity": 5,
+      "max_maturity": 9,
+      "optimal_maturity": 7,
+      "features": [
+        "team-sharing"
+      ],
       "pricing_tier": "free",
-      "tasks": ["research", "data-analysis", "summarization"],
-      "roles": ["researcher", "developer"],
-      "team_size": ["mid", "large"],
+      "tasks": [
+        "research",
+        "summarization"
+      ],
+      "roles": [
+        "researcher",
+        "developer"
+      ],
+      "team_size": [
+        "small",
+        "mid"
+      ],
       "network": "online",
       "setup_complexity": "high",
       "latency": "high"
@@ -886,17 +1248,24 @@
     "comparison_priority": "ecosystem",
     "notes": "Terminal application built for AI coding; better understood as interface/productivity layer than core agent runtime.",
     "org_fit": {
-      "min_maturity": 7,
-      "max_maturity": 11,
-      "optimal_maturity": 9,
-      "features": ["team-sharing"],
+      "min_maturity": 2,
+      "max_maturity": 7,
+      "optimal_maturity": 4,
+      "features": [],
       "pricing_tier": "free",
-      "tasks": ["research", "qa", "summarization"],
-      "roles": ["researcher", "pm", "exec"],
-      "team_size": ["mid", "large"],
+      "tasks": [
+        "code-gen"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
       "network": "online",
       "setup_complexity": "medium",
-      "latency": "medium"
+      "latency": "low"
     }
   },
   {
@@ -916,9 +1285,18 @@
       "optimal_maturity": 6,
       "features": [],
       "pricing_tier": "free",
-      "tasks": ["code-gen", "research"],
-      "roles": ["developer", "researcher"],
-      "team_size": ["solo", "small"],
+      "tasks": [
+        "code-gen",
+        "research"
+      ],
+      "roles": [
+        "developer",
+        "researcher"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
       "network": "online",
       "setup_complexity": "medium",
       "latency": "medium"
@@ -941,11 +1319,208 @@
       "optimal_maturity": 5,
       "features": [],
       "pricing_tier": "free",
-      "tasks": ["research", "summarization", "qa"],
-      "roles": ["developer", "researcher", "pm"],
-      "team_size": ["solo", "small", "mid"],
+      "tasks": [
+        "research",
+        "summarization",
+        "qa"
+      ],
+      "roles": [
+        "developer",
+        "researcher",
+        "pm"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
       "network": "hybrid",
       "setup_complexity": "low",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "shannon",
+    "name": "Shannon",
+    "category": "autonomous_security_agent",
+    "level": 1,
+    "license": "unknown",
+    "primary_language": "unknown",
+    "url": "https://github.com/KeygraphHQ/shannon",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Autonomous AI pentester: reads source code, identifies attack surfaces, generates and executes exploits. Domain-specialized Level 1 agent for security workflows. High governance requirement.",
+    "org_fit": {
+      "min_maturity": 6,
+      "max_maturity": 10,
+      "optimal_maturity": 7,
+      "features": [
+        "governance"
+      ],
+      "pricing_tier": "unknown",
+      "tasks": [
+        "qa",
+        "research"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "online",
+      "setup_complexity": "high",
+      "latency": "high"
+    }
+  },
+  {
+    "id": "ghost_pepper",
+    "name": "Ghost Pepper",
+    "category": "local_voice_input",
+    "level": 7,
+    "license": "unknown",
+    "primary_language": "unknown",
+    "url": "https://github.com/matthartman/ghost-pepper",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Hold-to-talk local STT for macOS using Whisper; fully offline, no audio leaves device. Privacy-first alternative to Superwhisper for confidential environments.",
+    "org_fit": {
+      "min_maturity": 1,
+      "max_maturity": 5,
+      "optimal_maturity": 2,
+      "features": [
+        "offline"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "summarization"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
+      "network": "offline",
+      "setup_complexity": "low",
+      "latency": "low"
+    }
+  },
+  {
+    "id": "career_ops",
+    "name": "Career-Ops",
+    "category": "skill_pack",
+    "level": 4,
+    "license": "MIT",
+    "primary_language": "Go",
+    "url": "https://github.com/santifer/career-ops",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "AI-powered job search pipeline on Claude Code: offer evaluation, tailored PDF CVs, Playwright portal scraping, 14 skill modes.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 7,
+      "optimal_maturity": 5,
+      "pricing_tier": "free",
+      "features": [
+        "skill-pack",
+        "pdf-generation",
+        "batch-processing"
+      ],
+      "tasks": [
+        "research",
+        "summarization"
+      ],
+      "roles": [
+        "developer",
+        "researcher"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
+      "network": "online",
+      "setup_complexity": "medium",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "claude_peers_mcp",
+    "name": "claude-peers-mcp",
+    "category": "mcp_server",
+    "level": 4,
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/louislva/claude-peers-mcp",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "MCP server enabling ad-hoc peer messaging between Claude Code instances on the same machine via a local SQLite broker.",
+    "org_fit": {
+      "min_maturity": 5,
+      "max_maturity": 9,
+      "optimal_maturity": 6,
+      "pricing_tier": "free",
+      "features": [
+        "mcp",
+        "multi-agent",
+        "peer-messaging"
+      ],
+      "tasks": [
+        "code-gen",
+        "research"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "low"
+    }
+  },
+  {
+    "id": "pi_generative_ui",
+    "name": "pi-generative-ui",
+    "category": "generative_ui",
+    "level": 7,
+    "license": "unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/Michaelliv/pi-generative-ui",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Reverse-engineered Claude.ai's show_widget tool rebuilt for the pi macOS agent; streams interactive HTML/SVG widgets into native WKWebView windows.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 8,
+      "optimal_maturity": 6,
+      "pricing_tier": "free",
+      "features": [
+        "generative-ui",
+        "streaming",
+        "native-desktop"
+      ],
+      "tasks": [
+        "code-gen",
+        "qa"
+      ],
+      "roles": [
+        "developer",
+        "pm"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
+      "network": "online",
+      "setup_complexity": "medium",
       "latency": "medium"
     }
   }
