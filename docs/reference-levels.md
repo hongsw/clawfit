@@ -56,6 +56,9 @@ So this document now uses a more explicit **7-level structure**.
 - **On-device LLM runtime race:** Google AI Edge LiteRT-LM (1.8k★, +487 today) brings Google's engineering weight to edge/ARM inference, joining llama.cpp and Ollama; offline profiles now have three credible runtime substrates
 - **L4b skill packs cross into knowledge-work:** kepano/obsidian-skills (20k★) is a first-party Obsidian skill pack — the first major L4b entry for knowledge workers (researchers, PMs) beyond pure code-gen contexts
 - **Offline multimodal threshold crossed:** Real-time audio/video-in + voice-out agents now run on consumer Apple Silicon (M3 Pro, Gemma E2B) with no cloud dependency — Level 7 offline multimodal is no longer research-only
+- **Domain-specialized security agents emerging:** Shannon (36k★, KeygraphHQ) is an autonomous AI pentester that generates and executes exploits — the first high-signal Level 1 agent specialized for a single non-coding domain (security/pentest); signals that `qa` as a clawfit task label is too broad and a `security-testing` task type may be needed
+- **Offline voice input fills a gap:** Ghost Pepper (HN front page) — local hold-to-talk STT for macOS — is the first offline-native voice input tool in this taxonomy; differentiates from Superwhisper on `network: offline` and `data_sensitivity: confidential` suitability
+- **Agent-sandboxed VM execution productizing:** Freestyle (HN front page, 192 points) — full Linux VMs with sub-700ms boot, live fork, and pause/resume billing — signals that cloud-side execution substrate is becoming a product category distinct from the agent itself (see Level 2)
 
 ---
 
@@ -80,6 +83,7 @@ They are the tools users most directly choose as their base environment.
 - Claude Computer Use — direct mouse/keyboard/screen control via Claude Code Desktop + Cowork + Dispatch; macOS first *(also Level 7)*
 - <img src="https://github.com/NousResearch.png" alt="Hermes Agent" width="18" /> [Hermes Agent](https://github.com/NousResearch/hermes-agent) — ⭐ 27,234 — adaptive open-source agent from NousResearch; "grows with you" — signals session-persistent adaptation at the base runtime layer
 - <img src="https://github.com/google-ai-edge.png" alt="LiteRT-LM" width="18" /> [LiteRT-LM](https://github.com/google-ai-edge/LiteRT-LM) — ⭐ 1,813 — Google AI Edge on-device LLM inference runtime; ARM-first, mobile + edge; companion to google-ai-edge/gallery
+- <img src="https://github.com/KeygraphHQ.png" alt="Shannon" width="18" /> [Shannon](https://github.com/KeygraphHQ/shannon) — ⭐ 36,485 — autonomous AI pentester; reads source code, identifies attack surfaces, generates and executes exploits; first high-signal domain-specialized security agent in this taxonomy
 
 ---
 
@@ -221,6 +225,7 @@ This includes voice input, talk mode, speech interruption, remote relays, termin
 - <img src="https://github.com/hada0127.png" alt="cc-telegram" width="18" /> [cc-telegram](https://github.com/hada0127/cc-telegram) — ⭐ 15
 - <img src="https://github.com/Q00.png" alt="ouroboros" width="18" /> [ouroboros](https://github.com/Q00/ouroboros) — ⭐ 2,000
 - OpenClaw talkmode improvement reference — https://github.com/openclaw/openclaw/pull/53553#issuecomment-4124082023
+- [Ghost Pepper](https://github.com/matthartman/ghost-pepper) — local hold-to-talk STT for macOS (Whisper-based); fully offline, no audio leaves device; privacy-first alternative to Superwhisper for confidential environments
 
 ---
 

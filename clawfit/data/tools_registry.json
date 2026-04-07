@@ -541,8 +541,8 @@
       "optimal_maturity": 7,
       "features": ["team-sharing", "governance"],
       "pricing_tier": "freemium",
-      "tasks": ["data-analysis", "research"],
-      "roles": ["developer", "researcher", "pm"],
+      "tasks": ["code-gen", "research", "data-analysis"],
+      "roles": ["developer", "researcher"],
       "team_size": ["mid", "large"],
       "network": "online",
       "setup_complexity": "high",
@@ -861,14 +861,14 @@
     "comparison_priority": "interface",
     "notes": "Workflow or interaction loop utility to support human-agent productivity.",
     "org_fit": {
-      "min_maturity": 7,
-      "max_maturity": 11,
-      "optimal_maturity": 9,
-      "features": ["governance", "team-sharing"],
+      "min_maturity": 5,
+      "max_maturity": 9,
+      "optimal_maturity": 7,
+      "features": ["team-sharing"],
       "pricing_tier": "free",
-      "tasks": ["research", "data-analysis", "summarization"],
+      "tasks": ["research", "summarization"],
       "roles": ["researcher", "developer"],
-      "team_size": ["mid", "large"],
+      "team_size": ["small", "mid"],
       "network": "online",
       "setup_complexity": "high",
       "latency": "high"
@@ -886,17 +886,17 @@
     "comparison_priority": "ecosystem",
     "notes": "Terminal application built for AI coding; better understood as interface/productivity layer than core agent runtime.",
     "org_fit": {
-      "min_maturity": 7,
-      "max_maturity": 11,
-      "optimal_maturity": 9,
-      "features": ["team-sharing"],
+      "min_maturity": 2,
+      "max_maturity": 7,
+      "optimal_maturity": 4,
+      "features": [],
       "pricing_tier": "free",
-      "tasks": ["research", "qa", "summarization"],
-      "roles": ["researcher", "pm", "exec"],
-      "team_size": ["mid", "large"],
+      "tasks": ["code-gen"],
+      "roles": ["developer"],
+      "team_size": ["solo", "small"],
       "network": "online",
       "setup_complexity": "medium",
-      "latency": "medium"
+      "latency": "low"
     }
   },
   {
@@ -947,6 +947,56 @@
       "network": "hybrid",
       "setup_complexity": "low",
       "latency": "medium"
+    }
+  },
+  {
+    "id": "shannon",
+    "name": "Shannon",
+    "category": "autonomous_security_agent",
+    "level": 1,
+    "license": "unknown",
+    "primary_language": "unknown",
+    "url": "https://github.com/KeygraphHQ/shannon",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Autonomous AI pentester: reads source code, identifies attack surfaces, generates and executes exploits. Domain-specialized Level 1 agent for security workflows. High governance requirement.",
+    "org_fit": {
+      "min_maturity": 6,
+      "max_maturity": 10,
+      "optimal_maturity": 7,
+      "features": ["governance"],
+      "pricing_tier": "unknown",
+      "tasks": ["qa", "research"],
+      "roles": ["developer"],
+      "team_size": ["small", "mid", "large"],
+      "network": "online",
+      "setup_complexity": "high",
+      "latency": "high"
+    }
+  },
+  {
+    "id": "ghost_pepper",
+    "name": "Ghost Pepper",
+    "category": "local_voice_input",
+    "level": 7,
+    "license": "unknown",
+    "primary_language": "unknown",
+    "url": "https://github.com/matthartman/ghost-pepper",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Hold-to-talk local STT for macOS using Whisper; fully offline, no audio leaves device. Privacy-first alternative to Superwhisper for confidential environments.",
+    "org_fit": {
+      "min_maturity": 1,
+      "max_maturity": 5,
+      "optimal_maturity": 2,
+      "features": ["offline"],
+      "pricing_tier": "free",
+      "tasks": ["code-gen", "summarization"],
+      "roles": ["developer"],
+      "team_size": ["solo", "small"],
+      "network": "offline",
+      "setup_complexity": "low",
+      "latency": "low"
     }
   }
 ]
