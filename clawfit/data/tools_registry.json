@@ -636,7 +636,6 @@
       "pricing_tier": "free",
       "tasks": [
         "code-gen",
-        "research",
         "qa"
       ],
       "roles": [
@@ -784,8 +783,7 @@
       ],
       "pricing_tier": "free",
       "tasks": [
-        "code-gen",
-        "research"
+        "code-gen"
       ],
       "roles": [
         "developer"
@@ -936,7 +934,8 @@
       ],
       "roles": [
         "researcher",
-        "developer"
+        "developer",
+        "exec"
       ],
       "team_size": [
         "solo",
@@ -1004,8 +1003,7 @@
       ],
       "pricing_tier": "free",
       "tasks": [
-        "code-gen",
-        "research"
+        "code-gen"
       ],
       "roles": [
         "developer"
@@ -1150,8 +1148,7 @@
       "features": [],
       "pricing_tier": "free",
       "tasks": [
-        "code-gen",
-        "research"
+        "code-gen"
       ],
       "roles": [
         "developer"
@@ -1470,8 +1467,7 @@
         "peer-messaging"
       ],
       "tasks": [
-        "code-gen",
-        "research"
+        "code-gen"
       ],
       "roles": [
         "developer"

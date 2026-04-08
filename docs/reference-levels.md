@@ -60,6 +60,12 @@ So this document now uses a more explicit **7-level structure**.
 - **Offline voice input fills a gap:** Ghost Pepper (HN front page) — local hold-to-talk STT for macOS — is the first offline-native voice input tool in this taxonomy; differentiates from Superwhisper on `network: offline` and `data_sensitivity: confidential` suitability
 - **Agent-sandboxed VM execution productizing:** Freestyle (HN front page, 192 points) — full Linux VMs with sub-700ms boot, live fork, and pause/resume billing — signals that cloud-side execution substrate is becoming a product category distinct from the agent itself (see Level 2)
 
+### New signals as of 2026-04-08
+- **Claude Mythos Preview — new Anthropic model tier:** Three simultaneous HN front-page entries (1,584 pts combined) covering system card, cybersecurity capability assessment, and Project Glasswing. Introduces explicit long-horizon and security-domain capabilities; may warrant a new LLM registry tier above current Opus/Sonnet. Glasswing is the first Anthropic-branded AI security governance framework.
+- **GLM-5.1 "long-horizon tasks":** ZhipuAI's new model (z.ai, 401 HN pts) explicitly positions around multi-step agentic task completion — "long-horizon" as primary framing signals a new evaluation axis for LLM selection in clawfit beyond latency/cost.
+- **NVIDIA PersonaPlex enters persona layer:** NVIDIA (github.com/NVIDIA/personaplex, 662 trending stars) publishing a persona-based AI application library signals hardware vendors moving up-stack into agent identity configuration — potential Level 4c entrant.
+- **Production skill packs reach senior practitioners:** Addy Osmani (Google Chrome DevRel) published `agent-skills` — production-grade engineering skills for AI coding agents. First high-credibility Level 4b entry from a named Google engineer.
+
 ---
 
 ## Level 1 — Base runtimes / primary agent surfaces
