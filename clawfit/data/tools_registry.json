@@ -268,7 +268,8 @@
       ],
       "team_size": [
         "small",
-        "mid"
+        "mid",
+        "large"
       ],
       "network": "online",
       "setup_complexity": "medium",
@@ -752,7 +753,8 @@
       ],
       "roles": [
         "developer",
-        "researcher"
+        "researcher",
+        "exec"
       ],
       "team_size": [
         "mid",
@@ -898,7 +900,8 @@
       ],
       "roles": [
         "developer",
-        "researcher"
+        "researcher",
+        "exec"
       ],
       "team_size": [
         "mid",
@@ -1104,7 +1107,7 @@
     "url": "https://github.com/campfirein/cipher",
     "source_type": "github",
     "comparison_priority": "ecosystem",
-    "notes": "Memory layer for coding agents via MCP.",
+    "notes": "Encrypted memory layer for coding agents via MCP; stores and retrieves context, not a code-gen tool itself.",
     "org_fit": {
       "min_maturity": 4,
       "max_maturity": 9,
@@ -1115,8 +1118,8 @@
       ],
       "pricing_tier": "free",
       "tasks": [
-        "code-gen",
-        "research"
+        "research",
+        "summarization"
       ],
       "roles": [
         "developer"
@@ -1517,6 +1520,43 @@
       ],
       "network": "online",
       "setup_complexity": "medium",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "superpowers",
+    "name": "superpowers",
+    "category": "agentic_skills_framework",
+    "level": 3,
+    "license": "MIT",
+    "primary_language": "Shell",
+    "url": "https://github.com/obra/superpowers",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Cross-platform agentic skills framework with TDD-enforced workflow (brainstorm→plan→execute→review). Auto-activating composable skills for Claude Code, Cursor, Codex, OpenCode, Copilot CLI, and Gemini CLI. 141k stars.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [
+        "team-sharing",
+        "governance"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "qa"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
       "latency": "medium"
     }
   }

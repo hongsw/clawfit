@@ -66,6 +66,12 @@ So this document now uses a more explicit **7-level structure**.
 - **NVIDIA PersonaPlex enters persona layer:** NVIDIA (github.com/NVIDIA/personaplex, 662 trending stars) publishing a persona-based AI application library signals hardware vendors moving up-stack into agent identity configuration — potential Level 4c entrant.
 - **Production skill packs reach senior practitioners:** Addy Osmani (Google Chrome DevRel) published `agent-skills` — production-grade engineering skills for AI coding agents. First high-credibility Level 4b entry from a named Google engineer.
 
+### New signals as of 2026-04-09
+- **obra/superpowers — highest-velocity cross-platform skill framework:** 141k stars, 2,028 daily gains; composable TDD-enforced workflow skills that auto-activate across Claude Code, Cursor, Codex, OpenCode, Copilot CLI, and Gemini CLI. First Level 3 entry explicitly designed for 6+ runtimes simultaneously; "harness reliability" is its primary design goal.
+- **Harness engineering paradigm crystallizes:** "From Prompts to Harness" blog post (GeekNews) frames 2022–2026 as a three-phase shift (prompt → context → harness) with named milestones. Harness 2×2 (deterministic/non-deterministic × feedforward/feedback) is a useful taxonomy axis for Level 2 evaluation.
+- **Skill-as-service pattern emerging:** Skrun (HN Show HN, 41 pts) converts SKILL.md files into callable `POST /run` REST APIs — a new Level 4c subtype distinct from MCP servers and skill managers. Skill packs are decoupling from specific runtimes and becoming independently deployable microservices.
+- **Named-practitioner L4b cluster strengthens:** `forrestchang/andrej-karpathy-skills` (8,963 ⭐, 702 daily) is a second high-signal named-author CLAUDE.md skill pack trending alongside Osmani's `agent-skills`. The Karpathy cluster (autoresearch 66k + karpathy-skills 9k) is a compound ecosystem signal.
+
 ---
 
 ## Level 1 — Base runtimes / primary agent surfaces
@@ -140,6 +146,7 @@ Representative references:
 - <img src="https://github.com/open-gitagent.png" alt="gitagent" width="18" /> [gitagent](https://github.com/open-gitagent/gitagent) — Git-native open standard for agent definition and lifecycle management; `git clone` = agent instantiation
 - **AGENTS.md** — OpenAI's cross-platform agent specification format; part of Agentic AI Foundation (Microsoft + Google + OpenAI + Anthropic + Linux Foundation); competes with / complements CLAUDE.md as executable SSOT
 - <img src="https://github.com/VoltAgent.png" alt="awesome-design-md" width="18" /> [awesome-design-md](https://github.com/VoltAgent/awesome-design-md) — ⭐ 15,900 🔥 55+ DESIGN.md files extracted from popular sites; extends SSOT pattern into visual/UI domain — agents read design system rules before generating UI
+- <img src="https://github.com/obra.png" alt="superpowers" width="18" /> [superpowers](https://github.com/obra/superpowers) — ⭐ 141,480 🔥🔥 Cross-platform agentic skills framework with TDD-enforced workflow (brainstorm→plan→execute→review); auto-activating composable skills across Claude Code, Cursor, Codex, OpenCode, Copilot CLI, Gemini CLI; first skill pack explicitly targeting 6+ runtimes simultaneously
 
 ---
 
