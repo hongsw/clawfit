@@ -913,7 +913,7 @@
     "id": "autoresearch",
     "name": "AutoResearch",
     "category": "autonomous_research_workflow",
-    "level": 2,
+    "level": 5,
     "license": "MIT",
     "primary_language": "Python",
     "url": "https://github.com/karpathy/autoresearch",
@@ -1201,7 +1201,7 @@
     "id": "ouroboros",
     "name": "ouroboros",
     "category": "interaction_loop_tool",
-    "level": 6,
+    "level": 7,
     "license": "unknown",
     "primary_language": "unknown",
     "url": "https://github.com/Q00/ouroboros",
@@ -1237,7 +1237,7 @@
     "id": "kaku",
     "name": "Kaku",
     "category": "ai_coding_terminal",
-    "level": 6,
+    "level": 7,
     "license": "Unknown",
     "primary_language": "Rust",
     "url": "https://github.com/tw93/Kaku",
@@ -1275,16 +1275,19 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "source_type": "github",
     "comparison_priority": "secondary",
-    "notes": "Adaptive open-source agent from NousResearch; designed to grow with the user over sessions.",
+    "notes": "Adaptive open-source agent from NousResearch; designed to grow with the user over sessions. 40+ tool integrations, messaging platform support (Telegram, Slack, Discord), built-in cron scheduler.",
     "org_fit": {
       "min_maturity": 4,
       "max_maturity": 9,
       "optimal_maturity": 6,
-      "features": [],
+      "features": [
+        "team-sharing"
+      ],
       "pricing_tier": "free",
       "tasks": [
         "code-gen",
-        "research"
+        "research",
+        "summarization"
       ],
       "roles": [
         "developer",
@@ -1392,11 +1395,13 @@
       ],
       "pricing_tier": "free",
       "tasks": [
-        "code-gen",
-        "summarization"
+        "summarization",
+        "research"
       ],
       "roles": [
-        "developer"
+        "developer",
+        "exec",
+        "pm"
       ],
       "team_size": [
         "solo",
@@ -1518,6 +1523,190 @@
       "network": "online",
       "setup_complexity": "medium",
       "latency": "medium"
+    }
+  },
+  {
+    "id": "superpowers",
+    "name": "superpowers",
+    "category": "agentic_skills_framework",
+    "level": 3,
+    "license": "unknown",
+    "primary_language": "Shell",
+    "url": "https://github.com/obra/superpowers",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Agentic skills framework + software development methodology. Shell-first for maximum runtime compatibility. 145k stars — largest harness/SSOT repo in taxonomy. 'That works' framing targets reliability over novelty.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 9,
+      "optimal_maturity": 6,
+      "features": [
+        "team-sharing"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "research",
+        "qa"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "online",
+      "setup_complexity": "medium",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "archon",
+    "name": "Archon",
+    "category": "harness_builder",
+    "level": 2,
+    "license": "unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/coleam00/Archon",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Open-source harness builder for AI coding; generates deterministic and repeatable harness configurations. Harness-generator sub-type distinct from harness runtimes.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [
+        "team-sharing",
+        "governance"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "medium",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "rowboat",
+    "name": "rowboat",
+    "category": "memory_native_agent",
+    "level": 1,
+    "license": "unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/rowboatlabs/rowboat",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Open-source AI coworker with native (first-class) memory. 'Coworker' framing implies persistent task ownership across sessions. Memory is built-in, not an add-on MCP.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 7,
+      "optimal_maturity": 5,
+      "features": [
+        "team-sharing"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "research"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "medium",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "multica",
+    "name": "multica",
+    "category": "managed_agents_platform",
+    "level": 2,
+    "license": "unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/multica-ai/multica",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Open-source managed agents platform; 'turn coding agents into real teammates — assign tasks, track progress.' Team-oriented multi-agent management with task assignment and progress tracking.",
+    "org_fit": {
+      "min_maturity": 5,
+      "max_maturity": 9,
+      "optimal_maturity": 7,
+      "features": [
+        "team-sharing",
+        "governance"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "research"
+      ],
+      "roles": [
+        "developer",
+        "pm"
+      ],
+      "team_size": [
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "online",
+      "setup_complexity": "medium",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "twill",
+    "name": "Twill.ai",
+    "category": "cloud_agent_delegation",
+    "level": 1,
+    "license": "Proprietary",
+    "primary_language": "unknown",
+    "url": "https://twill.ai",
+    "source_type": "website",
+    "comparison_priority": "secondary",
+    "notes": "YC S25 managed cloud agent service. Async delegation model: submit tasks, agents work in cloud, receive PRs as output. No local setup; fire-and-forget with PR output. First managed cloud agent service in taxonomy.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [
+        "team-sharing"
+      ],
+      "pricing_tier": "paid",
+      "tasks": [
+        "code-gen"
+      ],
+      "roles": [
+        "developer",
+        "pm"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "high"
     }
   }
 ]

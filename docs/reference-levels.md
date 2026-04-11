@@ -66,6 +66,14 @@ So this document now uses a more explicit **7-level structure**.
 - **NVIDIA PersonaPlex enters persona layer:** NVIDIA (github.com/NVIDIA/personaplex, 662 trending stars) publishing a persona-based AI application library signals hardware vendors moving up-stack into agent identity configuration — potential Level 4c entrant.
 - **Production skill packs reach senior practitioners:** Addy Osmani (Google Chrome DevRel) published `agent-skills` — production-grade engineering skills for AI coding agents. First high-credibility Level 4b entry from a named Google engineer.
 
+### New signals as of 2026-04-11
+- **"Harness Engineering" named as a paradigm:** A four-year retrospective (bits-bytes-nn.github.io, GeekNews front page) documents the progression "Prompt Engineering → Context Engineering → Harness Engineering (2025–2026)." When practitioners name a paradigm, vocabulary has matured. Validates clawfit's Level 2–3 emphasis; suggests increasing harness-layer weight in recommendations for orgs at maturity stages 5–7.
+- **obra/superpowers crosses 145k stars:** Shell-based agentic skills framework + development methodology reaches the largest star count of any harness/SSOT repo in this taxonomy. Explicit "that works" framing targets reliability, not novelty. Spans Level 3 (methodology) and Level 4b (skills). First Level 3 entry with mainstream adoption evidence.
+- **Archon: harness-builder as tool type:** coleam00/Archon (15k★, GitHub Trending) explicitly calls itself a "harness builder" — a meta-tool that generates harness configurations. "Deterministic and repeatable" framing targets governance/reliability axis. New Level 2 sub-type: harness generator vs. harness runtime.
+- **rowboat: memory-native AI coworker:** rowboatlabs/rowboat (11.7k★, GitHub Trending) frames memory as first-class, not a plugin. "Coworker" framing implies persistent task ownership. Adds a memory-native Level 1 sub-type alongside stateless base agents.
+- **Twill.ai (YC S25): async cloud agent delegation:** HN Launch HN front page — "delegate to cloud agents, get back PRs." Async fire-and-forget model with PR output is a new deployment topology for Level 1: no interactive session, no local setup. First managed cloud agent service in this taxonomy.
+- **multica: open-source managed agents platform:** multica-ai/multica (6k★, GitHub Trending) — "turn coding agents into real teammates — assign tasks, track progress." Team-oriented multi-agent management platform enters Level 2.
+
 ---
 
 ## Level 1 — Base runtimes / primary agent surfaces
@@ -90,6 +98,8 @@ They are the tools users most directly choose as their base environment.
 - <img src="https://github.com/NousResearch.png" alt="Hermes Agent" width="18" /> [Hermes Agent](https://github.com/NousResearch/hermes-agent) — ⭐ 27,234 — adaptive open-source agent from NousResearch; "grows with you" — signals session-persistent adaptation at the base runtime layer
 - <img src="https://github.com/google-ai-edge.png" alt="LiteRT-LM" width="18" /> [LiteRT-LM](https://github.com/google-ai-edge/LiteRT-LM) — ⭐ 1,813 — Google AI Edge on-device LLM inference runtime; ARM-first, mobile + edge; companion to google-ai-edge/gallery
 - <img src="https://github.com/KeygraphHQ.png" alt="Shannon" width="18" /> [Shannon](https://github.com/KeygraphHQ/shannon) — ⭐ 36,485 — autonomous AI pentester; reads source code, identifies attack surfaces, generates and executes exploits; first high-signal domain-specialized security agent in this taxonomy
+- <img src="https://github.com/rowboatlabs.png" alt="rowboat" width="18" /> [rowboat](https://github.com/rowboatlabs/rowboat) — ⭐ 11,716 — open-source AI coworker with native memory; persistent task ownership across sessions; memory-native Level 1 sub-type
+- [Twill.ai](https://twill.ai) — YC S25 — async cloud agent delegation; "delegate tasks, get back PRs"; fire-and-forget model with PR output; first managed cloud agent service in this taxonomy
 
 ---
 
@@ -112,6 +122,8 @@ They provide orchestration, better defaults, compatibility layers, workflows, ro
 - <img src="https://github.com/langchain-ai.png" alt="deepagents" width="18" /> [deepagents](https://github.com/langchain-ai/deepagents) — ⭐ 19,379 *(LangGraph-based SDK; also Level 1 as CLI)*
 - <img src="https://github.com/can1357.png" alt="oh-my-pi" width="18" /> [oh-my-pi](https://github.com/can1357/oh-my-pi) — ⭐ 2,681 — Hashline approach: content-hash verification for concurrent multi-agent file safety; see ["The Harness Problem"](https://blog.can.ac/2026/02/12/the-harness-problem/)
 - Anthropic engineering: [Harness design for long-running applications](https://www.anthropic.com/engineering/harness-design-long-running-apps) — canonical dual-agent + sprint-contract architecture from Anthropic
+- <img src="https://github.com/coleam00.png" alt="Archon" width="18" /> [Archon](https://github.com/coleam00/Archon) — ⭐ 15,583 — "first open-source harness builder for AI coding"; makes AI coding deterministic and repeatable; harness-generator sub-type
+- <img src="https://github.com/multica-ai.png" alt="multica" width="18" /> [multica](https://github.com/multica-ai/multica) — ⭐ 6,029 — open-source managed agents platform; "turn coding agents into real teammates — assign tasks, track progress"
 
 ---
 
@@ -140,6 +152,7 @@ Representative references:
 - <img src="https://github.com/open-gitagent.png" alt="gitagent" width="18" /> [gitagent](https://github.com/open-gitagent/gitagent) — Git-native open standard for agent definition and lifecycle management; `git clone` = agent instantiation
 - **AGENTS.md** — OpenAI's cross-platform agent specification format; part of Agentic AI Foundation (Microsoft + Google + OpenAI + Anthropic + Linux Foundation); competes with / complements CLAUDE.md as executable SSOT
 - <img src="https://github.com/VoltAgent.png" alt="awesome-design-md" width="18" /> [awesome-design-md](https://github.com/VoltAgent/awesome-design-md) — ⭐ 15,900 🔥 55+ DESIGN.md files extracted from popular sites; extends SSOT pattern into visual/UI domain — agents read design system rules before generating UI
+- <img src="https://github.com/obra.png" alt="superpowers" width="18" /> [superpowers](https://github.com/obra/superpowers) — ⭐ 145,706 🔥🔥 agentic skills framework + software development methodology; Shell-first; "that works" reliability framing; largest-starred harness/SSOT repo in this taxonomy; spans Level 3 + Level 4b
 
 ---
 
