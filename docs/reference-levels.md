@@ -77,6 +77,7 @@ So this document now uses a more explicit **7-level structure**.
 ### New signals as of 2026-04-12
 - **Strix: second high-signal security agent enters Level 1:** usestrix/strix (23k★, GeekNews 26 pts) — open-source autonomous security testing platform using teams of agents with PoC validation. Distinct from Shannon (expert pentester tool): Strix is developer self-service, CI/CD-integrated, shift-left. Reinforces the need for a `security-testing` task type beyond `qa` in the scoring taxonomy.
 - **GBrain: personal knowledge compounding as Level 4a pattern:** garrytan/gbrain — MIT-licensed personal knowledge base by YC CEO Garry Tan; markdown+PGLite backend, agents read-before/write-after. OpenClaw+Hermes Agent native. Local-first, human-inspectable, MCP support incoming. Adds a "compounding personal knowledge" sub-pattern to Level 4a distinct from session-memory tools.
+- **🔥 DureClaw: 크로스 머신 멀티 에이전트 오케스트레이션 (hongsw 직접 제작):** [DureClaw/dureclaw](https://github.com/DureClaw/dureclaw) — Claude Code 오케스트레이터 + Phoenix WebSocket 서버 + oah-agent 워커 3층 아키텍처. 이종 AI 백엔드(claude/opencode/gemini/aider) 지원. MCP 플러그인 정식 배포. Mac/Linux/Windows/Raspberry Pi. claude-peers-mcp가 머신 내 피어 메시라면 DureClaw는 머신 간 크루 오케스트레이션. Level 2/4c 하이브리드. **clawfit 레지스트리 카테고리(이종 백엔드 오케스트레이션, 크로스 머신 에이전트 크루) 설계 방향의 원점.**
 - **Berkeley RDI: all major agent benchmarks are exploitable:** "How We Broke Top AI Agent Benchmarks" (rdi.berkeley.edu, 171 HN pts) — UC Berkeley team demonstrates that every major benchmark (SWE-bench, WebArena, OSWorld, etc.) can be exploited to achieve near-perfect scores without solving a single task. Seven recurring vulnerability classes identified. Directly undermines LLM selection decisions based on published benchmark scores; clawfit's LLM preference weights may need an evidence-quality caveat. Agent-Eval Checklist proposed as a future Level 5 reference standard.
 
 ---
@@ -130,6 +131,7 @@ They provide orchestration, better defaults, compatibility layers, workflows, ro
 - Anthropic engineering: [Harness design for long-running applications](https://www.anthropic.com/engineering/harness-design-long-running-apps) — canonical dual-agent + sprint-contract architecture from Anthropic
 - <img src="https://github.com/coleam00.png" alt="Archon" width="18" /> [Archon](https://github.com/coleam00/Archon) — ⭐ 15,583 — "first open-source harness builder for AI coding"; makes AI coding deterministic and repeatable; harness-generator sub-type
 - <img src="https://github.com/multica-ai.png" alt="multica" width="18" /> [multica](https://github.com/multica-ai/multica) — ⭐ 6,029 — open-source managed agents platform; "turn coding agents into real teammates — assign tasks, track progress"
+- <img src="https://github.com/DureClaw.png" alt="DureClaw" width="18" /> [DureClaw](https://github.com/DureClaw/dureclaw) — ⭐ 1 🔥 **크로스 머신 멀티 에이전트 오케스트레이션** — Claude Code 오케스트레이터 + Phoenix WebSocket 메시지 버스 + oah-agent 워커 3층 아키텍처; 이종 AI 백엔드(claude/opencode/gemini/aider) 지원; Mac/Linux/Windows/Raspberry Pi; MCP 플러그인 정식 배포(`@dureclaw/mcp`); 한국 두레(협동 농경) 철학 기반; **hongsw 직접 제작** — clawfit 레지스트리 설계 방향에 직접적 영향
 
 ---
 
