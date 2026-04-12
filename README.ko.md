@@ -1,6 +1,6 @@
 # clawfit
 
-> 에이전트 + LLM + 하드웨어 추천 엔진 및 증거 허브
+> AI 에이전트 + LLM + 하드웨어 추천 엔진 — 58개 도구, 7레이어 에코시스템 맵, 10차원 조직 적합도 스코어링
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.7%2B-blue)](pyproject.toml)
@@ -9,44 +9,63 @@
 
 **다른 언어로 읽기:** [English 🇺🇸](README.md)
 
+---
+
+## clawfit이 뭔가요?
+
 `clawfit`은 하나의 실용적인 질문에 답합니다:
 
-**주어진 태스크, 레이턴시 목표, 예산, 네트워크 환경, 상태 유지 요구사항에 대해, 어떤 에이전트 패턴 + 모델 + 하드웨어 조합이 가장 적합한가?**
+**주어진 태스크, 레이턴시 목표, 예산, 네트워크 환경, 팀 성숙도에서 어떤 에이전트 + 모델 + 하드웨어 조합이 가장 적합한가?**
 
-경량 추천 CLI로 시작해서, AI 코딩 도구, 에이전트 런타임, 오케스트레이션 프레임워크, 지원 인프라를 위한 더 넓은 **비교 + 증거 허브**로 진화하고 있습니다.
+세 가지를 하나로 통합합니다:
+
+1. **추천 엔진** — 58개 도구를 10차원으로 스코어링 (태스크 적합도, 성숙도, 역할, 레이어, 팀 규모, 네트워크, 레이턴시, 기능, 복잡도, 예산). 치명적 불일치에는 하드 멀티플라이어 적용 (오프라인 필요 + 온라인 전용 도구 → x0.25).
+
+2. **에코시스템 맵** — 7레이어 분류체계 (L1 기본 런타임 → L7 휴먼 인터페이스)에 70개 이상의 research-watch 신호 문서. GitHub Trending, GeekNews, Hacker News를 매일 자동 에이전트로 스캔.
+
+3. **조직 적합도 진단** — 10문항 인터랙티브 설문 (TUI, CLI, 웹)으로 조직 프로파일을 구축하고 우선순위화된 멀티 레이어 도구 스택을 추천.
+
+### 누구를 위한 것인가?
+
+- 에이전트 스택을 비교하는 팀 (Claude Code vs OpenClaw vs Aider vs ...)
+- 로컬 vs 클라우드 실행 토폴로지를 결정하는 DevOps
+- AI 도구 도입 전략을 평가하는 경영진
+- AI 에이전트 에코시스템을 매핑하는 연구자
+- 증거 기반 추천 레이어를 구축하려는 모든 사람
 
 > [!IMPORTANT]
 > **에코시스템 맵 — 여기서 시작하세요**
 >
-> `clawfit`이 실제로 무엇을 매핑·비교·추적하는지 이해하려면 **이것을 먼저 클릭하세요**:
+> `clawfit`이 실제로 무엇을 매핑·비교·추적하는지 이해하려면:
 >
-> ## **[에코시스템 맵 바로가기: `docs/reference-levels.ko.md`](docs/reference-levels.ko.md)**
+> ## **[에코시스템 맵 바로가기: `docs/reference-levels.md`](https://github.com/hongsw/clawfit/blob/main/docs/reference-levels.md)**
 >
 > 현재 AI 도구 생태계의 전체 구도를 가장 빠르게 파악할 수 있습니다:
-> - 기본 에이전트 런타임
-> - 하네스 / 래퍼 레이어
-> - 리서치 루프 시스템
-> - MCP / 메모리 / 툴 에코시스템
-> - 바이브코딩 / 에이전트 도구 / 메타 래퍼 트렌드
+> - 기본 에이전트 런타임 (Claude Code, OpenClaw, Goose, Aider, pi-mono, ATLAS...)
+> - 하네스 / 래퍼 레이어 (oh-my-*, DureClaw, SuperClaude, Archon...)
+> - 리서치 루프 시스템 (autoresearch, mdarena, cq...)
+> - MCP / 메모리 / 툴 에코시스템 (claude-mem, korean-law-mcp, rtk...)
+> - 스킬팩 & 페르소나 레이어 (career-ops, caveman, Polysona...)
+> - 휴먼 인터페이스 / 생성형 UI (pi-generative-ui, Ghost Pepper...)
 
 ---
 
 ## 🔥 지금 가장 뜨거운 것들 (2026-04)
 
-에코시스템이 빠르게 움직이고 있습니다. 이번 주 주목해야 할 신호들:
-
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[claude-mem](https://github.com/thedotmack/claude-mem) ⭐45k** | Claude Code용 세션 간 영구 메모리. 훅 + SQLite + Chroma 기반. `npx claude-mem install`로 설치. | L4 메모리 |
-| **[deepagents](https://github.com/langchain-ai/deepagents) ⭐19k** | LangChain의 배터리 포함 오픈소스 에이전트 하네스. Claude Code CLI의 직접 경쟁자. | L1/L2 |
-| **Agentic AI Foundation** | MCP가 Linux Foundation 컨소시엄에 기증됨 (Microsoft + Google + OpenAI + Anthropic). 월 9,700만 SDK 다운로드. OpenAI의 AGENTS.md는 새로운 크로스 플랫폼 스펙. | 거버넌스 |
-| **[oh-my-claudecode](https://github.com/yeachan-heo/oh-my-claudecode) ⭐24k** | 스타 수 두 배 성장 — 멀티에이전트 Claude Code 오케스트레이션이 본격화. | L2 |
-| **[everything-claude-code](https://github.com/affaan-m/everything-claude-code) ⭐140k** | 가장 큰 Claude Code 리소스 허브. | L3 |
-| **Claude 컴퓨터 사용** | 퍼스트파티 데스크탑 제어 (마우스/키보드/화면). Claude Code Desktop + Cowork 통합. L1/L7 경계 붕괴. | L1/L7 |
-| **스킬 레이어 성숙** | [Chops](https://github.com/Shpigford/chops), [skills-cleaner](https://github.com/amebahead/skills-cleaner), [Impeccable](https://github.com/pbakaus/impeccable), [K-Skill](https://github.com/NomaDamas/k-skill) — 같은 주에 동시 등장. L4가 스킬 매니저 / 도메인 팩 / 툴 인프라로 분화 중. | L4 |
-| **[Mozilla cq](https://blog.mozilla.ai/cq-stack-overflow-for-agents/)** | "에이전트를 위한 Stack Overflow" — 멀티에이전트 공유 지식 커먼스. 새로운 상태유지 패턴: *집단적(collective)*. | L5 |
+| **[superpowers](https://github.com/obra/superpowers) ⭐145k** | 가장 큰 하네스/SSOT 리포. Shell 기반 에이전틱 스킬 프레임워크 + 방법론. | L3/L4b |
+| **[autoresearch](https://github.com/karpathy/autoresearch) ⭐67.8k** | Karpathy의 자율 ML 연구 루프. 시간당 ~12 실험, 인간 개입 없음. | L5 |
+| **[AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) ⭐57.8k** | 자체 호스팅 AI 플랫폼. 40+ LLM 프로바이더, MCP 호환, 노코드 에이전트 빌더. | L1/L2 |
+| **[claude-mem](https://github.com/thedotmack/claude-mem) ⭐45k** | Claude Code 세션 간 영구 메모리. 훅 + SQLite + Chroma. | L4a |
+| **[pi-mono](https://github.com/badlogic/pi-mono) ⭐32.6k** | 풀스택 에이전트 모노레포: LLM API + 런타임 + CLI + TUI + 웹 UI + Slack + GPU 포드. | L1+2+4c+7 |
+| **[Hermes Agent](https://github.com/NousResearch/hermes-agent) ⭐29.6k** | 자기 개선형 에이전트. 경험에서 스킬 생성. 40+ 도구, 200+ 모델. | L1 |
+| **[DureClaw](https://github.com/DureClaw/dureclaw) 🔥** | 크로스 머신 멀티 에이전트 오케스트레이션. Claude Code + Phoenix WebSocket + 이종 백엔드. hongsw 직접 제작. | L2/L4c |
+| **[DeepTutor](https://github.com/HKUDS/DeepTutor) ⭐11.7k** | 에이전트 네이티브 개인화 학습. 5 모드, 독립 메모리 TutorBot. | L6/L7 |
+| **[korean-law-mcp](https://github.com/chrisryugj/korean-law-mcp) ⭐1.2k** | 한국 법령 API 39개 → MCP 도구 14개. 컨텍스트 비용 82% 절감. | L4c |
+| **[ATLAS](https://github.com/itigges22/ATLAS) ⭐1.5k** | 로컬 코딩 에이전트: 동결 Qwen3-14B로 LiveCodeBench 74.6%. 작업당 ~$0.004. | L1/L5 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) · 전체 맵: [`docs/reference-levels.ko.md`](docs/reference-levels.ko.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (70개+ 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -54,62 +73,13 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
-| 2026-04-06 | GitHub API로 50개+ 추적 레포 스타 수 전수 검증 |
-| 2026-04-06 | research-watch 문서 13개 신규: deepagents, claude-mem, Agentic AI Foundation, Codex 플러그인, Claude 컴퓨터 사용, oh-my-pi Hashline, cq, gitagent, 스킬 레이어 군집, understudy |
-| 2026-04-06 | `reference-levels.md` → v0.3: L4를 4a/4b/4c로 세분화; L3에 AGENTS.md 추가; L7에 컴퓨터 사용 에이전트 추가 |
-| 2026-04-06 | 하네스팀 추가: `.claude/agents/`에 5개 전문 서브에이전트 |
+| 2026-04-12 | DureClaw 하이라이트 추가. 신규 도구 8개 (50→58). 태스크 분류 확장: +orchestration, +education, +legal-research. exec 역할 스코어링 수정. |
+| 2026-04-12 | 데일리 스캔: Strix 보안 에이전트, GBrain 개인 지식 베이스 |
+| 2026-04-11 | 데일리 스캔: superpowers 145k★, Archon 하네스 빌더, rowboat 메모리 네이티브, Twill.ai 클라우드 위임 |
+| 2026-04-08 | Claude Mythos Preview 모델, GLM-5.1 장기 태스크, NVIDIA PersonaPlex, Addy Osmani agent-skills |
+| 2026-04-07 | hongsw stars 8개 리포 추가: career-ops, claude-peers-mcp, polysona, pi-generative-ui, dureclaw. 한국어 재작성. 전체 수치 검증. |
+| 2026-04-06 | reference-levels.md v0.3: L4 → 4a/4b/4c 세분화. research-watch 19개. 하네스팀 (`.claude/agents/`). |
 | 2026-03-31 | 에코시스템 맵 v0.2: 7레이어 분류체계, research-watch 스캔 시작 |
-
----
-
-## 처음 방문하셨나요?
-
-- **소개 문서:** [`clawfit 소개`](https://github.com/hongsw/clawfit/blob/main/docs/posts/2026-03-28-introducing-clawfit.md)
-- **에코시스템 개요:** [`docs/pages/ecosystem-overview.md`](https://github.com/hongsw/clawfit/blob/main/docs/pages/ecosystem-overview.md)
-
-## 왜 만들었나
-
-AI 도구 생태계는 파편화되어 있습니다.
-
-사람들이 비교하는 것들:
-- 에이전트 프레임워크
-- 코딩 어시스턴트
-- 모델 제공자
-- 로컬 vs 클라우드 하드웨어
-- 메모리 / MCP / 플러그인 에코시스템
-- 워크플로우 래퍼와 오케스트레이션 레이어
-
-하지만 대부분의 비교는:
-- 경험에만 의존하거나,
-- 마케팅 위주이거나,
-- 범위가 너무 좁거나,
-- 실제 실행 제약과 동떨어져 있습니다.
-
-`clawfit`은 그 트레이드오프를 더 명확하게 만들기 위한 시도입니다.
-
----
-
-## clawfit이 지금 하는 것
-
-### 1) 조합 추천
-다음 조합의 후보를 랭킹합니다:
-- **에이전트 패턴**
-- **LLM**
-- **하드웨어**
-
-제약 조건 기준:
-- 태스크 유형
-- 레이턴시
-- 예산
-- 하드웨어 선호도
-- 온라인/오프라인 네트워크 요구사항
-- 상태 유지 요구사항
-
-### 2) 구조화된 레지스트리에 트레이드오프 저장
-비교 가정을 산문에 묻는 대신, 기계가 읽을 수 있는 데이터 파일로 저장합니다.
-
-### 3) 에코시스템을 참조 레벨로 분류
-AI 에이전트 및 코딩 도구 에코시스템을 위한 확장 증거 맵을 포함합니다.
 
 ---
 
@@ -136,9 +106,9 @@ pip install -e .
 
 ---
 
-### 조직 진단 — 우리 팀에 맞는 도구 스택 찾기
+### 조직 적합도 진단 — 우리 팀에 맞는 도구 스택 찾기
 
-10개 질문에 답하면 팀에 최적화된 도구 조합을 추천합니다.
+10개 질문에 답하면 팀에 최적화된 멀티 레이어 도구 조합을 추천합니다.
 
 **TUI** (권장 — 화살표로 탐색, 오른쪽 패널에 결과 실시간 업데이트):
 
@@ -149,18 +119,20 @@ clawfit tui
 ```
  ████████████░░░░░░  5/10  [USECASE]
  ──────────────────────────┬──────────────────────────────
- AI로 주로 무엇을 하고     │ 3단계 — 자동화 입문
+ AI로 주로 무엇을 하고     │ 4단계 — 도구 활용 에이전트
  싶으신가요?               │
                            │ [PRIMARY] L1 Base runtime
   ○ 코드 작성/리뷰         │    45% Claude Code
   ● 정보 조사 및 요약      │    39% Aider
   ○ 문서 Q&A               │    38% Goose
   ○ 데이터 분류            │
-  ○ 데이터 분석            │ NEXT STEP
-  ○ 콘텐츠 요약            │ meta-wrapper(L2) 도입을
-                           │ 고려해보세요...
+  ○ 데이터 분석            │ [PRIMARY] L4c Tool-use infra
+  ○ 콘텐츠 요약            │    41% Serena
+                           │    35% Context7
  ─ answered ─              │
-  팀 규모: 소규모 팀       │
+  팀 규모: 소규모 팀       │ NEXT STEP
+  역할: 개발자             │ meta-wrapper(L2) 도입을
+                           │ 고려해보세요...
  ──────────────────────────┴──────────────────────────────
   ↑/↓ 이동   Space/Enter 선택+다음   ← 뒤로   → 앞으로   q 종료
 ```
@@ -198,7 +170,7 @@ clawfit diagnose --answers '{
 | `team_size` | `solo` / `small` / `mid` / `large` |
 | `primary_role` | `developer` / `researcher` / `pm` / `exec` / `mixed` |
 | `current_ai_usage` | `none` / `chat` / `coding_assistant` / `coding_agent` / `multi_agent` / `building` |
-| `primary_task` | `code-gen` / `research` / `qa` / `classification` / `data-analysis` / `summarization` |
+| `primary_task` | `code-gen` / `research` / `qa` / `classification` / `data-analysis` / `summarization` / `orchestration` / `education` / `legal-research` |
 | `output_destination` | `personal` / `team` / `internal_product` / `external` |
 | `frequency` | `occasional` / `daily` / `continuous` |
 | `data_sensitivity` | `public` / `internal` / `confidential` / `regulated` |
@@ -246,39 +218,111 @@ clawfit profile
 
 ---
 
-## 출력 예시
+## 스코어링 모델
 
-`clawfit recommend`는 JSON을 반환합니다:
+10차원 가중 스코어링 + 하드 멀티플라이어:
 
-```json
-[
-  {
-    "agent": "react-agent",
-    "llm": "claude-sonnet",
-    "hardware": "aws-cpu-medium",
-    "architecture": "cloud-api",
-    "fit_score": 0.85,
-    "why": [
-      "QA 워크로드에 좋은 태스크 매칭",
-      "레이턴시 목표가 에이전트 + 모델 프로파일과 일치"
-    ],
-    "risk": [
-      "소형 대안 대비 토큰당 비용이 높음"
-    ]
-  }
-]
-```
+| 차원 | 가중치 | 측정 대상 |
+|------|--------|----------|
+| task_fit | 0.22 | 도구의 태스크 목록이 사용자의 주요 태스크와 일치하는가? |
+| maturity_fit | 0.18 | 사용자의 AI 성숙도 단계(1-11)에 적합한 도구인가? |
+| role_fit | 0.15 | 사용자의 역할(개발자/경영진/연구자/DevOps)에 맞는 도구인가? |
+| layer_relevance | 0.12 | 도구의 에코시스템 레이어(L1-L7)가 프로파일의 레이어 가중치와 일치하는가? |
+| team_size_fit | 0.09 | 사용자의 팀 규모(solo/small/mid/large)에 설계된 도구인가? |
+| network_fit | 0.08 | 필요한 네트워크 환경(online/offline/hybrid)에서 작동하는가? |
+| latency_fit | 0.06 | 요구되는 레이턴시 티어를 충족하는가? |
+| feature_fit | 0.05 | 필요한 기능(거버넌스, 팀 공유, 오프라인)을 지원하는가? |
+| complexity_fit | 0.04 | 설치 복잡도가 팀 성숙도에 적합한가? |
+| budget_fit | 0.01 | 가격 티어가 예산과 맞는가? |
+
+**하드 멀티플라이어** (가중합 이후 적용):
+- 오프라인 필요 + 온라인 전용 도구 → **x0.25**
+- 역할 불일치 (역할 겹침 없음) → **x0.75**
 
 ---
 
 ## 지원 태스크 카테고리
 
-- `classification` — 분류
-- `code-gen` — 코드 생성
-- `data-analysis` — 데이터 분석
-- `qa` — 질의응답
-- `research` — 리서치
-- `summarization` — 요약
+| 태스크 | 설명 |
+|--------|------|
+| `code-gen` | 코드 생성, 리뷰, 리팩토링 |
+| `research` | 정보 수집, 문헌 조사, 심층 분석 |
+| `qa` | 질의응답, 문서 Q&A |
+| `summarization` | 대규모 콘텐츠 요약 |
+| `data-analysis` | 데이터 처리, 시각화, 통계 분석 |
+| `orchestration` | 멀티 에이전트 조율, 크로스 머신 태스크 분배 |
+| `education` | 개인화 학습, 튜터링, 퀴즈 생성 |
+| `legal-research` | 법률 문서 검색, 판례 분석, 규정 준수 |
+
+---
+
+## 작동 방식
+
+파이프라인은 의도적으로 단순하고 검사 가능합니다:
+
+1. **레지스트리 로딩** — 58개 도구 정의 + 10필드 org_fit 메타데이터 로드
+2. **프로파일 구축** — 10개 설문 답변 → OrgProfile 변환
+3. **스코어링** — 10차원 + 하드 멀티플라이어로 각 도구 평가
+4. **레이어 그루핑** — 에코시스템 레이어(L1-L7)별 그룹화, 성숙도 단계별 우선순위
+5. **추천 출력** — 근거가 포함된 우선순위화 멀티 레이어 스택 반환
+
+---
+
+## 리포지터리 구조
+
+```text
+clawfit/
+├─ .claude/agents/          ← 하네스팀 서브에이전트 (5개)
+├─ clawfit/
+│  ├─ cli.py                ← argparse CLI (recommend, list, tui, serve, diagnose)
+│  ├─ org_scorer.py         ← 10차원 스코어링 엔진
+│  ├─ tui.py                ← curses TUI (분할 화면 실시간 프리뷰)
+│  ├─ server.py             ← stdlib HTTP 서버 (localhost:7771)
+│  ├─ diagnose.py           ← 인터랙티브 CLI 설문
+│  ├─ filters.py            ← 하드 제약 필터링
+│  ├─ scoring.py            ← 카테시안 프로덕트 스코어링 (에이전트 × LLM × 하드웨어)
+│  ├─ recommend.py          ← 공개 API: recommend() → list[dict]
+│  ├─ schemas.py            ← 데이터클래스: Agent, LLM, Hardware, Recommendation
+│  ├─ loader.py             ← registry/*.json 로더
+│  ├─ data/
+│  │  ├─ tools_registry.json  ← 58개 에코시스템 도구 (org_fit 10필드)
+│  │  └─ org_questions.json   ← 10문항 설문, 3 페이즈
+│  └─ registry/             ← agents.json, llms.json, hardware.json
+├─ docs/
+│  ├─ reference-levels.md   ← 에코시스템 맵 v0.3 (7레이어 분류체계)
+│  ├─ research-watch/       ← 70개+ 신호 분석 문서 (데일리 자동 스캔)
+│  └─ pages/                ← ecosystem-overview, ecosystem-axes, maturity-layer-map
+├─ data/
+│  └─ tools_registry.json   ← clawfit/data/ 미러
+├─ tests/
+│  ├─ test_filters.py
+│  └─ test_recommend.py
+└─ pyproject.toml
+```
+
+---
+
+## 에코시스템 리서치 레이어
+
+clawfit은 더 넓은 AI 도구 생태계를 추적합니다:
+- [`docs/reference-levels.md`](docs/reference-levels.md) — 정식 7레이어 에코시스템 맵
+- [`docs/pages/ecosystem-axes.md`](docs/pages/ecosystem-axes.md) — 분류 로직, 경계 규칙, 예제
+- [`docs/research-watch/`](docs/research-watch/) — 70개+ 도구/트렌드 분석 (매일 자동 스캔)
+- [`docs/pages/maturity-layer-map.md`](docs/pages/maturity-layer-map.md) — 성숙도 단계(1-11) × 도구 레이어(L1-L7) 매핑
+
+### 7레이어 구조
+
+| 레벨 | 이름 | 주요 도구 |
+|------|------|----------|
+| 1 | 기본 런타임 | Claude Code, OpenClaw, Aider, pi-mono, ATLAS, Hermes Agent |
+| 2 | 메타 래퍼 / 하네스 | oh-my-*, DureClaw, SuperClaude, Archon, multica |
+| 3 | 팀 하네스 / SSOT | CLAUDE.md, AGENTS.md, DESIGN.md, gitagent, superpowers |
+| 4a | 메모리 / 영구 컨텍스트 | claude-mem, GBrain, Polysona |
+| 4b | 스킬팩 & 매니저 | career-ops, caveman, obsidian-skills, Chops |
+| 4c | 도구 사용 / 액션 인프라 | korean-law-mcp, rtk, claude-peers-mcp, serena |
+| 5 | 리서치 / 평가 | autoresearch, mdarena, Mozilla cq |
+| 6 | 데이터 / 지식 인프라 | DeepTutor, AnythingLLM |
+| 7 | 휴먼 인터페이스 | pi-generative-ui, Ghost Pepper, ouroboros |
 
 ---
 
@@ -299,67 +343,23 @@ print(results[0])
 
 ---
 
-## 작동 방식
-
-파이프라인은 의도적으로 단순하고 검사 가능합니다:
-
-1. **레지스트리 로딩** — 에이전트 / LLM / 하드웨어 정의 로드
-2. **제약 필터링** — 호환되지 않는 옵션 제거
-3. **스코어링** — 나머지 조합을 적합도로 랭킹
-4. **추천 출력** — 근거와 리스크가 포함된 상위 후보 반환
-
----
-
-## 리포지터리 구조
-
-```text
-clawfit/
-├─ .claude/agents/          ← 하네스팀 서브에이전트 (5개)
-├─ clawfit/
-│  ├─ cli.py
-│  ├─ filters.py
-│  ├─ loader.py
-│  ├─ recommend.py
-│  ├─ scoring.py
-│  └─ schemas.py
-├─ docs/
-│  ├─ reference-levels.md   ← 에코시스템 맵 (영문)
-│  ├─ reference-levels.ko.md← 에코시스템 맵 (한국어)
-│  ├─ research-watch/       ← 개별 도구 분석 (38개+)
-│  └─ pages/
-├─ tests/
-│  ├─ test_filters.py
-│  └─ test_recommend.py
-└─ pyproject.toml
-```
-
----
-
-## 에코시스템 리서치 레이어
-
-clawfit은 좁은 추천 엔진을 넘어 AI 도구를 위한 더 넓은 비교 프레임워크로 진화하고 있습니다.
-
-### 7레이어 구조
-
-| 레벨 | 영문명 | 설명 |
-|------|--------|------|
-| 1 | Base runtimes | 기본 에이전트 런타임 (Claude Code, OpenClaw, Aider 등) |
-| 2 | Meta wrappers / harnesses | 메타 래퍼 / 하네스 (oh-my-*, SuperClaude, 라우터 등) |
-| 3 | Team harness / SSOT | 팀 하네스 / 실행 가능 단일 진실 공급원 (gitagent, AGENTS.md 등) |
-| 4 | Capability extension | 기능 확장 레이어 (MCP / 메모리 / 플러그인 / 스킬) |
-| 5 | Research / evaluation | 리서치 / 평가 / 벤치마크 / 집단 지식 시스템 |
-| 6 | Data / knowledge infra | 데이터 / 증거 / 지식 인프라 |
-| 7 | Human interface | 휴먼 인터페이스 / 음성 / 컴퓨터 사용 |
-
-전체 맵: [`docs/reference-levels.ko.md`](docs/reference-levels.ko.md)
-
----
-
 ## 테스트 실행
 
 ```bash
 python -m pytest tests/ -v
 ```
+
+---
+
+## 기여하기
+
+특히 다음 영역의 기여를 환영합니다:
+- 레지스트리 확장 (완전한 org_fit 메타데이터가 포함된 신규 도구)
+- 스코어링 로직 개선
+- 벤치마크 참조 및 증거
+- research-watch 신호 분석
+
+이슈 또는 PR을 열어주세요: 무엇을 추가하는지, 어떤 증거가 뒷받침하는지, 비교 모델에 어떻게 맞는지를 포함해주세요.
 
 ---
 

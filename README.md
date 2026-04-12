@@ -1,5 +1,7 @@
 # clawfit
 
+> AI 에이전트 + LLM + 하드웨어 추천 엔진 — 58개 도구, 7레이어 에코시스템 맵, 10차원 조직 적합도 스코어링
+
 > Agent + LLM + hardware recommendation engine and evidence hub.
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -9,49 +11,63 @@
 
 **Read in:** [한국어 🇰🇷](README.ko.md)
 
-`clawfit` helps answer a practical question:
+---
 
-**Given a task, latency target, budget, network conditions, and statefulness requirements, what combination of agent pattern, model, and hardware is the best fit?**
+## What is clawfit?
 
-It started as a lightweight recommendation CLI and is evolving toward a broader **comparison + evidence hub** for AI coding tools, agent runtimes, orchestration frameworks, and supporting infrastructure.
+`clawfit` answers a practical question:
+
+**Given a task, latency target, budget, network conditions, and team maturity, what combination of agent pattern, model, and hardware is the best fit?**
+
+It is three things in one:
+
+1. **Recommendation engine** — 58 tools scored across 10 dimensions (task fit, maturity, role, layer relevance, team size, network, latency, features, complexity, budget). Hard multipliers penalize critical mismatches (offline required + online-only tool → x0.25).
+
+2. **Ecosystem map** — A 7-layer taxonomy (L1 base runtimes → L7 human interfaces) with 70+ research-watch signal documents tracking GitHub Trending, GeekNews, and Hacker News daily via automated agents.
+
+3. **Org-fit diagnosis** — A 10-question interactive questionnaire (TUI, CLI, or web) that builds an organization profile and recommends a prioritized multi-layer tool stack.
+
+### Who is this for?
+
+- Teams choosing between agent stacks (Claude Code vs OpenClaw vs Aider vs ...)
+- DevOps deciding local vs cloud execution topology
+- Executives evaluating AI tool adoption strategy
+- Researchers mapping the AI agent ecosystem
+- Anyone building an evidence-backed recommendation layer
 
 > [!IMPORTANT]
 > **START HERE — ECOSYSTEM MAP**
 >
-> If you want to understand what `clawfit` is really mapping, comparing, and tracking, **click this first**:
+> If you want to understand what `clawfit` is really mapping, comparing, and tracking:
 >
 > ## **[Jump directly to the ecosystem map: `docs/reference-levels.md`](https://github.com/hongsw/clawfit/blob/main/docs/reference-levels.md)**
 >
 > This is the fastest way to see the current landscape of:
-> - base agent runtimes
-> - harness / wrapper layers
-> - research-loop systems
-> - MCP / memory / tool ecosystems
-> - vibe-coding / agent-tool / meta-wrapper trends
->
-> **If you only click one link in this repo, click this one.**
+> - base agent runtimes (Claude Code, OpenClaw, Goose, Aider, pi-mono, ATLAS...)
+> - harness / wrapper layers (oh-my-*, DureClaw, SuperClaude, Archon...)
+> - research-loop systems (autoresearch, mdarena, cq...)
+> - MCP / memory / tool ecosystems (claude-mem, korean-law-mcp, rtk...)
+> - skill packs & persona layers (career-ops, caveman, Polysona...)
+> - human interface / generative UI (pi-generative-ui, Ghost Pepper...)
 
 ---
 
 ## 🔥 What's hot right now (2026-04)
 
-The ecosystem is moving fast. Here are the signals worth watching this week:
-
 | Signal | Why it matters | Level |
 |--------|---------------|-------|
-| **[claude-mem](https://github.com/thedotmack/claude-mem) ⭐45k** | Cross-session memory for Claude Code via hooks + SQLite + Chroma. Install with `npx claude-mem install`. | L4a Memory |
-| **[deepagents](https://github.com/langchain-ai/deepagents) ⭐19k** | LangChain's batteries-included open-source agent harness. Direct competitor to Claude Code CLI. | L1/L2 |
-| **Agentic AI Foundation** | MCP donated to Linux Foundation consortium (Microsoft + Google + OpenAI + Anthropic). 97M monthly SDK downloads. OpenAI's AGENTS.md is a new cross-platform spec. | Governance |
-| **[oh-my-claudecode](https://github.com/yeachan-heo/oh-my-claudecode) ⭐24k** | Star count doubled — multi-agent Claude Code orchestration gaining serious traction. | L2 |
-| **[everything-claude-code](https://github.com/affaan-m/everything-claude-code) ⭐140k** | Largest known Claude Code resource hub. | L3 |
-| **Claude Computer Use** | First-party desktop control (mouse/keyboard/screen) via Claude Code Desktop + Cowork. Collapses L1/L7 boundary. | L1/L7 |
-| **Skill layer maturing** | [Chops](https://github.com/Shpigford/chops), [skills-cleaner](https://github.com/amebahead/skills-cleaner), [caveman](https://github.com/JuliusBrussee/caveman) ⭐1.7k (716 HN pts) — token compression as a skill. L4 fragmenting into skill managers / domain packs / tool infra. | L4b |
-| **[awesome-design-md](https://github.com/VoltAgent/awesome-design-md) ⭐15.9k** | 55+ DESIGN.md files for AI agents — extends SSOT pattern to visual/UI design. New L3 sub-pattern alongside CLAUDE.md and AGENTS.md. | L3 |
-| **[mdarena](https://github.com/HudsonGri/mdarena)** | First tool to empirically benchmark CLAUDE.md instruction variants. Finding: per-directory targeted instructions beat monolithic files by ~27%. | L5 |
-| **[rtk](https://github.com/rtk-ai/rtk)** | Rust CLI proxy compressing shell output 60–90% before agent reads it. Changes the cost curve for session-heavy workflows. | L4c |
-| **[Mozilla cq](https://blog.mozilla.ai/cq-stack-overflow-for-agents/)** | "Stack Overflow for agents" — multi-agent shared knowledge commons. New statefulness pattern: *collective*. | L5 |
+| **[superpowers](https://github.com/obra/superpowers) ⭐145k** | Largest-starred harness/SSOT repo. Shell-first agentic skills framework + methodology. | L3/L4b |
+| **[autoresearch](https://github.com/karpathy/autoresearch) ⭐67.8k** | Karpathy's autonomous ML research loop. ~12 experiments/hour, no human intervention. | L5 |
+| **[AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) ⭐57.8k** | Self-hosted AI platform. 40+ LLM providers, MCP compatible, no-code agent builder. | L1/L2 |
+| **[claude-mem](https://github.com/thedotmack/claude-mem) ⭐45k** | Cross-session memory for Claude Code via hooks + SQLite + Chroma. | L4a |
+| **[pi-mono](https://github.com/badlogic/pi-mono) ⭐32.6k** | Full-stack agent toolkit monorepo: LLM API + runtime + CLI + TUI + web UI + Slack + GPU pods. | L1+2+4c+7 |
+| **[Hermes Agent](https://github.com/NousResearch/hermes-agent) ⭐29.6k** | Self-improving agent with learning loop. Creates skills from experience. 40+ tools, 200+ models. | L1 |
+| **[DureClaw](https://github.com/DureClaw/dureclaw) 🔥** | Cross-machine multi-agent orchestration. Claude Code + Phoenix WebSocket + heterogeneous backends. By hongsw. | L2/L4c |
+| **[DeepTutor](https://github.com/HKUDS/DeepTutor) ⭐11.7k** | Agent-native personalized learning. 5 modes, TutorBots with independent memory. | L6/L7 |
+| **[korean-law-mcp](https://github.com/chrisryugj/korean-law-mcp) ⭐1.2k** | 39 Korean law APIs → 14 MCP tools. 82% context cost reduction. | L4c |
+| **[ATLAS](https://github.com/itigges22/ATLAS) ⭐1.5k** | Local coding agent: 74.6% LiveCodeBench with frozen Qwen3-14B. ~$0.004/task. | L1/L5 |
 
-Full analysis in [`docs/research-watch/`](docs/research-watch/) · Full map in [`docs/reference-levels.md`](docs/reference-levels.md)
+Full analysis in [`docs/research-watch/`](docs/research-watch/) (70+ docs) · Full map in [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -59,65 +75,13 @@ Full analysis in [`docs/research-watch/`](docs/research-watch/) · Full map in [
 
 | Date | What changed |
 |------|-------------|
-| 2026-04-06 | 6 additional research-watch docs: apex-protocol, awesome-design-md, caveman, gemma-gem, mdarena, modo |
-| 2026-04-06 | `reference-levels.md` updated: awesome-design-md → L3, caveman → L4b, rtk → L4c, mdarena → L5 |
-| 2026-04-06 | Star counts verified via GitHub API across all 50+ tracked repos |
-| 2026-04-06 | 13 new research-watch docs: deepagents, claude-mem, Agentic AI Foundation, Codex plugins, Claude Computer Use, oh-my-pi Hashline, cq, gitagent, skill layer cluster, understudy |
-| 2026-04-06 | `reference-levels.md` → v0.3: Level 4 split into 4a/4b/4c subtypes; new L3 AGENTS.md entry; L7 expanded with computer-use agents |
-| 2026-04-06 | Harness team added: `.claude/agents/` with 5 specialized sub-agents |
+| 2026-04-12 | DureClaw highlighted in reference-levels.md. 8 new tools added to registry (50→58). Task taxonomy expanded: +orchestration, +education, +legal-research. Exec role scoring fixed. |
+| 2026-04-12 | Daily scan: Strix security agent, GBrain personal knowledge base added |
+| 2026-04-11 | Daily scan: superpowers 145k★, Archon harness-builder, rowboat memory-native coworker, Twill.ai cloud delegation |
+| 2026-04-08 | Claude Mythos Preview model tier, GLM-5.1 long-horizon, NVIDIA PersonaPlex, Addy Osmani agent-skills |
+| 2026-04-07 | 8 repos from hongsw stars: career-ops, claude-peers-mcp, polysona, pi-generative-ui, dureclaw. Korean rewrites. Full numerical verification across all docs. |
+| 2026-04-06 | reference-levels.md → v0.3: L4 split into 4a/4b/4c. 19 research-watch docs. Harness team (`.claude/agents/`). |
 | 2026-03-31 | Ecosystem map v0.2: 7-layer taxonomy, research-watch scan launch |
-
----
-
-## New here?
-
-- **Canonical intro:** [`Introducing clawfit`](https://github.com/hongsw/clawfit/blob/main/docs/posts/2026-03-28-introducing-clawfit.md)
-- **Ecosystem overview:** [`docs/pages/ecosystem-overview.md`](https://github.com/hongsw/clawfit/blob/main/docs/pages/ecosystem-overview.md)
-
-## Why this exists
-
-The AI tooling landscape is fragmented.
-
-People compare:
-- agent frameworks
-- coding assistants
-- model providers
-- local vs cloud hardware
-- memory / MCP / plugin ecosystems
-- workflow wrappers and orchestration layers
-
-But most comparisons are either:
-- anecdotal,
-- marketing-heavy,
-- too narrow,
-- or disconnected from real execution constraints.
-
-`clawfit` is an attempt to make those tradeoffs more explicit.
-
----
-
-## What clawfit does today
-
-### 1) Recommends combinations
-It ranks candidate combinations of:
-- **agent pattern**
-- **LLM**
-- **hardware**
-
-based on constraints like:
-- task type
-- latency
-- budget
-- hardware preference
-- online/offline network requirement
-- statefulness requirement
-- **user maturity stage (1–11)** — filters and weights agents by fit for that stage
-
-### 2) Encodes tradeoffs in structured registries
-Instead of burying assumptions in prose, clawfit stores comparison inputs in machine-readable data files.
-
-### 3) Organizes the ecosystem into reference levels
-The repo also includes an expanding evidence map for AI agent and coding-tool ecosystems.
 
 ---
 
@@ -144,7 +108,7 @@ pip install -e .
 
 ### Org-Fit Diagnosis — find your team's tool stack
 
-The fastest way to get a recommendation: answer 10 questions about your team.
+Answer 10 questions about your team → get a prioritized multi-layer recommendation.
 
 **TUI** (recommended — navigate with arrow keys, results update live in split pane):
 
@@ -171,8 +135,6 @@ clawfit tui
  ──────────────────────────┴──────────────────────────────
   ↑/↓ Move   Space/Enter Select+Next   ← Back   → Next   q Quit
 ```
-
-Keys: `↑↓` move · `Space/Enter` select & advance · `←/→` back/next · `1-9` jump · `q` quit
 
 **CLI (non-interactive, pass answers as JSON):**
 
@@ -231,41 +193,111 @@ clawfit profile
 
 ---
 
-## Example output
+## Scoring model
 
-`clawfit recommend` returns JSON:
+10-dimension weighted scoring with hard multipliers:
 
-```json
-[
-  {
-    "agent": "react-agent",
-    "llm": "claude-sonnet",
-    "hardware": "aws-cpu-medium",
-    "architecture": "cloud-api",
-    "fit_score": 0.85,
-    "why": [
-      "Good task match for QA workloads",
-      "Latency target aligns with available agent + model profile"
-    ],
-    "risk": [
-      "Higher per-token cost than smaller alternatives"
-    ]
-  }
-]
-```
+| Dimension | Weight | What it measures |
+|-----------|--------|-----------------|
+| task_fit | 0.22 | Does the tool's task list match the user's primary task? |
+| maturity_fit | 0.18 | Is the tool appropriate for the user's AI maturity stage (1–11)? |
+| role_fit | 0.15 | Does the tool target the user's role (developer/exec/researcher/devops)? |
+| layer_relevance | 0.12 | Does the tool's ecosystem layer (L1–L7) match the profile's layer weights? |
+| team_size_fit | 0.09 | Is the tool designed for the user's team size (solo/small/mid/large)? |
+| network_fit | 0.08 | Does the tool work in the required network environment (online/offline/hybrid)? |
+| latency_fit | 0.06 | Does the tool meet the required latency tier? |
+| feature_fit | 0.05 | Does the tool support needed features (governance, team-sharing, offline)? |
+| complexity_fit | 0.04 | Is setup complexity appropriate for the team's maturity? |
+| budget_fit | 0.01 | Does the pricing tier match the budget? |
+
+**Hard multipliers** (applied after weighted sum):
+- Offline required + online-only tool → **x0.25**
+- Role mismatch (no role overlap) → **x0.75**
 
 ---
 
 ## Supported task categories
 
-Current task labels include:
+| Task | Description |
+|------|-------------|
+| `code-gen` | Code generation, review, refactoring |
+| `research` | Information gathering, literature review, deep analysis |
+| `qa` | Question answering, document Q&A |
+| `summarization` | Content summarization at scale |
+| `data-analysis` | Data processing, visualization, statistical analysis |
+| `orchestration` | Multi-agent coordination, cross-machine task distribution |
+| `education` | Personalized learning, tutoring, quiz generation |
+| `legal-research` | Legal document search, case law analysis, regulatory compliance |
 
-- `classification`
-- `code-gen`
-- `data-analysis`
-- `qa`
-- `research`
-- `summarization`
+---
+
+## How it works
+
+The pipeline is intentionally simple and inspectable:
+
+1. **Registry loading** — load 58 tool definitions with 10-field org_fit metadata
+2. **Profile building** — convert 10 questionnaire answers into an OrgProfile
+3. **Scoring** — score each tool across 10 dimensions + hard multipliers
+4. **Layer grouping** — group by ecosystem layer (L1–L7), prioritize by maturity stage
+5. **Recommendation output** — return prioritized multi-layer stack with rationale
+
+---
+
+## Repository structure
+
+```text
+clawfit/
+├─ .claude/agents/          ← harness team sub-agents (5)
+├─ clawfit/
+│  ├─ cli.py                ← argparse CLI (recommend, list, tui, serve, diagnose)
+│  ├─ org_scorer.py         ← 10-dimension scoring engine
+│  ├─ tui.py                ← curses TUI with split-pane live preview
+│  ├─ server.py             ← stdlib HTTP server (localhost:7771)
+│  ├─ diagnose.py           ← interactive CLI questionnaire
+│  ├─ filters.py            ← hard constraint elimination
+│  ├─ scoring.py            ← cartesian product scoring (agent × LLM × hardware)
+│  ├─ recommend.py          ← public API: recommend() → list[dict]
+│  ├─ schemas.py            ← dataclasses: Agent, LLM, Hardware, Recommendation
+│  ├─ loader.py             ← loads registry/*.json
+│  ├─ data/
+│  │  ├─ tools_registry.json  ← 58 ecosystem tools with org_fit (10 fields each)
+│  │  └─ org_questions.json   ← 10-question bank, 3 phases
+│  └─ registry/             ← agents.json, llms.json, hardware.json
+├─ docs/
+│  ├─ reference-levels.md   ← ecosystem map v0.3 (7-layer taxonomy)
+│  ├─ research-watch/       ← 70+ signal analysis docs (daily scan)
+│  └─ pages/                ← ecosystem-overview, ecosystem-axes, maturity-layer-map
+├─ data/
+│  └─ tools_registry.json   ← mirror of clawfit/data/
+├─ tests/
+│  ├─ test_filters.py
+│  └─ test_recommend.py
+└─ pyproject.toml
+```
+
+---
+
+## Ecosystem research layer
+
+clawfit tracks a broader AI tooling landscape documented in:
+- [`docs/reference-levels.md`](docs/reference-levels.md) — canonical 7-layer ecosystem map
+- [`docs/pages/ecosystem-axes.md`](docs/pages/ecosystem-axes.md) — classification logic, boundary rules, worked examples
+- [`docs/research-watch/`](docs/research-watch/) — 70+ individual tool/trend analysis documents (daily automated scan)
+- [`docs/pages/maturity-layer-map.md`](docs/pages/maturity-layer-map.md) — how user maturity stages (1–11) map to tool layers (L1–L7)
+
+### 7-layer structure
+
+| Level | Focus | Examples |
+|---|---|---|
+| 1 | Base runtimes | Claude Code, OpenClaw, Aider, pi-mono, ATLAS, Hermes Agent |
+| 2 | Meta wrappers / harnesses | oh-my-*, DureClaw, SuperClaude, Archon, multica |
+| 3 | Team harness / SSOT | CLAUDE.md, AGENTS.md, DESIGN.md, gitagent, superpowers |
+| 4a | Memory / persistent context | claude-mem, GBrain, Polysona |
+| 4b | Skill packs & managers | career-ops, caveman, obsidian-skills, Chops |
+| 4c | Tool-use / action infra | korean-law-mcp, rtk, claude-peers-mcp, serena |
+| 5 | Research / evaluation | autoresearch, mdarena, Mozilla cq |
+| 6 | Data / knowledge infra | DeepTutor, AnythingLLM |
+| 7 | Human interface | pi-generative-ui, Ghost Pepper, ouroboros |
 
 ---
 
@@ -286,105 +318,6 @@ print(results[0])
 
 ---
 
-## How it works
-
-The current pipeline is intentionally simple and inspectable:
-
-1. **Registry loading**
-   - load structured agent / LLM / hardware definitions
-2. **Constraint filtering**
-   - eliminate incompatible options
-3. **Scoring**
-   - rank remaining combinations by fit
-4. **Recommendation output**
-   - return top candidates with rationale and risks
-
-This makes the system easy to extend, audit, and benchmark.
-
----
-
-## Repository structure
-
-```text
-clawfit/
-├─ clawfit/
-│  ├─ cli.py
-│  ├─ filters.py
-│  ├─ loader.py
-│  ├─ recommend.py
-│  ├─ scoring.py
-│  └─ schemas.py
-├─ data/
-│  ├─ feature_matrix.json
-│  ├─ feature_matrix.schema.json
-│  └─ tools_registry.json
-├─ docs/
-│  └─ reference-levels.md
-├─ tests/
-│  ├─ test_filters.py
-│  └─ test_recommend.py
-└─ pyproject.toml
-```
-
----
-
-## Ecosystem research layer
-
-clawfit is evolving beyond a narrow recommender into a broader comparison framework for AI tooling.
-
-Important repo documents:
-- [`docs/reference-levels.md`](docs/reference-levels.md) — canonical tool list organized by ecosystem layer
-- **[`docs/pages/ecosystem-axes.md`](docs/pages/ecosystem-axes.md) — classification axes: how and why each level is defined, sub-axes, boundary rules, and worked examples**
-- `data/tools_registry.json` — initial structured registry
-- `data/feature_matrix.json` — early feature verification matrix
-- `data/feature_matrix.schema.json` — schema for feature data
-
-### Reference levels overview
-
-The current map uses a **7-layer structure** with sub-axes. These are ecosystem layers/lenses, not a sequential maturity ladder.
-
-| Level | Focus | Sub-axes |
-|---|---|---|
-| 1 | Base runtimes / primary agent surfaces | interface type · model coupling · autonomy mode · task domain |
-| 2 | Meta wrappers / harnesses / orchestration layers | orchestration pattern · dependency scope · reliability mechanism |
-| 3 | Team harness / executable SSOT / governance layer | SSOT type (workflow / design / git-native / cross-platform) · governance authority |
-| 4a | Memory / persistent context | memory scope · storage backend · integration mechanism |
-| 4b | Skill packs & skill managers | skill type · distribution · activation · scope |
-| 4c | Tool-use / action infrastructure | infrastructure type · safety model · governance |
-| 5 | Research / evaluation / benchmark / autoresearch | evaluation target · research mode · output format |
-| 6 | Data / evidence / knowledge infrastructure | RAG pattern · knowledge scope · integration |
-| 7 | Human interface / voice / computer use | modality · execution scope · inference location |
-
-**Full classification logic** — defining questions, boundary rules, and worked examples for each level:
-→ [`docs/pages/ecosystem-axes.md`](docs/pages/ecosystem-axes.md)
-
-#### Key boundary rules at a glance
-
-- **L1 vs L2:** does the tool require a separate base agent underneath? Yes → L2. No → L1.
-- **L3 vs L4b:** does the artifact govern project-wide agent behavior persistently? Yes → L3 (SSOT). No → L4b (skill).
-- **L4b vs L4c:** does it modify agent *behavior* via prompt convention, or does it mediate *tool calls* to external systems? Behavior → L4b. Tool calls → L4c.
-- **L4a vs L6:** is this agent-facing memory (reads/writes during a session)? Yes → L4a. Is this knowledge infrastructure (pipelines, indexes, extraction)? Yes → L6.
-- **L7 + L1 dual:** tools that operate a UI layer AND are self-contained runtimes get both (L1/L7 boundary collapse pattern).
-
-#### Level 3 SSOT sub-types (as of 2026-04)
-
-| File | Function |
-|------|---------|
-| `CLAUDE.md` | Workflow rules — how the agent executes tasks |
-| `AGENTS.md` | Cross-platform governance — multi-runtime agent specification |
-| `DESIGN.md` | Visual output norms — design system constraints for UI generation |
-| `gitagent` | Git-native distribution — agent definition versioned in Git |
-
-#### Level 4 split
-
-Level 4 has fragmented into three measurably distinct subtypes. A tool is **4a** if it persists context; **4b** if it adds an invocable skill; **4c** if it mediates external system connections. See [`ecosystem-axes.md`](docs/pages/ecosystem-axes.md) for the full decision tree.
-
-See full details in [`docs/reference-levels.md`](docs/reference-levels.md) · [한국어 맵](docs/reference-levels.ko.md) and the overview hub at [`docs/pages/ecosystem-overview.md`](docs/pages/ecosystem-overview.md).
-
-**New:** [Maturity × Layer integration map](docs/pages/maturity-layer-map.md) — how user maturity stages (1–11) map to clawfit's tool layers (L1–L7).
-
----
-
 ## Running tests
 
 ```bash
@@ -393,44 +326,15 @@ python -m pytest tests/ -v
 
 ---
 
-## Roadmap
-
-Planned directions include:
-
-- richer scoring criteria
-- clearer evidence provenance for registry claims
-- benchmark-aware recommendation logic
-- more agent runtime profiles
-- better hardware taxonomy
-- public comparison dashboards / docs
-- stronger integration with ecosystem research workflows
-
----
-
-## Who this is for
-
-clawfit is useful if you are:
-- comparing agent stacks
-- deciding between local and cloud execution
-- designing a coding-agent workflow
-- mapping AI tool ecosystems
-- building an evidence-backed recommendation layer
-
----
-
 ## Contributing
 
 Contributions are welcome, especially around:
-- registry expansion
-- feature verification
-- scoring logic
-- benchmark references
-- documentation cleanup
+- registry expansion (new tools with complete org_fit metadata)
+- scoring logic improvements
+- benchmark references and evidence
+- research-watch signal analysis
 
-If you want to contribute, open an issue or PR with:
-- what you are adding,
-- what evidence supports it,
-- and how it should fit into the comparison model.
+Open an issue or PR with: what you are adding, what evidence supports it, and how it fits into the comparison model.
 
 ---
 
