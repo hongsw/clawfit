@@ -74,6 +74,11 @@ So this document now uses a more explicit **7-level structure**.
 - **Twill.ai (YC S25): async cloud agent delegation:** HN Launch HN front page — "delegate to cloud agents, get back PRs." Async fire-and-forget model with PR output is a new deployment topology for Level 1: no interactive session, no local setup. First managed cloud agent service in this taxonomy.
 - **multica: open-source managed agents platform:** multica-ai/multica (6k★, GitHub Trending) — "turn coding agents into real teammates — assign tasks, track progress." Team-oriented multi-agent management platform enters Level 2.
 
+### New signals as of 2026-04-12
+- **Strix: second high-signal security agent enters Level 1:** usestrix/strix (23k★, GeekNews 26 pts) — open-source autonomous security testing platform using teams of agents with PoC validation. Distinct from Shannon (expert pentester tool): Strix is developer self-service, CI/CD-integrated, shift-left. Reinforces the need for a `security-testing` task type beyond `qa` in the scoring taxonomy.
+- **GBrain: personal knowledge compounding as Level 4a pattern:** garrytan/gbrain — MIT-licensed personal knowledge base by YC CEO Garry Tan; markdown+PGLite backend, agents read-before/write-after. OpenClaw+Hermes Agent native. Local-first, human-inspectable, MCP support incoming. Adds a "compounding personal knowledge" sub-pattern to Level 4a distinct from session-memory tools.
+- **Berkeley RDI: all major agent benchmarks are exploitable:** "How We Broke Top AI Agent Benchmarks" (rdi.berkeley.edu, 171 HN pts) — UC Berkeley team demonstrates that every major benchmark (SWE-bench, WebArena, OSWorld, etc.) can be exploited to achieve near-perfect scores without solving a single task. Seven recurring vulnerability classes identified. Directly undermines LLM selection decisions based on published benchmark scores; clawfit's LLM preference weights may need an evidence-quality caveat. Agent-Eval Checklist proposed as a future Level 5 reference standard.
+
 ---
 
 ## Level 1 — Base runtimes / primary agent surfaces
@@ -100,6 +105,7 @@ They are the tools users most directly choose as their base environment.
 - <img src="https://github.com/KeygraphHQ.png" alt="Shannon" width="18" /> [Shannon](https://github.com/KeygraphHQ/shannon) — ⭐ 36,485 — autonomous AI pentester; reads source code, identifies attack surfaces, generates and executes exploits; first high-signal domain-specialized security agent in this taxonomy
 - <img src="https://github.com/rowboatlabs.png" alt="rowboat" width="18" /> [rowboat](https://github.com/rowboatlabs/rowboat) — ⭐ 11,716 — open-source AI coworker with native memory; persistent task ownership across sessions; memory-native Level 1 sub-type
 - [Twill.ai](https://twill.ai) — YC S25 — async cloud agent delegation; "delegate tasks, get back PRs"; fire-and-forget model with PR output; first managed cloud agent service in this taxonomy
+- <img src="https://github.com/usestrix.png" alt="Strix" width="18" /> [Strix](https://github.com/usestrix/strix) — ⭐ 23,536 — open-source autonomous security testing platform; teams of agents run code dynamically, find vulnerabilities, validate via PoC; CI/CD integration; developer self-service shift-left variant alongside Shannon's expert-pentester model
 
 ---
 
@@ -170,6 +176,7 @@ Level 4 is splitting into three observable subtypes:
 - <img src="https://github.com/CaviraOSS.png" alt="OpenMemory" width="18" /> [OpenMemory](https://github.com/CaviraOSS/OpenMemory) — ⭐ 3,871
 - <img src="https://github.com/campfirein.png" alt="cipher" width="18" /> [cipher](https://github.com/campfirein/cipher) — ⭐ 4,178
 - <img src="https://github.com/zilliztech.png" alt="claude-context" width="18" /> [claude-context](https://github.com/zilliztech/claude-context) — ⭐ 5,850
+- <img src="https://github.com/garrytan.png" alt="GBrain" width="18" /> [GBrain](https://github.com/garrytan/gbrain) — MIT — personal knowledge base for agents by YC CEO Garry Tan; markdown+PGLite backend; agents read-before/write-after; OpenClaw+Hermes native; CLI via bun; "compounding personal knowledge" sub-pattern
 
 ### 4b. Skill packs & skill managers
 **Skill managers (lifecycle/discovery):**
