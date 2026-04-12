@@ -93,7 +93,8 @@
         "qa"
       ],
       "roles": [
-        "developer"
+        "developer",
+        "exec"
       ],
       "team_size": [
         "solo",
@@ -264,7 +265,8 @@
       ],
       "roles": [
         "developer",
-        "researcher"
+        "researcher",
+        "exec"
       ],
       "team_size": [
         "small",
@@ -752,7 +754,8 @@
       ],
       "roles": [
         "developer",
-        "researcher"
+        "researcher",
+        "exec"
       ],
       "team_size": [
         "mid",
@@ -857,10 +860,12 @@
       "pricing_tier": "free",
       "tasks": [
         "code-gen",
-        "research"
+        "research",
+        "orchestration"
       ],
       "roles": [
-        "developer"
+        "developer",
+        "exec"
       ],
       "team_size": [
         "small",
@@ -898,7 +903,8 @@
       ],
       "roles": [
         "developer",
-        "researcher"
+        "researcher",
+        "exec"
       ],
       "team_size": [
         "mid",
@@ -1654,7 +1660,8 @@
       "pricing_tier": "free",
       "tasks": [
         "code-gen",
-        "research"
+        "research",
+        "orchestration"
       ],
       "roles": [
         "developer",
@@ -1780,6 +1787,305 @@
       "network": "hybrid",
       "setup_complexity": "medium",
       "latency": "low"
+    }
+  },
+  {
+    "id": "dureclaw",
+    "name": "DureClaw",
+    "category": "distributed_orchestration",
+    "level": 2,
+    "license": "MIT",
+    "primary_language": "Shell",
+    "url": "https://github.com/DureClaw/dureclaw",
+    "source_type": "github",
+    "comparison_priority": "core",
+    "notes": "Cross-machine multi-agent orchestration. Claude Code orchestrator + Phoenix WebSocket server + oah-agent workers. Heterogeneous AI backends (claude/opencode/gemini/aider). MCP plugin via @dureclaw/mcp. Mac/Linux/Windows/Raspberry Pi. By hongsw.",
+    "org_fit": {
+      "min_maturity": 5,
+      "max_maturity": 11,
+      "optimal_maturity": 7,
+      "features": [
+        "team-sharing",
+        "governance"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "orchestration",
+        "research",
+        "qa"
+      ],
+      "roles": [
+        "developer",
+        "devops",
+        "exec"
+      ],
+      "team_size": [
+        "mid",
+        "large"
+      ],
+      "network": "online",
+      "setup_complexity": "high",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "anything-llm",
+    "name": "AnythingLLM",
+    "category": "ai_platform",
+    "level": 1,
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "url": "https://github.com/Mintplex-Labs/anything-llm",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Self-hosted all-in-one AI productivity platform. Document chat (RAG), no-code agent builder, MCP compatible, 40+ LLM providers, multi-user with permissions. Docker or desktop app.",
+    "org_fit": {
+      "min_maturity": 2,
+      "max_maturity": 7,
+      "optimal_maturity": 4,
+      "features": [
+        "team-sharing",
+        "offline",
+        "governance"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "research",
+        "summarization",
+        "qa",
+        "data-analysis"
+      ],
+      "roles": [
+        "exec",
+        "researcher",
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "hybrid",
+      "setup_complexity": "medium",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "deeptutor",
+    "name": "DeepTutor",
+    "category": "education_agent",
+    "level": 6,
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "url": "https://github.com/HKUDS/DeepTutor",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Agent-native personalized learning platform by HKUDS. 5 modes (Chat, Deep Solve, Quiz, Deep Research, Math Animator). RAG-based Knowledge Hub. Personal TutorBots with independent memory. Agent-Native CLI. Port 8001/3782.",
+    "org_fit": {
+      "min_maturity": 2,
+      "max_maturity": 7,
+      "optimal_maturity": 4,
+      "features": [
+        "team-sharing"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "education",
+        "research",
+        "summarization"
+      ],
+      "roles": [
+        "researcher",
+        "exec"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "medium",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "korean-law-mcp",
+    "name": "korean-law-mcp",
+    "category": "mcp_server",
+    "level": 4,
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/chrisryugj/korean-law-mcp",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Korean law MCP server. 39 APIs consolidated into 14 tools (v3.0). 82% context cost reduction from v2. 17 legal domains. HWPX/HWP/PDF/XLSX/DOCX document processing. Hosted endpoint available.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": [
+        "legal-research",
+        "research",
+        "qa"
+      ],
+      "roles": [
+        "researcher",
+        "exec"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "low"
+    }
+  },
+  {
+    "id": "atlas-coding",
+    "name": "ATLAS",
+    "category": "local_coding_agent",
+    "level": 1,
+    "license": "AGPL-3.0",
+    "primary_language": "Python",
+    "url": "https://github.com/itigges22/ATLAS",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Adaptive Test-time Learning. 74.6% LiveCodeBench pass@1 with frozen Qwen3-14B. ~$0.004/task (electricity only). 3-stage pipeline: PlanSearch + Geometric Lens + self-verify repair. Fully local, no API calls. Min 16GB GPU VRAM.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 9,
+      "optimal_maturity": 6,
+      "features": [
+        "offline"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
+      "network": "offline",
+      "setup_complexity": "high",
+      "latency": "high"
+    }
+  },
+  {
+    "id": "pi-mono",
+    "name": "pi-mono",
+    "category": "fullstack_agent_toolkit",
+    "level": 1,
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/badlogic/pi-mono",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "7-package monorepo: pi-ai (multi-provider LLM API), pi-agent-core (runtime), pi-coding-agent (CLI), pi-tui (terminal UI), pi-web-ui (chat components), pi-mom (Slack bot), pi-pods (vLLM GPU pods). Parent of pi-generative-ui plugin ecosystem.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 9,
+      "optimal_maturity": 6,
+      "features": [
+        "team-sharing"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "research"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "medium",
+      "latency": "low"
+    }
+  },
+  {
+    "id": "polysona",
+    "name": "Polysona",
+    "category": "persona_layer",
+    "level": 4,
+    "license": "unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/LilMGenius/polysona",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "10 psychology frameworks to extract multi-persona profiles. 5-agent pipeline: Profiler→Trendsetter→Content-Writer→Virtual-Follower→Admin. Portable persona files (persona.md, nuance.md). Cross-agent: Claude Code, Codex, OpenCode.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 8,
+      "optimal_maturity": 6,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": [
+        "research",
+        "summarization"
+      ],
+      "roles": [
+        "researcher",
+        "exec"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
+      "network": "online",
+      "setup_complexity": "medium",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "hermes-paperclip-adapter",
+    "name": "hermes-paperclip-adapter",
+    "category": "platform_bridge",
+    "level": 2,
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/NousResearch/hermes-paperclip-adapter",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Adapter for running Hermes Agent as managed employee in Paperclip platform. 8 inference providers, 30+ native tools, 80+ loadable skills. MCP integration. Default model: claude-sonnet-4.",
+    "org_fit": {
+      "min_maturity": 5,
+      "max_maturity": 9,
+      "optimal_maturity": 7,
+      "features": [
+        "team-sharing"
+      ],
+      "pricing_tier": "paid",
+      "tasks": [
+        "code-gen",
+        "research",
+        "orchestration"
+      ],
+      "roles": [
+        "developer",
+        "devops"
+      ],
+      "team_size": [
+        "mid",
+        "large"
+      ],
+      "network": "online",
+      "setup_complexity": "high",
+      "latency": "medium"
     }
   }
 ]
