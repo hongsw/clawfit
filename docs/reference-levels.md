@@ -74,6 +74,14 @@ So this document now uses a more explicit **7-level structure**.
 - **Twill.ai (YC S25): async cloud agent delegation:** HN Launch HN front page — "delegate to cloud agents, get back PRs." Async fire-and-forget model with PR output is a new deployment topology for Level 1: no interactive session, no local setup. First managed cloud agent service in this taxonomy.
 - **multica: open-source managed agents platform:** multica-ai/multica (6k★, GitHub Trending) — "turn coding agents into real teammates — assign tasks, track progress." Team-oriented multi-agent management platform enters Level 2.
 
+### New signals as of 2026-04-13
+- **Meta HyperAgents — self-referential agent improvement:** (GeekNews, cobusgreyling.medium.com) — agents that modify their own improvement *mechanisms*, not just task outputs. Distinct from adaptive runtimes (Hermes Agent) — the modification loop targets the meta-level improvement process. Research-stage; may require a new top-end maturity stage if it productizes. Challenges static LLM capability scoring.
+- **Anthropic Advisor Strategy — named multi-LLM pairing pattern:** (GeekNews, claude.com/blog) — Opus as strategic advisor + Sonnet as executor; officially endorsed cost-optimization architecture. Formalizes "planner/executor dual-model" as a named pattern. Signals clawfit needs a `multi_llm_pattern` dimension beyond single-LLM selection.
+- **Anthropic Managed Agents — hosted stable interfaces:** (GeekNews, anthropic.com/engineering/managed-agents) — long-running hosted agents with interface contracts that survive model version upgrades. Governance-relevant: interface stability as a reliability primitive. Distinct from harness-design-long-running-apps (sprint contracts). Suggests a `managed_hosted` statefulness value for the scoring model.
+- **snarktank/ralph crosses 15k stars:** (GitHub Trending, +463/day) — TypeScript autonomous agent loop for PRD-driven iterative execution. Now the highest-starred implementation in the ralph methodology family (above ralph-claude-code 8k and open-ralph-wiggum 1.4k). Validates PRD-driven loops crossing mainstream developer adoption.
+- **VoxCPM: tokenizer-free TTS for multilingual voice agents:** (OpenBMB, 11k★, GitHub Trending) — voice output infrastructure with tokenizer-free architecture; lower latency and broader language coverage than tokenized TTS. Fills the Level 7 voice *output* gap alongside Ghost Pepper (voice input). First high-signal multilingual TTS for agent pipelines.
+- **Claudraband: Claude Code for power users:** (HN, 85 pts) — explicit "power user" positioning for a Claude Code harness; targets senior developers needing more than default Claude Code but less than full team orchestration. New Level 2 segment between simple wrappers and enterprise orchestrators.
+
 ### New signals as of 2026-04-12
 - **Strix: second high-signal security agent enters Level 1:** usestrix/strix (23k★, GeekNews 26 pts) — open-source autonomous security testing platform using teams of agents with PoC validation. Distinct from Shannon (expert pentester tool): Strix is developer self-service, CI/CD-integrated, shift-left. Reinforces the need for a `security-testing` task type beyond `qa` in the scoring taxonomy.
 - **GBrain: personal knowledge compounding as Level 4a pattern:** garrytan/gbrain — MIT-licensed personal knowledge base by YC CEO Garry Tan; markdown+PGLite backend, agents read-before/write-after. OpenClaw+Hermes Agent native. Local-first, human-inspectable, MCP support incoming. Adds a "compounding personal knowledge" sub-pattern to Level 4a distinct from session-memory tools.
@@ -131,6 +139,9 @@ They provide orchestration, better defaults, compatibility layers, workflows, ro
 - Anthropic engineering: [Harness design for long-running applications](https://www.anthropic.com/engineering/harness-design-long-running-apps) — canonical dual-agent + sprint-contract architecture from Anthropic
 - <img src="https://github.com/coleam00.png" alt="Archon" width="18" /> [Archon](https://github.com/coleam00/Archon) — ⭐ 15,583 — "first open-source harness builder for AI coding"; makes AI coding deterministic and repeatable; harness-generator sub-type
 - <img src="https://github.com/multica-ai.png" alt="multica" width="18" /> [multica](https://github.com/multica-ai/multica) — ⭐ 6,029 — open-source managed agents platform; "turn coding agents into real teammates — assign tasks, track progress"
+- <img src="https://github.com/snarktank.png" alt="ralph" width="18" /> [ralph](https://github.com/snarktank/ralph) — ⭐ 15,908 — TypeScript autonomous agent loop for PRD-driven iterative execution; highest-starred ralph-family implementation; solo/small team target
+- [Claudraband](https://github.com/halfwhey/claudraband) — Claude Code harness for power users; explicit senior-developer positioning; Level 2 mid-range segment
+- Anthropic engineering: [Managed Agents](https://www.anthropic.com/engineering/managed-agents) — hosted long-running agents with stable interfaces independent of model version upgrades; governance/reliability primitive
 - <img src="https://github.com/DureClaw.png" alt="DureClaw" width="18" /> [DureClaw](https://github.com/DureClaw/dureclaw) — ⭐ 1 🔥 **크로스 머신 멀티 에이전트 오케스트레이션** — Claude Code 오케스트레이터 + Phoenix WebSocket 메시지 버스 + oah-agent 워커 3층 아키텍처; 이종 AI 백엔드(claude/opencode/gemini/aider) 지원; Mac/Linux/Windows/Raspberry Pi; MCP 플러그인 정식 배포(`@dureclaw/mcp`); 한국 두레(협동 농경) 철학 기반; **hongsw 직접 제작** — clawfit 레지스트리 설계 방향에 직접적 영향
 
 ---
@@ -254,6 +265,7 @@ This includes voice input, talk mode, speech interruption, remote relays, termin
 - <img src="https://github.com/Q00.png" alt="ouroboros" width="18" /> [ouroboros](https://github.com/Q00/ouroboros) — ⭐ 2,000
 - OpenClaw talkmode improvement reference — https://github.com/openclaw/openclaw/pull/53553#issuecomment-4124082023
 - [Ghost Pepper](https://github.com/matthartman/ghost-pepper) — local hold-to-talk STT for macOS (Whisper-based); fully offline, no audio leaves device; privacy-first alternative to Superwhisper for confidential environments
+- <img src="https://github.com/OpenBMB.png" alt="VoxCPM" width="18" /> [VoxCPM](https://github.com/OpenBMB/VoxCPM) — ⭐ 11,260 — tokenizer-free TTS for multilingual speech generation; lower latency voice output layer for agent pipelines; fills Level 7 voice output gap alongside Ghost Pepper (input)
 
 ---
 

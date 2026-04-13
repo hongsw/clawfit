@@ -381,13 +381,13 @@
     "id": "superwhisper",
     "name": "Superwhisper",
     "category": "voice_coding_input",
-    "level": 1,
+    "level": 7,
     "license": "Proprietary",
     "primary_language": "unknown",
     "url": "https://superwhisper.com/",
     "source_type": "website",
     "comparison_priority": "core",
-    "notes": "Voice input and speech-to-text productivity layer for developers.",
+    "notes": "Voice input and speech-to-text productivity layer for developers. Used for voice-dictated coding commands and research queries, not only text summarization.",
     "org_fit": {
       "min_maturity": 1,
       "max_maturity": 5,
@@ -395,6 +395,8 @@
       "features": [],
       "pricing_tier": "paid",
       "tasks": [
+        "code-gen",
+        "research",
         "summarization"
       ],
       "roles": [
@@ -820,11 +822,13 @@
       ],
       "pricing_tier": "freemium",
       "tasks": [
+        "code-gen",
         "research",
         "summarization",
         "qa"
       ],
       "roles": [
+        "developer",
         "researcher",
         "pm",
         "exec"
@@ -1817,8 +1821,7 @@
       ],
       "roles": [
         "developer",
-        "devops",
-        "exec"
+        "devops"
       ],
       "team_size": [
         "mid",
@@ -2049,6 +2052,105 @@
       "network": "online",
       "setup_complexity": "medium",
       "latency": "medium"
+    }
+  },
+  {
+    "id": "ralph",
+    "name": "ralph",
+    "category": "autonomous_agent_loop",
+    "level": 2,
+    "license": "unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/snarktank/ralph",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Autonomous AI agent loop that executes PRD items iteratively. TypeScript. 15k+ stars — highest-starred ralph-family implementation. PRD-driven iterative execution model with loop discipline for solo/small teams.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "claudraband",
+    "name": "Claudraband",
+    "category": "claude_code_power_user_harness",
+    "level": 2,
+    "license": "unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/halfwhey/claudraband",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Claude Code harness for power users. Explicit senior-developer positioning — between simple configuration wrappers and full team orchestrators. 85 HN points at launch.",
+    "org_fit": {
+      "min_maturity": 5,
+      "max_maturity": 8,
+      "optimal_maturity": 6,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
+      "network": "online",
+      "setup_complexity": "medium",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "voxcpm",
+    "name": "VoxCPM",
+    "category": "multilingual_tts",
+    "level": 7,
+    "license": "unknown",
+    "primary_language": "Python",
+    "url": "https://github.com/OpenBMB/VoxCPM",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Tokenizer-free TTS for multilingual speech generation by OpenBMB. 11k+ stars. Lower latency voice output layer for agent pipelines; fills Level 7 voice output gap alongside Ghost Pepper (input). Multilingual by architecture.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": [
+        "summarization"
+      ],
+      "roles": [
+        "developer",
+        "researcher",
+        "exec"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "medium",
+      "latency": "low"
     }
   },
   {
