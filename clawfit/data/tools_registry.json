@@ -969,7 +969,7 @@
     "notes": "Platform SDK for building vibe-coding systems; more architecture/platform than direct end-user comparison target.",
     "org_fit": {
       "min_maturity": 6,
-      "max_maturity": 11,
+      "max_maturity": 10,
       "optimal_maturity": 8,
       "features": [
         "governance",
@@ -1393,7 +1393,7 @@
     "url": "https://github.com/matthartman/ghost-pepper",
     "source_type": "github",
     "comparison_priority": "ecosystem",
-    "notes": "Hold-to-talk local STT for macOS using Whisper; fully offline, no audio leaves device. Privacy-first alternative to Superwhisper for confidential environments.",
+    "notes": "Hold-to-talk local STT for macOS using Whisper; fully offline, no audio leaves device. Privacy-first alternative to Superwhisper for confidential environments. Used to dictate coding commands and research queries to agents.",
     "org_fit": {
       "min_maturity": 1,
       "max_maturity": 5,
@@ -1403,6 +1403,7 @@
       ],
       "pricing_tier": "free",
       "tasks": [
+        "code-gen",
         "summarization"
       ],
       "roles": [
@@ -1806,7 +1807,7 @@
     "notes": "Cross-machine multi-agent orchestration. Claude Code orchestrator + Phoenix WebSocket server + oah-agent workers. Heterogeneous AI backends (claude/opencode/gemini/aider). MCP plugin via @dureclaw/mcp. Mac/Linux/Windows/Raspberry Pi. By hongsw.",
     "org_fit": {
       "min_maturity": 5,
-      "max_maturity": 11,
+      "max_maturity": 10,
       "optimal_maturity": 7,
       "features": [
         "team-sharing",
@@ -2151,6 +2152,46 @@
       "network": "online",
       "setup_complexity": "medium",
       "latency": "low"
+    }
+  },
+  {
+    "id": "gsd",
+    "name": "get-shit-done (gsd)",
+    "category": "meta_prompting_framework",
+    "level": 3,
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "url": "https://github.com/gsd-build/get-shit-done",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Light-weight meta-prompting, context engineering and spec-driven development system. 52k+ stars (GitHub Trending 2026-04-14). Three-layer vocabulary: meta-prompting + context engineering + spec-driven development. Distinct from claude-code-best-practice (Markdown-only) and SuperClaude Framework (config-heavy).",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 9,
+      "optimal_maturity": 5,
+      "features": [
+        "team-sharing",
+        "governance"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "research",
+        "qa"
+      ],
+      "roles": [
+        "developer",
+        "pm"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "medium"
     }
   },
   {
