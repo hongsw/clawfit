@@ -1001,23 +1001,27 @@
     "url": "https://github.com/shanraisshan/claude-code-best-practice",
     "source_type": "github",
     "comparison_priority": "ecosystem",
-    "notes": "Best-practice and workflow guidance resource; useful as behavioral evidence, not primarily as a product choice.",
+    "notes": "Comprehensive agentic engineering curriculum: Commands/Agents/Skills abstractions, 69 tips from Boris Cherny (Claude Code creator), comparative analysis of 10 workflow frameworks. 43.7k stars, #1 GitHub Trending 2026-04-15. Teaches progression from 'vibe coding' to production agentic systems. Accessible from beginner to advanced.",
     "org_fit": {
-      "min_maturity": 5,
-      "max_maturity": 10,
-      "optimal_maturity": 7,
+      "min_maturity": 2,
+      "max_maturity": 9,
+      "optimal_maturity": 4,
       "features": [
         "governance",
         "team-sharing"
       ],
       "pricing_tier": "free",
       "tasks": [
-        "code-gen"
+        "code-gen",
+        "research"
       ],
       "roles": [
-        "developer"
+        "developer",
+        "pm",
+        "researcher"
       ],
       "team_size": [
+        "solo",
         "small",
         "mid",
         "large"
@@ -1357,7 +1361,7 @@
     "url": "https://github.com/KeygraphHQ/shannon",
     "source_type": "github",
     "comparison_priority": "secondary",
-    "notes": "Autonomous AI pentester: reads source code, identifies attack surfaces, generates and executes exploits. Domain-specialized Level 1 agent for security workflows. High governance requirement.",
+    "notes": "Autonomous AI pentester: reads source code, identifies attack surfaces, generates and executes exploits. Domain-specialized Level 1 agent for security workflows. High governance requirement. Primary users: security researchers and penetration testers.",
     "org_fit": {
       "min_maturity": 6,
       "max_maturity": 10,
@@ -1371,7 +1375,8 @@
         "research"
       ],
       "roles": [
-        "developer"
+        "developer",
+        "researcher"
       ],
       "team_size": [
         "small",
@@ -1393,7 +1398,7 @@
     "url": "https://github.com/matthartman/ghost-pepper",
     "source_type": "github",
     "comparison_priority": "ecosystem",
-    "notes": "Hold-to-talk local STT for macOS using Whisper; fully offline, no audio leaves device. Privacy-first alternative to Superwhisper for confidential environments. Used to dictate coding commands and research queries to agents.",
+    "notes": "Hold-to-talk local STT for macOS using Whisper; fully offline, no audio leaves device. Privacy-first alternative to Superwhisper for confidential environments. Used to dictate coding commands, research queries, and summaries to agents.",
     "org_fit": {
       "min_maturity": 1,
       "max_maturity": 5,
@@ -1404,6 +1409,7 @@
       "pricing_tier": "free",
       "tasks": [
         "code-gen",
+        "research",
         "summarization"
       ],
       "roles": [
@@ -1543,7 +1549,7 @@
     "url": "https://github.com/obra/superpowers",
     "source_type": "github",
     "comparison_priority": "secondary",
-    "notes": "Agentic skills framework + software development methodology. Shell-first for maximum runtime compatibility. 145k stars — largest harness/SSOT repo in taxonomy. 'That works' framing targets reliability over novelty.",
+    "notes": "Agentic skills framework + software development methodology. Shell-first for maximum runtime compatibility. 145k stars — largest harness/SSOT repo in taxonomy. 'That works' framing targets reliability over novelty. Explicitly targets team productivity, not just individual developers.",
     "org_fit": {
       "min_maturity": 4,
       "max_maturity": 9,
@@ -1558,7 +1564,8 @@
         "qa"
       ],
       "roles": [
-        "developer"
+        "developer",
+        "pm"
       ],
       "team_size": [
         "solo",
@@ -1617,7 +1624,7 @@
     "url": "https://github.com/rowboatlabs/rowboat",
     "source_type": "github",
     "comparison_priority": "secondary",
-    "notes": "Open-source AI coworker with native (first-class) memory. 'Coworker' framing implies persistent task ownership across sessions. Memory is built-in, not an add-on MCP.",
+    "notes": "Open-source AI coworker with native (first-class) memory. 'Coworker' framing implies persistent task ownership across sessions. Memory is built-in, not an add-on MCP. Targets teams where persistent context across PM/exec/dev is essential.",
     "org_fit": {
       "min_maturity": 3,
       "max_maturity": 7,
@@ -1631,7 +1638,9 @@
         "research"
       ],
       "roles": [
-        "developer"
+        "developer",
+        "pm",
+        "exec"
       ],
       "team_size": [
         "solo",
@@ -2229,6 +2238,47 @@
       "network": "online",
       "setup_complexity": "high",
       "latency": "medium"
+    }
+  },
+  {
+    "id": "claude_code_routines",
+    "name": "Claude Code Routines",
+    "category": "managed_cloud_agent_runner",
+    "level": 2,
+    "license": "Proprietary",
+    "primary_language": "unknown",
+    "url": "https://claude.ai/code/routines",
+    "source_type": "website",
+    "comparison_priority": "secondary",
+    "notes": "Anthropic-managed cloud runner for Claude Code (research preview, 2026-04). Saved Claude Code configurations with three trigger types: schedule (cron), API (HTTP POST + bearer token), and GitHub events (PRs, pushes, issues, CI runs). Sessions run autonomously on Anthropic cloud; no local machine required. Counts against daily run allowance. Pro/Max/Team/Enterprise plans. /schedule CLI for creation and management.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 9,
+      "optimal_maturity": 6,
+      "features": [
+        "governance",
+        "team-sharing"
+      ],
+      "pricing_tier": "paid",
+      "tasks": [
+        "code-gen",
+        "research",
+        "qa"
+      ],
+      "roles": [
+        "developer",
+        "pm",
+        "exec"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "high"
     }
   }
 ]
