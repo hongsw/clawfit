@@ -21,10 +21,14 @@
       "pricing_tier": "free",
       "tasks": [
         "code-gen",
-        "research"
+        "research",
+        "summarization"
       ],
       "roles": [
-        "developer"
+        "developer",
+        "exec",
+        "pm",
+        "researcher"
       ],
       "team_size": [
         "small",
@@ -2279,6 +2283,78 @@
       "network": "online",
       "setup_complexity": "low",
       "latency": "high"
+    }
+  },
+  {
+    "id": "vercel_open_agents",
+    "name": "vercel-labs/open-agents",
+    "category": "cloud_agent_template",
+    "level": 1,
+    "license": "unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/vercel-labs/open-agents",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Official Vercel Labs open-source template for building cloud-hosted agents. TypeScript-first, production-oriented. Vercel platform vendor entry into agent architecture — lowers activation energy for cloud agent deployment among front-end/full-stack developers already in the Vercel ecosystem. 2,611 stars, +915 in one day (2026-04-16).",
+    "org_fit": {
+      "min_maturity": 2,
+      "max_maturity": 7,
+      "optimal_maturity": 4,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "research"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "claude_code_game_studios",
+    "name": "Claude-Code-Game-Studios",
+    "category": "domain_specialized_harness",
+    "level": 3,
+    "license": "unknown",
+    "primary_language": "Shell",
+    "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Domain-specialized Claude Code harness for game development. 49 AI agents + 72 workflow skills organized into a coordination system mirroring a real game studio hierarchy (design, code, asset, QA, publishing). Shell-based, Claude Code native. 10,395 stars (2026-04-16). First high-signal Level 2/3 harness specialized for a non-software-engineering domain — signals domain-vertical harness fragmentation.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [
+        "team-sharing"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "qa",
+        "research"
+      ],
+      "roles": [
+        "developer",
+        "pm"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "medium",
+      "latency": "medium"
     }
   }
 ]

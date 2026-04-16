@@ -74,6 +74,12 @@ So this document now uses a more explicit **7-level structure**.
 - **Twill.ai (YC S25): async cloud agent delegation:** HN Launch HN front page — "delegate to cloud agents, get back PRs." Async fire-and-forget model with PR output is a new deployment topology for Level 1: no interactive session, no local setup. First managed cloud agent service in this taxonomy.
 - **multica: open-source managed agents platform:** multica-ai/multica (6k★, GitHub Trending) — "turn coding agents into real teammates — assign tasks, track progress." Team-oriented multi-agent management platform enters Level 2.
 
+### New signals as of 2026-04-16
+- **vercel-labs/open-agents — platform vendor enters cloud agent template space:** (GitHub Trending, +915 today, 2,611★) — Vercel Labs' official open-source template for building cloud agents. TypeScript-first, production-oriented. Vercel's entry means cloud agent deployment is becoming commodity infrastructure rather than an engineering challenge — directly lowering activation energy for `network: online` + `solo/small` profiles. Enters Level 1 alongside Twill.ai as a "cloud-first agent" sub-type.
+- **Claude-Code-Game-Studios — domain-specialized harness reaches 10k stars:** (GitHub Trending, Donchitos/Claude-Code-Game-Studios, +612 today, 10,395★) — 49 AI agents + 72 workflow skills organized as a game studio hierarchy; Shell-based, Claude Code native. First high-signal Level 2/3 harness specialized for a non-software-engineering domain (game development). Signals that domain-specialized harnesses are fragmenting from the generic harness layer: the next wave of Level 2/3 tooling will be industry-vertical, not just generic productivity. May indicate a need for `domain` as a new dimension alongside `task` in the scoring model.
+- **Libretto — deterministic AI browser automation enters Level 4c:** (HN, 80 pts, saffron-health/libretto) — "Making AI Browser Automations Deterministic." Health-tech provenance implies production/compliance requirements. Extends Level 4c in a reliability direction — distinct from capability-focused tool infrastructure (serena, rtk). Aligns with the "harness reliability" axis; revisit at 1k★.
+- **Happy — open-source cross-platform mobile client for Claude Code + Codex:** (GeekNews) — iOS/Android/web remote control client via CLI wrapper. First open-source mobile-native Level 7 entry with explicit dual-agent (Claude Code + Codex) support. Introduces `mobile` as a Level 7 sub-type distinct from web-based (claudecodeui) and desktop-based (pi-generative-ui) interfaces.
+
 ### New signals as of 2026-04-15
 - **Claude Code Routines — first-party serverless agent execution:** (HN front page, code.claude.com/docs/en/routines) — Anthropic launches Routines in research preview: saved Claude Code configurations triggered by schedule, HTTP API, or GitHub events (PRs, pushes, issues, 18 event types), running autonomously on Anthropic-managed cloud infrastructure. Introduces `managed_hosted` + `event_driven` statefulness mode — distinct from interactive sessions or sprint-loop harnesses. GitHub event triggers encode org workflows as automation, enabling PM/exec initiation of agent runs without CLI access. First Anthropic-native serverless runner in this taxonomy. Enters Level 2.
 - **shanraisshan/claude-code-best-practice crosses 43.7k stars as #1 trending:** (GitHub Trending #1) — comprehensive agentic engineering curriculum with explicit three-abstraction model (Commands/Agents/Skills). 69 curated tips from Boris Cherny (Claude Code creator). Comparative analysis of 10 major frameworks. "Agentic engineering" vocabulary now independently named by three major guides (obra/superpowers, gsd/get-shit-done, this). The Level 3 SSOT layer has three confirmed entry points: code harnesses, methodology guides, and behavioral spec files (CLAUDE.md). clawfit's registry `claude_code_best_practice` min_maturity lowered to 2 (accessible to beginners), pm+researcher roles added.
@@ -128,6 +134,7 @@ They are the tools users most directly choose as their base environment.
 - <img src="https://github.com/rowboatlabs.png" alt="rowboat" width="18" /> [rowboat](https://github.com/rowboatlabs/rowboat) — ⭐ 11,716 — open-source AI coworker with native memory; persistent task ownership across sessions; memory-native Level 1 sub-type
 - [Twill.ai](https://twill.ai) — YC S25 — async cloud agent delegation; "delegate tasks, get back PRs"; fire-and-forget model with PR output; first managed cloud agent service in this taxonomy
 - <img src="https://github.com/usestrix.png" alt="Strix" width="18" /> [Strix](https://github.com/usestrix/strix) — ⭐ 23,536 — open-source autonomous security testing platform; teams of agents run code dynamically, find vulnerabilities, validate via PoC; CI/CD integration; developer self-service shift-left variant alongside Shannon's expert-pentester model
+- <img src="https://github.com/vercel-labs.png" alt="open-agents" width="18" /> [open-agents](https://github.com/vercel-labs/open-agents) — ⭐ 2,611 — Vercel Labs' official open-source cloud agent template; TypeScript; production-oriented; platform-vendor-native deployment entry point for cloud agent architecture
 
 ---
 
@@ -187,6 +194,7 @@ Representative references:
 - <img src="https://github.com/VoltAgent.png" alt="awesome-design-md" width="18" /> [awesome-design-md](https://github.com/VoltAgent/awesome-design-md) — ⭐ 15,900 🔥 55+ DESIGN.md files extracted from popular sites; extends SSOT pattern into visual/UI domain — agents read design system rules before generating UI
 - <img src="https://github.com/obra.png" alt="superpowers" width="18" /> [superpowers](https://github.com/obra/superpowers) — ⭐ 145,706 🔥🔥 agentic skills framework + software development methodology; Shell-first; "that works" reliability framing; largest-starred harness/SSOT repo in this taxonomy; spans Level 3 + Level 4b
 - [claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — ⭐ 43,721 🔥 — agentic engineering curriculum by shanraisshan; Commands/Agents/Skills three-abstraction model; 69 tips from Claude Code creator Boris Cherny; comparative analysis of 10 frameworks; #1 GitHub Trending 2026-04-15; accessible from beginner to advanced
+- <img src="https://github.com/Donchitos.png" alt="Claude-Code-Game-Studios" width="18" /> [Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) — ⭐ 10,395 — domain-specialized Claude Code harness for game development; 49 AI agents + 72 workflow skills; coordination system mirrors real studio hierarchy; Shell-based; first high-signal domain-vertical Level 2/3 harness outside software engineering
 
 ---
 
@@ -233,6 +241,7 @@ Level 4 is splitting into three observable subtypes:
 - <img src="https://github.com/IBM.png" alt="mcp-context-forge" width="18" /> [mcp-context-forge](https://github.com/IBM/mcp-context-forge) — ⭐ 3,526
 - <img src="https://github.com/ComposioHQ.png" alt="Composio" width="18" /> [Composio](https://github.com/ComposioHQ/composio) — ⭐ 27,650
 - <img src="https://github.com/withoneai.png" alt="Pica" width="18" /> [Pica](https://github.com/withoneai/pica) — ⭐ 1,470
+- [Libretto](https://github.com/saffron-health/libretto) — deterministic AI browser automation; "Making AI Browser Automations Deterministic"; health-tech provenance implies production/compliance requirements; first Level 4c entry with reliability (not capability) as primary value proposition; early signal, revisit at 1k★
 
 ---
 
@@ -281,6 +290,7 @@ This includes voice input, talk mode, speech interruption, remote relays, termin
 - OpenClaw talkmode improvement reference — https://github.com/openclaw/openclaw/pull/53553#issuecomment-4124082023
 - [Ghost Pepper](https://github.com/matthartman/ghost-pepper) — local hold-to-talk STT for macOS (Whisper-based); fully offline, no audio leaves device; privacy-first alternative to Superwhisper for confidential environments
 - <img src="https://github.com/OpenBMB.png" alt="VoxCPM" width="18" /> [VoxCPM](https://github.com/OpenBMB/VoxCPM) — ⭐ 11,260 — tokenizer-free TTS for multilingual speech generation; lower latency voice output layer for agent pipelines; fills Level 7 voice output gap alongside Ghost Pepper (input)
+- [Happy](https://github.com/happy-app/happy) — open-source cross-platform mobile client (iOS/Android/web) for Claude Code + Codex; CLI wrapper approach; first open-source mobile-native Level 7 entry with dual-agent support; introduces `mobile` sub-type for exec/PM users needing agent access without terminal
 
 ---
 
