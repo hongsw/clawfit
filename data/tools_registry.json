@@ -872,8 +872,7 @@
         "orchestration"
       ],
       "roles": [
-        "developer",
-        "exec"
+        "developer"
       ],
       "team_size": [
         "small",
@@ -2078,7 +2077,7 @@
     "url": "https://github.com/snarktank/ralph",
     "source_type": "github",
     "comparison_priority": "secondary",
-    "notes": "Autonomous AI agent loop that executes PRD items iteratively. TypeScript. 15k+ stars — highest-starred ralph-family implementation. PRD-driven iterative execution model with loop discipline for solo/small teams.",
+    "notes": "Autonomous AI agent loop that executes PRD items iteratively. TypeScript. 15k+ stars — highest-starred ralph-family implementation. PRD-driven iterative execution model with loop discipline for solo/small teams. PMs write the PRDs that ralph executes.",
     "org_fit": {
       "min_maturity": 4,
       "max_maturity": 8,
@@ -2086,10 +2085,12 @@
       "features": [],
       "pricing_tier": "free",
       "tasks": [
-        "code-gen"
+        "code-gen",
+        "research"
       ],
       "roles": [
-        "developer"
+        "developer",
+        "pm"
       ],
       "team_size": [
         "solo",
@@ -2317,6 +2318,82 @@
       "network": "online",
       "setup_complexity": "low",
       "latency": "medium"
+    }
+  },
+  {
+    "id": "cognee",
+    "name": "cognee",
+    "category": "knowledge_graph_memory",
+    "level": 4,
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "url": "https://github.com/topoteretes/cognee",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Graph-native knowledge engine for AI agent memory. Builds knowledge graphs over documents, code, and conversations — enables reasoning over relationships, not just vector similarity. 6-line API (add/cognify/search). MCP-compatible; integrates with LangChain, LlamaIndex, CrewAI, OpenHands. Multi-modal: handles documents, images, code. Self-hosted; any LLM backend. 15,788★.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [
+        "offline"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "research",
+        "data-analysis",
+        "code-gen",
+        "summarization"
+      ],
+      "roles": [
+        "developer",
+        "researcher"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "hybrid",
+      "setup_complexity": "low",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "voicebox",
+    "name": "Voicebox",
+    "category": "voice_synthesis_studio",
+    "level": 7,
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/jamiepine/voicebox",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Open-source voice synthesis studio. TypeScript-first; higher-level than VoxCPM. Voice cloning, style transfer, multi-speaker management. 19,049★ (surpasses VoxCPM). Natural pairing for TypeScript-first orgs building voice-enabled agent interfaces. Self-hostable MIT license.",
+    "org_fit": {
+      "min_maturity": 2,
+      "max_maturity": 7,
+      "optimal_maturity": 4,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "research",
+        "summarization"
+      ],
+      "roles": [
+        "developer",
+        "exec",
+        "pm"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "low"
     }
   },
   {
