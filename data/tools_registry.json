@@ -2342,7 +2342,6 @@
       "tasks": [
         "research",
         "data-analysis",
-        "code-gen",
         "summarization"
       ],
       "roles": [
@@ -2355,7 +2354,7 @@
         "mid"
       ],
       "network": "hybrid",
-      "setup_complexity": "low",
+      "setup_complexity": "medium",
       "latency": "medium"
     }
   },
@@ -2432,6 +2431,112 @@
       "network": "online",
       "setup_complexity": "medium",
       "latency": "medium"
+    }
+  },
+  {
+    "id": "chrome_devtools_mcp",
+    "name": "chrome-devtools-mcp",
+    "category": "browser_devtools_mcp",
+    "level": 4,
+    "license": "unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Official MCP server from the Chrome DevTools team. Exposes browser DOM, network, console, performance, and storage via MCP to any agent. Enables live browser state as a first-class tool for QA, debugging, and UI iteration workflows. 35,846★ — highest-starred MCP server in this taxonomy.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": [
+        "qa",
+        "code-gen"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "low"
+    }
+  },
+  {
+    "id": "openai_agents_python",
+    "name": "openai-agents-python",
+    "category": "multiagent_orchestration_framework",
+    "level": 2,
+    "license": "MIT",
+    "primary_language": "Python",
+    "url": "https://github.com/openai/openai-agents-python",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "OpenAI's official lightweight Python framework for multi-agent workflows. Handoffs, routing, tool calling, async execution. Vendor-published harness — same provenance class as Claude Code Routines and Anthropic Managed Agents. 21,803★. Competes with LangGraph/deepagents at Level 2; lightweight framing targets developers who found LangGraph too complex.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [
+        "team-sharing"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "research",
+        "orchestration"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "omi",
+    "name": "omi",
+    "category": "ambient_multimodal_ai",
+    "level": 7,
+    "license": "unknown",
+    "primary_language": "Dart",
+    "url": "https://github.com/BasedHardware/omi",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Ambient AI that continuously watches screen and listens to audio, proactively surfacing suggestions. Flutter/Dart; cross-platform. Distinct from Ghost Pepper (hold-to-talk) and Superwhisper (dictation): omi is passive and always-on rather than push-to-activate. First entry in taxonomy for proactive ambient AI advisor model. 9,824★.",
+    "org_fit": {
+      "min_maturity": 2,
+      "max_maturity": 7,
+      "optimal_maturity": 4,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": [
+        "research",
+        "summarization"
+      ],
+      "roles": [
+        "exec",
+        "pm",
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
+      "network": "online",
+      "setup_complexity": "medium",
+      "latency": "low"
     }
   }
 ]
