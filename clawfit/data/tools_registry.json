@@ -2505,6 +2505,48 @@
     }
   },
   {
+    "id": "thunderbolt",
+    "name": "Thunderbolt",
+    "category": "privacy_first_ai_client",
+    "level": 7,
+    "license": "MPL-2.0",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/thunderbird/thunderbolt",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Privacy-first cross-platform AI client from the Thunderbird organization. 'AI You Control: Choose your models. Own your data. Eliminate vendor lock-in.' Compatible with Ollama, llama.cpp, and OpenAI-compatible APIs. Web, iOS, Android, macOS, Linux, Windows. MPL-2.0; under security audit for enterprise readiness. First on-premises AI client with Mozilla-ecosystem provenance. 2,205★ (2026-04-20).",
+    "org_fit": {
+      "min_maturity": 2,
+      "max_maturity": 7,
+      "optimal_maturity": 4,
+      "features": [
+        "offline",
+        "governance"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "research",
+        "summarization",
+        "qa"
+      ],
+      "roles": [
+        "exec",
+        "pm",
+        "researcher",
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "hybrid",
+      "setup_complexity": "low",
+      "latency": "medium"
+    }
+  },
+  {
     "id": "omi",
     "name": "omi",
     "category": "ambient_multimodal_ai",
