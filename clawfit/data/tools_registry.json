@@ -84,11 +84,11 @@
     "url": "https://github.com/anthropics/claude-code",
     "source_type": "github",
     "comparison_priority": "core",
-    "notes": "Terminal-based agentic coding tool from Anthropic.",
+    "notes": "Terminal-based agentic coding tool from Anthropic. Now requires Max/Team/Enterprise plan (removed from Pro tier 2026-04-22).",
     "org_fit": {
       "min_maturity": 3,
       "max_maturity": 8,
-      "optimal_maturity": 5,
+      "optimal_maturity": 4,
       "features": [],
       "pricing_tier": "paid",
       "tasks": [
@@ -103,7 +103,8 @@
       "team_size": [
         "solo",
         "small",
-        "mid"
+        "mid",
+        "large"
       ],
       "network": "online",
       "setup_complexity": "low",
