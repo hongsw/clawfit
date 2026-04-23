@@ -570,7 +570,7 @@
     "url": "https://github.com/frankbria/ralph-claude-code",
     "source_type": "github",
     "comparison_priority": "secondary",
-    "notes": "Autonomous Claude Code loop wrapper.",
+    "notes": "Autonomous Claude Code loop wrapper for PRD-driven iterative execution. PMs write the PRDs that ralph executes.",
     "org_fit": {
       "min_maturity": 4,
       "max_maturity": 8,
@@ -581,7 +581,8 @@
         "code-gen"
       ],
       "roles": [
-        "developer"
+        "developer",
+        "pm"
       ],
       "team_size": [
         "solo",
@@ -1402,7 +1403,7 @@
     "url": "https://github.com/matthartman/ghost-pepper",
     "source_type": "github",
     "comparison_priority": "ecosystem",
-    "notes": "Hold-to-talk local STT for macOS using Whisper; fully offline, no audio leaves device. Privacy-first alternative to Superwhisper for confidential environments. Used to dictate coding commands, research queries, and summaries to agents.",
+    "notes": "Hold-to-talk local STT for macOS using Whisper; fully offline, no audio leaves device. Privacy-first alternative to Superwhisper for confidential environments. Used to dictate research queries and summaries to agents — voice input layer, not a code generator.",
     "org_fit": {
       "min_maturity": 1,
       "max_maturity": 5,
@@ -1412,7 +1413,6 @@
       ],
       "pricing_tier": "free",
       "tasks": [
-        "code-gen",
         "research",
         "summarization"
       ],
@@ -2578,6 +2578,81 @@
       ],
       "network": "online",
       "setup_complexity": "medium",
+      "latency": "low"
+    }
+  },
+  {
+    "id": "langfuse",
+    "name": "Langfuse",
+    "category": "llm_observability_platform",
+    "level": 5,
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/langfuse/langfuse",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Open-source LLM engineering platform: observability, metrics, evals, prompt management, playground, datasets. 25,601★. Self-hostable (MIT) or managed cloud. Native integrations with LangChain, LlamaIndex, OpenAI, Anthropic, LiteLLM. Production observability for deployed agent systems — distinct from pre-deployment benchmarks.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 10,
+      "optimal_maturity": 6,
+      "features": [
+        "governance",
+        "team-sharing",
+        "offline"
+      ],
+      "pricing_tier": "freemium",
+      "tasks": [
+        "qa",
+        "data-analysis"
+      ],
+      "roles": [
+        "developer",
+        "researcher",
+        "exec"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "hybrid",
+      "setup_complexity": "medium",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "zed_editor",
+    "name": "Zed",
+    "category": "parallel_agent_ide",
+    "level": 7,
+    "license": "Apache-2.0",
+    "primary_language": "Rust",
+    "url": "https://zed.dev",
+    "source_type": "website",
+    "comparison_priority": "secondary",
+    "notes": "GPU-accelerated code editor (Rust, 120fps) with native parallel agents via Threads Sidebar (released 2026-04-22). Multiple simultaneous agent threads per window with per-thread AI backend mixing, filesystem scope isolation, and worktree isolation. First IDE to absorb Level 2 multi-agent orchestration as a first-class editor feature — signals IDE-harness convergence.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "research"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
       "latency": "low"
     }
   }
