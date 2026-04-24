@@ -2655,5 +2655,43 @@
       "setup_complexity": "low",
       "latency": "low"
     }
+  },
+  {
+    "id": "marketingskills",
+    "name": "marketingskills",
+    "category": "domain_skill_pack",
+    "level": 4,
+    "license": "unknown",
+    "primary_language": "JavaScript",
+    "url": "https://github.com/coreyhaines31/marketingskills",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Marketing domain skill pack for Claude Code and AI agents. CRO, copywriting, ad copy, campaign analysis skills. 23,796★ (GitHub Trending 2026-04-24). First high-signal L4b domain pack for marketing/growth roles — extends skill-pack layer beyond developer and knowledge-work contexts into business/marketing. Largest-starred non-dev domain skill pack in this taxonomy.",
+    "org_fit": {
+      "min_maturity": 2,
+      "max_maturity": 7,
+      "optimal_maturity": 4,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": [
+        "research",
+        "summarization",
+        "data-analysis"
+      ],
+      "roles": [
+        "exec",
+        "pm",
+        "researcher"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "medium"
+    }
   }
 ]
