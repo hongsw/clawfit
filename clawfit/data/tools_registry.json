@@ -2657,6 +2657,40 @@
     }
   },
   {
+    "id": "browser_harness",
+    "name": "browser-harness",
+    "category": "self_healing_browser_automation",
+    "level": 4,
+    "license": "unknown",
+    "primary_language": "Python",
+    "url": "https://github.com/browser-use/browser-harness",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Self-healing browser automation from the browser-use team. Gives LLM raw Chrome DevTools Protocol (CDP) access + helpers.py; when steps fail, the LLM reads errors, self-edits helpers.py, and retries mid-task. Anti-framework stance: no Playwright/Selenium wrappers. HN Show HN 77 pts (2026-04-25). New Level 4c sub-type: self-healing browser automation (vs. deterministic Libretto; vs. MCP-mediated chrome-devtools-mcp).",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": [
+        "qa",
+        "research"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "medium",
+      "latency": "medium"
+    }
+  },
+  {
     "id": "marketingskills",
     "name": "marketingskills",
     "category": "domain_skill_pack",
