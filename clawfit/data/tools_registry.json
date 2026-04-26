@@ -2691,6 +2691,40 @@
     }
   },
   {
+    "id": "roo_code",
+    "name": "Roo Code",
+    "category": "ide_team_agent",
+    "level": 1,
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/RooCodeInc/Roo-Code",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "VS Code extension that frames itself as 'a whole dev team of AI agents in your code editor.' Multi-persona role-based agent model (architect, developer, reviewer) operating within a single IDE session. 23,503★ (GitHub Trending 2026-04-26). Direct Level 1 competitor to Cline; distinct by offering multi-role orchestration inside VS Code rather than a single-assistant model.",
+    "org_fit": {
+      "min_maturity": 2,
+      "max_maturity": 7,
+      "optimal_maturity": 4,
+      "features": [],
+      "pricing_tier": "freemium",
+      "tasks": [
+        "code-gen",
+        "qa"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "medium"
+    }
+  },
+  {
     "id": "marketingskills",
     "name": "marketingskills",
     "category": "domain_skill_pack",
