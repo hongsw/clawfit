@@ -38,20 +38,20 @@ clawfit의 **정식 에코시스템 맵**입니다.
 
 | 프로젝트 | 스타 | 설명 |
 |---------|------|------|
-| [OpenClaw](https://github.com/openclaw/openclaw) | ⭐ 349,119 | 대규모 오픈소스 에이전트 런타임 |
-| [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | ⭐ 29,526 | |
-| [Claude Code](https://github.com/anthropics/claude-code) | ⭐ 109,423 | Anthropic 공식 CLI |
-| [OpenCode](https://github.com/anomalyco/opencode) | ⭐ 137,788 | |
-| [Goose](https://github.com/block/goose) | ⭐ 37,129 | Block의 오픈소스 에이전트 |
-| [Crush](https://github.com/charmbracelet/crush) | ⭐ 22,543 | |
-| [Aider](https://github.com/paul-gauthier/aider) | ⭐ 42,869 | Git-aware 코딩 에이전트 |
-| [OpenHands](https://github.com/All-Hands-AI/OpenHands) | ⭐ 70,632 | |
-| [Cline](https://github.com/cline/cline) | ⭐ 59,924 | VS Code 에이전트 |
-| [Continue](https://github.com/continuedev/continue) | ⭐ 32,309 | |
+| [OpenClaw](https://github.com/openclaw/openclaw) | ⭐ 365,342 | 대규모 오픈소스 에이전트 런타임 |
+| [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | ⭐ 30,697 | |
+| [Claude Code](https://github.com/anthropics/claude-code) | ⭐ 118,485 | Anthropic 공식 CLI |
+| [OpenCode](https://github.com/anomalyco/opencode) | ⭐ 150,654 | |
+| [Goose](https://github.com/block/goose) | ⭐ 43,404 | Block의 오픈소스 에이전트 |
+| [Crush](https://github.com/charmbracelet/crush) | ⭐ 23,571 | |
+| [Aider](https://github.com/paul-gauthier/aider) | ⭐ 44,022 | Git-aware 코딩 에이전트 |
+| [OpenHands](https://github.com/All-Hands-AI/OpenHands) | ⭐ 72,201 | |
+| [Cline](https://github.com/cline/cline) | ⭐ 61,063 | VS Code 에이전트 |
+| [Continue](https://github.com/continuedev/continue) | ⭐ 32,841 | |
 | Cursor | — | https://cursor.com/ |
 | Kiro CLI | — | https://kiro.dev/ |
-| [deepagents](https://github.com/langchain-ai/deepagents) | ⭐ 19,379 | LangGraph 기반 하네스 *(L2 중복)* |
-| [understudy](https://github.com/understudy-ai/understudy) | ⭐ 410 | 시연으로 배우는 로컬 데스크탑 에이전트 |
+| [deepagents](https://github.com/langchain-ai/deepagents) | ⭐ 21,878 | LangGraph 기반 하네스 *(L2 중복)* |
+| [understudy](https://github.com/understudy-ai/understudy) | ⭐ 422 | 시연으로 배우는 로컬 데스크탑 에이전트 |
 | Claude Computer Use | — | 퍼스트파티 데스크탑 제어 *(L7 중복)* |
 
 ---
@@ -62,20 +62,20 @@ clawfit의 **정식 에코시스템 맵**입니다.
 
 | 프로젝트 | 스타 | 설명 |
 |---------|------|------|
-| [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | ⭐ 48,590 | 에이전트 하네스 / 메타 래퍼 |
-| [oh-my-claudecode](https://github.com/yeachan-heo/oh-my-claudecode) | ⭐ 24,538 | Claude Code 멀티에이전트 오케스트레이션 |
-| [oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex) | ⭐ 16,703 | Codex 확장 / 훅 / HUD / 에이전트 팀 |
-| [oh-my-gemini-cli](https://github.com/Joonghyun-Lee-Frieren/oh-my-gemini-cli) | ⭐ 103 | Gemini CLI 워크플로우 팩 |
-| [oh-my-agent](https://github.com/first-fluke/oh-my-agent) | ⭐ 565 | 다중 런타임 에이전트 하네스 |
-| [Aperant](https://github.com/AndyMik90/Aperant) | ⭐ 13,816 | |
-| [ralph-claude-code](https://github.com/frankbria/ralph-claude-code) | ⭐ 8,477 | |
-| [open-ralph-wiggum](https://github.com/Th0rgal/open-ralph-wiggum) | ⭐ 1,421 | |
-| [SuperClaude Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) | ⭐ 22,161 | Claude 워크플로우 프레임워크 |
-| [claudecodeui](https://github.com/siteboon/claudecodeui) | ⭐ 9,503 | |
-| [agentapi](https://github.com/coder/agentapi) | ⭐ 1,338 | |
-| [claude-code-router](https://github.com/musistudio/claude-code-router) | ⭐ 31,571 | Claude Code 라우팅 래퍼 |
-| [deepagents](https://github.com/langchain-ai/deepagents) | ⭐ 19,379 | LangGraph SDK *(L1 중복)* |
-| [oh-my-pi](https://github.com/can1357/oh-my-pi) | ⭐ 2,681 | Hashline: 동시 멀티에이전트 파일 안전성 해시 검증 |
+| [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | ⭐ 54,537 | 에이전트 하네스 / 메타 래퍼 |
+| [oh-my-claudecode](https://github.com/yeachan-heo/oh-my-claudecode) | ⭐ 31,602 | Claude Code 멀티에이전트 오케스트레이션 |
+| [oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex) | ⭐ 26,371 | Codex 확장 / 훅 / HUD / 에이전트 팀 |
+| [oh-my-gemini-cli](https://github.com/Joonghyun-Lee-Frieren/oh-my-gemini-cli) | ⭐ 155 | Gemini CLI 워크플로우 팩 |
+| [oh-my-agent](https://github.com/first-fluke/oh-my-agent) | ⭐ 856 | 다중 런타임 에이전트 하네스 |
+| [Aperant](https://github.com/AndyMik90/Aperant) | ⭐ 14,093 | |
+| [ralph-claude-code](https://github.com/frankbria/ralph-claude-code) | ⭐ 8,878 | |
+| [open-ralph-wiggum](https://github.com/Th0rgal/open-ralph-wiggum) | ⭐ 1,584 | |
+| [SuperClaude Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) | ⭐ 22,511 | Claude 워크플로우 프레임워크 |
+| [claudecodeui](https://github.com/siteboon/claudecodeui) | ⭐ 10,291 | |
+| [agentapi](https://github.com/coder/agentapi) | ⭐ 1,372 | |
+| [claude-code-router](https://github.com/musistudio/claude-code-router) | ⭐ 33,100 | Claude Code 라우팅 래퍼 |
+| [deepagents](https://github.com/langchain-ai/deepagents) | ⭐ 21,878 | LangGraph SDK *(L1 중복)* |
+| [oh-my-pi](https://github.com/can1357/oh-my-pi) | ⭐ 3,541 | Hashline: 동시 멀티에이전트 파일 안전성 해시 검증 |
 | [Anthropic 하네스 설계](https://www.anthropic.com/engineering/harness-design-long-running-apps) | — | 정식 듀얼에이전트 + 스프린트-계약 아키텍처 |
 | [ouroboros](https://github.com/Q00/ouroboros) | ⭐ 2,761 | "Agent OS: stop prompting, start specifying" — Claude Code/Codex/OpenCode/Hermes 위에 올라가는 spec-driven 하네스; Double-Diamond 워크플로우 + 9개 전문 에이전트 + Ralph evolutionary loop + PAL cost-tier router + EventStore; ralph-family 동족 |
 
@@ -92,12 +92,12 @@ LLM 사용이 개인 습관에서 팀 운영 시스템으로 전환되는 레벨
 | 프로젝트 | 스타 | 설명 |
 |---------|------|------|
 | [Toss 하네스 아티클](https://toss.tech/article/harness-for-team-productivity) | — | 팀 생산성 바닥을 높이는 하네스 |
-| [oh-my-agent](https://github.com/first-fluke/oh-my-agent) | ⭐ 565 | |
-| [everything-claude-code](https://github.com/affaan-m/everything-claude-code) | ⭐ 140,708 | 스킬/규칙/에이전트 하네스 최적화 시스템 |
-| [cc-sdd](https://github.com/gotalab/cc-sdd) | ⭐ 3,026 | 스펙 기반 개발 워크플로우 |
+| [oh-my-agent](https://github.com/first-fluke/oh-my-agent) | ⭐ 856 | |
+| [everything-claude-code](https://github.com/affaan-m/everything-claude-code) | ⭐ 168,366 | 스킬/규칙/에이전트 하네스 최적화 시스템 |
+| [cc-sdd](https://github.com/gotalab/cc-sdd) | ⭐ 3,217 | 스펙 기반 개발 워크플로우 |
 | [gitagent](https://github.com/open-gitagent/gitagent) | ⭐ 2,545 | Git-native 에이전트 정의 오픈 표준 |
 | **AGENTS.md** | — | OpenAI의 크로스 플랫폼 에이전트 스펙. Agentic AI Foundation 소속. CLAUDE.md와 경쟁/보완 관계 |
-| [DureClaw](https://github.com/DureClaw/dureclaw) | ⭐ 1 | *(주 분류 Level 2)* — 크로스 머신 multi-agent team coordinator; Phoenix WebSocket 메시지 버스 + oah-agent 워커가 Mac/Linux/Windows/Raspberry Pi에 걸친 multi-machine SSOT 패턴 구현 |
+| [DureClaw](https://github.com/DureClaw/dureclaw) | ⭐ 2 | *(주 분류 Level 2)* — 크로스 머신 multi-agent team coordinator; Phoenix WebSocket 메시지 버스 + oah-agent 워커가 Mac/Linux/Windows/Raspberry Pi에 걸친 multi-machine SSOT 패턴 구현 |
 
 ---
 
@@ -111,11 +111,11 @@ Level 4는 세 가지 서브타입으로 분화 중:
 
 | 프로젝트 | 스타 | 설명 |
 |---------|------|------|
-| [claude-mem](https://github.com/thedotmack/claude-mem) | ⭐ 45,587 🔥 | 훅 기반 영구 메모리 (SQLite + Chroma). `npx claude-mem install` |
-| [OpenMemory](https://github.com/CaviraOSS/OpenMemory) | ⭐ 3,871 | |
-| [cipher](https://github.com/campfirein/cipher) | ⭐ 4,178 | |
-| [claude-context](https://github.com/zilliztech/claude-context) | ⭐ 5,850 | |
-| [Engram](https://github.com/Gentleman-Programming/engram) | ⭐ 2,900 | Go 바이너리 영구 메모리; 17개 MCP 툴 + What/Why/Where/Learned 스키마 + session lifecycle 훅; SQLite+FTS5; Beads(런타임-레이어)와 인터페이스 축에서 분기되는 protocol-endpoint 설계 *(L5 inspectable agent memory 서브패턴 동시)* |
+| [claude-mem](https://github.com/thedotmack/claude-mem) | ⭐ 68,547 🔥 | 훅 기반 영구 메모리 (SQLite + Chroma). `npx claude-mem install` |
+| [OpenMemory](https://github.com/CaviraOSS/OpenMemory) | ⭐ 4,029 | |
+| [cipher](https://github.com/campfirein/cipher) | ⭐ 4,657 | |
+| [claude-context](https://github.com/zilliztech/claude-context) | ⭐ 9,859 | |
+| [Engram](https://github.com/Gentleman-Programming/engram) | ⭐ 2,912 | Go 바이너리 영구 메모리; 17개 MCP 툴 + What/Why/Where/Learned 스키마 + session lifecycle 훅; SQLite+FTS5; Beads(런타임-레이어)와 인터페이스 축에서 분기되는 protocol-endpoint 설계 *(L5 inspectable agent memory 서브패턴 동시)* |
 | [wuphf](https://github.com/nex-crm/wuphf) | — | Karpathy 스타일 LLM wiki를 에이전트가 Markdown+Git으로 유지; multi-agent 공유 workspace에 notebook→wiki promotion + lint 게이트; human-inspectable agent-maintained memory; vector-DB 비의존 트랙 (Beads/Engram/GBrain 동족) *(L5 inspectable agent memory 서브패턴 동시)* |
 
 ### 4b. 스킬 팩 & 스킬 매니저
@@ -134,7 +134,7 @@ Level 4는 세 가지 서브타입으로 분화 중:
 | 프로젝트 | 스타 | 설명 |
 |---------|------|------|
 | OpenAI Codex 플러그인 | — | Skills + Apps + MCP 번들. GitHub, Linear, Vercel, Slack, Figma, Notion, Gmail 공식 플러그인 |
-| [claude-plugins-official](https://github.com/anthropics/claude-plugins-official) | ⭐ 16,063 | Anthropic 공식 플러그인 |
+| [claude-plugins-official](https://github.com/anthropics/claude-plugins-official) | ⭐ 18,040 | Anthropic 공식 플러그인 |
 
 **도메인 스킬 팩:**
 
@@ -142,19 +142,19 @@ Level 4는 세 가지 서브타입으로 분화 중:
 |---------|------|------|
 | [Impeccable](https://github.com/pbakaus/impeccable) | ⭐ 16,060 | 7개 도메인 20개 디자인 명령어 (레이아웃, 간격, 색상, 타이포그래피…) |
 | [K-Skill](https://github.com/NomaDamas/k-skill) | ⭐ 1,514 | 한국어 서비스 스킬팩 (SRT, 서울 지하철, KBO, 로또) |
-| [plugins-for-claude-natives](https://github.com/team-attention/plugins-for-claude-natives) | ⭐ 722 | |
+| [plugins-for-claude-natives](https://github.com/team-attention/plugins-for-claude-natives) | ⭐ 748 | |
 
 ### 4c. 툴-사용 / 액션 인프라
 
 | 프로젝트 | 스타 | 설명 |
 |---------|------|------|
 | [Expect](https://github.com/millionco/expect) | ⭐ 3,062 | 코드 변경으로부터 브라우저 기반 테스트 플랜 자동 생성 실행 |
-| [serena](https://github.com/oraios/serena) | ⭐ 22,504 | 코딩 에이전트용 시맨틱 검색/편집 툴킷 |
-| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | ⭐ 83,039 | MCP 서버 에코시스템. 2025-12 Agentic AI Foundation에 기증 |
-| [mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) | ⭐ 15,804 | Microsoft MCP 교육 커리큘럼 |
-| [mcp-context-forge](https://github.com/IBM/mcp-context-forge) | ⭐ 3,526 | IBM AI 게이트웨이 + MCP 프록시 |
-| [Composio](https://github.com/ComposioHQ/composio) | ⭐ 27,650 | 에이전트용 대형 툴-액세스 플랫폼 |
-| [Pica](https://github.com/withoneai/pica) | ⭐ 1,470 | 에이전트 도구 플랫폼 (Rust) |
+| [serena](https://github.com/oraios/serena) | ⭐ 23,498 | 코딩 에이전트용 시맨틱 검색/편집 툴킷 |
+| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | ⭐ 84,644 | MCP 서버 에코시스템. 2025-12 Agentic AI Foundation에 기증 |
+| [mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) | ⭐ 15,963 | Microsoft MCP 교육 커리큘럼 |
+| [mcp-context-forge](https://github.com/IBM/mcp-context-forge) | ⭐ 3,620 | IBM AI 게이트웨이 + MCP 프록시 |
+| [Composio](https://github.com/ComposioHQ/composio) | ⭐ 27,933 | 에이전트용 대형 툴-액세스 플랫폼 |
+| [Pica](https://github.com/withoneai/pica) | ⭐ 1,476 | 에이전트 도구 플랫폼 (Rust) |
 
 ---
 
@@ -165,12 +165,12 @@ Level 4는 세 가지 서브타입으로 분화 중:
 | 프로젝트 | 스타 | 설명 |
 |---------|------|------|
 | [cq](https://blog.mozilla.ai/cq-stack-overflow-for-agents/) | — | Mozilla AI 에이전트 공유 지식 커먼스. "에이전트를 위한 Stack Overflow" |
-| [autoresearch](https://github.com/karpathy/autoresearch) | ⭐ 66,534 | |
-| [any-agent](https://github.com/mozilla-ai/any-agent) | ⭐ 1,138 | 멀티에이전트 프레임워크 인터페이스 |
-| [any-llm](https://github.com/mozilla-ai/any-llm) | ⭐ 1,862 | 통합 LLM 제공자 인터페이스 |
-| [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | ⭐ 12,017 | 언어 모델 평가 프레임워크 |
-| [agent-lightning](https://github.com/microsoft/agent-lightning) | ⭐ 16,545 | Microsoft AI 에이전트 훈련 프레임워크 |
-| [Ko-AgentBench](https://github.com/Hugging-Face-KREW/Ko-AgentBench) | ⭐ 65 | 한국어 에이전트 벤치마크 |
+| [autoresearch](https://github.com/karpathy/autoresearch) | ⭐ 77,236 | |
+| [any-agent](https://github.com/mozilla-ai/any-agent) | ⭐ 1,156 | 멀티에이전트 프레임워크 인터페이스 |
+| [any-llm](https://github.com/mozilla-ai/any-llm) | ⭐ 1,926 | 통합 LLM 제공자 인터페이스 |
+| [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | ⭐ 12,342 | 언어 모델 평가 프레임워크 |
+| [agent-lightning](https://github.com/microsoft/agent-lightning) | ⭐ 17,042 | Microsoft AI 에이전트 훈련 프레임워크 |
+| [Ko-AgentBench](https://github.com/Hugging-Face-KREW/Ko-AgentBench) | ⭐ 64 | 한국어 에이전트 벤치마크 |
 
 ---
 
@@ -180,11 +180,11 @@ Level 4는 세 가지 서브타입으로 분화 중:
 
 | 프로젝트 | 스타 | 설명 |
 |---------|------|------|
-| [LightRAG](https://github.com/HKUDS/LightRAG) | ⭐ 32,300 | |
-| [RAG-Anything](https://github.com/HKUDS/RAG-Anything) | ⭐ 15,200 | |
-| [airweave](https://github.com/airweave-ai/airweave) | ⭐ 6,200 | |
-| [PageIndex](https://github.com/VectifyAI/PageIndex) | ⭐ 24,200 | |
-| [MinerU](https://github.com/opendatalab/MinerU) | ⭐ 58,200 | |
+| [LightRAG](https://github.com/HKUDS/LightRAG) | ⭐ 34,415 | |
+| [RAG-Anything](https://github.com/HKUDS/RAG-Anything) | ⭐ 19,033 | |
+| [airweave](https://github.com/airweave-ai/airweave) | ⭐ 6,266 | |
+| [PageIndex](https://github.com/VectifyAI/PageIndex) | ⭐ 25,871 | |
+| [MinerU](https://github.com/opendatalab/MinerU) | ⭐ 61,356 | |
 
 ---
 
@@ -194,9 +194,9 @@ Level 4는 세 가지 서브타입으로 분화 중:
 
 | 프로젝트 | 스타 | 설명 |
 |---------|------|------|
-| [deep-agents-ui](https://github.com/langchain-ai/deep-agents-ui) | ⭐ 1,500 | deepagents용 Next.js 웹 UI (채팅 + 파일 모니터 + 단계별 디버그) |
+| [deep-agents-ui](https://github.com/langchain-ai/deep-agents-ui) | ⭐ 1,577 | deepagents용 Next.js 웹 UI (채팅 + 파일 모니터 + 단계별 디버그) |
 | Claude 컴퓨터 사용 | — | Anthropic 퍼스트파티 데스크탑 제어 (마우스+키보드+화면) *(L1 중복)* |
-| [Ghostmeet](https://github.com/Higangssh/ghostmeet) | ⭐ 32 | 셀프호스팅 AI 미팅 비서 (Whisper 실시간 전사 + Claude 요약) |
+| [Ghostmeet](https://github.com/Higangssh/ghostmeet) | ⭐ 37 | 셀프호스팅 AI 미팅 비서 (Whisper 실시간 전사 + Claude 요약) |
 | Superwhisper | — | https://superwhisper.com/ |
 
 ---
