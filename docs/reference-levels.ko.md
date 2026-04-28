@@ -97,6 +97,7 @@ LLM 사용이 개인 습관에서 팀 운영 시스템으로 전환되는 레벨
 | [cc-sdd](https://github.com/gotalab/cc-sdd) | ⭐ 3,026 | 스펙 기반 개발 워크플로우 |
 | [gitagent](https://github.com/open-gitagent/gitagent) | ⭐ 2,545 | Git-native 에이전트 정의 오픈 표준 |
 | **AGENTS.md** | — | OpenAI의 크로스 플랫폼 에이전트 스펙. Agentic AI Foundation 소속. CLAUDE.md와 경쟁/보완 관계 |
+| [DureClaw](https://github.com/DureClaw/dureclaw) | ⭐ 1 | *(주 분류 Level 2)* — 크로스 머신 multi-agent team coordinator; Phoenix WebSocket 메시지 버스 + oah-agent 워커가 Mac/Linux/Windows/Raspberry Pi에 걸친 multi-machine SSOT 패턴 구현 |
 
 ---
 
@@ -114,6 +115,8 @@ Level 4는 세 가지 서브타입으로 분화 중:
 | [OpenMemory](https://github.com/CaviraOSS/OpenMemory) | ⭐ 3,871 | |
 | [cipher](https://github.com/campfirein/cipher) | ⭐ 4,178 | |
 | [claude-context](https://github.com/zilliztech/claude-context) | ⭐ 5,850 | |
+| [Engram](https://github.com/Gentleman-Programming/engram) | ⭐ 2,900 | Go 바이너리 영구 메모리; 17개 MCP 툴 + What/Why/Where/Learned 스키마 + session lifecycle 훅; SQLite+FTS5; Beads(런타임-레이어)와 인터페이스 축에서 분기되는 protocol-endpoint 설계 *(L5 inspectable agent memory 서브패턴 동시)* |
+| [wuphf](https://github.com/nex-crm/wuphf) | — | Karpathy 스타일 LLM wiki를 에이전트가 Markdown+Git으로 유지; multi-agent 공유 workspace에 notebook→wiki promotion + lint 게이트; human-inspectable agent-maintained memory; vector-DB 비의존 트랙 (Beads/Engram/GBrain 동족) *(L5 inspectable agent memory 서브패턴 동시)* |
 
 ### 4b. 스킬 팩 & 스킬 매니저
 
