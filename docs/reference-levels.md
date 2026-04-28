@@ -203,28 +203,28 @@ These are the main user-facing agent runtimes or primary product choices.
 They are the tools users most directly choose as their base environment.
 
 - <img src="https://github.com/openclaw.png" alt="OpenClaw" width="18" /> [OpenClaw](https://github.com/openclaw/openclaw) — ⭐ 365,342
-- <img src="https://github.com/zeroclaw-labs.png" alt="ZeroClaw" width="18" /> [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) — ⭐ 30,697
-- <img src="https://github.com/anthropics.png" alt="Claude Code" width="18" /> [Claude Code](https://github.com/anthropics/claude-code) — ⭐ 118,485
 - <img src="https://github.com/anomalyco.png" alt="OpenCode" width="18" /> [OpenCode](https://github.com/anomalyco/opencode) — ⭐ 150,654
-- <img src="https://github.com/block.png" alt="Goose" width="18" /> [Goose](https://github.com/block/goose) — ⭐ 43,404
-- <img src="https://github.com/charmbracelet.png" alt="Crush" width="18" /> [Crush](https://github.com/charmbracelet/crush) — ⭐ 23,571
-- <img src="https://github.com/paul-gauthier.png" alt="Aider" width="18" /> [Aider](https://github.com/paul-gauthier/aider) — ⭐ 44,022
+- <img src="https://github.com/NousResearch.png" alt="Hermes Agent" width="18" /> [Hermes Agent](https://github.com/NousResearch/hermes-agent) — ⭐ 120,550 — adaptive open-source agent from NousResearch; "grows with you" — signals session-persistent adaptation at the base runtime layer
+- <img src="https://github.com/anthropics.png" alt="Claude Code" width="18" /> [Claude Code](https://github.com/anthropics/claude-code) — ⭐ 118,485
 - <img src="https://github.com/All-Hands-AI.png" alt="OpenHands" width="18" /> [OpenHands](https://github.com/All-Hands-AI/OpenHands) — ⭐ 72,201
 - <img src="https://github.com/cline.png" alt="Cline" width="18" /> [Cline](https://github.com/cline/cline) — ⭐ 61,063
+- <img src="https://github.com/paul-gauthier.png" alt="Aider" width="18" /> [Aider](https://github.com/paul-gauthier/aider) — ⭐ 44,022
+- <img src="https://github.com/block.png" alt="Goose" width="18" /> [Goose](https://github.com/block/goose) — ⭐ 43,404
+- <img src="https://github.com/KeygraphHQ.png" alt="Shannon" width="18" /> [Shannon](https://github.com/KeygraphHQ/shannon) — ⭐ 40,577 — autonomous AI pentester; reads source code, identifies attack surfaces, generates and executes exploits; first high-signal domain-specialized security agent in this taxonomy
 - <img src="https://github.com/continuedev.png" alt="Continue" width="18" /> [Continue](https://github.com/continuedev/continue) — ⭐ 32,841
+- <img src="https://github.com/zeroclaw-labs.png" alt="ZeroClaw" width="18" /> [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) — ⭐ 30,697
+- <img src="https://github.com/usestrix.png" alt="Strix" width="18" /> [Strix](https://github.com/usestrix/strix) — ⭐ 24,627 — open-source autonomous security testing platform; teams of agents run code dynamically, find vulnerabilities, validate via PoC; CI/CD integration; developer self-service shift-left variant alongside Shannon's expert-pentester model
+- <img src="https://github.com/RooCodeInc.png" alt="Roo Code" width="18" /> [Roo Code](https://github.com/RooCodeInc/Roo-Code) — ⭐ 23,697 — VS Code extension with multi-persona role model ("a whole dev team of AI agents in your code editor"); architect, developer, reviewer roles in one IDE session; direct Level 1 competitor to Cline with distinct multi-role framing; Apache-2.0
+- <img src="https://github.com/charmbracelet.png" alt="Crush" width="18" /> [Crush](https://github.com/charmbracelet/crush) — ⭐ 23,571
+- <img src="https://github.com/langchain-ai.png" alt="deepagents" width="18" /> [deepagents](https://github.com/langchain-ai/deepagents) — ⭐ 21,878 *(also Level 2; CLI mode = base runtime, SDK mode = harness)*
+- <img src="https://github.com/rowboatlabs.png" alt="rowboat" width="18" /> [rowboat](https://github.com/rowboatlabs/rowboat) — ⭐ 13,143 — open-source AI coworker with native memory; persistent task ownership across sessions; memory-native Level 1 sub-type
+- <img src="https://github.com/google-ai-edge.png" alt="LiteRT-LM" width="18" /> [LiteRT-LM](https://github.com/google-ai-edge/LiteRT-LM) — ⭐ 4,435 — Google AI Edge on-device LLM inference runtime; ARM-first, mobile + edge; companion to google-ai-edge/gallery
+- <img src="https://github.com/vercel-labs.png" alt="open-agents" width="18" /> [open-agents](https://github.com/vercel-labs/open-agents) — ⭐ 4,202 — Vercel Labs' official open-source cloud agent template; TypeScript; production-oriented; platform-vendor-native deployment entry point for cloud agent architecture
+- <img src="https://github.com/understudy-ai.png" alt="understudy" width="18" /> [understudy](https://github.com/understudy-ai/understudy) — ⭐ 422 — demonstration-based local desktop agent (GUI + browser + shell + filesystem)
 - Cursor — https://cursor.com/
 - Kiro CLI — https://kiro.dev/
-- <img src="https://github.com/langchain-ai.png" alt="deepagents" width="18" /> [deepagents](https://github.com/langchain-ai/deepagents) — ⭐ 21,878 *(also Level 2; CLI mode = base runtime, SDK mode = harness)*
-- <img src="https://github.com/understudy-ai.png" alt="understudy" width="18" /> [understudy](https://github.com/understudy-ai/understudy) — ⭐ 422 — demonstration-based local desktop agent (GUI + browser + shell + filesystem)
 - Claude Computer Use — direct mouse/keyboard/screen control via Claude Code Desktop + Cowork + Dispatch; macOS first *(also Level 7)*
-- <img src="https://github.com/NousResearch.png" alt="Hermes Agent" width="18" /> [Hermes Agent](https://github.com/NousResearch/hermes-agent) — ⭐ 120,550 — adaptive open-source agent from NousResearch; "grows with you" — signals session-persistent adaptation at the base runtime layer
-- <img src="https://github.com/google-ai-edge.png" alt="LiteRT-LM" width="18" /> [LiteRT-LM](https://github.com/google-ai-edge/LiteRT-LM) — ⭐ 4,435 — Google AI Edge on-device LLM inference runtime; ARM-first, mobile + edge; companion to google-ai-edge/gallery
-- <img src="https://github.com/KeygraphHQ.png" alt="Shannon" width="18" /> [Shannon](https://github.com/KeygraphHQ/shannon) — ⭐ 40,577 — autonomous AI pentester; reads source code, identifies attack surfaces, generates and executes exploits; first high-signal domain-specialized security agent in this taxonomy
-- <img src="https://github.com/rowboatlabs.png" alt="rowboat" width="18" /> [rowboat](https://github.com/rowboatlabs/rowboat) — ⭐ 13,143 — open-source AI coworker with native memory; persistent task ownership across sessions; memory-native Level 1 sub-type
 - [Twill.ai](https://twill.ai) — YC S25 — async cloud agent delegation; "delegate tasks, get back PRs"; fire-and-forget model with PR output; first managed cloud agent service in this taxonomy
-- <img src="https://github.com/usestrix.png" alt="Strix" width="18" /> [Strix](https://github.com/usestrix/strix) — ⭐ 24,627 — open-source autonomous security testing platform; teams of agents run code dynamically, find vulnerabilities, validate via PoC; CI/CD integration; developer self-service shift-left variant alongside Shannon's expert-pentester model
-- <img src="https://github.com/vercel-labs.png" alt="open-agents" width="18" /> [open-agents](https://github.com/vercel-labs/open-agents) — ⭐ 4,202 — Vercel Labs' official open-source cloud agent template; TypeScript; production-oriented; platform-vendor-native deployment entry point for cloud agent architecture
-- <img src="https://github.com/RooCodeInc.png" alt="Roo Code" width="18" /> [Roo Code](https://github.com/RooCodeInc/Roo-Code) — ⭐ 23,697 — VS Code extension with multi-persona role model ("a whole dev team of AI agents in your code editor"); architect, developer, reviewer roles in one IDE session; direct Level 1 competitor to Cline with distinct multi-role framing; Apache-2.0
 
 ---
 
@@ -233,29 +233,29 @@ These projects sit on top of existing base agents and transform how they operate
 They provide orchestration, better defaults, compatibility layers, workflows, routing, multi-agent teams, or opinionated operating conventions.
 
 - <img src="https://github.com/code-yeongyu.png" alt="oh-my-openagent" width="18" /> [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) — ⭐ 54,537
+- <img src="https://github.com/musistudio.png" alt="claude-code-router" width="18" /> [claude-code-router](https://github.com/musistudio/claude-code-router) — ⭐ 33,100
 - <img src="https://github.com/Yeachan-Heo.png" alt="oh-my-claudecode" width="18" /> [oh-my-claudecode](https://github.com/yeachan-heo/oh-my-claudecode) — ⭐ 31,602
 - <img src="https://github.com/Yeachan-Heo.png" alt="oh-my-codex" width="18" /> [oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex) — ⭐ 26,371
-- <img src="https://github.com/Joonghyun-Lee-Frieren.png" alt="oh-my-gemini-cli" width="18" /> [oh-my-gemini-cli](https://github.com/Joonghyun-Lee-Frieren/oh-my-gemini-cli) — ⭐ 155
-- <img src="https://github.com/first-fluke.png" alt="oh-my-agent" width="18" /> [oh-my-agent](https://github.com/first-fluke/oh-my-agent) — ⭐ 856
-- <img src="https://github.com/AndyMik90.png" alt="Aperant" width="18" /> [Aperant](https://github.com/AndyMik90/Aperant) — ⭐ 14,093
-- <img src="https://github.com/frankbria.png" alt="ralph-claude-code" width="18" /> [ralph-claude-code](https://github.com/frankbria/ralph-claude-code) — ⭐ 8,878
-- <img src="https://github.com/Th0rgal.png" alt="open-ralph-wiggum" width="18" /> [open-ralph-wiggum](https://github.com/Th0rgal/open-ralph-wiggum) — ⭐ 1,584
+- <img src="https://github.com/openai.png" alt="openai-agents-python" width="18" /> [openai-agents-python](https://github.com/openai/openai-agents-python) — ⭐ 25,420 — OpenAI's official lightweight Python multi-agent framework; handoffs, routing, tool calling, async execution; "lightweight" framing vs. LangGraph; vendor-published harness sub-type alongside Claude Code Routines
 - <img src="https://github.com/SuperClaude-Org.png" alt="SuperClaude Framework" width="18" /> [SuperClaude Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) — ⭐ 22,511
-- <img src="https://github.com/siteboon.png" alt="claudecodeui" width="18" /> [claudecodeui](https://github.com/siteboon/claudecodeui) — ⭐ 10,291
-- <img src="https://github.com/coder.png" alt="agentapi" width="18" /> [agentapi](https://github.com/coder/agentapi) — ⭐ 1,372
-- <img src="https://github.com/musistudio.png" alt="claude-code-router" width="18" /> [claude-code-router](https://github.com/musistudio/claude-code-router) — ⭐ 33,100
-- <img src="https://github.com/langchain-ai.png" alt="deepagents" width="18" /> [deepagents](https://github.com/langchain-ai/deepagents) — ⭐ 21,878 *(LangGraph-based SDK; also Level 1 as CLI)*
-- <img src="https://github.com/can1357.png" alt="oh-my-pi" width="18" /> [oh-my-pi](https://github.com/can1357/oh-my-pi) — ⭐ 3,541 — Hashline approach: content-hash verification for concurrent multi-agent file safety; see ["The Harness Problem"](https://blog.can.ac/2026/02/12/the-harness-problem/)
-- Anthropic engineering: [Harness design for long-running applications](https://www.anthropic.com/engineering/harness-design-long-running-apps) — canonical dual-agent + sprint-contract architecture from Anthropic
-- <img src="https://github.com/coleam00.png" alt="Archon" width="18" /> [Archon](https://github.com/coleam00/Archon) — ⭐ 19,916 — "first open-source harness builder for AI coding"; makes AI coding deterministic and repeatable; harness-generator sub-type
 - <img src="https://github.com/multica-ai.png" alt="multica" width="18" /> [multica](https://github.com/multica-ai/multica) — ⭐ 21,999 — open-source managed agents platform; "turn coding agents into real teammates — assign tasks, track progress"
+- <img src="https://github.com/langchain-ai.png" alt="deepagents" width="18" /> [deepagents](https://github.com/langchain-ai/deepagents) — ⭐ 21,878 *(LangGraph-based SDK; also Level 1 as CLI)*
+- <img src="https://github.com/coleam00.png" alt="Archon" width="18" /> [Archon](https://github.com/coleam00/Archon) — ⭐ 19,916 — "first open-source harness builder for AI coding"; makes AI coding deterministic and repeatable; harness-generator sub-type
 - <img src="https://github.com/snarktank.png" alt="ralph" width="18" /> [ralph](https://github.com/snarktank/ralph) — ⭐ 17,946 — TypeScript autonomous agent loop for PRD-driven iterative execution; highest-starred ralph-family implementation; solo/small team target
+- <img src="https://github.com/AndyMik90.png" alt="Aperant" width="18" /> [Aperant](https://github.com/AndyMik90/Aperant) — ⭐ 14,093
+- <img src="https://github.com/siteboon.png" alt="claudecodeui" width="18" /> [claudecodeui](https://github.com/siteboon/claudecodeui) — ⭐ 10,291
+- <img src="https://github.com/frankbria.png" alt="ralph-claude-code" width="18" /> [ralph-claude-code](https://github.com/frankbria/ralph-claude-code) — ⭐ 8,878
+- <img src="https://github.com/can1357.png" alt="oh-my-pi" width="18" /> [oh-my-pi](https://github.com/can1357/oh-my-pi) — ⭐ 3,541 — Hashline approach: content-hash verification for concurrent multi-agent file safety; see ["The Harness Problem"](https://blog.can.ac/2026/02/12/the-harness-problem/)
+- <img src="https://github.com/Q00.png" alt="ouroboros" width="18" /> [ouroboros](https://github.com/Q00/ouroboros) — ⭐ 2,761 — "Agent OS: stop prompting, start specifying"; sits between user and AI runtime (Claude Code / Codex CLI / Hermes / OpenCode); Double-Diamond workflow (interview → seed → run → evaluate) + 9 specialist agents (Socratic Interviewer, Ontologist, Evaluator, …) + Ralph evolutionary loop + PAL cost-tier router + EventStore persistence; spec-driven harness sub-type; ralph-family sibling
+- <img src="https://github.com/Th0rgal.png" alt="open-ralph-wiggum" width="18" /> [open-ralph-wiggum](https://github.com/Th0rgal/open-ralph-wiggum) — ⭐ 1,584
+- <img src="https://github.com/coder.png" alt="agentapi" width="18" /> [agentapi](https://github.com/coder/agentapi) — ⭐ 1,372
+- <img src="https://github.com/first-fluke.png" alt="oh-my-agent" width="18" /> [oh-my-agent](https://github.com/first-fluke/oh-my-agent) — ⭐ 856
+- <img src="https://github.com/Joonghyun-Lee-Frieren.png" alt="oh-my-gemini-cli" width="18" /> [oh-my-gemini-cli](https://github.com/Joonghyun-Lee-Frieren/oh-my-gemini-cli) — ⭐ 155
+- <img src="https://github.com/DureClaw.png" alt="DureClaw" width="18" /> [DureClaw](https://github.com/DureClaw/dureclaw) — ⭐ 2 🔥 **크로스 머신 멀티 에이전트 오케스트레이션** — Claude Code 오케스트레이터 + Phoenix WebSocket 메시지 버스 + oah-agent 워커 3층 아키텍처; 이종 AI 백엔드(claude/opencode/gemini/aider) 지원; Mac/Linux/Windows/Raspberry Pi; MCP 플러그인 정식 배포(`@dureclaw/mcp`); 한국 두레(협동 농경) 철학 기반; **hongsw 직접 제작** — clawfit 레지스트리 설계 방향에 직접적 영향 *(also Level 3 cross-machine team orchestration; also Level 4c via @dureclaw/mcp)*
+- Anthropic engineering: [Harness design for long-running applications](https://www.anthropic.com/engineering/harness-design-long-running-apps) — canonical dual-agent + sprint-contract architecture from Anthropic
 - [Claudraband](https://github.com/halfwhey/claudraband) — Claude Code harness for power users; explicit senior-developer positioning; Level 2 mid-range segment
 - Anthropic engineering: [Managed Agents](https://www.anthropic.com/engineering/managed-agents) — hosted long-running agents with stable interfaces independent of model version upgrades; governance/reliability primitive
 - [Claude Code Routines](https://claude.ai/code/routines) — *(research preview, 2026-04)* — first-party Anthropic managed cloud runner; schedule / API / GitHub-event triggers; autonomous sessions on Anthropic infrastructure; `/schedule` CLI; Pro/Max/Team/Enterprise plans — first serverless execution-as-a-service runner native to Claude Code
-- <img src="https://github.com/openai.png" alt="openai-agents-python" width="18" /> [openai-agents-python](https://github.com/openai/openai-agents-python) — ⭐ 25,420 — OpenAI's official lightweight Python multi-agent framework; handoffs, routing, tool calling, async execution; "lightweight" framing vs. LangGraph; vendor-published harness sub-type alongside Claude Code Routines
-- <img src="https://github.com/DureClaw.png" alt="DureClaw" width="18" /> [DureClaw](https://github.com/DureClaw/dureclaw) — ⭐ 2 🔥 **크로스 머신 멀티 에이전트 오케스트레이션** — Claude Code 오케스트레이터 + Phoenix WebSocket 메시지 버스 + oah-agent 워커 3층 아키텍처; 이종 AI 백엔드(claude/opencode/gemini/aider) 지원; Mac/Linux/Windows/Raspberry Pi; MCP 플러그인 정식 배포(`@dureclaw/mcp`); 한국 두레(협동 농경) 철학 기반; **hongsw 직접 제작** — clawfit 레지스트리 설계 방향에 직접적 영향 *(also Level 3 cross-machine team orchestration; also Level 4c via @dureclaw/mcp)*
-- <img src="https://github.com/Q00.png" alt="ouroboros" width="18" /> [ouroboros](https://github.com/Q00/ouroboros) — ⭐ 2,761 — "Agent OS: stop prompting, start specifying"; sits between user and AI runtime (Claude Code / Codex CLI / Hermes / OpenCode); Double-Diamond workflow (interview → seed → run → evaluate) + 9 specialist agents (Socratic Interviewer, Ontologist, Evaluator, …) + Ralph evolutionary loop + PAL cost-tier router + EventStore persistence; spec-driven harness sub-type; ralph-family sibling
 
 ---
 
@@ -277,16 +277,16 @@ A key idea here is **Executable SSOT**:
 Representative references:
 - Toss article — *Harness for team productivity*  
   https://toss.tech/article/harness-for-team-productivity
-- <img src="https://github.com/first-fluke.png" alt="oh-my-agent" width="18" /> [oh-my-agent](https://github.com/first-fluke/oh-my-agent) — ⭐ 856
-- <img src="https://github.com/Joonghyun-Lee-Frieren.png" alt="oh-my-gemini-cli" width="18" /> [oh-my-gemini-cli](https://github.com/Joonghyun-Lee-Frieren/oh-my-gemini-cli) — ⭐ 155
-- <img src="https://github.com/affaan-m.png" alt="everything-claude-code" width="18" /> [everything-claude-code](https://github.com/affaan-m/everything-claude-code) — ⭐ 168,366
-- <img src="https://github.com/gotalab.png" alt="cc-sdd" width="18" /> [cc-sdd](https://github.com/gotalab/cc-sdd) — ⭐ 3,217
-- <img src="https://github.com/open-gitagent.png" alt="gitagent" width="18" /> [gitagent](https://github.com/open-gitagent/gitagent) — Git-native open standard for agent definition and lifecycle management; `git clone` = agent instantiation
-- **AGENTS.md** — OpenAI's cross-platform agent specification format; part of Agentic AI Foundation (Microsoft + Google + OpenAI + Anthropic + Linux Foundation); competes with / complements CLAUDE.md as executable SSOT
-- <img src="https://github.com/VoltAgent.png" alt="awesome-design-md" width="18" /> [awesome-design-md](https://github.com/VoltAgent/awesome-design-md) — ⭐ 66,752 🔥 55+ DESIGN.md files extracted from popular sites; extends SSOT pattern into visual/UI domain — agents read design system rules before generating UI
 - <img src="https://github.com/obra.png" alt="superpowers" width="18" /> [superpowers](https://github.com/obra/superpowers) — ⭐ 169,893 🔥🔥 agentic skills framework + software development methodology; Shell-first; "that works" reliability framing; largest-starred harness/SSOT repo in this taxonomy; spans Level 3 + Level 4b
+- <img src="https://github.com/affaan-m.png" alt="everything-claude-code" width="18" /> [everything-claude-code](https://github.com/affaan-m/everything-claude-code) — ⭐ 168,366
+- <img src="https://github.com/VoltAgent.png" alt="awesome-design-md" width="18" /> [awesome-design-md](https://github.com/VoltAgent/awesome-design-md) — ⭐ 66,752 🔥 55+ DESIGN.md files extracted from popular sites; extends SSOT pattern into visual/UI domain — agents read design system rules before generating UI
 - [claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — ⭐ 48,595 🔥 — agentic engineering curriculum by shanraisshan; Commands/Agents/Skills three-abstraction model; 69 tips from Claude Code creator Boris Cherny; comparative analysis of 10 frameworks; #1 GitHub Trending 2026-04-15; accessible from beginner to advanced
 - <img src="https://github.com/Donchitos.png" alt="Claude-Code-Game-Studios" width="18" /> [Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) — ⭐ 16,381 — domain-specialized Claude Code harness for game development; 49 AI agents + 72 workflow skills; coordination system mirrors real studio hierarchy; Shell-based; first high-signal domain-vertical Level 2/3 harness outside software engineering
+- <img src="https://github.com/gotalab.png" alt="cc-sdd" width="18" /> [cc-sdd](https://github.com/gotalab/cc-sdd) — ⭐ 3,217
+- <img src="https://github.com/first-fluke.png" alt="oh-my-agent" width="18" /> [oh-my-agent](https://github.com/first-fluke/oh-my-agent) — ⭐ 856
+- <img src="https://github.com/Joonghyun-Lee-Frieren.png" alt="oh-my-gemini-cli" width="18" /> [oh-my-gemini-cli](https://github.com/Joonghyun-Lee-Frieren/oh-my-gemini-cli) — ⭐ 155
+- <img src="https://github.com/open-gitagent.png" alt="gitagent" width="18" /> [gitagent](https://github.com/open-gitagent/gitagent) — Git-native open standard for agent definition and lifecycle management; `git clone` = agent instantiation
+- **AGENTS.md** — OpenAI's cross-platform agent specification format; part of Agentic AI Foundation (Microsoft + Google + OpenAI + Anthropic + Linux Foundation); competes with / complements CLAUDE.md as executable SSOT
 - DureClaw — *(primary Level 2)* — cross-machine multi-agent team coordinator; Phoenix WebSocket message bus + oah-agent workers implement a multi-machine SSOT pattern across Mac/Linux/Windows/Raspberry Pi
 
 ---
@@ -302,12 +302,12 @@ Level 4 is splitting into three observable subtypes:
 
 ### 4a. Memory / persistent context
 - <img src="https://github.com/thedotmack.png" alt="claude-mem" width="18" /> [claude-mem](https://github.com/thedotmack/claude-mem) — ⭐ 68,547 🔥 hooks-based persistent memory with SQLite + Chroma, `npx claude-mem install`
-- <img src="https://github.com/CaviraOSS.png" alt="OpenMemory" width="18" /> [OpenMemory](https://github.com/CaviraOSS/OpenMemory) — ⭐ 4,029
-- <img src="https://github.com/campfirein.png" alt="cipher" width="18" /> [cipher](https://github.com/campfirein/cipher) — ⭐ 4,657
-- <img src="https://github.com/zilliztech.png" alt="claude-context" width="18" /> [claude-context](https://github.com/zilliztech/claude-context) — ⭐ 9,859
-- <img src="https://github.com/garrytan.png" alt="GBrain" width="18" /> [GBrain](https://github.com/garrytan/gbrain) — MIT — personal knowledge base for agents by YC CEO Garry Tan; markdown+PGLite backend; agents read-before/write-after; OpenClaw+Hermes native; CLI via bun; "compounding personal knowledge" sub-pattern
 - <img src="https://github.com/topoteretes.png" alt="cognee" width="18" /> [cognee](https://github.com/topoteretes/cognee) — ⭐ 16,853 — graph-native knowledge engine for AI agent memory; builds knowledge graphs (not just vectors) over documents, code, and conversations; 6-line API; MCP-compatible; multi-LLM; graph-native sub-type for reasoning over relationships
+- <img src="https://github.com/zilliztech.png" alt="claude-context" width="18" /> [claude-context](https://github.com/zilliztech/claude-context) — ⭐ 9,859
+- <img src="https://github.com/campfirein.png" alt="cipher" width="18" /> [cipher](https://github.com/campfirein/cipher) — ⭐ 4,657
+- <img src="https://github.com/CaviraOSS.png" alt="OpenMemory" width="18" /> [OpenMemory](https://github.com/CaviraOSS/OpenMemory) — ⭐ 4,029
 - <img src="https://github.com/Gentleman-Programming.png" alt="Engram" width="18" /> [Engram](https://github.com/Gentleman-Programming/engram) — ⭐ 2,912 — Go binary persistent memory system for AI coding agents; agent-agnostic (Claude Code / OpenCode / Gemini CLI / Codex / Cursor / Windsurf via MCP); 17 MCP tools + What/Why/Where/Learned schema + session lifecycle hooks (`mem_session_start/end`); SQLite + FTS5; protocol-endpoint shape (Engram exposes memory through MCP) vs. Beads' runtime-layer shape; *(also Level 5 inspectable agent memory sub-pattern)*
+- <img src="https://github.com/garrytan.png" alt="GBrain" width="18" /> [GBrain](https://github.com/garrytan/gbrain) — MIT — personal knowledge base for agents by YC CEO Garry Tan; markdown+PGLite backend; agents read-before/write-after; OpenClaw+Hermes native; CLI via bun; "compounding personal knowledge" sub-pattern
 - [wuphf](https://github.com/nex-crm/wuphf) — Karpathy-style LLM wiki maintained by agents in Markdown + Git; multi-agent shared workspace with notebook → wiki promotion + lint gates; human-inspectable agent-maintained memory; vector-DB-free track alongside Beads / Engram / GBrain; *(also Level 5 inspectable agent memory sub-pattern)*
 
 ### 4b. Skill packs & skill managers
@@ -318,28 +318,28 @@ Level 4 is splitting into three observable subtypes:
 - [claude-code-plugins-plus-skills](https://github.com/jeremylongshore/claude-code-plugins-plus-skills) — 340 plugins + 1,367 agent skills catalog
 
 **Platform-native plugin systems:**
-- OpenAI Codex plugin system — Skills + Apps + MCP bundles; official plugins for GitHub, Linear, Vercel, Netlify, Slack, Figma, Notion, Gmail
 - <img src="https://github.com/anthropics.png" alt="claude-plugins-official" width="18" /> [claude-plugins-official](https://github.com/anthropics/claude-plugins-official) — ⭐ 18,040
+- OpenAI Codex plugin system — Skills + Apps + MCP bundles; official plugins for GitHub, Linear, Vercel, Netlify, Slack, Figma, Notion, Gmail
 
 **Domain skill packs:**
+- <img src="https://github.com/JuliusBrussee.png" alt="caveman" width="18" /> [caveman](https://github.com/JuliusBrussee/caveman) — ⭐ 48,120 🔥 output token compression skill (65–75% prose reduction); three intensity levels (Lite/Full/Ultra); install via `npx skills add`
+- <img src="https://github.com/kepano.png" alt="obsidian-skills" width="18" /> [obsidian-skills](https://github.com/kepano/obsidian-skills) — ⭐ 26,818 — first-party agent skill pack from Obsidian CEO; teaches agents Markdown, Bases, JSON Canvas, and Obsidian CLI; signals L4b maturation beyond coding into knowledge-work
+- <img src="https://github.com/coreyhaines31.png" alt="marketingskills" width="18" /> [marketingskills](https://github.com/coreyhaines31/marketingskills) — ⭐ 25,162 🔥 marketing domain skill pack for Claude Code and AI agents; CRO, copywriting, ad copy, campaign analysis; largest-starred non-developer domain skill pack in this taxonomy; signals L4b expansion beyond software/knowledge-work into all professional verticals
+- <img src="https://github.com/team-attention.png" alt="plugins-for-claude-natives" width="18" /> [plugins-for-claude-natives](https://github.com/team-attention/plugins-for-claude-natives) — ⭐ 748
 - <img src="https://github.com/pbakaus.png" alt="Impeccable" width="18" /> [Impeccable](https://github.com/pbakaus/impeccable) — 20 design commands across 7 domains (layout, spacing, color, typography…) for Claude Code + Cursor
 - <img src="https://github.com/NomaDamas.png" alt="K-Skill" width="18" /> [K-Skill](https://github.com/NomaDamas/k-skill) — Korean-localized skill pack (SRT, Seoul subway, KBO, lottery)
-- <img src="https://github.com/kepano.png" alt="obsidian-skills" width="18" /> [obsidian-skills](https://github.com/kepano/obsidian-skills) — ⭐ 26,818 — first-party agent skill pack from Obsidian CEO; teaches agents Markdown, Bases, JSON Canvas, and Obsidian CLI; signals L4b maturation beyond coding into knowledge-work
-- <img src="https://github.com/team-attention.png" alt="plugins-for-claude-natives" width="18" /> [plugins-for-claude-natives](https://github.com/team-attention/plugins-for-claude-natives) — ⭐ 748
-- <img src="https://github.com/JuliusBrussee.png" alt="caveman" width="18" /> [caveman](https://github.com/JuliusBrussee/caveman) — ⭐ 48,120 🔥 output token compression skill (65–75% prose reduction); three intensity levels (Lite/Full/Ultra); install via `npx skills add`
-- <img src="https://github.com/coreyhaines31.png" alt="marketingskills" width="18" /> [marketingskills](https://github.com/coreyhaines31/marketingskills) — ⭐ 25,162 🔥 marketing domain skill pack for Claude Code and AI agents; CRO, copywriting, ad copy, campaign analysis; largest-starred non-developer domain skill pack in this taxonomy; signals L4b expansion beyond software/knowledge-work into all professional verticals
 
 ### 4c. Tool-use / action infrastructure
-- <img src="https://github.com/rtk-ai.png" alt="rtk" width="18" /> [rtk](https://github.com/rtk-ai/rtk) — Rust CLI token proxy; sits between agent and shell, compresses git/ls/test output 60–90% before the LLM reads it; zero-dependency single binary
-- <img src="https://github.com/millionco.png" alt="Expect" width="18" /> [Expect](https://github.com/millionco/expect) — CLI that auto-generates and executes browser-based test plans from code changes (Claude/Codex backend)
-- <img src="https://github.com/oraios.png" alt="serena" width="18" /> [serena](https://github.com/oraios/serena) — ⭐ 23,498
 - <img src="https://github.com/modelcontextprotocol.png" alt="MCP Servers" width="18" /> [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) — ⭐ 84,644 *(governance: donated to Agentic AI Foundation Dec 2025; 97M monthly SDK downloads)*
+- <img src="https://github.com/ChromeDevTools.png" alt="chrome-devtools-mcp" width="18" /> [chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) — ⭐ 37,402 — official MCP server from Chrome DevTools team; exposes DOM, network, console, performance, and storage via MCP; highest-starred MCP server in this taxonomy; enables live browser QA and debugging inside any agent session; closes the gap between coding agents and web browser state
+- <img src="https://github.com/ComposioHQ.png" alt="Composio" width="18" /> [Composio](https://github.com/ComposioHQ/composio) — ⭐ 27,933
+- <img src="https://github.com/oraios.png" alt="serena" width="18" /> [serena](https://github.com/oraios/serena) — ⭐ 23,498
 - <img src="https://github.com/microsoft.png" alt="mcp-for-beginners" width="18" /> [mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) — ⭐ 15,963
 - <img src="https://github.com/IBM.png" alt="mcp-context-forge" width="18" /> [mcp-context-forge](https://github.com/IBM/mcp-context-forge) — ⭐ 3,620
-- <img src="https://github.com/ComposioHQ.png" alt="Composio" width="18" /> [Composio](https://github.com/ComposioHQ/composio) — ⭐ 27,933
 - <img src="https://github.com/withoneai.png" alt="Pica" width="18" /> [Pica](https://github.com/withoneai/pica) — ⭐ 1,476
+- <img src="https://github.com/rtk-ai.png" alt="rtk" width="18" /> [rtk](https://github.com/rtk-ai/rtk) — Rust CLI token proxy; sits between agent and shell, compresses git/ls/test output 60–90% before the LLM reads it; zero-dependency single binary
+- <img src="https://github.com/millionco.png" alt="Expect" width="18" /> [Expect](https://github.com/millionco/expect) — CLI that auto-generates and executes browser-based test plans from code changes (Claude/Codex backend)
 - [Libretto](https://github.com/saffron-health/libretto) — deterministic AI browser automation; "Making AI Browser Automations Deterministic"; health-tech provenance implies production/compliance requirements; first Level 4c entry with reliability (not capability) as primary value proposition; early signal, revisit at 1k★
-- <img src="https://github.com/ChromeDevTools.png" alt="chrome-devtools-mcp" width="18" /> [chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) — ⭐ 37,402 — official MCP server from Chrome DevTools team; exposes DOM, network, console, performance, and storage via MCP; highest-starred MCP server in this taxonomy; enables live browser QA and debugging inside any agent session; closes the gap between coding agents and web browser state
 - [browser-harness](https://github.com/browser-use/browser-harness) — from the browser-use team; gives LLM raw CDP access + `helpers.py`; self-healing (LLM edits helpers.py mid-task when steps fail); anti-framework stance; new Level 4c sub-type: **self-healing browser automation** distinct from deterministic (Libretto) and MCP-mediated (chrome-devtools-mcp) patterns; HN Show HN 77 pts (2026-04-25)
 
 ---
@@ -348,18 +348,18 @@ Level 4 is splitting into three observable subtypes:
 These are especially useful when designing clawfit's abstraction layer and long-term research model.
 They include evaluation harnesses, benchmark references, autonomous research loops, and **collective agent knowledge systems**.
 
-- <img src="https://github.com/mozilla-ai.png" alt="cq" width="18" /> [cq](https://blog.mozilla.ai/cq-stack-overflow-for-agents/) — Mozilla AI shared knowledge commons for agents; query before acting, contribute after — "Stack Overflow for agents"
 - <img src="https://github.com/karpathy.png" alt="autoresearch" width="18" /> [autoresearch](https://github.com/karpathy/autoresearch) — ⭐ 77,236
-- <img src="https://github.com/mozilla-ai.png" alt="any-agent" width="18" /> [any-agent](https://github.com/mozilla-ai/any-agent) — ⭐ 1,156
-- <img src="https://github.com/mozilla-ai.png" alt="any-llm" width="18" /> [any-llm](https://github.com/mozilla-ai/any-llm) — ⭐ 1,926
-- <img src="https://github.com/anomalyco.png" alt="opencode-bench" width="18" /> [opencode-bench](https://github.com/anomalyco/opencode-bench) — ⭐ 64
-- <img src="https://github.com/EleutherAI.png" alt="lm-evaluation-harness" width="18" /> [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) — ⭐ 12,342
-- <img src="https://github.com/prometheus-eval.png" alt="Prometheus" width="18" /> [Prometheus](https://github.com/prometheus-eval/prometheus) — ⭐ 315
-- <img src="https://github.com/Hugging-Face-KREW.png" alt="Ko-AgentBench" width="18" /> [Ko-AgentBench](https://github.com/Hugging-Face-KREW/Ko-AgentBench) — ⭐ 64
-- <img src="https://github.com/microsoft.png" alt="agent-lightning" width="18" /> [agent-lightning](https://github.com/microsoft/agent-lightning) — ⭐ 17,042
-- <img src="https://github.com/team-attention.png" alt="hoyeon" width="18" /> [hoyeon](https://github.com/team-attention/hoyeon) — ⭐ 149
-- <img src="https://github.com/HudsonGri.png" alt="mdarena" width="18" /> [mdarena](https://github.com/HudsonGri/mdarena) — empirical benchmarking of CLAUDE.md instruction variants; mines merged PRs, runs agent with/without instruction files, grades by test pass rate + diff overlap; SWE-bench-compatible export
 - <img src="https://github.com/langfuse.png" alt="Langfuse" width="18" /> [Langfuse](https://github.com/langfuse/langfuse) — ⭐ 26,186 — open-source LLM engineering platform: observability, metrics, evals, prompt management, playground, datasets; MIT + managed cloud; self-hostable; integrates LangChain/LlamaIndex/OpenAI/Anthropic/LiteLLM; production observability for deployed agent systems (distinct from pre-deployment benchmarks)
+- <img src="https://github.com/microsoft.png" alt="agent-lightning" width="18" /> [agent-lightning](https://github.com/microsoft/agent-lightning) — ⭐ 17,042
+- <img src="https://github.com/EleutherAI.png" alt="lm-evaluation-harness" width="18" /> [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) — ⭐ 12,342
+- <img src="https://github.com/mozilla-ai.png" alt="any-llm" width="18" /> [any-llm](https://github.com/mozilla-ai/any-llm) — ⭐ 1,926
+- <img src="https://github.com/mozilla-ai.png" alt="any-agent" width="18" /> [any-agent](https://github.com/mozilla-ai/any-agent) — ⭐ 1,156
+- <img src="https://github.com/prometheus-eval.png" alt="Prometheus" width="18" /> [Prometheus](https://github.com/prometheus-eval/prometheus) — ⭐ 315
+- <img src="https://github.com/team-attention.png" alt="hoyeon" width="18" /> [hoyeon](https://github.com/team-attention/hoyeon) — ⭐ 149
+- <img src="https://github.com/anomalyco.png" alt="opencode-bench" width="18" /> [opencode-bench](https://github.com/anomalyco/opencode-bench) — ⭐ 64
+- <img src="https://github.com/Hugging-Face-KREW.png" alt="Ko-AgentBench" width="18" /> [Ko-AgentBench](https://github.com/Hugging-Face-KREW/Ko-AgentBench) — ⭐ 64
+- <img src="https://github.com/mozilla-ai.png" alt="cq" width="18" /> [cq](https://blog.mozilla.ai/cq-stack-overflow-for-agents/) — Mozilla AI shared knowledge commons for agents; query before acting, contribute after — "Stack Overflow for agents"
+- <img src="https://github.com/HudsonGri.png" alt="mdarena" width="18" /> [mdarena](https://github.com/HudsonGri/mdarena) — empirical benchmarking of CLAUDE.md instruction variants; mines merged PRs, runs agent with/without instruction files, grades by test pass rate + diff overlap; SWE-bench-compatible export
 - [CC-Canary](https://github.com/delta-hq/cc-canary) — stdlib-only Python; reads `~/.claude/projects/**/*.jsonl`; measures tool-mix, read:edit ratio, self-admitted errors, stop hook violations, thinking depth; composite health score with argmax regression date detection; **per-session behavioral health monitor** sub-type distinct from capability benchmarks and trace observability; HN 37 pts (2026-04-25)
 
 ---
@@ -368,12 +368,12 @@ They include evaluation harnesses, benchmark references, autonomous research loo
 These references are useful when clawfit evolves into an evidence hub and simulation system.
 They help answer how agents access, structure, retrieve, and reason over external knowledge.
 
+- <img src="https://github.com/opendatalab.png" alt="MinerU" width="18" /> [MinerU](https://github.com/opendatalab/MinerU) — ⭐ 61,356
 - <img src="https://github.com/HKUDS.png" alt="LightRAG" width="18" /> [LightRAG](https://github.com/HKUDS/LightRAG) — ⭐ 34,415
+- <img src="https://github.com/VectifyAI.png" alt="PageIndex" width="18" /> [PageIndex](https://github.com/VectifyAI/PageIndex) — ⭐ 25,871
 - <img src="https://github.com/HKUDS.png" alt="RAG-Anything" width="18" /> [RAG-Anything](https://github.com/HKUDS/RAG-Anything) — ⭐ 19,033
 - <img src="https://github.com/airweave-ai.png" alt="airweave" width="18" /> [airweave](https://github.com/airweave-ai/airweave) — ⭐ 6,266
 - <img src="https://github.com/agentset-ai.png" alt="agentset" width="18" /> [agentset](https://github.com/agentset-ai/agentset) — ⭐ 1,968
-- <img src="https://github.com/VectifyAI.png" alt="PageIndex" width="18" /> [PageIndex](https://github.com/VectifyAI/PageIndex) — ⭐ 25,871
-- <img src="https://github.com/opendatalab.png" alt="MinerU" width="18" /> [MinerU](https://github.com/opendatalab/MinerU) — ⭐ 61,356
 
 ---
 
@@ -381,19 +381,19 @@ They help answer how agents access, structure, retrieve, and reason over externa
 These are not always the main coding engine, but they strongly influence how humans actually operate agents.
 This includes voice input, talk mode, speech interruption, remote relays, terminals, and interaction loops.
 
-- <img src="https://github.com/langchain-ai.png" alt="deep-agents-ui" width="18" /> [deep-agents-ui](https://github.com/langchain-ai/deep-agents-ui) — ⭐ 1,577 — Next.js web UI for deepagents; chat + file monitor + step-through debug (companion to Level 1/2 deepagents)
-- Claude Computer Use — first-party Anthropic desktop control (mouse + keyboard + screen) via Claude Code Desktop + Cowork *(also Level 1)*
-- [Ghostmeet](https://github.com/Higangssh/ghostmeet) — ⭐ 37 — self-hosted Chrome extension for real-time meeting transcription (Whisper) + AI summary (Claude API); fully local, no audio leaves device
-- Superwhisper — https://superwhisper.com/
-- <img src="https://github.com/channprj.png" alt="claude-code-voice" width="18" /> [claude-code-voice](https://github.com/channprj/claude-code-voice) — ⭐ 8
-- <img src="https://github.com/hada0127.png" alt="cc-telegram" width="18" /> [cc-telegram](https://github.com/hada0127/cc-telegram) — ⭐ 14
-- OpenClaw talkmode improvement reference — https://github.com/openclaw/openclaw/pull/53553#issuecomment-4124082023
-- [Ghost Pepper](https://github.com/matthartman/ghost-pepper) — local hold-to-talk STT for macOS (Whisper-based); fully offline, no audio leaves device; privacy-first alternative to Superwhisper for confidential environments
-- <img src="https://github.com/OpenBMB.png" alt="VoxCPM" width="18" /> [VoxCPM](https://github.com/OpenBMB/VoxCPM) — ⭐ 16,083 — tokenizer-free TTS for multilingual speech generation; lower latency voice output layer for agent pipelines; fills Level 7 voice output gap alongside Ghost Pepper (input)
-- [Happy](https://github.com/happy-app/happy) — open-source cross-platform mobile client (iOS/Android/web) for Claude Code + Codex; CLI wrapper approach; first open-source mobile-native Level 7 entry with dual-agent support; introduces `mobile` sub-type for exec/PM users needing agent access without terminal
 - <img src="https://github.com/jamiepine.png" alt="Voicebox" width="18" /> [Voicebox](https://github.com/jamiepine/voicebox) — ⭐ 23,680 — open-source voice synthesis studio; TypeScript-first; voice cloning, style transfer, multi-speaker management; surpasses VoxCPM in star count; natural pairing for TypeScript/Vercel-ecosystem orgs; TypeScript-native voice output sub-type
+- <img src="https://github.com/OpenBMB.png" alt="VoxCPM" width="18" /> [VoxCPM](https://github.com/OpenBMB/VoxCPM) — ⭐ 16,083 — tokenizer-free TTS for multilingual speech generation; lower latency voice output layer for agent pipelines; fills Level 7 voice output gap alongside Ghost Pepper (input)
 - <img src="https://github.com/BasedHardware.png" alt="omi" width="18" /> [omi](https://github.com/BasedHardware/omi) — ⭐ 12,266 — passive ambient AI; continuously watches screen and listens to audio; proactively surfaces suggestions without push-to-activate; Flutter/Dart, cross-platform; "advisor in the room" model for exec/PM personas; new passive-ambient sub-type distinct from hold-to-talk (Ghost Pepper) and dictation (Superwhisper)
 - <img src="https://github.com/thunderbird.png" alt="Thunderbolt" width="18" /> [Thunderbolt](https://github.com/thunderbird/thunderbolt) — ⭐ 4,294 — privacy-first cross-platform AI client (web/iOS/Android/macOS/Linux/Windows); MPL 2.0; compatible with Ollama/llama.cpp/OpenAI-compatible APIs; "choose your models, own your data"; enterprise on-premises deployment; from Thunderbird/Mozilla ecosystem; first on-premises AI client sub-type in Level 7
+- <img src="https://github.com/langchain-ai.png" alt="deep-agents-ui" width="18" /> [deep-agents-ui](https://github.com/langchain-ai/deep-agents-ui) — ⭐ 1,577 — Next.js web UI for deepagents; chat + file monitor + step-through debug (companion to Level 1/2 deepagents)
+- [Ghostmeet](https://github.com/Higangssh/ghostmeet) — ⭐ 37 — self-hosted Chrome extension for real-time meeting transcription (Whisper) + AI summary (Claude API); fully local, no audio leaves device
+- <img src="https://github.com/hada0127.png" alt="cc-telegram" width="18" /> [cc-telegram](https://github.com/hada0127/cc-telegram) — ⭐ 14
+- <img src="https://github.com/channprj.png" alt="claude-code-voice" width="18" /> [claude-code-voice](https://github.com/channprj/claude-code-voice) — ⭐ 8
+- Claude Computer Use — first-party Anthropic desktop control (mouse + keyboard + screen) via Claude Code Desktop + Cowork *(also Level 1)*
+- Superwhisper — https://superwhisper.com/
+- OpenClaw talkmode improvement reference — https://github.com/openclaw/openclaw/pull/53553#issuecomment-4124082023
+- [Ghost Pepper](https://github.com/matthartman/ghost-pepper) — local hold-to-talk STT for macOS (Whisper-based); fully offline, no audio leaves device; privacy-first alternative to Superwhisper for confidential environments
+- [Happy](https://github.com/happy-app/happy) — open-source cross-platform mobile client (iOS/Android/web) for Claude Code + Codex; CLI wrapper approach; first open-source mobile-native Level 7 entry with dual-agent support; introduces `mobile` sub-type for exec/PM users needing agent access without terminal
 - [Zed](https://zed.dev) — GPU-accelerated code editor (Rust, 120fps) with native parallel agents via Threads Sidebar (released 2026-04-22); multiple simultaneous agent threads per window with per-thread AI backend mixing, filesystem scope isolation, and worktree isolation; first IDE to absorb Level 2 multi-agent orchestration as a first-class editor feature; Apache-2.0 open source
 
 ---
