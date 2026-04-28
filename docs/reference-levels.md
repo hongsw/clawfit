@@ -254,7 +254,8 @@ They provide orchestration, better defaults, compatibility layers, workflows, ro
 - Anthropic engineering: [Managed Agents](https://www.anthropic.com/engineering/managed-agents) — hosted long-running agents with stable interfaces independent of model version upgrades; governance/reliability primitive
 - [Claude Code Routines](https://claude.ai/code/routines) — *(research preview, 2026-04)* — first-party Anthropic managed cloud runner; schedule / API / GitHub-event triggers; autonomous sessions on Anthropic infrastructure; `/schedule` CLI; Pro/Max/Team/Enterprise plans — first serverless execution-as-a-service runner native to Claude Code
 - <img src="https://github.com/openai.png" alt="openai-agents-python" width="18" /> [openai-agents-python](https://github.com/openai/openai-agents-python) — ⭐ 21,803 — OpenAI's official lightweight Python multi-agent framework; handoffs, routing, tool calling, async execution; "lightweight" framing vs. LangGraph; vendor-published harness sub-type alongside Claude Code Routines
-- <img src="https://github.com/DureClaw.png" alt="DureClaw" width="18" /> [DureClaw](https://github.com/DureClaw/dureclaw) — ⭐ 1 🔥 **크로스 머신 멀티 에이전트 오케스트레이션** — Claude Code 오케스트레이터 + Phoenix WebSocket 메시지 버스 + oah-agent 워커 3층 아키텍처; 이종 AI 백엔드(claude/opencode/gemini/aider) 지원; Mac/Linux/Windows/Raspberry Pi; MCP 플러그인 정식 배포(`@dureclaw/mcp`); 한국 두레(협동 농경) 철학 기반; **hongsw 직접 제작** — clawfit 레지스트리 설계 방향에 직접적 영향
+- <img src="https://github.com/DureClaw.png" alt="DureClaw" width="18" /> [DureClaw](https://github.com/DureClaw/dureclaw) — ⭐ 1 🔥 **크로스 머신 멀티 에이전트 오케스트레이션** — Claude Code 오케스트레이터 + Phoenix WebSocket 메시지 버스 + oah-agent 워커 3층 아키텍처; 이종 AI 백엔드(claude/opencode/gemini/aider) 지원; Mac/Linux/Windows/Raspberry Pi; MCP 플러그인 정식 배포(`@dureclaw/mcp`); 한국 두레(협동 농경) 철학 기반; **hongsw 직접 제작** — clawfit 레지스트리 설계 방향에 직접적 영향 *(also Level 3 cross-machine team orchestration; also Level 4c via @dureclaw/mcp)*
+- <img src="https://github.com/Q00.png" alt="ouroboros" width="18" /> [ouroboros](https://github.com/Q00/ouroboros) — ⭐ 2,761 — "Agent OS: stop prompting, start specifying"; sits between user and AI runtime (Claude Code / Codex CLI / Hermes / OpenCode); Double-Diamond workflow (interview → seed → run → evaluate) + 9 specialist agents (Socratic Interviewer, Ontologist, Evaluator, …) + Ralph evolutionary loop + PAL cost-tier router + EventStore persistence; spec-driven harness sub-type; ralph-family sibling
 
 ---
 
@@ -286,6 +287,7 @@ Representative references:
 - <img src="https://github.com/obra.png" alt="superpowers" width="18" /> [superpowers](https://github.com/obra/superpowers) — ⭐ 145,706 🔥🔥 agentic skills framework + software development methodology; Shell-first; "that works" reliability framing; largest-starred harness/SSOT repo in this taxonomy; spans Level 3 + Level 4b
 - [claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — ⭐ 43,721 🔥 — agentic engineering curriculum by shanraisshan; Commands/Agents/Skills three-abstraction model; 69 tips from Claude Code creator Boris Cherny; comparative analysis of 10 frameworks; #1 GitHub Trending 2026-04-15; accessible from beginner to advanced
 - <img src="https://github.com/Donchitos.png" alt="Claude-Code-Game-Studios" width="18" /> [Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) — ⭐ 10,395 — domain-specialized Claude Code harness for game development; 49 AI agents + 72 workflow skills; coordination system mirrors real studio hierarchy; Shell-based; first high-signal domain-vertical Level 2/3 harness outside software engineering
+- DureClaw — *(primary Level 2)* — cross-machine multi-agent team coordinator; Phoenix WebSocket message bus + oah-agent workers implement a multi-machine SSOT pattern across Mac/Linux/Windows/Raspberry Pi
 
 ---
 
@@ -305,6 +307,8 @@ Level 4 is splitting into three observable subtypes:
 - <img src="https://github.com/zilliztech.png" alt="claude-context" width="18" /> [claude-context](https://github.com/zilliztech/claude-context) — ⭐ 9,004
 - <img src="https://github.com/garrytan.png" alt="GBrain" width="18" /> [GBrain](https://github.com/garrytan/gbrain) — MIT — personal knowledge base for agents by YC CEO Garry Tan; markdown+PGLite backend; agents read-before/write-after; OpenClaw+Hermes native; CLI via bun; "compounding personal knowledge" sub-pattern
 - <img src="https://github.com/topoteretes.png" alt="cognee" width="18" /> [cognee](https://github.com/topoteretes/cognee) — ⭐ 15,788 — graph-native knowledge engine for AI agent memory; builds knowledge graphs (not just vectors) over documents, code, and conversations; 6-line API; MCP-compatible; multi-LLM; graph-native sub-type for reasoning over relationships
+- <img src="https://github.com/Gentleman-Programming.png" alt="Engram" width="18" /> [Engram](https://github.com/Gentleman-Programming/engram) — ⭐ 2,900 — Go binary persistent memory system for AI coding agents; agent-agnostic (Claude Code / OpenCode / Gemini CLI / Codex / Cursor / Windsurf via MCP); 17 MCP tools + What/Why/Where/Learned schema + session lifecycle hooks (`mem_session_start/end`); SQLite + FTS5; protocol-endpoint shape (Engram exposes memory through MCP) vs. Beads' runtime-layer shape; *(also Level 5 inspectable agent memory sub-pattern)*
+- [wuphf](https://github.com/nex-crm/wuphf) — Karpathy-style LLM wiki maintained by agents in Markdown + Git; multi-agent shared workspace with notebook → wiki promotion + lint gates; human-inspectable agent-maintained memory; vector-DB-free track alongside Beads / Engram / GBrain; *(also Level 5 inspectable agent memory sub-pattern)*
 
 ### 4b. Skill packs & skill managers
 **Skill managers (lifecycle/discovery):**
@@ -383,7 +387,6 @@ This includes voice input, talk mode, speech interruption, remote relays, termin
 - Superwhisper — https://superwhisper.com/
 - <img src="https://github.com/channprj.png" alt="claude-code-voice" width="18" /> [claude-code-voice](https://github.com/channprj/claude-code-voice) — ⭐ 8
 - <img src="https://github.com/hada0127.png" alt="cc-telegram" width="18" /> [cc-telegram](https://github.com/hada0127/cc-telegram) — ⭐ 15
-- <img src="https://github.com/Q00.png" alt="ouroboros" width="18" /> [ouroboros](https://github.com/Q00/ouroboros) — ⭐ 2,000
 - OpenClaw talkmode improvement reference — https://github.com/openclaw/openclaw/pull/53553#issuecomment-4124082023
 - [Ghost Pepper](https://github.com/matthartman/ghost-pepper) — local hold-to-talk STT for macOS (Whisper-based); fully offline, no audio leaves device; privacy-first alternative to Superwhisper for confidential environments
 - <img src="https://github.com/OpenBMB.png" alt="VoxCPM" width="18" /> [VoxCPM](https://github.com/OpenBMB/VoxCPM) — ⭐ 11,260 — tokenizer-free TTS for multilingual speech generation; lower latency voice output layer for agent pipelines; fills Level 7 voice output gap alongside Ghost Pepper (input)

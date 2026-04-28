@@ -77,6 +77,7 @@ clawfit의 **정식 에코시스템 맵**입니다.
 | [deepagents](https://github.com/langchain-ai/deepagents) | ⭐ 19,379 | LangGraph SDK *(L1 중복)* |
 | [oh-my-pi](https://github.com/can1357/oh-my-pi) | ⭐ 2,681 | Hashline: 동시 멀티에이전트 파일 안전성 해시 검증 |
 | [Anthropic 하네스 설계](https://www.anthropic.com/engineering/harness-design-long-running-apps) | — | 정식 듀얼에이전트 + 스프린트-계약 아키텍처 |
+| [ouroboros](https://github.com/Q00/ouroboros) | ⭐ 2,761 | "Agent OS: stop prompting, start specifying" — Claude Code/Codex/OpenCode/Hermes 위에 올라가는 spec-driven 하네스; Double-Diamond 워크플로우 + 9개 전문 에이전트 + Ralph evolutionary loop + PAL cost-tier router + EventStore; ralph-family 동족 |
 
 ---
 
@@ -194,7 +195,6 @@ Level 4는 세 가지 서브타입으로 분화 중:
 | Claude 컴퓨터 사용 | — | Anthropic 퍼스트파티 데스크탑 제어 (마우스+키보드+화면) *(L1 중복)* |
 | [Ghostmeet](https://github.com/Higangssh/ghostmeet) | ⭐ 32 | 셀프호스팅 AI 미팅 비서 (Whisper 실시간 전사 + Claude 요약) |
 | Superwhisper | — | https://superwhisper.com/ |
-| [ouroboros](https://github.com/Q00/ouroboros) | ⭐ 2,000 | |
 
 ---
 
