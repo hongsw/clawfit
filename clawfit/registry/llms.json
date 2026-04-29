@@ -68,5 +68,15 @@
     "cost_per_1k_tokens": 0.0,
     "context_window": 32768,
     "network": "offline"
+  },
+  {
+    "id": "mistral-medium-3-5",
+    "name": "Mistral Medium 3.5",
+    "provider": "mistral",
+    "tasks": ["qa", "research", "code-gen", "summarization"],
+    "latency": "medium",
+    "cost_per_1k_tokens": 0.0015,
+    "context_window": 256000,
+    "network": "online"
   }
 ]
