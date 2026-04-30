@@ -5,7 +5,7 @@
     "provider": "openai",
     "tasks": ["qa", "research", "code-gen", "data-analysis", "summarization"],
     "latency": "medium",
-    "cost_per_1k_tokens": 0.005,
+    "cost_per_1k_tokens": 0.0025,
     "context_window": 128000,
     "network": "online"
   },
@@ -13,7 +13,7 @@
     "id": "gpt-4o-mini",
     "name": "GPT-4o Mini",
     "provider": "openai",
-    "tasks": ["qa", "classification", "summarization"],
+    "tasks": ["qa", "classification", "summarization", "code-gen"],
     "latency": "low",
     "cost_per_1k_tokens": 0.00015,
     "context_window": 128000,

@@ -6,7 +6,7 @@
     "gpu": true,
     "ram_gb": 320,
     "cost_per_hour": 32.77,
-    "latency": "medium"
+    "latency": "high"
   },
   {
     "id": "aws-cpu-medium",
@@ -42,6 +42,6 @@
     "gpu": false,
     "ram_gb": 8,
     "cost_per_hour": 0.05,
-    "latency": "low"
+    "latency": "medium"
   }
 ]
