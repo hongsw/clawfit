@@ -1,6 +1,6 @@
 # clawfit
 
-> AI 에이전트 + LLM + 하드웨어 추천 엔진 — 58개 도구, 7레이어 에코시스템 맵, 10차원 조직 적합도 스코어링
+> AI 에이전트 + LLM + 하드웨어 추천 엔진 — 76개 도구, 7레이어 에코시스템 맵, 10차원 조직 적합도 스코어링
 
 > Agent + LLM + hardware recommendation engine and evidence hub.
 

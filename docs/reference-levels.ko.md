@@ -32,6 +32,45 @@ clawfit의 **정식 에코시스템 맵**입니다.
 
 ---
 
+### 2026-05-03 신규 신호
+- **Mendral — "하네스는 샌드박스 외부에" (HN 118pts):** Docker/Dagger 창업자 Andrea Luzzardi + Sam Alba. LLM 컨트롤 루프를 백엔드에서 실행하고 도구 실행 시만 샌드박스 API를 호출하는 아키텍처 패턴. 샌드박스는 임시(cattle), 자격증명은 샌드박스 진입 불가. Inngest(내구성 실행) + Blaxel(25ms 재개) 조합. L2 아키텍처 레퍼런스.
+- **DeepSeek V4-Pro (HN 557pts):** 오픈웨이트 1.6T/49B 활성 MoE, 1M 컨텍스트, MIT 라이선스. 입력 $0.000435/1k — GPT-5.5·Claude Opus 4.7 대비 7배 저렴. 오픈소스 중 에이전틱 코딩 SWE-Bench SOTA. V4-Flash(13B 활성, $0.00014/1k)도 동시 출시. clawfit llms.json에 양쪽 추가됨.
+- **microsoft/agent-framework 1.0 (~10k★):** Semantic Kernel(26k★) + AutoGen(50k★) 통합 프레임워크. .NET + Python 지원, 그래프 기반 멀티에이전트 오케스트레이션. 2026-04-03 v1.0 출시. L2 엔터프라이즈 하네스.
+- **acai.sh / Specsmaxxing (HN 157pts):** YAML `feature.yaml` 스펙에 ACID(Acceptance Criteria ID)를 붙여 에이전트가 코드·테스트 전체에 자동 태깅. "스펙이 진실, 현재 동작은 임시" 철학. Apache 2.0 CLI. L3 요구사항-태깅 SSOT 서브타입 후보.
+- **lukilabs/craft-agents-oss (GitHub Trending):** craft.do의 문서 중심 멀티에이전트 데스크탑 앱. 멀티세션 인박스, 스트리밍, 복수 LLM 연결. Claude Agent SDK + Pi SDK 동시 사용. TypeScript, Apache 2.0. L6 문서 중심 데스크탑 서브타입 후보.
+- **xAI Grok 4.3 (2026-04-30 출시):** 2M 컨텍스트(서양 폐쇄형 최대), 네이티브 영상 입력, 슬라이드 생성, 40% 가격 인하. OpenClaw 업데이트에 채택. llms.json 보류 — 독립 벤치마크 확인 후 추가 예정.
+
+### 2026-04-30 신규 신호
+- **Warp 오픈소스 (⭐42,313, +11,955/일 신기록):** OpenAI를 창립 스폰서로 터미널/ADE 전환. clawfit 추적 역대 최고 속도. 벤더가 타사 에이전트 서페이스를 직접 후원하는 최초 사례. L6 primary + L2(Oz 클라우드 오케스트레이션) + L1(내장 코딩 에이전트) 멀티레이어 붕괴.
+- **memvid (⭐15.3k, Apache-2.0):** 단일 `.mv2` 이식형 바이너리 메모리 컨테이너 (WAL + HNSW + BM25 + TOC). Rust v2.0, P50 검색 0.025ms. L4a 메모리 세 번째 서브트랙(이식형 바이너리) 확정. L4a에 추가됨.
+- **NVIDIA OpenShell (⭐5.4k, alpha):** NVIDIA의 첫 L1 에이전트 런타임 진입. K3s-in-Docker, 핫 리로드 정책, 개인정보 라우팅. Claude Code·OpenCode·Codex·GitHub Copilot CLI·Ollama 호환. 단일 신호, 레지스트리 미등록.
+- **Mistral "vibe remote agents" + Medium 3.5:** 주요 모델 랩 최초로 "vibe"를 공식 제품명 채택. Dense 128B, 256k ctx, SWE-Bench Verified 77.6%, modified MIT. clawfit llms.json에 추가됨. 4대 벤더(Anthropic/OpenAI/Google/Mistral) 관리형 비동기 에이전트 클러스터 완성.
+- **hongsw/harness (⭐6, 디자인 오리진):** revfactory/harness에 한국어/음성 로케일 오버레이 3개 스킬 추가. locale/voice overlay가 L4b 세 번째 축 후보. DureClaw와 함께 hongsw 2레이어 디자인 오리진 레퍼런스로 L2에 추가.
+- **cc-connect (⭐6.7k, Go):** 11개 채팅 플랫폼 + 10개 에이전트 단일 바이너리 브리지. CN 리전 커버리지 강점. L7 메시징 브리지 서브패턴 3번째 데이터포인트 — 패턴 확정.
+- **Zed 1.0 안정화 + Zed for Business (HN 956pts):** 0.x → 1.0 출시, 중앙화 청구·RBAC·팀 관리. ACP 멀티플렉싱(Claude·Codex·OpenCode·Cursor). 엔터프라이즈 적합성 임계값 돌파.
+
+### 2026-04-28 신규 신호 (요약)
+- **cc-switch (⭐52.8k, +892/일):** Claude Code·Codex·Gemini·OpenCode·OpenClaw 통합 프로바이더 전환기. SSOT 원자쓰기·롤백. L3/L4 멀티벤더 anti-lockin 클러스터 최강 신호.
+- **cmux (⭐15.6k, macOS):** OSC 알림·수직 탭 네이티브 터미널. `cmux claude-teams` 통합. L6 터미널 멀티플렉서.
+- **GitNexus (⭐31.5k):** WASM/WebGPU 클라이언트 사이드 코드 그래프-RAG, MCP 16개 도구. L4a/L4c.
+- **dirac:** Cline 포크, Terminal-Bench 2.0 1위(65.2%). MCP 비채택 명시. Gemini flash로 소형 모델 에이전트 생산성 입증.
+- **Engram + wuphf:** L4a SQLite+MCP-native 메모리 클러스터. 인스펙터블 메모리 서브패턴 확정. L4a 추가됨.
+- **claw0 (⭐2,385):** OpenClaw 구현 10섹션 커리큘럼, 3개국어. L3 에이전트 내부 구조 리터러시 서브패턴 3번째 데이터포인트.
+- **GitHub Copilot PRU→AI Credits 전환 (2026-06-01):** Anthropic의 Claude Code Pro 폐지와 함께 6주 안에 최대 2개 벤더가 사용량 기반 요금으로 수렴. `pricing_tier: paid` 예측력 약화.
+
+### 2026-04-08 ~ 2026-04-27 신규 신호 (요약)
+- **Claude Mythos Preview:** 새 Anthropic 모델 티어. 장기 태스크·보안 도메인 특화. Glasswing AI 거버넌스 프레임워크.
+- **Harness Engineering 패러다임 명명:** "프롬프트 엔지니어링 → 컨텍스트 엔지니어링 → 하네스 엔지니어링(2025–2026)" 4년 회고록 GeekNews 1위. L2–L3 강조 검증.
+- **obra/superpowers (⭐145k+):** 하네스/SSOT 중 최대 스타 리포. Shell 기반 에이전틱 스킬 + 방법론. L3/L4b.
+- **Archon (⭐15k):** 하네스 빌더(하네스를 생성하는 메타 도구). 결정론적·반복 가능 프레임 L2 새 서브타입.
+- **Twill.ai / rowboat / multica:** 비동기 클라우드 에이전트 위임, 메모리-퍼스트 AI 동료, 팀 중심 멀티에이전트 관리. L1–L2 전반.
+- **Shannon (⭐36k):** AI 자율 침투 테스터. 단일 비-코딩 도메인(보안) 특화 L1 에이전트. `security-testing` 태스크 라벨 신설 검토.
+- **Thunderbolt (Mozilla, ⭐2.2k):** 프라이버시 퍼스트 크로스플랫폼 AI 클라이언트. `data_sensitivity: confidential` + `governance_need: hard` 프로파일용. L7.
+- **Qwen3.6-35B-A3B:** 오픈웨이트 에이전틱 코딩 MoE. 오프라인 저예산 프로파일 유력 후보. SWE-bench 확인 후 등록 검토.
+- **Freestyle:** sub-700ms 부팅 클라우드 Linux VM, 라이브 포크·pause/resume. L2 실행 기판 제품 카테고리화 신호.
+
+---
+
 ## Level 1 — 기본 런타임 / 주요 에이전트 서페이스
 
 사용자가 기본 환경으로 가장 직접적으로 선택하는 도구들.
