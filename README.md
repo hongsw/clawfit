@@ -266,7 +266,7 @@ clawfit/
 ├─ docs/
 │  ├─ reference-levels.md   ← ecosystem map v0.3 (7-layer taxonomy)
 │  ├─ research-watch/       ← 70+ signal analysis docs (daily scan)
-│  └─ pages/                ← ecosystem-overview, ecosystem-axes, maturity-layer-map
+│  └─ pages/                ← ecosystem-overview, ecosystem-axes, maturity-layer-map, inference-runtime-axis
 ├─ data/
 │  └─ tools_registry.json   ← mirror of clawfit/data/
 ├─ tests/
@@ -282,6 +282,7 @@ clawfit/
 clawfit tracks a broader AI tooling landscape documented in:
 - [`docs/reference-levels.md`](docs/reference-levels.md) — canonical 7-layer ecosystem map
 - [`docs/pages/ecosystem-axes.md`](docs/pages/ecosystem-axes.md) — classification logic, boundary rules, worked examples
+- [`docs/pages/inference-runtime-axis.md`](docs/pages/inference-runtime-axis.md) — companion axis for local runtime / serving / optimization substrate decisions
 - [`docs/research-watch/`](docs/research-watch/) — 70+ individual tool/trend analysis documents (daily automated scan)
 - [`docs/pages/maturity-layer-map.md`](docs/pages/maturity-layer-map.md) — how user maturity stages (1–11) map to tool layers (L1–L7)
 
