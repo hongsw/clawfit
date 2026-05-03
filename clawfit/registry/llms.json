@@ -78,5 +78,25 @@
     "cost_per_1k_tokens": 0.0015,
     "context_window": 256000,
     "network": "online"
+  },
+  {
+    "id": "deepseek-v4-pro",
+    "name": "DeepSeek V4-Pro",
+    "provider": "deepseek",
+    "tasks": ["code-gen", "research", "qa", "summarization"],
+    "latency": "medium",
+    "cost_per_1k_tokens": 0.000435,
+    "context_window": 128000,
+    "network": "online"
+  },
+  {
+    "id": "deepseek-v4-flash",
+    "name": "DeepSeek V4-Flash",
+    "provider": "deepseek",
+    "tasks": ["qa", "summarization", "code-gen"],
+    "latency": "low",
+    "cost_per_1k_tokens": 0.00014,
+    "context_window": 128000,
+    "network": "online"
   }
 ]
