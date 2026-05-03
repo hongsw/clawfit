@@ -146,8 +146,8 @@ def score_combination(
 
     if maturity_stage is not None:
         mat = _maturity_score(agent, maturity_stage) * 0.15
-        # Redistribute: reduce base weight to make room for maturity
-        return round(min(lat + cost * 0.85 + pref + base * 0.67 + mat, 1.0), 3)
+        # lat=0.50, cost=0.20, pref=0.15, mat=0.15 → sum=1.00
+        return round(min(lat + cost * 0.80 + pref + mat, 1.0), 3)
 
     return round(min(lat + cost + pref + base, 1.0), 3)
 

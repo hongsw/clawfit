@@ -9,10 +9,10 @@
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │  L7  Human Interface / Voice / Input-Output                     │
-│       Zed 1.0, cmux, Warp, cc-connect, Ghost Pepper, voicebox   │
+│       Voicebox, VoxCPM, Ghost Pepper, Zed 1.0, cc-connect       │
 ├─────────────────────────────────────────────────────────────────┤
-│  L6  Workflow Surfaces / Dev Environments                        │
-│       Zed Parallel Agents, cmux, Warp (ADE), craft-agents-oss   │
+│  L6  Data / Evidence / Knowledge Infrastructure                 │
+│       MinerU, LightRAG, PageIndex, RAG-Anything, airweave        │
 ├─────────────────────────────────────────────────────────────────┤
 │  L5  Research / Evaluation / Benchmark / Autoresearch           │
 │       autoresearch, SWE-bench, mini-swe-agent, memvid, Engram   │
@@ -95,7 +95,7 @@ Several tools intentionally span multiple levels. This is a named pattern ("mult
 Tool                Primary    Secondary   Why it spans
 ──────────────────  ─────────  ──────────  ──────────────────────────────
 deepagents          L2         L1          CLI = base agent; SDK = harness
-Warp                L6         L2, L1      Terminal + Oz platform + agent
+Warp                L7         L2, L1      Terminal + Oz platform + agent
 DureClaw            L2         L4c, L3     Orchestration + MCP + SSOT signals
 cc-switch           L4c        L3          Provider switcher + atomic SSOT writes
 memvid              L4a        L5          Memory store + research/benchmark signals
@@ -166,7 +166,7 @@ L2  Harnesses               ←→           agent.statefulness
 L3  SSOT / governance       ←→           (future: governance_need filter)
 L4  Capability extension    ←→           (future: capability_tag filter)
 L5  Research / evaluation   ←→           (future: benchmark_source field)
-L6  Workflow surfaces       ←→           (implicit in agent UX type)
+L6  Data / knowledge infra  ←→           (future: knowledge_backend filter)
 L7  Human interfaces        ←→           (implicit in agent delivery)
                                          llm.cost_per_1k_tokens
                                          llm.latency
