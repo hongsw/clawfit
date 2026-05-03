@@ -52,20 +52,20 @@ It is three things in one:
 
 ---
 
-## 🔥 What's hot right now (2026-04/05)
+## 🔥 What's hot right now (2026-05-03)
 
 | Signal | Why it matters | Level |
 |--------|---------------|-------|
-| **[Warp](https://github.com/warpdotdev/warp) ⭐42.3k** | Open-sourced terminal/ADE with OpenAI as founding sponsor. +11,955★ in one day — new velocity record. | L6/L2/L1 |
-| **[Zed 1.0](https://github.com/zed-industries/zed)** | Stable release + Zed for Business. ACP multiplexing (Claude/Codex/OpenCode/Cursor) + enterprise RBAC. | L7 |
-| **[cc-switch](https://github.com/hongsw/cc-switch) ⭐52.8k** | Cross-CLI provider switcher: Claude Code, Codex, Gemini, OpenCode, OpenClaw unified under one SSOT. | L3/L4 |
-| **[memvid](https://github.com/memvid/memvid) ⭐15.3k** | Single-file `.mv2` portable-binary memory container. 0.025ms P50 retrieval; third L4a memory sub-track. | L4a |
-| **[Mistral Medium 3.5](https://mistral.ai) 🆕** | Dense 128B, 256k ctx, SWE-Bench Verified 77.6%. "Vibe Remote Agents" — first major lab to adopt "vibe" in product name. | LLM |
-| **[superpowers](https://github.com/obra/superpowers) ⭐145k** | Largest-starred harness/SSOT repo. Shell-first agentic skills framework + methodology. | L3/L4b |
-| **[NVIDIA OpenShell](https://github.com/NVIDIA/OpenShell) ⭐5.4k** | First L1 entry from NVIDIA. Embedded-K3s-in-Docker sandbox; runtime-agnostic. | L1 |
-| **[DureClaw](https://github.com/DureClaw/dureclaw) 🔥** | Cross-machine multi-agent orchestration. Claude Code + Phoenix WebSocket + heterogeneous backends. By hongsw. | L2/L4c |
-| **[cmux](https://github.com/cmux/cmux) ⭐15.6k** | Native macOS terminal multiplexer with `claude-teams` integration. | L6 |
-| **[GitNexus](https://github.com/gitnexus/gitnexus) ⭐31.5k** | Code-specialized graph-RAG with WASM/WebGPU client-side mode. 16 MCP tools. | L4a/L4c |
+| **[DeepSeek V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) 🆕** | 1.6T/49B MoE, SWE-Bench Verified 80.6 (ties Claude Opus 4.6), MIT, $0.44/M — strongest open-weight coding model to date. V4-Flash companion runs on M5 MacBook offline. | LLM |
+| **[xAI Grok 4.3](https://x.ai/news) 🆕** | 37–83% price cut vs 4.20; 1M ctx; GDPval-AA ELO 1500 (+321, largest single-release jump tracked). Now cheaper than Mistral Medium 3.5 at comparable capability. | LLM |
+| **[Microsoft Agent Framework v1.0](https://github.com/microsoft/agent-framework) ⭐10k** | AutoGen + Semantic Kernel formally consolidated. Graph-based multi-agent workflows, YAML agent definitions, MCP/A2A, Azure Durable Functions hosting. First enterprise-grade stable multi-agent SDK. | L2 |
+| **[acai.sh](https://github.com/acai-sh/acai) 🔥** | ACID spec-first dev: greppable requirement IDs embedded in code+tests → bidirectional traceability. HN 158pts/171 comments. Elixir/Phoenix dashboard with agent self-assignment API. | L3/L4b |
+| **[craft-agents-oss](https://github.com/lukilabs/craft-agents-oss) ⭐5.7k** | Document-centric desktop agent. Claude Agent SDK + Pi SDK dual-backend. 32+ MCP tools for doc operations. Headless server mode. v0.9.0 Apache 2.0. | L6 |
+| **[TradingAgents](https://github.com/TauricResearch/TradingAgents) ⭐57.7k** | Highest-starred domain-specialized multi-agent framework (+2,023★/day velocity). Financial trading role hierarchy: analyst → risk → execution. Second non-coding domain cluster confirmed. | L1 |
+| **[spawn-agent](https://github.com/millionco/spawn-agent)** | Adapter: local coding agents (Claude Code, Codex CLI) ↔ Vercel AI SDK model endpoints. Collapses SDK-vs-CLI divide without code change. Inverse of cc-switch. | L4c |
+| **[Warp](https://github.com/warpdotdev/warp) ⭐42.3k** | Open-sourced terminal/ADE. +11,955★/day record. OpenAI founding sponsor. Oz platform + agent surface. | L7/L2/L1 |
+| **[cc-switch](https://github.com/hongsw/cc-switch) ⭐52.8k** | Cross-CLI provider switcher: Claude Code, Codex, Gemini, OpenCode unified under one SSOT. | L3/L4c |
+| **[superpowers](https://github.com/obra/superpowers) ⭐145k** | Largest-starred harness/SSOT repo. Shell-first agentic skills + SSOT methodology. | L3/L4b |
 
 Full analysis in [`docs/research-watch/`](docs/research-watch/) (150+ docs) · Full map in [`docs/reference-levels.md`](docs/reference-levels.md)
 
@@ -75,6 +75,7 @@ Full analysis in [`docs/research-watch/`](docs/research-watch/) (150+ docs) · F
 
 | Date | What changed |
 |------|-------------|
+| 2026-05-03 | Daily scan: DeepSeek V4-Pro (SWE-Bench 80.6, MIT, $0.44/M), xAI Grok 4.3 (83% cheaper, ELO +321), MS Agent Framework v1.0 (AutoGen+SK consolidated), acai.sh ACID spec-first, craft-agents-oss L6, TradingAgents 57.7k★. Scoring maturity weight bug fixed (was 1.0795, now exact 1.0). L6 diagram corrected. 9 research-watch docs. |
 | 2026-04-30 | Daily scan: Warp open-source +11,955★/day record, Zed 1.0 stable, Mistral Medium 3.5 → llms.json, NVIDIA OpenShell L1, memvid L4a portable-binary, cc-connect L7 3rd datapoint, hongsw/harness L2. 7 research-watch docs. |
 | 2026-04-28 | All GitHub star counts refreshed. All taxonomy bullet lists and tables sorted by star count (descending). Daily scans 04-21 through 04-28: cc-switch 52.8k★, cmux 15.6k★, GitNexus 31.5k★, dirac TB2 leader, Engram+wuphf L4a, DureClaw L3 SSOT confirmed. 12 research-watch docs. |
 | 2026-04-20 | Thunderbolt Mozilla AI client L7, OpenMythos loop-transformer signal, Qwen3.6-35B-A3B open-weight agentic coding. |
