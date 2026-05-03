@@ -52,18 +52,18 @@ It is three things in one:
 
 ---
 
-## 🔥 What's hot right now (2026-05-03)
+## 🔥 What's hot right now (2026-05-04)
 
 | Signal | Why it matters | Level |
 |--------|---------------|-------|
-| **[DeepSeek V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) 🆕** | 1.6T/49B MoE, SWE-Bench Verified 80.6 (ties Claude Opus 4.6), MIT, $0.44/M — strongest open-weight coding model to date. V4-Flash companion runs on M5 MacBook offline. | LLM |
-| **[xAI Grok 4.3](https://x.ai/news) 🆕** | 37–83% price cut vs 4.20; 1M ctx; GDPval-AA ELO 1500 (+321, largest single-release jump tracked). Now cheaper than Mistral Medium 3.5 at comparable capability. | LLM |
-| **[Microsoft Agent Framework v1.0](https://github.com/microsoft/agent-framework) ⭐10k** | AutoGen + Semantic Kernel formally consolidated. Graph-based multi-agent workflows, YAML agent definitions, MCP/A2A, Azure Durable Functions hosting. First enterprise-grade stable multi-agent SDK. | L2 |
-| **[acai.sh](https://github.com/acai-sh/acai) 🔥** | ACID spec-first dev: greppable requirement IDs embedded in code+tests → bidirectional traceability. HN 158pts/171 comments. Elixir/Phoenix dashboard with agent self-assignment API. | L3/L4b |
-| **[craft-agents-oss](https://github.com/lukilabs/craft-agents-oss) ⭐5.7k** | Document-centric desktop agent. Claude Agent SDK + Pi SDK dual-backend. 32+ MCP tools for doc operations. Headless server mode. v0.9.0 Apache 2.0. | L6 |
-| **[TradingAgents](https://github.com/TauricResearch/TradingAgents) ⭐57.7k** | Highest-starred domain-specialized multi-agent framework (+2,023★/day velocity). Financial trading role hierarchy: analyst → risk → execution. Second non-coding domain cluster confirmed. | L1 |
-| **[spawn-agent](https://github.com/millionco/spawn-agent)** | Adapter: local coding agents (Claude Code, Codex CLI) ↔ Vercel AI SDK model endpoints. Collapses SDK-vs-CLI divide without code change. Inverse of cc-switch. | L4c |
-| **[Warp](https://github.com/warpdotdev/warp) ⭐42.3k** | Open-sourced terminal/ADE. +11,955★/day record. OpenAI founding sponsor. Oz platform + agent surface. | L7/L2/L1 |
+| **[ruflo](https://github.com/ruvnet/ruflo) ⭐38.8k** | Multi-agent swarm orchestration for Claude Code — 100+ agents, SONA neural learning, HNSW vector memory, zero-trust federation (mTLS). +1,834★ today. v3.6.10 MIT. | L2 |
+| **[TradingAgents](https://github.com/TauricResearch/TradingAgents) ⭐65.1k** | +3,315★ today (new daily record). Highest-starred domain-specialized multi-agent framework. Financial analyst→risk→execution role hierarchy. | L1 |
+| **[n8n-mcp](https://github.com/czlonkowski/n8n-mcp) ⭐19.5k** | MCP server exposing 1,650+ n8n workflow nodes to Claude — bridges workflow automation platforms into agent tool-use. Added to L4c map today. | L4c |
+| **[ouroboros](https://github.com/Q00/ouroboros) ⭐3.2k** | "Agent OS: Stop prompting. Start specifying." — Interview→Seed→Execute→Evaluate loop; ambiguity scoring ≤0.2 before any code runs; Ralph persistent runner. | L2/L3 |
+| **[cocoindex](https://github.com/cocoindex-io/cocoindex) ⭐7.7k** | Incremental data-pipeline engine for long-horizon agents. Rust core, delta-only reprocessing (10× cost reduction), Apache 2.0, v1.0.2. Added to L6 map today. | L6 |
+| **[DeepSeek V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)** | SWE-Bench Verified 80.6 (ties Opus 4.6), MIT, $0.44/M, 1M ctx. V4-Flash runs offline on M5 MacBook. Best open-weight coding model. | LLM |
+| **[xAI Grok 4.3](https://x.ai/news)** | 37–83% price cut; GDPval-AA ELO 1500 (+321, largest single-release jump tracked); 1M ctx; always-on reasoning. | LLM |
+| **[Microsoft Agent Framework v1.0](https://github.com/microsoft/agent-framework) ⭐10k** | AutoGen + Semantic Kernel consolidated. Graph-based multi-agent, YAML agent defs, MCP/A2A, Azure Durable Functions. First enterprise-stable multi-agent SDK. | L2 |
 | **[cc-switch](https://github.com/hongsw/cc-switch) ⭐52.8k** | Cross-CLI provider switcher: Claude Code, Codex, Gemini, OpenCode unified under one SSOT. | L3/L4c |
 | **[superpowers](https://github.com/obra/superpowers) ⭐145k** | Largest-starred harness/SSOT repo. Shell-first agentic skills + SSOT methodology. | L3/L4b |
 
@@ -75,6 +75,7 @@ Full analysis in [`docs/research-watch/`](docs/research-watch/) (150+ docs) · F
 
 | Date | What changed |
 |------|-------------|
+| 2026-05-04 | Daily scan: ruflo ⭐38.8k L2 (Claude swarm orchestration), TradingAgents +3,315★/day now 65.1k, ouroboros Agent OS spec-first harness, cocoindex L6 incremental pipeline, n8n-mcp L4c (1,650+ nodes). n8n-mcp + CocoIndex added to reference-levels.md. 5 research-watch docs. scoring clean. |
 | 2026-05-03 | Daily scan: DeepSeek V4-Pro (SWE-Bench 80.6, MIT, $0.44/M), xAI Grok 4.3 (83% cheaper, ELO +321), MS Agent Framework v1.0 (AutoGen+SK consolidated), acai.sh ACID spec-first, craft-agents-oss L6, TradingAgents 57.7k★. Scoring maturity weight bug fixed (was 1.0795, now exact 1.0). L6 diagram corrected. 9 research-watch docs. |
 | 2026-04-30 | Daily scan: Warp open-source +11,955★/day record, Zed 1.0 stable, Mistral Medium 3.5 → llms.json, NVIDIA OpenShell L1, memvid L4a portable-binary, cc-connect L7 3rd datapoint, hongsw/harness L2. 7 research-watch docs. |
 | 2026-04-28 | All GitHub star counts refreshed. All taxonomy bullet lists and tables sorted by star count (descending). Daily scans 04-21 through 04-28: cc-switch 52.8k★, cmux 15.6k★, GitNexus 31.5k★, dirac TB2 leader, Engram+wuphf L4a, DureClaw L3 SSOT confirmed. 12 research-watch docs. |
