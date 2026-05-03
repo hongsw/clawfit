@@ -245,6 +245,16 @@ Some tools (e.g., Modo) embed L2 orchestration and L3 SSOT features inside a L1 
 ### Token efficiency interventions (L4b + L4c)
 Two complementary tools: rtk (L4c) compresses *inputs* to the LLM (shell output); caveman (L4b) compresses *outputs* from the LLM (prose). Together they form a "token efficiency layer" that reduces cost without changing the model or task. Future scoring in clawfit may need a `token_efficiency_modifier` axis.
 
+### Inference-runtime substrate axis (cross-cutting companion map)
+A growing set of important tools do not fit cleanly if we only ask what *layer* they occupy. Projects such as vLLM, llama.cpp, Ollama, MLX, TensorRT-LLM, FlashAttention, Unsloth, and DeepSpeed also define a separate decision surface: **how models are actually executed efficiently on real hardware**.
+
+This is not a replacement for the 7-layer taxonomy. It is a companion axis that cuts across it. The useful questions are:
+- is this primarily a local runtime, serving engine, fine-tuning substrate, optimization primitive, or portability layer?
+- what hardware affinity does it have (Apple Silicon, consumer CPU/GPU, NVIDIA datacenter GPU, edge/mobile, mixed-device cluster)?
+- what is it optimizing for (throughput, latency, VRAM efficiency, portability, simplicity)?
+
+See: [inference-runtime-axis.md](./inference-runtime-axis.md)
+
 ### Governance layer expansion (L3)
 L3 originally meant CLAUDE.md (workflow rules). As of 2026-04 it now includes three SSOT sub-types:
 - **Workflow**: CLAUDE.md, AGENTS.md

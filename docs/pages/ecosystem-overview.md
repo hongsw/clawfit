@@ -5,6 +5,7 @@ This page is the simplest entry point into the current `clawfit` map.
 ## Start here
 - **Main map:** [reference-levels.md](../reference-levels.md)
 - **Adoption maturity map:** [adoption-levels.md](./adoption-levels.md)
+- **Inference-runtime substrate axis:** [inference-runtime-axis.md](./inference-runtime-axis.md)
 
 ## Core post series
 - [Why `oh-my-claudecode` matters: the start of the agent harness trend](../posts/2026-03-28-oh-my-claudecode-harness-trend.md)
@@ -27,6 +28,7 @@ This page is the simplest entry point into the current `clawfit` map.
 - data / knowledge infrastructure
 - human interface / voice layers
 - methodology signals
+- inference-runtime substrate fit
 
 ## Why this page exists
 As the docs grow, we need stable hub pages that later map cleanly into GitHub Pages.

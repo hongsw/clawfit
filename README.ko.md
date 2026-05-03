@@ -291,7 +291,7 @@ clawfit/
 ├─ docs/
 │  ├─ reference-levels.md   ← 에코시스템 맵 v0.3 (7레이어 분류체계)
 │  ├─ research-watch/       ← 70개+ 신호 분석 문서 (데일리 자동 스캔)
-│  └─ pages/                ← ecosystem-overview, ecosystem-axes, maturity-layer-map
+│  └─ pages/                ← ecosystem-overview, ecosystem-axes, maturity-layer-map, inference-runtime-axis
 ├─ data/
 │  └─ tools_registry.json   ← clawfit/data/ 미러
 ├─ tests/
@@ -307,6 +307,7 @@ clawfit/
 clawfit은 더 넓은 AI 도구 생태계를 추적합니다:
 - [`docs/reference-levels.md`](docs/reference-levels.md) — 정식 7레이어 에코시스템 맵
 - [`docs/pages/ecosystem-axes.md`](docs/pages/ecosystem-axes.md) — 분류 로직, 경계 규칙, 예제
+- [`docs/pages/inference-runtime-axis.md`](docs/pages/inference-runtime-axis.md) — 로컬 런타임 / 서빙 / 최적화 기판을 보는 보조 축
 - [`docs/research-watch/`](docs/research-watch/) — 70개+ 도구/트렌드 분석 (매일 자동 스캔)
 - [`docs/pages/maturity-layer-map.md`](docs/pages/maturity-layer-map.md) — 성숙도 단계(1-11) × 도구 레이어(L1-L7) 매핑
 
