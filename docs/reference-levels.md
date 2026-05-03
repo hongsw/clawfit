@@ -15,12 +15,39 @@ It is **not** the adoption/maturity ladder (that lives separately), and it is al
 ### Current scope
 - primary focus: AI coding agents, LLM agent runtimes, harnesses, workflows, capabilities, interfaces, and closely related infrastructure
 - includes: open-source projects, references, and selected commercial products when they are structurally important to the map
-- excludes for now: a full standalone ontology of LLM models/providers themselves (those may need a separate map/registry)
-- region/language: global by default; local ecosystem items may still appear when strategically relevant
+- excludes: full standalone LLM model catalogs, general cloud infrastructure, general-purpose developer tools (unless structurally important to the agent layer)
+- region/language: global by default; local ecosystem items may appear when strategically relevant
 
-### Important note
-The numbered levels below should be read as **ecosystem layers / lenses**, not as a sequential maturity ladder.
-Date-stamped scans and discovery notes support this map, but they should increasingly live in separate scan documents over time.
+### How to read the numbered levels
+
+**Layers and lenses, not a maturity ladder.** A tool at Level 4 is not "more advanced" than a tool at Level 1. The levels describe *architectural role*:
+- L1–L2: what runs and wraps the agent
+- L3: what governs the agent's behavior
+- L4: what capabilities the agent has access to
+- L5: how the agent evaluates and learns
+- L6–L7: where the agent interacts with users and data
+
+**Primary + secondary classification.** Many tools span multiple levels. Each tool has one *primary* level (where it does most of its work) and may carry *secondary* levels (where its features genuinely operate). Example: `deepagents` is primary L2 (harness/SDK) with secondary L1 (CLI mode as a base runtime). Appearing in a dated scan note does not constitute level membership.
+
+**Discovery logs vs. canonical taxonomy.** The "New signals as of YYYY-MM-DD" sections below are dated discovery logs — high-velocity research notes that may or may not graduate to stable taxonomy entries. They are preserved here for continuity but will progressively move to `docs/scans/` and `docs/research-watch/`. Only the named Level sections (L1–L7) and the companion axis notes represent the stable canonical taxonomy.
+
+### Companion reference notes
+
+These documents expand on specific axes that cut across the 7-level stack:
+
+| Document | Addresses |
+|----------|-----------|
+| [`inference-runtime-substrate.md`](reference-notes/inference-runtime-substrate.md) | How LLMs actually run on hardware (vLLM, Ollama, llama.cpp, MLX, etc.) |
+| [`hardware-deployment-axis.md`](reference-notes/hardware-deployment-axis.md) | Hardware categories, governance, isolation model |
+| [`missing-recommendation-axes.md`](reference-notes/missing-recommendation-axes.md) | Model governance, autonomy level, task expansion, org profile |
+| [`evidence-schema.md`](reference-notes/evidence-schema.md) | Structured evidence fields for registry entries |
+| [`ontology-hardening-roadmap.md`](reference-notes/ontology-hardening-roadmap.md) | 6-phase roadmap toward a stable comparison model |
+| [`ecosystem-layers-diagram.md`](reference-notes/ecosystem-layers-diagram.md) | Visual reference: layer stack, axes, multi-layer collapse patterns |
+
+### Scan log location
+
+New daily scan summaries: `docs/scans/` · Individual tool deep-dives: `docs/research-watch/`
+See [`docs/scans/README.md`](scans/README.md) for the separation policy.
 
 The older 1–6 structure was useful, but the ecosystem has shifted.
 In particular, recent patterns such as:
