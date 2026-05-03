@@ -1,6 +1,6 @@
 # clawfit
 
-> AI 에이전트 + LLM + 하드웨어 추천 엔진 — 58개 도구, 7레이어 에코시스템 맵, 10차원 조직 적합도 스코어링
+> AI 에이전트 + LLM + 하드웨어 추천 엔진 — 76개 도구, 7레이어 에코시스템 맵, 10차원 조직 적합도 스코어링
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.7%2B-blue)](pyproject.toml)
@@ -19,9 +19,9 @@
 
 세 가지를 하나로 통합합니다:
 
-1. **추천 엔진** — 58개 도구를 10차원으로 스코어링 (태스크 적합도, 성숙도, 역할, 레이어, 팀 규모, 네트워크, 레이턴시, 기능, 복잡도, 예산). 치명적 불일치에는 하드 멀티플라이어 적용 (오프라인 필요 + 온라인 전용 도구 → x0.25).
+1. **추천 엔진** — 76개 도구를 10차원으로 스코어링 (태스크 적합도, 성숙도, 역할, 레이어, 팀 규모, 네트워크, 레이턴시, 기능, 복잡도, 예산). 치명적 불일치에는 하드 멀티플라이어 적용 (오프라인 필요 + 온라인 전용 도구 → x0.25).
 
-2. **에코시스템 맵** — 7레이어 분류체계 (L1 기본 런타임 → L7 휴먼 인터페이스)에 70개 이상의 research-watch 신호 문서. GitHub Trending, GeekNews, Hacker News를 매일 자동 에이전트로 스캔.
+2. **에코시스템 맵** — 7레이어 분류체계 (L1 기본 런타임 → L7 휴먼 인터페이스)에 150개 이상의 research-watch 신호 문서. GitHub Trending, GeekNews, Hacker News를 매일 자동 에이전트로 스캔.
 
 3. **조직 적합도 진단** — 10문항 인터랙티브 설문 (TUI, CLI, 웹)으로 조직 프로파일을 구축하고 우선순위화된 멀티 레이어 도구 스택을 추천.
 
@@ -54,18 +54,18 @@
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
+| **[Warp](https://github.com/warpdotdev/warp) ⭐42.3k** | OpenAI가 창립 스폰서로 참여해 오픈소스화된 터미널/ADE. 하루 +11,955★ — 신규 속도 기록. | L6/L2/L1 |
+| **[Zed 1.0](https://github.com/zed-industries/zed)** | 안정 버전 출시 + Zed for Business. ACP 멀티플렉싱 (Claude/Codex/OpenCode/Cursor) + 엔터프라이즈 RBAC. | L7 |
+| **[cc-switch](https://github.com/hongsw/cc-switch) ⭐52.8k** | 크로스 CLI 프로바이더 전환기: Claude Code, Codex, Gemini, OpenCode, OpenClaw를 하나의 SSOT로 통합. | L3/L4 |
+| **[memvid](https://github.com/memvid/memvid) ⭐15.3k** | 단일 파일 `.mv2` 이식형 바이너리 메모리 컨테이너. 0.025ms P50 검색; L4a 세 번째 메모리 서브트랙. | L4a |
+| **[Mistral Medium 3.5](https://mistral.ai) 🆕** | 128B, 256k ctx, SWE-Bench Verified 77.6%. "Vibe Remote Agents" — 메이저 모델 랩 최초로 "vibe"를 제품명에 채택. | LLM |
 | **[superpowers](https://github.com/obra/superpowers) ⭐145k** | 가장 큰 하네스/SSOT 리포. Shell 기반 에이전틱 스킬 프레임워크 + 방법론. | L3/L4b |
-| **[autoresearch](https://github.com/karpathy/autoresearch) ⭐67.8k** | Karpathy의 자율 ML 연구 루프. 시간당 ~12 실험, 인간 개입 없음. | L5 |
-| **[AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) ⭐57.8k** | 자체 호스팅 AI 플랫폼. 40+ LLM 프로바이더, MCP 호환, 노코드 에이전트 빌더. | L1/L2 |
-| **[claude-mem](https://github.com/thedotmack/claude-mem) ⭐45k** | Claude Code 세션 간 영구 메모리. 훅 + SQLite + Chroma. | L4a |
-| **[pi-mono](https://github.com/badlogic/pi-mono) ⭐32.6k** | 풀스택 에이전트 모노레포: LLM API + 런타임 + CLI + TUI + 웹 UI + Slack + GPU 포드. | L1+2+4c+7 |
-| **[Hermes Agent](https://github.com/NousResearch/hermes-agent) ⭐29.6k** | 자기 개선형 에이전트. 경험에서 스킬 생성. 40+ 도구, 200+ 모델. | L1 |
+| **[NVIDIA OpenShell](https://github.com/NVIDIA/OpenShell) ⭐5.4k** | NVIDIA의 첫 L1 엔트리. K3s-in-Docker 내장 샌드박스; 런타임 무관. | L1 |
 | **[DureClaw](https://github.com/DureClaw/dureclaw) 🔥** | 크로스 머신 멀티 에이전트 오케스트레이션. Claude Code + Phoenix WebSocket + 이종 백엔드. hongsw 직접 제작. | L2/L4c |
-| **[DeepTutor](https://github.com/HKUDS/DeepTutor) ⭐11.7k** | 에이전트 네이티브 개인화 학습. 5 모드, 독립 메모리 TutorBot. | L6/L7 |
-| **[korean-law-mcp](https://github.com/chrisryugj/korean-law-mcp) ⭐1.2k** | 한국 법령 API 39개 → MCP 도구 14개. 컨텍스트 비용 82% 절감. | L4c |
-| **[ATLAS](https://github.com/itigges22/ATLAS) ⭐1.5k** | 로컬 코딩 에이전트: 동결 Qwen3-14B로 LiveCodeBench 74.6%. 작업당 ~$0.004. | L1/L5 |
+| **[cmux](https://github.com/cmux/cmux) ⭐15.6k** | `claude-teams` 통합을 갖춘 네이티브 macOS 터미널 멀티플렉서. | L6 |
+| **[GitNexus](https://github.com/gitnexus/gitnexus) ⭐31.5k** | WASM/WebGPU 클라이언트 사이드 모드를 갖춘 코드 특화 그래프-RAG. MCP 도구 16개. | L4a/L4c |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (70개+ 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (150개+ 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -73,6 +73,9 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-04-30 | 데일리 스캔: Warp 오픈소스 +11,955★/일 기록, Zed 1.0 안정화, Mistral Medium 3.5 → llms.json, NVIDIA OpenShell L1, memvid L4a 이식형 바이너리, cc-connect L7 3번째 데이터포인트, hongsw/harness L2. research-watch 7개 추가. |
+| 2026-04-28 | GitHub 스타 전체 최신화. 분류 목록·테이블 스타순 정렬. 04-21~04-28 데일리 스캔: cc-switch 52.8k★, cmux 15.6k★, GitNexus 31.5k★, dirac TB2 리더, Engram+wuphf L4a, DureClaw L3 SSOT 확인. research-watch 12개 추가. |
+| 2026-04-20 | Thunderbolt Mozilla AI 클라이언트 L7, OpenMythos 루프 트랜스포머 신호, Qwen3.6-35B-A3B 오픈웨이트 에이전틱 코딩. |
 | 2026-04-12 | DureClaw 하이라이트 추가. 신규 도구 8개 (50→58). 태스크 분류 확장: +orchestration, +education, +legal-research. exec 역할 스코어링 수정. |
 | 2026-04-12 | 데일리 스캔: Strix 보안 에이전트, GBrain 개인 지식 베이스 |
 | 2026-04-11 | 데일리 스캔: superpowers 145k★, Archon 하네스 빌더, rowboat 메모리 네이티브, Twill.ai 클라우드 위임 |
@@ -260,7 +263,7 @@ clawfit profile
 
 파이프라인은 의도적으로 단순하고 검사 가능합니다:
 
-1. **레지스트리 로딩** — 58개 도구 정의 + 10필드 org_fit 메타데이터 로드
+1. **레지스트리 로딩** — 76개 도구 정의 + 10필드 org_fit 메타데이터 로드
 2. **프로파일 구축** — 10개 설문 답변 → OrgProfile 변환
 3. **스코어링** — 10차원 + 하드 멀티플라이어로 각 도구 평가
 4. **레이어 그루핑** — 에코시스템 레이어(L1-L7)별 그룹화, 성숙도 단계별 우선순위
@@ -285,12 +288,12 @@ clawfit/
 │  ├─ schemas.py            ← 데이터클래스: Agent, LLM, Hardware, Recommendation
 │  ├─ loader.py             ← registry/*.json 로더
 │  ├─ data/
-│  │  ├─ tools_registry.json  ← 58개 에코시스템 도구 (org_fit 10필드)
+│  │  ├─ tools_registry.json  ← 76개 에코시스템 도구 (org_fit 10필드)
 │  │  └─ org_questions.json   ← 10문항 설문, 3 페이즈
 │  └─ registry/             ← agents.json, llms.json, hardware.json
 ├─ docs/
 │  ├─ reference-levels.md   ← 에코시스템 맵 v0.3 (7레이어 분류체계)
-│  ├─ research-watch/       ← 70개+ 신호 분석 문서 (데일리 자동 스캔)
+│  ├─ research-watch/       ← 150개+ 신호 분석 문서 (데일리 자동 스캔)
 │  └─ pages/                ← ecosystem-overview, ecosystem-axes, maturity-layer-map
 ├─ data/
 │  └─ tools_registry.json   ← clawfit/data/ 미러
@@ -307,7 +310,7 @@ clawfit/
 clawfit은 더 넓은 AI 도구 생태계를 추적합니다:
 - [`docs/reference-levels.md`](docs/reference-levels.md) — 정식 7레이어 에코시스템 맵
 - [`docs/pages/ecosystem-axes.md`](docs/pages/ecosystem-axes.md) — 분류 로직, 경계 규칙, 예제
-- [`docs/research-watch/`](docs/research-watch/) — 70개+ 도구/트렌드 분석 (매일 자동 스캔)
+- [`docs/research-watch/`](docs/research-watch/) — 150개+ 도구/트렌드 분석 (매일 자동 스캔)
 - [`docs/pages/maturity-layer-map.md`](docs/pages/maturity-layer-map.md) — 성숙도 단계(1-11) × 도구 레이어(L1-L7) 매핑
 
 ### 7레이어 구조

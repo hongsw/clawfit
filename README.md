@@ -21,9 +21,9 @@
 
 It is three things in one:
 
-1. **Recommendation engine** — 58 tools scored across 10 dimensions (task fit, maturity, role, layer relevance, team size, network, latency, features, complexity, budget). Hard multipliers penalize critical mismatches (offline required + online-only tool → x0.25).
+1. **Recommendation engine** — 76 tools scored across 10 dimensions (task fit, maturity, role, layer relevance, team size, network, latency, features, complexity, budget). Hard multipliers penalize critical mismatches (offline required + online-only tool → x0.25).
 
-2. **Ecosystem map** — A 7-layer taxonomy (L1 base runtimes → L7 human interfaces) with 70+ research-watch signal documents tracking GitHub Trending, GeekNews, and Hacker News daily via automated agents.
+2. **Ecosystem map** — A 7-layer taxonomy (L1 base runtimes → L7 human interfaces) with 150+ research-watch signal documents tracking GitHub Trending, GeekNews, and Hacker News daily via automated agents.
 
 3. **Org-fit diagnosis** — A 10-question interactive questionnaire (TUI, CLI, or web) that builds an organization profile and recommends a prioritized multi-layer tool stack.
 
@@ -52,22 +52,22 @@ It is three things in one:
 
 ---
 
-## 🔥 What's hot right now (2026-04)
+## 🔥 What's hot right now (2026-04/05)
 
 | Signal | Why it matters | Level |
 |--------|---------------|-------|
+| **[Warp](https://github.com/warpdotdev/warp) ⭐42.3k** | Open-sourced terminal/ADE with OpenAI as founding sponsor. +11,955★ in one day — new velocity record. | L6/L2/L1 |
+| **[Zed 1.0](https://github.com/zed-industries/zed)** | Stable release + Zed for Business. ACP multiplexing (Claude/Codex/OpenCode/Cursor) + enterprise RBAC. | L7 |
+| **[cc-switch](https://github.com/hongsw/cc-switch) ⭐52.8k** | Cross-CLI provider switcher: Claude Code, Codex, Gemini, OpenCode, OpenClaw unified under one SSOT. | L3/L4 |
+| **[memvid](https://github.com/memvid/memvid) ⭐15.3k** | Single-file `.mv2` portable-binary memory container. 0.025ms P50 retrieval; third L4a memory sub-track. | L4a |
+| **[Mistral Medium 3.5](https://mistral.ai) 🆕** | Dense 128B, 256k ctx, SWE-Bench Verified 77.6%. "Vibe Remote Agents" — first major lab to adopt "vibe" in product name. | LLM |
 | **[superpowers](https://github.com/obra/superpowers) ⭐145k** | Largest-starred harness/SSOT repo. Shell-first agentic skills framework + methodology. | L3/L4b |
-| **[autoresearch](https://github.com/karpathy/autoresearch) ⭐67.8k** | Karpathy's autonomous ML research loop. ~12 experiments/hour, no human intervention. | L5 |
-| **[AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) ⭐57.8k** | Self-hosted AI platform. 40+ LLM providers, MCP compatible, no-code agent builder. | L1/L2 |
-| **[claude-mem](https://github.com/thedotmack/claude-mem) ⭐45k** | Cross-session memory for Claude Code via hooks + SQLite + Chroma. | L4a |
-| **[pi-mono](https://github.com/badlogic/pi-mono) ⭐32.6k** | Full-stack agent toolkit monorepo: LLM API + runtime + CLI + TUI + web UI + Slack + GPU pods. | L1+2+4c+7 |
-| **[Hermes Agent](https://github.com/NousResearch/hermes-agent) ⭐29.6k** | Self-improving agent with learning loop. Creates skills from experience. 40+ tools, 200+ models. | L1 |
+| **[NVIDIA OpenShell](https://github.com/NVIDIA/OpenShell) ⭐5.4k** | First L1 entry from NVIDIA. Embedded-K3s-in-Docker sandbox; runtime-agnostic. | L1 |
 | **[DureClaw](https://github.com/DureClaw/dureclaw) 🔥** | Cross-machine multi-agent orchestration. Claude Code + Phoenix WebSocket + heterogeneous backends. By hongsw. | L2/L4c |
-| **[DeepTutor](https://github.com/HKUDS/DeepTutor) ⭐11.7k** | Agent-native personalized learning. 5 modes, TutorBots with independent memory. | L6/L7 |
-| **[korean-law-mcp](https://github.com/chrisryugj/korean-law-mcp) ⭐1.2k** | 39 Korean law APIs → 14 MCP tools. 82% context cost reduction. | L4c |
-| **[ATLAS](https://github.com/itigges22/ATLAS) ⭐1.5k** | Local coding agent: 74.6% LiveCodeBench with frozen Qwen3-14B. ~$0.004/task. | L1/L5 |
+| **[cmux](https://github.com/cmux/cmux) ⭐15.6k** | Native macOS terminal multiplexer with `claude-teams` integration. | L6 |
+| **[GitNexus](https://github.com/gitnexus/gitnexus) ⭐31.5k** | Code-specialized graph-RAG with WASM/WebGPU client-side mode. 16 MCP tools. | L4a/L4c |
 
-Full analysis in [`docs/research-watch/`](docs/research-watch/) (70+ docs) · Full map in [`docs/reference-levels.md`](docs/reference-levels.md)
+Full analysis in [`docs/research-watch/`](docs/research-watch/) (150+ docs) · Full map in [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -75,6 +75,9 @@ Full analysis in [`docs/research-watch/`](docs/research-watch/) (70+ docs) · Fu
 
 | Date | What changed |
 |------|-------------|
+| 2026-04-30 | Daily scan: Warp open-source +11,955★/day record, Zed 1.0 stable, Mistral Medium 3.5 → llms.json, NVIDIA OpenShell L1, memvid L4a portable-binary, cc-connect L7 3rd datapoint, hongsw/harness L2. 7 research-watch docs. |
+| 2026-04-28 | All GitHub star counts refreshed. All taxonomy bullet lists and tables sorted by star count (descending). Daily scans 04-21 through 04-28: cc-switch 52.8k★, cmux 15.6k★, GitNexus 31.5k★, dirac TB2 leader, Engram+wuphf L4a, DureClaw L3 SSOT confirmed. 12 research-watch docs. |
+| 2026-04-20 | Thunderbolt Mozilla AI client L7, OpenMythos loop-transformer signal, Qwen3.6-35B-A3B open-weight agentic coding. |
 | 2026-04-12 | DureClaw highlighted in reference-levels.md. 8 new tools added to registry (50→58). Task taxonomy expanded: +orchestration, +education, +legal-research. Exec role scoring fixed. |
 | 2026-04-12 | Daily scan: Strix security agent, GBrain personal knowledge base added |
 | 2026-04-11 | Daily scan: superpowers 145k★, Archon harness-builder, rowboat memory-native coworker, Twill.ai cloud delegation |
@@ -260,12 +263,12 @@ clawfit/
 │  ├─ schemas.py            ← dataclasses: Agent, LLM, Hardware, Recommendation
 │  ├─ loader.py             ← loads registry/*.json
 │  ├─ data/
-│  │  ├─ tools_registry.json  ← 58 ecosystem tools with org_fit (10 fields each)
+│  │  ├─ tools_registry.json  ← 76 ecosystem tools with org_fit (10 fields each)
 │  │  └─ org_questions.json   ← 10-question bank, 3 phases
 │  └─ registry/             ← agents.json, llms.json, hardware.json
 ├─ docs/
 │  ├─ reference-levels.md   ← ecosystem map v0.3 (7-layer taxonomy)
-│  ├─ research-watch/       ← 70+ signal analysis docs (daily scan)
+│  ├─ research-watch/       ← 150+ signal analysis docs (daily scan)
 │  └─ pages/                ← ecosystem-overview, ecosystem-axes, maturity-layer-map
 ├─ data/
 │  └─ tools_registry.json   ← mirror of clawfit/data/
@@ -282,7 +285,7 @@ clawfit/
 clawfit tracks a broader AI tooling landscape documented in:
 - [`docs/reference-levels.md`](docs/reference-levels.md) — canonical 7-layer ecosystem map
 - [`docs/pages/ecosystem-axes.md`](docs/pages/ecosystem-axes.md) — classification logic, boundary rules, worked examples
-- [`docs/research-watch/`](docs/research-watch/) — 70+ individual tool/trend analysis documents (daily automated scan)
+- [`docs/research-watch/`](docs/research-watch/) — 150+ individual tool/trend analysis documents (daily automated scan)
 - [`docs/pages/maturity-layer-map.md`](docs/pages/maturity-layer-map.md) — how user maturity stages (1–11) map to tool layers (L1–L7)
 
 ### 7-layer structure
