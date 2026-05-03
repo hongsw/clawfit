@@ -230,6 +230,15 @@ So this document now uses a more explicit **7-level structure**.
 - **Production skill packs reach senior practitioners:** Addy Osmani (Google Chrome DevRel) published `agent-skills` — production-grade engineering skills for AI coding agents. First high-credibility Level 4b entry from a named Google engineer.
 
 
+## Companion axis — Inference runtime substrate
+The 7 levels below describe agent-facing tools. Underneath Level 1 sits a distinct layer: the **inference runtime substrate** — the software that actually executes LLMs on hardware. This axis is especially relevant for `network: offline` profiles where users must choose a local inference backend (Ollama, llama.cpp, MLX, vLLM, etc.). It is separate from the hardware filter (`laptop / workstation / cloud`) and from the agent runtime choices at Level 1.
+
+Sub-types: **serving frameworks** (vLLM, FastChat, TensorRT-LLM) · **local runtime + UX** (Ollama, llama.cpp) · **hardware optimizers** (FlashAttention, MLX, MLC LLM) · **distributed home cluster** (exo) · **training substrate** (Unsloth, DeepSpeed, HF Transformers, PyTorch) · **domain-specific** (whisper.cpp)
+
+Full analysis: [`docs/reference-notes/inference-runtime-substrate.md`](reference-notes/inference-runtime-substrate.md) *(addresses GitHub issue #9)*
+
+---
+
 ## Level 1 — Base runtimes / primary agent surfaces
 These are the main user-facing agent runtimes or primary product choices.
 They are the tools users most directly choose as their base environment.
