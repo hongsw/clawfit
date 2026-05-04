@@ -31,29 +31,7 @@ It is three things in one:
 
 ## 🗺 Ecosystem map — 7 layers + substrate
 
-```
-┌──────────────────────────────────────────── 162+ tools tracked ────────────────────────────────────────────┐
-│  L7  Human Interface / Voice / IO        Voicebox · Ghost Pepper · Zed 1.0 · cc-connect                   │
-├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│  L6  Data / Evidence / Knowledge Infra   MinerU · LightRAG · CocoIndex ★7.9k · PageIndex · airweave       │
-├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│  L5  Research / Eval / Benchmark         autoresearch · SWE-bench · Engram · memvid ★15k                  │
-├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│  L4  Capability Extension                                                                                   │
-│  ├─ L4a  Memory         cognee · claude-mem · GitNexus ★31k · memvid                                      │
-│  ├─ L4b  Skills         superpowers ★145k · agency-agents ★92k · obsidian-skills                          │
-│  └─ L4c  Tool / MCP     n8n-mcp ★19k · cc-switch ★52k · GoModel · serena ★23k                            │
-├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│  L3  Team Harness / Executable SSOT      CLAUDE.md · acai.sh · gitagent · gsd · obra/superpowers          │
-├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│  L2  Meta Wrappers / Orchestration       ruflo ★40k · DureClaw · MS Agent Framework · Archon · deepagents │
-├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│  L1  Base Runtimes / Primary Surfaces    Claude Code · Aider · Goose · OpenHands · Cline · OpenCode       │
-├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│  L0* Inference Substrate  (companion axis)   Ollama · vLLM · llama.cpp · MLX · TensorRT-LLM · exo         │
-└────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
-         sits on hardware: laptop · workstation · edge · cloud_api · cloud_vm · cloud_managed
-```
+![Ecosystem Map](docs/assets/ecosystem-map.svg)
 
 > **Map vs registry**: The map tracks 162+ ecosystem tools for awareness. The **recommendation registry** (20 entries: 4 agents × 11 LLMs × 5 hardware) is what `clawfit recommend` scores — curated, validated, schema-bound.
 
