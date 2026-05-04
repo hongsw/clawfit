@@ -98,5 +98,15 @@
     "cost_per_1k_tokens": 0.00014,
     "context_window": 1000000,
     "network": "online"
+  },
+  {
+    "id": "kimi-k2-6",
+    "name": "Kimi K2.6",
+    "provider": "moonshot",
+    "tasks": ["code-gen", "research", "qa", "summarization"],
+    "latency": "medium",
+    "cost_per_1k_tokens": 0.00095,
+    "context_window": 256000,
+    "network": "online"
   }
 ]

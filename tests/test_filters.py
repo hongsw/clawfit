@@ -68,6 +68,44 @@ class TestFilterLLMs(unittest.TestCase):
             self.assertEqual(m.network, "offline")
 
 
+class TestFilterLLMsKimiK26(unittest.TestCase):
+    """Targeted tests for the kimi-k2-6 (moonshot) registry entry."""
+
+    def setUp(self):
+        self.llms = load_llms()
+
+    def test_kimi_k26_present_in_registry(self):
+        ids = [m.id for m in self.llms]
+        self.assertIn("kimi-k2-6", ids)
+
+    def test_kimi_k26_provider_is_moonshot(self):
+        entry = next(m for m in self.llms if m.id == "kimi-k2-6")
+        self.assertEqual(entry.provider, "moonshot")
+
+    def test_kimi_k26_survives_code_gen_task_filter(self):
+        out = filter_llms(self.llms, task="code-gen")
+        ids = [m.id for m in out]
+        self.assertIn("kimi-k2-6", ids)
+
+    def test_kimi_k26_passes_budget_above_cost(self):
+        # cost is 0.00095; a budget of 0.001 must include it
+        out = filter_llms(self.llms, budget=0.001)
+        ids = [m.id for m in out]
+        self.assertIn("kimi-k2-6", ids)
+
+    def test_kimi_k26_excluded_by_budget_below_cost(self):
+        # cost is 0.00095; a budget of 0.0009 must exclude it
+        out = filter_llms(self.llms, budget=0.0009)
+        ids = [m.id for m in out]
+        self.assertNotIn("kimi-k2-6", ids)
+
+    def test_kimi_k26_excluded_by_offline_network(self):
+        # kimi-k2-6 is online-only; offline filter must exclude it
+        out = filter_llms(self.llms, network="offline")
+        ids = [m.id for m in out]
+        self.assertNotIn("kimi-k2-6", ids)
+
+
 class TestFilterHardware(unittest.TestCase):
     def setUp(self):
         self.hw = load_hardware()

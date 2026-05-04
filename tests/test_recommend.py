@@ -83,5 +83,20 @@ class TestRecommend(unittest.TestCase):
         self.assertNotEqual(top_agents_stage5[0], "simple-router")
 
 
+    def test_kimi_k26_appears_in_code_gen_results(self):
+        # kimi-k2-6 supports code-gen at medium latency, $0.00095/1k;
+        # with a permissive budget it must appear somewhere in the ranked list
+        results = recommend(task="code-gen", budget=0.01, top_n=20)
+        llm_ids = [r["llm"] for r in results if "error" not in r]
+        self.assertIn("kimi-k2-6", llm_ids)
+
+    def test_kimi_k26_excluded_when_budget_is_below_its_cost(self):
+        # kimi-k2-6 costs $0.00095/1k; a budget of $0.0009 must exclude it
+        # while allowing cheaper models (e.g. deepseek-v4-flash at $0.00014)
+        results = recommend(task="code-gen", budget=0.0009, top_n=20)
+        llm_ids = [r["llm"] for r in results if "error" not in r]
+        self.assertNotIn("kimi-k2-6", llm_ids)
+
+
 if __name__ == "__main__":
     unittest.main()
