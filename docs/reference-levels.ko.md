@@ -247,6 +247,7 @@ Level 4는 세 가지 서브타입으로 분화 중:
 |---------|------|------|
 | [wuphf](https://github.com/nex-crm/wuphf) | — | 에이전트가 유지하는 Markdown+Git 위키. L4a 기본, L6b 부차 *(첫 확인 구현체)* |
 | GBrain | — | 개인 LLM-네이티브 지식 베이스. L4a 기본, L6b 부차 |
+| [찰떡AI](https://chaltteok-app.baryon.ai/) | 클베 | Baryon Labs (서울). 中企 견적·법무 문서 AI 어시스턴트. 이전 견적·메모 → **LLM이 노드/엣지 지식맵 직접 유지** → 다음 문서 자동 적용. 로컬 전용(클라우드 없음). MCP 모듈 [`chaltteok-app-mcp`](https://github.com/baryonlabs/chaltteok-app-mcp) (Rust, MIT) 오픈소스. 카파시 패턴 국내 첫 구현체. L1 부차(도메인 특화 에이전트 런타임). |
 
 ---
 
