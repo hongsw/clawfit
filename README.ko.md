@@ -1,6 +1,6 @@
 # clawfit
 
-> AI 에이전트 + LLM + 하드웨어 추천 엔진 — 76개 도구, 7레이어 에코시스템 맵, 10차원 조직 적합도 스코어링
+> AI 에이전트 + LLM + 하드웨어 추천 엔진 — **162+ 도구**, **7레이어 생태계 맵**, **186개 리서치워치 문서**, **10차원 스코어링**
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.7%2B-blue)](pyproject.toml)
@@ -19,19 +19,90 @@
 
 세 가지를 하나로 통합합니다:
 
-1. **추천 엔진** — 76개 도구를 10차원으로 스코어링 (태스크 적합도, 성숙도, 역할, 레이어, 팀 규모, 네트워크, 레이턴시, 기능, 복잡도, 예산). 치명적 불일치에는 하드 멀티플라이어 적용 (오프라인 필요 + 온라인 전용 도구 → x0.25).
+1. **추천 엔진** — (에이전트, LLM, 하드웨어) 조합을 6개 가중 차원으로 스코어링. 하드 필터가 불일치를 제거하고, 소프트 멀티플라이어가 세부 조정.
 
-2. **에코시스템 맵** — 7레이어 분류체계 (L1 기본 런타임 → L7 휴먼 인터페이스)에 150개 이상의 research-watch 신호 문서. GitHub Trending, GeekNews, Hacker News를 매일 자동 에이전트로 스캔.
+2. **에코시스템 맵** — 7레이어 분류체계, 162+ 도구를 별 개수와 함께 추적. GitHub Trending / GeekNews / HN을 매일 자동 스캔, 186개 리서치워치 문서.
 
-3. **조직 적합도 진단** — 10문항 인터랙티브 설문 (TUI, CLI, 웹)으로 조직 프로파일을 구축하고 우선순위화된 멀티 레이어 도구 스택을 추천.
+3. **조직 적합도 진단** — 10문항 인터랙티브 설문으로 조직의 제약 벡터를 구축, 우선순위화된 멀티 레이어 도구 스택 반환.
+
+---
+
+## 🗺 에코시스템 맵 — 7레이어 + 기반 서브스트레이트
+
+```
+┌──────────────────────────────────────── 162+ 도구 추적 중 ─────────────────────────────────────────┐
+│  L7  휴먼 인터페이스 / 음성 / 입출력    Voicebox · Ghost Pepper · Zed 1.0 · cc-connect              │
+├────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  L6  데이터 / 지식 인프라               MinerU · LightRAG · CocoIndex ★7.9k · PageIndex · airweave  │
+├────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  L5  리서치 / 평가 / 벤치마크           autoresearch · SWE-bench · Engram · memvid ★15k             │
+├────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  L4  역량 확장                                                                                       │
+│  ├─ L4a  메모리           cognee · claude-mem · GitNexus ★31k · memvid                             │
+│  ├─ L4b  스킬팩           superpowers ★145k · agency-agents ★92k · obsidian-skills                 │
+│  └─ L4c  도구 / MCP       n8n-mcp ★19k · cc-switch ★52k · GoModel · serena ★23k                   │
+├────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  L3  팀 하네스 / 실행 SSOT              CLAUDE.md · acai.sh · gitagent · gsd · obra/superpowers     │
+├────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  L2  메타 래퍼 / 오케스트레이션         ruflo ★40k · DureClaw · MS Agent Framework · Archon          │
+├────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  L1  기본 런타임 / 1차 에이전트 표면    Claude Code · Aider · Goose · OpenHands · Cline · OpenCode  │
+├────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  L0* 추론 서브스트레이트 (동반 축)      Ollama · vLLM · llama.cpp · MLX · TensorRT-LLM · exo        │
+└────────────────────────────────────────────────────────────────────────────────────────────────────┘
+         하드웨어 위에 위치: 노트북 · 워크스테이션 · 엣지 · cloud_api · cloud_vm · cloud_managed
+```
+
+> **맵 vs 레지스트리**: 맵은 162+ 도구를 인식 목적으로 추적. **추천 레지스트리** (20개: 4 에이전트 × 11 LLM × 5 하드웨어)는 `clawfit recommend`가 스코어링하는 검증된 엔트리.
+
+---
+
+## ⚙️ 추천 엔진 축 구조
+
+```
+                    ┌──────────────────────────────────────────────────┐
+   태스크 ────────▶ │              하드 필터                            │ ◀── 네트워크 (온라인/오프라인)
+   code-gen/qa/...  │  태스크 일치 · 레이턴시 · 예산 · 네트워크        │     하드웨어 (클라우드/엣지/로컬)
+                    │  상태유지성 · 하드웨어 타입                       │
+   레이턴시 ──────▶ │──────────────────────────────────────────────────│
+   low/mid/high     │              스코어링                             │ ◀── 예산 ($/1k 토큰)
+                    │  레이턴시 일치   ×0.50                            │
+   성숙도 ────────▶ │  비용 일치       ×0.25  (성숙도 시 ÷×0.80)       │
+   1~11단계         │  LLM 선호도      ×0.15                            │
+                    │  성숙도 적합도   ×0.15  (기준값 대체)             │
+                    └────────────────────┬─────────────────────────────┘
+                                         │
+                                  fit_score 0–1.0
+                                  (에이전트, LLM, 하드웨어) 조합
+```
+
+---
+
+## 📊 숫자로 보는 clawfit
+
+| 지표 | 수치 |
+|------|------|
+| 에코시스템 맵 추적 도구 (7레이어) | **162+** |
+| 리서치워치 신호 문서 | **186개** |
+| 추천 레지스트리 LLM | **11개** |
+| 추천 레지스트리 에이전트 패턴 | **4개** |
+| 추천 레지스트리 하드웨어 프로필 | **5개** |
+| 자동화 테스트 | **29개** |
+| 분류 레이어 (L0–L7) | **8개** |
+| 스코어링 차원 수 | **6개** (레이턴시×3 + 비용 + 선호도 + 성숙도) |
+| 추적된 스캔 날짜 | **24일** (2026-03-31 → 오늘) |
+
+---
 
 ### 누구를 위한 것인가?
 
-- 에이전트 스택을 비교하는 팀 (Claude Code vs OpenClaw vs Aider vs ...)
-- 로컬 vs 클라우드 실행 토폴로지를 결정하는 DevOps
-- AI 도구 도입 전략을 평가하는 경영진
-- AI 에이전트 에코시스템을 매핑하는 연구자
-- 증거 기반 추천 레이어를 구축하려는 모든 사람
+| 당신이 ... | clawfit이 주는 것 |
+|------------|-----------------|
+| 에이전트 스택을 고르는 개발자 | 태스크 + 제약에 맞는 스코어링된 (에이전트, LLM, 하드웨어) 조합 |
+| 로컬 vs 클라우드를 결정하는 DevOps | 네트워크 / 하드웨어 / 비용 하드 필터 — 추측 불필요 |
+| AI 도구 전략을 평가하는 CTO | 162+ 도구 7레이어 생태계 맵, 매일 업데이트 |
+| 에이전트 생태계를 매핑하는 연구자 | 186개 증거 문서 + 별 개수 포함 분류체계 |
+| 현재 동향을 파악하려는 누구든 | 매일 스캔: GitHub Trending + GeekNews + HN, 자동 커밋 |
 
 > [!IMPORTANT]
 > **에코시스템 맵 — 여기서 시작하세요**
@@ -50,22 +121,22 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-04)
+## 🔥 지금 가장 뜨거운 것들 (2026-05-05)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[Warp](https://github.com/warpdotdev/warp) ⭐42.3k** | OpenAI가 창립 스폰서로 참여해 오픈소스화된 터미널/ADE. 하루 +11,955★ — 신규 속도 기록. | L6/L2/L1 |
-| **[Zed 1.0](https://github.com/zed-industries/zed)** | 안정 버전 출시 + Zed for Business. ACP 멀티플렉싱 (Claude/Codex/OpenCode/Cursor) + 엔터프라이즈 RBAC. | L7 |
-| **[cc-switch](https://github.com/hongsw/cc-switch) ⭐52.8k** | 크로스 CLI 프로바이더 전환기: Claude Code, Codex, Gemini, OpenCode, OpenClaw를 하나의 SSOT로 통합. | L3/L4 |
-| **[memvid](https://github.com/memvid/memvid) ⭐15.3k** | 단일 파일 `.mv2` 이식형 바이너리 메모리 컨테이너. 0.025ms P50 검색; L4a 세 번째 메모리 서브트랙. | L4a |
-| **[Mistral Medium 3.5](https://mistral.ai) 🆕** | 128B, 256k ctx, SWE-Bench Verified 77.6%. "Vibe Remote Agents" — 메이저 모델 랩 최초로 "vibe"를 제품명에 채택. | LLM |
-| **[superpowers](https://github.com/obra/superpowers) ⭐145k** | 가장 큰 하네스/SSOT 리포. Shell 기반 에이전틱 스킬 프레임워크 + 방법론. | L3/L4b |
-| **[NVIDIA OpenShell](https://github.com/NVIDIA/OpenShell) ⭐5.4k** | NVIDIA의 첫 L1 엔트리. K3s-in-Docker 내장 샌드박스; 런타임 무관. | L1 |
-| **[DureClaw](https://github.com/DureClaw/dureclaw) 🔥** | 크로스 머신 멀티 에이전트 오케스트레이션. Claude Code + Phoenix WebSocket + 이종 백엔드. hongsw 직접 제작. | L2/L4c |
-| **[cmux](https://github.com/cmux/cmux) ⭐15.6k** | `claude-teams` 통합을 갖춘 네이티브 macOS 터미널 멀티플렉서. | L6 |
-| **[GitNexus](https://github.com/gitnexus/gitnexus) ⭐31.5k** | WASM/WebGPU 클라이언트 사이드 모드를 갖춘 코드 특화 그래프-RAG. MCP 도구 16개. | L4a/L4c |
+| **[agency-agents](https://github.com/msitarzewski/agency-agents) ⭐92.4k** | 144+ 전문 Claude 에이전트 페르소나 (Engineering, Design, Sales, Marketing…) Shell 스크립트. Claude Code, Cursor, Aider, Windsurf 모두 지원. MIT. L4b 맵에 추가됨. | L4b |
+| **[Kimi K2.6](https://moonshotai.github.io/Kimi-K2/) 🆕** | Moonshot AI 1T/32B MoE, SWE-Bench Verified 80.2%, 300 에이전트 스웜 / 4,000 스텝, Modified MIT, $0.95/M. llms.json에 추가됨 (11개 LLM). | LLM |
+| **[TradingAgents](https://github.com/TauricResearch/TradingAgents) ⭐67k** | 오늘 +2,181★. 도메인 특화 멀티 에이전트 프레임워크 중 최다 별. 금융 애널리스트→리스크→실행 역할 계층. | L1 |
+| **[dexter](https://github.com/virattt/dexter) ⭐23k** | virattt(ai-hedge-fund ⭐58k 동일 저자)의 자율 금융 리서치 에이전트. TypeScript/Bun, 자가 검증, 실시간 데이터. | L1 |
+| **[ruflo](https://github.com/ruvnet/ruflo) ⭐40.9k** | Claude Code용 멀티 에이전트 스웜 오케스트레이션. 오늘 +2,594★. 100+ 에이전트, SONA 학습, mTLS 페더레이션. | L2 |
+| **[n8n-mcp](https://github.com/czlonkowski/n8n-mcp) ⭐19.8k** | 1,650+ n8n 워크플로우 노드를 Claude 도구 사용으로 브리지하는 MCP 서버. L4c 맵 05-04 추가. | L4c |
+| **[cocoindex](https://github.com/cocoindex-io/cocoindex) ⭐7.9k** | 장기 에이전트용 증분 데이터 파이프라인 엔진. Rust 코어, 델타 전용 재처리 (10× 비용 절감). L6 맵 05-04 추가. | L6 |
+| **[DeepSeek V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)** | SWE-Bench 80.6, MIT, $0.44/M, 1M ctx — 오픈웨이트 최고 코딩 모델. V4-Flash는 M5 MacBook 오프라인 가동. | LLM |
+| **[cc-switch](https://github.com/hongsw/cc-switch) ⭐52.8k** | 크로스 CLI 프로바이더 전환기: Claude Code, Codex, Gemini, OpenCode를 하나의 SSOT로 통합. | L3/L4c |
+| **[superpowers](https://github.com/obra/superpowers) ⭐145k** | 가장 큰 하네스/SSOT 리포. Shell 기반 에이전틱 스킬 + SSOT 방법론. | L3/L4b |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (150개+ 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (186개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -73,6 +144,9 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-05-05 | 도식 다이어그램·통계 추가. 데일리 스캔: agency-agents ⭐92.4k → L4b 맵, Kimi K2.6 (SWE-Bench 80.2%) → llms.json, dexter ⭐23k 금융 리서치, Rapid-MLX Apple Silicon 4.2× 빠름. 29/29 테스트. |
+| 2026-05-04 | 데일리 스캔: ruflo ⭐38.8k L2, TradingAgents ⭐65k, ouroboros Agent OS, cocoindex L6, n8n-mcp L4c (1,650+ 노드). n8n-mcp + CocoIndex → reference-levels.md. 5개 research-watch. |
+| 2026-05-03 | 데일리 스캔: DeepSeek V4-Pro (SWE-Bench 80.6, $0.44/M), xAI Grok 4.3 (83% 저렴), MS Agent Framework v1.0 (AutoGen+SK 통합), acai.sh ACID 스펙 주도 개발, TradingAgents 57.7k★. 스코어링 성숙도 가중치 버그 수정. 9개 docs. |
 | 2026-04-30 | 데일리 스캔: Warp 오픈소스 +11,955★/일 기록, Zed 1.0 안정화, Mistral Medium 3.5 → llms.json, NVIDIA OpenShell L1, memvid L4a 이식형 바이너리, cc-connect L7 3번째 데이터포인트, hongsw/harness L2. research-watch 7개 추가. |
 | 2026-04-28 | GitHub 스타 전체 최신화. 분류 목록·테이블 스타순 정렬. 04-21~04-28 데일리 스캔: cc-switch 52.8k★, cmux 15.6k★, GitNexus 31.5k★, dirac TB2 리더, Engram+wuphf L4a, DureClaw L3 SSOT 확인. research-watch 12개 추가. |
 | 2026-04-20 | Thunderbolt Mozilla AI 클라이언트 L7, OpenMythos 루프 트랜스포머 신호, Qwen3.6-35B-A3B 오픈웨이트 에이전틱 코딩. |
@@ -210,6 +284,32 @@ clawfit recommend \
 
 > `--maturity 5` = 서브에이전트 운영 단계. 전체 11단계 정의는 [성숙도 × 레이어 맵](docs/pages/maturity-layer-map.md) 참고.
 
+**실행 예시 출력:**
+
+```
+순위 1  fit_score: 0.900
+  agent:    react-agent
+  llm:      gpt-4o         (openai, $0.003/1k, latency: medium)
+  hardware: cloud-serverless
+  arch:     cloud-api
+  why:
+    - ReAct Agent는 medium 레이턴시로 'code-gen'을 지원
+    - GPT-4o는 태스크 및 비용 프로파일에 적합
+    - GPT-4o는 ReAct Agent의 선호 LLM
+
+순위 2  fit_score: 0.900
+  agent:    react-agent
+  llm:      claude-sonnet  (anthropic, $0.003/1k, latency: medium)
+  hardware: cloud-serverless
+  arch:     cloud-api
+
+순위 3  fit_score: 0.850
+  agent:    react-agent
+  llm:      kimi-k2-6      (moonshot, $0.00095/1k, latency: medium)
+  hardware: aws-cpu-medium
+  arch:     cloud-api
+```
+
 ### 레지스트리 확인
 
 ```bash
@@ -263,7 +363,7 @@ clawfit profile
 
 파이프라인은 의도적으로 단순하고 검사 가능합니다:
 
-1. **레지스트리 로딩** — 76개 도구 정의 + 10필드 org_fit 메타데이터 로드
+1. **레지스트리 로딩** — 20개 추천 엔트리 (4 에이전트 × 11 LLM × 5 하드웨어) + 162+ 생태계 맵 로드
 2. **프로파일 구축** — 10개 설문 답변 → OrgProfile 변환
 3. **스코어링** — 10차원 + 하드 멀티플라이어로 각 도구 평가
 4. **레이어 그루핑** — 에코시스템 레이어(L1-L7)별 그룹화, 성숙도 단계별 우선순위
@@ -288,7 +388,7 @@ clawfit/
 │  ├─ schemas.py            ← 데이터클래스: Agent, LLM, Hardware, Recommendation
 │  ├─ loader.py             ← registry/*.json 로더
 │  ├─ data/
-│  │  ├─ tools_registry.json  ← 76개 에코시스템 도구 (org_fit 10필드)
+│  │  ├─ tools_registry.json  ← 에코시스템 도구 (org_fit 10필드)
 │  │  └─ org_questions.json   ← 10문항 설문, 3 페이즈
 │  └─ registry/             ← agents.json, llms.json, hardware.json
 ├─ docs/
@@ -310,22 +410,23 @@ clawfit/
 clawfit은 더 넓은 AI 도구 생태계를 추적합니다:
 - [`docs/reference-levels.md`](docs/reference-levels.md) — 정식 7레이어 에코시스템 맵
 - [`docs/pages/ecosystem-axes.md`](docs/pages/ecosystem-axes.md) — 분류 로직, 경계 규칙, 예제
-- [`docs/research-watch/`](docs/research-watch/) — 150개+ 도구/트렌드 분석 (매일 자동 스캔)
+- [`docs/research-watch/`](docs/research-watch/) — 186개 도구/트렌드 분석 (매일 자동 스캔)
 - [`docs/pages/maturity-layer-map.md`](docs/pages/maturity-layer-map.md) — 성숙도 단계(1-11) × 도구 레이어(L1-L7) 매핑
 
-### 7레이어 구조
+### 7레이어 구조 (주요 항목 별 개수 기준 정렬)
 
-| 레벨 | 이름 | 주요 도구 |
-|------|------|----------|
-| 1 | 기본 런타임 | Claude Code, OpenClaw, Aider, pi-mono, ATLAS, Hermes Agent |
-| 2 | 메타 래퍼 / 하네스 | oh-my-*, DureClaw, SuperClaude, Archon, multica |
-| 3 | 팀 하네스 / SSOT | CLAUDE.md, AGENTS.md, DESIGN.md, gitagent, superpowers |
-| 4a | 메모리 / 영구 컨텍스트 | claude-mem, GBrain, Polysona |
-| 4b | 스킬팩 & 매니저 | career-ops, caveman, obsidian-skills, Chops |
-| 4c | 도구 사용 / 액션 인프라 | korean-law-mcp, rtk, claude-peers-mcp, serena |
-| 5 | 리서치 / 평가 | autoresearch, mdarena, Mozilla cq |
-| 6 | 데이터 / 지식 인프라 | DeepTutor, AnythingLLM |
-| 7 | 휴먼 인터페이스 | pi-generative-ui, Ghost Pepper, ouroboros |
+| 레벨 | 이름 | 주요 도구 (★ = GitHub 별 개수) |
+|------|------|-------------------------------|
+| L0* | 추론 서브스트레이트 (동반 축) | Ollama · vLLM · llama.cpp · MLX · TensorRT-LLM · exo |
+| L1 | 기본 런타임 | Claude Code · Aider · Goose · OpenHands · Cline · TradingAgents ★67k |
+| L2 | 메타 래퍼 / 오케스트레이션 | ruflo ★40k · DureClaw · MS Agent Framework ★10k · Archon |
+| L3 | 팀 하네스 / 실행 SSOT | CLAUDE.md · acai.sh · gitagent · gsd |
+| L4a | 메모리 / 영구 컨텍스트 | GitNexus ★31k · cognee · claude-mem · memvid ★15k |
+| L4b | 스킬팩 & 매니저 | superpowers ★145k · agency-agents ★92k · obsidian-skills |
+| L4c | 도구 사용 / MCP | cc-switch ★52k · n8n-mcp ★19k · serena ★23k · GoModel |
+| L5 | 리서치 / 평가 / 벤치마크 | autoresearch · SWE-bench · Engram · memvid |
+| L6 | 데이터 / 지식 인프라 | CocoIndex ★7.9k · MinerU · LightRAG · PageIndex · airweave |
+| L7 | 휴먼 인터페이스 | Voicebox · Ghost Pepper · Zed 1.0 · cc-connect |
 
 ---
 
