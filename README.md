@@ -52,18 +52,18 @@ It is three things in one:
 
 ---
 
-## 🔥 What's hot right now (2026-05-04)
+## 🔥 What's hot right now (2026-05-05)
 
 | Signal | Why it matters | Level |
 |--------|---------------|-------|
-| **[ruflo](https://github.com/ruvnet/ruflo) ⭐38.8k** | Multi-agent swarm orchestration for Claude Code — 100+ agents, SONA neural learning, HNSW vector memory, zero-trust federation (mTLS). +1,834★ today. v3.6.10 MIT. | L2 |
-| **[TradingAgents](https://github.com/TauricResearch/TradingAgents) ⭐65.1k** | +3,315★ today (new daily record). Highest-starred domain-specialized multi-agent framework. Financial analyst→risk→execution role hierarchy. | L1 |
-| **[n8n-mcp](https://github.com/czlonkowski/n8n-mcp) ⭐19.5k** | MCP server exposing 1,650+ n8n workflow nodes to Claude — bridges workflow automation platforms into agent tool-use. Added to L4c map today. | L4c |
-| **[ouroboros](https://github.com/Q00/ouroboros) ⭐3.2k** | "Agent OS: Stop prompting. Start specifying." — Interview→Seed→Execute→Evaluate loop; ambiguity scoring ≤0.2 before any code runs; Ralph persistent runner. | L2/L3 |
-| **[cocoindex](https://github.com/cocoindex-io/cocoindex) ⭐7.7k** | Incremental data-pipeline engine for long-horizon agents. Rust core, delta-only reprocessing (10× cost reduction), Apache 2.0, v1.0.2. Added to L6 map today. | L6 |
-| **[DeepSeek V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)** | SWE-Bench Verified 80.6 (ties Opus 4.6), MIT, $0.44/M, 1M ctx. V4-Flash runs offline on M5 MacBook. Best open-weight coding model. | LLM |
-| **[xAI Grok 4.3](https://x.ai/news)** | 37–83% price cut; GDPval-AA ELO 1500 (+321, largest single-release jump tracked); 1M ctx; always-on reasoning. | LLM |
-| **[Microsoft Agent Framework v1.0](https://github.com/microsoft/agent-framework) ⭐10k** | AutoGen + Semantic Kernel consolidated. Graph-based multi-agent, YAML agent defs, MCP/A2A, Azure Durable Functions. First enterprise-stable multi-agent SDK. | L2 |
+| **[agency-agents](https://github.com/msitarzewski/agency-agents) ⭐92.4k** | 144+ specialized Claude agent personas (Engineering, Design, Sales, Marketing…) in shell scripts. Works with Claude Code, Cursor, Aider, Windsurf. MIT. Added to L4b map today. | L4b |
+| **[Kimi K2.6](https://moonshotai.github.io/Kimi-K2/) 🆕** | Moonshot AI 1T/32B MoE, SWE-Bench Verified 80.2%, 300-agent swarm / 4,000 steps, Modified MIT, $0.95/M. Added to llms.json today (11 LLMs). | LLM |
+| **[TradingAgents](https://github.com/TauricResearch/TradingAgents) ⭐67k** | +2,181★ today; now 67k total. Highest-starred domain-specialized multi-agent framework. Financial analyst→risk→execution. | L1 |
+| **[dexter](https://github.com/virattt/dexter) ⭐23k** | Autonomous financial research agent from virattt (also ai-hedge-fund ⭐58k). TypeScript/Bun, self-validation, real-time data, v2026.5.1. | L1 |
+| **[ruflo](https://github.com/ruvnet/ruflo) ⭐40.9k** | Multi-agent swarm orchestration for Claude Code. +2,594★ today. 100+ agents, SONA learning, mTLS federation. MIT v3.6.10. | L2 |
+| **[n8n-mcp](https://github.com/czlonkowski/n8n-mcp) ⭐19.8k** | MCP server bridging 1,650+ n8n workflow nodes into Claude tool-use. Added to L4c map 05-04. | L4c |
+| **[cocoindex](https://github.com/cocoindex-io/cocoindex) ⭐7.9k** | Incremental data-pipeline engine for long-horizon agents. Rust, delta-only reprocessing (10× cheaper). Added to L6 map 05-04. | L6 |
+| **[DeepSeek V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)** | SWE-Bench 80.6, MIT, $0.44/M, 1M ctx — top open-weight coding model. V4-Flash runs offline on M5 MacBook. | LLM |
 | **[cc-switch](https://github.com/hongsw/cc-switch) ⭐52.8k** | Cross-CLI provider switcher: Claude Code, Codex, Gemini, OpenCode unified under one SSOT. | L3/L4c |
 | **[superpowers](https://github.com/obra/superpowers) ⭐145k** | Largest-starred harness/SSOT repo. Shell-first agentic skills + SSOT methodology. | L3/L4b |
 
@@ -75,6 +75,7 @@ Full analysis in [`docs/research-watch/`](docs/research-watch/) (150+ docs) · F
 
 | Date | What changed |
 |------|-------------|
+| 2026-05-05 | Daily scan: agency-agents ⭐92.4k → L4b map, Kimi K2.6 (SWE-Bench 80.2%, $0.95/M) → llms.json, dexter ⭐23k financial research agent, Rapid-MLX 4.2× Ollama on Apple Silicon. 4 research-watch docs; 29/29 tests. |
 | 2026-05-04 | Daily scan: ruflo ⭐38.8k L2 (Claude swarm orchestration), TradingAgents +3,315★/day now 65.1k, ouroboros Agent OS spec-first harness, cocoindex L6 incremental pipeline, n8n-mcp L4c (1,650+ nodes). n8n-mcp + CocoIndex added to reference-levels.md. 5 research-watch docs. scoring clean. |
 | 2026-05-03 | Daily scan: DeepSeek V4-Pro (SWE-Bench 80.6, MIT, $0.44/M), xAI Grok 4.3 (83% cheaper, ELO +321), MS Agent Framework v1.0 (AutoGen+SK consolidated), acai.sh ACID spec-first, craft-agents-oss L6, TradingAgents 57.7k★. Scoring maturity weight bug fixed (was 1.0795, now exact 1.0). L6 diagram corrected. 9 research-watch docs. |
 | 2026-04-30 | Daily scan: Warp open-source +11,955★/day record, Zed 1.0 stable, Mistral Medium 3.5 → llms.json, NVIDIA OpenShell L1, memvid L4a portable-binary, cc-connect L7 3rd datapoint, hongsw/harness L2. 7 research-watch docs. |
