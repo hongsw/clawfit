@@ -12,7 +12,8 @@
 │       Voicebox, VoxCPM, Ghost Pepper, Zed 1.0, cc-connect       │
 ├─────────────────────────────────────────────────────────────────┤
 │  L6  Data / Evidence / Knowledge Infrastructure                 │
-│       MinerU, LightRAG, PageIndex, RAG-Anything, airweave        │
+│  ├─ L6a  Retrieval-native   MinerU, LightRAG, PageIndex, CocoIndex, airweave    │
+│  └─ L6b  LLM-native KB      wuphf, GBrain  (Karpathy pattern, 2026-04-04)       │
 ├─────────────────────────────────────────────────────────────────┤
 │  L5  Research / Evaluation / Benchmark / Autoresearch           │
 │       autoresearch, SWE-bench, mini-swe-agent, memvid, Engram   │
@@ -166,7 +167,8 @@ L2  Harnesses               ←→           agent.statefulness
 L3  SSOT / governance       ←→           (future: governance_need filter)
 L4  Capability extension    ←→           (future: capability_tag filter)
 L5  Research / evaluation   ←→           (future: benchmark_source field)
-L6  Data / knowledge infra  ←→           (future: knowledge_backend filter)
+L6a Retrieval-native infra  ←→           (future: knowledge_backend: retrieval)
+L6b LLM-native KB           ←→           (future: knowledge_backend: llm_native)
 L7  Human interfaces        ←→           (implicit in agent delivery)
                                          llm.cost_per_1k_tokens
                                          llm.latency

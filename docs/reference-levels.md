@@ -93,6 +93,7 @@ So this document now uses a more explicit **7-level structure**.
 - **Rapid-MLX — Apple Silicon inference runtime (1k★, substrate axis) — below threshold:** raullenchai/Rapid-MLX (1,002★) sits below the 5k-star registry threshold. Research-watch doc explicitly defers: re-evaluate at 3k stars or when an independent benchmark confirms the Ollama comparison claim. No map change today.
 - **Kimi K2.6 — Moonshot open-weight LLM (LLM signal, no map change):** moonshotai/Kimi-K2.6 (SWE-Bench 80.2%, 256K context, Modified MIT, $0.95/$4.00 per 1M) maps to `llms.json`, not to any ecosystem layer. Hold pending full Modified MIT license text review and one independent SWE-Bench confirmation. No reference-levels.md change warranted.
 - **Scoring audit 2026-05-05:** Four research-watch signals assessed. **One map mutation applied:** agency-agents added to L4b domain skill packs (92.4k★, cross-tool-portable skill pack sub-type). Three signals held: dexter (schema blocker per research-watch doc), Rapid-MLX (below 5k threshold), Kimi K2.6 (LLM registry candidate only).
+- **L6 taxonomy split — L6a (retrieval-native) / L6b (LLM-native KB) formalised 2026-05-05:** Anchored by Karpathy LLM Wiki gist (2026-04-04) and research-watch doc `2026-05-05-llm-wiki-knowledge-layer-paradigm.md`. Split criteria: L6a = retrieve-inject loop (LLM is consumer, pipelines maintain store); L6b = LLM-maintained knowledge artifact (LLM is maintainer, no retrieval pipeline). wuphf (L4a primary) and GBrain (L4a primary) are the first confirmed L6b implementations; cross-references added to both. Promotion threshold for standalone L6b entries: ≥5k stars with L6b as clear primary classification. Ecosystem map SVGs updated to show L6a/L6b sub-cells.
 
 ### New signals as of 2026-05-04
 - **n8n-mcp — workflow-platform MCP bridge added to L4c (19.5k★, promotion criteria met):** czlonkowski/n8n-mcp (19,481★, TypeScript 91.8%, v2.50.0, 201 releases, 541+ tests) exposes the full n8n node library (1,650+ integrations, 2,352 templates) to any MCP-compatible Claude surface via 7 zero-credential discovery tools + 13 management tools. Pre-indexed SQLite cache rather than live API passthrough is architecturally distinct from all existing L4c entries. Meets promotion criteria: ≥5k stars with clear single-layer L4c fit (workflow-platform MCP bridge sub-type). Research-watch doc deferred on naming a new sub-type pending a second workflow-platform entry; the tool itself qualifies on its own merit. Secondary L2 surface (management tools enable workflow lifecycle) noted but insufficient to displace L4c primary classification. **Added to L4c.**
@@ -394,7 +395,7 @@ Level 4 is splitting into three observable subtypes:
 - <img src="https://github.com/CaviraOSS.png" alt="OpenMemory" width="18" /> [OpenMemory](https://github.com/CaviraOSS/OpenMemory) — ⭐ 4,029
 - <img src="https://github.com/Gentleman-Programming.png" alt="Engram" width="18" /> [Engram](https://github.com/Gentleman-Programming/engram) — ⭐ 2,912 — Go binary persistent memory system for AI coding agents; agent-agnostic (Claude Code / OpenCode / Gemini CLI / Codex / Cursor / Windsurf via MCP); 17 MCP tools + What/Why/Where/Learned schema + session lifecycle hooks (`mem_session_start/end`); SQLite + FTS5; protocol-endpoint shape (Engram exposes memory through MCP) vs. Beads' runtime-layer shape; *(also Level 5 inspectable agent memory sub-pattern)*
 - <img src="https://github.com/garrytan.png" alt="GBrain" width="18" /> [GBrain](https://github.com/garrytan/gbrain) — MIT — personal knowledge base for agents by YC CEO Garry Tan; markdown+PGLite backend; agents read-before/write-after; OpenClaw+Hermes native; CLI via bun; "compounding personal knowledge" sub-pattern
-- [wuphf](https://github.com/nex-crm/wuphf) — Karpathy-style LLM wiki maintained by agents in Markdown + Git; multi-agent shared workspace with notebook → wiki promotion + lint gates; human-inspectable agent-maintained memory; vector-DB-free track alongside Beads / Engram / GBrain; *(also Level 5 inspectable agent memory sub-pattern)*
+- [wuphf](https://github.com/nex-crm/wuphf) — Karpathy-style LLM wiki maintained by agents in Markdown + Git; multi-agent shared workspace with notebook → wiki promotion + lint gates; human-inspectable agent-maintained memory; vector-DB-free track alongside Beads / Engram / GBrain; *(also Level 5 inspectable agent memory sub-pattern; also Level 6b LLM-native KB — first confirmed implementation)*
 - <img src="https://github.com/memvid.png" alt="memvid" width="18" /> [memvid](https://github.com/memvid/memvid) — ⭐ 15,283 — Rust-native single-file `.mv2` memory container; bundles header + embedded WAL + HNSW vector index + Tantivy/BM25 full-text + temporal index + TOC into one append-only binary; v2.0 Python→Rust rewrite (March 2026); claimed 0.025ms P50 retrieval; downstream `memvid/claude-brain` Claude Code plugin at 477★; **portable-binary memory** sub-track distinct from markdown+git (wuphf, GBrain) and SQLite+MCP (Engram, Beads); Apache-2.0; *(also Level 5 inspectable agent memory sub-pattern)*
 
 ### 4b. Skill packs & skill managers
@@ -457,6 +458,11 @@ They include evaluation harnesses, benchmark references, autonomous research loo
 These references are useful when clawfit evolves into an evidence hub and simulation system.
 They help answer how agents access, structure, retrieve, and reason over external knowledge.
 
+Two architectural sub-types formalised 2026-05-05, anchored by Karpathy LLM Wiki gist (2026-04-04):
+
+### L6a — Retrieval-native knowledge infrastructure
+Pre-process → embed → index → retrieve → inject. LLM is the *consumer* of the knowledge store; pipelines or humans maintain it. Entry point to L6 for large-corpus and multi-modal use cases.
+
 - <img src="https://github.com/opendatalab.png" alt="MinerU" width="18" /> [MinerU](https://github.com/opendatalab/MinerU) — ⭐ 61,356
 - <img src="https://github.com/HKUDS.png" alt="LightRAG" width="18" /> [LightRAG](https://github.com/HKUDS/LightRAG) — ⭐ 34,415
 - <img src="https://github.com/VectifyAI.png" alt="PageIndex" width="18" /> [PageIndex](https://github.com/VectifyAI/PageIndex) — ⭐ 25,871
@@ -464,6 +470,17 @@ They help answer how agents access, structure, retrieve, and reason over externa
 - <img src="https://github.com/cocoindex-io.png" alt="CocoIndex" width="18" /> [CocoIndex](https://github.com/cocoindex-io/cocoindex) — ⭐ 7,655 — incremental data pipeline engine for AI agents; Rust core with Python API; delta-only reprocessing (claimed 99.9% corpus cache reuse); declarative `Target = F(Source)` model; 12 connectors across vector DBs (LanceDB, Qdrant), graph DBs (FalkorDB, SurrealDB), relational DBs, data warehouses, message queues, and feature stores; end-to-end lineage; explicitly agent-framed ("continuously fresh context for your AI agents"); v1.0.2 stable (April 2026), Apache-2.0; write-side ingestion counterpart to read-side memory sync tools (airweave)
 - <img src="https://github.com/airweave-ai.png" alt="airweave" width="18" /> [airweave](https://github.com/airweave-ai/airweave) — ⭐ 6,266
 - <img src="https://github.com/agentset-ai.png" alt="agentset" width="18" /> [agentset](https://github.com/agentset-ai/agentset) — ⭐ 1,968
+
+### L6b — LLM-native knowledge base
+LLM is the *maintainer* of the knowledge store, not just the consumer. Sources → LLM reads and synthesises → LLM-maintained structured artifact (Markdown wiki, compendium) → LLM or human queries. No retrieval pipeline required; the LLM is the indexing and summarisation layer. Best fit for mid-sized corpora that fit in a large context window; grows in relevance as context windows expand.
+
+Architectural reference: Karpathy LLM Wiki pattern — https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f (2026-04-04)
+Research-watch doc: `docs/research-watch/2026-05-05-llm-wiki-knowledge-layer-paradigm.md`
+
+Promotion threshold: second independent ≥5k-star implementation explicitly adopting the LLM-maintains-KB pattern.
+
+- [wuphf](https://github.com/nex-crm/wuphf) — Karpathy-style LLM wiki maintained by agents in Markdown + Git; multi-agent shared workspace with notebook → wiki promotion + lint gates; first confirmed L6b implementation *(also Level 4a memory — agent-memory primary read)*
+- [GBrain](https://github.com/garrytan/gbrain) — personal knowledge base for agents by YC CEO Garry Tan; markdown+PGLite backend; agents read-before/write-after; compounding personal knowledge sub-pattern *(also Level 4a memory)*
 
 ---
 

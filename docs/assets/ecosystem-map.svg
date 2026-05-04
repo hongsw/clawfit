@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="655" viewBox="0 0 880 655">
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="673" viewBox="0 0 880 673">
   <defs>
     <clipPath id="c">
-      <rect width="880" height="655" rx="10"/>
+      <rect width="880" height="673" rx="10"/>
     </clipPath>
   </defs>
   <g clip-path="url(#c)">
 
   <!-- background -->
-  <rect width="880" height="655" fill="#f8fafc"/>
+  <rect width="880" height="673" fill="#f8fafc"/>
 
   <!-- ══ title ══ -->
   <rect x="0" y="0" width="880" height="55" fill="#0f172a"/>
@@ -30,119 +30,135 @@
   <text x="70" y="96"
     font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#5b21b6">Voicebox  ·  VoxCPM  ·  Zed 1.0  ·  cc-connect  ·  Ghost Pepper  ·  Warp (secondary)</text>
 
-  <!-- ══ L6: Data / Knowledge ══  y=125 h=64 -->
-  <rect x="10" y="125" width="860" height="64" fill="#dbeafe"/>
-  <rect x="10" y="125" width="8"   height="64" fill="#1d4ed8"/>
-  <rect x="24" y="133" width="36"  height="17" rx="8" fill="#1d4ed8"/>
-  <text x="42" y="146" text-anchor="middle"
-    font-family="'Courier New',Courier,monospace" font-size="10" font-weight="700" fill="#ffffff">L6</text>
-  <text x="70" y="145"
-    font-family="system-ui,-apple-system,sans-serif" font-size="12.5" font-weight="700" fill="#1e3a8a">Data / Evidence / Knowledge Infrastructure</text>
-  <text x="70" y="163"
-    font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#1e40af">MinerU ★26k  ·  LightRAG ★24k  ·  CocoIndex ★7.7k  ·  airweave  ·  PageIndex  ·  RAG-Anything</text>
+  <!-- ══ L6: Data / Knowledge Infrastructure (L6a + L6b) ══  y=125 h=82 -->
+  <rect x="10" y="125" width="860" height="82" fill="#f1f5f9"/>
+  <text x="440" y="140" text-anchor="middle"
+    font-family="system-ui,-apple-system,sans-serif" font-size="9.5" font-weight="600" fill="#94a3b8">L6   Data / Evidence / Knowledge Infrastructure</text>
 
-  <!-- ══ L5: Research / Eval ══  y=192 h=64 -->
-  <rect x="10" y="192" width="860" height="64" fill="#d1fae5"/>
-  <rect x="10" y="192" width="8"   height="64" fill="#059669"/>
-  <rect x="24" y="200" width="36"  height="17" rx="8" fill="#059669"/>
-  <text x="42" y="213" text-anchor="middle"
+  <!-- L6a Retrieval-native  x=10 w=428 -->
+  <rect x="10"  y="143" width="428" height="59" fill="#dbeafe"/>
+  <rect x="10"  y="143" width="7"   height="59" fill="#1d4ed8"/>
+  <rect x="24"  y="151" width="38"  height="16" rx="8" fill="#1d4ed8"/>
+  <text x="43" y="163" text-anchor="middle"
+    font-family="'Courier New',Courier,monospace" font-size="9.5" font-weight="700" fill="#ffffff">L6a</text>
+  <text x="70" y="162"
+    font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#1e3a8a">Retrieval-native</text>
+  <text x="70" y="180"
+    font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#1e40af">MinerU★61k · LightRAG★34k · PageIndex★26k · CocoIndex★7.7k · airweave</text>
+
+  <!-- L6b LLM-native KB  x=442 w=428 -->
+  <rect x="442" y="143" width="428" height="59" fill="#ffedd5"/>
+  <rect x="442" y="143" width="7"   height="59" fill="#c2410c"/>
+  <rect x="456" y="151" width="38"  height="16" rx="8" fill="#c2410c"/>
+  <text x="475" y="163" text-anchor="middle"
+    font-family="'Courier New',Courier,monospace" font-size="9.5" font-weight="700" fill="#ffffff">L6b</text>
+  <text x="502" y="162"
+    font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#7c2d12">LLM-native KB  <tspan font-size="8.5" fill="#9a3412" font-weight="400">(Karpathy pattern)</tspan></text>
+  <text x="502" y="180"
+    font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#9a3412">wuphf · GBrain · [emerging — 1 impl confirmed]</text>
+
+  <!-- ══ L5: Research / Eval ══  y=210 h=64 -->
+  <rect x="10" y="210" width="860" height="64" fill="#d1fae5"/>
+  <rect x="10" y="210" width="8"   height="64" fill="#059669"/>
+  <rect x="24" y="218" width="36"  height="17" rx="8" fill="#059669"/>
+  <text x="42" y="231" text-anchor="middle"
     font-family="'Courier New',Courier,monospace" font-size="10" font-weight="700" fill="#ffffff">L5</text>
-  <text x="70" y="212"
-    font-family="system-ui,-apple-system,sans-serif" font-size="12.5" font-weight="700" fill="#064e3b">Research / Evaluation / Benchmark / Autoresearch</text>
   <text x="70" y="230"
+    font-family="system-ui,-apple-system,sans-serif" font-size="12.5" font-weight="700" fill="#064e3b">Research / Evaluation / Benchmark / Autoresearch</text>
+  <text x="70" y="248"
     font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#065f46">autoresearch  ·  SWE-bench  ·  mini-swe-agent  ·  memvid  ·  Engram  ·  Dexter</text>
 
-  <!-- ══ L4: Capability Extension (3 sub-cells) ══  y=259 h=82 -->
-  <rect x="10" y="259" width="860" height="82" fill="#f1f5f9"/>
-  <text x="440" y="274" text-anchor="middle"
+  <!-- ══ L4: Capability Extension (3 sub-cells) ══  y=277 h=82 -->
+  <rect x="10" y="277" width="860" height="82" fill="#f1f5f9"/>
+  <text x="440" y="292" text-anchor="middle"
     font-family="system-ui,-apple-system,sans-serif" font-size="9.5" font-weight="600" fill="#94a3b8">L4   Capability Extension</text>
 
   <!-- L4a Memory  x=10 w=284 -->
-  <rect x="10"  y="278" width="284" height="58" fill="#fef3c7"/>
-  <rect x="10"  y="278" width="7"   height="58" fill="#d97706"/>
-  <rect x="24"  y="286" width="38"  height="16" rx="8" fill="#d97706"/>
-  <text x="43" y="298" text-anchor="middle"
+  <rect x="10"  y="296" width="284" height="58" fill="#fef3c7"/>
+  <rect x="10"  y="296" width="7"   height="58" fill="#d97706"/>
+  <rect x="24"  y="304" width="38"  height="16" rx="8" fill="#d97706"/>
+  <text x="43" y="316" text-anchor="middle"
     font-family="'Courier New',Courier,monospace" font-size="9.5" font-weight="700" fill="#ffffff">L4a</text>
-  <text x="70" y="297"
+  <text x="70" y="315"
     font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#78350f">Memory</text>
-  <text x="70" y="314"
+  <text x="70" y="332"
     font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#92400e">cognee · claude-mem · GitNexus · memvid</text>
 
   <!-- L4b Skills  x=298 w=284 -->
-  <rect x="298" y="278" width="284" height="58" fill="#fee2e2"/>
-  <rect x="298" y="278" width="7"   height="58" fill="#dc2626"/>
-  <rect x="312" y="286" width="38"  height="16" rx="8" fill="#dc2626"/>
-  <text x="331" y="298" text-anchor="middle"
+  <rect x="298" y="296" width="284" height="58" fill="#fee2e2"/>
+  <rect x="298" y="296" width="7"   height="58" fill="#dc2626"/>
+  <rect x="312" y="304" width="38"  height="16" rx="8" fill="#dc2626"/>
+  <text x="331" y="316" text-anchor="middle"
     font-family="'Courier New',Courier,monospace" font-size="9.5" font-weight="700" fill="#ffffff">L4b</text>
-  <text x="358" y="297"
+  <text x="358" y="315"
     font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#7f1d1d">Skills</text>
-  <text x="358" y="314"
+  <text x="358" y="332"
     font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#991b1b">agency-agents★92k · obra/superpowers · obsidian-skills</text>
 
   <!-- L4c Tool/MCP  x=586 w=284 -->
-  <rect x="586" y="278" width="284" height="58" fill="#cffafe"/>
-  <rect x="586" y="278" width="7"   height="58" fill="#0891b2"/>
-  <rect x="600" y="286" width="38"  height="16" rx="8" fill="#0891b2"/>
-  <text x="619" y="298" text-anchor="middle"
+  <rect x="586" y="296" width="284" height="58" fill="#cffafe"/>
+  <rect x="586" y="296" width="7"   height="58" fill="#0891b2"/>
+  <rect x="600" y="304" width="38"  height="16" rx="8" fill="#0891b2"/>
+  <text x="619" y="316" text-anchor="middle"
     font-family="'Courier New',Courier,monospace" font-size="9.5" font-weight="700" fill="#ffffff">L4c</text>
-  <text x="646" y="297"
+  <text x="646" y="315"
     font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#164e63">Tool / MCP</text>
-  <text x="646" y="314"
+  <text x="646" y="332"
     font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#155e75">n8n-mcp★19k · serena · cc-switch · GoModel</text>
 
-  <!-- ══ L3: Team Harness ══  y=344 h=64 -->
-  <rect x="10" y="344" width="860" height="64" fill="#ccfbf1"/>
-  <rect x="10" y="344" width="8"   height="64" fill="#0f766e"/>
-  <rect x="24" y="352" width="36"  height="17" rx="8" fill="#0f766e"/>
-  <text x="42" y="365" text-anchor="middle"
+  <!-- ══ L3: Team Harness ══  y=362 h=64 -->
+  <rect x="10" y="362" width="860" height="64" fill="#ccfbf1"/>
+  <rect x="10" y="362" width="8"   height="64" fill="#0f766e"/>
+  <rect x="24" y="370" width="36"  height="17" rx="8" fill="#0f766e"/>
+  <text x="42" y="383" text-anchor="middle"
     font-family="'Courier New',Courier,monospace" font-size="10" font-weight="700" fill="#ffffff">L3</text>
-  <text x="70" y="364"
-    font-family="system-ui,-apple-system,sans-serif" font-size="12.5" font-weight="700" fill="#134e4a">Team Harness / Executable SSOT / Governance</text>
   <text x="70" y="382"
+    font-family="system-ui,-apple-system,sans-serif" font-size="12.5" font-weight="700" fill="#134e4a">Team Harness / Executable SSOT / Governance</text>
+  <text x="70" y="400"
     font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#115e59">CLAUDE.md  ·  gitagent  ·  gsd  ·  acai.sh (ACID)  ·  obra/superpowers  ·  DureClaw (secondary)</text>
 
-  <!-- ══ L2: Meta Wrappers ══  y=411 h=64 -->
-  <rect x="10" y="411" width="860" height="64" fill="#e0f2fe"/>
-  <rect x="10" y="411" width="8"   height="64" fill="#0369a1"/>
-  <rect x="24" y="419" width="36"  height="17" rx="8" fill="#0369a1"/>
-  <text x="42" y="432" text-anchor="middle"
+  <!-- ══ L2: Meta Wrappers ══  y=429 h=64 -->
+  <rect x="10" y="429" width="860" height="64" fill="#e0f2fe"/>
+  <rect x="10" y="429" width="8"   height="64" fill="#0369a1"/>
+  <rect x="24" y="437" width="36"  height="17" rx="8" fill="#0369a1"/>
+  <text x="42" y="450" text-anchor="middle"
     font-family="'Courier New',Courier,monospace" font-size="10" font-weight="700" fill="#ffffff">L2</text>
-  <text x="70" y="431"
-    font-family="system-ui,-apple-system,sans-serif" font-size="12.5" font-weight="700" fill="#0c4a6e">Meta Wrappers / Harnesses / Orchestration</text>
   <text x="70" y="449"
+    font-family="system-ui,-apple-system,sans-serif" font-size="12.5" font-weight="700" fill="#0c4a6e">Meta Wrappers / Harnesses / Orchestration</text>
+  <text x="70" y="467"
     font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#0369a1">DureClaw  ·  deepagents  ·  Archon  ·  Hashline  ·  revfactory  ·  craft-agents-oss</text>
 
-  <!-- ══ L1: Base Runtimes ══  y=478 h=64 -->
-  <rect x="10" y="478" width="860" height="64" fill="#e0e7ff"/>
-  <rect x="10" y="478" width="8"   height="64" fill="#312e81"/>
-  <rect x="24" y="486" width="36"  height="17" rx="8" fill="#312e81"/>
-  <text x="42" y="499" text-anchor="middle"
+  <!-- ══ L1: Base Runtimes ══  y=496 h=64 -->
+  <rect x="10" y="496" width="860" height="64" fill="#e0e7ff"/>
+  <rect x="10" y="496" width="8"   height="64" fill="#312e81"/>
+  <rect x="24" y="504" width="36"  height="17" rx="8" fill="#312e81"/>
+  <text x="42" y="517" text-anchor="middle"
     font-family="'Courier New',Courier,monospace" font-size="10" font-weight="700" fill="#ffffff">L1</text>
-  <text x="70" y="498"
-    font-family="system-ui,-apple-system,sans-serif" font-size="12.5" font-weight="700" fill="#1e1b4b">Base Runtimes / Primary Agent Surfaces</text>
   <text x="70" y="516"
+    font-family="system-ui,-apple-system,sans-serif" font-size="12.5" font-weight="700" fill="#1e1b4b">Base Runtimes / Primary Agent Surfaces</text>
+  <text x="70" y="534"
     font-family="'Courier New',Courier,monospace" font-size="9.5" fill="#3730a3">Claude Code  ·  OpenCode  ·  Aider  ·  Goose  ·  OpenHands  ·  Cline  ·  Warp (primary)</text>
 
   <!-- ── companion axis separator ── -->
-  <line x1="10" y1="551" x2="870" y2="551" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5,3"/>
-  <rect x="274" y="544" width="332" height="15" fill="#f8fafc"/>
-  <text x="440" y="555" text-anchor="middle"
+  <line x1="10" y1="569" x2="870" y2="569" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <rect x="274" y="562" width="332" height="15" fill="#f8fafc"/>
+  <text x="440" y="573" text-anchor="middle"
     font-family="system-ui,-apple-system,sans-serif" font-size="9" fill="#94a3b8">L0*  companion axis — not a numbered level</text>
 
-  <!-- ══ L0*: Inference Substrate (dashed) ══  y=560 h=62 -->
-  <rect x="10" y="560" width="860" height="62" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="7,4"/>
-  <rect x="24" y="569" width="36"  height="17" rx="8" fill="#64748b"/>
-  <text x="42" y="582" text-anchor="middle"
+  <!-- ══ L0*: Inference Substrate (dashed) ══  y=578 h=62 -->
+  <rect x="10" y="578" width="860" height="62" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="7,4"/>
+  <rect x="24" y="587" width="36"  height="17" rx="8" fill="#64748b"/>
+  <text x="42" y="600" text-anchor="middle"
     font-family="'Courier New',Courier,monospace" font-size="9.5" font-weight="700" fill="#ffffff">L0*</text>
-  <text x="70" y="581"
-    font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="700" fill="#334155">Inference Runtime Substrate</text>
   <text x="70" y="599"
+    font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="700" fill="#334155">Inference Runtime Substrate</text>
+  <text x="70" y="617"
     font-family="'Courier New',Courier,monospace" font-size="9" fill="#475569">Ollama  ·  llama.cpp  ·  vLLM  ·  MLX  ·  TensorRT-LLM  ·  exo  ·  (companion axis, not a numbered level)</text>
 
   <!-- footer -->
-  <text x="440" y="633" text-anchor="middle"
+  <text x="440" y="651" text-anchor="middle"
     font-family="system-ui,-apple-system,sans-serif" font-size="9.5" fill="#64748b">↑  sits on hardware: laptop · workstation · cloud</text>
-  <text x="440" y="648" text-anchor="middle"
+  <text x="440" y="666" text-anchor="middle"
     font-family="'Courier New',Courier,monospace" font-size="8.5" fill="#94a3b8">pip install clawfit  ·  clawfit recommend --task qa --latency low  ·  github.com/clawfit/clawfit</text>
 
   </g>
