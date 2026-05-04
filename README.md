@@ -1,8 +1,8 @@
 # clawfit
 
-> AI 에이전트 + LLM + 하드웨어 추천 엔진 — 76개 도구, 7레이어 에코시스템 맵, 10차원 조직 적합도 스코어링
+> AI 에이전트 + LLM + 하드웨어 추천 엔진 — **162+ 도구**, **7레이어 생태계 맵**, **186개 리서치워치 문서**, **10차원 스코어링**
 
-> Agent + LLM + hardware recommendation engine and evidence hub.
+> Agent + LLM + hardware recommendation engine — **162+ tools mapped**, **186 research-watch docs**, daily automated scanning.
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.7%2B-blue)](pyproject.toml)
@@ -21,19 +21,90 @@
 
 It is three things in one:
 
-1. **Recommendation engine** — 76 tools scored across 10 dimensions (task fit, maturity, role, layer relevance, team size, network, latency, features, complexity, budget). Hard multipliers penalize critical mismatches (offline required + online-only tool → x0.25).
+1. **Recommendation engine** — (agent, LLM, hardware) triples scored across 6 weighted dimensions. Hard filters eliminate mismatches before scoring; soft multipliers handle nuance.
 
-2. **Ecosystem map** — A 7-layer taxonomy (L1 base runtimes → L7 human interfaces) with 150+ research-watch signal documents tracking GitHub Trending, GeekNews, and Hacker News daily via automated agents.
+2. **Ecosystem map** — 7-layer taxonomy with 162+ tools tracked by star count, daily automated scanning of GitHub Trending / GeekNews / HN, and 186 research-watch signal documents.
 
-3. **Org-fit diagnosis** — A 10-question interactive questionnaire (TUI, CLI, or web) that builds an organization profile and recommends a prioritized multi-layer tool stack.
+3. **Org-fit diagnosis** — 10-question interactive profile builds your organization's constraint vector and returns a prioritized multi-layer tool stack.
+
+---
+
+## 🗺 Ecosystem map — 7 layers + substrate
+
+```
+┌──────────────────────────────────────────── 162+ tools tracked ────────────────────────────────────────────┐
+│  L7  Human Interface / Voice / IO        Voicebox · Ghost Pepper · Zed 1.0 · cc-connect                   │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  L6  Data / Evidence / Knowledge Infra   MinerU · LightRAG · CocoIndex ★7.9k · PageIndex · airweave       │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  L5  Research / Eval / Benchmark         autoresearch · SWE-bench · Engram · memvid ★15k                  │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  L4  Capability Extension                                                                                   │
+│  ├─ L4a  Memory         cognee · claude-mem · GitNexus ★31k · memvid                                      │
+│  ├─ L4b  Skills         superpowers ★145k · agency-agents ★92k · obsidian-skills                          │
+│  └─ L4c  Tool / MCP     n8n-mcp ★19k · cc-switch ★52k · GoModel · serena ★23k                            │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  L3  Team Harness / Executable SSOT      CLAUDE.md · acai.sh · gitagent · gsd · obra/superpowers          │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  L2  Meta Wrappers / Orchestration       ruflo ★40k · DureClaw · MS Agent Framework · Archon · deepagents │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  L1  Base Runtimes / Primary Surfaces    Claude Code · Aider · Goose · OpenHands · Cline · OpenCode       │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  L0* Inference Substrate  (companion axis)   Ollama · vLLM · llama.cpp · MLX · TensorRT-LLM · exo         │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+         sits on hardware: laptop · workstation · edge · cloud_api · cloud_vm · cloud_managed
+```
+
+> **Map vs registry**: The map tracks 162+ ecosystem tools for awareness. The **recommendation registry** (20 entries: 4 agents × 11 LLMs × 5 hardware) is what `clawfit recommend` scores — curated, validated, schema-bound.
+
+---
+
+## ⚙️ Recommendation axes
+
+```
+                    ┌─────────────────────────────────────────────┐
+   TASK ──────────▶ │              HARD FILTERS                   │ ◀── NETWORK (online/offline)
+   code-gen/qa/...  │  task match · latency · budget · network    │     HARDWARE (cloud/edge/local)
+                    │  statefulness · hardware type               │
+   LATENCY ───────▶ │─────────────────────────────────────────────│
+   low/med/high     │              SCORING                        │ ◀── BUDGET ($/1k tokens)
+                    │  latency match   ×0.50                      │
+   MATURITY ──────▶ │  cost match      ×0.25  (÷×0.80 w/maturity) │
+   stage 1–11       │  LLM preference  ×0.15                      │
+                    │  maturity fit    ×0.15  (replaces baseline)  │
+                    └──────────────────────┬──────────────────────┘
+                                           │
+                                    fit_score 0–1.0
+                                    (agent, llm, hardware) triple
+```
+
+---
+
+## 📊 By the numbers
+
+| Metric | Count |
+|--------|-------|
+| Tools in ecosystem map (7 layers) | **162+** |
+| Research-watch signal documents | **186** |
+| LLMs in recommendation registry | **11** |
+| Agent patterns in registry | **4** |
+| Hardware profiles in registry | **5** |
+| Automated tests | **29** |
+| Taxonomy layers (L0–L7) | **8** |
+| Scoring dimensions | **6** (latency × 3 + cost + pref + maturity) |
+| Scan dates tracked | **24** (2026-03-31 → today) |
+
+---
 
 ### Who is this for?
 
-- Teams choosing between agent stacks (Claude Code vs OpenClaw vs Aider vs ...)
-- DevOps deciding local vs cloud execution topology
-- Executives evaluating AI tool adoption strategy
-- Researchers mapping the AI agent ecosystem
-- Anyone building an evidence-backed recommendation layer
+| You are... | clawfit gives you... |
+|------------|---------------------|
+| Developer choosing an agent stack | Scored (agent, LLM, hardware) triple for your task + constraints |
+| DevOps setting up local vs cloud | Hard filters on network / hardware / cost — no guesswork |
+| CTO evaluating AI tool strategy | 7-layer ecosystem map with 162+ tools, daily-updated |
+| Researcher mapping the agent landscape | 186 evidence docs + taxonomy with star counts |
+| Builder who wants the current state | Daily scan: GitHub Trending + GeekNews + HN, auto-committed |
 
 > [!IMPORTANT]
 > **START HERE — ECOSYSTEM MAP**
@@ -67,7 +138,7 @@ It is three things in one:
 | **[cc-switch](https://github.com/hongsw/cc-switch) ⭐52.8k** | Cross-CLI provider switcher: Claude Code, Codex, Gemini, OpenCode unified under one SSOT. | L3/L4c |
 | **[superpowers](https://github.com/obra/superpowers) ⭐145k** | Largest-starred harness/SSOT repo. Shell-first agentic skills + SSOT methodology. | L3/L4b |
 
-Full analysis in [`docs/research-watch/`](docs/research-watch/) (150+ docs) · Full map in [`docs/reference-levels.md`](docs/reference-levels.md)
+Full analysis in [`docs/research-watch/`](docs/research-watch/) (186 docs) · Full map in [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -187,6 +258,32 @@ clawfit recommend \
 ```
 
 > `--maturity 5` = sub-agent user stage. See the [maturity × layer map](docs/pages/maturity-layer-map.md) for all 11 stages.
+
+**Example output:**
+
+```
+Rank 1  fit_score: 0.900
+  agent:    react-agent
+  llm:      gpt-4o         (openai, $0.003/1k, latency: medium)
+  hardware: cloud-serverless
+  arch:     cloud-api
+  why:
+    - ReAct Agent supports 'code-gen' with medium latency
+    - GPT-4o fits the task and cost profile
+    - GPT-4o is a preferred LLM for ReAct Agent
+
+Rank 2  fit_score: 0.900
+  agent:    react-agent
+  llm:      claude-sonnet  (anthropic, $0.003/1k, latency: medium)
+  hardware: cloud-serverless
+  arch:     cloud-api
+
+Rank 3  fit_score: 0.850
+  agent:    react-agent
+  llm:      kimi-k2-6      (moonshot, $0.00095/1k, latency: medium)
+  hardware: aws-cpu-medium
+  arch:     cloud-api
+```
 
 ### Inspect the registry
 
