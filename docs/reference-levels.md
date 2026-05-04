@@ -1,4 +1,4 @@
-# clawfit Reference Levels v0.3
+# clawfit Reference Levels v0.4
 
 This document organizes external tools and projects that clawfit should compare against, learn from, or use as supporting references.
 
@@ -67,6 +67,10 @@ It is increasingly about choosing:
 5. and sometimes a **human interface layer**.
 
 So this document now uses a more explicit **7-level structure**.
+
+### New patterns as of 2026-05 (v0.4 update)
+- **L6 taxonomy split — L6a / L6b formalised:** L6 now has two named sub-layers. L6a = retrieval-native (embed → index → retrieve → inject; LLM is consumer). L6b = LLM-native KB (LLM maintains the knowledge artifact directly; no retrieval pipeline). Anchored by Karpathy LLM Wiki gist (2026-04-04) and confirmed implementation `wuphf` (L4a primary, L6b secondary). Operational definition: write-authority determines classification — LLM writes → L6b; pipeline/human writes → L6a.
+- **Operational definition added (L4a vs L6b boundary):** Resolves the ambiguity between agent-memory tools (L4a) and LLM-native knowledge bases (L6b). Tools that support both roles are classified by their primary write-authority and carry cross-references.
 
 ### New patterns as of 2026-04 (v0.3 update)
 - **Institutional harness entry:** LangChain/LangGraph entered Level 2 directly with `deepagents` — a production-ready, batteries-included open-source harness explicitly positioned against proprietary coding assistants

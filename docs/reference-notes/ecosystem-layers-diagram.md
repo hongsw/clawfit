@@ -109,7 +109,7 @@ NVIDIA OpenShell    L1         L4c         Runtime substrate + egress policy
 
 ---
 
-## 5. Scoring weight axes (current v0.3)
+## 5. Scoring weight axes (current v0.4)
 
 ```
 fit_score = Σ weighted components

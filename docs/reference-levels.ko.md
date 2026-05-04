@@ -1,4 +1,4 @@
-# clawfit 참조 레벨 v0.3 (한국어)
+# clawfit 참조 레벨 v0.4 (한국어)
 
 > 영문 원본: [`reference-levels.md`](reference-levels.md)
 
@@ -16,6 +16,11 @@ clawfit의 **정식 에코시스템 맵**입니다.
 채택/성숙도 사다리가 아니며, 원시 발견 로그도 아닙니다.
 
 ---
+
+### 2026-05 신규 패턴 (v0.4)
+
+- **L6 분류 분리 — L6a / L6b 공식 확정:** L6가 두 개의 서브레이어로 분리됨. L6a = 검색-네이티브 (임베드 → 인덱스 → 검색 → 주입; LLM은 소비자). L6b = LLM-네이티브 KB (LLM이 지식 저장소를 직접 유지; 검색 파이프라인 없음). 카파시 LLM Wiki 기스트(2026-04-04) 기준. wuphf (L4a 기본, L6b 부차) 첫 확인 구현체.
+- **조작적 정의 추가 (L4a vs L6b 경계):** 쓰기 주체로 구분 — LLM이 쓰면 L6b, 파이프라인/사람이 쓰면 L6a. 두 역할을 모두 지원하면 primary 역할로 분류하고 cross-reference 표기.
 
 ### 2026-04 신규 패턴 (v0.3)
 
@@ -217,13 +222,31 @@ Level 4는 세 가지 서브타입으로 분화 중:
 
 에이전트가 외부 지식에 어떻게 접근하고 구조화하는지.
 
+두 가지 구조적 서브타입으로 분리됨 (2026-05-05 공식화):
+
+### L6a — 검색-네이티브 지식 인프라
+
+전처리 → 임베드 → 인덱스 → 검색 → 주입. **LLM은 소비자**이고, 파이프라인/사람이 저장소를 유지.
+
 | 프로젝트 | 스타 | 설명 |
 |---------|------|------|
-| [MinerU](https://github.com/opendatalab/MinerU) | ⭐ 61,356 | |
-| [LightRAG](https://github.com/HKUDS/LightRAG) | ⭐ 34,415 | |
-| [PageIndex](https://github.com/VectifyAI/PageIndex) | ⭐ 25,871 | |
-| [RAG-Anything](https://github.com/HKUDS/RAG-Anything) | ⭐ 19,033 | |
-| [airweave](https://github.com/airweave-ai/airweave) | ⭐ 6,266 | |
+| [MinerU](https://github.com/opendatalab/MinerU) | ⭐ 61,356 | 고품질 PDF/문서 파이프라인 |
+| [LightRAG](https://github.com/HKUDS/LightRAG) | ⭐ 34,415 | 그래프+벡터 듀얼 레벨 검색 |
+| [PageIndex](https://github.com/VectifyAI/PageIndex) | ⭐ 25,871 | LLM-쿼리 가능 문서 인덱스 |
+| [RAG-Anything](https://github.com/HKUDS/RAG-Anything) | ⭐ 19,033 | 멀티모달 RAG |
+| [CocoIndex](https://github.com/cocoindex-io/cocoindex) | ⭐ 7,900 | 증분 데이터 파이프라인 엔진, Rust 코어 |
+| [airweave](https://github.com/airweave-ai/airweave) | ⭐ 6,266 | LLM 접근 가능 저장소로 읽기 전용 동기화 |
+
+### L6b — LLM-네이티브 지식 베이스
+
+**LLM이 지식 저장소를 직접 생성·유지**. 검색 파이프라인 없음; LLM(또는 사람)이 쿼리. [카파시 LLM Wiki 패턴](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) (2026-04-04).
+
+**조작적 정의:** 쓰기 주체가 LLM → L6b. 쓰기 주체가 파이프라인/사람 → L6a.
+
+| 프로젝트 | 스타 | 설명 |
+|---------|------|------|
+| [wuphf](https://github.com/nex-crm/wuphf) | — | 에이전트가 유지하는 Markdown+Git 위키. L4a 기본, L6b 부차 *(첫 확인 구현체)* |
+| GBrain | — | 개인 LLM-네이티브 지식 베이스. L4a 기본, L6b 부차 |
 
 ---
 
