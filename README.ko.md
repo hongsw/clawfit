@@ -29,7 +29,7 @@
 
 ## 🗺 에코시스템 맵 — 7레이어 + 기반 서브스트레이트
 
-![Ecosystem Map](docs/assets/ecosystem-map.svg)
+![에코시스템 맵](docs/assets/ecosystem-map.ko.svg)
 
 > **맵 vs 레지스트리**: 맵은 162+ 도구를 인식 목적으로 추적. **추천 레지스트리** (20개: 4 에이전트 × 11 LLM × 5 하드웨어)는 `clawfit recommend`가 스코어링하는 검증된 엔트리.
 
