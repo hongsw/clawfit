@@ -109,12 +109,27 @@
 | **[dexter](https://github.com/virattt/dexter) ⭐23k** | virattt(ai-hedge-fund ⭐58k 동일 저자)의 자율 금융 리서치 에이전트. TypeScript/Bun, 자가 검증, 실시간 데이터. | L1 |
 | **[ruflo](https://github.com/ruvnet/ruflo) ⭐40.9k** | Claude Code용 멀티 에이전트 스웜 오케스트레이션. 오늘 +2,594★. 100+ 에이전트, SONA 학습, mTLS 페더레이션. | L2 |
 | **[n8n-mcp](https://github.com/czlonkowski/n8n-mcp) ⭐19.8k** | 1,650+ n8n 워크플로우 노드를 Claude 도구 사용으로 브리지하는 MCP 서버. L4c 맵 05-04 추가. | L4c |
-| **[cocoindex](https://github.com/cocoindex-io/cocoindex) ⭐7.9k** | 장기 에이전트용 증분 데이터 파이프라인 엔진. Rust 코어, 델타 전용 재처리 (10× 비용 절감). L6 맵 05-04 추가. | L6 |
+| **[cocoindex](https://github.com/cocoindex-io/cocoindex) ⭐7.9k** | 장기 에이전트용 증분 데이터 파이프라인 엔진. Rust 코어, 델타 전용 재처리 (10× 비용 절감). L6a 맵 05-04 추가. | L6a |
 | **[DeepSeek V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)** | SWE-Bench 80.6, MIT, $0.44/M, 1M ctx — 오픈웨이트 최고 코딩 모델. V4-Flash는 M5 MacBook 오프라인 가동. | LLM |
 | **[cc-switch](https://github.com/hongsw/cc-switch) ⭐52.8k** | 크로스 CLI 프로바이더 전환기: Claude Code, Codex, Gemini, OpenCode를 하나의 SSOT로 통합. | L3/L4c |
 | **[superpowers](https://github.com/obra/superpowers) ⭐145k** | 가장 큰 하네스/SSOT 리포. Shell 기반 에이전틱 스킬 + SSOT 방법론. | L3/L4b |
 
 전체 분석: [`docs/research-watch/`](docs/research-watch/) (186개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+
+---
+
+## 🧑‍💼 한국 AI 전문가 팀 리뷰 (2026-05-05)
+
+7레이어 + L6a/L6b 분리를 포함한 에코시스템 맵을 4인 한국 AI 전문가 페르소나가 독립 검토했습니다.
+
+| 검토자 | 역할 | 핵심 평가 | 주요 제안 |
+|--------|------|----------|----------|
+| **강민준** | 대기업 CTO | "L6a/L6b 분리는 엔터프라이즈 구매 판단에 직결된다. RAG 인프라 vs 에이전틱 KB는 벤더 선택이 다르다." | `governance_need: strict` 컴플라이언스 승수 필터 추가 |
+| **이지수** | KAIST AI 연구자 | "쓰기 주체 / 읽기 주체로 L4a·L6b를 구분하는 조작적 정의가 반드시 필요하다. 지금 분류는 직관적이지만 경계 사례를 처리 못 한다." | 조작적 정의 문서화 — **완료**: `docs/reference-levels.md`에 반영 |
+| **박성현** | MLOps 엔지니어 | "하드웨어 프로필에 VRAM이 없으면 L0* 기반 오프라인 추천이 절반짜리다. fp16 TFLOPS도 모델 선택에 필수." | `hardware.json`에 `vram_gb`, `fp16_tflops`, `cost_per_million_tokens_est` 필드 추가 |
+| **최수현** | AI 전문 VC | "스타 개수보다 일별 증가 속도가 시그널이다. ruflo +2,594★/일, TradingAgents +2,181★/일 — 이게 투자 판단 근거." | 뜨거운 것 테이블에 `+★/일` 속도 컬럼 추가 |
+
+> 이지수 연구자의 조작적 정의는 이미 [`docs/reference-levels.md`](docs/reference-levels.md) L6b 섹션에 반영되었습니다. 나머지 제안(거버넌스 필터, 하드웨어 필드, 속도 컬럼)은 다음 마일스톤에서 처리 예정입니다.
 
 ---
 
