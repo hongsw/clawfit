@@ -171,7 +171,8 @@
       ],
       "team_size": [
         "solo",
-        "small"
+        "small",
+        "mid"
       ],
       "network": "hybrid",
       "setup_complexity": "low",
@@ -237,7 +238,8 @@
       ],
       "team_size": [
         "solo",
-        "small"
+        "small",
+        "mid"
       ],
       "network": "hybrid",
       "setup_complexity": "low",
@@ -342,7 +344,8 @@
       ],
       "team_size": [
         "solo",
-        "small"
+        "small",
+        "mid"
       ],
       "network": "hybrid",
       "setup_complexity": "low",
@@ -762,8 +765,7 @@
       ],
       "roles": [
         "developer",
-        "researcher",
-        "exec"
+        "researcher"
       ],
       "team_size": [
         "mid",
@@ -912,8 +914,7 @@
       ],
       "roles": [
         "developer",
-        "researcher",
-        "exec"
+        "researcher"
       ],
       "team_size": [
         "mid",
