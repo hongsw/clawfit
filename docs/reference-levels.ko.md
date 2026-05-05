@@ -37,6 +37,14 @@ clawfit의 **정식 에코시스템 맵**입니다.
 
 ---
 
+### 📡 2026-05-05 신규 신호
+- **agency-agents — L4b 도메인 스킬팩 추가 (⭐92.4k, 승격 기준 충족):** msitarzewski/agency-agents (92,398★, MIT). 12개 직군(세일즈·법무·의료·금융 포함) 144개 에이전트 페르소나를 포함하는 크로스툴 이식형 스킬팩. 마크다운 SSOT에서 Claude Code·Cursor·Copilot·Aider·Windsurf·Gemini CLI용 설치 포맷을 자동 변환하는 파이프라인 포함. 이전 L4b 최대 항목(caveman 48.1k★) 대비 3.7배 스타 수. **L4b 도메인 스킬팩 상단에 추가됨.**
+- **dexter — 자율 금융 리서치 에이전트 (⭐23k, L1 도메인 특화) — 보류:** virattt/dexter (23,024★). 명확한 L1 도메인 특화 에이전트이나 clawfit 태스크 스키마에 `financial-research` 라벨 없음. 스키마 확장 논의 후 재검토.
+- **Kimi K2.6 — Moonshot 오픈웨이트 LLM — llms.json 보류:** SWE-Bench 80.2%, 256K ctx, Modified MIT, $0.95/$4.00/1M. llms.json 후보. Modified MIT 전문 검토 및 독립 벤치마크 확인 후 등록.
+- **L6 분류 분리 — L6a(검색-네이티브) / L6b(LLM-네이티브 KB) 공식화 (2026-05-05):** 카파시 LLM Wiki 기스트(2026-04-04) 기준. L6a = 검색-주입 루프(LLM은 소비자). L6b = LLM이 지식 저장소를 직접 유지(검색 파이프라인 없음). wuphf·GBrain이 첫 L6b 확인 구현체. 단독 L6b 승격 기준: ⭐5k+.
+- **찰떡AI (Baryon Labs, L6b primary + L4c secondary):** 사용자 과거 문서 → LLM이 노드/엣지 지식 그래프 직접 유지 → 미래 문서 자동 적응. MCP `Plan` 출력의 `GraphUpdate` 필드로 LLM 쓰기 주체 확인. 호스트 보호형 MCP 라우팅(L4c 인바운드 보호 변형). 국내 L6b 도메인 특화 첫 확인 사례.
+- **Cloudflare VibeSDK (L2 primary) / Flue Astro 샌드박스 프레임워크 (L2 primary) / Manifest mnfst 스마트 모델 라우팅 (L4c) / local-deep-research 멀티LLM 리서치 (L5 primary):** 각 research-watch 문서 참조. 스타 수 미달 또는 독립 검증 대기로 레지스트리 미등록.
+
 ### 📡 2026-05-03 신규 신호
 - **Mendral — "하네스는 샌드박스 외부에" (HN 118pts):** Docker/Dagger 창업자 Andrea Luzzardi + Sam Alba. LLM 컨트롤 루프를 백엔드에서 실행하고 도구 실행 시만 샌드박스 API를 호출하는 아키텍처 패턴. 샌드박스는 임시(cattle), 자격증명은 샌드박스 진입 불가. Inngest(내구성 실행) + Blaxel(25ms 재개) 조합. L2 아키텍처 레퍼런스.
 - **DeepSeek V4-Pro (HN 557pts):** 오픈웨이트 1.6T/49B 활성 MoE, 1M 컨텍스트, MIT 라이선스. 입력 $0.000435/1k — GPT-5.5·Claude Opus 4.7 대비 7배 저렴. 오픈소스 중 에이전틱 코딩 SWE-Bench SOTA. V4-Flash(13B 활성, $0.00014/1k)도 동시 출시. clawfit llms.json에 양쪽 추가됨.
