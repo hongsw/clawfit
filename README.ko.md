@@ -1,6 +1,6 @@
 # clawfit
 
-> AI 에이전트 + LLM + 하드웨어 추천 엔진 — **162+ 도구**, **7레이어 생태계 맵**, **186개 리서치워치 문서**, **10차원 스코어링**
+> AI 에이전트 + LLM + 하드웨어 추천 엔진 — **162+ 도구**, **7레이어 생태계 맵**, **192개 리서치워치 문서**, **10차원 스코어링**
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.7%2B-blue)](pyproject.toml)
@@ -103,18 +103,18 @@
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[agency-agents](https://github.com/msitarzewski/agency-agents) ⭐92.4k** | 144+ 전문 Claude 에이전트 페르소나 (Engineering, Design, Sales, Marketing…) Shell 스크립트. Claude Code, Cursor, Aider, Windsurf 모두 지원. MIT. L4b 맵에 추가됨. | L4b |
-| **[Kimi K2.6](https://moonshotai.github.io/Kimi-K2/) 🆕** | Moonshot AI 1T/32B MoE, SWE-Bench Verified 80.2%, 300 에이전트 스웜 / 4,000 스텝, Modified MIT, $0.95/M. llms.json에 추가됨 (11개 LLM). | LLM |
+| **[agency-agents](https://github.com/msitarzewski/agency-agents) ⭐92.4k** | 144+ 전문 Claude 에이전트 페르소나 (Engineering, Design, Sales, Marketing…) Shell 스크립트. Claude Code, Cursor, Aider, Windsurf 모두 지원. MIT. L4b 맵 추가. | L4b |
+| **[Kimi K2.6](https://moonshotai.github.io/Kimi-K2/) 🆕** | Moonshot AI 1T/32B MoE, SWE-Bench Verified 80.2%, 300 에이전트 스웜 / 4,000 스텝, Modified MIT, $0.95/M. llms.json 추가 (11개 LLM). | LLM |
+| **[MemPalace](https://github.com/MemPalace/mempalace) ⭐51k** | 공간 은유 기반 메모리 시스템 + 29개 MCP 도구. ⚠️ "최고 벤치마크" 주장 논란 — 96.6%는 ChromaDB 기준선 점수 (MemPalace 자체 로직 아님, issue #875). | L4a |
 | **[TradingAgents](https://github.com/TauricResearch/TradingAgents) ⭐67k** | 오늘 +2,181★. 도메인 특화 멀티 에이전트 프레임워크 중 최다 별. 금융 애널리스트→리스크→실행 역할 계층. | L1 |
-| **[dexter](https://github.com/virattt/dexter) ⭐23k** | virattt(ai-hedge-fund ⭐58k 동일 저자)의 자율 금융 리서치 에이전트. TypeScript/Bun, 자가 검증, 실시간 데이터. | L1 |
-| **[ruflo](https://github.com/ruvnet/ruflo) ⭐40.9k** | Claude Code용 멀티 에이전트 스웜 오케스트레이션. 오늘 +2,594★. 100+ 에이전트, SONA 학습, mTLS 페더레이션. | L2 |
-| **[n8n-mcp](https://github.com/czlonkowski/n8n-mcp) ⭐19.8k** | 1,650+ n8n 워크플로우 노드를 Claude 도구 사용으로 브리지하는 MCP 서버. L4c 맵 05-04 추가. | L4c |
-| **[cocoindex](https://github.com/cocoindex-io/cocoindex) ⭐7.9k** | 장기 에이전트용 증분 데이터 파이프라인 엔진. Rust 코어, 델타 전용 재처리 (10× 비용 절감). L6a 맵 05-04 추가. | L6a |
-| **[DeepSeek V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)** | SWE-Bench 80.6, MIT, $0.44/M, 1M ctx — 오픈웨이트 최고 코딩 모델. V4-Flash는 M5 MacBook 오프라인 가동. | LLM |
+| **[ruflo](https://github.com/ruvnet/ruflo) ⭐41k** | Claude Code용 멀티 에이전트 스웜 오케스트레이션. +2,594★/일 피크. 100+ 에이전트, SONA 학습, mTLS 페더레이션. | L2 |
 | **[cc-switch](https://github.com/hongsw/cc-switch) ⭐52.8k** | 크로스 CLI 프로바이더 전환기: Claude Code, Codex, Gemini, OpenCode를 하나의 SSOT로 통합. | L3/L4c |
-| **[superpowers](https://github.com/obra/superpowers) ⭐145k** | 가장 큰 하네스/SSOT 리포. Shell 기반 에이전틱 스킬 + SSOT 방법론. | L3/L4b |
+| **[n8n-mcp](https://github.com/czlonkowski/n8n-mcp) ⭐19.8k** | 1,650+ n8n 워크플로우 노드를 Claude 도구 사용으로 브리지하는 MCP 서버. | L4c |
+| **[cocoindex](https://github.com/cocoindex-io/cocoindex) ⭐7.9k** | 장기 에이전트용 증분 데이터 파이프라인 엔진. Rust 코어, 델타 전용 재처리 (10× 비용 절감). | L6a |
+| **[local-deep-research](https://github.com/LearningCircuit/local-deep-research) ⭐4.8k** | 셀프호스팅 멀티-LLM 자동 리서치 웹앱, LangGraph 에이전틱 모드 + 20개+ 검색 엔진. +171★/일 — 5k 임박. | L5 |
+| **[DeepSeek V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)** | SWE-Bench 80.6, MIT, $0.44/M, 1M ctx — 오픈웨이트 최고 코딩 모델. V4-Flash는 M5 MacBook 오프라인 가동. | LLM |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (186개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (192개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -137,7 +137,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
-| 2026-05-05 | 도식 다이어그램·통계 추가. 데일리 스캔: agency-agents ⭐92.4k → L4b 맵, Kimi K2.6 (SWE-Bench 80.2%) → llms.json, dexter ⭐23k 금융 리서치, Rapid-MLX Apple Silicon 4.2× 빠름. 29/29 테스트. |
+| 2026-05-05 | 데일리 스캔 11개 문서: agency-agents ⭐92.4k L4b, Kimi K2.6 → llms.json, MemPalace ⭐51k L4a(벤치마크 논란), local-deep-research ⭐4.8k L5, cloudflare/vibesdk L2, flue L2 샌드박스, manifest L4c 라우팅. L6a/L6b 공식 분리(v0.4). 찰떡AI L6b 추가. 한국 전문가 리뷰 섹션 추가. 29/29 테스트. |
 | 2026-05-04 | 데일리 스캔: ruflo ⭐38.8k L2, TradingAgents ⭐65k, ouroboros Agent OS, cocoindex L6, n8n-mcp L4c (1,650+ 노드). n8n-mcp + CocoIndex → reference-levels.md. 5개 research-watch. |
 | 2026-05-03 | 데일리 스캔: DeepSeek V4-Pro (SWE-Bench 80.6, $0.44/M), xAI Grok 4.3 (83% 저렴), MS Agent Framework v1.0 (AutoGen+SK 통합), acai.sh ACID 스펙 주도 개발, TradingAgents 57.7k★. 스코어링 성숙도 가중치 버그 수정. 9개 docs. |
 | 2026-04-30 | 데일리 스캔: Warp 오픈소스 +11,955★/일 기록, Zed 1.0 안정화, Mistral Medium 3.5 → llms.json, NVIDIA OpenShell L1, memvid L4a 이식형 바이너리, cc-connect L7 3번째 데이터포인트, hongsw/harness L2. research-watch 7개 추가. |
