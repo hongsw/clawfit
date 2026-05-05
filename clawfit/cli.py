@@ -90,9 +90,24 @@ def build_parser() -> argparse.ArgumentParser:
 
     # recommend
     rec = sub.add_parser("recommend", help="Get a recommendation")
-    rec.add_argument("--task", required=True, help="Task category (e.g. qa, research, code-gen)")
+    def _parse_budget(value: str):
+        if value in ("free", "low", "medium", "high"):
+            return value
+        try:
+            return float(value)
+        except ValueError:
+            raise argparse.ArgumentTypeError(
+                f"budget must be a tier (free/low/medium/high) or a number, got: {value!r}"
+            )
+
+    rec.add_argument("--task", required=True,
+        help="Task category: generic (qa, research, code-gen, data-analysis, summarization, "
+             "classification) or vertical (financial-research, security-testing, legal-review, "
+             "medical-assistance, content-creation, sales-automation)")
     rec.add_argument("--latency", default="medium", choices=["low", "medium", "high"])
-    rec.add_argument("--budget", type=float, default=None, help="Max cost per 1k tokens")
+    rec.add_argument("--budget", type=_parse_budget, default=None,
+        help="Budget tier (free/low/medium/high) or max cost per 1k tokens (e.g. 0.001). "
+             "Tiers: free=local-only, low<$0.001, medium<$0.005, high=no limit")
     rec.add_argument("--hardware", default=None, choices=["cloud", "edge", "on-prem"])
     rec.add_argument("--network", default=None, choices=["online", "offline"])
     rec.add_argument("--statefulness", default=None, choices=["stateless", "session", "persistent"])

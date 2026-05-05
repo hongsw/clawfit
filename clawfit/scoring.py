@@ -5,6 +5,7 @@ from __future__ import annotations
 from typing import List, Optional, Tuple
 
 from .schemas import Agent, LLM, Hardware, Recommendation
+from .filters import TASK_PARENTS
 
 LATENCY_RANK = {"low": 1, "medium": 2, "high": 3}
 
@@ -32,6 +33,15 @@ def _latency_score(target: str, actual: str) -> float:
 
 def _preferred_llm_bonus(agent: Agent, llm: LLM) -> float:
     return 0.15 if llm.id in agent.preferred_llms else 0.0
+
+
+def _vertical_task_bonus(agent: Agent, task: str) -> float:
+    """0.05 bonus when an agent explicitly supports a vertical task tag.
+
+    Falls to 0.0 when the agent only matches via parent fallback — rewarding
+    purpose-built vertical agents over generic ones.
+    """
+    return 0.05 if task in agent.tasks and task in TASK_PARENTS else 0.0
 
 
 def _cost_score(llm: LLM, hw: Hardware) -> float:
@@ -133,6 +143,7 @@ def score_combination(
     hw: Hardware,
     *,
     target_latency: str = "medium",
+    task: str = "",
     maturity_stage: Optional[int] = None,
 ) -> float:
     lat = (
@@ -142,14 +153,15 @@ def score_combination(
     )
     cost = _cost_score(llm, hw) * 0.25
     pref = _preferred_llm_bonus(agent, llm)
+    vert = _vertical_task_bonus(agent, task)
     base = 0.1
 
     if maturity_stage is not None:
         mat = _maturity_score(agent, maturity_stage) * 0.15
-        # lat=0.50, cost=0.20, pref=0.15, mat=0.15 → sum=1.00
-        return round(min(lat + cost * 0.80 + pref + mat, 1.0), 3)
+        # lat=0.50, cost=0.20, pref=0.15, mat=0.15 → sum=1.00; vert pushes toward cap
+        return round(min(lat + cost * 0.80 + pref + mat + vert, 1.0), 3)
 
-    return round(min(lat + cost + pref + base, 1.0), 3)
+    return round(min(lat + cost + pref + base + vert, 1.0), 3)
 
 
 def rank(
@@ -168,6 +180,7 @@ def rank(
                 score = score_combination(
                     a, m, h,
                     target_latency=target_latency,
+                    task=task,
                     maturity_stage=maturity_stage,
                 )
                 rec = Recommendation(

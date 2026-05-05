@@ -3,7 +3,7 @@
 import unittest
 
 from clawfit.loader import load_agents, load_llms, load_hardware
-from clawfit.filters import filter_agents, filter_llms, filter_hardware
+from clawfit.filters import filter_agents, filter_llms, filter_hardware, _resolve_budget
 
 
 class TestFilterAgents(unittest.TestCase):
@@ -120,6 +120,137 @@ class TestFilterHardware(unittest.TestCase):
         out = filter_hardware(self.hw, latency="low")
         for h in out:
             self.assertEqual(h.latency, "low")
+
+
+class TestVerticalTaskTags(unittest.TestCase):
+    """Vertical task tags: exact match takes priority, parent fallback works."""
+
+    def setUp(self):
+        self.agents = load_agents()
+        self.llms = load_llms()
+
+    # --- agents ---
+
+    def test_financial_research_matches_explicit_tag(self):
+        # plan-execute has "financial-research" explicitly
+        out = filter_agents(self.agents, task="financial-research")
+        ids = [a.id for a in out]
+        self.assertIn("plan-execute", ids)
+
+    def test_financial_research_fallback_to_research_parent(self):
+        # react-agent has "research" but not "financial-research" → still included via parent
+        out = filter_agents(self.agents, task="financial-research")
+        ids = [a.id for a in out]
+        self.assertIn("react-agent", ids)
+
+    def test_security_testing_matches_explicit_tag(self):
+        out = filter_agents(self.agents, task="security-testing")
+        ids = [a.id for a in out]
+        self.assertIn("react-agent", ids)
+
+    def test_legal_review_matches_explicit_tag(self):
+        out = filter_agents(self.agents, task="legal-review")
+        ids = [a.id for a in out]
+        self.assertIn("local-rag", ids)
+
+    def test_legal_review_fallback_for_generic_research_agent(self):
+        # plan-execute has "research" → matches legal-review via parent
+        out = filter_agents(self.agents, task="legal-review")
+        ids = [a.id for a in out]
+        self.assertIn("plan-execute", ids)
+
+    def test_unknown_vertical_no_match(self):
+        out = filter_agents(self.agents, task="astrology-reading")
+        self.assertEqual(out, [])
+
+    # --- llms ---
+
+    def test_llm_financial_research_via_research_parent(self):
+        out = filter_llms(self.llms, task="financial-research")
+        # all LLMs with "research" in tasks should appear
+        self.assertTrue(len(out) > 0)
+        for m in out:
+            self.assertTrue(
+                "financial-research" in m.tasks or "research" in m.tasks,
+                f"{m.id} passed financial-research filter but has neither tag",
+            )
+
+
+class TestBudgetTiers(unittest.TestCase):
+    """Budget tier strings map to correct ceilings; float backward-compat works."""
+
+    def setUp(self):
+        self.llms = load_llms()
+
+    # --- _resolve_budget ---
+
+    def test_resolve_free(self):
+        self.assertEqual(_resolve_budget("free"), 0.0)
+
+    def test_resolve_low(self):
+        self.assertEqual(_resolve_budget("low"), 0.001)
+
+    def test_resolve_medium(self):
+        self.assertEqual(_resolve_budget("medium"), 0.005)
+
+    def test_resolve_high_is_inf(self):
+        import math
+        self.assertTrue(math.isinf(_resolve_budget("high")))
+
+    def test_resolve_float_passthrough(self):
+        self.assertAlmostEqual(_resolve_budget(0.0025), 0.0025)
+
+    def test_resolve_none_returns_none(self):
+        self.assertIsNone(_resolve_budget(None))
+
+    def test_resolve_unknown_tier_raises(self):
+        with self.assertRaises(ValueError):
+            _resolve_budget("ultra")
+
+    # --- filter_llms with tiers ---
+
+    def test_budget_free_returns_only_zero_cost(self):
+        out = filter_llms(self.llms, budget="free")
+        for m in out:
+            self.assertEqual(m.cost_per_1k_tokens, 0.0, f"{m.id} has non-zero cost")
+
+    def test_budget_low_excludes_gpt4o(self):
+        # gpt-4o costs 0.0025 > 0.001 ceiling
+        out = filter_llms(self.llms, budget="low")
+        ids = [m.id for m in out]
+        self.assertNotIn("gpt-4o", ids)
+
+    def test_budget_low_includes_deepseek_flash(self):
+        # deepseek-v4-flash costs 0.00014 < 0.001
+        out = filter_llms(self.llms, budget="low")
+        ids = [m.id for m in out]
+        self.assertIn("deepseek-v4-flash", ids)
+
+    def test_budget_medium_includes_gpt4o(self):
+        # gpt-4o costs 0.0025 < 0.005 medium ceiling
+        out = filter_llms(self.llms, budget="medium")
+        ids = [m.id for m in out]
+        self.assertIn("gpt-4o", ids)
+
+    def test_budget_medium_excludes_claude_opus(self):
+        # claude-opus costs 0.015 > 0.005
+        out = filter_llms(self.llms, budget="medium")
+        ids = [m.id for m in out]
+        self.assertNotIn("claude-opus", ids)
+
+    def test_budget_high_returns_all(self):
+        all_llms = self.llms
+        out = filter_llms(self.llms, budget="high")
+        self.assertEqual(len(out), len(all_llms))
+
+    def test_budget_float_backward_compat(self):
+        # 0.001 as float should behave same as "low" tier
+        out_tier = filter_llms(self.llms, budget="low")
+        out_float = filter_llms(self.llms, budget=0.001)
+        self.assertEqual(
+            sorted(m.id for m in out_tier),
+            sorted(m.id for m in out_float),
+        )
 
 
 if __name__ == "__main__":
