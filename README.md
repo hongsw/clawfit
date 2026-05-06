@@ -101,22 +101,22 @@ It is three things in one:
 
 ---
 
-## 🔥 What's hot right now (2026-05-05)
+## 🔥 What's hot right now (2026-05-06)
 
 | Signal | Why it matters | Level |
 |--------|---------------|-------|
-| **[agency-agents](https://github.com/msitarzewski/agency-agents) ⭐92.4k** | 144+ specialized Claude agent personas (Engineering, Design, Sales, Marketing…) in shell scripts. Works with Claude Code, Cursor, Aider, Windsurf. MIT. Added to L4b map. | L4b |
-| **[Kimi K2.6](https://moonshotai.github.io/Kimi-K2/) 🆕** | Moonshot AI 1T/32B MoE, SWE-Bench Verified 80.2%, 300-agent swarm / 4,000 steps, Modified MIT, $0.95/M. Added to llms.json (11 LLMs total). | LLM |
-| **[MemPalace](https://github.com/MemPalace/mempalace) ⭐51k** | Spatial-metaphor memory system + 29-tool MCP server. ⚠️ "best-benchmarked" claim disputed — headline 96.6% is ChromaDB score, not MemPalace logic (issue #875). | L4a |
-| **[TradingAgents](https://github.com/TauricResearch/TradingAgents) ⭐67k** | +2,181★ today. Highest-starred domain-specialized multi-agent framework. Financial analyst→risk→execution pipeline. | L1 |
-| **[ruflo](https://github.com/ruvnet/ruflo) ⭐41k** | Multi-agent swarm orchestration for Claude Code. +2,594★/day peak. 100+ agents, SONA learning, mTLS federation. | L2 |
-| **[cc-switch](https://github.com/hongsw/cc-switch) ⭐52.8k** | Cross-CLI provider switcher: Claude Code, Codex, Gemini, OpenCode unified under one SSOT. | L3/L4c |
-| **[n8n-mcp](https://github.com/czlonkowski/n8n-mcp) ⭐19.8k** | MCP server bridging 1,650+ n8n workflow nodes into Claude tool-use. | L4c |
-| **[cocoindex](https://github.com/cocoindex-io/cocoindex) ⭐7.9k** | Incremental data-pipeline engine for long-horizon agents. Rust core, delta-only reprocessing (10× cheaper). | L6a |
-| **[local-deep-research](https://github.com/LearningCircuit/local-deep-research) ⭐4.8k** | Self-hosted multi-LLM autoresearch web app with LangGraph agentic mode + 20+ search engines. +171★/day — 5k threshold imminent. | L5 |
-| **[DeepSeek V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)** | SWE-Bench 80.6, MIT, $0.44/M, 1M ctx — top open-weight coding model. V4-Flash runs offline on M5 MacBook. | LLM |
+| **[PageIndex](https://github.com/VectifyAI/PageIndex) ⭐28.2k 🔥** | Vector-DB-free RAG: hierarchical TOC tree + LLM tree-search retrieval. "Similarity ≠ relevance" thesis. FinanceBench 98.7% (vendor-claimed). L6a structural sub-type "vectorless tree-traversal"; L6c sub-layer candidate (single signal — not promoted). | L6a |
+| **[anthropics/financial-services](https://github.com/anthropics/financial-services) ⭐8.5k +540/day** | First 1st-party Anthropic vertical skill pack: 11 workflow agents (Pitch, Earnings, Valuation, KYC…), 50+ skills, 11 data-provider MCPs (FactSet, Moody's, S&P…). Bloomberg/Fortune coverage. Examples repo — registry held. | L4b |
+| **[Cloudflare × Stripe Projects](https://blog.cloudflare.com/agents-stripe-projects/) HN 381pts** | Agents now create CF accounts, buy domains, deploy autonomously. April 17 "infra triple" extended from compute → financial+lifecycle. Implies governance_need split into audit + spend-rail axes. | L4c |
+| **[Reflex 45× cost benchmark](https://news.ycombinator.com/item?id=48031684) HN 412pts** | Computer Use vs structured-API on identical task: 45× input tokens, 51× wall-clock. L1/L7 collapse pattern (Apr 2026) augmented with cost-axis citation. "Prefer structured" rationale clause added. | meta |
+| **[Understand-Anything](https://github.com/Lum1104/Understand-Anything) ⭐12.7k** | Claude Code plugin: code/KB → interactive knowledge graph via LLM multi-agent (vs GitNexus's deterministic Tree-sitter). MIT, TypeScript. Differs from L4a memory tools — graph rebuilt on demand. | L4b |
+| **[agency-agents](https://github.com/msitarzewski/agency-agents) ⭐92.4k** | 144 personas across 12 verticals (Sales, Legal, Healthcare, Finance). Cross-tool MD SSOT auto-converts to Claude Code/Cursor/Aider/Windsurf. Anchors finance-vertical cluster. | L4b |
+| **[TradingAgents](https://github.com/TauricResearch/TradingAgents) ⭐67k** | Financial analyst→risk→execution pipeline. Member of finance-vertical cluster (Dexter+TradingAgents+agency-agents/finance+anthropics/financial-services+Kronos). | L1 |
+| **[Kimi K2.6](https://moonshotai.github.io/Kimi-K2/)** | Moonshot 1T/32B MoE, SWE-Bench Verified 80.2%, 300-agent swarm, Modified MIT, $0.95/M. In llms.json. | LLM |
+| **[DeepSeek V4-Pro/Flash](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)** | SWE-Bench 80.6, MIT, $0.44/M (V4-Pro), $0.14/M (V4-Flash). V4-Flash runs offline on M5 MacBook. | LLM |
+| **[cc-switch](https://github.com/hongsw/cc-switch) ⭐52.8k** | Cross-CLI provider switcher: Claude Code+Codex+Gemini+OpenCode unified SSOT. Multi-vendor anti-lockin cluster anchor. | L3/L4c |
 
-Full analysis in [`docs/research-watch/`](docs/research-watch/) (192 docs) · Full map in [`docs/reference-levels.md`](docs/reference-levels.md)
+Full analysis in [`docs/research-watch/`](docs/research-watch/) (197 docs) · Full map in [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -124,6 +124,7 @@ Full analysis in [`docs/research-watch/`](docs/research-watch/) (192 docs) · Fu
 
 | Date | What changed |
 |------|-------------|
+| 2026-05-06 | Daily scan (5 docs): PageIndex ⭐28.2k L6a sub-type + L6c candidate flagged (single signal, not promoted), anthropics/financial-services ⭐8.5k 1st-party L4b sub-type candidate, Cloudflare×Stripe agent provisioning + financial autonomy L4c sub-track candidate, Reflex 45×/51× Computer-Use cost benchmark (architectural signal augments April L1/L7 collapse pattern), Understand-Anything ⭐12.7k L4b plugin. Finance vertical cluster meta-pattern formalised (5 signals × 3+ layers in 1 week). 50/50 tests. No registry mutations. |
 | 2026-05-05 | Daily scan (11 docs): agency-agents ⭐92.4k L4b, Kimi K2.6 → llms.json, MemPalace ⭐51k L4a (benchmark controversy flagged), local-deep-research ⭐4.8k L5, cloudflare/vibesdk L2, flue L2 sandbox, manifest L4c routing. L6a/L6b formal split (v0.4). 찰떡AI added L6b. Korean expert review section added. 29/29 tests. |
 | 2026-05-04 | Daily scan: ruflo ⭐38.8k L2 (Claude swarm orchestration), TradingAgents +3,315★/day now 65.1k, ouroboros Agent OS spec-first harness, cocoindex L6 incremental pipeline, n8n-mcp L4c (1,650+ nodes). n8n-mcp + CocoIndex added to reference-levels.md. 5 research-watch docs. scoring clean. |
 | 2026-05-03 | Daily scan: DeepSeek V4-Pro (SWE-Bench 80.6, MIT, $0.44/M), xAI Grok 4.3 (83% cheaper, ELO +321), MS Agent Framework v1.0 (AutoGen+SK consolidated), acai.sh ACID spec-first, craft-agents-oss L6, TradingAgents 57.7k★. Scoring maturity weight bug fixed (was 1.0795, now exact 1.0). L6 diagram corrected. 9 research-watch docs. |

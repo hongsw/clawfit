@@ -99,22 +99,22 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-05-05)
+## 🔥 지금 가장 뜨거운 것들 (2026-05-06)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[agency-agents](https://github.com/msitarzewski/agency-agents) ⭐92.4k** | 144+ 전문 Claude 에이전트 페르소나 (Engineering, Design, Sales, Marketing…) Shell 스크립트. Claude Code, Cursor, Aider, Windsurf 모두 지원. MIT. L4b 맵 추가. | L4b |
-| **[Kimi K2.6](https://moonshotai.github.io/Kimi-K2/) 🆕** | Moonshot AI 1T/32B MoE, SWE-Bench Verified 80.2%, 300 에이전트 스웜 / 4,000 스텝, Modified MIT, $0.95/M. llms.json 추가 (11개 LLM). | LLM |
-| **[MemPalace](https://github.com/MemPalace/mempalace) ⭐51k** | 공간 은유 기반 메모리 시스템 + 29개 MCP 도구. ⚠️ "최고 벤치마크" 주장 논란 — 96.6%는 ChromaDB 기준선 점수 (MemPalace 자체 로직 아님, issue #875). | L4a |
-| **[TradingAgents](https://github.com/TauricResearch/TradingAgents) ⭐67k** | 오늘 +2,181★. 도메인 특화 멀티 에이전트 프레임워크 중 최다 별. 금융 애널리스트→리스크→실행 역할 계층. | L1 |
-| **[ruflo](https://github.com/ruvnet/ruflo) ⭐41k** | Claude Code용 멀티 에이전트 스웜 오케스트레이션. +2,594★/일 피크. 100+ 에이전트, SONA 학습, mTLS 페더레이션. | L2 |
-| **[cc-switch](https://github.com/hongsw/cc-switch) ⭐52.8k** | 크로스 CLI 프로바이더 전환기: Claude Code, Codex, Gemini, OpenCode를 하나의 SSOT로 통합. | L3/L4c |
-| **[n8n-mcp](https://github.com/czlonkowski/n8n-mcp) ⭐19.8k** | 1,650+ n8n 워크플로우 노드를 Claude 도구 사용으로 브리지하는 MCP 서버. | L4c |
-| **[cocoindex](https://github.com/cocoindex-io/cocoindex) ⭐7.9k** | 장기 에이전트용 증분 데이터 파이프라인 엔진. Rust 코어, 델타 전용 재처리 (10× 비용 절감). | L6a |
-| **[local-deep-research](https://github.com/LearningCircuit/local-deep-research) ⭐4.8k** | 셀프호스팅 멀티-LLM 자동 리서치 웹앱, LangGraph 에이전틱 모드 + 20개+ 검색 엔진. +171★/일 — 5k 임박. | L5 |
-| **[DeepSeek V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)** | SWE-Bench 80.6, MIT, $0.44/M, 1M ctx — 오픈웨이트 최고 코딩 모델. V4-Flash는 M5 MacBook 오프라인 가동. | LLM |
+| **[PageIndex](https://github.com/VectifyAI/PageIndex) ⭐28.2k 🔥** | 벡터DB 없는 RAG: 계층적 TOC 트리 + LLM 트리 탐색 검색. "유사도 ≠ 관련성" 명제. FinanceBench 98.7%(벤더 주장). L6a 구조 서브타입 "벡터 없는 트리 탐색"으로 표기 + L6c 후보 플래그(단일 신호로 미승격). | L6a |
+| **[anthropics/financial-services](https://github.com/anthropics/financial-services) ⭐8.5k +540/일** | Anthropic 1st-party 첫 도메인 스킬팩: 11개 워크플로 에이전트(Pitch, Earnings, Valuation, KYC…), 50+ 스킬, 11개 데이터 프로바이더 MCP(FactSet·Moody's·S&P…). Bloomberg/Fortune 보도. examples 레포라 레지스트리 보류. | L4b |
+| **[Cloudflare × Stripe Projects](https://blog.cloudflare.com/agents-stripe-projects/) HN 381pts** | 에이전트가 CF 계정 생성·도메인 구매·배포까지 자율 수행. 4월 17일 "인프라 트리플"이 컴퓨트→금융+생명주기로 확장. governance_need가 audit + spend-rail 2축으로 분리될 함의. | L4c |
+| **[Reflex 45배 비용 벤치마크](https://news.ycombinator.com/item?id=48031684) HN 412pts** | 동일 태스크에서 Computer Use vs structured-API: 입력 토큰 45배·실시간 51배 격차. 4월 L1/L7 붕괴 패턴에 비용 축 인용 추가. "가능하면 structured 우선" rationale 단서 추가. | meta |
+| **[Understand-Anything](https://github.com/Lum1104/Understand-Anything) ⭐12.7k** | Claude Code 플러그인: 코드/KB → LLM 멀티에이전트 인터랙티브 지식 그래프 (GitNexus의 Tree-sitter 결정론과 대비). MIT, TypeScript. 그래프를 매번 재생성 — L4a 메모리 도구와 차별. | L4b |
+| **[agency-agents](https://github.com/msitarzewski/agency-agents) ⭐92.4k** | 12개 직군(세일즈·법무·의료·금융) 144 페르소나. 마크다운 SSOT → Claude Code/Cursor/Aider/Windsurf 자동 변환. 금융 버티컬 클러스터 앵커. | L4b |
+| **[TradingAgents](https://github.com/TauricResearch/TradingAgents) ⭐67k** | 금융 애널리스트→리스크→실행 파이프라인. 금융 버티컬 클러스터 멤버 (Dexter+TradingAgents+agency-agents/finance+anthropics/financial-services+Kronos). | L1 |
+| **[Kimi K2.6](https://moonshotai.github.io/Kimi-K2/)** | Moonshot 1T/32B MoE, SWE-Bench Verified 80.2%, 300 에이전트 스웜, Modified MIT, $0.95/M. llms.json 등록. | LLM |
+| **[DeepSeek V4-Pro/Flash](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)** | SWE-Bench 80.6, MIT, $0.44/M(V4-Pro), $0.14/M(V4-Flash). V4-Flash는 M5 MacBook 오프라인 가동. | LLM |
+| **[cc-switch](https://github.com/hongsw/cc-switch) ⭐52.8k** | 크로스 CLI 프로바이더 전환기: Claude Code+Codex+Gemini+OpenCode 통합 SSOT. 멀티벤더 anti-lockin 클러스터 앵커. | L3/L4c |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (192개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (197개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -137,6 +137,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-05-06 | 데일리 스캔 5개 문서: PageIndex ⭐28.2k L6a 구조 서브타입 + L6c 후보(단일 신호 미승격), anthropics/financial-services ⭐8.5k 1st-party L4b 후보 서브타입, Cloudflare×Stripe 에이전트 프로비저닝+금융 자율성 L4c 서브트랙 후보, Reflex 45배/51배 Computer Use 비용 벤치마크(아키텍처 신호 — 4월 L1/L7 붕괴 패턴 보강), Understand-Anything ⭐12.7k L4b 플러그인. **금융 버티컬 클러스터 메타-패턴 공식화** (5개 신호 × 3+ 레이어 / 1주). 50/50 테스트. 레지스트리 변경 없음. |
 | 2026-05-05 | 데일리 스캔 11개 문서: agency-agents ⭐92.4k L4b, Kimi K2.6 → llms.json, MemPalace ⭐51k L4a(벤치마크 논란), local-deep-research ⭐4.8k L5, cloudflare/vibesdk L2, flue L2 샌드박스, manifest L4c 라우팅. L6a/L6b 공식 분리(v0.4). 찰떡AI L6b 추가. 한국 전문가 리뷰 섹션 추가. 29/29 테스트. |
 | 2026-05-04 | 데일리 스캔: ruflo ⭐38.8k L2, TradingAgents ⭐65k, ouroboros Agent OS, cocoindex L6, n8n-mcp L4c (1,650+ 노드). n8n-mcp + CocoIndex → reference-levels.md. 5개 research-watch. |
 | 2026-05-03 | 데일리 스캔: DeepSeek V4-Pro (SWE-Bench 80.6, $0.44/M), xAI Grok 4.3 (83% 저렴), MS Agent Framework v1.0 (AutoGen+SK 통합), acai.sh ACID 스펙 주도 개발, TradingAgents 57.7k★. 스코어링 성숙도 가중치 버그 수정. 9개 docs. |
