@@ -101,20 +101,20 @@ It is three things in one:
 
 ---
 
-## 🔥 What's hot right now (2026-05-10)
+## 🔥 What's hot right now (2026-05-11)
 
 | Signal | Why it matters | Level |
 |--------|---------------|-------|
-| **[Awesome-Agent-Harness](https://github.com/Gloriaameng/Awesome-Agent-Harness) ⭐187** | Academic survey formalising agent harnesses as 6-component model H=(E,T,C,S,L,V) — 110+ papers, 20+ system comparison matrix, Stripe/OpenAI production cases. First scholarly definition anchoring clawfit's "harness/wrapper" L2 taxonomy. V (valuation interface) is unmapped in L1–L7. | L2 |
-| **[opencode](https://github.com/anomalyco/opencode) ⭐157k +660/day** | Open source terminal coding agent — provider-agnostic (Claude/OpenAI/Google/local), LSP-backed, client/server TUI, two built-in agents (build/plan). 157k stars makes it the highest-star L1 entry in the watch queue. | L1 |
-| **[pi (earendil-works)](https://github.com/earendil-works/pi) ⭐46.5k +639/day** | Comprehensive AI agent toolkit: coding CLI, unified 30-provider LLM API, TUI/web UI libs, Slack bot, vLLM pods. Org migrated from badlogic/pi-mono. Flagship of Earendil Inc. | L1 |
-| **[OpenManus](https://github.com/FoundationAgents/OpenManus) ⭐56.2k** | Open-source general agent framework from MetaGPT contributors — browser automation, MCP tools, computer vision, multi-agent. No invite code required; "no fortress, purely open ground." | L1 |
-| **[OpenSpec](https://github.com/Fission-AI/OpenSpec) ⭐46.2k +294/day** | Spec-driven development (SDD) for AI coding assistants — structured proposal/spec/design artifacts before coding; 25+ tool slash-commands. 3rd spec-first L3 signal in 6 days (acai.sh + ouroboros + OpenSpec). Sub-type "pre-execution spec layer" pending 4th signal. | L3 |
-| **[ds4 (antirez)](https://github.com/antirez/ds4) HN 447pts ⭐1.9k** | Native Metal inference for DeepSeek V4 Flash on Apple Silicon — disk-persistent KV-cache (1M token context across restarts), OpenAI/Anthropic-compatible API, agent integration (Claude Code, pi, opencode). By Redis creator antirez. | L1-infra |
-| **[Vibe-Trading](https://github.com/HKUDS/Vibe-Trading) ⭐6.2k** | Multi-agent finance workspace — NL→strategy, 74 specialist finance skills, 29 swarm team configs, 22-tool MCP server, backtesting across 6 markets. Finance-vertical multi-layer signal (L2+L4+MCP). | L2 |
-| **[codegraph](https://github.com/colbymchenry/codegraph) ⭐1.1k** | Pre-indexed semantic code knowledge graph as MCP server for Claude Code — 94% fewer tool calls, 77% faster, Tree-sitter+SQLite/FTS5, 19 languages, 100% local. Global CLAUDE.md auto-injection = novel L3-adjacent pattern. | L4c |
+| **[anthropics/skills](https://github.com/anthropics/skills) ⭐132k** | Anthropic's official agent skills repo — pre-built, composable sub-agents (computer-use, web-search, file-management); the canonical L4b reference implementation. Satisfies 2-signal threshold: L4b "1st-party model-vendor skill pack" sub-type now **confirmed** in taxonomy. | L4b |
+| **[UI-TARS-desktop](https://github.com/bytedance/UI-TARS-desktop) ⭐32k** | ByteDance open-source multimodal agent stack: Agent TARS (browser/agentic loop) + UI-TARS-desktop (native GUI/CUA). Hybrid DOM+vision browser, MCP-as-kernel-bus, in-house VLM (UI-TARS-72B). Hyperscaler variant of L1/L7 collapse pattern. | L1+L6 |
+| **[react-doctor](https://github.com/millionco/react-doctor) ⭐7.5k** | AI-powered React code quality scanner — detects performance anti-patterns and AI-generated code smells in React/Next.js codebases. Dev-tool-to-skill inversion path: ships as MCP skill plugin. | L4b |
+| **[codeburn](https://github.com/getagentseal/codeburn) ⭐6k** | Cross-vendor AI coding cost observability TUI — real-time spend tracking across 18 tools (Claude Code, Codex, Cursor, pi, opencode, Windsurf, etc.). Flagged as potential cross-cutting telemetry axis outside the 7-layer stack; deferred pending 2nd signal. | L5 |
+| **[hunk](https://github.com/modem-dev/hunk) ⭐3.1k** | Review-first terminal diff viewer with AI agent annotations — surfaces agent-authored code changes with context for human-in-the-loop review. New L6 sub-type candidate: agent changeset review gate (no existing L6 tool occupies this position). v0.11.1 released yesterday. | L6 |
+| **[Awesome-Agent-Harness](https://github.com/Gloriaameng/Awesome-Agent-Harness) ⭐187** | Academic survey formalising agent harnesses as 6-component model H=(E,T,C,S,L,V) — 110+ papers, 20+ system comparison matrix, Stripe/OpenAI production cases. First scholarly definition anchoring clawfit's "harness/wrapper" L2 taxonomy. | L2 |
+| **[opencode](https://github.com/anomalyco/opencode) ⭐157k +660/day** | Open source terminal coding agent — provider-agnostic (Claude/OpenAI/Google/local), LSP-backed, client/server TUI, two built-in agents (build/plan). Highest-star L1 entry in the watch queue. | L1 |
+| **[OpenSpec](https://github.com/Fission-AI/OpenSpec) ⭐46.2k +294/day** | Spec-driven development (SDD) for AI coding assistants — structured proposal/spec/design artifacts before coding; 25+ tool slash-commands. 3rd spec-first L3 signal (acai.sh + ouroboros + OpenSpec). Sub-type "pre-execution spec layer" pending 4th signal. | L3 |
 
-Full analysis in [`docs/research-watch/`](docs/research-watch/) (206 docs) · Full map in [`docs/reference-levels.md`](docs/reference-levels.md)
+Full analysis in [`docs/research-watch/`](docs/research-watch/) (215 docs) · Full map in [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -122,6 +122,7 @@ Full analysis in [`docs/research-watch/`](docs/research-watch/) (206 docs) · Fu
 
 | Date | What changed |
 |------|-------------|
+| 2026-05-11 | Daily scan (5 docs): anthropics/skills ⭐132k L4b (L4b "1st-party skill pack" sub-type **confirmed** — 2-signal threshold met), UI-TARS-desktop ⭐32k L1+L6 (ByteDance multimodal agent stack, hyperscaler L1/L7 collapse variant), react-doctor ⭐7.5k L4b (React quality scanner), codeburn ⭐6k L5 (cross-vendor cost observability TUI, 18 tools), hunk ⭐3.1k L6 (agent changeset review gate, new sub-type candidate). reference-levels.md: L4b 1st-party sub-type promoted → confirmed. 1 metadata fix: mistral-medium-3-5 cost corrected $1.50/M → $0.40/M. 50/50 tests. |
 | 2026-05-10 | User-nominated: Awesome-Agent-Harness ⭐187 L2 — first academic survey formalising agent harness as 6-component H=(E,T,C,S,L,V) model (110+ papers, 20+ system matrix). Anchors clawfit L2 taxonomy with scholarly definition. 1 doc. |
 | 2026-05-09 | Daily scan (8 docs): opencode ⭐157k L1 (highest-star L1 in queue), pi/earendil-works ⭐46.5k L1 (org migrated from badlogic/pi-mono), ds4/antirez HN447pts L1-infra (disk-persistent KV-cache Metal), codegraph ⭐1.1k L4c (MCP+CLAUDE.md injection), OpenSpec ⭐46.2k L3 (3rd spec-first signal — sub-type pending). User-starred: OpenManus ⭐56.2k L1, Vibe-Trading ⭐6.2k L2+L4+MCP, helmor ⭐1k L2. reference-levels.md: opencode star count updated. 50/50 tests. No registry mutations. |
 | 2026-05-06 | Daily scan (5 docs): PageIndex ⭐28.2k L6a sub-type + L6c candidate flagged (single signal, not promoted), anthropics/financial-services ⭐8.5k 1st-party L4b sub-type candidate, Cloudflare×Stripe agent provisioning + financial autonomy L4c sub-track candidate, Reflex 45×/51× Computer-Use cost benchmark (architectural signal augments April L1/L7 collapse pattern), Understand-Anything ⭐12.7k L4b plugin. Finance vertical cluster meta-pattern formalised (5 signals × 3+ layers in 1 week). 50/50 tests. No registry mutations. |

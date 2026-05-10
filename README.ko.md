@@ -99,21 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-05-10)
+## 🔥 지금 가장 뜨거운 것들 (2026-05-11)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
+| **[anthropics/skills](https://github.com/anthropics/skills) ⭐132k** | Anthropic 공식 에이전트 스킬 레포 — 컴퓨터 사용·웹 검색·파일 관리 등 조합 가능한 서브에이전트 표준. 2번째 신호로 L4b "1st-party model-vendor skill pack" 서브타입 **공식 확정** (taxonomy 승격). | L4b |
+| **[UI-TARS-desktop](https://github.com/bytedance/UI-TARS-desktop) ⭐32k** | ByteDance 오픈소스 멀티모달 에이전트 스택: Agent TARS(브라우저/에이전트 루프) + UI-TARS-desktop(GUI/CUA). DOM+Vision 하이브리드 브라우저, MCP-as-kernel-bus, 자체 VLM(UI-TARS-72B). L1/L7 경계 붕괴 패턴의 하이퍼스케일러 변형. | L1+L6 |
+| **[react-doctor](https://github.com/millionco/react-doctor) ⭐7.5k** | AI 기반 React 코드 품질 스캐너 — React/Next.js 코드베이스의 성능 안티패턴·AI 생성 코드 결함 자동 탐지. MCP 스킬 플러그인으로 배포되는 dev-tool→skill 역전 경로. | L4b |
+| **[codeburn](https://github.com/getagentseal/codeburn) ⭐6k** | 크로스벤더 AI 코딩 비용 관측성 TUI — 18개 도구(Claude Code·Codex·Cursor·pi·opencode·Windsurf 등) 실시간 지출·토큰 추적. 7레이어 외부 횡단 텔레메트리 축 후보; 두 번째 신호 확인 시 구조적 승격 예정. | L5 |
+| **[hunk](https://github.com/modem-dev/hunk) ⭐3.1k** | 에이전트 어노테이션이 포함된 리뷰 우선 터미널 diff 뷰어 — 에이전트가 생성한 코드 변경을 컨텍스트와 함께 인간 검토자에게 전달. L6 신규 서브타입 후보: 에이전트 변경 집합 검토 게이트. v0.11.1 어제 출시. | L6 |
 | **[Awesome-Agent-Harness](https://github.com/Gloriaameng/Awesome-Agent-Harness) ⭐187** | 에이전트 하네스를 6-component 모델 H=(E,T,C,S,L,V)로 공식화한 학술 서베이 — 논문 110+개, 시스템 20+개 비교 행렬, Stripe/OpenAI 프로덕션 사례. clawfit L2 "harness/wrapper" 분류어를 학술적으로 정의하는 첫 번째 레퍼런스. | L2 |
 | **[opencode](https://github.com/anomalyco/opencode) ⭐157k +660/일** | 오픈소스 터미널 코딩 에이전트 — 프로바이더 독립(Claude/OpenAI/Google/로컬), LSP 기반, 클라이언트/서버 TUI, build/plan 2개 내장 에이전트. 워치큐 최고 스타 L1 신호. | L1 |
-| **[pi (earendil-works)](https://github.com/earendil-works/pi) ⭐46.5k +639/일** | 종합 AI 에이전트 툴킷: 코딩 CLI, 30개 프로바이더 통합 LLM API, TUI/웹UI 라이브러리, Slack 봇, vLLM 파드. badlogic/pi-mono에서 Earendil Inc.로 조직 이전. | L1 |
-| **[OpenManus](https://github.com/FoundationAgents/OpenManus) ⭐56.2k** | MetaGPT 기여자들의 오픈소스 범용 에이전트 프레임워크 — 브라우저 자동화, MCP 툴 통합, 컴퓨터 비전, 멀티에이전트. 초대 코드 불필요. | L1 |
-| **[OpenSpec](https://github.com/Fission-AI/OpenSpec) ⭐46.2k +294/일** | AI 코딩 어시스턴트를 위한 스펙 주도 개발(SDD) — 코딩 전 제안/스펙/설계 아티팩트 생성, 25개+ 도구 슬래시 커맨드. 6일 내 세 번째 spec-first L3 신호(acai.sh·ouroboros·OpenSpec). 4번째 신호 시 L3 서브타입 "pre-execution spec layer" 공식화 예정. | L3 |
-| **[ds4 (antirez)](https://github.com/antirez/ds4) HN 447pts ⭐1.9k** | Apple Silicon용 DeepSeek V4 Flash 네이티브 Metal 추론 엔진 — 디스크 영속 KV 캐시(재시작 후 1M 토큰 컨텍스트 유지), OpenAI/Anthropic 호환 API, 에이전트 통합(Claude Code·pi·opencode). Redis 창시자 antirez 작성. | L1-인프라 |
-| **[Vibe-Trading](https://github.com/HKUDS/Vibe-Trading) ⭐6.2k** | 멀티에이전트 금융 워크스페이스 — 자연어→전략 변환, 74개 금융 전문 스킬, 29개 스웜 팀 설정, 22-툴 MCP 서버, 6개 시장 백테스팅. L2+L4+MCP 복합 신호. | L2 |
-| **[codegraph](https://github.com/colbymchenry/codegraph) ⭐1.1k** | Claude Code용 사전 색인 시맨틱 코드 지식 그래프 MCP 서버 — 툴 콜 94% 감소, 탐색 77% 속도 향상, Tree-sitter+SQLite/FTS5, 19개 언어, 100% 로컬. 전역 CLAUDE.md 자동 주입 = L3 경계 패턴 신규 관측. | L4c |
-| **[helmor](https://github.com/dohooo/helmor) ⭐1k** | 멀티에이전트 소프트웨어 개발용 macOS 로컬 워크벤치 — git-worktree 기반 전체 개발 루프(리뷰/테스트/머지/배포) 오케스트레이션, Claude Code/Codex/Cursor 래핑. v0.20.1 5월 8일 출시. TypeScript+Rust. | L2 |
+| **[OpenSpec](https://github.com/Fission-AI/OpenSpec) ⭐46.2k +294/일** | AI 코딩 어시스턴트를 위한 스펙 주도 개발(SDD) — 코딩 전 제안/스펙/설계 아티팩트 생성, 25개+ 도구 슬래시 커맨드. 6일 내 세 번째 spec-first L3 신호. 서브타입 "pre-execution spec layer" 4번째 신호 대기 중. | L3 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (205개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (215개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -136,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-05-11 | 데일리 스캔 (5개 문서): anthropics/skills ⭐132k L4b (L4b "1st-party skill pack" 서브타입 **공식 확정** — 2신호 충족), UI-TARS-desktop ⭐32k L1+L6 (ByteDance 멀티모달 에이전트 스택), react-doctor ⭐7.5k L4b (React 품질 스캐너), codeburn ⭐6k L5 (크로스벤더 비용 관측성 TUI), hunk ⭐3.1k L6 (에이전트 변경 집합 검토 게이트). reference-levels.md: L4b 1st-party 서브타입 확정. 메타데이터 수정 1건: mistral-medium-3-5 비용 $1.50/M → $0.40/M. 50/50 테스트 통과. |
 | 2026-05-10 | 사용자 지목: Awesome-Agent-Harness ⭐187 L2 — 에이전트 하네스 6-component H=(E,T,C,S,L,V) 모델 학술 서베이 (논문 110+개, 시스템 20+개 비교 행렬). clawfit L2 분류어의 학술 정의 앵커. 1개 문서. |
 | 2026-05-09 | 데일리 스캔 8개 문서: opencode ⭐157k L1(워치큐 최고 스타), pi/earendil-works ⭐46.5k L1(badlogic/pi-mono에서 조직 이전), ds4/antirez HN447pts L1-인프라(디스크 영속 KV캐시 Metal), codegraph ⭐1.1k L4c(MCP+CLAUDE.md 자동 주입), OpenSpec ⭐46.2k L3(6일 내 3번째 spec-first 신호). 사용자 stars 추가: OpenManus ⭐56.2k L1, Vibe-Trading ⭐6.2k L2+L4+MCP, helmor ⭐1k L2. reference-levels.md: opencode 스타 수 갱신. 50/50 테스트. 레지스트리 변경 없음. |
 | 2026-05-06 | 데일리 스캔 5개 문서: PageIndex ⭐28.2k L6a 구조 서브타입 + L6c 후보(단일 신호 미승격), anthropics/financial-services ⭐8.5k 1st-party L4b 후보 서브타입, Cloudflare×Stripe 에이전트 프로비저닝+금융 자율성 L4c 서브트랙 후보, Reflex 45배/51배 Computer Use 비용 벤치마크(아키텍처 신호 — 4월 L1/L7 붕괴 패턴 보강), Understand-Anything ⭐12.7k L4b 플러그인. **금융 버티컬 클러스터 메타-패턴 공식화** (5개 신호 × 3+ 레이어 / 1주). 50/50 테스트. 레지스트리 변경 없음. |
