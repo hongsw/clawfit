@@ -101,10 +101,11 @@ It is three things in one:
 
 ---
 
-## 🔥 What's hot right now (2026-05-09)
+## 🔥 What's hot right now (2026-05-10)
 
 | Signal | Why it matters | Level |
 |--------|---------------|-------|
+| **[Awesome-Agent-Harness](https://github.com/Gloriaameng/Awesome-Agent-Harness) ⭐187** | Academic survey formalising agent harnesses as 6-component model H=(E,T,C,S,L,V) — 110+ papers, 20+ system comparison matrix, Stripe/OpenAI production cases. First scholarly definition anchoring clawfit's "harness/wrapper" L2 taxonomy. V (valuation interface) is unmapped in L1–L7. | L2 |
 | **[opencode](https://github.com/anomalyco/opencode) ⭐157k +660/day** | Open source terminal coding agent — provider-agnostic (Claude/OpenAI/Google/local), LSP-backed, client/server TUI, two built-in agents (build/plan). 157k stars makes it the highest-star L1 entry in the watch queue. | L1 |
 | **[pi (earendil-works)](https://github.com/earendil-works/pi) ⭐46.5k +639/day** | Comprehensive AI agent toolkit: coding CLI, unified 30-provider LLM API, TUI/web UI libs, Slack bot, vLLM pods. Org migrated from badlogic/pi-mono. Flagship of Earendil Inc. | L1 |
 | **[OpenManus](https://github.com/FoundationAgents/OpenManus) ⭐56.2k** | Open-source general agent framework from MetaGPT contributors — browser automation, MCP tools, computer vision, multi-agent. No invite code required; "no fortress, purely open ground." | L1 |
@@ -112,9 +113,8 @@ It is three things in one:
 | **[ds4 (antirez)](https://github.com/antirez/ds4) HN 447pts ⭐1.9k** | Native Metal inference for DeepSeek V4 Flash on Apple Silicon — disk-persistent KV-cache (1M token context across restarts), OpenAI/Anthropic-compatible API, agent integration (Claude Code, pi, opencode). By Redis creator antirez. | L1-infra |
 | **[Vibe-Trading](https://github.com/HKUDS/Vibe-Trading) ⭐6.2k** | Multi-agent finance workspace — NL→strategy, 74 specialist finance skills, 29 swarm team configs, 22-tool MCP server, backtesting across 6 markets. Finance-vertical multi-layer signal (L2+L4+MCP). | L2 |
 | **[codegraph](https://github.com/colbymchenry/codegraph) ⭐1.1k** | Pre-indexed semantic code knowledge graph as MCP server for Claude Code — 94% fewer tool calls, 77% faster, Tree-sitter+SQLite/FTS5, 19 languages, 100% local. Global CLAUDE.md auto-injection = novel L3-adjacent pattern. | L4c |
-| **[helmor](https://github.com/dohooo/helmor) ⭐1k** | Local macOS workbench for multi-agent software dev — orchestrates full loop (review/test/merge/deploy) via git-worktree, wraps Claude Code/Codex/Cursor, v0.20.1 released May 8. TypeScript+Rust. | L2 |
 
-Full analysis in [`docs/research-watch/`](docs/research-watch/) (205 docs) · Full map in [`docs/reference-levels.md`](docs/reference-levels.md)
+Full analysis in [`docs/research-watch/`](docs/research-watch/) (206 docs) · Full map in [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -122,6 +122,7 @@ Full analysis in [`docs/research-watch/`](docs/research-watch/) (205 docs) · Fu
 
 | Date | What changed |
 |------|-------------|
+| 2026-05-10 | User-nominated: Awesome-Agent-Harness ⭐187 L2 — first academic survey formalising agent harness as 6-component H=(E,T,C,S,L,V) model (110+ papers, 20+ system matrix). Anchors clawfit L2 taxonomy with scholarly definition. 1 doc. |
 | 2026-05-09 | Daily scan (8 docs): opencode ⭐157k L1 (highest-star L1 in queue), pi/earendil-works ⭐46.5k L1 (org migrated from badlogic/pi-mono), ds4/antirez HN447pts L1-infra (disk-persistent KV-cache Metal), codegraph ⭐1.1k L4c (MCP+CLAUDE.md injection), OpenSpec ⭐46.2k L3 (3rd spec-first signal — sub-type pending). User-starred: OpenManus ⭐56.2k L1, Vibe-Trading ⭐6.2k L2+L4+MCP, helmor ⭐1k L2. reference-levels.md: opencode star count updated. 50/50 tests. No registry mutations. |
 | 2026-05-06 | Daily scan (5 docs): PageIndex ⭐28.2k L6a sub-type + L6c candidate flagged (single signal, not promoted), anthropics/financial-services ⭐8.5k 1st-party L4b sub-type candidate, Cloudflare×Stripe agent provisioning + financial autonomy L4c sub-track candidate, Reflex 45×/51× Computer-Use cost benchmark (architectural signal augments April L1/L7 collapse pattern), Understand-Anything ⭐12.7k L4b plugin. Finance vertical cluster meta-pattern formalised (5 signals × 3+ layers in 1 week). 50/50 tests. No registry mutations. |
 | 2026-05-05 | Daily scan (11 docs): agency-agents ⭐92.4k L4b, Kimi K2.6 → llms.json, MemPalace ⭐51k L4a (benchmark controversy flagged), local-deep-research ⭐4.8k L5, cloudflare/vibesdk L2, flue L2 sandbox, manifest L4c routing. L6a/L6b formal split (v0.4). 찰떡AI added L6b. Korean expert review section added. 29/29 tests. |

@@ -99,10 +99,11 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-05-09)
+## 🔥 지금 가장 뜨거운 것들 (2026-05-10)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
+| **[Awesome-Agent-Harness](https://github.com/Gloriaameng/Awesome-Agent-Harness) ⭐187** | 에이전트 하네스를 6-component 모델 H=(E,T,C,S,L,V)로 공식화한 학술 서베이 — 논문 110+개, 시스템 20+개 비교 행렬, Stripe/OpenAI 프로덕션 사례. clawfit L2 "harness/wrapper" 분류어를 학술적으로 정의하는 첫 번째 레퍼런스. | L2 |
 | **[opencode](https://github.com/anomalyco/opencode) ⭐157k +660/일** | 오픈소스 터미널 코딩 에이전트 — 프로바이더 독립(Claude/OpenAI/Google/로컬), LSP 기반, 클라이언트/서버 TUI, build/plan 2개 내장 에이전트. 워치큐 최고 스타 L1 신호. | L1 |
 | **[pi (earendil-works)](https://github.com/earendil-works/pi) ⭐46.5k +639/일** | 종합 AI 에이전트 툴킷: 코딩 CLI, 30개 프로바이더 통합 LLM API, TUI/웹UI 라이브러리, Slack 봇, vLLM 파드. badlogic/pi-mono에서 Earendil Inc.로 조직 이전. | L1 |
 | **[OpenManus](https://github.com/FoundationAgents/OpenManus) ⭐56.2k** | MetaGPT 기여자들의 오픈소스 범용 에이전트 프레임워크 — 브라우저 자동화, MCP 툴 통합, 컴퓨터 비전, 멀티에이전트. 초대 코드 불필요. | L1 |
@@ -135,6 +136,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-05-10 | 사용자 지목: Awesome-Agent-Harness ⭐187 L2 — 에이전트 하네스 6-component H=(E,T,C,S,L,V) 모델 학술 서베이 (논문 110+개, 시스템 20+개 비교 행렬). clawfit L2 분류어의 학술 정의 앵커. 1개 문서. |
 | 2026-05-09 | 데일리 스캔 8개 문서: opencode ⭐157k L1(워치큐 최고 스타), pi/earendil-works ⭐46.5k L1(badlogic/pi-mono에서 조직 이전), ds4/antirez HN447pts L1-인프라(디스크 영속 KV캐시 Metal), codegraph ⭐1.1k L4c(MCP+CLAUDE.md 자동 주입), OpenSpec ⭐46.2k L3(6일 내 3번째 spec-first 신호). 사용자 stars 추가: OpenManus ⭐56.2k L1, Vibe-Trading ⭐6.2k L2+L4+MCP, helmor ⭐1k L2. reference-levels.md: opencode 스타 수 갱신. 50/50 테스트. 레지스트리 변경 없음. |
 | 2026-05-06 | 데일리 스캔 5개 문서: PageIndex ⭐28.2k L6a 구조 서브타입 + L6c 후보(단일 신호 미승격), anthropics/financial-services ⭐8.5k 1st-party L4b 후보 서브타입, Cloudflare×Stripe 에이전트 프로비저닝+금융 자율성 L4c 서브트랙 후보, Reflex 45배/51배 Computer Use 비용 벤치마크(아키텍처 신호 — 4월 L1/L7 붕괴 패턴 보강), Understand-Anything ⭐12.7k L4b 플러그인. **금융 버티컬 클러스터 메타-패턴 공식화** (5개 신호 × 3+ 레이어 / 1주). 50/50 테스트. 레지스트리 변경 없음. |
 | 2026-05-05 | 데일리 스캔 11개 문서: agency-agents ⭐92.4k L4b, Kimi K2.6 → llms.json, MemPalace ⭐51k L4a(벤치마크 논란), local-deep-research ⭐4.8k L5, cloudflare/vibesdk L2, flue L2 샌드박스, manifest L4c 라우팅. L6a/L6b 공식 분리(v0.4). 찰떡AI L6b 추가. 한국 전문가 리뷰 섹션 추가. 29/29 테스트. |
