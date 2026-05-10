@@ -75,7 +75,7 @@
     "provider": "mistral",
     "tasks": ["qa", "research", "code-gen", "summarization"],
     "latency": "medium",
-    "cost_per_1k_tokens": 0.0015,
+    "cost_per_1k_tokens": 0.0004,
     "context_window": 256000,
     "network": "online"
   },
