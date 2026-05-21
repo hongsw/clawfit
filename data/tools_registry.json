@@ -171,7 +171,8 @@
       ],
       "team_size": [
         "solo",
-        "small"
+        "small",
+        "mid"
       ],
       "network": "hybrid",
       "setup_complexity": "low",
@@ -237,7 +238,8 @@
       ],
       "team_size": [
         "solo",
-        "small"
+        "small",
+        "mid"
       ],
       "network": "hybrid",
       "setup_complexity": "low",
@@ -342,7 +344,8 @@
       ],
       "team_size": [
         "solo",
-        "small"
+        "small",
+        "mid"
       ],
       "network": "hybrid",
       "setup_complexity": "low",
@@ -762,8 +765,7 @@
       ],
       "roles": [
         "developer",
-        "researcher",
-        "exec"
+        "researcher"
       ],
       "team_size": [
         "mid",
@@ -912,8 +914,7 @@
       ],
       "roles": [
         "developer",
-        "researcher",
-        "exec"
+        "researcher"
       ],
       "team_size": [
         "mid",
@@ -2760,6 +2761,40 @@
       "network": "online",
       "setup_complexity": "low",
       "latency": "medium"
+    }
+  },
+  {
+    "id": "academic_research_skills",
+    "name": "academic-research-skills",
+    "category": "domain_skill_pack",
+    "level": 4,
+    "license": "CC BY-NC 4.0",
+    "primary_language": "Python",
+    "url": "https://github.com/Imbad0202/academic-research-skills",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Academic research domain skill pack for Claude Code. 4 skill categories: Deep Research (13 agents, 7 modes), Academic Paper writing (12 agents), Peer Review simulation (7 agents), Pipeline orchestrator (10-stage with integrity checkpoints). Slash commands: /ars-plan, /ars-lit-review, /ars-full. Integrity verification and human oversight emphasis. CC BY-NC 4.0 license restricts commercial use. 16k+ stars (GitHub Trending 2026-05-21).",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 9,
+      "optimal_maturity": 6,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": [
+        "research",
+        "summarization"
+      ],
+      "roles": [
+        "researcher"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "high"
     }
   }
 ]
