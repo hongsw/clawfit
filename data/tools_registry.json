@@ -26,9 +26,7 @@
       ],
       "roles": [
         "developer",
-        "exec",
-        "pm",
-        "researcher"
+        "pm"
       ],
       "team_size": [
         "small",
@@ -2269,13 +2267,11 @@
       "pricing_tier": "paid",
       "tasks": [
         "code-gen",
-        "research",
         "qa"
       ],
       "roles": [
         "developer",
-        "pm",
-        "exec"
+        "pm"
       ],
       "team_size": [
         "solo",
@@ -2795,6 +2791,47 @@
       "network": "online",
       "setup_complexity": "low",
       "latency": "high"
+    }
+  },
+  {
+    "id": "anthropic-knowledge-work-plugins",
+    "name": "Anthropic Knowledge Work Plugins",
+    "category": "domain_skill_pack",
+    "level": 4,
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "url": "https://github.com/anthropics/knowledge-work-plugins",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "First-party Anthropic plugin pack for knowledge workers. 11 specialized plugins: Productivity, Sales, Customer Support, Product Management, Marketing, Legal, Finance, Data, Enterprise Search, Bio-Research, and Plugin Management. Bundles domain expertise, MCP connectors for 40+ enterprise tools (Slack, Notion, Jira, HubSpot, Linear, Snowflake, Databricks, BigQuery, Figma, Asana, Microsoft 365), slash commands, sub-agents, and role-specific workflows. Apache-2.0. 14k stars.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 9,
+      "optimal_maturity": 6,
+      "features": [
+        "team-sharing",
+        "governance"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "research",
+        "summarization",
+        "data-analysis",
+        "qa"
+      ],
+      "roles": [
+        "exec",
+        "pm",
+        "researcher"
+      ],
+      "team_size": [
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "medium"
     }
   }
 ]
