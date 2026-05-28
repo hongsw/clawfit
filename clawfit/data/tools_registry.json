@@ -2374,7 +2374,6 @@
       "features": [],
       "pricing_tier": "free",
       "tasks": [
-        "research",
         "summarization"
       ],
       "roles": [
