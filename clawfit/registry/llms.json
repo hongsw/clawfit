@@ -108,5 +108,15 @@
     "cost_per_1k_tokens": 0.00095,
     "context_window": 256000,
     "network": "online"
+  },
+  {
+    "id": "minimax-m3",
+    "name": "MiniMax-M3",
+    "provider": "minimax",
+    "tasks": ["code-gen", "research", "qa", "data-analysis", "summarization"],
+    "latency": "medium",
+    "cost_per_1k_tokens": 0.0006,
+    "context_window": 1000000,
+    "network": "online"
   }
 ]

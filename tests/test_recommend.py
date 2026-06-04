@@ -86,7 +86,9 @@ class TestRecommend(unittest.TestCase):
     def test_kimi_k26_appears_in_code_gen_results(self):
         # kimi-k2-6 supports code-gen at medium latency, $0.00095/1k;
         # with a permissive budget it must appear somewhere in the ranked list
-        results = recommend(task="code-gen", budget=0.01, top_n=20)
+        # top_n=30 gives headroom as the registry grows (was 20, bumped when
+        # minimax-m3 was added and pushed kimi-k2-6 past the original cutoff)
+        results = recommend(task="code-gen", budget=0.01, top_n=30)
         llm_ids = [r["llm"] for r in results if "error" not in r]
         self.assertIn("kimi-k2-6", llm_ids)
 
