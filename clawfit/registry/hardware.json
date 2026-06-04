@@ -43,5 +43,14 @@
     "ram_gb": 8,
     "cost_per_hour": 0.05,
     "latency": "medium"
+  },
+  {
+    "id": "local-rtx-spark",
+    "name": "NVIDIA RTX Spark (Local PC)",
+    "type": "on-prem",
+    "gpu": true,
+    "ram_gb": 128,
+    "cost_per_hour": 0.0,
+    "latency": "low"
   }
 ]
