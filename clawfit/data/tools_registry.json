@@ -95,8 +95,7 @@
         "qa"
       ],
       "roles": [
-        "developer",
-        "exec"
+        "developer"
       ],
       "team_size": [
         "solo",
@@ -1789,8 +1788,7 @@
       "pricing_tier": "free",
       "tasks": [
         "research",
-        "summarization",
-        "code-gen"
+        "summarization"
       ],
       "roles": [
         "developer",
