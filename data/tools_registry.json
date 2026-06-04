@@ -2374,7 +2374,6 @@
       "features": [],
       "pricing_tier": "free",
       "tasks": [
-        "research",
         "summarization"
       ],
       "roles": [
@@ -2832,6 +2831,125 @@
       "network": "online",
       "setup_complexity": "low",
       "latency": "medium"
+    }
+  },
+  {
+    "id": "supermemory",
+    "name": "Supermemory",
+    "category": "memory_layer",
+    "level": 4,
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/supermemoryai/supermemory",
+    "source_type": "github",
+    "comparison_priority": "extended",
+    "notes": "Cloud-native memory API ranked #1 on LongMemEval (81.6%), LoCoMo, and ConvoMem. Hybrid RAG + user-profile memory (~50ms retrieval), native MCP server for Claude/Cursor, automatic contradiction resolution and forgetting. 23k stars.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [
+        "mcp",
+        "team-sharing"
+      ],
+      "pricing_tier": "freemium",
+      "tasks": [
+        "research",
+        "summarization",
+        "data-analysis",
+        "qa"
+      ],
+      "roles": [
+        "developer",
+        "researcher"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "low"
+    }
+  },
+  {
+    "id": "odysseus",
+    "name": "Odysseus",
+    "category": "ai_platform",
+    "level": 1,
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/pewdiepie-archdaemon/odysseus",
+    "source_type": "github",
+    "comparison_priority": "extended",
+    "notes": "Self-hosted, privacy-first AI workspace (Docker Compose, v1.0). Hardware-aware model recommendations for 270+ catalogued models, autonomous agents with MCP tool support, email/calendar integration, multi-step research. Direct comparator to clawfit's recommendation problem.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [
+        "offline",
+        "multi-agent",
+        "mcp"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "research",
+        "summarization",
+        "data-analysis"
+      ],
+      "roles": [
+        "developer",
+        "researcher",
+        "exec"
+      ],
+      "team_size": [
+        "solo",
+        "small"
+      ],
+      "network": "hybrid",
+      "setup_complexity": "medium",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "revfactory-harness",
+    "name": "revfactory/harness",
+    "category": "harness_builder",
+    "level": 3,
+    "license": "MIT",
+    "primary_language": "HTML",
+    "url": "https://github.com/revfactory/harness",
+    "source_type": "github",
+    "comparison_priority": "extended",
+    "notes": "Claude Code plugin that generates domain-specific agent team architectures via 6 patterns (pipeline, fan-out/fan-in, expert pool, producer-reviewer, supervisor, hierarchical). Generates agents + skills with dry-run validation. L3 meta-factory; complements Archon (runtime config). 4.5k stars.",
+    "org_fit": {
+      "min_maturity": 5,
+      "max_maturity": 9,
+      "optimal_maturity": 7,
+      "features": [
+        "multi-agent",
+        "skill-pack"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "orchestration"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "medium",
+      "latency": "high"
     }
   }
 ]
