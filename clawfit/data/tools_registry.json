@@ -269,8 +269,7 @@
       ],
       "roles": [
         "developer",
-        "researcher",
-        "exec"
+        "researcher"
       ],
       "team_size": [
         "small",
@@ -1372,8 +1371,9 @@
       "features": [
         "governance"
       ],
-      "pricing_tier": "unknown",
+      "pricing_tier": "freemium",
       "tasks": [
+        "security-testing",
         "qa",
         "research"
       ],
@@ -1525,7 +1525,7 @@
         "native-desktop"
       ],
       "tasks": [
-        "code-gen",
+        "summarization",
         "qa"
       ],
       "roles": [
@@ -1749,6 +1749,7 @@
       ],
       "pricing_tier": "free",
       "tasks": [
+        "security-testing",
         "qa",
         "research"
       ],
