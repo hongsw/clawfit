@@ -1948,8 +1948,7 @@
         "qa"
       ],
       "roles": [
-        "researcher",
-        "exec"
+        "researcher"
       ],
       "team_size": [
         "solo",
