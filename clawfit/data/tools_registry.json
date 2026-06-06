@@ -2894,7 +2894,6 @@
       ],
       "pricing_tier": "free",
       "tasks": [
-        "code-gen",
         "research",
         "summarization",
         "data-analysis"
@@ -2909,6 +2908,43 @@
         "small"
       ],
       "network": "hybrid",
+      "setup_complexity": "medium",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "copilotkit",
+    "name": "CopilotKit",
+    "category": "agent_frontend_sdk",
+    "level": 2,
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/CopilotKit/CopilotKit",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Frontend SDK for embedding AI agents into React/Angular applications. Introduces the AG-UI Protocol — open standard for bidirectional streaming between agents and UIs. Components: CopilotChat, CopilotTextarea, CopilotTask. Human-in-the-loop hooks via useCopilotAction. Compatible with LangGraph, CrewAI, AutoGen, and custom backends. 32.7k stars (GitHub Trending 2026-06-06).",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 9,
+      "optimal_maturity": 6,
+      "features": [
+        "team-sharing"
+      ],
+      "pricing_tier": "freemium",
+      "tasks": [
+        "code-gen"
+      ],
+      "roles": [
+        "developer",
+        "pm"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "online",
       "setup_complexity": "medium",
       "latency": "medium"
     }
