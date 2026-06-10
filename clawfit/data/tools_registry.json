@@ -1401,7 +1401,7 @@
     "url": "https://github.com/matthartman/ghost-pepper",
     "source_type": "github",
     "comparison_priority": "ecosystem",
-    "notes": "Hold-to-talk local STT for macOS using Whisper; fully offline, no audio leaves device. Privacy-first alternative to Superwhisper for confidential environments. Used to dictate research queries and summaries to agents — voice input layer, not a code generator.",
+    "notes": "Hold-to-talk local STT for macOS using Whisper; fully offline, no audio leaves device. Privacy-first alternative to Superwhisper for confidential environments. Used to dictate research queries and summaries to agents \u2014 voice input layer, not a code generator.",
     "org_fit": {
       "min_maturity": 1,
       "max_maturity": 5,
@@ -1551,7 +1551,7 @@
     "url": "https://github.com/obra/superpowers",
     "source_type": "github",
     "comparison_priority": "secondary",
-    "notes": "Agentic skills framework + software development methodology. Shell-first for maximum runtime compatibility. 145k stars — largest harness/SSOT repo in taxonomy. 'That works' framing targets reliability over novelty. Explicitly targets team productivity, not just individual developers.",
+    "notes": "Agentic skills framework + software development methodology. Shell-first for maximum runtime compatibility. 145k stars \u2014 largest harness/SSOT repo in taxonomy. 'That works' framing targets reliability over novelty. Explicitly targets team productivity, not just individual developers.",
     "org_fit": {
       "min_maturity": 4,
       "max_maturity": 9,
@@ -1664,7 +1664,7 @@
     "url": "https://github.com/multica-ai/multica",
     "source_type": "github",
     "comparison_priority": "secondary",
-    "notes": "Open-source managed agents platform; 'turn coding agents into real teammates — assign tasks, track progress.' Team-oriented multi-agent management with task assignment and progress tracking.",
+    "notes": "Open-source managed agents platform; 'turn coding agents into real teammates \u2014 assign tasks, track progress.' Team-oriented multi-agent management with task assignment and progress tracking.",
     "org_fit": {
       "min_maturity": 5,
       "max_maturity": 9,
@@ -1739,7 +1739,7 @@
     "url": "https://github.com/usestrix/strix",
     "source_type": "github",
     "comparison_priority": "secondary",
-    "notes": "Open-source autonomous AI security testing platform. Teams of agents run code dynamically, find vulnerabilities, and validate through PoC execution — not static analysis. CI/CD integration via GitHub Actions. Distinct from Shannon: developer self-service shift-left security testing vs. expert pentester workflow. 23k+ stars.",
+    "notes": "Open-source autonomous AI security testing platform. Teams of agents run code dynamically, find vulnerabilities, and validate through PoC execution \u2014 not static analysis. CI/CD integration via GitHub Actions. Distinct from Shannon: developer self-service shift-left security testing vs. expert pentester workflow. 23k+ stars.",
     "org_fit": {
       "min_maturity": 5,
       "max_maturity": 9,
@@ -1778,7 +1778,7 @@
     "url": "https://github.com/garrytan/gbrain",
     "source_type": "github",
     "comparison_priority": "ecosystem",
-    "notes": "MIT-licensed personal knowledge base for agents by YC CEO Garry Tan. Markdown+PGLite (Postgres) backend; agents read before each response, write back after. Works natively with OpenClaw and Hermes Agent. CLI via bun. MCP support incoming. Local-first markdown+git as source of truth — human-inspectable, diffable, privacy-friendly.",
+    "notes": "MIT-licensed personal knowledge base for agents by YC CEO Garry Tan. Markdown+PGLite (Postgres) backend; agents read before each response, write back after. Works natively with OpenClaw and Hermes Agent. CLI via bun. MCP support incoming. Local-first markdown+git as source of truth \u2014 human-inspectable, diffable, privacy-friendly.",
     "org_fit": {
       "min_maturity": 3,
       "max_maturity": 8,
@@ -2041,7 +2041,7 @@
     "url": "https://github.com/LilMGenius/polysona",
     "source_type": "github",
     "comparison_priority": "ecosystem",
-    "notes": "10 psychology frameworks to extract multi-persona profiles. 5-agent pipeline: Profiler→Trendsetter→Content-Writer→Virtual-Follower→Admin. Portable persona files (persona.md, nuance.md). Cross-agent: Claude Code, Codex, OpenCode.",
+    "notes": "10 psychology frameworks to extract multi-persona profiles. 5-agent pipeline: Profiler\u2192Trendsetter\u2192Content-Writer\u2192Virtual-Follower\u2192Admin. Portable persona files (persona.md, nuance.md). Cross-agent: Claude Code, Codex, OpenCode.",
     "org_fit": {
       "min_maturity": 4,
       "max_maturity": 8,
@@ -2074,7 +2074,7 @@
     "url": "https://github.com/snarktank/ralph",
     "source_type": "github",
     "comparison_priority": "secondary",
-    "notes": "Autonomous AI agent loop that executes PRD items iteratively. TypeScript. 15k+ stars — highest-starred ralph-family implementation. PRD-driven iterative execution model with loop discipline for solo/small teams. PMs write the PRDs that ralph executes.",
+    "notes": "Autonomous AI agent loop that executes PRD items iteratively. TypeScript. 15k+ stars \u2014 highest-starred ralph-family implementation. PRD-driven iterative execution model with loop discipline for solo/small teams. PMs write the PRDs that ralph executes.",
     "org_fit": {
       "min_maturity": 4,
       "max_maturity": 8,
@@ -2108,7 +2108,7 @@
     "url": "https://github.com/halfwhey/claudraband",
     "source_type": "github",
     "comparison_priority": "secondary",
-    "notes": "Claude Code harness for power users. Explicit senior-developer positioning — between simple configuration wrappers and full team orchestrators. 85 HN points at launch.",
+    "notes": "Claude Code harness for power users. Explicit senior-developer positioning \u2014 between simple configuration wrappers and full team orchestrators. 85 HN points at launch.",
     "org_fit": {
       "min_maturity": 5,
       "max_maturity": 8,
@@ -2291,7 +2291,7 @@
     "url": "https://github.com/vercel-labs/open-agents",
     "source_type": "github",
     "comparison_priority": "secondary",
-    "notes": "Official Vercel Labs open-source template for building cloud-hosted agents. TypeScript-first, production-oriented. Vercel platform vendor entry into agent architecture — lowers activation energy for cloud agent deployment among front-end/full-stack developers already in the Vercel ecosystem. 2,611 stars, +915 in one day (2026-04-16).",
+    "notes": "Official Vercel Labs open-source template for building cloud-hosted agents. TypeScript-first, production-oriented. Vercel platform vendor entry into agent architecture \u2014 lowers activation energy for cloud agent deployment among front-end/full-stack developers already in the Vercel ecosystem. 2,611 stars, +915 in one day (2026-04-16).",
     "org_fit": {
       "min_maturity": 2,
       "max_maturity": 7,
@@ -2325,7 +2325,7 @@
     "url": "https://github.com/topoteretes/cognee",
     "source_type": "github",
     "comparison_priority": "ecosystem",
-    "notes": "Graph-native knowledge engine for AI agent memory. Builds knowledge graphs over documents, code, and conversations — enables reasoning over relationships, not just vector similarity. 6-line API (add/cognify/search). MCP-compatible; integrates with LangChain, LlamaIndex, CrewAI, OpenHands. Multi-modal: handles documents, images, code. Self-hosted; any LLM backend. 15,788★.",
+    "notes": "Graph-native knowledge engine for AI agent memory. Builds knowledge graphs over documents, code, and conversations \u2014 enables reasoning over relationships, not just vector similarity. 6-line API (add/cognify/search). MCP-compatible; integrates with LangChain, LlamaIndex, CrewAI, OpenHands. Multi-modal: handles documents, images, code. Self-hosted; any LLM backend. 15,788\u2605.",
     "org_fit": {
       "min_maturity": 3,
       "max_maturity": 8,
@@ -2363,7 +2363,7 @@
     "url": "https://github.com/jamiepine/voicebox",
     "source_type": "github",
     "comparison_priority": "ecosystem",
-    "notes": "Open-source voice synthesis studio. TypeScript-first; higher-level than VoxCPM. Voice cloning, style transfer, multi-speaker management. 19,049★ (surpasses VoxCPM). Natural pairing for TypeScript-first orgs building voice-enabled agent interfaces. Self-hostable MIT license.",
+    "notes": "Open-source voice synthesis studio. TypeScript-first; higher-level than VoxCPM. Voice cloning, style transfer, multi-speaker management. 19,049\u2605 (surpasses VoxCPM). Natural pairing for TypeScript-first orgs building voice-enabled agent interfaces. Self-hostable MIT license.",
     "org_fit": {
       "min_maturity": 2,
       "max_maturity": 7,
@@ -2398,7 +2398,7 @@
     "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
     "source_type": "github",
     "comparison_priority": "ecosystem",
-    "notes": "Domain-specialized Claude Code harness for game development. 49 AI agents + 72 workflow skills organized into a coordination system mirroring a real game studio hierarchy (design, code, asset, QA, publishing). Shell-based, Claude Code native. 10,395 stars (2026-04-16). First high-signal Level 2/3 harness specialized for a non-software-engineering domain — signals domain-vertical harness fragmentation.",
+    "notes": "Domain-specialized Claude Code harness for game development. 49 AI agents + 72 workflow skills organized into a coordination system mirroring a real game studio hierarchy (design, code, asset, QA, publishing). Shell-based, Claude Code native. 10,395 stars (2026-04-16). First high-signal Level 2/3 harness specialized for a non-software-engineering domain \u2014 signals domain-vertical harness fragmentation.",
     "org_fit": {
       "min_maturity": 3,
       "max_maturity": 8,
@@ -2436,7 +2436,7 @@
     "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
     "source_type": "github",
     "comparison_priority": "ecosystem",
-    "notes": "Official MCP server from the Chrome DevTools team. Exposes browser DOM, network, console, performance, and storage via MCP to any agent. Enables live browser state as a first-class tool for QA, debugging, and UI iteration workflows. 35,846★ — highest-starred MCP server in this taxonomy.",
+    "notes": "Official MCP server from the Chrome DevTools team. Exposes browser DOM, network, console, performance, and storage via MCP to any agent. Enables live browser state as a first-class tool for QA, debugging, and UI iteration workflows. 35,846\u2605 \u2014 highest-starred MCP server in this taxonomy.",
     "org_fit": {
       "min_maturity": 3,
       "max_maturity": 8,
@@ -2470,7 +2470,7 @@
     "url": "https://github.com/openai/openai-agents-python",
     "source_type": "github",
     "comparison_priority": "secondary",
-    "notes": "OpenAI's official lightweight Python framework for multi-agent workflows. Handoffs, routing, tool calling, async execution. Vendor-published harness — same provenance class as Claude Code Routines and Anthropic Managed Agents. 21,803★. Competes with LangGraph/deepagents at Level 2; lightweight framing targets developers who found LangGraph too complex.",
+    "notes": "OpenAI's official lightweight Python framework for multi-agent workflows. Handoffs, routing, tool calling, async execution. Vendor-published harness \u2014 same provenance class as Claude Code Routines and Anthropic Managed Agents. 21,803\u2605. Competes with LangGraph/deepagents at Level 2; lightweight framing targets developers who found LangGraph too complex.",
     "org_fit": {
       "min_maturity": 3,
       "max_maturity": 8,
@@ -2507,7 +2507,7 @@
     "url": "https://github.com/thunderbird/thunderbolt",
     "source_type": "github",
     "comparison_priority": "ecosystem",
-    "notes": "Privacy-first cross-platform AI client from the Thunderbird organization. 'AI You Control: Choose your models. Own your data. Eliminate vendor lock-in.' Compatible with Ollama, llama.cpp, and OpenAI-compatible APIs. Web, iOS, Android, macOS, Linux, Windows. MPL-2.0; under security audit for enterprise readiness. First on-premises AI client with Mozilla-ecosystem provenance. 2,205★ (2026-04-20).",
+    "notes": "Privacy-first cross-platform AI client from the Thunderbird organization. 'AI You Control: Choose your models. Own your data. Eliminate vendor lock-in.' Compatible with Ollama, llama.cpp, and OpenAI-compatible APIs. Web, iOS, Android, macOS, Linux, Windows. MPL-2.0; under security audit for enterprise readiness. First on-premises AI client with Mozilla-ecosystem provenance. 2,205\u2605 (2026-04-20).",
     "org_fit": {
       "min_maturity": 2,
       "max_maturity": 7,
@@ -2549,7 +2549,7 @@
     "url": "https://github.com/BasedHardware/omi",
     "source_type": "github",
     "comparison_priority": "ecosystem",
-    "notes": "Ambient AI that continuously watches screen and listens to audio, proactively surfacing suggestions. Flutter/Dart; cross-platform. Distinct from Ghost Pepper (hold-to-talk) and Superwhisper (dictation): omi is passive and always-on rather than push-to-activate. First entry in taxonomy for proactive ambient AI advisor model. 9,824★.",
+    "notes": "Ambient AI that continuously watches screen and listens to audio, proactively surfacing suggestions. Flutter/Dart; cross-platform. Distinct from Ghost Pepper (hold-to-talk) and Superwhisper (dictation): omi is passive and always-on rather than push-to-activate. First entry in taxonomy for proactive ambient AI advisor model. 9,824\u2605.",
     "org_fit": {
       "min_maturity": 2,
       "max_maturity": 7,
@@ -2584,7 +2584,7 @@
     "url": "https://github.com/langfuse/langfuse",
     "source_type": "github",
     "comparison_priority": "ecosystem",
-    "notes": "Open-source LLM engineering platform: observability, metrics, evals, prompt management, playground, datasets. 25,601★. Self-hostable (MIT) or managed cloud. Native integrations with LangChain, LlamaIndex, OpenAI, Anthropic, LiteLLM. Production observability for deployed agent systems — distinct from pre-deployment benchmarks.",
+    "notes": "Open-source LLM engineering platform: observability, metrics, evals, prompt management, playground, datasets. 25,601\u2605. Self-hostable (MIT) or managed cloud. Native integrations with LangChain, LlamaIndex, OpenAI, Anthropic, LiteLLM. Production observability for deployed agent systems \u2014 distinct from pre-deployment benchmarks.",
     "org_fit": {
       "min_maturity": 4,
       "max_maturity": 10,
@@ -2625,7 +2625,7 @@
     "url": "https://zed.dev",
     "source_type": "website",
     "comparison_priority": "secondary",
-    "notes": "GPU-accelerated code editor (Rust, 120fps) with native parallel agents via Threads Sidebar (released 2026-04-22). Multiple simultaneous agent threads per window with per-thread AI backend mixing, filesystem scope isolation, and worktree isolation. First IDE to absorb Level 2 multi-agent orchestration as a first-class editor feature — signals IDE-harness convergence.",
+    "notes": "GPU-accelerated code editor (Rust, 120fps) with native parallel agents via Threads Sidebar (released 2026-04-22). Multiple simultaneous agent threads per window with per-thread AI backend mixing, filesystem scope isolation, and worktree isolation. First IDE to absorb Level 2 multi-agent orchestration as a first-class editor feature \u2014 signals IDE-harness convergence.",
     "org_fit": {
       "min_maturity": 3,
       "max_maturity": 8,
@@ -2693,7 +2693,7 @@
     "url": "https://github.com/RooCodeInc/Roo-Code",
     "source_type": "github",
     "comparison_priority": "secondary",
-    "notes": "VS Code extension that frames itself as 'a whole dev team of AI agents in your code editor.' Multi-persona role-based agent model (architect, developer, reviewer) operating within a single IDE session. 23,503★ (GitHub Trending 2026-04-26). Direct Level 1 competitor to Cline; distinct by offering multi-role orchestration inside VS Code rather than a single-assistant model.",
+    "notes": "VS Code extension that frames itself as 'a whole dev team of AI agents in your code editor.' Multi-persona role-based agent model (architect, developer, reviewer) operating within a single IDE session. 23,503\u2605 (GitHub Trending 2026-04-26). Direct Level 1 competitor to Cline; distinct by offering multi-role orchestration inside VS Code rather than a single-assistant model.",
     "org_fit": {
       "min_maturity": 2,
       "max_maturity": 7,
@@ -2727,7 +2727,7 @@
     "url": "https://github.com/coreyhaines31/marketingskills",
     "source_type": "github",
     "comparison_priority": "ecosystem",
-    "notes": "Marketing domain skill pack for Claude Code and AI agents. CRO, copywriting, ad copy, campaign analysis skills. 23,796★ (GitHub Trending 2026-04-24). First high-signal L4b domain pack for marketing/growth roles — extends skill-pack layer beyond developer and knowledge-work contexts into business/marketing. Largest-starred non-dev domain skill pack in this taxonomy.",
+    "notes": "Marketing domain skill pack for Claude Code and AI agents. CRO, copywriting, ad copy, campaign analysis skills. 23,796\u2605 (GitHub Trending 2026-04-24). First high-signal L4b domain pack for marketing/growth roles \u2014 extends skill-pack layer beyond developer and knowledge-work contexts into business/marketing. Largest-starred non-dev domain skill pack in this taxonomy.",
     "org_fit": {
       "min_maturity": 2,
       "max_maturity": 7,
@@ -2921,7 +2921,7 @@
     "url": "https://github.com/CopilotKit/CopilotKit",
     "source_type": "github",
     "comparison_priority": "secondary",
-    "notes": "Frontend SDK for embedding AI agents into React/Angular applications. Introduces the AG-UI Protocol — open standard for bidirectional streaming between agents and UIs. Components: CopilotChat, CopilotTextarea, CopilotTask. Human-in-the-loop hooks via useCopilotAction. Compatible with LangGraph, CrewAI, AutoGen, and custom backends. 32.7k stars (GitHub Trending 2026-06-06).",
+    "notes": "Frontend SDK for embedding AI agents into React/Angular applications. Introduces the AG-UI Protocol \u2014 open standard for bidirectional streaming between agents and UIs. Components: CopilotChat, CopilotTextarea, CopilotTask. Human-in-the-loop hooks via useCopilotAction. Compatible with LangGraph, CrewAI, AutoGen, and custom backends. 32.7k stars (GitHub Trending 2026-06-06).",
     "org_fit": {
       "min_maturity": 4,
       "max_maturity": 9,
@@ -2983,6 +2983,43 @@
       "network": "online",
       "setup_complexity": "medium",
       "latency": "high"
+    }
+  },
+  {
+    "id": "phuryn-pm-skills",
+    "name": "phuryn/pm-skills",
+    "category": "domain_skill_pack",
+    "level": 4,
+    "license": "unknown",
+    "primary_language": "unknown",
+    "url": "https://github.com/phuryn/pm-skills",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "PM Skills Marketplace with 68 skills across 9 plugins: Discovery, Strategy, Execution, Market Research, Data Analytics, Go-to-Market, Marketing & Growth, Toolkit, AI Shipping. Encodes Teresa Torres / Marty Cagan / Alberto Savoia PM frameworks into reusable slash-command workflows (/discover, /strategy, /write-prd). Multi-runtime: Claude Cowork+Code primary; also Codex CLI, Gemini CLI, OpenCode, Cursor, Kiro. 13,408\u2605 (GitHub Trending 2026-06-10). First PM-specialist L4b domain pack; confirms L4 skill fragmentation by org role.",
+    "org_fit": {
+      "min_maturity": 2,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": [
+        "research",
+        "summarization",
+        "data-analysis"
+      ],
+      "roles": [
+        "pm",
+        "exec"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "medium"
     }
   }
 ]
