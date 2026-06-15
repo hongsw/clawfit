@@ -3021,5 +3021,44 @@
       "setup_complexity": "low",
       "latency": "medium"
     }
+  },
+  {
+    "id": "nvidia_skillspector",
+    "name": "NVIDIA SkillSpector",
+    "category": "skill_security_scanner",
+    "level": 4,
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "url": "https://github.com/NVIDIA/SkillSpector",
+    "source_type": "github",
+    "comparison_priority": "supplementary",
+    "notes": "Two-stage static+LLM security scanner for AI agent skills. 64 vulnerability patterns across 16 categories including MCP protocol threats. SARIF output for CI/CD integration. Vendor-neutral: targets Claude Code, Codex CLI, Gemini CLI skills.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 9,
+      "optimal_maturity": 6,
+      "features": [
+        "governance",
+        "security"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "security-testing",
+        "qa"
+      ],
+      "roles": [
+        "developer",
+        "devops"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "online",
+      "setup_complexity": "medium",
+      "latency": "medium"
+    }
   }
 ]
