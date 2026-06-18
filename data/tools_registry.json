@@ -1551,7 +1551,7 @@
     "url": "https://github.com/obra/superpowers",
     "source_type": "github",
     "comparison_priority": "secondary",
-    "notes": "Agentic skills framework + software development methodology. Shell-first for maximum runtime compatibility. 145k stars \u2014 largest harness/SSOT repo in taxonomy. 'That works' framing targets reliability over novelty. Explicitly targets team productivity, not just individual developers.",
+    "notes": "Agentic skills framework + software development methodology. Shell-first for maximum runtime compatibility. 231k stars (2026-06-18; was 145k at first entry) \u2014 largest harness/SSOT repo in taxonomy. 'That works' framing targets reliability over novelty. Explicitly targets team productivity, not just individual developers.",
     "org_fit": {
       "min_maturity": 4,
       "max_maturity": 9,
@@ -3020,6 +3020,44 @@
       "network": "online",
       "setup_complexity": "low",
       "latency": "medium"
+    }
+  },
+  {
+    "id": "codebase-memory-mcp",
+    "name": "codebase-memory-mcp",
+    "category": "code_intelligence_mcp",
+    "level": 4,
+    "license": "unknown",
+    "primary_language": "C",
+    "url": "https://github.com/DeusData/codebase-memory-mcp",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "C-native MCP server that indexes codebases into a persistent knowledge graph. 158 languages via vendored tree-sitter grammars. 14 MCP tools: call-chain tracing, dead-code detection, Cypher-like graph queries. Claims 99.2% token reduction vs file-by-file (3,400 vs 412,000 tokens). Sub-ms queries, indexes Linux kernel in 3 min. Compatible with Claude Code, Codex CLI, Gemini CLI, Zed, Aider. 5.2k stars (GitHub Trending 2026-06-18).",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 9,
+      "optimal_maturity": 5,
+      "features": [
+        "offline"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "research",
+        "qa"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "hybrid",
+      "setup_complexity": "medium",
+      "latency": "low"
     }
   },
   {
