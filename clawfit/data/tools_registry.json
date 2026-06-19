@@ -3098,5 +3098,40 @@
       "setup_complexity": "medium",
       "latency": "medium"
     }
+  },
+  {
+    "id": "kilocode",
+    "name": "Kilo Code",
+    "category": "ide_coding_agent",
+    "level": 1,
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/Kilo-Org/kilocode",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Multi-IDE open-source agentic coding agent (VS Code, JetBrains, CLI). 5 specialized agents: Code (implementation), Plan (architecture), Ask (codebase Q&A), Debug (troubleshooting), Review (quality). 500+ model support with mid-task switching; zero API key lock-in. `kilo run --auto` for headless CI/CD autonomous mode. First L1 coding agent with confirmed VS Code + JetBrains reach. 22,109★ (GitHub Trending 2026-06-19, 1,345 today).",
+    "org_fit": {
+      "min_maturity": 2,
+      "max_maturity": 7,
+      "optimal_maturity": 4,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "qa",
+        "research"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "medium"
+    }
   }
 ]
