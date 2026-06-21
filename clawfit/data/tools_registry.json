@@ -3156,9 +3156,9 @@
       ],
       "pricing_tier": "free",
       "tasks": [
-        "code-gen",
         "research",
-        "data-analysis"
+        "data-analysis",
+        "qa"
       ],
       "roles": [
         "developer"
@@ -3172,6 +3172,44 @@
       "network": "hybrid",
       "setup_complexity": "low",
       "latency": "low"
+    }
+  },
+  {
+    "id": "openmontage",
+    "name": "OpenMontage",
+    "category": "agentic_content_production",
+    "level": 2,
+    "license": "AGPLv3",
+    "primary_language": "Python",
+    "url": "https://github.com/calesthio/OpenMontage",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Open-source agentic video production system: 12 pipelines, 52 tools, 500+ agent skill files. Orchestrates Claude/Cursor/Copilot into end-to-end video studios. Budget governance and quality gates built in. 7,041★ (GitHub Trending 2026-06-21). AGPLv3; Python 89.5%.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 9,
+      "optimal_maturity": 6,
+      "features": [
+        "online"
+      ],
+      "pricing_tier": "freemium",
+      "tasks": [
+        "research",
+        "summarization"
+      ],
+      "roles": [
+        "pm",
+        "exec",
+        "researcher"
+      ],
+      "team_size": [
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "online",
+      "setup_complexity": "high",
+      "latency": "high"
     }
   }
 ]
