@@ -3194,7 +3194,6 @@
       ],
       "pricing_tier": "freemium",
       "tasks": [
-        "research",
         "summarization"
       ],
       "roles": [
@@ -3210,6 +3209,44 @@
       "network": "online",
       "setup_complexity": "high",
       "latency": "high"
+    }
+  },
+  {
+    "id": "open_code_review",
+    "name": "open-code-review",
+    "category": "code_review_agent",
+    "level": 1,
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/alibaba/open-code-review",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "AI code review agent from Alibaba (2 years internal production use). Reads git diffs, uses LLM tool-use loop to generate line-level structured review comments. Built-in rule set: NPE, thread-safety, XSS, SQL injection. Supports OpenAI and Anthropic. Deploys as CLI, Claude Code skill, or Codex plugin. 8.2k★ (GeekNews + GitHub Trending 2026-06-22). Apache-2.0.",
+    "org_fit": {
+      "min_maturity": 2,
+      "max_maturity": 9,
+      "optimal_maturity": 5,
+      "features": [
+        "ci-cd-integration",
+        "git-integration"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "qa"
+      ],
+      "roles": [
+        "developer",
+        "devops"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "medium"
     }
   }
 ]
