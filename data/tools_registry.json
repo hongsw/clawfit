@@ -1411,7 +1411,6 @@
       ],
       "pricing_tier": "free",
       "tasks": [
-        "code-gen",
         "research",
         "summarization"
       ],
@@ -3189,9 +3188,7 @@
       "min_maturity": 3,
       "max_maturity": 9,
       "optimal_maturity": 6,
-      "features": [
-        "online"
-      ],
+      "features": [],
       "pricing_tier": "freemium",
       "tasks": [
         "summarization"
