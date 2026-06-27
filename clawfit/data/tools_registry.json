@@ -1243,7 +1243,7 @@
         "mid"
       ],
       "network": "online",
-      "setup_complexity": "high",
+      "setup_complexity": "medium",
       "latency": "high"
     }
   },
@@ -1454,8 +1454,7 @@
         "summarization"
       ],
       "roles": [
-        "developer",
-        "researcher"
+        "developer"
       ],
       "team_size": [
         "solo",
@@ -2372,6 +2371,7 @@
       "features": [],
       "pricing_tier": "free",
       "tasks": [
+        "research",
         "summarization"
       ],
       "roles": [
@@ -2778,6 +2778,7 @@
         "summarization"
       ],
       "roles": [
+        "developer",
         "researcher"
       ],
       "team_size": [
@@ -3191,6 +3192,8 @@
       "features": [],
       "pricing_tier": "freemium",
       "tasks": [
+        "orchestration",
+        "research",
         "summarization"
       ],
       "roles": [
