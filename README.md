@@ -101,20 +101,20 @@ It is three things in one:
 
 ---
 
-## 🔥 What's hot right now (2026-05-12)
+## 🔥 What's hot right now (2026-07-01)
 
 | Signal | Why it matters | Level |
 |--------|---------------|-------|
-| **[DSPy RLM](https://dspy.ai/api/modules/RLM/) (official DSPy module)** | Official DSPy module introducing REPL-loop context navigation — separates "variable space" (data in REPL) from "token space" (LM prompt) to solve context rot. LM writes Python to search/filter/aggregate external data in a sandboxed Deno/Pyodide WASM interpreter instead of loading full docs. New L4c sub-cluster: REPL-as-context-explorer. Programmatic context navigation as a RAG alternative. | L4c |
-| **[anthropics/skills](https://github.com/anthropics/skills) ⭐132k** | Anthropic's official agent skills repo — pre-built, composable sub-agents (computer-use, web-search, file-management); the canonical L4b reference implementation. Satisfies 2-signal threshold: L4b "1st-party model-vendor skill pack" sub-type now **confirmed** in taxonomy. | L4b |
-| **[UI-TARS-desktop](https://github.com/bytedance/UI-TARS-desktop) ⭐32k** | ByteDance open-source multimodal agent stack: Agent TARS (browser/agentic loop) + UI-TARS-desktop (native GUI/CUA). Hybrid DOM+vision browser, MCP-as-kernel-bus, in-house VLM (UI-TARS-72B). Hyperscaler variant of L1/L7 collapse pattern. | L1+L6 |
-| **[react-doctor](https://github.com/millionco/react-doctor) ⭐7.5k** | AI-powered React code quality scanner — detects performance anti-patterns and AI-generated code smells in React/Next.js codebases. Dev-tool-to-skill inversion path: ships as MCP skill plugin. | L4b |
-| **[codeburn](https://github.com/getagentseal/codeburn) ⭐6k** | Cross-vendor AI coding cost observability TUI — real-time spend tracking across 18 tools (Claude Code, Codex, Cursor, pi, opencode, Windsurf, etc.). Flagged as potential cross-cutting telemetry axis outside the 7-layer stack; deferred pending 2nd signal. | L5 |
-| **[hunk](https://github.com/modem-dev/hunk) ⭐3.1k** | Review-first terminal diff viewer with AI agent annotations — surfaces agent-authored code changes with context for human-in-the-loop review. New L6 sub-type candidate: agent changeset review gate. | L6 |
-| **[opencode](https://github.com/anomalyco/opencode) ⭐157k +660/day** | Open source terminal coding agent — provider-agnostic (Claude/OpenAI/Google/local), LSP-backed, client/server TUI, two built-in agents (build/plan). Highest-star L1 entry in the watch queue. | L1 |
-| **[OpenSpec](https://github.com/Fission-AI/OpenSpec) ⭐46.2k +294/day** | Spec-driven development (SDD) for AI coding assistants — structured proposal/spec/design artifacts before coding; 25+ tool slash-commands. 3rd spec-first L3 signal (acai.sh + ouroboros + OpenSpec). Sub-type pending 4th signal. | L3 |
+| **[TencentCloud/CubeSandbox](https://github.com/TencentCloud/CubeSandbox) ⭐6.7k** | KVM microVM sandbox for AI agent code execution (RustVMM, <60ms boot, E2B-compatible). Credential vault + egress control as first-class design — first cloud-provider-backed hardware-isolation service for agents. Schema gap: no `execution_isolation` field yet in clawfit. | L7 |
+| **[book-to-skill](https://github.com/virgiliojr94/book-to-skill) ⭐7.4k** | Converts PDFs, EPUBs, 9 other formats into Claude Code skills with claimed 24–51× efficiency gain over raw context loading. On-demand chapter retrieval via slash commands. First signal for "knowledge-base skill pack" L4b sub-type. | L4b |
+| **[micro/go-micro](https://github.com/micro/micro) ⭐23k** | First Go-native agent harness with dual-protocol coverage (MCP auto-generation + A2A). Per-agent composable interfaces (model, memory, tools, planner, guardrails). Sponsored by Anthropic + OpenAI. Breaks the Python-dominant harness pattern. | L2 |
+| **[diegosouzapw/OmniRoute](https://github.com/diegosouzapw/OmniRoute) ⭐9.4k** | Local proxy aggregating 231+ AI providers with 17 routing strategies and 9-engine token compression (15–95% savings). MCP server + A2A surface. Routes traffic *beneath* agents — decouples clawfit's cost axis from static LLM binding. | L7 |
+| **[Claude Code steganographic marking](https://thereallo.dev/blog/claude-code-prompt-steganography)** | Claude Code embeds invisible Unicode markers in system-prompt date strings to detect API gateways and resellers (XOR key 91, base64 domain lists). Second in-band provenance channel. Schema gap: `api_routing` field missing from clawfit's governance model. | meta |
+| **[ai-boost/awesome-harness-engineering](https://github.com/ai-boost/awesome-harness-engineering) ⭐2.1k** | Third independent harness-discipline signal (after arxiv 2605.15184 + UIUC survey): practitioner-curated survey defining harness engineering as context delivery + tool interfaces + verification loops + sandboxes. Cross-lab content (Anthropic, OpenAI, Google, MS). | L2 ref |
+| **[jaylfc/taOS](https://github.com/jaylfc/taOS) ⭐515** | Self-hosted AI OS bundling 108 catalog apps (16 agent frameworks, 47 MCP plugins), web desktop, and taOSmd memory (claims 97% LongMemEval-S). Second stack-collapse signal — first at real beta status. Consumer hardware clustering. | L1/L7 |
+| **[aiming-lab/AutoHarness](https://github.com/aiming-lab/AutoHarness) ⭐335** | First *working implementation* of harness-engineering-as-discipline: 6-step governance pipeline, YAML constitution, prompt injection detection, per-call cost attribution, JSONL audit log. "Agent = Model + Harness." Fourth harness-discipline signal. | L2/L3 |
 
-Full analysis in [`docs/research-watch/`](docs/research-watch/) (216 docs) · Full map in [`docs/reference-levels.md`](docs/reference-levels.md)
+Full analysis in [`docs/research-watch/`](docs/research-watch/) (358 docs) · Full map in [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -122,6 +122,7 @@ Full analysis in [`docs/research-watch/`](docs/research-watch/) (216 docs) · Fu
 
 | Date | What changed |
 |------|-------------|
+| 2026-07-01 | Daily scan (8 docs, 3 runs): CubeSandbox ⭐6.7k L7 (Tencent KVM microVM sandbox, E2B-compatible, `execution_isolation` schema gap); book-to-skill ⭐7.4k L4b (PDF→Claude Code skills, knowledge-skill sub-type first signal); go-micro ⭐23k L2 (first Go harness, MCP+A2A); OmniRoute ⭐9.4k L7 (231+ provider gateway, 9-engine compression); Claude Code steganographic marking (meta-signal, `api_routing` schema gap); awesome-harness-engineering ⭐2.1k (3rd harness-discipline signal); taOS ⭐515 L1/L7 (2nd stack-collapse signal, beta); AutoHarness ⭐335 L2/L3 (4th harness-discipline signal, first working governance implementation). 50/50 tests. No registry additions. |
 | 2026-05-12 | User-nominated: DSPy RLM (official DSPy module, community repo ⭐87) L4c — REPL-loop context navigation separating "variable space" from "token space"; new L4c sub-cluster "REPL-as-context-explorer". Programmatic context navigation as RAG alternative. Primary signal is official dspy.ai docs. |
 | 2026-05-11 | Daily scan (5 docs): anthropics/skills ⭐132k L4b (L4b "1st-party skill pack" sub-type **confirmed** — 2-signal threshold met), UI-TARS-desktop ⭐32k L1+L6 (ByteDance multimodal agent stack, hyperscaler L1/L7 collapse variant), react-doctor ⭐7.5k L4b (React quality scanner), codeburn ⭐6k L5 (cross-vendor cost observability TUI, 18 tools), hunk ⭐3.1k L6 (agent changeset review gate, new sub-type candidate). reference-levels.md: L4b 1st-party sub-type promoted → confirmed. 1 metadata fix: mistral-medium-3-5 cost corrected $1.50/M → $0.40/M. 50/50 tests. |
 | 2026-05-10 | User-nominated: Awesome-Agent-Harness ⭐187 L2 — first academic survey formalising agent harness as 6-component H=(E,T,C,S,L,V) model (110+ papers, 20+ system matrix). Anchors clawfit L2 taxonomy with scholarly definition. 1 doc. |

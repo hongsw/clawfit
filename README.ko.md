@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-05-12)
+## 🔥 지금 가장 뜨거운 것들 (2026-07-01)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[DSPy RLM](https://dspy.ai/api/modules/RLM/) (공식 DSPy 모듈)** | 공식 DSPy 모듈로 REPL 루프 컨텍스트 탐색 도입 — "변수 공간"(REPL 데이터)과 "토큰 공간"(LM 프롬프트)을 분리해 컨텍스트 rot 문제 해결. LM이 파이썬 코드로 외부 데이터를 검색·필터·집계; 샌드박스 Deno/Pyodide WASM 인터프리터 실행. 새 L4c 서브클러스터: REPL-as-context-explorer. RAG의 대안적 프로그래밍 컨텍스트 탐색 패턴. | L4c |
-| **[anthropics/skills](https://github.com/anthropics/skills) ⭐132k** | Anthropic 공식 에이전트 스킬 레포 — 컴퓨터 사용·웹 검색·파일 관리 등 조합 가능한 서브에이전트 표준. 2번째 신호로 L4b "1st-party model-vendor skill pack" 서브타입 **공식 확정**. | L4b |
-| **[UI-TARS-desktop](https://github.com/bytedance/UI-TARS-desktop) ⭐32k** | ByteDance 오픈소스 멀티모달 에이전트 스택: Agent TARS(브라우저/에이전트 루프) + UI-TARS-desktop(GUI/CUA). DOM+Vision 하이브리드 브라우저, MCP-as-kernel-bus, 자체 VLM(UI-TARS-72B). L1/L7 경계 붕괴 패턴의 하이퍼스케일러 변형. | L1+L6 |
-| **[react-doctor](https://github.com/millionco/react-doctor) ⭐7.5k** | AI 기반 React 코드 품질 스캐너 — React/Next.js 코드베이스의 성능 안티패턴·AI 생성 코드 결함 자동 탐지. MCP 스킬 플러그인으로 배포되는 dev-tool→skill 역전 경로. | L4b |
-| **[codeburn](https://github.com/getagentseal/codeburn) ⭐6k** | 크로스벤더 AI 코딩 비용 관측성 TUI — 18개 도구(Claude Code·Codex·Cursor·pi·opencode·Windsurf 등) 실시간 지출·토큰 추적. 7레이어 외부 횡단 텔레메트리 축 후보; 두 번째 신호 확인 시 구조적 승격 예정. | L5 |
-| **[hunk](https://github.com/modem-dev/hunk) ⭐3.1k** | 에이전트 어노테이션이 포함된 리뷰 우선 터미널 diff 뷰어 — 에이전트가 생성한 코드 변경을 컨텍스트와 함께 인간 검토자에게 전달. L6 신규 서브타입 후보: 에이전트 변경 집합 검토 게이트. | L6 |
-| **[opencode](https://github.com/anomalyco/opencode) ⭐157k +660/일** | 오픈소스 터미널 코딩 에이전트 — 프로바이더 독립(Claude/OpenAI/Google/로컬), LSP 기반, 클라이언트/서버 TUI, build/plan 2개 내장 에이전트. 워치큐 최고 스타 L1 신호. | L1 |
-| **[OpenSpec](https://github.com/Fission-AI/OpenSpec) ⭐46.2k +294/일** | AI 코딩 어시스턴트를 위한 스펙 주도 개발(SDD) — 코딩 전 제안/스펙/설계 아티팩트 생성, 25개+ 도구 슬래시 커맨드. 세 번째 spec-first L3 신호. 서브타입 "pre-execution spec layer" 4번째 신호 대기 중. | L3 |
+| **[TencentCloud/CubeSandbox](https://github.com/TencentCloud/CubeSandbox) ⭐6.7k** | AI 에이전트 코드 실행을 위한 KVM 마이크로VM 샌드박스 (RustVMM, 60ms 미만 부팅, E2B 호환). 자격증명 볼트 + 이그레스 제어 기본 내장. clawfit 스키마 공백: `execution_isolation` 필드 미존재. | L7 |
+| **[book-to-skill](https://github.com/virgiliojr94/book-to-skill) ⭐7.4k** | PDF·EPUB 등 9가지 형식을 Claude Code 스킬로 변환 (24–51× 효율 향상 주장). 슬래시 커맨드로 챕터 온디맨드 로드. L4b "지식베이스 스킬 팩" 서브타입 최초 신호. | L4b |
+| **[micro/go-micro](https://github.com/micro/micro) ⭐23k** | 이중 프로토콜(MCP 자동생성 + A2A) 지원 첫 Go 네이티브 에이전트 하네스. 모델·메모리·툴·플래너·가드레일·미들웨어 조합 가능. Anthropic·OpenAI 후원. Python 지배적 하네스 생태계에 첫 Go 신호. | L2 |
+| **[diegosouzapw/OmniRoute](https://github.com/diegosouzapw/OmniRoute) ⭐9.4k** | 231개+ AI 공급자를 단일 엔드포인트로 집계하는 로컬 프록시. 17가지 라우팅 전략 + 9엔진 토큰 압축(15–95% 절감). MCP 서버 + A2A 표면. 에이전트 하단에서 트래픽 라우팅 — clawfit 비용 축을 유동화. | L7 |
+| **[Claude Code 스테가노그래피 마킹](https://thereallo.dev/blog/claude-code-prompt-steganography)** | Claude Code가 시스템 프롬프트 날짜 문자열에 보이지 않는 유니코드 마커를 삽입해 API 게이트웨이·리셀러를 탐지 (XOR 키 91, base64 도메인 목록). 두 번째 인밴드 출처 채널. 스키마 공백: `api_routing` 거버넌스 필드 미존재. | 메타 |
+| **[ai-boost/awesome-harness-engineering](https://github.com/ai-boost/awesome-harness-engineering) ⭐2.1k** | 세 번째 독립 하네스-규율 신호 (arxiv 2605.15184 + UIUC 서베이에 이어): 하네스 엔지니어링을 컨텍스트 전달·툴 인터페이스·검증 루프·샌드박스로 정의하는 실무자 큐레이션 목록. | L2 참고 |
+| **[jaylfc/taOS](https://github.com/jaylfc/taOS) ⭐515** | 108개 카탈로그 앱(16 에이전트 프레임워크, 47 MCP 플러그인), 웹 데스크탑, taOSmd 메모리(LongMemEval-S 97% 주장)를 번들링한 셀프호스팅 AI OS. 두 번째 스택-붕괴 신호 — 최초 실제 베타. | L1/L7 |
+| **[aiming-lab/AutoHarness](https://github.com/aiming-lab/AutoHarness) ⭐335** | 하네스 엔지니어링 첫 *동작하는 구현체*: 6단계 거버넌스 파이프라인, YAML 컨스티튜션, 프롬프트 인젝션 탐지, 콜별 비용 귀속, JSONL 감사 로그. "에이전트 = 모델 + 하네스." | L2/L3 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (216개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (358개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-07-01 | 데일리 스캔 (8개 문서, 3회 실행): CubeSandbox ⭐6.7k L7(Tencent KVM 마이크로VM 샌드박스, `execution_isolation` 스키마 공백); book-to-skill ⭐7.4k L4b(PDF→Claude Code 스킬, 지식-스킬 팩 서브타입 최초 신호); go-micro ⭐23k L2(첫 Go 하네스, MCP+A2A); OmniRoute ⭐9.4k L7(231+ 공급자 게이트웨이); Claude Code 스테가노그래피 마킹(메타 신호, `api_routing` 스키마 공백); awesome-harness-engineering ⭐2.1k(3번째 하네스-규율 신호); taOS ⭐515 L1/L7(2번째 스택-붕괴 신호, 베타); AutoHarness ⭐335 L2/L3(4번째 하네스-규율 신호, 첫 동작 구현체). 50/50 테스트. 레지스트리 추가 없음. |
 | 2026-05-12 | 사용자 지목: DSPy RLM (공식 DSPy 모듈, 커뮤니티 레포 ⭐87) L4c — REPL 루프 컨텍스트 탐색, "변수 공간 vs 토큰 공간" 분리로 컨텍스트 rot 해결. 새 L4c 서브클러스터 "REPL-as-context-explorer". 기본 신호는 공식 dspy.ai 문서. |
 | 2026-05-11 | 데일리 스캔 (5개 문서): anthropics/skills ⭐132k L4b (L4b "1st-party skill pack" 서브타입 **공식 확정** — 2신호 충족), UI-TARS-desktop ⭐32k L1+L6 (ByteDance 멀티모달 에이전트 스택), react-doctor ⭐7.5k L4b (React 품질 스캐너), codeburn ⭐6k L5 (크로스벤더 비용 관측성 TUI), hunk ⭐3.1k L6 (에이전트 변경 집합 검토 게이트). reference-levels.md: L4b 1st-party 서브타입 확정. 메타데이터 수정 1건: mistral-medium-3-5 비용 $1.50/M → $0.40/M. 50/50 테스트 통과. |
 | 2026-05-10 | 사용자 지목: Awesome-Agent-Harness ⭐187 L2 — 에이전트 하네스 6-component H=(E,T,C,S,L,V) 모델 학술 서베이 (논문 110+개, 시스템 20+개 비교 행렬). clawfit L2 분류어의 학술 정의 앵커. 1개 문서. |
