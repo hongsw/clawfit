@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-07-01)
+## 🔥 지금 가장 뜨거운 것들 (2026-07-02)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[TencentCloud/CubeSandbox](https://github.com/TencentCloud/CubeSandbox) ⭐6.7k** | AI 에이전트 코드 실행을 위한 KVM 마이크로VM 샌드박스 (RustVMM, 60ms 미만 부팅, E2B 호환). 자격증명 볼트 + 이그레스 제어 기본 내장. clawfit 스키마 공백: `execution_isolation` 필드 미존재. | L7 |
-| **[book-to-skill](https://github.com/virgiliojr94/book-to-skill) ⭐7.4k** | PDF·EPUB 등 9가지 형식을 Claude Code 스킬로 변환 (24–51× 효율 향상 주장). 슬래시 커맨드로 챕터 온디맨드 로드. L4b "지식베이스 스킬 팩" 서브타입 최초 신호. | L4b |
-| **[micro/go-micro](https://github.com/micro/micro) ⭐23k** | 이중 프로토콜(MCP 자동생성 + A2A) 지원 첫 Go 네이티브 에이전트 하네스. 모델·메모리·툴·플래너·가드레일·미들웨어 조합 가능. Anthropic·OpenAI 후원. Python 지배적 하네스 생태계에 첫 Go 신호. | L2 |
-| **[diegosouzapw/OmniRoute](https://github.com/diegosouzapw/OmniRoute) ⭐9.4k** | 231개+ AI 공급자를 단일 엔드포인트로 집계하는 로컬 프록시. 17가지 라우팅 전략 + 9엔진 토큰 압축(15–95% 절감). MCP 서버 + A2A 표면. 에이전트 하단에서 트래픽 라우팅 — clawfit 비용 축을 유동화. | L7 |
-| **[Claude Code 스테가노그래피 마킹](https://thereallo.dev/blog/claude-code-prompt-steganography)** | Claude Code가 시스템 프롬프트 날짜 문자열에 보이지 않는 유니코드 마커를 삽입해 API 게이트웨이·리셀러를 탐지 (XOR 키 91, base64 도메인 목록). 두 번째 인밴드 출처 채널. 스키마 공백: `api_routing` 거버넌스 필드 미존재. | 메타 |
-| **[ai-boost/awesome-harness-engineering](https://github.com/ai-boost/awesome-harness-engineering) ⭐2.1k** | 세 번째 독립 하네스-규율 신호 (arxiv 2605.15184 + UIUC 서베이에 이어): 하네스 엔지니어링을 컨텍스트 전달·툴 인터페이스·검증 루프·샌드박스로 정의하는 실무자 큐레이션 목록. | L2 참고 |
-| **[jaylfc/taOS](https://github.com/jaylfc/taOS) ⭐515** | 108개 카탈로그 앱(16 에이전트 프레임워크, 47 MCP 플러그인), 웹 데스크탑, taOSmd 메모리(LongMemEval-S 97% 주장)를 번들링한 셀프호스팅 AI OS. 두 번째 스택-붕괴 신호 — 최초 실제 베타. | L1/L7 |
-| **[aiming-lab/AutoHarness](https://github.com/aiming-lab/AutoHarness) ⭐335** | 하네스 엔지니어링 첫 *동작하는 구현체*: 6단계 거버넌스 파이프라인, YAML 컨스티튜션, 프롬프트 인젝션 탐지, 콜별 비용 귀속, JSONL 감사 로그. "에이전트 = 모델 + 하네스." | L2/L3 |
+| **[openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc) ⭐22.5k** | OpenAI 공식 플러그인으로 Claude Code ↔ Codex CLI 연결. 7가지 슬래시 커맨드: 코드 리뷰, 적대적 리뷰, 태스크 위임, 세션 전환. **최초 크로스벤더 에이전트 위임 브릿지** — OpenAI가 Codex·Claude Code를 상호보완 도구로 인식하는 신호. 스키마 공백: 멀티 런타임 설정을 위한 `agent_delegation_target` 필드. | L4c |
+| **[browser-use/video-use](https://github.com/browser-use/video-use) ⭐13.7k** | 에이전트 네이티브 영상 편집 스킬: 텍스트 우선 아키텍처(에이전트가 원본 프레임 대신 트랜스크립트·시각 합성물 읽기). 필러워드 제거·무음 컷·색 보정·자막 생성·자기평가 렌더 루프. `content-creation` 네 번째 신호 — 스키마 추가 필요. 48시간 만에 5k★ 급증. | L4b |
+| **[strands-agents/harness-sdk](https://github.com/strands-agents/harness-sdk) ⭐6.4k** | Python + TypeScript 프로덕션 에이전트 하네스 SDK. 5개 공급자(Bedrock·Anthropic·OpenAI·Gemini·Ollama), MCP 1급 지원, 내장 관측성·가드레일·자기수정. 68회 릴리스. 이중 언어 동기 릴리스·Bedrock 지원이 레지스트리 공백 신호. | L2 |
+| **[Senior SWE-Bench](https://senior-swe-bench.snorkel.ai/)** | Princeton + UW–Madison의 시니어 엔지니어 수준 코딩 벤치마크: 명세 31% 단축, 평균 11파일 스팬, 수백 단계 태스크, "맛있는 솔브" 채점(정확성 + 코드 비대 제한 + 코드베이스 관례 준수). 최고 성적: Claude Opus 4.8 24%, Sonnet 5 19.4%. clawfit `code-gen` 스코어링 보정에 직접 활용 가능. | L5 |
+| **[Manufact MCP Cloud](https://manufact.com) (YC S25)** | MCP 서버 전용 클라우드 배포 플랫폼. `git push` 자동 배포·PR별 라이브 미리보기·브라우저 내 MCP 디버거·크로스모델 테스트(GPT/Claude/Gemini). mcp-use SDK: 7M+ 다운로드·10k+★. 사용자: NASA·LangChain. **최초 MCP 전용 호스팅 플랫폼** — 스키마 공백: `mcp_hosting` 필드. | L7 |
+| **[NVIDIA/skills](https://github.com/NVIDIA/skills) ⭐2.2k** | OMS 암호화 서명 포함 NVIDIA 공식 에이전트 스킬. CUDA-X·Jetson BSP(24개 임베디드 디바이스 라이프사이클)·TAO Toolkit(57개+)·Medical AI·Physical AI 포함. **하드웨어 벤더 최초 검증가능 출처 체인 스킬 팩.** 스키마 공백: `skill_provenance` + `embedded` 하드웨어 카테고리. | L4b |
+| **[micro/go-micro](https://github.com/micro/micro) ⭐23k** | 이중 프로토콜(MCP 자동생성 + A2A) 지원 첫 Go 네이티브 에이전트 하네스. Anthropic·OpenAI 후원. Python 지배적 하네스 생태계 첫 Go 신호. | L2 |
+| **[TencentCloud/CubeSandbox](https://github.com/TencentCloud/CubeSandbox) ⭐6.7k** | AI 에이전트 코드 실행용 KVM 마이크로VM 샌드박스 (60ms 미만 부팅, E2B 호환, 자격증명 볼트, 이그레스 감사). 첫 클라우드 공급자 지원 하드웨어 격리 서비스. 스키마 공백: `execution_isolation`. | L7 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (358개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (370개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 ## 🔥 지금 가장 뜨거운 것들 (2026-06-30)
 
 | 신호 | 왜 중요한가 | 레벨 |
@@ -150,6 +150,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-07-02 | 데일리 스캔 (7개 문서, 2회 실행): codex-plugin-cc ⭐22.5k L4c(첫 크로스벤더 위임 브릿지); strands-agents/harness-sdk ⭐6.4k L2(Python+TS 이중 언어 프로덕션 하네스); Senior SWE-Bench L5(Princeton/UW-Madison, Opus 4.8 선두 24%); Manufact MCP Cloud L7 YC S25(첫 MCP 전용 호스팅 플랫폼); NVIDIA/skills ⭐2.2k L4b(OMS 서명 공식 하드웨어 벤더 스킬, 첫 출처 체인); ZCode L1/L7 중국 네이티브(첫 CJK 엔터프라이즈 에이전트 신호); video-use ⭐13.7k L4b(4번째 content-creation 신호). 50/50 테스트. 레지스트리 추가 없음. |
 | 2026-07-01 | 데일리 스캔 (8개 문서, 3회 실행): CubeSandbox ⭐6.7k L7(Tencent KVM 마이크로VM 샌드박스, `execution_isolation` 스키마 공백); book-to-skill ⭐7.4k L4b(PDF→Claude Code 스킬, 지식-스킬 팩 서브타입 최초 신호); go-micro ⭐23k L2(첫 Go 하네스, MCP+A2A); OmniRoute ⭐9.4k L7(231+ 공급자 게이트웨이); Claude Code 스테가노그래피 마킹(메타 신호, `api_routing` 스키마 공백); awesome-harness-engineering ⭐2.1k(3번째 하네스-규율 신호); taOS ⭐515 L1/L7(2번째 스택-붕괴 신호, 베타); AutoHarness ⭐335 L2/L3(4번째 하네스-규율 신호, 첫 동작 구현체). 50/50 테스트. 레지스트리 추가 없음. |
 | 2026-06-30 | 사용자 지목 (taxonomy 교차 참조): ECC ⭐223k L2 (크로스 하네스 코디네이터, 271 스킬 — 최대 미추적 신호; 서브타입 2신호 대기 + 스타 출처 검증 필요), meta-harness ⭐113 L3 (Codex 런타임 Team-Architecture Factory — 3번째 데이터포인트). 데일리 스캔 갭: 2026-05-24 → 2026-06-30 (5주). |
 | 2026-05-12 | 사용자 지목: DSPy RLM (공식 DSPy 모듈, 커뮤니티 레포 ⭐87) L4c — REPL 루프 컨텍스트 탐색, "변수 공간 vs 토큰 공간" 분리로 컨텍스트 rot 해결. 새 L4c 서브클러스터 "REPL-as-context-explorer". 기본 신호는 공식 dspy.ai 문서. |
