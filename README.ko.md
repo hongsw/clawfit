@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-07-02)
+## 🔥 지금 가장 뜨거운 것들 (2026-07-03)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc) ⭐22.5k** | OpenAI 공식 플러그인으로 Claude Code ↔ Codex CLI 연결. 7가지 슬래시 커맨드: 코드 리뷰, 적대적 리뷰, 태스크 위임, 세션 전환. **최초 크로스벤더 에이전트 위임 브릿지** — OpenAI가 Codex·Claude Code를 상호보완 도구로 인식하는 신호. 스키마 공백: 멀티 런타임 설정을 위한 `agent_delegation_target` 필드. | L4c |
-| **[browser-use/video-use](https://github.com/browser-use/video-use) ⭐13.7k** | 에이전트 네이티브 영상 편집 스킬: 텍스트 우선 아키텍처(에이전트가 원본 프레임 대신 트랜스크립트·시각 합성물 읽기). 필러워드 제거·무음 컷·색 보정·자막 생성·자기평가 렌더 루프. `content-creation` 네 번째 신호 — 스키마 추가 필요. 48시간 만에 5k★ 급증. | L4b |
-| **[strands-agents/harness-sdk](https://github.com/strands-agents/harness-sdk) ⭐6.4k** | Python + TypeScript 프로덕션 에이전트 하네스 SDK. 5개 공급자(Bedrock·Anthropic·OpenAI·Gemini·Ollama), MCP 1급 지원, 내장 관측성·가드레일·자기수정. 68회 릴리스. 이중 언어 동기 릴리스·Bedrock 지원이 레지스트리 공백 신호. | L2 |
-| **[Senior SWE-Bench](https://senior-swe-bench.snorkel.ai/)** | Princeton + UW–Madison의 시니어 엔지니어 수준 코딩 벤치마크: 명세 31% 단축, 평균 11파일 스팬, 수백 단계 태스크, "맛있는 솔브" 채점(정확성 + 코드 비대 제한 + 코드베이스 관례 준수). 최고 성적: Claude Opus 4.8 24%, Sonnet 5 19.4%. clawfit `code-gen` 스코어링 보정에 직접 활용 가능. | L5 |
-| **[Manufact MCP Cloud](https://manufact.com) (YC S25)** | MCP 서버 전용 클라우드 배포 플랫폼. `git push` 자동 배포·PR별 라이브 미리보기·브라우저 내 MCP 디버거·크로스모델 테스트(GPT/Claude/Gemini). mcp-use SDK: 7M+ 다운로드·10k+★. 사용자: NASA·LangChain. **최초 MCP 전용 호스팅 플랫폼** — 스키마 공백: `mcp_hosting` 필드. | L7 |
-| **[NVIDIA/skills](https://github.com/NVIDIA/skills) ⭐2.2k** | OMS 암호화 서명 포함 NVIDIA 공식 에이전트 스킬. CUDA-X·Jetson BSP(24개 임베디드 디바이스 라이프사이클)·TAO Toolkit(57개+)·Medical AI·Physical AI 포함. **하드웨어 벤더 최초 검증가능 출처 체인 스킬 팩.** 스키마 공백: `skill_provenance` + `embedded` 하드웨어 카테고리. | L4b |
-| **[micro/go-micro](https://github.com/micro/micro) ⭐23k** | 이중 프로토콜(MCP 자동생성 + A2A) 지원 첫 Go 네이티브 에이전트 하네스. Anthropic·OpenAI 후원. Python 지배적 하네스 생태계 첫 Go 신호. | L2 |
-| **[TencentCloud/CubeSandbox](https://github.com/TencentCloud/CubeSandbox) ⭐6.7k** | AI 에이전트 코드 실행용 KVM 마이크로VM 샌드박스 (60ms 미만 부팅, E2B 호환, 자격증명 볼트, 이그레스 감사). 첫 클라우드 공급자 지원 하드웨어 격리 서비스. 스키마 공백: `execution_isolation`. | L7 |
+| **Apple Safari MCP Server** (webkit.org, HN 220점) | Apple WebKit 팀 공식 MCP 서버: 18개 브라우저 도구(내비게이션·페이지 분석·네트워크·상호작용·디버깅). 완전 로컬 실행 — 클라우드 텔레메트리 없음. Claude·Codex 명시 지원. Chrome DevTools MCP와 함께 **"브라우저 벤더 공식 MCP" L4c 서브타입 확정** — Google·Apple 양사가 72시간 이내에 공식 MCP 레이어 출시. | L4c |
+| **[ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) ⭐45.1k** | Google Chrome DevTools 공식 MCP 서버: 40개+ 도구(성능 추적·네트워크 검사·DOM 자동화·스택 트레이스·메모리 디버깅). 브라우저 벤더 공식 MCP 서브타입 첫 번째 신호 → 두 번째 신호(Safari MCP)로 **서브타입 확정**. | L4c |
+| **[safishamsi/graphify](https://github.com/safishamsi/graphify) ⭐76.9k** | `/graphify .` 슬래시 커맨드로 프로젝트 디렉토리를 질의 가능한 지식 그래프로 변환. Tree-sitter AST 추출(36개 언어, 완전 로컬) + 문서/PDF/이미지/영상 LLM 분석. 90일 급성장(Karpathy LLM Knowledge Bases 포스트로 바이럴). | L4b |
+| **[microsoft/agent-governance-toolkit](https://github.com/microsoft/agent-governance-toolkit) ⭐4.6k** | 프로덕션 AI 에이전트를 위한 커널 수준 정책 집행 미들웨어. YAML/OPA/Cedar 룰셋, SPIFFE/DID/mTLS 제로트러스트 ID, 머클 기반 감사 로그. "커널이 거부한 행동은 불가능". LangChain·AutoGen·CrewAI 등 7개+ 어댑터. v4.1.0 2026-06-09. L5 거버넌스 서브타입 첫 신호. | L5 |
+| **[openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc) ⭐22.5k** | OpenAI 공식 플러그인으로 Claude Code ↔ Codex CLI 연결. 7가지 슬래시 커맨드. **최초 크로스벤더 에이전트 위임 브릿지** — OpenAI가 Codex·Claude Code를 상호보완 도구로 인식하는 신호. | L4c |
+| **[Senior SWE-Bench](https://senior-swe-bench.snorkel.ai/)** | Princeton + UW–Madison 시니어 엔지니어 수준 벤치마크. 명세 31% 단축, 11파일 평균 스팬, "맛있는 솔브" 채점. 최고: Claude Opus 4.8 24%, Sonnet 5 19.4%. clawfit `code-gen` 스코어링 보정에 직접 활용. | L5 |
+| **[strands-agents/harness-sdk](https://github.com/strands-agents/harness-sdk) ⭐6.4k** | Python + TypeScript 프로덕션 에이전트 하네스. 5개 공급자, MCP 1급, 내장 관측성·가드레일. 이중 언어·Bedrock 지원이 레지스트리 공백 신호. | L2 |
+| **[Manufact MCP Cloud](https://manufact.com) (YC S25)** | MCP 서버 전용 클라우드 배포 플랫폼. `git push` 자동 배포·PR별 미리보기·크로스모델 테스트. mcp-use SDK: 7M+ 다운로드. 최초 MCP 전용 호스팅 플랫폼. | L7 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (370개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (375개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 ## 🔥 지금 가장 뜨거운 것들 (2026-06-30)
 
 | 신호 | 왜 중요한가 | 레벨 |
