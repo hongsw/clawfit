@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-07-04)
+## 🔥 지금 가장 뜨거운 것들 (2026-07-05)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) ⭐20k** | 10개+ 코딩 에이전트(Claude Code·Codex·Gemini CLI·Cursor 등)를 위한 337개 스킬 팩. 엔지니어링뿐 아니라 마케팅·컴플라이언스·C레벨 자문·재무까지 포함. 크로스에이전트 호환성이 설계 원칙인 최초 대형 커뮤니티 스킬 애그리게이터. | L4b |
-| **[Zackriya-Solutions/meetily](https://github.com/Zackriya-Solutions/meetily) ⭐14.9k** | 프라이버시 우선 완전 로컬 AI 회의 어시스턴트 (Rust, macOS + Windows). Parakeet/Whisper 전사·SortFormer 화자 분리·Ollama 요약 — 100% 온디바이스, 클라우드 없음. `task: meeting-notes` 분류 첫 신호; 로컬 음성/오디오 AI 클러스터 형성 중. | L1/L6 |
-| **[CoplayDev/unity-mcp](https://github.com/CoplayDev/unity-mcp) ⭐11.5k** | Unity Editor 프로세스 내부에서 실행되는 MCP 서버 (외부 프록시 아님): 에셋 관리·씬 제어·스크립트 편집·태스크 자동화. 브라우저에서 게임 엔진으로 "환경 네이티브 MCP" 패턴 확장. Claude·Cursor·Copilot·Gemini·OpenAI 명시 지원. | L4c |
-| **[huggingface/speech-to-speech](https://github.com/huggingface/speech-to-speech) ⭐5.3k** | HuggingFace 공식 완전 로컬 음성 에이전트 파이프라인: STT(Whisper) → LLM → TTS(Parler-TTS/MeloTTS). 모듈식 모델 교체, Apache 2.0, API 키 불필요. 1급 ML 조직 음성 파이프라인 첫 추적 항목. Meetily와 함께 로컬 음성/오디오 AI 2신호 클러스터 형성. | L4b |
-| **facebook/astryx ⭐4.6k** | Meta의 에이전트 준비 디자인 시스템 (React/StyleX 150개+ 컴포넌트). MCP 서버 + CLI를 1급 기본값으로 내장 — 인간 개발자와 AI 에이전트의 API 표면이 의도적으로 동일. 13,000개+ Meta 앱 내부 검증(Facebook·Instagram·WhatsApp·Threads). "에이전트 네이티브 컴포넌트 라이브러리" 최초 추적 패턴. | L4b |
-| **[safishamsi/graphify](https://github.com/safishamsi/graphify) ⭐76.9k** | `/graphify .` 슬래시 커맨드로 코드베이스를 질의 가능한 지식 그래프로 변환. Tree-sitter AST(36개 언어, 완전 로컬) + 문서/PDF/이미지/영상 LLM 분석. 90일 바이럴 성장; v0.9.5 2026-07-02. | L4b |
-| **[jamesob/local-llm](https://github.com/jamesob/local-llm) ⭐666** | "내가 LLM을 로컬에서 실행하는 방법에 대해 아는 모든 것" — 2026-07-03 생성 실전 가이드. HN 388점/24시간 (전문가 독자층, 별점 대비 HN 비율 역전). `hardware: local`, `network: offline` 스코어링 정확도 관련; 추천 도구들이 7–14일 내 별점 급상승 예상. | L7 ref |
-| **[kerlenton/mcpsnoop](https://github.com/kerlenton/mcpsnoop) ⭐127** | "MCP용 Wireshark" — AI 클라이언트-MCP 서버 사이 JSON-RPC를 인라인으로 캡처하는 투명 프록시. 행 콜 감지·도구 호출 재생·역량 핸드셰이크 검사기. MCP 프로토콜 디버거로서 L4c 서브타입 첫 신호. | L4c |
+| **[asheshgoplani/agent-deck](https://github.com/asheshgoplani/agent-deck)** | AI 코딩 에이전트를 위한 "미션 컨트롤" TUI — Claude Code·Gemini CLI·OpenCode·Codex를 하나의 터미널에서 관리. 세션 포크·MCP 소켓 풀링·Conductor 메타세션(다른 세션을 감시·자동 응답하는 영속 오케스트레이터) 지원. L2 하네스 + L6 인간 인터페이스가 결합된 최초 터미널 네이티브 멀티에이전트 세션 매니저. 스타 수 불일치 주의(432 확인 vs 46.4k 주장). | L2/L6 |
+| **[microsoft/intelligent-terminal](https://github.com/microsoft/intelligent-terminal)** | Windows Terminal 포크로 ACP(Agent Client Protocol) 네이티브 통합 — Claude/Codex/Gemini/Copilot CLI 자동 감지, stdio로 쉘 컨텍스트 주입. ACP가 **3벤더 크로스플랫폼 표준**으로 확정 (Zed 창시, JetBrains 2025-10, Microsoft Build 2026). | L7/L1 |
+| **[crynta/terax-ai](https://github.com/crynta/terax-ai) ⭐8k** | 7 MB 터미널 우선 AI 개발 환경 (Tauri 2 + Rust). Ollama/MLX 로컬 모델 포함 BYOK 멀티프로바이더. 바이너리 크기가 설계 제약(7.4 MB vs Warp 423 MB). `offline_mid_codegen` 셀에서 Goose·Aider와 경쟁. | L1/L7 |
+| **[MCP 2026-07-28 Stateless RC](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/)** | MCP 공식 RC가 Mcp-Session-Id, initialize 핸드셰이크, sticky 라우팅을 제거. 프로토콜 버전+역량이 모든 요청의 `_meta`에 포함 — 상태 비저장 수평 확장이 프로토콜 기본값. 추적 중인 모든 MCP 서버가 마이그레이션 필요. 7월 28일 발효, 베타 SDK 현재 배포 중. | L4c/L5 |
+| **["Better Models: Worse Tools"](https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/) (HN 44점)** | Flask/Jinja 창시자 Armin Ronacher의 실증 포스트 — Opus 4.8·Sonnet 5가 엄격한 스키마에서 잘못된 도구 호출을 생성하지만 Claude Code의 관대한 하네스에서는 성공함을 문서화. "forgiving harness overfitting" 패턴 명명. `llm.tool_schema_compliance`와 `agent.harness_schema_strictness`를 신규 스코어링 축 후보로 제안. | L2 메타 |
+| **[alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) ⭐20k** | 10개+ 코딩 에이전트를 위한 337개 스킬 팩. 비엔지니어링 영역(마케팅·컴플라이언스·C레벨 자문)까지 포함. 크로스에이전트 호환성이 설계 원칙인 최초 대형 커뮤니티 애그리게이터. | L4b |
+| **[Zackriya-Solutions/meetily](https://github.com/Zackriya-Solutions/meetily) ⭐14.9k** | 프라이버시 우선 완전 로컬 AI 회의 어시스턴트 (Rust). Parakeet/Whisper 전사·SortFormer 화자 분리·Ollama 요약 — 100% 온디바이스. `task: meeting-notes` 첫 신호; speech-to-speech와 함께 로컬 음성 AI 2신호 클러스터. | L1/L6 |
+| **[CoplayDev/unity-mcp](https://github.com/CoplayDev/unity-mcp) ⭐11.5k** | Unity Editor 프로세스 내 MCP 서버 — 에셋 관리·씬 제어·스크립트 편집. "환경 네이티브 MCP" 패턴을 브라우저에서 게임 엔진으로 확장. Claude·Cursor·Copilot·Gemini·OpenAI 동시 지원. | L4c |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (382개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (387개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 ## 🔥 지금 가장 뜨거운 것들 (2026-06-30)
 
 | 신호 | 왜 중요한가 | 레벨 |
@@ -150,6 +150,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-07-05 | 데일리 스캔 (5개 문서): agent-deck L2/L6(터미널 멀티에이전트 세션 매니저, Conductor 패턴, 스타 수 불일치 플래그); microsoft/intelligent-terminal L7/L1(ACP 3벤더 표준 확정 — Zed+JetBrains+Microsoft); terax-ai ⭐8k L1/L7(7MB 풋프린트 제약 터미널 워크스페이스, 오프라인 LLM); MCP stateless RC(세션 레이어 제거, 7월 28일 발효); "Better Models: Worse Tools" L2 메타(Armin Ronacher, HN 44점, 하네스 스키마 회귀). reference-levels.md: L4c MCP stateless RC 노트; L7 ACP 3벤더 어노테이션; 2026-07-05 발견 로그. 50/50 테스트. 레지스트리 추가 없음. |
 | 2026-07-04 | 데일리 스캔 (7개 문서, 2회 실행): meetily ⭐14.9k L1/L6(완전 로컬 회의 에이전트, 첫 `meeting-notes` 태스크 버티컬, 로컬 음성/오디오 클러스터 형성); alirezarezvani/claude-skills ⭐20k L4b(337 스킬, 10+ 에이전트, 비엔지니어링 영역); unity-mcp ⭐11.5k L4c(Unity Editor 인프로세스 MCP); huggingface/speech-to-speech ⭐5.3k L4b 음성(완전 로컬 STT→LLM→TTS, Tier-1 출처); astryx L4b(Meta 에이전트 네이티브 디자인 시스템, MCP+CLI 내장); mcpsnoop L4c(127★, MCP 투명 프록시); jamesob/local-llm ref(666★, HN 388점). reference-levels.md: 2026-07-04 발견 로그 추가; 음성/오디오 2신호 모니터링 플래그. 50/50 테스트. 레지스트리 추가 없음 (스키마 공백: meeting-notes·voice-agent·game-dev·skill_pack). |
 | 2026-07-02 | 데일리 스캔 (7개 문서, 2회 실행): codex-plugin-cc ⭐22.5k L4c(첫 크로스벤더 위임 브릿지); strands-agents/harness-sdk ⭐6.4k L2(Python+TS 이중 언어 프로덕션 하네스); Senior SWE-Bench L5(Princeton/UW-Madison, Opus 4.8 선두 24%); Manufact MCP Cloud L7 YC S25(첫 MCP 전용 호스팅 플랫폼); NVIDIA/skills ⭐2.2k L4b(OMS 서명 공식 하드웨어 벤더 스킬, 첫 출처 체인); ZCode L1/L7 중국 네이티브(첫 CJK 엔터프라이즈 에이전트 신호); video-use ⭐13.7k L4b(4번째 content-creation 신호). 50/50 테스트. 레지스트리 추가 없음. |
 | 2026-07-01 | 데일리 스캔 (8개 문서, 3회 실행): CubeSandbox ⭐6.7k L7(Tencent KVM 마이크로VM 샌드박스, `execution_isolation` 스키마 공백); book-to-skill ⭐7.4k L4b(PDF→Claude Code 스킬, 지식-스킬 팩 서브타입 최초 신호); go-micro ⭐23k L2(첫 Go 하네스, MCP+A2A); OmniRoute ⭐9.4k L7(231+ 공급자 게이트웨이); Claude Code 스테가노그래피 마킹(메타 신호, `api_routing` 스키마 공백); awesome-harness-engineering ⭐2.1k(3번째 하네스-규율 신호); taOS ⭐515 L1/L7(2번째 스택-붕괴 신호, 베타); AutoHarness ⭐335 L2/L3(4번째 하네스-규율 신호, 첫 동작 구현체). 50/50 테스트. 레지스트리 추가 없음. |
