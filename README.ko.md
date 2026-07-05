@@ -103,31 +103,16 @@
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[asheshgoplani/agent-deck](https://github.com/asheshgoplani/agent-deck)** | AI 코딩 에이전트를 위한 "미션 컨트롤" TUI — Claude Code·Gemini CLI·OpenCode·Codex를 하나의 터미널에서 관리. 세션 포크·MCP 소켓 풀링·Conductor 메타세션(다른 세션을 감시·자동 응답하는 영속 오케스트레이터) 지원. L2 하네스 + L6 인간 인터페이스가 결합된 최초 터미널 네이티브 멀티에이전트 세션 매니저. 스타 수 불일치 주의(432 확인 vs 46.4k 주장). | L2/L6 |
-| **[microsoft/intelligent-terminal](https://github.com/microsoft/intelligent-terminal)** | Windows Terminal 포크로 ACP(Agent Client Protocol) 네이티브 통합 — Claude/Codex/Gemini/Copilot CLI 자동 감지, stdio로 쉘 컨텍스트 주입. ACP가 **3벤더 크로스플랫폼 표준**으로 확정 (Zed 창시, JetBrains 2025-10, Microsoft Build 2026). | L7/L1 |
-| **[crynta/terax-ai](https://github.com/crynta/terax-ai) ⭐8k** | 7 MB 터미널 우선 AI 개발 환경 (Tauri 2 + Rust). Ollama/MLX 로컬 모델 포함 BYOK 멀티프로바이더. 바이너리 크기가 설계 제약(7.4 MB vs Warp 423 MB). `offline_mid_codegen` 셀에서 Goose·Aider와 경쟁. | L1/L7 |
-| **[MCP 2026-07-28 Stateless RC](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/)** | MCP 공식 RC가 Mcp-Session-Id, initialize 핸드셰이크, sticky 라우팅을 제거. 프로토콜 버전+역량이 모든 요청의 `_meta`에 포함 — 상태 비저장 수평 확장이 프로토콜 기본값. 추적 중인 모든 MCP 서버가 마이그레이션 필요. 7월 28일 발효, 베타 SDK 현재 배포 중. | L4c/L5 |
-| **["Better Models: Worse Tools"](https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/) (HN 44점)** | Flask/Jinja 창시자 Armin Ronacher의 실증 포스트 — Opus 4.8·Sonnet 5가 엄격한 스키마에서 잘못된 도구 호출을 생성하지만 Claude Code의 관대한 하네스에서는 성공함을 문서화. "forgiving harness overfitting" 패턴 명명. `llm.tool_schema_compliance`와 `agent.harness_schema_strictness`를 신규 스코어링 축 후보로 제안. | L2 메타 |
-| **[alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) ⭐20k** | 10개+ 코딩 에이전트를 위한 337개 스킬 팩. 비엔지니어링 영역(마케팅·컴플라이언스·C레벨 자문)까지 포함. 크로스에이전트 호환성이 설계 원칙인 최초 대형 커뮤니티 애그리게이터. | L4b |
-| **[Zackriya-Solutions/meetily](https://github.com/Zackriya-Solutions/meetily) ⭐14.9k** | 프라이버시 우선 완전 로컬 AI 회의 어시스턴트 (Rust). Parakeet/Whisper 전사·SortFormer 화자 분리·Ollama 요약 — 100% 온디바이스. `task: meeting-notes` 첫 신호; speech-to-speech와 함께 로컬 음성 AI 2신호 클러스터. | L1/L6 |
-| **[CoplayDev/unity-mcp](https://github.com/CoplayDev/unity-mcp) ⭐11.5k** | Unity Editor 프로세스 내 MCP 서버 — 에셋 관리·씬 제어·스크립트 편집. "환경 네이티브 MCP" 패턴을 브라우저에서 게임 엔진으로 확장. Claude·Cursor·Copilot·Gemini·OpenAI 동시 지원. | L4c |
+| **[planning-with-files](https://github.com/OthmanAdi/planning-with-files) ⭐24.6k** | 컨텍스트 손실·/clear에도 살아남는 파일 기반 플래닝(task_plan.md + findings.md + progress.md); SKILL.md 표준으로 60개+ 에이전트 호환; 결정적 완료 게이트; /plan-loop이 Claude Code /loop와 조합. 지속 계획 메모리의 새 L5 패턴. | L5/L4b |
+| **[free-llm-api-resources](https://github.com/cheahjs/free-llm-api-resources) ⭐25.4k +510/일** | 14개+ 공급자의 무료 LLM API 엔드포인트를 모델별 레이트 리밋과 함께 자동 수집·정리. 참조 목록으로 25k 스타(Aider 초과) — 추론 비용이 실무자의 최우선 인프라 지식임을 증명. LLM 상품화 신호. | L7 |
+| **[nano-vllm](https://github.com/GeeeekExplorer/nano-vllm) ⭐14.4k** | vLLM의 최소 1,200줄 Python 재구현 — 프리픽스 캐싱·텐서 병렬·CUDA 그래프 구현, PagedAttention 의도적 제외. 1,434 vs 1,362 tok/s(RTX 4070 Laptop). nanoGPT 전통의 추론 버전. | L7 |
+| **[OpenClaw-RL](https://github.com/Gen-Verse/OpenClaw-RL) ⭐5.4k** | Princeton/ICML-2026 비동기 RL 프레임워크 — 실시간 대화를 인터셉트하여 에이전트 서빙·롤아웃 수집·보상 평가·정책 훈련을 독립 비동기 루프로 분리. "지속적으로 자기 개선하는 런타임" 최초 신호. | L1 |
+| **[pxpipe](https://github.com/teamchong/pxpipe) ⭐~2.3k** | 텍스트 컨텍스트를 PNG로 변환 후 API로 전송하는 로컬 프록시 — 이미지 토큰 가격 비대칭(3.1:1 chars/token) 활용으로 59–70% 비용 절감 주장. 16진수/UUID ~7% 오독률(손실 트레이드오프). | L7 |
+| **MCP 2026-07-28 RC — 스테이트리스 코어** | 공식 스펙 RC가 세션 레이어 완전 제거(SEP-2567); 모든 요청이 임의 서버 인스턴스에 도달 가능; 호출당 새 필수 헤더 3개. 기존 세션 연속성을 사용하는 모든 MCP 서버의 하드 브레이킹 체인지. | L4c |
+| **["Better Models: Worse Tools"](https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/)** | Ronacher(Flask/Jinja 개발자): Opus 4.8/Sonnet 5가 Claude Code 외 스키마에서 ~20% 오작동, Opus 4.5/Codex는 정상. 원인: 허용적 하네스가 스키마 위반 그래디언트 신호를 제거 → post-training 누적. Strict 모드로 완화 가능. | L2→L4c |
+| **[terax-ai](https://github.com/crynta/terax-ai) ⭐8k** | Tauri 2/Rust 터미널 AI 워크스페이스: 7.4 MB 바이너리(Warp 대비 ~60배 작음), 오프라인 지원(Ollama/MLX), 승인 게이트 툴 실행, TERAX.md 자동 생성 프로젝트 메모리. 공간 제약 터미널 에이전트의 첫 신호. | L1/L7 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (387개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
-## 🔥 지금 가장 뜨거운 것들 (2026-06-30)
-
-| 신호 | 왜 중요한가 | 레벨 |
-|------|------------|------|
-| **[ECC (affaan-m/ECC)](https://github.com/affaan-m/ECC) ⭐223k** | 크로스 하네스 네이티브 코디네이터 — Claude Code·Codex·Opencode·Cursor 동시에 스킬·instinct·메모리·보안을 표준화. 271개 내장 스킬. 새 L2 서브타입 "cross-harness coordinator" 후보 (2번째 신호 대기; 스타 출처 검증 중 — 동일 저자가 everything-claude-code ⭐168k 소유). | L2 |
-| **[DSPy RLM](https://dspy.ai/api/modules/RLM/) (공식 DSPy 모듈)** | 공식 DSPy 모듈로 REPL 루프 컨텍스트 탐색 도입 — "변수 공간"(REPL 데이터)과 "토큰 공간"(LM 프롬프트)을 분리해 컨텍스트 rot 문제 해결. LM이 파이썬 코드로 외부 데이터를 검색·필터·집계; 샌드박스 Deno/Pyodide WASM 인터프리터. 새 L4c 서브클러스터: REPL-as-context-explorer. | L4c |
-| **[anthropics/skills](https://github.com/anthropics/skills) ⭐132k** | Anthropic 공식 에이전트 스킬 레포 — 컴퓨터 사용·웹 검색·파일 관리 등 조합 가능한 서브에이전트 표준. 2번째 신호로 L4b "1st-party model-vendor skill pack" 서브타입 **공식 확정**. | L4b |
-| **[UI-TARS-desktop](https://github.com/bytedance/UI-TARS-desktop) ⭐32k** | ByteDance 오픈소스 멀티모달 에이전트 스택: Agent TARS(브라우저/에이전트 루프) + UI-TARS-desktop(GUI/CUA). DOM+Vision 하이브리드 브라우저, MCP-as-kernel-bus, 자체 VLM(UI-TARS-72B). L1/L7 경계 붕괴 패턴의 하이퍼스케일러 변형. | L1+L6 |
-| **[react-doctor](https://github.com/millionco/react-doctor) ⭐7.5k** | AI 기반 React 코드 품질 스캐너 — React/Next.js 코드베이스의 성능 안티패턴·AI 생성 코드 결함 자동 탐지. MCP 스킬 플러그인으로 배포되는 dev-tool→skill 역전 경로. | L4b |
-| **[codeburn](https://github.com/getagentseal/codeburn) ⭐6k** | 크로스벤더 AI 코딩 비용 관측성 TUI — 18개 도구(Claude Code·Codex·Cursor·pi·opencode·Windsurf 등) 실시간 지출·토큰 추적. 7레이어 외부 횡단 텔레메트리 축 후보; 두 번째 신호 확인 시 구조적 승격 예정. | L5 |
-| **[hunk](https://github.com/modem-dev/hunk) ⭐3.1k** | 에이전트 어노테이션이 포함된 리뷰 우선 터미널 diff 뷰어 — 에이전트가 생성한 코드 변경을 컨텍스트와 함께 인간 검토자에게 전달. L6 신규 서브타입 후보: 에이전트 변경 집합 검토 게이트. | L6 |
-| **[opencode](https://github.com/anomalyco/opencode) ⭐157k +660/일** | 오픈소스 터미널 코딩 에이전트 — 프로바이더 독립(Claude/OpenAI/Google/로컬), LSP 기반, 클라이언트/서버 TUI, build/plan 2개 내장 에이전트. 워치큐 최고 스타 L1 신호. | L1 |
-| **[OpenSpec](https://github.com/Fission-AI/OpenSpec) ⭐46.2k +294/일** | AI 코딩 어시스턴트를 위한 스펙 주도 개발(SDD) — 코딩 전 제안/스펙/설계 아티팩트 생성, 25개+ 도구 슬래시 커맨드. 세 번째 spec-first L3 신호. 서브타입 "pre-execution spec layer" 4번째 신호 대기 중. | L3 |
-
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (218개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (357개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -150,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-07-05 | 데일리 스캔 run 4 (5개 문서): planning-with-files ⭐24.6k L5/L4b (크래시 방지 플래닝, 60개+ 에이전트), free-llm-api-resources ⭐25.4k L7 (추론 상품화 신호), nano-vllm ⭐14.4k L7 (최소 vLLM 재구현), OpenClaw-RL ⭐5.4k L1 (Princeton 비동기 RL 훈련), pxpipe ⭐~2.3k L7 (PNG 컨텍스트 프록시 59-70% 절감). reference-levels.md: run 4 로그 7항목 추가; 정규 섹션 변경 없음. 50/50 테스트 통과. |
 | 2026-07-05 | 데일리 스캔 (5개 문서): agent-deck L2/L6(터미널 멀티에이전트 세션 매니저, Conductor 패턴, 스타 수 불일치 플래그); microsoft/intelligent-terminal L7/L1(ACP 3벤더 표준 확정 — Zed+JetBrains+Microsoft); terax-ai ⭐8k L1/L7(7MB 풋프린트 제약 터미널 워크스페이스, 오프라인 LLM); MCP stateless RC(세션 레이어 제거, 7월 28일 발효); "Better Models: Worse Tools" L2 메타(Armin Ronacher, HN 44점, 하네스 스키마 회귀). reference-levels.md: L4c MCP stateless RC 노트; L7 ACP 3벤더 어노테이션; 2026-07-05 발견 로그. 50/50 테스트. 레지스트리 추가 없음. |
 | 2026-07-04 | 데일리 스캔 (7개 문서, 2회 실행): meetily ⭐14.9k L1/L6(완전 로컬 회의 에이전트, 첫 `meeting-notes` 태스크 버티컬, 로컬 음성/오디오 클러스터 형성); alirezarezvani/claude-skills ⭐20k L4b(337 스킬, 10+ 에이전트, 비엔지니어링 영역); unity-mcp ⭐11.5k L4c(Unity Editor 인프로세스 MCP); huggingface/speech-to-speech ⭐5.3k L4b 음성(완전 로컬 STT→LLM→TTS, Tier-1 출처); astryx L4b(Meta 에이전트 네이티브 디자인 시스템, MCP+CLI 내장); mcpsnoop L4c(127★, MCP 투명 프록시); jamesob/local-llm ref(666★, HN 388점). reference-levels.md: 2026-07-04 발견 로그 추가; 음성/오디오 2신호 모니터링 플래그. 50/50 테스트. 레지스트리 추가 없음 (스키마 공백: meeting-notes·voice-agent·game-dev·skill_pack). |
 | 2026-07-02 | 데일리 스캔 (7개 문서, 2회 실행): codex-plugin-cc ⭐22.5k L4c(첫 크로스벤더 위임 브릿지); strands-agents/harness-sdk ⭐6.4k L2(Python+TS 이중 언어 프로덕션 하네스); Senior SWE-Bench L5(Princeton/UW-Madison, Opus 4.8 선두 24%); Manufact MCP Cloud L7 YC S25(첫 MCP 전용 호스팅 플랫폼); NVIDIA/skills ⭐2.2k L4b(OMS 서명 공식 하드웨어 벤더 스킬, 첫 출처 체인); ZCode L1/L7 중국 네이티브(첫 CJK 엔터프라이즈 에이전트 신호); video-use ⭐13.7k L4b(4번째 content-creation 신호). 50/50 테스트. 레지스트리 추가 없음. |
