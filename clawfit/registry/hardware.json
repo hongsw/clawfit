@@ -52,5 +52,14 @@
     "ram_gb": 128,
     "cost_per_hour": 0.0,
     "latency": "low"
+  },
+  {
+    "id": "local-amd-halo",
+    "name": "AMD Ryzen AI Halo (Local Dev Kit)",
+    "type": "on-prem",
+    "gpu": true,
+    "ram_gb": 128,
+    "cost_per_hour": 0.0,
+    "latency": "low"
   }
 ]
