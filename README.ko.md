@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-07-07)
+## 🔥 지금 가장 뜨거운 것들 (2026-07-09)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
+| **[agno-agi/agno](https://github.com/agno-agi/agno) ⭐26k** | MCP 인터페이스 v2(8개 오퍼레이터 툴)를 갖춘 멀티모달 에이전트 런타임 — v2.7.0(7/7)·v2.7.2(7/9) 이번 주 두 번 릴리즈: eval 스위트 내장, PAT 서비스 계정, OAuth 강화, AG-UI 클라이언트 도구. 추적된 L1 런타임 중 MCP를 소비만 하는 것이 아니라 버전화된 MCP 능력 제공자(provider)가 된 최초 사례. | L1/L4c |
+| **[vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) ⭐19.3k** | 복잡한 침투 테스트를 위한 완전 자율 AI 에이전트 — 액션별 사람 확인 없음; 범위 권한 부여가 유일한 인간 입력. "승인-게이트형"이나 "목표 지향형"이 아닌 "권한 범위 내 자율 실행" 모델을 사용하는 최초 추적 L1 런타임. Go 단일 바이너리; 엔터프라이즈 보안 조직 제공. | L1/L2 |
 | **[ruvnet/RuView](https://github.com/ruvnet/RuView) ⭐78.3k** | WiFi 공간지능 플랫폼(ESP32 메시): 재실감지·생체신호·자세추정 — MCP 서버(`rvagent`)로 에이전트가 물리 환경 상태를 쿼리 가능. 최초의 "물리세계 MCP 능력" 신호. 7.8만 스타는 메이커 + 에이전트 생태계 교차점 반영. | L4c |
-| **[HKUDS/AI-Trader](https://github.com/HKUDS/AI-Trader) ⭐20.6k** | 에이전트 네이티브 거래 환경: AI 에이전트가 등록하여 서로의 전략을 카피 트레이딩하고 $10만 모의 자본으로 리더보드에서 경쟁. "인간을 위한 거래 실행"이 아닌 "에이전트 간 경쟁" 프레임. 두 번째 HKUDS 금융 도메인 신호(vibe-trading 2026-05 이후). | L1/L5 |
-| **[langbot-app/LangBot](https://github.com/langbot-app/LangBot) ⭐16.7k** | 오픈소스 멀티플랫폼 메시징 에이전트 프레임워크 — 단일 런타임으로 11개 플랫폼(Discord·Slack·Telegram·WeChat·WeCom·QQ·Lark·LINE·DingTalk·KOOK·Matrix) 지원; 네이티브 MCP; 접근제어·속도제한·콘텐츠 필터 내장; v4.10.5, 199회 릴리즈. 최초의 메시징 네이티브 L1 프레임워크. | L1/L2 |
-| **Anthropic 전역 작업공간 논문 (HN 242점)** | 16인 공동 논문이 Claude에서 전역작업공간이론(GWT) 5개 속성을 만족하는 "J-공간" 확인(야코비안 렌즈). J-공간 어블레이션 시 숨겨진 추론 노출 — 안전 응용 주장. J-렌즈가 API로 제공되면 L5 기본 요소가 될 수 있음. | L1 ref |
-| **AMD Ryzen AI Halo ($3,999, 소매 판매 중)** | 최초의 구매 가능한 AMD AI 개발 키트: 128GB 통합 LPDDR5x-8000, XDNA 2 NPU(50 TOPS), 20B 모델에서 35W로 ~20 tok/s. `hardware.json`에 추가 — 최초의 AMD 로컬 워크스테이션 프로파일. ROCm 의존성이 주요 채택 리스크. | L7 |
-| **[kyutai-labs/pocket-tts](https://github.com/kyutai-labs/pocket-tts) ⭐6k** | Kyutai Labs(Moshi 팀)의 CPU 전용 TTS: ~200ms 첫 청크, M4에서 실시간 대비 6배 속도, GPU 불필요; 음성 복제, 6개 언어, pip 설치. 세 번째 음성/오디오 신호 — 음성 클러스터 모니터링 조건(3번째 신호 + Meetily 2만 돌파) 충족. | L4b |
-| **[bradautomates/claude-video](https://github.com/bradautomates/claude-video) ⭐4.2k** | `/watch <url> <question>`으로 Claude Code에 3단계 비디오 파이프라인(yt-dlp + ffmpeg + Whisper/Groq) 추가. 4가지 디테일 모드; 토큰 인식 프레임 예산 관리. L4b 스킬 레이어에서 추적된 최초의 비디오 입력 모달리티. | L4b |
-| **[future-agi/future-agi](https://github.com/future-agi/future-agi) ⭐1.3k** | 폐쇄 루프 평가+시뮬레이션+가드레일+프롬프트 최적화 플랫폼 — 프로덕션 트레이스가 6개 알고리즘을 통해 자동으로 프롬프트를 재작성. 최초의 오픈소스 "시뮬레이션→최적화" L5 도구. Langfuse(수동)·Claw Patrol(적대적 입력)와 구별. | L5 |
+| **[microsoft/SkillOpt](https://github.com/microsoft/SkillOpt) ⭐11.9k** | 재사용 가능한 언어 스킬 훈련을 위한 텍스트 공간 최적화기 — 단일 모델 성능이 아닌 모델 간 이식성을 목표로 스킬 정의를 최적화. agent-framework v1.13(7/3: `AgentSkillsSourceContext` 추가)과 함께한 Microsoft 스킬 레이어 투자의 일부. 이식성을 최적화 목표로 삼은 최초 추적 도구. | L4a |
+| **[LMCache/LMCache](https://github.com/LMCache/LMCache) ⭐10.3k** | 공급자 중립적 KV 캐시 레이어: LLM 클라이언트와 OpenAI 호환 서버 사이에 들어가는 드롭인 — 반복적인 시스템 프롬프트·공유 컨텍스트의 중복 계산 제거. pxpipe(2026-07-05 추적)의 무손실 대응; clawfit 비용·지연 필터 정확도에 직접 관련. | L7 |
+| **[wonderwhy-er/DesktopCommanderMCP](https://github.com/wonderwhy-er/DesktopCommanderMCP) ⭐6.5k** | 표준 MCP 툴 호출로 Claude에 터미널 명령 실행·파일시스템 읽기/쓰기를 부여하는 MCP 서버. "로컬 OS 접근" L4c 하위 유형의 명확한 참조 구현. MCP 2026-07-28 RC 무상태 스펙에 영향 받을 가능성(지속적 프로세스 상태 가정). | L4c |
+| **[HKUDS/AI-Trader](https://github.com/HKUDS/AI-Trader) ⭐20.6k** | 에이전트 네이티브 거래 환경: AI 에이전트가 서로의 전략을 카피 트레이딩하고 $10만 모의 자본 리더보드에서 경쟁. "인간을 위한 거래 실행"이 아닌 "에이전트 간 경쟁" 프레임. 두 번째 HKUDS 금융 도메인 신호. | L1/L5 |
+| **[langbot-app/LangBot](https://github.com/langbot-app/LangBot) ⭐16.7k** | 오픈소스 멀티플랫폼 메시징 에이전트 프레임워크 — 단일 런타임으로 11개 플랫폼 지원(Discord·Slack·Telegram·WeChat 등); 네이티브 MCP; 접근제어·속도제한·콘텐츠 필터 내장. 최초의 메시징 네이티브 L1 프레임워크. | L1/L2 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (411개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (416개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
