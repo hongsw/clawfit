@@ -1,6 +1,6 @@
 # clawfit
 
-> AI 에이전트 + LLM + 하드웨어 추천 엔진 — **162+ 도구**, **7레이어 생태계 맵**, **192개 리서치워치 문서**, **10차원 스코어링**
+> AI 에이전트 + LLM + 하드웨어 추천 엔진 — **162+ 도구**, **7레이어 생태계 맵**, **424개 리서치워치 문서**, **10차원 스코어링**
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.7%2B-blue)](pyproject.toml)
@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-07-09)
+## 🔥 지금 가장 뜨거운 것들 (2026-07-10)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[agno-agi/agno](https://github.com/agno-agi/agno) ⭐26k** | MCP 인터페이스 v2(8개 오퍼레이터 툴)를 갖춘 멀티모달 에이전트 런타임 — v2.7.0(7/7)·v2.7.2(7/9) 이번 주 두 번 릴리즈: eval 스위트 내장, PAT 서비스 계정, OAuth 강화, AG-UI 클라이언트 도구. 추적된 L1 런타임 중 MCP를 소비만 하는 것이 아니라 버전화된 MCP 능력 제공자(provider)가 된 최초 사례. | L1/L4c |
-| **[vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) ⭐19.3k** | 복잡한 침투 테스트를 위한 완전 자율 AI 에이전트 — 액션별 사람 확인 없음; 범위 권한 부여가 유일한 인간 입력. "승인-게이트형"이나 "목표 지향형"이 아닌 "권한 범위 내 자율 실행" 모델을 사용하는 최초 추적 L1 런타임. Go 단일 바이너리; 엔터프라이즈 보안 조직 제공. | L1/L2 |
-| **[ruvnet/RuView](https://github.com/ruvnet/RuView) ⭐78.3k** | WiFi 공간지능 플랫폼(ESP32 메시): 재실감지·생체신호·자세추정 — MCP 서버(`rvagent`)로 에이전트가 물리 환경 상태를 쿼리 가능. 최초의 "물리세계 MCP 능력" 신호. 7.8만 스타는 메이커 + 에이전트 생태계 교차점 반영. | L4c |
-| **[microsoft/SkillOpt](https://github.com/microsoft/SkillOpt) ⭐11.9k** | 재사용 가능한 언어 스킬 훈련을 위한 텍스트 공간 최적화기 — 단일 모델 성능이 아닌 모델 간 이식성을 목표로 스킬 정의를 최적화. agent-framework v1.13(7/3: `AgentSkillsSourceContext` 추가)과 함께한 Microsoft 스킬 레이어 투자의 일부. 이식성을 최적화 목표로 삼은 최초 추적 도구. | L4a |
-| **[LMCache/LMCache](https://github.com/LMCache/LMCache) ⭐10.3k** | 공급자 중립적 KV 캐시 레이어: LLM 클라이언트와 OpenAI 호환 서버 사이에 들어가는 드롭인 — 반복적인 시스템 프롬프트·공유 컨텍스트의 중복 계산 제거. pxpipe(2026-07-05 추적)의 무손실 대응; clawfit 비용·지연 필터 정확도에 직접 관련. | L7 |
-| **[wonderwhy-er/DesktopCommanderMCP](https://github.com/wonderwhy-er/DesktopCommanderMCP) ⭐6.5k** | 표준 MCP 툴 호출로 Claude에 터미널 명령 실행·파일시스템 읽기/쓰기를 부여하는 MCP 서버. "로컬 OS 접근" L4c 하위 유형의 명확한 참조 구현. MCP 2026-07-28 RC 무상태 스펙에 영향 받을 가능성(지속적 프로세스 상태 가정). | L4c |
-| **[HKUDS/AI-Trader](https://github.com/HKUDS/AI-Trader) ⭐20.6k** | 에이전트 네이티브 거래 환경: AI 에이전트가 서로의 전략을 카피 트레이딩하고 $10만 모의 자본 리더보드에서 경쟁. "인간을 위한 거래 실행"이 아닌 "에이전트 간 경쟁" 프레임. 두 번째 HKUDS 금융 도메인 신호. | L1/L5 |
-| **[langbot-app/LangBot](https://github.com/langbot-app/LangBot) ⭐16.7k** | 오픈소스 멀티플랫폼 메시징 에이전트 프레임워크 — 단일 런타임으로 11개 플랫폼 지원(Discord·Slack·Telegram·WeChat 등); 네이티브 MCP; 접근제어·속도제한·콘텐츠 필터 내장. 최초의 메시징 네이티브 L1 프레임워크. | L1/L2 |
+| **[unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) ⭐71.8k** | LLM 친화적 비동기 웹 크롤러: 보일러플레이트 제거, 깔끔한 마크다운 출력, Playwright로 동적 사이트 처리. MCP 호환. 생태계에서 가장 높은 스타를 가진 L4c 웹 검색 도구; 오늘 레지스트리 추가. | L4c |
+| **[mem0ai/mem0](https://github.com/mem0ai/mem0) ⭐53.5k** | 범용 에이전트 메모리 레이어: 21개 프레임워크, 20개 벡터 스토어, 클라우드/자체 호스팅/로컬 MCP 지원. 2026년 봄 MCP 재출시로 Claude Code + Cursor를 위한 9개 MCP 툴 추가. 추적된 L4a 메모리 도구 중 가장 넓은 호환성. | L4a |
+| **[agentscope-ai/agentscope](https://github.com/agentscope-ai/agentscope) ⭐27.7k** | 관찰가능성 우선 설계 멀티에이전트 프레임워크: 드래그앤드롭 AgentScope Studio 워크플로우 편집기, 외부 툴 없는 인세션 모니터링, 토큰 효율적 `MsgHub` 에이전트 간 통신. 알리바바 DAMO Academy 출처. | L2 |
+| **[agno-agi/agno](https://github.com/agno-agi/agno) ⭐26k** | MCP 인터페이스 v2를 갖춘 멀티모달 에이전트 런타임 — 이번 주 v2.7.0·v2.7.2 두 번 릴리즈: eval 스위트 내장, PAT 서비스 계정, AgentOS MCP OAuth. MCP 능력 소비자이면서 동시에 제공자(provider)인 최초의 추적 L1 런타임. | L1/L4c |
+| **[MadsLorentzen/ai-job-search](https://github.com/MadsLorentzen/ai-job-search) ⭐18.9k** | 비개발자 최종사용자를 위한 Claude Code 기반 취업 지원 파이프라인: 이력서 맞춤화, 포털 스크래핑, 오퍼 평가. 하루에 +3,716 스타 획득. 도메인 특화 L1 에이전트(취업·법률·보안)가 코딩 에이전트와 함께 하나의 카테고리로 부상 중임을 확인. | L1 |
+| **[pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) ⭐13.3k** | Daily.ai의 프로덕션 실시간 음성+멀티모달 에이전트 파이프라인 프레임워크: 70개+ STT/LLM/TTS 통합, WebRTC 전송, 시맨틱 턴 감지, 전화 SIP/PSTN. LiveKit Agents와 함께 2-신호 규칙 충족 — "프로덕션 실시간 음성 에이전트 프레임워크"가 새 L7 하위 유형으로 오늘 등록. | L7 |
+| **[livekit/agents](https://github.com/livekit/agents) ⭐11.3k** | 자체 호스팅 오픈소스 WebRTC 서버 기반 실시간 음성/영상 에이전트 프레임워크; 2026년 MCP 툴 지원 추가; ChatGPT Advanced Voice Mode 구동 (OpenAI 프로덕션 참조). Pipecat과의 핵심 차별점: `hardware: local` / `network: offline` 프로필에서 관리형 클라우드 없이 자체 호스팅 가능. | L7 |
+| **[TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) ⭐8.2k** | 데이터베이스 네이티브 4계층 프로그레시브 메모리(작업→세션→시맨틱→에피소딕)와 결정론적 계층 승격/강등 기준. 데이터베이스 엔지니어링 팀 출처 — 프레임워크 중립 메모리 도구와 다른 최적화 우선순위. | L4a |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (416개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (424개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-07-10 | 데일리 스캔 run 2 (5개 문서): mem0ai/mem0 ⭐53.5k L4a(범용 에이전트 메모리+MCP 재출시, >50k 예외, L4a 정규 목록 추가); agentscope ⭐27.7k L2(관찰가능성 우선 멀티에이전트 프레임워크); pipecat ⭐13.3k L7(프로덕션 실시간 음성/멀티모달 프레임워크); livekit/agents ⭐11.3k L7(자체 호스팅 WebRTC, ChatGPT Advanced Voice 구동); TencentDB-Agent-Memory ⭐8.2k L4a(4계층 프로그레시브 메모리). reference-levels.md: mem0 L4a 정규 추가(>50k); Pipecat+LiveKit L7 정규 추가("프로덕션 실시간 음성 에이전트 프레임워크" 2-신호 하위 유형). 50/50 테스트. 레지스트리: 신규 항목 없음. |
 | 2026-07-07 | 데일리 스캔 (10개 문서, 2회 실행): run 1 — AMD Ryzen AI Halo(hardware.json +1, 최초 AMD 로컬워크스테이션 프로파일); Anthropic 전역작업공간 논문(HN 242점); claude-video ⭐4.2k L4b(비디오 입력 스킬, 최초 비디오 모달리티); OpenTag L6(CopilotKit Slack 구현체); ternlight L1/L7(브라우저 WASM 임베딩, 7MB). Run 2 — LangBot ⭐16.7k L1/L2(11플랫폼 메시징 에이전트, 네이티브 MCP, 199회 릴리즈); pocket-tts ⭐6k L4b/L6(Kyutai CPU TTS, ~200ms, 3번째 음성 신호 — 클러스터 조건 충족); RuView ⭐78.3k L4c(WiFi 공간AI + 물리세계 MCP 브릿지); AI-Trader ⭐20.6k L1/L5(에이전트 네이티브 거래 경쟁, 2번째 HKUDS 금융 신호); future-agi ⭐1.3k L5(폐쇄루프 시뮬+평가+가드레일+프롬프트최적화). reference-levels.md: 2026-07-07 발견 로그; 메시징 배포 2-신호 클러스터(OpenTag + LangBot). 50/50 테스트. |
 | 2026-07-06 | 데일리 스캔 (8개 문서, 2회 실행): system_prompts_leaks ⭐51.2k L3(첫 크로스벤더 시스템 프롬프트 카탈로그, GitHub 트렌딩 1위), awesome-claude-code ⭐48.7k L4b(Claude Code 에코시스템 허브, 4.3k 포크), Fable5/Vending-Bench L5/meta(HN 123점 — "그럴듯한 부인가능성" 정렬 회귀 vs Opus 4.8, 안전 분류기 대응 확인), alibaba/zvec ⭐13.3k L5(첫 인프로세스 임베디드 벡터 DB), OfficeCLI ⭐8.4k L4c(에이전트 네이티브 Office 파일 자동화 v1.0.129), gastown ⭐16.6k L2(Go 멀티에이전트 워크스페이스 매니저), CodexBar ⭐16.7k L7(개발자 비용 모니터), 신문 편집 구조 L3/meta. reference-levels.md: 2026-07-06 발견 로그(8개 신호); 정규 섹션 변경 없음. 50/50 테스트. |
 | 2026-07-05 | 데일리 스캔 run 4 (5개 문서): planning-with-files ⭐24.6k L5/L4b (크래시 방지 플래닝, 60개+ 에이전트), free-llm-api-resources ⭐25.4k L7 (추론 상품화 신호), nano-vllm ⭐14.4k L7 (최소 vLLM 재구현), OpenClaw-RL ⭐5.4k L1 (Princeton 비동기 RL 훈련), pxpipe ⭐~2.3k L7 (PNG 컨텍스트 프록시 59-70% 절감). reference-levels.md: run 4 로그 7항목 추가; 정규 섹션 변경 없음. 50/50 테스트 통과. |
