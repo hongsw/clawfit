@@ -3245,5 +3245,41 @@
       "setup_complexity": "low",
       "latency": "medium"
     }
+  },
+  {
+    "id": "crawl4ai",
+    "name": "crawl4ai",
+    "category": "llm_web_crawler",
+    "level": "4c",
+    "license": "MIT",
+    "primary_language": "Python",
+    "url": "https://github.com/unclecode/crawl4ai",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Open-source LLM-friendly web crawler and scraper. Converts any URL into clean markdown/structured data optimized for LLM context windows. Async Python, Playwright backend for dynamic sites. MCP-compatible; can be wrapped as an agent tool. 71,812★ (GitHub Trending 2026-07-10). Primary use: retrieval layer feeding research agents.",
+    "org_fit": {
+      "min_maturity": 2,
+      "max_maturity": 8,
+      "optimal_maturity": 4,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": [
+        "research",
+        "data-analysis"
+      ],
+      "roles": [
+        "developer",
+        "researcher"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "medium"
+    }
   }
 ]
