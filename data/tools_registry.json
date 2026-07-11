@@ -3281,5 +3281,111 @@
       "setup_complexity": "low",
       "latency": "medium"
     }
+  },
+  {
+    "id": "mattpocock_skills",
+    "name": "mattpocock/skills",
+    "category": "domain_skill_pack",
+    "level": "4b",
+    "license": "unknown",
+    "primary_language": "Shell",
+    "url": "https://github.com/mattpocock/skills",
+    "source_type": "github",
+    "comparison_priority": "primary",
+    "notes": "Skills for Real Engineers — sourced directly from Matt Pocock's .claude directory. TypeScript educator with 60k+ YouTube subscribers; practitioner-derived skill pack targeting production engineering workflows rather than tutorial or synthetic prompts. 164,586★ (GitHub Trending 2026-07-11) — largest single-author engineer-focused skill pack in tracked ecosystem. Shell format enables cross-harness portability.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "qa",
+        "research"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "addyosmani_agent_skills",
+    "name": "addyosmani/agent-skills",
+    "category": "domain_skill_pack",
+    "level": "4b",
+    "license": "unknown",
+    "primary_language": "JavaScript",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "source_type": "github",
+    "comparison_priority": "primary",
+    "notes": "Production-grade engineering skills for AI coding agents by Addy Osmani (Google Chrome DevRel). Cross-agent design: works with Claude Code, Cursor, Codex, and other coding agents. 76,807★ (GitHub Trending 2026-07-11). First tracked cross-agent skill pack from a named Google engineering author; 'production-grade' positioning implies real-workload validation, not experimental prompts. JavaScript-dominant, targeting web/front-end engineers.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 9,
+      "optimal_maturity": 6,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "qa",
+        "research"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "stitch_skills",
+    "name": "stitch-skills",
+    "category": "domain_skill_pack",
+    "level": "4b",
+    "license": "unknown",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/google-labs-code/stitch-skills",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Library of agent skills for Google Stitch enabling design-to-code workflows. Three modular suites: stitch-design, stitch-build, stitch-utilities. Follows the Agent Skills open standard (SKILL.md + scripts + knowledge bases). Works across Claude Code, Cursor, Codex. 6,735★ (GitHub Trending 2026-07-11). First tracked MCP-native skill pack — skills that consume a specific MCP server's APIs (Stitch MCP) rather than generic web/CLI calls. Targets front-end developers with design system workflows.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen"
+      ],
+      "roles": [
+        "developer",
+        "pm"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "medium",
+      "latency": "medium"
+    }
   }
 ]
