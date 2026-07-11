@@ -1,6 +1,6 @@
 # clawfit
 
-> AI 에이전트 + LLM + 하드웨어 추천 엔진 — **162+ 도구**, **7레이어 생태계 맵**, **424개 리서치워치 문서**, **10차원 스코어링**
+> AI 에이전트 + LLM + 하드웨어 추천 엔진 — **162+ 도구**, **7레이어 생태계 맵**, **433개 리서치워치 문서**, **10차원 스코어링**
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.7%2B-blue)](pyproject.toml)
@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-07-10)
+## 🔥 지금 가장 뜨거운 것들 (2026-07-11)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) ⭐71.8k** | LLM 친화적 비동기 웹 크롤러: 보일러플레이트 제거, 깔끔한 마크다운 출력, Playwright로 동적 사이트 처리. MCP 호환. 생태계에서 가장 높은 스타를 가진 L4c 웹 검색 도구; 오늘 레지스트리 추가. | L4c |
-| **[mem0ai/mem0](https://github.com/mem0ai/mem0) ⭐53.5k** | 범용 에이전트 메모리 레이어: 21개 프레임워크, 20개 벡터 스토어, 클라우드/자체 호스팅/로컬 MCP 지원. 2026년 봄 MCP 재출시로 Claude Code + Cursor를 위한 9개 MCP 툴 추가. 추적된 L4a 메모리 도구 중 가장 넓은 호환성. | L4a |
-| **[agentscope-ai/agentscope](https://github.com/agentscope-ai/agentscope) ⭐27.7k** | 관찰가능성 우선 설계 멀티에이전트 프레임워크: 드래그앤드롭 AgentScope Studio 워크플로우 편집기, 외부 툴 없는 인세션 모니터링, 토큰 효율적 `MsgHub` 에이전트 간 통신. 알리바바 DAMO Academy 출처. | L2 |
-| **[agno-agi/agno](https://github.com/agno-agi/agno) ⭐26k** | MCP 인터페이스 v2를 갖춘 멀티모달 에이전트 런타임 — 이번 주 v2.7.0·v2.7.2 두 번 릴리즈: eval 스위트 내장, PAT 서비스 계정, AgentOS MCP OAuth. MCP 능력 소비자이면서 동시에 제공자(provider)인 최초의 추적 L1 런타임. | L1/L4c |
-| **[MadsLorentzen/ai-job-search](https://github.com/MadsLorentzen/ai-job-search) ⭐18.9k** | 비개발자 최종사용자를 위한 Claude Code 기반 취업 지원 파이프라인: 이력서 맞춤화, 포털 스크래핑, 오퍼 평가. 하루에 +3,716 스타 획득. 도메인 특화 L1 에이전트(취업·법률·보안)가 코딩 에이전트와 함께 하나의 카테고리로 부상 중임을 확인. | L1 |
-| **[pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) ⭐13.3k** | Daily.ai의 프로덕션 실시간 음성+멀티모달 에이전트 파이프라인 프레임워크: 70개+ STT/LLM/TTS 통합, WebRTC 전송, 시맨틱 턴 감지, 전화 SIP/PSTN. LiveKit Agents와 함께 2-신호 규칙 충족 — "프로덕션 실시간 음성 에이전트 프레임워크"가 새 L7 하위 유형으로 오늘 등록. | L7 |
-| **[livekit/agents](https://github.com/livekit/agents) ⭐11.3k** | 자체 호스팅 오픈소스 WebRTC 서버 기반 실시간 음성/영상 에이전트 프레임워크; 2026년 MCP 툴 지원 추가; ChatGPT Advanced Voice Mode 구동 (OpenAI 프로덕션 참조). Pipecat과의 핵심 차별점: `hardware: local` / `network: offline` 프로필에서 관리형 클라우드 없이 자체 호스팅 가능. | L7 |
-| **[TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) ⭐8.2k** | 데이터베이스 네이티브 4계층 프로그레시브 메모리(작업→세션→시맨틱→에피소딕)와 결정론적 계층 승격/강등 기준. 데이터베이스 엔지니어링 팀 출처 — 프레임워크 중립 메모리 도구와 다른 최적화 우선순위. | L4a |
+| **OpenAI GPT-5.6 Sol/Terra/Luna** | 3단계 모델 패밀리 GA (7월 9일): Sol ($0.005/1k), Terra ($0.0025/1k), Luna ($0.001/1k). 공통 1.05M 컨텍스트 윈도우. MCP, 스킬, 호스팅 셸 3개 티어 전체 내장. 오늘 LLM 레지스트리에 3개 항목 추가. | LLM |
+| **OpenAI ChatGPT Work** | 시간 단위 자율 태스크 실행 에이전트 (7월 9일): 목표 → 플랜 → 완성 결과물(스프레드시트·슬라이드·문서·웹앱). 플랜 모드 + 설정 가능한 체크인 = 명시적 자율성 다이얼. L1 프로덕션 에이전트 카테고리에 직접 경쟁하는 첫 OpenAI 제품. | L1/L6 |
+| **[mattpocock/skills](https://github.com/mattpocock/skills) ⭐165k** | "실제 엔지니어를 위한 스킬" — Matt Pocock(TypeScript Total)의 개인 `.claude/` 디렉터리. addyosmani/agent-skills와 함께 2-신호 규칙 충족: "엔지니어 제작 크로스 에이전트 스킬 팩" 정식 L4b 서브타입 확정. 추적된 단일 저자 스킬 팩 중 최고 스타 수. | L4b |
+| **[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) ⭐76.8k** | Google Chrome DevRel이 제작한 Claude Code·Cursor·Codex용 프로덕션급 엔지니어링 스킬. 76.8k★ (지난주 70k 대비 +6.8k). "엔지니어 제작 크로스 에이전트 스킬 팩" 정식 서브타입 확정 두 번째 신호. | L4b |
+| **[unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) ⭐71.8k** | LLM 친화적 비동기 웹 크롤러: 보일러플레이트 제거, 깔끔한 마크다운 출력, Playwright로 동적 사이트 처리. MCP 호환. 에코시스템 내 가장 높은 스타를 가진 L4c 웹 검색 도구. | L4c |
+| **[microsoft/flint-chart](https://github.com/microsoft/flint-chart) ⭐1.3k** | AI 에이전트를 위한 시각화 언어 (Microsoft Research, 7월 10일): 컴팩트한 시맨틱 스펙이 Vega-Lite/ECharts/Chart.js로 컴파일; 70개+ 시맨틱 타입; `flint-chart-mcp` MCP 서버로 제공. 에이전트 출력 포맷팅과 MCP 역량 서버의 교차점에 있는 최초 도구. | L4c |
+| **[opensandbox-group/OpenSandbox](https://github.com/opensandbox-group/OpenSandbox) ⭐11.6k** | 범용 AI 에이전트 샌드박스 런타임 (알리바바, 2026년 3월): 다언어 SDK, Docker+K8s 라이프사이클, Claude Code·Gemini CLI 공식 참조 통합; CNCF 랜드스케이프 등록. 최초 추적된 오픈소스 에이전트 샌드박스 인프라. | L7 |
+| **Claude Code v2.1 (5단계 서브에이전트)** | Anthropic 공식: 5단계 중첩 서브에이전트 계층 구조 (기존 3단계에서 확장) + 모델별 비용 상한이 있는 폴백 모델 체인. Anthropic 연구에 따르면 "5단계는 거의 모든 실용적 소프트웨어 엔지니어링 워크플로우를 커버". 비용 상한 거버넌스를 네이티브 프리미티브로 탑재한 최초의 하네스. | L2 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (424개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (433개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,8 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-07-11 | 데일리 스캔 run 2 (5개 문서): GPT-5.6 Sol/Terra/Luna → **llms.json +3** (OpenAI 플래그십 패밀리 GA 7월 9일; 1.05M ctx; $0.005/$0.0025/$0.001 per 1k); ChatGPT Work L1/L6 (시간 단위 SaaS 에이전트, 플랜 모드, 액션 승인, 7월 9일); microsoft/flint-chart ⭐1.3k L4c (시각화 언어 + MCP 서버, Microsoft Research, 7월 10-11일); opensandbox-group/OpenSandbox ⭐11.6k L7 (알리바바 AI 에이전트 샌드박스, CNCF, 다언어 SDK); Claude Code v2.1 L2 (5단계 서브에이전트 + 비용 상한 폴백 체인, 6월 10일). reference-levels.md: run 2 발견 로그; 6개 스키마 워치 추가. 50/50 테스트. |
+| 2026-07-11 (run 1) | 데일리 스캔 (5개 문서): mattpocock/skills ⭐165k L4b + addyosmani/agent-skills ⭐76.8k L4b → **"엔지니어 제작 크로스 에이전트 스킬 팩" 정식 서브타입 확정** (2-신호 규칙 충족); stitch-skills ⭐6.7k L4b/L4c (Google Labs MCP 네이티브 디자인→코드, "MCP 네이티브 스킬 팩" 최초 신호); Prismata arXiv L3/L5 (크로스 사이트 프롬프트 인젝션 격리, HN 프론트 페이지); Frugon L5 (실험적 LLM 비용 최적화 라우터, 109★). 50/50 테스트. 레지스트리: 신규 항목 없음. |
 | 2026-07-10 | 데일리 스캔 run 2 (5개 문서): mem0ai/mem0 ⭐53.5k L4a(범용 에이전트 메모리+MCP 재출시, >50k 예외, L4a 정규 목록 추가); agentscope ⭐27.7k L2(관찰가능성 우선 멀티에이전트 프레임워크); pipecat ⭐13.3k L7(프로덕션 실시간 음성/멀티모달 프레임워크); livekit/agents ⭐11.3k L7(자체 호스팅 WebRTC, ChatGPT Advanced Voice 구동); TencentDB-Agent-Memory ⭐8.2k L4a(4계층 프로그레시브 메모리). reference-levels.md: mem0 L4a 정규 추가(>50k); Pipecat+LiveKit L7 정규 추가("프로덕션 실시간 음성 에이전트 프레임워크" 2-신호 하위 유형). 50/50 테스트. 레지스트리: 신규 항목 없음. |
 | 2026-07-07 | 데일리 스캔 (10개 문서, 2회 실행): run 1 — AMD Ryzen AI Halo(hardware.json +1, 최초 AMD 로컬워크스테이션 프로파일); Anthropic 전역작업공간 논문(HN 242점); claude-video ⭐4.2k L4b(비디오 입력 스킬, 최초 비디오 모달리티); OpenTag L6(CopilotKit Slack 구현체); ternlight L1/L7(브라우저 WASM 임베딩, 7MB). Run 2 — LangBot ⭐16.7k L1/L2(11플랫폼 메시징 에이전트, 네이티브 MCP, 199회 릴리즈); pocket-tts ⭐6k L4b/L6(Kyutai CPU TTS, ~200ms, 3번째 음성 신호 — 클러스터 조건 충족); RuView ⭐78.3k L4c(WiFi 공간AI + 물리세계 MCP 브릿지); AI-Trader ⭐20.6k L1/L5(에이전트 네이티브 거래 경쟁, 2번째 HKUDS 금융 신호); future-agi ⭐1.3k L5(폐쇄루프 시뮬+평가+가드레일+프롬프트최적화). reference-levels.md: 2026-07-07 발견 로그; 메시징 배포 2-신호 클러스터(OpenTag + LangBot). 50/50 테스트. |
 | 2026-07-06 | 데일리 스캔 (8개 문서, 2회 실행): system_prompts_leaks ⭐51.2k L3(첫 크로스벤더 시스템 프롬프트 카탈로그, GitHub 트렌딩 1위), awesome-claude-code ⭐48.7k L4b(Claude Code 에코시스템 허브, 4.3k 포크), Fable5/Vending-Bench L5/meta(HN 123점 — "그럴듯한 부인가능성" 정렬 회귀 vs Opus 4.8, 안전 분류기 대응 확인), alibaba/zvec ⭐13.3k L5(첫 인프로세스 임베디드 벡터 DB), OfficeCLI ⭐8.4k L4c(에이전트 네이티브 Office 파일 자동화 v1.0.129), gastown ⭐16.6k L2(Go 멀티에이전트 워크스페이스 매니저), CodexBar ⭐16.7k L7(개발자 비용 모니터), 신문 편집 구조 L3/meta. reference-levels.md: 2026-07-06 발견 로그(8개 신호); 정규 섹션 변경 없음. 50/50 테스트. |

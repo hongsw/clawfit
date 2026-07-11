@@ -2,7 +2,7 @@
 
 > AI 에이전트 + LLM + 하드웨어 추천 엔진 — **162+ 도구**, **7레이어 생태계 맵**, **192개 리서치워치 문서**, **10차원 스코어링**
 
-> Agent + LLM + hardware recommendation engine — **162+ tools mapped**, **424 research-watch docs**, daily automated scanning.
+> Agent + LLM + hardware recommendation engine — **162+ tools mapped**, **433 research-watch docs**, daily automated scanning.
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.7%2B-blue)](pyproject.toml)
@@ -101,20 +101,20 @@ It is three things in one:
 
 ---
 
-## 🔥 What's hot right now (2026-07-10)
+## 🔥 What's hot right now (2026-07-11)
 
 | Signal | Why it matters | Level |
 |--------|---------------|-------|
-| **[unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) ⭐71.8k** | LLM-friendly async web crawler: strips boilerplate, outputs clean markdown, handles dynamic sites via Playwright. MCP-compatible. Highest-starred L4c web-retrieval tool in the ecosystem; added to registry today. | L4c |
-| **[mem0ai/mem0](https://github.com/mem0ai/mem0) ⭐53.5k** | Universal agent memory layer: 21 frameworks, 20 vector stores, cloud/self-hosted/local MCP hosting. Spring 2026 MCP relaunch adds 9 MCP tools with lifecycle hooks for Claude Code + Cursor. Framework-agnostic drop-in persistence — the broadest compatibility surface of any tracked L4a memory tool. | L4a |
-| **[agentscope-ai/agentscope](https://github.com/agentscope-ai/agentscope) ⭐27.7k** | Multi-agent framework built around observability-first design: drag-and-drop AgentScope Studio workflow editor, in-session monitoring without external tooling, token-efficient `MsgHub` inter-agent communication. Alibaba DAMO Academy provenance. | L2 |
-| **[agno-agi/agno](https://github.com/agno-agi/agno) ⭐26k** | Multimodal agent runtime with MCP interface v2 — shipped v2.7.0 and v2.7.2 this week: eval suite runner, PAT service accounts, OAuth for AgentOS MCP endpoint. First tracked L1 runtime that is simultaneously a versioned MCP capability provider. | L1/L4c |
-| **[MadsLorentzen/ai-job-search](https://github.com/MadsLorentzen/ai-job-search) ⭐18.9k** | Claude Code-based job application pipeline for non-developer end users: resume tailoring, portal scraping, offer evaluation. Gained +3,716 stars in one day. Confirms domain-specialized L1 agents (career, legal, security) are emerging as a category alongside coding agents. | L1 |
-| **[pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) ⭐13.3k** | Production realtime voice + multimodal agent pipeline framework (Daily.ai): 70+ STT/LLM/TTS integrations, WebRTC transport, semantic turn detection, telephony SIP/PSTN. Two-signal rule met with LiveKit Agents — "production realtime voice agent framework" named as new L7 sub-type today. | L7 |
-| **[livekit/agents](https://github.com/livekit/agents) ⭐11.3k** | Realtime voice/video agent framework on self-hosted OSS WebRTC server; MCP tool support added 2026; powers ChatGPT Advanced Voice Mode. Key differentiator from Pipecat: self-hostable transport (no managed-cloud dependency) for `hardware: local` / `network: offline` profiles. | L7 |
-| **[TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) ⭐8.2k** | Database-native 4-tier progressive memory (working → session → semantic → episodic) with deterministic tier promotion/demotion. Database engineering team provenance — different optimization priorities than framework-agnostic memory tools. | L4a |
+| **OpenAI GPT-5.6 Sol/Terra/Luna** | Three-tier model family GA (July 9): Sol ($0.005/1k), Terra ($0.0025/1k), Luna ($0.001/1k). Shared 1.05M context window. MCP, Skills, hosted shell built-in across all three tiers. All three added to LLM registry today. | LLM |
+| **OpenAI ChatGPT Work** | Hours-long autonomous task execution agent (July 9): goal → plan → finished artifacts (spreadsheets, slides, docs, web apps). Plan mode + configurable check-ins = explicit autonomy dial. First OpenAI product competing directly in the L1 production agent category. | L1/L6 |
+| **[mattpocock/skills](https://github.com/mattpocock/skills) ⭐165k** | "Skills for Real Engineers" — Matt Pocock's (TypeScript Total) personal `.claude/` directory. Two-signal rule met with addyosmani/agent-skills: "engineer-authored cross-agent skill pack" confirmed as canonical L4b sub-type. Highest-starred single-author skill pack tracked. | L4b |
+| **[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) ⭐76.8k** | Production-grade engineering skills for Claude Code, Cursor, Codex by Google Chrome DevRel. 76.8k★ in one week (+6.8k since last week's 70k reference). Second signal confirming "engineer-authored cross-agent skill pack" canonical sub-type. | L4b |
+| **[unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) ⭐71.8k** | LLM-friendly async web crawler: strips boilerplate, outputs clean markdown, handles dynamic sites via Playwright. MCP-compatible. Highest-starred L4c web-retrieval tool in the ecosystem. | L4c |
+| **[microsoft/flint-chart](https://github.com/microsoft/flint-chart) ⭐1.3k** | Visualization language for AI agents (Microsoft Research, July 10): compact semantic specs compile to Vega-Lite/ECharts/Chart.js; 70+ semantic types; ships as `flint-chart-mcp` MCP server. First tool at the intersection of agent output formatting and MCP capability server. | L4c |
+| **[opensandbox-group/OpenSandbox](https://github.com/opensandbox-group/OpenSandbox) ⭐11.6k** | Universal AI agent sandbox runtime (Alibaba, March 2026): multi-language SDKs, Docker+K8s lifecycle, explicit Claude Code and Gemini CLI reference integrations; CNCF Landscape-listed. First tracked open-source agent sandbox infrastructure. | L7 |
+| **Claude Code v2.1 (5-level subagents)** | Anthropic official: 5-level nested subagent hierarchy (up from 3) + fallback model chains with per-model cost ceilings. "5 levels covers virtually all practical software engineering workflows" per Anthropic research. First harness with programmable cost-ceiling governance as a native primitive. | L2 |
 
-Full analysis in [`docs/research-watch/`](docs/research-watch/) (424 docs) · Full map in [`docs/reference-levels.md`](docs/reference-levels.md)
+Full analysis in [`docs/research-watch/`](docs/research-watch/) (433 docs) · Full map in [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -122,6 +122,8 @@ Full analysis in [`docs/research-watch/`](docs/research-watch/) (424 docs) · Fu
 
 | Date | What changed |
 |------|-------------|
+| 2026-07-11 | Daily scan run 2 (5 docs): GPT-5.6 Sol/Terra/Luna → **llms.json +3** (OpenAI flagship family GA July 9; 1.05M ctx; $0.005/$0.0025/$0.001 per 1k); ChatGPT Work L1/L6 (hours-long SaaS agent, plan mode, action approvals, July 9); microsoft/flint-chart ⭐1.3k L4c (visualization language + MCP server, Microsoft Research, July 10-11); opensandbox-group/OpenSandbox ⭐11.6k L7 (Alibaba AI agent sandbox, CNCF, multi-lang SDKs); Claude Code v2.1 L2 (5-level subagents + fallback chains with cost ceilings, June 10). reference-levels.md: run 2 discovery log; 6 schema watch additions. 50/50 tests. |
+| 2026-07-11 (run 1) | Daily scan (5 docs): mattpocock/skills ⭐165k L4b + addyosmani/agent-skills ⭐76.8k L4b → **"engineer-authored cross-agent skill pack" canonical sub-type confirmed** (two-signal rule met); stitch-skills ⭐6.7k L4b/L4c (Google Labs MCP-native design-to-code, first "MCP-native skill pack" signal); Prismata arXiv L3/L5 (cross-site prompt injection confinement, HN front page); Frugon L5 (empirical LLM cost optimizer, 109★). 50/50 tests. Registry: 0 new llms/hardware entries. |
 | 2026-07-10 | Daily scan run 2 (5 docs): mem0ai/mem0 ⭐53.5k L4a (universal agent memory + MCP relaunch, >50k exception, added to L4a canonical); agentscope ⭐27.7k L2 (observable multi-agent framework, AgentScope Studio + MsgHub); pipecat ⭐13.3k L7 (production realtime voice/multimodal, Daily.ai WebRTC); livekit/agents ⭐11.3k L7 (self-hosted WebRTC voice/video, powers ChatGPT Advanced Voice); TencentDB-Agent-Memory ⭐8.2k L4a (4-tier progressive memory). reference-levels.md: mem0 added L4a canonical (>50k); Pipecat+LiveKit added L7 canonical ("production realtime voice agent frameworks" two-signal sub-type). 50/50 tests. Registry: 0 new entries. |
 | 2026-07-09 | Daily scan (5 docs): agno-agi/agno ⭐26k L1/L4c (MCP interface v2 + eval suite, first L1 runtime as MCP provider); vxcontrol/pentagi ⭐19.3k L1/L2 (fully autonomous pen-testing agent, authorization-scoped autonomy model); microsoft/SkillOpt ⭐11.9k L4a (text-space skill optimizer for portability, first tracked); LMCache ⭐10.3k L7 (provider-agnostic KV cache drop-in); DesktopCommanderMCP ⭐6.5k L4c (terminal+filesystem MCP server). reference-levels.md: 2026-07-09 discovery log added; no canonical section changes. 50/50 tests. Registry: 0 new entries. |
 | 2026-07-07 | Daily scan (10 docs, 2 runs): run 1 — AMD Ryzen AI Halo (hardware.json +1, first AMD local-workstation profile); Anthropic Global Workspace paper (J-space / J-lens, HN 242pts, L1 interpretability); claude-video ⭐4.2k L4b (video input slash-command, first video modality); OpenTag L6 (CopilotKit Slack reference impl); ternlight L1/L7 (browser WASM embedding, 7MB). Run 2 — LangBot ⭐16.7k L1/L2 (11-platform messaging agent, native MCP, 199 releases); pocket-tts ⭐6k L4b/L6 (Kyutai CPU TTS, ~200ms, third voice signal — cluster conditions met); RuView ⭐78.3k L4c (WiFi spatial AI + physical-world MCP bridge); AI-Trader ⭐20.6k L1/L5 (agent-native trading competition, second HKUDS finance signal); future-agi ⭐1.3k L5 (closed-loop sim+eval+guardrails+prompt-opt). reference-levels.md: 2026-07-07 discovery log; messaging deployment two-signal cluster noted (OpenTag + LangBot). 50/50 tests. |
