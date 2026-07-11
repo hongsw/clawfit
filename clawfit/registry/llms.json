@@ -118,5 +118,35 @@
     "cost_per_1k_tokens": 0.0006,
     "context_window": 1000000,
     "network": "online"
+  },
+  {
+    "id": "gpt-5.6-sol",
+    "name": "GPT-5.6 Sol",
+    "provider": "openai",
+    "tasks": ["qa", "research", "code-gen", "data-analysis", "summarization"],
+    "latency": "high",
+    "cost_per_1k_tokens": 0.005,
+    "context_window": 1050000,
+    "network": "online"
+  },
+  {
+    "id": "gpt-5.6-terra",
+    "name": "GPT-5.6 Terra",
+    "provider": "openai",
+    "tasks": ["qa", "research", "code-gen", "summarization"],
+    "latency": "medium",
+    "cost_per_1k_tokens": 0.0025,
+    "context_window": 1050000,
+    "network": "online"
+  },
+  {
+    "id": "gpt-5.6-luna",
+    "name": "GPT-5.6 Luna",
+    "provider": "openai",
+    "tasks": ["qa", "classification", "summarization", "code-gen"],
+    "latency": "low",
+    "cost_per_1k_tokens": 0.001,
+    "context_window": 1050000,
+    "network": "online"
   }
 ]
