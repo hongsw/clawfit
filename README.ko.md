@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-07-11)
+## 🔥 지금 가장 뜨거운 것들 (2026-07-12)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **OpenAI GPT-5.6 Sol/Terra/Luna** | 3단계 모델 패밀리 GA (7월 9일): Sol ($0.005/1k), Terra ($0.0025/1k), Luna ($0.001/1k). 공통 1.05M 컨텍스트 윈도우. MCP, 스킬, 호스팅 셸 3개 티어 전체 내장. 오늘 LLM 레지스트리에 3개 항목 추가. | LLM |
-| **OpenAI ChatGPT Work** | 시간 단위 자율 태스크 실행 에이전트 (7월 9일): 목표 → 플랜 → 완성 결과물(스프레드시트·슬라이드·문서·웹앱). 플랜 모드 + 설정 가능한 체크인 = 명시적 자율성 다이얼. L1 프로덕션 에이전트 카테고리에 직접 경쟁하는 첫 OpenAI 제품. | L1/L6 |
-| **[mattpocock/skills](https://github.com/mattpocock/skills) ⭐165k** | "실제 엔지니어를 위한 스킬" — Matt Pocock(TypeScript Total)의 개인 `.claude/` 디렉터리. addyosmani/agent-skills와 함께 2-신호 규칙 충족: "엔지니어 제작 크로스 에이전트 스킬 팩" 정식 L4b 서브타입 확정. 추적된 단일 저자 스킬 팩 중 최고 스타 수. | L4b |
-| **[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) ⭐76.8k** | Google Chrome DevRel이 제작한 Claude Code·Cursor·Codex용 프로덕션급 엔지니어링 스킬. 76.8k★ (지난주 70k 대비 +6.8k). "엔지니어 제작 크로스 에이전트 스킬 팩" 정식 서브타입 확정 두 번째 신호. | L4b |
-| **[unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) ⭐71.8k** | LLM 친화적 비동기 웹 크롤러: 보일러플레이트 제거, 깔끔한 마크다운 출력, Playwright로 동적 사이트 처리. MCP 호환. 에코시스템 내 가장 높은 스타를 가진 L4c 웹 검색 도구. | L4c |
-| **[microsoft/flint-chart](https://github.com/microsoft/flint-chart) ⭐1.3k** | AI 에이전트를 위한 시각화 언어 (Microsoft Research, 7월 10일): 컴팩트한 시맨틱 스펙이 Vega-Lite/ECharts/Chart.js로 컴파일; 70개+ 시맨틱 타입; `flint-chart-mcp` MCP 서버로 제공. 에이전트 출력 포맷팅과 MCP 역량 서버의 교차점에 있는 최초 도구. | L4c |
-| **[opensandbox-group/OpenSandbox](https://github.com/opensandbox-group/OpenSandbox) ⭐11.6k** | 범용 AI 에이전트 샌드박스 런타임 (알리바바, 2026년 3월): 다언어 SDK, Docker+K8s 라이프사이클, Claude Code·Gemini CLI 공식 참조 통합; CNCF 랜드스케이프 등록. 최초 추적된 오픈소스 에이전트 샌드박스 인프라. | L7 |
-| **Claude Code v2.1 (5단계 서브에이전트)** | Anthropic 공식: 5단계 중첩 서브에이전트 계층 구조 (기존 3단계에서 확장) + 모델별 비용 상한이 있는 폴백 모델 체인. Anthropic 연구에 따르면 "5단계는 거의 모든 실용적 소프트웨어 엔지니어링 워크플로우를 커버". 비용 상한 거버넌스를 네이티브 프리미티브로 탑재한 최초의 하네스. | L2 |
+| **[davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) ⭐29k** | Claude Code 설정 커뮤니티 최다 스타 컬렉션 (에이전트·슬래시 커맨드·MCP·훅·설정 템플릿). 마켓플레이스 역할: 100+ 검증된 하네스 컴포넌트, aitmpl.com 동반 사이트. 세션 분석 대시보드 및 원격 모니터링 포함. | L2 |
+| **[Dicklesworthstone/destructive_command_guard](https://github.com/Dicklesworthstone/destructive_command_guard) ⭐2.6k** | Rust로 작성된 PreToolUse 안전 훅: AI 에이전트가 git reset --hard, rm -rf, DROP TABLE 같은 위험 명령을 실행하기 전에 차단. SIMD 가속, 50개+ 규칙 카테고리, Claude Code·Codex CLI·Gemini CLI·Cursor IDE 등 8개 런타임 네이티브 지원. 하루 +444★. | L3/L4 |
+| **Mesh LLM (iroh P2P)** | 이기종 GPU 노드를 QUIC 기반 P2P로 단일 OpenAI 호환 엔드포인트로 통합. 요청당 3가지 전략: 로컬 GPU, 피어 라우팅, 대형 모델 파이프라인 분할. 분산 GPU 인벤토리를 보유한 팀을 위한 최초의 P2P 추론 프리미티브. | L7 |
+| **[cosmtrek/mindwalk](https://github.com/cosmtrek/mindwalk) ⭐268** | 코딩 에이전트 세션을 코드베이스 3D 맵으로 재생(Three.js): 검색·읽기·편집 작업이 빛의 이동으로 시각화. Go + TypeScript. 2026-07-11 출시; HN 135pts. 회고적 에이전트 세션 시각화 최초 L6 도구. 로컬 전용(프라이버시 보장). | L6 |
+| **Reame (CPU 추론 + 지속 KV 캐시)** | 반복 프롬프트의 재인코딩을 제거하는 지속 KV 캐시를 탑재한 프로덕션급 CPU 추론. `network: offline` 프로필의 비용·지연 신호로 의미 있음. | L7 |
+| **OpenAI GPT-5.6 Sol/Terra/Luna** | 3단계 모델 패밀리 GA (7월 9일): Sol ($0.005/1k), Terra ($0.0025/1k), Luna ($0.001/1k). 공통 1.05M 컨텍스트 윈도우. MCP, 스킬, 호스팅 셸 3개 티어 전체 내장. LLM 레지스트리에 3개 항목 추가. | LLM |
+| **Claude Code v2.1 (5단계 서브에이전트)** | Anthropic 공식: 5단계 중첩 서브에이전트 계층 구조 (기존 3단계에서 확장) + 모델별 비용 상한 폴백 체인. 비용 상한 거버넌스를 네이티브 프리미티브로 탑재한 최초 하네스. | L2 |
+| **[mattpocock/skills](https://github.com/mattpocock/skills) ⭐165k** | "실제 엔지니어를 위한 스킬" — Matt Pocock(TypeScript Total)의 개인 `.claude/` 디렉터리. 2-신호 규칙 충족: "엔지니어 제작 크로스 에이전트 스킬 팩" 정식 L4b 서브타입 확정. 단일 저자 스킬 팩 최고 스타 수. | L4b |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (433개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (439개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,8 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-07-12 | 데일리 스캔 run 2 (2개 추가 문서, 오늘 총 5개): cosmtrek/mindwalk ⭐268 L6 (코딩 에이전트 세션을 3D 코드베이스 맵으로 재생, Go+Three.js, v0.1.0 7월 11일, HN 135pts — 회고적 시각화 최초 L6 도구); Dicklesworthstone/destructive_command_guard ⭐2.6k L3/L4 (Rust PreToolUse 안전 훅, 50개+ 위험 명령 패턴, SIMD 가속, +444★/일, Claude Code·Codex·Gemini CLI 네이티브 통합). reference-levels.md: 2026-07-12 발견 로그; 정규 분류 변경 없음. 50/50 테스트. |
+| 2026-07-12 (run 1) | 데일리 스캔 (3개 문서): davila7/claude-code-templates ⭐29k L2 (하네스 설정 마켓플레이스, 100+ 에이전트/MCP/훅); Mesh LLM (iroh QUIC P2P 분산 추론, 3가지 라우팅 전략); Reame (CPU 추론 + 지속 KV 캐시, 오프라인 비용 신호). 50/50 테스트. |
 | 2026-07-11 | 데일리 스캔 run 2 (5개 문서): GPT-5.6 Sol/Terra/Luna → **llms.json +3** (OpenAI 플래그십 패밀리 GA 7월 9일; 1.05M ctx; $0.005/$0.0025/$0.001 per 1k); ChatGPT Work L1/L6 (시간 단위 SaaS 에이전트, 플랜 모드, 액션 승인, 7월 9일); microsoft/flint-chart ⭐1.3k L4c (시각화 언어 + MCP 서버, Microsoft Research, 7월 10-11일); opensandbox-group/OpenSandbox ⭐11.6k L7 (알리바바 AI 에이전트 샌드박스, CNCF, 다언어 SDK); Claude Code v2.1 L2 (5단계 서브에이전트 + 비용 상한 폴백 체인, 6월 10일). reference-levels.md: run 2 발견 로그; 6개 스키마 워치 추가. 50/50 테스트. |
 | 2026-07-11 (run 1) | 데일리 스캔 (5개 문서): mattpocock/skills ⭐165k L4b + addyosmani/agent-skills ⭐76.8k L4b → **"엔지니어 제작 크로스 에이전트 스킬 팩" 정식 서브타입 확정** (2-신호 규칙 충족); stitch-skills ⭐6.7k L4b/L4c (Google Labs MCP 네이티브 디자인→코드, "MCP 네이티브 스킬 팩" 최초 신호); Prismata arXiv L3/L5 (크로스 사이트 프롬프트 인젝션 격리, HN 프론트 페이지); Frugon L5 (실험적 LLM 비용 최적화 라우터, 109★). 50/50 테스트. 레지스트리: 신규 항목 없음. |
 | 2026-07-10 | 데일리 스캔 run 2 (5개 문서): mem0ai/mem0 ⭐53.5k L4a(범용 에이전트 메모리+MCP 재출시, >50k 예외, L4a 정규 목록 추가); agentscope ⭐27.7k L2(관찰가능성 우선 멀티에이전트 프레임워크); pipecat ⭐13.3k L7(프로덕션 실시간 음성/멀티모달 프레임워크); livekit/agents ⭐11.3k L7(자체 호스팅 WebRTC, ChatGPT Advanced Voice 구동); TencentDB-Agent-Memory ⭐8.2k L4a(4계층 프로그레시브 메모리). reference-levels.md: mem0 L4a 정규 추가(>50k); Pipecat+LiveKit L7 정규 추가("프로덕션 실시간 음성 에이전트 프레임워크" 2-신호 하위 유형). 50/50 테스트. 레지스트리: 신규 항목 없음. |
