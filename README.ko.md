@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-07-12)
+## 🔥 지금 가장 뜨거운 것들 (2026-07-13)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) ⭐29k** | Claude Code 설정 커뮤니티 최다 스타 컬렉션 (에이전트·슬래시 커맨드·MCP·훅·설정 템플릿). 마켓플레이스 역할: 100+ 검증된 하네스 컴포넌트, aitmpl.com 동반 사이트. 세션 분석 대시보드 및 원격 모니터링 포함. | L2 |
-| **[Dicklesworthstone/destructive_command_guard](https://github.com/Dicklesworthstone/destructive_command_guard) ⭐2.6k** | Rust로 작성된 PreToolUse 안전 훅: AI 에이전트가 git reset --hard, rm -rf, DROP TABLE 같은 위험 명령을 실행하기 전에 차단. SIMD 가속, 50개+ 규칙 카테고리, Claude Code·Codex CLI·Gemini CLI·Cursor IDE 등 8개 런타임 네이티브 지원. 하루 +444★. | L3/L4 |
-| **Mesh LLM (iroh P2P)** | 이기종 GPU 노드를 QUIC 기반 P2P로 단일 OpenAI 호환 엔드포인트로 통합. 요청당 3가지 전략: 로컬 GPU, 피어 라우팅, 대형 모델 파이프라인 분할. 분산 GPU 인벤토리를 보유한 팀을 위한 최초의 P2P 추론 프리미티브. | L7 |
-| **[cosmtrek/mindwalk](https://github.com/cosmtrek/mindwalk) ⭐268** | 코딩 에이전트 세션을 코드베이스 3D 맵으로 재생(Three.js): 검색·읽기·편집 작업이 빛의 이동으로 시각화. Go + TypeScript. 2026-07-11 출시; HN 135pts. 회고적 에이전트 세션 시각화 최초 L6 도구. 로컬 전용(프라이버시 보장). | L6 |
-| **Reame (CPU 추론 + 지속 KV 캐시)** | 반복 프롬프트의 재인코딩을 제거하는 지속 KV 캐시를 탑재한 프로덕션급 CPU 추론. `network: offline` 프로필의 비용·지연 신호로 의미 있음. | L7 |
+| **[ColeMurray/background-agents](https://github.com/ColeMurray/background-agents) ⭐2.3k** | 비동기 코딩 에이전트 3레이어 아키텍처: Cloudflare Durable Objects 오케스트레이션 + Modal/Daytona 샌드박스 실행 + Slack/GitHub/Linear 서피스. `spawn-task`로 병렬 하위 세션 분기. 세 번째 `statefulness` 모드(background-async) 신호. | L2 |
+| **[clawkwork/clawk](https://github.com/clawkwork/clawk) ⭐191** | AI 코딩 에이전트(Claude Code, Codex, 셸 에이전트)를 위한 일회용 네트워크 제한 Linux VM. v0.2.0 2026-07-13 출시. DNS 인식 허용 목록(gvproxy), 프로젝트별 CoW 디스크 클론, 자격 증명 노출 없는 SSH-agent 포워딩. macOS-우선(Apple Virtualization.framework); HN 128pts 출시 당일. | L7 |
+| **[Nutlope/hallmark](https://github.com/Nutlope/hallmark) ⭐4.9k** | Claude Code·Cursor·Codex용 디자인 스킬: 57개 안티패턴 검증, 20개 테마 선택, 출력 전 자기 비판 적용. 4가지 모드(build·audit·redesign·study). `npx skills add`로 설치. impeccable과 차별점: 거부 우선 제약 주입 vs `/impeccable` 명령 기반 방식. | L4b |
+| **[Vexa-ai/vexa](https://github.com/Vexa-ai/vexa) ⭐2.5k** | 자체 호스팅 미팅 전사 API: Meet·Teams·Zoom·Jitsi 자동 참여 봇, 실시간 화자 구분 전사, AI 에이전트용 MCP 서버, 전사 내용을 Markdown 지식 베이스로 컴파일하는 임시 에이전트 컨테이너. v0.12.1 7월 12일. | L4c/L6 |
+| **[agentic-community/mcp-gateway-registry](https://github.com/agentic-community/mcp-gateway-registry) ⭐794** | 기업용 MCP 제어 플레인: OAuth2/OIDC 게이트웨이, 런타임 시맨틱 도구 탐색, 사용자별 자격증명 브로커링, 실패 폐쇄 보안 스캔, A2A 역방향 프록시, Anthropic MCP Registry 연동. v1.26.0 7월 6일. 첫 'MCP 관리 플레인' 신호. | L5 |
 | **OpenAI GPT-5.6 Sol/Terra/Luna** | 3단계 모델 패밀리 GA (7월 9일): Sol ($0.005/1k), Terra ($0.0025/1k), Luna ($0.001/1k). 공통 1.05M 컨텍스트 윈도우. MCP, 스킬, 호스팅 셸 3개 티어 전체 내장. LLM 레지스트리에 3개 항목 추가. | LLM |
 | **Claude Code v2.1 (5단계 서브에이전트)** | Anthropic 공식: 5단계 중첩 서브에이전트 계층 구조 (기존 3단계에서 확장) + 모델별 비용 상한 폴백 체인. 비용 상한 거버넌스를 네이티브 프리미티브로 탑재한 최초 하네스. | L2 |
 | **[mattpocock/skills](https://github.com/mattpocock/skills) ⭐165k** | "실제 엔지니어를 위한 스킬" — Matt Pocock(TypeScript Total)의 개인 `.claude/` 디렉터리. 2-신호 규칙 충족: "엔지니어 제작 크로스 에이전트 스킬 팩" 정식 L4b 서브타입 확정. 단일 저자 스킬 팩 최고 스타 수. | L4b |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (439개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (447개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 

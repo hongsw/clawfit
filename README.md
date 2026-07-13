@@ -101,20 +101,20 @@ It is three things in one:
 
 ---
 
-## 🔥 What's hot right now (2026-07-12)
+## 🔥 What's hot right now (2026-07-13)
 
 | Signal | Why it matters | Level |
 |--------|---------------|-------|
-| **[davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) ⭐29k** | Most-starred community collection of Claude Code configurations (agents, slash commands, MCPs, hooks, settings). Functions as a marketplace-before-there-is-a-marketplace: 100+ battle-tested harness components, companion aitmpl.com site. Session analytics dashboard with remote monitoring. | L2 |
-| **[Dicklesworthstone/destructive_command_guard](https://github.com/Dicklesworthstone/destructive_command_guard) ⭐2.6k** | PreToolUse safety hook in Rust: intercepts dangerous shell commands (git reset --hard, rm -rf, DROP TABLE) before AI agents execute them. SIMD-accelerated, 50+ rule categories, native support for Claude Code, Codex CLI, Gemini CLI, Cursor IDE and 5 more runtimes. +444★ today. | L3/L4 |
-| **Mesh LLM (iroh P2P)** | Heterogeneous GPU nodes unified into a single OpenAI-compatible endpoint via QUIC-based P2P. Three strategies per request: local GPU, peer routing, pipeline split for oversized models. First credible P2P inference primitive for teams with distributed GPU inventory. | L7 |
-| **[cosmtrek/mindwalk](https://github.com/cosmtrek/mindwalk) ⭐268** | Replays coding-agent sessions as a 3D codebase map (Three.js): search/read/edit operations appear as animated light traversal. Go + TypeScript. Released July 11, 2026; 135 HN pts. First L6 tool for retrospective agent-session visualization. Privacy-preserving (local-only). | L6 |
-| **Reame (CPU inference + persistent KV cache)** | Production-grade CPU inference with persistent KV cache across requests — eliminates re-encoding for repeated prompts on commodity hardware. Significant cost/latency signal for `network: offline` profiles. | L7 |
+| **[ColeMurray/background-agents](https://github.com/ColeMurray/background-agents) ⭐2.3k** | Three-layer async coding agent: Cloudflare Durable Objects orchestration + Modal/Daytona sandbox execution + Slack/GitHub/Linear surfaces. Clean control-plane/data-plane split with `spawn-task` for parallel child sessions. Signals a third `statefulness` mode beyond `stateless` and `session`. | L2 |
+| **[clawkwork/clawk](https://github.com/clawkwork/clawk) ⭐191** | Disposable, network-restricted Linux VMs for AI coding agents (Claude Code, Codex, shell agents). v0.2.0 released July 13. DNS-aware allow-list via gvproxy, per-project CoW disk clones, SSH-agent forwarding without credential exposure. macOS-first (Apple Virtualization.framework); Firecracker experimental. HN 128pts day-one. | L7 |
+| **[Nutlope/hallmark](https://github.com/Nutlope/hallmark) ⭐4.9k** | Design skill for Claude Code/Cursor/Codex with 57 anti-pattern validation checks, 20 selectable themes, and self-critique pass before output. Four modes: build, audit, redesign, study. Installable via `npx skills add`. Distinct from impeccable: refusal-first constraint injection vs. impeccable's command-driven `/impeccable` approach. | L4b |
+| **[Vexa-ai/vexa](https://github.com/Vexa-ai/vexa) ⭐2.5k** | Self-hosted meeting transcription API: auto-join bots for Meet/Teams/Zoom/Jitsi, real-time speaker-attributed transcripts, MCP server for AI agents, ephemeral agent containers compiling transcripts into Markdown knowledge bases. v0.12.1 July 12. Two-domain architecture (capture + knowledge). | L4c/L6 |
+| **[agentic-community/mcp-gateway-registry](https://github.com/agentic-community/mcp-gateway-registry) ⭐794** | Enterprise MCP control plane: OAuth2/OIDC gateway, semantic tool discovery at runtime, per-user credential brokering, fail-closed security scanning, A2A reverse-proxy mode, federation with Anthropic MCP Registry + AWS Agent Registry. v1.26.0 July 6. First "MCP management plane" signal. | L5 |
 | **OpenAI GPT-5.6 Sol/Terra/Luna** | Three-tier model family GA (July 9): Sol ($0.005/1k), Terra ($0.0025/1k), Luna ($0.001/1k). Shared 1.05M context window. MCP, Skills, hosted shell built-in across all three tiers. All three added to LLM registry. | LLM |
 | **Claude Code v2.1 (5-level subagents)** | Anthropic official: 5-level nested subagent hierarchy (up from 3) + fallback model chains with per-model cost ceilings. First harness with programmable cost-ceiling governance as a native primitive. | L2 |
 | **[mattpocock/skills](https://github.com/mattpocock/skills) ⭐165k** | "Skills for Real Engineers" — Matt Pocock's personal `.claude/` directory. Two-signal rule met with addyosmani/agent-skills: "engineer-authored cross-agent skill pack" confirmed as canonical L4b sub-type. Highest-starred single-author skill pack tracked. | L4b |
 
-Full analysis in [`docs/research-watch/`](docs/research-watch/) (439 docs) · Full map in [`docs/reference-levels.md`](docs/reference-levels.md)
+Full analysis in [`docs/research-watch/`](docs/research-watch/) (447 docs) · Full map in [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -122,6 +122,7 @@ Full analysis in [`docs/research-watch/`](docs/research-watch/) (439 docs) · Fu
 
 | Date | What changed |
 |------|-------------|
+| 2026-07-13 | Daily scan run 2 (4 docs): clawk ⭐191 L7 (disposable network-restricted Linux VMs for AI agents, Apple VZ + Firecracker, v0.2.0, HN 128pts); hallmark ⭐4.9k L4b (anti-AI-slop design skill, 57 checks, 20 themes, self-critique, npx skills add); vexa ⭐2.5k L4c/L6 (self-hosted meeting transcription + MCP server, 4-platform auto-join bots, v0.12.1); mcp-gateway-registry ⭐794 L5 (enterprise MCP control plane, OAuth2/OIDC, semantic tool discovery, A2A proxy, first MCP management-plane signal). reference-levels.md: no changes. 50/50 tests. |
 | 2026-07-12 | Daily scan run 2 (2 additional docs, 5 total today): cosmtrek/mindwalk ⭐268 L6 (coding-agent session replay as 3D codebase map, Go+Three.js, v0.1.0 July 11, 135 HN pts — first L6 retrospective visualization tool); Dicklesworthstone/destructive_command_guard ⭐2.6k L3/L4 (PreToolUse safety hook in Rust, 50+ destructive-command patterns, SIMD-accelerated, +444★/day, native Claude Code/Codex/Gemini CLI integration). reference-levels.md: 2026-07-12 discovery log; zero canonical mutations. 50/50 tests. |
 | 2026-07-12 (run 1) | Daily scan (3 docs): davila7/claude-code-templates ⭐29k L2 (harness config marketplace, 100+ agents/MCPs/hooks); Mesh LLM (iroh QUIC P2P distributed inference, 3 routing strategies); Reame (CPU inference + persistent KV cache, offline cost signal). 50/50 tests. |
 | 2026-07-11 | Daily scan run 2 (5 docs): GPT-5.6 Sol/Terra/Luna → **llms.json +3** (OpenAI flagship family GA July 9; 1.05M ctx; $0.005/$0.0025/$0.001 per 1k); ChatGPT Work L1/L6 (hours-long SaaS agent, plan mode, action approvals, July 9); microsoft/flint-chart ⭐1.3k L4c (visualization language + MCP server, Microsoft Research, July 10-11); opensandbox-group/OpenSandbox ⭐11.6k L7 (Alibaba AI agent sandbox, CNCF, multi-lang SDKs); Claude Code v2.1 L2 (5-level subagents + fallback chains with cost ceilings, June 10). reference-levels.md: run 2 discovery log; 6 schema watch additions. 50/50 tests. |
