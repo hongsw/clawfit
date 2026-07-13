@@ -2299,7 +2299,6 @@
       "features": [],
       "pricing_tier": "free",
       "tasks": [
-        "code-gen",
         "research"
       ],
       "roles": [
