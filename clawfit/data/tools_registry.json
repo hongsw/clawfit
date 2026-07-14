@@ -399,6 +399,7 @@
       "features": [],
       "pricing_tier": "paid",
       "tasks": [
+        "code-gen",
         "research",
         "summarization"
       ],
