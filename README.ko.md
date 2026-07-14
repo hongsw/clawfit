@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-07-13)
+## 🔥 지금 가장 뜨거운 것들 (2026-07-14)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[ColeMurray/background-agents](https://github.com/ColeMurray/background-agents) ⭐2.3k** | 비동기 코딩 에이전트 3레이어 아키텍처: Cloudflare Durable Objects 오케스트레이션 + Modal/Daytona 샌드박스 실행 + Slack/GitHub/Linear 서피스. `spawn-task`로 병렬 하위 세션 분기. 세 번째 `statefulness` 모드(background-async) 신호. | L2 |
-| **[clawkwork/clawk](https://github.com/clawkwork/clawk) ⭐191** | AI 코딩 에이전트(Claude Code, Codex, 셸 에이전트)를 위한 일회용 네트워크 제한 Linux VM. v0.2.0 2026-07-13 출시. DNS 인식 허용 목록(gvproxy), 프로젝트별 CoW 디스크 클론, 자격 증명 노출 없는 SSH-agent 포워딩. macOS-우선(Apple Virtualization.framework); HN 128pts 출시 당일. | L7 |
-| **[Nutlope/hallmark](https://github.com/Nutlope/hallmark) ⭐4.9k** | Claude Code·Cursor·Codex용 디자인 스킬: 57개 안티패턴 검증, 20개 테마 선택, 출력 전 자기 비판 적용. 4가지 모드(build·audit·redesign·study). `npx skills add`로 설치. impeccable과 차별점: 거부 우선 제약 주입 vs `/impeccable` 명령 기반 방식. | L4b |
-| **[Vexa-ai/vexa](https://github.com/Vexa-ai/vexa) ⭐2.5k** | 자체 호스팅 미팅 전사 API: Meet·Teams·Zoom·Jitsi 자동 참여 봇, 실시간 화자 구분 전사, AI 에이전트용 MCP 서버, 전사 내용을 Markdown 지식 베이스로 컴파일하는 임시 에이전트 컨테이너. v0.12.1 7월 12일. | L4c/L6 |
-| **[agentic-community/mcp-gateway-registry](https://github.com/agentic-community/mcp-gateway-registry) ⭐794** | 기업용 MCP 제어 플레인: OAuth2/OIDC 게이트웨이, 런타임 시맨틱 도구 탐색, 사용자별 자격증명 브로커링, 실패 폐쇄 보안 스캔, A2A 역방향 프록시, Anthropic MCP Registry 연동. v1.26.0 7월 6일. 첫 'MCP 관리 플레인' 신호. | L5 |
-| **OpenAI GPT-5.6 Sol/Terra/Luna** | 3단계 모델 패밀리 GA (7월 9일): Sol ($0.005/1k), Terra ($0.0025/1k), Luna ($0.001/1k). 공통 1.05M 컨텍스트 윈도우. MCP, 스킬, 호스팅 셸 3개 티어 전체 내장. LLM 레지스트리에 3개 항목 추가. | LLM |
-| **Claude Code v2.1 (5단계 서브에이전트)** | Anthropic 공식: 5단계 중첩 서브에이전트 계층 구조 (기존 3단계에서 확장) + 모델별 비용 상한 폴백 체인. 비용 상한 거버넌스를 네이티브 프리미티브로 탑재한 최초 하네스. | L2 |
-| **[mattpocock/skills](https://github.com/mattpocock/skills) ⭐165k** | "실제 엔지니어를 위한 스킬" — Matt Pocock(TypeScript Total)의 개인 `.claude/` 디렉터리. 2-신호 규칙 충족: "엔지니어 제작 크로스 에이전트 스킬 팩" 정식 L4b 서브타입 확정. 단일 저자 스킬 팩 최고 스타 수. | L4b |
+| **[arXiv 2607.01418 — 마이크로소프트 도입 연구](https://arxiv.org/abs/2607.01418)** | 에이전틱 CLI 도구 최초 대규모 기업 현장 연구: Claude Code·Copilot CLI 도입자가 미도입자 대비 PR 병합율 +24% 향상. 수만 명 엔지니어, 4개월 측정. 도입은 소셜 네트워크를 통해 전파; 유지율은 코딩 활동량과 상관. `team_size: large` 스코어링 축의 실증적 근거. | 생태계 |
+| **["외부 루프를 소유하라" — Addy Osmani](https://addyo.substack.com/p/own-the-outer-loop)** | `addyosmani/agent-skills` ⭐76k 저자가 인간-에이전트 경계를 명확히 정의: 에이전트는 내부 루프(구현·반복)를 담당하고, 엔지니어는 외부 루프(제약 설계·감사·최종 책임)를 소유해야 함. 품질·판정·답책성 3요소 트리아드 — 어느 것도 자동화 불가. `governance_need: hard` 스코어링 축의 개념적 기반. | 생태계 |
+| **[cactus-compute/needle ⭐3.1k](https://github.com/cactus-compute/needle)** | 휴대폰·스마트워치·스마트글래스 타깃 26M 파라미터 함수 호출 모델. 단순 어텐션 네트워크(GQA+RoPE, 인코더에 FFN 없음)로 FunctionGemma-270m, Qwen-0.6B, Granite-350m를 단발 함수 호출 벤치마크에서 능가. 현재 엣지 프로파일 이하의 "마이크로 디바이스" 하드웨어 티어 신호. | L1 |
+| **[kangarooking/cangjie-skill ⭐2.9k](https://github.com/kangarooking/cangjie-skill)** | 책·동영상 스크립트·팟캐스트를 Claude Code/Cursor 배포 가능한 `SKILL.md` 파일로 증류하는 7단계 RIA-TV++ 파이프라인. `INDEX.md` 크로스 스킬 맵, `DIGEST.md`, 적대적 스트레스 테스트 프롬프트 출력. 프로덕션 콘텐츠→스킬 증류 파이프라인 최초 추적 도구. | L4b |
+| **[juggler-ai/juggler ⭐146](https://github.com/juggler-ai/juggler)** | 세션을 편집 가능한 트리로 구성하는 네이티브 데스크톱 GUI 코딩 에이전트(Go+Wails, Electron 없음). 도구 호출이 접히지 않고 UI에 직접 표시. 멀티 프로바이더 지원·Yjs 동기화. JUCE C++ 오디오 프레임워크 창시자 Jules Storer 제작. HN 출시 당일 103pts. "트리 기반 세션 감사 UI" 최초 신호. | L6 |
+| **["이해가 새로운 병목이다" — Geoffrey Litt](https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html)** | MIT CSAIL 연구자: 멀티 루프 에이전틱 개발에서 검증이 아니라 이해가 핵심 제약. 3가지 기법 제시: 내장 퀴즈 속도 조절 literate diff, 능동 참여 마이크로 월드, 팀 공유 공간. 오늘 Jacquard + "외부 루프 소유" 와 함께 `comprehension_surface` 신규 스코어링 축을 지지하는 3-신호 클러스터 완성. | 생태계 |
+| **[mattpocock/skills ⭐165k](https://github.com/mattpocock/skills)** | "실제 엔지니어를 위한 스킬" — Matt Pocock의 개인 `.claude/` 디렉터리. 2-신호 규칙 충족: "엔지니어 제작 크로스 에이전트 스킬 팩" 정식 L4b 서브타입 확정. 단일 저자 스킬 팩 최고 스타 수. | L4b |
+| **Claude Code v2.1 (5단계 서브에이전트)** | Anthropic 공식: 5단계 중첩 서브에이전트 계층 구조 + 모델별 비용 상한 폴백 체인. 비용 상한 거버넌스를 네이티브 프리미티브로 탑재한 최초 하네스. | L2 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (447개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (454개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-07-14 (run 2) | 데일리 스캔 (5개 문서): needle ⭐3.1k L1(휴대폰·워치 타깃 26M 엣지 함수 호출 LLM, 4개 대형 모델 능가, 마이크로 디바이스 티어 신호); cangjie-skill ⭐2.9k L4b(콘텐츠→스킬 증류 파이프라인 RIA-TV++ 7단계, 프로덕션 콘텐츠→스킬 최초 추적 도구); juggler ⭐146 L6(GUI 코딩 에이전트 트리 기반 세션 감사, Go+Wails, HN 103pts, JUCE 창시자 제작); "이해가 새로운 병목" (Geoffrey Litt MIT CSAIL, GeekNews 23pts, 이해 표면 생태계 신호 — Jacquard+외부 루프 소유와 함께 오늘의 3-신호 클러스터 완성); "제로 비용 오류" (Thoughtworks, HN 14pts, AI 생성 PR로 오픈소스 유지관리 부담 신호, 스타 지표 신뢰도 약화). reference-levels.md: 5개 신호+스코어링 감사 2026-07-14 로그 추가; 정규 분류 변경 없음. 50/50 테스트. |
 | 2026-07-12 | 데일리 스캔 run 2 (2개 추가 문서, 오늘 총 5개): cosmtrek/mindwalk ⭐268 L6 (코딩 에이전트 세션을 3D 코드베이스 맵으로 재생, Go+Three.js, v0.1.0 7월 11일, HN 135pts — 회고적 시각화 최초 L6 도구); Dicklesworthstone/destructive_command_guard ⭐2.6k L3/L4 (Rust PreToolUse 안전 훅, 50개+ 위험 명령 패턴, SIMD 가속, +444★/일, Claude Code·Codex·Gemini CLI 네이티브 통합). reference-levels.md: 2026-07-12 발견 로그; 정규 분류 변경 없음. 50/50 테스트. |
 | 2026-07-12 (run 1) | 데일리 스캔 (3개 문서): davila7/claude-code-templates ⭐29k L2 (하네스 설정 마켓플레이스, 100+ 에이전트/MCP/훅); Mesh LLM (iroh QUIC P2P 분산 추론, 3가지 라우팅 전략); Reame (CPU 추론 + 지속 KV 캐시, 오프라인 비용 신호). 50/50 테스트. |
 | 2026-07-11 | 데일리 스캔 run 2 (5개 문서): GPT-5.6 Sol/Terra/Luna → **llms.json +3** (OpenAI 플래그십 패밀리 GA 7월 9일; 1.05M ctx; $0.005/$0.0025/$0.001 per 1k); ChatGPT Work L1/L6 (시간 단위 SaaS 에이전트, 플랜 모드, 액션 승인, 7월 9일); microsoft/flint-chart ⭐1.3k L4c (시각화 언어 + MCP 서버, Microsoft Research, 7월 10-11일); opensandbox-group/OpenSandbox ⭐11.6k L7 (알리바바 AI 에이전트 샌드박스, CNCF, 다언어 SDK); Claude Code v2.1 L2 (5단계 서브에이전트 + 비용 상한 폴백 체인, 6월 10일). reference-levels.md: run 2 발견 로그; 6개 스키마 워치 추가. 50/50 테스트. |
