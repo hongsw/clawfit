@@ -99,20 +99,19 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-07-14)
+## 🔥 지금 가장 뜨거운 것들 (2026-07-15)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[arXiv 2607.01418 — 마이크로소프트 도입 연구](https://arxiv.org/abs/2607.01418)** | 에이전틱 CLI 도구 최초 대규모 기업 현장 연구: Claude Code·Copilot CLI 도입자가 미도입자 대비 PR 병합율 +24% 향상. 수만 명 엔지니어, 4개월 측정. 도입은 소셜 네트워크를 통해 전파; 유지율은 코딩 활동량과 상관. `team_size: large` 스코어링 축의 실증적 근거. | 생태계 |
-| **["외부 루프를 소유하라" — Addy Osmani](https://addyo.substack.com/p/own-the-outer-loop)** | `addyosmani/agent-skills` ⭐76k 저자가 인간-에이전트 경계를 명확히 정의: 에이전트는 내부 루프(구현·반복)를 담당하고, 엔지니어는 외부 루프(제약 설계·감사·최종 책임)를 소유해야 함. 품질·판정·답책성 3요소 트리아드 — 어느 것도 자동화 불가. `governance_need: hard` 스코어링 축의 개념적 기반. | 생태계 |
-| **[cactus-compute/needle ⭐3.1k](https://github.com/cactus-compute/needle)** | 휴대폰·스마트워치·스마트글래스 타깃 26M 파라미터 함수 호출 모델. 단순 어텐션 네트워크(GQA+RoPE, 인코더에 FFN 없음)로 FunctionGemma-270m, Qwen-0.6B, Granite-350m를 단발 함수 호출 벤치마크에서 능가. 현재 엣지 프로파일 이하의 "마이크로 디바이스" 하드웨어 티어 신호. | L1 |
-| **[kangarooking/cangjie-skill ⭐2.9k](https://github.com/kangarooking/cangjie-skill)** | 책·동영상 스크립트·팟캐스트를 Claude Code/Cursor 배포 가능한 `SKILL.md` 파일로 증류하는 7단계 RIA-TV++ 파이프라인. `INDEX.md` 크로스 스킬 맵, `DIGEST.md`, 적대적 스트레스 테스트 프롬프트 출력. 프로덕션 콘텐츠→스킬 증류 파이프라인 최초 추적 도구. | L4b |
-| **[juggler-ai/juggler ⭐146](https://github.com/juggler-ai/juggler)** | 세션을 편집 가능한 트리로 구성하는 네이티브 데스크톱 GUI 코딩 에이전트(Go+Wails, Electron 없음). 도구 호출이 접히지 않고 UI에 직접 표시. 멀티 프로바이더 지원·Yjs 동기화. JUCE C++ 오디오 프레임워크 창시자 Jules Storer 제작. HN 출시 당일 103pts. "트리 기반 세션 감사 UI" 최초 신호. | L6 |
-| **["이해가 새로운 병목이다" — Geoffrey Litt](https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html)** | MIT CSAIL 연구자: 멀티 루프 에이전틱 개발에서 검증이 아니라 이해가 핵심 제약. 3가지 기법 제시: 내장 퀴즈 속도 조절 literate diff, 능동 참여 마이크로 월드, 팀 공유 공간. 오늘 Jacquard + "외부 루프 소유" 와 함께 `comprehension_surface` 신규 스코어링 축을 지지하는 3-신호 클러스터 완성. | 생태계 |
-| **[mattpocock/skills ⭐165k](https://github.com/mattpocock/skills)** | "실제 엔지니어를 위한 스킬" — Matt Pocock의 개인 `.claude/` 디렉터리. 2-신호 규칙 충족: "엔지니어 제작 크로스 에이전트 스킬 팩" 정식 L4b 서브타입 확정. 단일 저자 스킬 팩 최고 스타 수. | L4b |
-| **Claude Code v2.1 (5단계 서브에이전트)** | Anthropic 공식: 5단계 중첩 서브에이전트 계층 구조 + 모델별 비용 상한 폴백 체인. 비용 상한 거버넌스를 네이티브 프리미티브로 탑재한 최초 하네스. | L2 |
+| **[openinterpreter/openinterpreter ⭐65.3k](https://github.com/openinterpreter/openinterpreter)** | 기존 Python Open Interpreter의 완전한 Rust 재작성; 설계 목표: "저비용 모델을 위한 코딩 에이전트." `claude-code`, `deepseek-tui`, `qwen-code` 등 명명된 하네스 에뮬레이션 모드로 백엔드 교체 없이 동작 전환 가능. 네이티브 샌드박싱, ACP 편집기 통합, 컴퓨터 사용 기능. `harness_mode` 런타임 설정 필드 후보 최초 구현체. | L1 |
+| **[HKUDS/nanobot ⭐45.7k](https://github.com/HKUDS/nanobot)** | 단일 에이전트 루프로 Telegram·Discord·Slack·WeChat·Feishu·Mattermost·이메일 7개 채널을 동시 서비스하는 자체 호스팅 AI 에이전트. 멀티 프로바이더 LLM(Claude/ChatGPT/Ollama/vLLM); "Dream" 영속 메모리; MCP 네이티브 도구 지원. v0.2.2, 2026년 6월. `statefulness: persistent-cross-channel` 신규 티어 후보. | L2 |
+| **[Agnost AI (YC S26)](https://www.agnost.ai)** | 실제 에이전트 대화를 분석해 실패 유형(워크플로 오류·반복 재시도·설정 마찰·이탈 위험)을 감지하고 수정 PR을 자동 생성하는 프로덕션 모니터링 플랫폼. OpenTelemetry 네이티브; 2분 설정 주장; 초기 고객에 Google·Exa. 대시보드 대신 PR 아티팩트를 eval 출력으로 내는 "evaluation-to-fix 루프" 최초 신호. | L5 |
+| **[PrismML Bonsai 27B](https://prismml.com)** | 1비트 양자화 27B 모델(3.9 GB)이 iPhone에서 구동 확인; 3항 양자화(5.9 GB)는 노트북 타깃. 온 디바이스 도구 호출·멀티스텝 추론 지원. 16비트 대비 메모리 14×, 속도 8×. clawfit 로컬 실행 티어를 27B급까지 스마트폰으로 확장하는 하드웨어 신호. | L1 |
+| **["예측 불가한 천재 감싸기"](https://melodykoh.substack.com/p/wrapping-the-unpredictable-genius)** | Melody Koh: 하네스 엔지니어링이 AI 제품의 진짜 경쟁 해자. 모델은 상품; 결정론적 "래핑"이 방어 가능한 자산. 4계층 모델(모델→하네스→문서(권고)→훅(강제·모델 동의 무관)). Claude Code의 PreToolUse 훅 메커니즘과 직접 대응. 2026-07-14 "외부 루프 소유"에 이은 하네스-as-해자 2번째 신호. `hooks_enforcement` 스키마 후보. | 생태계 |
+| **["소프트웨어가 세상을 먹었고, 이제 하드웨어가 소프트웨어를 먹는다"](https://wing.vc/content/software-ate-the-world-now-hardware-is-eating-software/)** | Wing VC: AI 애플리케이션 총이익률 50-60%로 압축 (SaaS 75-90% 대비). 추론 비용이 매출의 평균 23%를 차지하며 규모 확장에도 감소하지 않음. 일반 AI 래퍼 주가 5-8배로 SaaS 6.7배 수준으로 수렴. clawfit `sustainability_tier` 스코어링 근거 제공: 인프라 레이어 도구가 애플리케이션 래퍼보다 지속가능성 높음. | 생태계 |
+| **[PrimeIntellect-ai/prime-rl ⭐1.7k](https://github.com/PrimeIntellect-ai/prime-rl)** | 1,000개+ GPU에서 수조 파라미터 MoE 훈련을 위한 에이전틱 RL 프레임워크. 롤아웃·최적화 완전 비동기(동시 실행, 단계별 동기화 없음). PyTorch FSDP2, FP8, vLLM 추론 백엔드, 소프트웨어 엔지니어링 Verifiers 환경 통합. v0.7.0, 2026년 7월 14일. 에이전틱 RL 명시적 타깃 최초 훈련 인프라. `training_method` llms.json 스키마 후보. | L7 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (454개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (462개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +134,8 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-07-15 (run 2) | 데일리 스캔 (5개 문서): openinterpreter Rust 재작성 ⭐65.3k L1(저비용 모델 코딩 에이전트, 명명된 하네스 에뮬레이션 모드, ACP 지원, `harness_mode` 스키마 후보); HKUDS/nanobot ⭐45.7k L2(자체 호스팅 멀티채널 에이전트 — 7개 플랫폼 동시 서비스, "Dream" 영속 메모리, MCP 네이티브); "예측 불가한 천재 감싸기" 생태계 신호(하네스 엔지니어링 해자론, 4계층 모델, `hooks_enforcement` 후보 — 2026-07-14 "외부 루프 소유"와 2일간 2신호 클러스터); "소프트웨어가 세상을 먹었고..." 생태계 신호(wing.vc, AI 이익률 압축, `sustainability_tier` 후보); prime-rl ⭐1.7k L7(에이전틱 RL 1000+ GPU, 비동기 롤아웃, `training_method` 후보). 레지스트리 추가 없음. 정규 분류 변경 없음. 50/50 테스트. |
+| 2026-07-15 (run 1) | 데일리 스캔 (2개 문서): Agnost AI (YC S26) L5(프로덕션 에이전트 대화 모니터→수정 PR, OpenTelemetry 네이티브, 레지스트리 추가); Bonsai 27B/PrismML L1(1비트 27B 3.9GB iPhone 구동, 온디바이스 도구 호출, 폰 클래스 하드웨어 티어 후보). 50/50 테스트. |
 | 2026-07-14 (run 2) | 데일리 스캔 (5개 문서): needle ⭐3.1k L1(휴대폰·워치 타깃 26M 엣지 함수 호출 LLM, 4개 대형 모델 능가, 마이크로 디바이스 티어 신호); cangjie-skill ⭐2.9k L4b(콘텐츠→스킬 증류 파이프라인 RIA-TV++ 7단계, 프로덕션 콘텐츠→스킬 최초 추적 도구); juggler ⭐146 L6(GUI 코딩 에이전트 트리 기반 세션 감사, Go+Wails, HN 103pts, JUCE 창시자 제작); "이해가 새로운 병목" (Geoffrey Litt MIT CSAIL, GeekNews 23pts, 이해 표면 생태계 신호 — Jacquard+외부 루프 소유와 함께 오늘의 3-신호 클러스터 완성); "제로 비용 오류" (Thoughtworks, HN 14pts, AI 생성 PR로 오픈소스 유지관리 부담 신호, 스타 지표 신뢰도 약화). reference-levels.md: 5개 신호+스코어링 감사 2026-07-14 로그 추가; 정규 분류 변경 없음. 50/50 테스트. |
 | 2026-07-12 | 데일리 스캔 run 2 (2개 추가 문서, 오늘 총 5개): cosmtrek/mindwalk ⭐268 L6 (코딩 에이전트 세션을 3D 코드베이스 맵으로 재생, Go+Three.js, v0.1.0 7월 11일, HN 135pts — 회고적 시각화 최초 L6 도구); Dicklesworthstone/destructive_command_guard ⭐2.6k L3/L4 (Rust PreToolUse 안전 훅, 50개+ 위험 명령 패턴, SIMD 가속, +444★/일, Claude Code·Codex·Gemini CLI 네이티브 통합). reference-levels.md: 2026-07-12 발견 로그; 정규 분류 변경 없음. 50/50 테스트. |
 | 2026-07-12 (run 1) | 데일리 스캔 (3개 문서): davila7/claude-code-templates ⭐29k L2 (하네스 설정 마켓플레이스, 100+ 에이전트/MCP/훅); Mesh LLM (iroh QUIC P2P 분산 추론, 3가지 라우팅 전략); Reame (CPU 추론 + 지속 KV 캐시, 오프라인 비용 신호). 50/50 테스트. |
