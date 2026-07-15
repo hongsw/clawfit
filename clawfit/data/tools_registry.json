@@ -3421,5 +3421,44 @@
       "setup_complexity": "low",
       "latency": "low"
     }
+  },
+  {
+    "id": "agnost_ai",
+    "name": "Agnost AI",
+    "category": "agent_eval_monitoring",
+    "level": 5,
+    "license": "Proprietary",
+    "primary_language": "unknown",
+    "url": "https://www.agnost.ai",
+    "source_type": "website",
+    "comparison_priority": "secondary",
+    "notes": "Production monitoring platform that reads real agent conversations to detect failure patterns, churn risk, and broken workflows, then auto-opens PRs with proposed fixes. OpenTelemetry-native. YC S26.",
+    "org_fit": {
+      "min_maturity": 5,
+      "max_maturity": 9,
+      "optimal_maturity": 6,
+      "features": [
+        "governance",
+        "team-sharing"
+      ],
+      "pricing_tier": "freemium",
+      "tasks": [
+        "qa",
+        "data-analysis"
+      ],
+      "roles": [
+        "developer",
+        "pm",
+        "exec"
+      ],
+      "team_size": [
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "high"
+    }
   }
 ]
