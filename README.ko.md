@@ -99,19 +99,19 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-07-15)
+## 🔥 지금 가장 뜨거운 것들 (2026-07-16)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[openinterpreter/openinterpreter ⭐65.3k](https://github.com/openinterpreter/openinterpreter)** | 기존 Python Open Interpreter의 완전한 Rust 재작성; 설계 목표: "저비용 모델을 위한 코딩 에이전트." `claude-code`, `deepseek-tui`, `qwen-code` 등 명명된 하네스 에뮬레이션 모드로 백엔드 교체 없이 동작 전환 가능. 네이티브 샌드박싱, ACP 편집기 통합, 컴퓨터 사용 기능. `harness_mode` 런타임 설정 필드 후보 최초 구현체. | L1 |
-| **[HKUDS/nanobot ⭐45.7k](https://github.com/HKUDS/nanobot)** | 단일 에이전트 루프로 Telegram·Discord·Slack·WeChat·Feishu·Mattermost·이메일 7개 채널을 동시 서비스하는 자체 호스팅 AI 에이전트. 멀티 프로바이더 LLM(Claude/ChatGPT/Ollama/vLLM); "Dream" 영속 메모리; MCP 네이티브 도구 지원. v0.2.2, 2026년 6월. `statefulness: persistent-cross-channel` 신규 티어 후보. | L2 |
-| **[Agnost AI (YC S26)](https://www.agnost.ai)** | 실제 에이전트 대화를 분석해 실패 유형(워크플로 오류·반복 재시도·설정 마찰·이탈 위험)을 감지하고 수정 PR을 자동 생성하는 프로덕션 모니터링 플랫폼. OpenTelemetry 네이티브; 2분 설정 주장; 초기 고객에 Google·Exa. 대시보드 대신 PR 아티팩트를 eval 출력으로 내는 "evaluation-to-fix 루프" 최초 신호. | L5 |
-| **[PrismML Bonsai 27B](https://prismml.com)** | 1비트 양자화 27B 모델(3.9 GB)이 iPhone에서 구동 확인; 3항 양자화(5.9 GB)는 노트북 타깃. 온 디바이스 도구 호출·멀티스텝 추론 지원. 16비트 대비 메모리 14×, 속도 8×. clawfit 로컬 실행 티어를 27B급까지 스마트폰으로 확장하는 하드웨어 신호. | L1 |
-| **["예측 불가한 천재 감싸기"](https://melodykoh.substack.com/p/wrapping-the-unpredictable-genius)** | Melody Koh: 하네스 엔지니어링이 AI 제품의 진짜 경쟁 해자. 모델은 상품; 결정론적 "래핑"이 방어 가능한 자산. 4계층 모델(모델→하네스→문서(권고)→훅(강제·모델 동의 무관)). Claude Code의 PreToolUse 훅 메커니즘과 직접 대응. 2026-07-14 "외부 루프 소유"에 이은 하네스-as-해자 2번째 신호. `hooks_enforcement` 스키마 후보. | 생태계 |
-| **["소프트웨어가 세상을 먹었고, 이제 하드웨어가 소프트웨어를 먹는다"](https://wing.vc/content/software-ate-the-world-now-hardware-is-eating-software/)** | Wing VC: AI 애플리케이션 총이익률 50-60%로 압축 (SaaS 75-90% 대비). 추론 비용이 매출의 평균 23%를 차지하며 규모 확장에도 감소하지 않음. 일반 AI 래퍼 주가 5-8배로 SaaS 6.7배 수준으로 수렴. clawfit `sustainability_tier` 스코어링 근거 제공: 인프라 레이어 도구가 애플리케이션 래퍼보다 지속가능성 높음. | 생태계 |
-| **[PrimeIntellect-ai/prime-rl ⭐1.7k](https://github.com/PrimeIntellect-ai/prime-rl)** | 1,000개+ GPU에서 수조 파라미터 MoE 훈련을 위한 에이전틱 RL 프레임워크. 롤아웃·최적화 완전 비동기(동시 실행, 단계별 동기화 없음). PyTorch FSDP2, FP8, vLLM 추론 백엔드, 소프트웨어 엔지니어링 Verifiers 환경 통합. v0.7.0, 2026년 7월 14일. 에이전틱 RL 명시적 타깃 최초 훈련 인프라. `training_method` llms.json 스키마 후보. | L7 |
+| **[Inkling — Thinking Machines Lab](https://thinkingmachines.ai/news/introducing-inkling/)** | 오픈웨이트 975B MoE(41B 활성 파라미터), 45조 토큰 학습 — 텍스트·이미지·오디오·비디오 동시 멀티모달 프리트레인. 1M 토큰 컨텍스트, 가변 추론 노력 제어, 30M+ RL 롤아웃. Tinker 플랫폼을 통해 파인튜닝 가능. 오늘 HN 최다 점수(583점). 오픈웨이트이므로 폐쇄 API 사용 불가 `governance_need: hard` / `data_sensitivity: confidential` 프로필에 적합. | L1 LLM |
+| **[xai-org/grok-build](https://github.com/xai-org/grok-build)** | xAI가 Rust로 오픈소스화한 풀스크린 TUI 코딩 에이전트. 헤드리스 CI/CD 모드와 ACP(에이전트 클라이언트 프로토콜) 지원 — OpenInterpreter Rust에 이어 두 번째로 ACP를 네이티브 구현한 L1 런타임. Claude Code·Goose·Crush·Aider의 직접 경쟁자. 레지스트리에 추가됨. | L1 |
+| **[Ambiance — 파일시스템 에이전트 하네스](https://eardatasci.github.io/c/ambiance/index.html)** | FHS 기반 파일시스템을 공유 상태 버스로 사용: 파일 변경 이벤트가 전용 LLM 에이전트(`root`·`pai`·`librarian`)를 트리거, 폴링 없음. 4일 연속 세 번째 독립 하네스 엔지니어링 신호 → `harness_trigger`·`agent_communication` 필드를 L2 정규 축으로 승격하는 임계값 충족. | L2 |
+| **[Codex MultiAgentV2 — 감사 추적 vs 암호화](https://github.com/openai/codex/issues/28058)** | OpenAI Codex가 에이전트 간 메시지 페이로드를 암호화해 운영자가 자식 에이전트 작업 내용을 볼 수 없게 됨. 대규모 배포에서 감사 추적 vs 기밀성 트레이드오프가 실제로 발생한 최초 사례. `audit_trail` 스키마 후보; `governance_need: hard` 프로필 스코어링에 영향. | 거버넌스 |
+| **[openinterpreter/openinterpreter ⭐65.3k](https://github.com/openinterpreter/openinterpreter)** | 완전한 Rust 재작성; `claude-code`·`deepseek-tui`·`qwen-code` 명명 하네스 에뮬레이션 모드로 백엔드 교체 없이 동작 전환 가능. ACP 편집기 통합, `harness_mode` 런타임 설정 필드 후보 최초 구현체. | L1 |
+| **[HKUDS/nanobot ⭐45.7k](https://github.com/HKUDS/nanobot)** | 단일 에이전트 루프로 Telegram·Discord·Slack·WeChat·Feishu·Mattermost·이메일 7개 채널 동시 서비스. 멀티 프로바이더 LLM, "Dream" 영속 메모리, MCP 네이티브. `statefulness: persistent-cross-channel` 신규 티어 후보. | L2 |
+| **["에이전트를 위한 API 설계"](https://www.freestyle.sh/blog/opinion/designing-apis-for-agents)** | 에이전트 중심 API 설계 원칙: 묵시적 기본값 대신 명시적 파라미터, 모호하지 않은 이름, 추론 추적의 학습 기회로서의 정밀 오류. LLM 에이전트가 주요 API 소비자가 되면서 인간 개발자용 에르고노믹스와 설계 관행이 갈라진다. clawfit 자체 CLI 출력 형식에도 직접 적용. | 생태계 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (462개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (467개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -134,6 +134,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-07-16 | 데일리 스캔 (5개 문서): Inkling 975B MoE 오픈웨이트 멀티모달 (Thinking Machines Lab, HN 583점, L1 LLM — 1M ctx, 가변 추론 노력, 30M+ RL 롤아웃, Tinker 파인튜닝, 거버넌스 하드 프로필 적합); Grok Build L1 (xAI Rust TUI 코딩 에이전트, ACP + 헤드리스 CI/CD — 레지스트리 추가); Ambiance L2 (파일시스템-as-공유-상태 하네스, FHS 이벤트 버스 "Kernel", 3번째 하네스 엔지니어링 신호 → `harness_trigger` + `agent_communication` L2 정규 축 승격); Codex MultiAgentV2 거버넌스 신호 (에이전트 간 암호화로 감사 추적 제거, `audit_trail` 스키마 후보); "에이전트를 위한 API 설계" (명시적 우선 에이전트 API 원칙, HN 36점). reference-levels.md: 3-신호 하네스 엔지니어링 클러스터 2-신호 규칙 충족 → L2 정규 축 승격. 레지스트리: grok-build 추가. 50/50 테스트. |
 | 2026-07-15 (run 2) | 데일리 스캔 (5개 문서): openinterpreter Rust 재작성 ⭐65.3k L1(저비용 모델 코딩 에이전트, 명명된 하네스 에뮬레이션 모드, ACP 지원, `harness_mode` 스키마 후보); HKUDS/nanobot ⭐45.7k L2(자체 호스팅 멀티채널 에이전트 — 7개 플랫폼 동시 서비스, "Dream" 영속 메모리, MCP 네이티브); "예측 불가한 천재 감싸기" 생태계 신호(하네스 엔지니어링 해자론, 4계층 모델, `hooks_enforcement` 후보 — 2026-07-14 "외부 루프 소유"와 2일간 2신호 클러스터); "소프트웨어가 세상을 먹었고..." 생태계 신호(wing.vc, AI 이익률 압축, `sustainability_tier` 후보); prime-rl ⭐1.7k L7(에이전틱 RL 1000+ GPU, 비동기 롤아웃, `training_method` 후보). 레지스트리 추가 없음. 정규 분류 변경 없음. 50/50 테스트. |
 | 2026-07-15 (run 1) | 데일리 스캔 (2개 문서): Agnost AI (YC S26) L5(프로덕션 에이전트 대화 모니터→수정 PR, OpenTelemetry 네이티브, 레지스트리 추가); Bonsai 27B/PrismML L1(1비트 27B 3.9GB iPhone 구동, 온디바이스 도구 호출, 폰 클래스 하드웨어 티어 후보). 50/50 테스트. |
 | 2026-07-14 (run 2) | 데일리 스캔 (5개 문서): needle ⭐3.1k L1(휴대폰·워치 타깃 26M 엣지 함수 호출 LLM, 4개 대형 모델 능가, 마이크로 디바이스 티어 신호); cangjie-skill ⭐2.9k L4b(콘텐츠→스킬 증류 파이프라인 RIA-TV++ 7단계, 프로덕션 콘텐츠→스킬 최초 추적 도구); juggler ⭐146 L6(GUI 코딩 에이전트 트리 기반 세션 감사, Go+Wails, HN 103pts, JUCE 창시자 제작); "이해가 새로운 병목" (Geoffrey Litt MIT CSAIL, GeekNews 23pts, 이해 표면 생태계 신호 — Jacquard+외부 루프 소유와 함께 오늘의 3-신호 클러스터 완성); "제로 비용 오류" (Thoughtworks, HN 14pts, AI 생성 PR로 오픈소스 유지관리 부담 신호, 스타 지표 신뢰도 약화). reference-levels.md: 5개 신호+스코어링 감사 2026-07-14 로그 추가; 정규 분류 변경 없음. 50/50 테스트. |
