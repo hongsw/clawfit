@@ -99,19 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-07-16)
+## 🔥 지금 가장 뜨거운 것들 (2026-07-17)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[Inkling — Thinking Machines Lab](https://thinkingmachines.ai/news/introducing-inkling/)** | 오픈웨이트 975B MoE(41B 활성 파라미터), 45조 토큰 학습 — 텍스트·이미지·오디오·비디오 동시 멀티모달 프리트레인. 1M 토큰 컨텍스트, 가변 추론 노력 제어, 30M+ RL 롤아웃. Tinker 플랫폼을 통해 파인튜닝 가능. 오늘 HN 최다 점수(583점). 오픈웨이트이므로 폐쇄 API 사용 불가 `governance_need: hard` / `data_sensitivity: confidential` 프로필에 적합. | L1 LLM |
-| **[xai-org/grok-build](https://github.com/xai-org/grok-build)** | xAI가 Rust로 오픈소스화한 풀스크린 TUI 코딩 에이전트. 헤드리스 CI/CD 모드와 ACP(에이전트 클라이언트 프로토콜) 지원 — OpenInterpreter Rust에 이어 두 번째로 ACP를 네이티브 구현한 L1 런타임. Claude Code·Goose·Crush·Aider의 직접 경쟁자. 레지스트리에 추가됨. | L1 |
-| **[Ambiance — 파일시스템 에이전트 하네스](https://eardatasci.github.io/c/ambiance/index.html)** | FHS 기반 파일시스템을 공유 상태 버스로 사용: 파일 변경 이벤트가 전용 LLM 에이전트(`root`·`pai`·`librarian`)를 트리거, 폴링 없음. 4일 연속 세 번째 독립 하네스 엔지니어링 신호 → `harness_trigger`·`agent_communication` 필드를 L2 정규 축으로 승격하는 임계값 충족. | L2 |
-| **[Codex MultiAgentV2 — 감사 추적 vs 암호화](https://github.com/openai/codex/issues/28058)** | OpenAI Codex가 에이전트 간 메시지 페이로드를 암호화해 운영자가 자식 에이전트 작업 내용을 볼 수 없게 됨. 대규모 배포에서 감사 추적 vs 기밀성 트레이드오프가 실제로 발생한 최초 사례. `audit_trail` 스키마 후보; `governance_need: hard` 프로필 스코어링에 영향. | 거버넌스 |
-| **[openinterpreter/openinterpreter ⭐65.3k](https://github.com/openinterpreter/openinterpreter)** | 완전한 Rust 재작성; `claude-code`·`deepseek-tui`·`qwen-code` 명명 하네스 에뮬레이션 모드로 백엔드 교체 없이 동작 전환 가능. ACP 편집기 통합, `harness_mode` 런타임 설정 필드 후보 최초 구현체. | L1 |
-| **[HKUDS/nanobot ⭐45.7k](https://github.com/HKUDS/nanobot)** | 단일 에이전트 루프로 Telegram·Discord·Slack·WeChat·Feishu·Mattermost·이메일 7개 채널 동시 서비스. 멀티 프로바이더 LLM, "Dream" 영속 메모리, MCP 네이티브. `statefulness: persistent-cross-channel` 신규 티어 후보. | L2 |
-| **["에이전트를 위한 API 설계"](https://www.freestyle.sh/blog/opinion/designing-apis-for-agents)** | 에이전트 중심 API 설계 원칙: 묵시적 기본값 대신 명시적 파라미터, 모호하지 않은 이름, 추론 추적의 학습 기회로서의 정밀 오류. LLM 에이전트가 주요 API 소비자가 되면서 인간 개발자용 에르고노믹스와 설계 관행이 갈라진다. clawfit 자체 CLI 출력 형식에도 직접 적용. | 생태계 |
+| **[lobehub/lobe-chat ⭐80.4k](https://github.com/lobehub/lobe-chat)** | "수석 에이전트 운영자(Chief Agent Operator)" 플랫폼: AI 에이전트 팀을 채용·스케줄·보고하며 7×24 지속 운영. Operator·Create(10,000+ MCP 스킬)·Collaborate(그룹+스케줄링)·Evolve(White-Box 메모리) 4개 축. 성숙한 프로덕트(릴리즈 2,850회), v2.2.10 7월 10일. 멀티에이전트 팀 조율 계층 최대 오픈소스 사용자 기반. 최초 전용 리서치워치 등록. | L2 |
+| **[sourcebot-dev/sourcebot ⭐3.6k](https://github.com/sourcebot-dev/sourcebot)** | 인간과 AI 에이전트 모두를 위한 자체 호스팅 코드 인텔리전스 플랫폼. 인용 근거 있는 자연어 Q&A, 크로스 레포 정규식 검색, 레포 경계를 넘나드는 IDE 수준 goto-definition. v5.1.2 7월 16일 릴리즈. Docker Compose 자체 호스팅 — `data_sensitivity: confidential` 적합. 대화-사실이 아닌 코드 구조 전문 L5 도구. | L5 |
+| **[LM Studio Bionic](https://lmstudio.ai/)** | LM Studio가 로컬 모델 런처에서 전용 에이전트 제품("오픈 모델을 위한 에이전트")으로 피벗 — 초기 프리뷰 단계. 로컬 퍼스트 설계, JavaScript/Python SDK와 CLI를 출시일부터 제공. LM Studio의 대규모 기존 설치 기반(수백만 다운로드)을 업테이크 레버로 활용, Goose·Aider·Continue가 점유한 `offline`+`confidential` 세그먼트를 정조준. | L1 |
+| **Traceforce (YC S26)** | AI 애플리케이션 전용 보안 모니터링을 구축하는 YC S26 스타트업. 에이전트 간 트래픽·입출력 패턴·정책 위반을 프로덕션에서 실시간 감시. ReasonGate와 같은 날 등장한 두 번째 AI 보안 신호: YC 투자로 AI 앱 보안 모니터링이 독립 투자 카테고리가 됨을 확인. | L5 |
+| **ReasonGate** | LLM 프롬프트 인젝션을 차단하고 모든 차단 결정에 인간 가독 감사 이유를 제공하는 Python 도구. 임계값 기반 필터와 달리 모든 차단이 추적·디버그 가능. Traceforce와 짝: 추론 전 방어(L3) + 실행 시간 모니터링(L5)으로 AI 보안 스택의 두 분리된 전문화 확인. | L3 |
+| **[Inkling — Thinking Machines Lab](https://thinkingmachines.ai/news/introducing-inkling/)** | 오픈웨이트 975B MoE(41B 활성), 45조 토큰 멀티모달 프리트레인. 1M 토큰 컨텍스트, 가변 추론 노력, 30M+ RL 롤아웃. 폐쇄 API 사용 불가 `governance_need: hard` / `confidential` 프로필에 바로 활용 가능. 2026-07-16 HN 최다 점수(583점). | L1 LLM |
+| **[xai-org/grok-build](https://github.com/xai-org/grok-build)** | xAI가 Rust로 오픈소스화한 풀스크린 TUI 코딩 에이전트. 헤드리스 CI/CD 모드 + ACP 지원. Claude Code·Goose·Crush·Aider의 직접 경쟁자. 레지스트리 추가됨(2026-07-16). | L1 |
+| **[openinterpreter/openinterpreter ⭐65.3k](https://github.com/openinterpreter/openinterpreter)** | 완전 Rust 재작성; `claude-code`·`deepseek-tui`·`qwen-code` 명명 하네스 에뮬레이션 모드로 백엔드 교체 없이 동작 전환. `harness_mode` 런타임 설정 필드 후보 최초 구현체(2026-07-15). | L1 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (467개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (472개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -134,6 +135,8 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-07-17 | 데일리 스캔 run 2 (2개 추가 문서, 오늘 총 5개): LobeHub ⭐80.4k L2("수석 에이전트 운영자" 플랫폼 — 에이전트 팀 스케줄링, 10,000+ MCP 스킬, White-Box 메모리, v2.2.10 7월 10일, 최초 전용 등록); Sourcebot ⭐3.6k L5(에이전트를 위한 자체 호스팅 코드 인텔리전스, 인용 근거 NL Q&A + 크로스 레포 내비게이션, v5.1.2 7월 16일). reference-levels.md: 2개 신규 신호 항목 추가; 크로스 데이 2신호 워치 설정(LobeHub + nanobot 2026-07-15, 영속 팀 관리 서브타입). 50/50 테스트. 레지스트리: 추가 없음. |
+| 2026-07-17 (run 1) | 데일리 스캔 (3개 문서): LM Studio Bionic L1(오픈 모델용 로컬 에이전트 런타임, 초기 프리뷰, JS/Python/CLI SDK, HN 125점 — `offline`+`confidential` 세그먼트 정조준); ReasonGate L3(설명 가능한 프롬프트 인젝션 방어, Python, 인간 가독 차단 이유, Show HN); Traceforce L5/L3(YC S26, AI 앱 보안 모니터링, 실행시간 행동 관찰성, Launch HN). 50/50 테스트. 레지스트리: 추가 없음. |
 | 2026-07-16 | 데일리 스캔 (5개 문서): Inkling 975B MoE 오픈웨이트 멀티모달 (Thinking Machines Lab, HN 583점, L1 LLM — 1M ctx, 가변 추론 노력, 30M+ RL 롤아웃, Tinker 파인튜닝, 거버넌스 하드 프로필 적합); Grok Build L1 (xAI Rust TUI 코딩 에이전트, ACP + 헤드리스 CI/CD — 레지스트리 추가); Ambiance L2 (파일시스템-as-공유-상태 하네스, FHS 이벤트 버스 "Kernel", 3번째 하네스 엔지니어링 신호 → `harness_trigger` + `agent_communication` L2 정규 축 승격); Codex MultiAgentV2 거버넌스 신호 (에이전트 간 암호화로 감사 추적 제거, `audit_trail` 스키마 후보); "에이전트를 위한 API 설계" (명시적 우선 에이전트 API 원칙, HN 36점). reference-levels.md: 3-신호 하네스 엔지니어링 클러스터 2-신호 규칙 충족 → L2 정규 축 승격. 레지스트리: grok-build 추가. 50/50 테스트. |
 | 2026-07-15 (run 2) | 데일리 스캔 (5개 문서): openinterpreter Rust 재작성 ⭐65.3k L1(저비용 모델 코딩 에이전트, 명명된 하네스 에뮬레이션 모드, ACP 지원, `harness_mode` 스키마 후보); HKUDS/nanobot ⭐45.7k L2(자체 호스팅 멀티채널 에이전트 — 7개 플랫폼 동시 서비스, "Dream" 영속 메모리, MCP 네이티브); "예측 불가한 천재 감싸기" 생태계 신호(하네스 엔지니어링 해자론, 4계층 모델, `hooks_enforcement` 후보 — 2026-07-14 "외부 루프 소유"와 2일간 2신호 클러스터); "소프트웨어가 세상을 먹었고..." 생태계 신호(wing.vc, AI 이익률 압축, `sustainability_tier` 후보); prime-rl ⭐1.7k L7(에이전틱 RL 1000+ GPU, 비동기 롤아웃, `training_method` 후보). 레지스트리 추가 없음. 정규 분류 변경 없음. 50/50 테스트. |
 | 2026-07-15 (run 1) | 데일리 스캔 (2개 문서): Agnost AI (YC S26) L5(프로덕션 에이전트 대화 모니터→수정 PR, OpenTelemetry 네이티브, 레지스트리 추가); Bonsai 27B/PrismML L1(1비트 27B 3.9GB iPhone 구동, 온디바이스 도구 호출, 폰 클래스 하드웨어 티어 후보). 50/50 테스트. |
