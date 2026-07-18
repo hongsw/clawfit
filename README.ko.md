@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-07-17)
+## 🔥 지금 가장 뜨거운 것들 (2026-07-18)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[lobehub/lobe-chat ⭐80.4k](https://github.com/lobehub/lobe-chat)** | "수석 에이전트 운영자(Chief Agent Operator)" 플랫폼: AI 에이전트 팀을 채용·스케줄·보고하며 7×24 지속 운영. Operator·Create(10,000+ MCP 스킬)·Collaborate(그룹+스케줄링)·Evolve(White-Box 메모리) 4개 축. 성숙한 프로덕트(릴리즈 2,850회), v2.2.10 7월 10일. 멀티에이전트 팀 조율 계층 최대 오픈소스 사용자 기반. 최초 전용 리서치워치 등록. | L2 |
-| **[sourcebot-dev/sourcebot ⭐3.6k](https://github.com/sourcebot-dev/sourcebot)** | 인간과 AI 에이전트 모두를 위한 자체 호스팅 코드 인텔리전스 플랫폼. 인용 근거 있는 자연어 Q&A, 크로스 레포 정규식 검색, 레포 경계를 넘나드는 IDE 수준 goto-definition. v5.1.2 7월 16일 릴리즈. Docker Compose 자체 호스팅 — `data_sensitivity: confidential` 적합. 대화-사실이 아닌 코드 구조 전문 L5 도구. | L5 |
-| **[LM Studio Bionic](https://lmstudio.ai/)** | LM Studio가 로컬 모델 런처에서 전용 에이전트 제품("오픈 모델을 위한 에이전트")으로 피벗 — 초기 프리뷰 단계. 로컬 퍼스트 설계, JavaScript/Python SDK와 CLI를 출시일부터 제공. LM Studio의 대규모 기존 설치 기반(수백만 다운로드)을 업테이크 레버로 활용, Goose·Aider·Continue가 점유한 `offline`+`confidential` 세그먼트를 정조준. | L1 |
-| **Traceforce (YC S26)** | AI 애플리케이션 전용 보안 모니터링을 구축하는 YC S26 스타트업. 에이전트 간 트래픽·입출력 패턴·정책 위반을 프로덕션에서 실시간 감시. ReasonGate와 같은 날 등장한 두 번째 AI 보안 신호: YC 투자로 AI 앱 보안 모니터링이 독립 투자 카테고리가 됨을 확인. | L5 |
-| **ReasonGate** | LLM 프롬프트 인젝션을 차단하고 모든 차단 결정에 인간 가독 감사 이유를 제공하는 Python 도구. 임계값 기반 필터와 달리 모든 차단이 추적·디버그 가능. Traceforce와 짝: 추론 전 방어(L3) + 실행 시간 모니터링(L5)으로 AI 보안 스택의 두 분리된 전문화 확인. | L3 |
-| **[Inkling — Thinking Machines Lab](https://thinkingmachines.ai/news/introducing-inkling/)** | 오픈웨이트 975B MoE(41B 활성), 45조 토큰 멀티모달 프리트레인. 1M 토큰 컨텍스트, 가변 추론 노력, 30M+ RL 롤아웃. 폐쇄 API 사용 불가 `governance_need: hard` / `confidential` 프로필에 바로 활용 가능. 2026-07-16 HN 최다 점수(583점). | L1 LLM |
-| **[xai-org/grok-build](https://github.com/xai-org/grok-build)** | xAI가 Rust로 오픈소스화한 풀스크린 TUI 코딩 에이전트. 헤드리스 CI/CD 모드 + ACP 지원. Claude Code·Goose·Crush·Aider의 직접 경쟁자. 레지스트리 추가됨(2026-07-16). | L1 |
-| **[openinterpreter/openinterpreter ⭐65.3k](https://github.com/openinterpreter/openinterpreter)** | 완전 Rust 재작성; `claude-code`·`deepseek-tui`·`qwen-code` 명명 하네스 에뮬레이션 모드로 백엔드 교체 없이 동작 전환. `harness_mode` 런타임 설정 필드 후보 최초 구현체(2026-07-15). | L1 |
+| **[tirth8205/code-review-graph ⭐20k](https://github.com/tirth8205/code-review-graph)** | MCP용 로컬 코드 인텔리전스 그래프: 30개 도구(영향 분석·블라스트 반경·시맨틱 검색·변경 감지), 82x 토큰 절감 주장, GitHub Action 머지 게이트. GitHub Trending 전체 9위. MIT, Python 94%, v2.3.6. L4c 코드 인텔리전스 클러스터 최다 도구. | L4c |
+| **Kimi K3 (MoonshotAI)** | 2.8T 파라미터 MoE(16/896 전문가 활성), 1M 토큰 컨텍스트, 입력 $3/출력 $15 per 1M 토큰. FrontierSWE 81.2% 자체 발표. K2.6의 256K 컨텍스트 한계 해소. 단, K2.6의 Thinking/Instant 듀얼 모드 없이 최대 추론만 — `latency: low` 프로필 불가. 웨이트 2026-07-27 예정. | L1 LLM |
+| **State of Open Source AI V1.0** | Mozilla 주도 오픈웨이트 AI 생태계 구조 조사(9레이어, 48개 구성 요소). 핵심: 클로즈드 모델 대비 능력 격차 3.3%로 재개장; 추론 비용 36개월 동안 $20→$0.40/1M 토큰; 오픈 모델 프로덕션 배포(51%) vs 클로즈드(63%) 격차는 능력 아닌 컴플라이언스·인프라 복잡성. HN 353점. | 메타 |
+| **[MoonshotAI/kimi-cli ⭐9.4k](https://github.com/MoonshotAI/kimi-cli)** | MoonshotAI(K3 동일 랩)의 터미널 코딩 에이전트 — Anthropic(Claude+Claude Code), xAI(Grok+Grok Build)와 같은 수직 통합 패턴. MCP 전체 지원 + ACP(에이전트 클라이언트 프로토콜)로 Zed/JetBrains 임베딩. kimi-code로 이전 진행 중. Apache 2.0. | L1 |
+| **[OpenSenseNova/SenseNova-U1 ⭐3.96k](https://github.com/OpenSenseNova/SenseNova-U1)** | SenseTime의 네이티브 통합 멀티모달 모델: NEO-unify 아키텍처로 비주얼 인코더(CLIP/SigLIP)와 VAE를 모두 제거, 이미지 픽셀과 텍스트를 하나의 혼합 토큰 스트림으로 처리. 8B 덴스 + A3B MoE 변형. Apache 2.0. clawfit 스키마 갭 노출(`cost_per_1k_tokens`가 픽셀 출력 비용 모델에 미적합). | L1 MM |
+| **[KnockOutEZ/wigolo ⭐1.1k](https://github.com/KnockOutEZ/wigolo)** | 로컬 퍼스트 웹 인텔리전스 MCP 서버: 10개 도구(검색·크롤·리서치·에이전트·diff·watch), 18개 직접 엔진 어댑터, ML 재순위, 쿼리당 $0. `network: offline` + `task: research` 프로필 공백 채움. AGPL-3.0; 온디바이스 약 1.5GB. 퍼블릭 베타. | L4c |
+| **[lobehub/lobe-chat ⭐80.4k](https://github.com/lobehub/lobe-chat)** | "수석 에이전트 운영자" 플랫폼: AI 에이전트 팀 채용·스케줄·보고 7×24 지속 운영. Operator·Create(10,000+ MCP 스킬)·Collaborate·Evolve 4개 축. 릴리즈 2,850회, v2.2.10 7월 10일. 멀티에이전트 팀 조율 계층 최대 오픈소스 기반. | L2 |
+| **[xai-org/grok-build](https://github.com/xai-org/grok-build)** | xAI 오픈소스 Rust TUI 코딩 에이전트. 헤드리스 CI/CD + ACP 지원. 레지스트리 추가(2026-07-16). | L1 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (472개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (479개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-07-18 (run 2) | 데일리 스캔 (3개 문서): kimi-cli ⭐9.4k L1(MoonshotAI 터미널 코딩 에이전트, K3와 수직 통합, ACP+MCP, kimi-code로 이전 중); wigolo ⭐1.1k L4c(로컬 퍼스트 웹 인텔리전스 MCP, 10개 도구·18개 엔진·$0/쿼리·AGPL-3.0, 오프라인 리서치 공백 채움); SenseNova-U1 ⭐3.96k L1-MM(SenseTime NEO-unify 멀티모달, VE+VAE 제거, 8B 덴스+A3B MoE, llms.json 스키마 갭 노출). 50/50 테스트. 레지스트리: 추가 없음. 2026-07-18 누계: 7개 문서. |
 | 2026-07-17 | 데일리 스캔 run 2 (2개 추가 문서, 오늘 총 5개): LobeHub ⭐80.4k L2("수석 에이전트 운영자" 플랫폼 — 에이전트 팀 스케줄링, 10,000+ MCP 스킬, White-Box 메모리, v2.2.10 7월 10일, 최초 전용 등록); Sourcebot ⭐3.6k L5(에이전트를 위한 자체 호스팅 코드 인텔리전스, 인용 근거 NL Q&A + 크로스 레포 내비게이션, v5.1.2 7월 16일). reference-levels.md: 2개 신규 신호 항목 추가; 크로스 데이 2신호 워치 설정(LobeHub + nanobot 2026-07-15, 영속 팀 관리 서브타입). 50/50 테스트. 레지스트리: 추가 없음. |
 | 2026-07-17 (run 1) | 데일리 스캔 (3개 문서): LM Studio Bionic L1(오픈 모델용 로컬 에이전트 런타임, 초기 프리뷰, JS/Python/CLI SDK, HN 125점 — `offline`+`confidential` 세그먼트 정조준); ReasonGate L3(설명 가능한 프롬프트 인젝션 방어, Python, 인간 가독 차단 이유, Show HN); Traceforce L5/L3(YC S26, AI 앱 보안 모니터링, 실행시간 행동 관찰성, Launch HN). 50/50 테스트. 레지스트리: 추가 없음. |
 | 2026-07-16 | 데일리 스캔 (5개 문서): Inkling 975B MoE 오픈웨이트 멀티모달 (Thinking Machines Lab, HN 583점, L1 LLM — 1M ctx, 가변 추론 노력, 30M+ RL 롤아웃, Tinker 파인튜닝, 거버넌스 하드 프로필 적합); Grok Build L1 (xAI Rust TUI 코딩 에이전트, ACP + 헤드리스 CI/CD — 레지스트리 추가); Ambiance L2 (파일시스템-as-공유-상태 하네스, FHS 이벤트 버스 "Kernel", 3번째 하네스 엔지니어링 신호 → `harness_trigger` + `agent_communication` L2 정규 축 승격); Codex MultiAgentV2 거버넌스 신호 (에이전트 간 암호화로 감사 추적 제거, `audit_trail` 스키마 후보); "에이전트를 위한 API 설계" (명시적 우선 에이전트 API 원칙, HN 36점). reference-levels.md: 3-신호 하네스 엔지니어링 클러스터 2-신호 규칙 충족 → L2 정규 축 승격. 레지스트리: grok-build 추가. 50/50 테스트. |
