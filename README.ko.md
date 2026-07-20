@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-07-19)
+## 🔥 지금 가장 뜨거운 것들 (2026-07-20)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[handy-computer/transcribe.cpp ⭐811](https://github.com/handy-computer/transcribe.cpp)** | 멀티모델 로컬 ASR 라이브러리: 16개 모델 패밀리, 60+ 변형(Whisper·Moonshine·Parakeet·Canary 등), Metal/Vulkan/CUDA/TinyBLAS 백엔드, Python/TypeScript/Rust/Swift 바인딩. 모델×하드웨어 조합 WER 검증. v0.1.3 7월 12일. HN 670점 — 오늘 최고점. whisper.cpp 대체 목적. moonshine-micro(동일 스캔)와 함께 로컬 ASR 패턴 2신호 확인. | L7 |
-| **Qwen3.8 (Alibaba)** | 2.4T 파라미터 플래그십 프리뷰 7월 19일 발표. "Fable 5에 이어 2위" 주장. 공개 벤치마크 없음, 오픈웨이트 미출시("곧"), HuggingFace 모델 카드 없음. MoE 구성 미공개 — "2.4T"는 헤드라인 숫자. 현재 Token Plan 구독($6–$68/주)에만 번들. Kimi K3 수요 급증(7월 18일) 대응 경쟁 발표로 해석. HN 560점. 오픈웨이트 확인 후 레지스트리 검토. | L1 대기 |
-| **[kvcache-ai/ktransformers ⭐18.3k](https://github.com/kvcache-ai/ktransformers)** | CPU-GPU 이기종 MoE 추론: 냉각 전문가용 AMX/AVX 최적화 CPU 커널 + 핫 전문가용 CUDA. 프리필 4.62–19.74× 속도 향상(ACM SIGOPS 2026 피어리뷰). DeepSeek-V3/R1·MiniMax-M3를 소비자 하드웨어에서 실행. GOSIM Paris 2026 "엣지의 에이전틱 AI" 트랙 발표. airllm(동일 스캔)과 함께 소비자 로컬 대형 모델 추론 2신호 확인. Apache 2.0. | L7 |
-| **[agentscope-ai/QwenPaw ⭐23.5k](https://github.com/agentscope-ai/QwenPaw)** | v2.0.0 7월 10일: "에이전트 OS" 아키텍처 — Resources·Governance·커널 수준 샌드박스(Tool Guard + File Guard). 3계층 메모리(작업/이력/증류); 번들 로컬 모델(2B/4B/9B); 14+ IM 플랫폼 연결. ouroboros(2026-05-04) 이후 두 번째 "에이전트 OS" 신호; 다른 거버넌스 방식(커널 샌드박스 vs 사양 중심). Apache 2.0. | L2 |
-| **Qwen3-Coder-Next (Alibaba)** | SWE-Bench Verified 70.6% — 추적 중 최고 오픈웨이트 코딩 점수. MoE: 전체 30B / 토큰당 활성 3B. 256K 컨텍스트. 에이전틱 코딩 RL 훈련. Apache 2.0 오픈웨이트. AWS Bedrock 목록으로 기관 검증. 가격 미확인(Bedrock 가격 페이지 조회 필요). 오늘 신호 중 레지스트리 등록에 가장 가까움. | L1 대기 |
-| **[tirth8205/code-review-graph ⭐20.9k](https://github.com/tirth8205/code-review-graph)** | GitHub Trending 이틀 연속(오늘 +551). 30개 MCP 도구, 82x 토큰 절감 주장, GitHub Action 머지 게이트. L4c 코드 인텔리전스 클러스터 선두. 독립 신호 1개 더 확인 시 L4c 정식 등록. | L4c |
-| **Kimi K3 (MoonshotAI)** | 2.8T MoE, 1M 토큰 컨텍스트, 입력 $3/출력 $15. FrontierSWE 81.2% 자체 발표. 웨이트 2026-07-27 예정. Moonshot AI 7월 18일 수요 급증으로 신규 구독 중단. 동일 날 발표된 Qwen3.8과 직접 경쟁 구도. | L1 대기 |
-| **[lobehub/lobe-chat ⭐80.4k](https://github.com/lobehub/lobe-chat)** | "수석 에이전트 운영자" 플랫폼: 에이전트 팀 스케줄링, 10,000+ MCP 스킬, 화이트박스 메모리. 멀티에이전트 오케스트레이션 계층 최대 오픈소스 플랫폼. v2.2.10, 2,850+ 릴리즈. | L2 |
+| **[PrefectHQ/fastmcp ⭐26,500](https://github.com/PrefectHQ/fastmcp)** | MCP 서버/클라이언트 구축 분야 최대 Python 프레임워크: 전체 MCP 서버의 ~70%, 일 ~100만 다운로드. v1.0이 공식 MCP Python SDK에 편입. v3.4.x: SSRF/DNS 리바인딩 보안 강화, OAuth 공급자 지원(Hugging Face·Azure AD B2C), Prefect Horizon 엔터프라이즈 게이트웨이(SSO·RBAC·감사 로그). "Apps" 기능으로 대화 내 인터랙티브 UI 위젯 렌더링(L6 신호). GitHub Trending. | L4 |
+| **[langchain-ai/open-swe ⭐10,400](https://github.com/langchain-ai/open-swe)** | Stripe·Ramp·Coinbase가 사내 사용하는 비동기 SWE 에이전트 아키텍처의 오픈소스 참조 구현. 태스크를 클라우드 샌드박스(Modal/Daytona/E2B/Runloop)에 디스패치 → 비지도 실행 → 드래프트 PR로 결과 제출. Slack·Linear·GitHub PR 코멘트로 멀티채널 트리거. LangGraph + Deep Agents 기반. **background-agents(2026-07-13)와 함께 "비동기 SWE 하네스" 2신호 패턴 확인.** | L2 |
+| **[langchain-ai/openwiki ⭐12,600](https://github.com/langchain-ai/openwiki)** | 코드베이스에서 에이전트 전용 구조화 문서(OKF 형식)를 자동 생성하는 CLI. 15일 만에 12.6k 스타 — 잠재 수요 강력 확인. CI/CD 네이티브(GitHub Actions·GitLab CI·Bitbucket). 다중 LLM 공급자 지원. **Agent Docs for Markdown(2026-07-19)과 함께 "에이전트 최적화 문서 레이어" 2신호 패턴 확인.** v0.2.0 7월 16일 출시; pre-1.0 주의. | L5 |
+| **[AstrBotDevs/AstrBot ⭐37,000](https://github.com/AstrBotDevs/AstrBot)** | 14개 이상 IM 플랫폼(위챗·QQ·텔레그램·디스코드·슬랙)을 지원하는 AI 에이전트 프레임워크. 36k 스타; 국내 대규모 채택. L2/L6 공백 채움: 개발자 CLI/IDE가 아닌 기존 그룹 채팅 앱을 통해 엔드유저가 직접 에이전트를 사용하는 IM 채널 하네스 패턴. | L2/L6 |
+| **[tirth8205/code-review-graph ⭐22,800](https://github.com/tirth8205/code-review-graph)** | 오늘 GitHub Trending 전체 언어 1위 (+1,876). MCP + CLI 로컬 코드 인텔리전스 그래프. 30개 MCP 도구, 82x 토큰 절감, GitHub Action 머지 게이트. L4c 클러스터 선두. | L4c |
+| **[kvcache-ai/ktransformers ⭐18,700](https://github.com/kvcache-ai/ktransformers)** | CPU-GPU 이기종 MoE 추론: AMX/AVX 커널(콜드 전문가) + CUDA(핫 전문가). 프리필 4.62–19.74× 속도 향상(ACM SIGOPS 2026). DeepSeek-V3/R1·MiniMax-M3 소비자 하드웨어 실행. airllm과 2신호 패턴 확인. Apache 2.0. | L7 |
+| **Kimi K3 (MoonshotAI)** | 2.8T MoE, 1M 토큰 컨텍스트, 입력 $3/출력 $15. FrontierSWE 81.2% 자체 발표. 웨이트 2026-07-27 예정. 수요 급증으로 신규 구독 중단. | L1 대기 |
+| **[lobehub/lobe-chat ⭐80,400](https://github.com/lobehub/lobe-chat)** | "수석 에이전트 운영자" 플랫폼: 에이전트 팀 스케줄링, 10,000+ MCP 스킬, 화이트박스 메모리. 멀티에이전트 최대 오픈소스 플랫폼. v2.2.10, 2,850+ 릴리즈. | L2 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (487개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (491개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-07-20 | 데일리 스캔 (4개 문서 합계): fastmcp ⭐26.5k L4(PrefectHQ Python MCP 프레임워크, 전체 MCP 서버 ~70%, Prefect Horizon 엔터프라이즈 게이트웨이, GitHub Trending); open-swe ⭐10.4k L2(LangChain 비동기 SWE 에이전트, 샌드박스 격리, 멀티채널 디스패치, **"비동기 SWE 하네스" 2신호 확인**); openwiki ⭐12.6k L5(LangChain 코드베이스 위키 CLI, OKF 형식, CI/CD 네이티브, 15일 만에 12.6k 스타, **"에이전트 최적화 문서 레이어" 2신호 확인**); AstrBot ⭐37k L2/L6(IM 채널 하네스, 14+ 플랫폼). reference-levels.md: 2026-07-20 로그에 3개 신호 항목 추가; 2개 2신호 패턴 확인(정식 분류 변경 없음; 미심사례 규칙 적용). 50/50 테스트. 레지스트리: 추가 없음. |
 | 2026-07-19 (run 2) | 데일리 스캔 (5개 문서): transcribe.cpp ⭐811 L7(16패밀리 로컬 ASR, HN 670점 — 오늘 최고, moonshine-micro와 로컬 ASR 2신호 패턴); Qwen3.8 L1-대기(2.4T 플래그십 프리뷰, HN 560점, 웨이트/벤치마크 없음); ktransformers ⭐18.3k L7(CPU-GPU MoE 전문가 라우팅, ACM SIGOPS 2026, airllm과 소비자 로컬 추론 2신호); QwenPaw v2.0.0 ⭐23.5k L2(에이전트 OS 커널 샌드박스, 두 번째 Agent OS 신호); Qwen3-Coder-Next L1-대기(SWE-Bench 70.6%, 30B-A3B MoE, AWS Bedrock 등록, 가격 미확인). reference-levels.md: 2026-07-19 로그 확장; 2개 패턴 메모(소비자 로컬 추론 서브스트레이트·로컬 ASR 라이브러리); 정식 분류 변경 없음. 50/50 테스트. 레지스트리: 추가 없음. |
 | 2026-07-18 (run 2) | 데일리 스캔 (3개 문서): kimi-cli ⭐9.4k L1(MoonshotAI 터미널 코딩 에이전트, K3와 수직 통합, ACP+MCP, kimi-code로 이전 중); wigolo ⭐1.1k L4c(로컬 퍼스트 웹 인텔리전스 MCP, 10개 도구·18개 엔진·$0/쿼리·AGPL-3.0, 오프라인 리서치 공백 채움); SenseNova-U1 ⭐3.96k L1-MM(SenseTime NEO-unify 멀티모달, VE+VAE 제거, 8B 덴스+A3B MoE, llms.json 스키마 갭 노출). 50/50 테스트. 레지스트리: 추가 없음. 2026-07-18 누계: 7개 문서. |
 | 2026-07-17 | 데일리 스캔 run 2 (2개 추가 문서, 오늘 총 5개): LobeHub ⭐80.4k L2("수석 에이전트 운영자" 플랫폼 — 에이전트 팀 스케줄링, 10,000+ MCP 스킬, White-Box 메모리, v2.2.10 7월 10일, 최초 전용 등록); Sourcebot ⭐3.6k L5(에이전트를 위한 자체 호스팅 코드 인텔리전스, 인용 근거 NL Q&A + 크로스 레포 내비게이션, v5.1.2 7월 16일). reference-levels.md: 2개 신규 신호 항목 추가; 크로스 데이 2신호 워치 설정(LobeHub + nanobot 2026-07-15, 영속 팀 관리 서브타입). 50/50 테스트. 레지스트리: 추가 없음. |
