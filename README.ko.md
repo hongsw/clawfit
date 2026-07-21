@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-07-20)
+## 🔥 지금 가장 뜨거운 것들 (2026-07-21)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[PrefectHQ/fastmcp ⭐26,500](https://github.com/PrefectHQ/fastmcp)** | MCP 서버/클라이언트 구축 분야 최대 Python 프레임워크: 전체 MCP 서버의 ~70%, 일 ~100만 다운로드. v1.0이 공식 MCP Python SDK에 편입. v3.4.x: SSRF/DNS 리바인딩 보안 강화, OAuth 공급자 지원(Hugging Face·Azure AD B2C), Prefect Horizon 엔터프라이즈 게이트웨이(SSO·RBAC·감사 로그). "Apps" 기능으로 대화 내 인터랙티브 UI 위젯 렌더링(L6 신호). GitHub Trending. | L4 |
-| **[langchain-ai/open-swe ⭐10,400](https://github.com/langchain-ai/open-swe)** | Stripe·Ramp·Coinbase가 사내 사용하는 비동기 SWE 에이전트 아키텍처의 오픈소스 참조 구현. 태스크를 클라우드 샌드박스(Modal/Daytona/E2B/Runloop)에 디스패치 → 비지도 실행 → 드래프트 PR로 결과 제출. Slack·Linear·GitHub PR 코멘트로 멀티채널 트리거. LangGraph + Deep Agents 기반. **background-agents(2026-07-13)와 함께 "비동기 SWE 하네스" 2신호 패턴 확인.** | L2 |
-| **[langchain-ai/openwiki ⭐12,600](https://github.com/langchain-ai/openwiki)** | 코드베이스에서 에이전트 전용 구조화 문서(OKF 형식)를 자동 생성하는 CLI. 15일 만에 12.6k 스타 — 잠재 수요 강력 확인. CI/CD 네이티브(GitHub Actions·GitLab CI·Bitbucket). 다중 LLM 공급자 지원. **Agent Docs for Markdown(2026-07-19)과 함께 "에이전트 최적화 문서 레이어" 2신호 패턴 확인.** v0.2.0 7월 16일 출시; pre-1.0 주의. | L5 |
-| **[AstrBotDevs/AstrBot ⭐37,000](https://github.com/AstrBotDevs/AstrBot)** | 14개 이상 IM 플랫폼(위챗·QQ·텔레그램·디스코드·슬랙)을 지원하는 AI 에이전트 프레임워크. 36k 스타; 국내 대규모 채택. L2/L6 공백 채움: 개발자 CLI/IDE가 아닌 기존 그룹 채팅 앱을 통해 엔드유저가 직접 에이전트를 사용하는 IM 채널 하네스 패턴. | L2/L6 |
-| **[tirth8205/code-review-graph ⭐22,800](https://github.com/tirth8205/code-review-graph)** | 오늘 GitHub Trending 전체 언어 1위 (+1,876). MCP + CLI 로컬 코드 인텔리전스 그래프. 30개 MCP 도구, 82x 토큰 절감, GitHub Action 머지 게이트. L4c 클러스터 선두. | L4c |
-| **[kvcache-ai/ktransformers ⭐18,700](https://github.com/kvcache-ai/ktransformers)** | CPU-GPU 이기종 MoE 추론: AMX/AVX 커널(콜드 전문가) + CUDA(핫 전문가). 프리필 4.62–19.74× 속도 향상(ACM SIGOPS 2026). DeepSeek-V3/R1·MiniMax-M3 소비자 하드웨어 실행. airllm과 2신호 패턴 확인. Apache 2.0. | L7 |
-| **Kimi K3 (MoonshotAI)** | 2.8T MoE, 1M 토큰 컨텍스트, 입력 $3/출력 $15. FrontierSWE 81.2% 자체 발표. 웨이트 2026-07-27 예정. 수요 급증으로 신규 구독 중단. | L1 대기 |
-| **[lobehub/lobe-chat ⭐80,400](https://github.com/lobehub/lobe-chat)** | "수석 에이전트 운영자" 플랫폼: 에이전트 팀 스케줄링, 10,000+ MCP 스킬, 화이트박스 메모리. 멀티에이전트 최대 오픈소스 플랫폼. v2.2.10, 2,850+ 릴리즈. | L2 |
+| **[JustVugg/colibri ⭐17,430](https://github.com/JustVugg/colibri)** | 순수 C, 의존성 제로 MoE 추론 엔진. GLM-5.2(744B MoE)를 25GB RAM으로 구동 — 필요한 전문가 가중치만 디스크에서 스트리밍. 학습 캐시(자주 쓰는 전문가 자동 핀), 71.6% 프리페치 예측률. 기준 0.05–0.1 tok/s(배치 전용). v1.0.0, 출시 19일 만에 17k 스타. **ktransformers(2026-07-19)와 함께 "MoE-네이티브 소비자 추론" 2신호 조건 충족.** | L1 |
+| **[XiaomiMiMo/MiMo-Code ⭐12,297](https://github.com/XiaomiMiMo/MiMo-Code)** | 샤오미의 터미널 코딩 에이전트(OpenCode 포크). 3역할 권한 모델(`build`/`plan`/`compose`), 크로스 세션 영구 메모리(MEMORY.md + SQLite FTS5), 결정론적 JS 워크플로(compose/deep-research/fact-check), 30+ 내장 스킬, 음성 입력(TenVAD + MiMo ASR). 클라우드 없이 로컬 메모리. v0.1.7, 출시 41일. | L2/L5 |
+| **[omnigent-ai/omnigent ⭐7,576](https://github.com/omnigent-ai/omnigent)** | Claude Code·Codex·Cursor·OpenCode·Hermes·Pi를 하나의 YAML 정의 세션 모델로 오케스트레이션하는 메타-하네스. 슈퍼바이저 패턴 네이티브, 크로스 디바이스 세션 동기화(터미널→브라우저→모바일), 클라우드 샌드박스 위임(Modal·Daytona·E2B·Kubernetes), 거버넌스 레이어(명령어 승인·에이전트별 비용 한도). **loop-engineering(2026-07-05)과 함께 "멀티 에이전트 메타-하네스" 2신호 패턴 확인.** v0.6.0 알파. | L2/L3 |
+| **[unicity-aos/aos-ce ⭐5,405](https://github.com/unicity-aos/aos-ce)** | Rust 기반 오픈 에이전트 OS. 캡슐 모델(최소 권한 유저 스페이스 빌딩 블록), Forge 자기확장 도구(에이전트가 OS를 검사해 검증된 캡슐을 런타임에 빌드), Sigstore 서명 릴리즈, 런타임 호환성 게이트. L2 프레임워크 아래 OS 레벨 기판을 자처. 출시 9일. | L1/L2 |
+| **[shepherd-agents/shepherd ⭐1,513](https://github.com/shepherd-agents/shepherd)** | 에이전트 실행을 되돌릴 수 있는 Git 유사 트레이스로 기록하는 런타임 기판. 파일 쓰기 전 제안 스테이징, 카피온라이트 포킹(~5× Docker 속도), 재생 시 KV 캐시 95% 재사용. OS 레벨 권한 시행(macOS Seatbelt·Linux Landlock). MCTS-RL 메타-에이전트 감독 지원 설계. 스캔 코퍼스 최초 가역 실행 기판. | L5/L2 |
+| **[langchain-ai/openwiki ⭐12,600](https://github.com/langchain-ai/openwiki)** | 코드베이스에서 에이전트 전용 구조화 문서(OKF 형식) 자동 생성 CLI. 15일 12.6k 스타. CI/CD 네이티브. **Agent Docs for Markdown과 2신호 "에이전트 최적화 문서 레이어" 패턴 확인.** | L5 |
+| **[langchain-ai/open-swe ⭐10,400](https://github.com/langchain-ai/open-swe)** | Stripe·Ramp·Coinbase 비동기 SWE 에이전트 패턴의 오픈소스 참조 구현. 클라우드 샌드박스 디스패치→드래프트 PR. **background-agents와 2신호 확인.** | L2 |
+| **[PrefectHQ/fastmcp ⭐26,500](https://github.com/PrefectHQ/fastmcp)** | 전체 MCP 서버의 ~70%, 일 ~100만 다운로드. Prefect Horizon 엔터프라이즈 게이트웨이(SSO·RBAC). L4 MCP 항목의 품질 기준선. | L4 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (491개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (498개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
