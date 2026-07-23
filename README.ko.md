@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-07-22)
+## 🔥 지금 가장 뜨거운 것들 (2026-07-23)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[bojieli/ai-agent-book ⭐14,349](https://github.com/bojieli/ai-agent-book)** | 2026-07-22 GitHub 전체 언어 트렌딩 2위 오픈소스 에이전트 엔지니어링 교재. 10챕터+88개 실행 가능 프로젝트가 분류체계 전 범위를 커버: 컨텍스트 엔지니어링(L5)·도구(L4)·코딩 에이전트(L2)·평가·모델 후처리·멀티에이전트. "Agent = LLM + Context + Tools" 공식. 영·중·중번·Tamil·베트남어 동시 출시. 스타 수는 도구 채택이 아닌 **분야 성숙도 신호**. | L1–L5 |
-| **[earthtojake/text-to-cad ⭐9,090](https://github.com/earthtojake/text-to-cad)** | 스캔 코퍼스 최초 물리 세계 도메인 스킬팩. 10개 스킬: CAD(STEP/STL/3MF/GLB), DXF 2D 도면, URDF/SRDF 로봇 구조, 실제 슬라이서 CLI G-code, Bambu Labs 3D 프린터 제어, SendCutSend 가공 검증. Build123d+OpenCASCADE 기반 — 프로덕션급 형상 커널. 1k 포크, Discord 활성. | L4b |
-| **[ayghri/i-have-adhd ⭐6,811](https://github.com/ayghri/i-have-adhd)** | 10개 규칙 출력 규율 스킬: 결론 먼저·단계 번호·서문 없음·요약 없음·목록 5개 이하. 크로스 에이전트 플러그인(`plugin.json`, `.claude-plugin/`, `.codex-plugin/`). 에이전트 행동 제약이 마켓플레이스 아티팩트로 배포 가능함을 확인한 **최초 설치형 출력 규율 스킬**. | L4b |
-| **[block/buzz (213 HN점)](https://github.com/block/buzz)** | Block의 오픈소스 팀 워크스페이스. AI 에이전트가 Nostr Ed25519 키페어를 받아 인간과 동일한 기본 요소로 멤버 활동 — 별도 봇 API 없음. 에이전트 아이덴티티를 프로토콜 레이어에 직접 인코딩. Apache 2.0, 자체 호스팅 가능, v0.4.21. | L6/L4 |
-| **[poolside/Laguna-S-2.1](https://huggingface.co/poolside/Laguna-S-2.1)** | 총 118B/활성 8B MoE 코딩 모델(256 전문가, top-10). RL 후처리를 다수 하네스에서 병행 — 평가 오버피팅 방지. `pool` 하네스(최대 500스텝, 샌드박스) 동반 출시 — 모델+하네스 쌍. OpenRouter $0.10/$0.20/1M 토큰, 1M 컨텍스트. | L1 |
-| **[JustVugg/colibri ⭐17,430](https://github.com/JustVugg/colibri)** | 순수 C, 의존성 제로, GLM-5.2(744B MoE)를 25GB RAM으로 구동 — 전문가 가중치 스트리밍. 학습 캐시, 71.6% 프리페치 예측률. v1.0.0. **ktransformers와 "MoE 소비자 추론" 2신호 확인.** | L1 |
-| **[omnigent-ai/omnigent ⭐7,576](https://github.com/omnigent-ai/omnigent)** | Claude Code·Codex·Cursor·OpenCode·Hermes·Pi를 YAML 세션 모델로 오케스트레이션하는 메타-하네스. 크로스 디바이스 동기화·거버넌스 레이어(명령 승인·에이전트별 비용 한도). **loop-engineering과 "멀티 에이전트 메타-하네스" 2신호 확인.** | L2/L3 |
-| **[PrefectHQ/fastmcp ⭐26,500](https://github.com/PrefectHQ/fastmcp)** | 전체 MCP 서버 ~70%, 일 ~100만 다운로드를 차지하는 지배적 Python MCP 프레임워크. Prefect Horizon 엔터프라이즈 게이트웨이(SSO·RBAC). L4 MCP 항목 품질 기준선. | L4 |
+| **[mediar-ai/screenpipe ⭐20,400](https://github.com/mediar-ai/screenpipe)** | 오늘 HN YC S26 런치. 화면+오디오를 24시간 로컬 녹화해 타임스탬프 DB로 저장, MCP로 에이전트에 노출. 코퍼스 최초 **패시브 앰비언트 컨텍스트** 서브타입: 사용자 어노테이션 없이 에이전트가 실제 작업 내용을 쿼리 가능. Rust, 로컬 퍼스트, 프라이버시. app-v2.5.132 오늘 출시. | L5 |
+| **[oraios/serena ⭐26,793](https://github.com/oraios/serena)** | 스캔 코퍼스에서 가장 많이 교차 참조된 MCP 툴킷, 최초 전담 항목 등록. 시맨틱 코드 검색·정의 이동·레퍼런스 탐색·읽기/쓰기 편집을 MCP 도구 호출로 노출 — MCP 호환 에이전트에 IDE급 코드 인텔리전스 제공. 16개월 지속 개발. code-review-graph와 L4c 코드 인텔리전스 서브타입 2신호 조건 접근 중. | L4c |
+| **[ComposioHQ/awesome-claude-skills ⭐69,282](https://github.com/ComposioHQ/awesome-claude-skills)** | 단일 벤더 최대 Claude 스킬 컬렉션: 10개 카테고리 1,000+ 스킬 + 실제 API를 실행 시 호출하는 78개 SaaS 커넥터(Slack·GitHub·Salesforce·Notion). Composio 커넥터 레이어는 정적 SKILL.md팩과 구조적으로 상이 — `network: online` + OAuth 의존성 수반. 네 번째 대형 커뮤니티 어그리게이터 신호. | L4b |
+| **[diegosouzapw/OmniRoute ⭐26,785](https://github.com/diegosouzapw/OmniRoute)** | 278개 AI 프로바이더·500+ 모델·11개 토큰 압축 엔진을 MIT 라이선스 단일 게이트웨이에 번들. 22일간 8,500→26,785 스타 성장 — 이 사이클 로컬 라우팅 기판 최고 속도. clawfit 비용 축은 압축 하에서 하한 추정치가 됨; `local-gateway` 하드웨어 변형 미모델링. | L7 |
+| **[bojieli/ai-agent-book ⭐14,349](https://github.com/bojieli/ai-agent-book)** | 2026-07-22 GitHub 전체 언어 트렌딩 2위 오픈소스 에이전트 엔지니어링 교재. 10챕터+88개 실행 가능 프로젝트, "Agent = LLM + Context + Tools" 공식. **"에이전트 엔지니어링 정규 학문" 2신호 확인.** | L1–L5 |
+| **[poolside/Laguna-S-2.1](https://huggingface.co/poolside/Laguna-S-2.1)** | 총 118B/활성 8B MoE 코딩 모델. 다수 하네스 병행 RL 후처리 — 평가 오버피팅 방지. `pool` 하네스 동시 출시 — 스캔 코퍼스 최초 모델+하네스 쌍 릴리스. OpenRouter $0.10/$0.20/1M, 1M 컨텍스트. | L1 |
+| **[earthtojake/text-to-cad ⭐9,855](https://github.com/earthtojake/text-to-cad)** | 최초 물리 세계 도메인 스킬팩. CAD·URDF/SRDF 로봇·G-code+실제 슬라이서·Bambu Labs·SendCutSend 가공 검증. **addyosmani/agent-skills와 "수직 도메인 스킬팩" 2신호 확인.** | L4b |
+| **[onecli/onecli ⭐2,571](https://github.com/onecli/onecli)** | 에이전트용 자격증명 게이트웨이: API 키를 볼트에 저장, 에이전트에는 호출당 스코프 토큰 발행 — 원본 키 노출 없음. 최초 "에이전트 자격증명 게이트웨이" 신호. `governance_need: hard` + `network: online` 격리 갭 충족. 4.5개월간 42회 릴리스. | L5 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (503개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (507개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-07-23 | 데일리 스캔 (4개 문서): serena ⭐26,793 L4c (MCP 코드 인텔리전스+편집 툴킷, 6× 교차 참조 후 최초 전담 항목); screenpipe ⭐20,400 L5 (YC S26 런치, 24시간 로컬 화면 녹화 패시브 앰비언트 컨텍스트 — 최초 서브타입 신호); onecli ⭐2,571 L5/L4c (자격증명 볼트 게이트웨이, 에이전트에 원본 키 미노출 — 최초 "에이전트 자격증명 게이트웨이" 신호); awesome-claude-skills ⭐69,282 L4b (최대 Claude 스킬 어그리게이터, 1,000+ 스킬 + 78개 Composio SaaS 커넥터). OmniRoute: 3× 스타 성장 업데이트 (8.5k→26.8k, 22일). reference-levels.md: 정규 변경 없음. 50/50 테스트. 레지스트리: 추가 없음. |
 | 2026-07-22 | 데일리 스캔 (5개 문서): ai-agent-book ⭐14,349 L1–L5 (에이전트 엔지니어링 교재, GitHub 트렌딩 전체 2위, 88개 실행 프로젝트, "Agent = LLM + Context + Tools"); text-to-cad ⭐9,090 L4b (최초 물리 세계 도메인 스킬팩 — CAD/URDF/G-code/Bambu Labs/SendCutSend, Build123d+OpenCASCADE); i-have-adhd ⭐6,811 L4b (10규칙 출력 규율 스킬, 크로스 에이전트 플러그인 매니페스트, 최초 설치형 출력 규율 스킬); Buzz L6/L4 (Block 오픈소스 워크스페이스, Nostr Ed25519 키페어 에이전트 아이덴티티, 213 HN점); Poolside Laguna S 2.1 L1 (118B/8B-활성 MoE 코딩 모델, OpenRouter $0.10/$0.20/1M, pool 하네스 동반). reference-levels.md: 변경 없음 (2신호 조건 미충족). 50/50 테스트. 레지스트리: 추가 없음. |
 | 2026-07-20 | 데일리 스캔 (4개 문서 합계): fastmcp ⭐26.5k L4(PrefectHQ Python MCP 프레임워크, 전체 MCP 서버 ~70%, Prefect Horizon 엔터프라이즈 게이트웨이, GitHub Trending); open-swe ⭐10.4k L2(LangChain 비동기 SWE 에이전트, 샌드박스 격리, 멀티채널 디스패치, **"비동기 SWE 하네스" 2신호 확인**); openwiki ⭐12.6k L5(LangChain 코드베이스 위키 CLI, OKF 형식, CI/CD 네이티브, 15일 만에 12.6k 스타, **"에이전트 최적화 문서 레이어" 2신호 확인**); AstrBot ⭐37k L2/L6(IM 채널 하네스, 14+ 플랫폼). reference-levels.md: 2026-07-20 로그에 3개 신호 항목 추가; 2개 2신호 패턴 확인(정식 분류 변경 없음; 미심사례 규칙 적용). 50/50 테스트. 레지스트리: 추가 없음. |
 | 2026-07-19 (run 2) | 데일리 스캔 (5개 문서): transcribe.cpp ⭐811 L7(16패밀리 로컬 ASR, HN 670점 — 오늘 최고, moonshine-micro와 로컬 ASR 2신호 패턴); Qwen3.8 L1-대기(2.4T 플래그십 프리뷰, HN 560점, 웨이트/벤치마크 없음); ktransformers ⭐18.3k L7(CPU-GPU MoE 전문가 라우팅, ACM SIGOPS 2026, airllm과 소비자 로컬 추론 2신호); QwenPaw v2.0.0 ⭐23.5k L2(에이전트 OS 커널 샌드박스, 두 번째 Agent OS 신호); Qwen3-Coder-Next L1-대기(SWE-Bench 70.6%, 30B-A3B MoE, AWS Bedrock 등록, 가격 미확인). reference-levels.md: 2026-07-19 로그 확장; 2개 패턴 메모(소비자 로컬 추론 서브스트레이트·로컬 ASR 라이브러리); 정식 분류 변경 없음. 50/50 테스트. 레지스트리: 추가 없음. |
