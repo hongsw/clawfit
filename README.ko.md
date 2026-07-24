@@ -68,7 +68,7 @@
 | 자동화 테스트 | **29개** |
 | 분류 레이어 (L0–L7) | **8개** |
 | 스코어링 차원 수 | **6개** (레이턴시×3 + 비용 + 선호도 + 성숙도) |
-| 추적된 스캔 날짜 | **24일** (2026-03-31 → 오늘) |
+| 추적된 스캔 날짜 | **25일** (2026-03-31 → 오늘) |
 
 ---
 
@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-07-23)
+## 🔥 지금 가장 뜨거운 것들 (2026-07-24)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[mediar-ai/screenpipe ⭐20,400](https://github.com/mediar-ai/screenpipe)** | 오늘 HN YC S26 런치. 화면+오디오를 24시간 로컬 녹화해 타임스탬프 DB로 저장, MCP로 에이전트에 노출. 코퍼스 최초 **패시브 앰비언트 컨텍스트** 서브타입: 사용자 어노테이션 없이 에이전트가 실제 작업 내용을 쿼리 가능. Rust, 로컬 퍼스트, 프라이버시. app-v2.5.132 오늘 출시. | L5 |
-| **[oraios/serena ⭐26,793](https://github.com/oraios/serena)** | 스캔 코퍼스에서 가장 많이 교차 참조된 MCP 툴킷, 최초 전담 항목 등록. 시맨틱 코드 검색·정의 이동·레퍼런스 탐색·읽기/쓰기 편집을 MCP 도구 호출로 노출 — MCP 호환 에이전트에 IDE급 코드 인텔리전스 제공. 16개월 지속 개발. code-review-graph와 L4c 코드 인텔리전스 서브타입 2신호 조건 접근 중. | L4c |
-| **[ComposioHQ/awesome-claude-skills ⭐69,282](https://github.com/ComposioHQ/awesome-claude-skills)** | 단일 벤더 최대 Claude 스킬 컬렉션: 10개 카테고리 1,000+ 스킬 + 실제 API를 실행 시 호출하는 78개 SaaS 커넥터(Slack·GitHub·Salesforce·Notion). Composio 커넥터 레이어는 정적 SKILL.md팩과 구조적으로 상이 — `network: online` + OAuth 의존성 수반. 네 번째 대형 커뮤니티 어그리게이터 신호. | L4b |
-| **[diegosouzapw/OmniRoute ⭐26,785](https://github.com/diegosouzapw/OmniRoute)** | 278개 AI 프로바이더·500+ 모델·11개 토큰 압축 엔진을 MIT 라이선스 단일 게이트웨이에 번들. 22일간 8,500→26,785 스타 성장 — 이 사이클 로컬 라우팅 기판 최고 속도. clawfit 비용 축은 압축 하에서 하한 추정치가 됨; `local-gateway` 하드웨어 변형 미모델링. | L7 |
-| **[bojieli/ai-agent-book ⭐14,349](https://github.com/bojieli/ai-agent-book)** | 2026-07-22 GitHub 전체 언어 트렌딩 2위 오픈소스 에이전트 엔지니어링 교재. 10챕터+88개 실행 가능 프로젝트, "Agent = LLM + Context + Tools" 공식. **"에이전트 엔지니어링 정규 학문" 2신호 확인.** | L1–L5 |
-| **[poolside/Laguna-S-2.1](https://huggingface.co/poolside/Laguna-S-2.1)** | 총 118B/활성 8B MoE 코딩 모델. 다수 하네스 병행 RL 후처리 — 평가 오버피팅 방지. `pool` 하네스 동시 출시 — 스캔 코퍼스 최초 모델+하네스 쌍 릴리스. OpenRouter $0.10/$0.20/1M, 1M 컨텍스트. | L1 |
-| **[earthtojake/text-to-cad ⭐9,855](https://github.com/earthtojake/text-to-cad)** | 최초 물리 세계 도메인 스킬팩. CAD·URDF/SRDF 로봇·G-code+실제 슬라이서·Bambu Labs·SendCutSend 가공 검증. **addyosmani/agent-skills와 "수직 도메인 스킬팩" 2신호 확인.** | L4b |
-| **[onecli/onecli ⭐2,571](https://github.com/onecli/onecli)** | 에이전트용 자격증명 게이트웨이: API 키를 볼트에 저장, 에이전트에는 호출당 스코프 토큰 발행 — 원본 키 노출 없음. 최초 "에이전트 자격증명 게이트웨이" 신호. `governance_need: hard` + `network: online` 격리 갭 충족. 4.5개월간 42회 릴리스. | L5 |
+| **[Claude Opus 5](https://www.anthropic.com/news/claude-opus-5)** | 오늘 Anthropic 플래그십 출시 (HN 446점). 입력 비용 Opus 4 $15/M → **$5/M** (67% 인하), ARC-AGI 3 3× 향상, SWE 최고 성능 주장. 패스트 모드(2× 가격, 2.5× 속도). llms.json에 `claude-opus-5` 추가. | LLM |
+| **[humanlayer/acp](https://github.com/humanlayer/acp)** | Kubernetes 네이티브 에이전트 스케줄러. 에이전트·도구·태스크·도구 호출을 CRD로 모델링. 각 도구 호출마다 체크포인트로 영속 실행, 인간 승인 게이트와 전문가 연락 채널이 일등 시민 기본 요소. MCP 도구 통합, OpenTelemetry 내장. HN 146점. | L2/L5 |
+| **[citrolabs/ego-lite ⭐1,612](https://github.com/citrolabs/ego-lite)** | 에이전트마다 격리된 헤드리스 브라우저를 쓰는 기존 패턴을 역전. 에이전트가 사용자의 macOS 라이브 브라우저(인증 세션·쿠키·북마크 상속)를 격리된 Space 내에서 공유. JS 함수 API로 도구 호출 왕복 감소. 속도 2.5× 향상 주장. | L4c/L6 |
+| **[izeigerman/claude-thermos](https://github.com/izeigerman/claude-thermos)** | 멀티에이전트 세션의 유휴 구간 동안 Claude 프롬프트 캐시를 살려두는 투명 역방향 프록시. 메인 에이전트 대기·서브에이전트 실행 패턴을 감지해 5분 TTL 만료 전 최소 워밍 요청 전송. API 비용 ~20% 절감 주장. 코드 변경 불필요. | L2 |
+| **[open-multi-agent/open-multi-agent ⭐6,700](https://github.com/open-multi-agent/open-multi-agent)** | 목표를 입력하면 코디네이터가 런타임에 태스크 DAG를 자동 생성 — 그래프 직접 작성 불필요. 체크포인트 기반 복구·토큰/비용 예산·루프 감지·안정적 실행 ID. Claude·GPT·Gemini·DeepSeek 멀티 모델. MIT. | L2 |
+| **[oraios/serena ⭐26,793](https://github.com/oraios/serena)** | 스캔 코퍼스에서 가장 많이 교차 참조된 MCP 툴킷. 시맨틱 코드 검색·정의 이동·레퍼런스 탐색·읽기/쓰기 편집을 MCP 도구 호출로 노출 — MCP 호환 에이전트에 IDE급 코드 인텔리전스. 16개월 지속 개발. | L4c |
+| **[diegosouzapw/OmniRoute ⭐28,487](https://github.com/diegosouzapw/OmniRoute)** | 290개 AI 프로바이더·500+ 모델·11개 토큰 압축 엔진을 MIT 라이선스 단일 게이트웨이에 번들. 24일간 8,500→28,487 스타. 오늘도 GitHub 트렌딩. | L7 |
+| **[mediar-ai/screenpipe ⭐20,400](https://github.com/mediar-ai/screenpipe)** | YC S26. 화면+오디오 24시간 로컬 녹화, 타임스탬프 DB 저장, MCP로 에이전트 노출. 코퍼스 최초 **패시브 앰비언트 컨텍스트** 서브타입. | L5 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (507개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (512개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-07-24 | 데일리 스캔 (5개 문서): Claude Opus 5 (Anthropic 플래그십 오늘 출시, 입력 $5/M, ARC-AGI 3 3× 향상, HN 446점 — **llms.json +1** `claude-opus-5`); HumanLayer ACP L2/L5 (Kubernetes 네이티브 에이전트 스케줄러, 에이전트·도구·태스크 CRD, 체크포인트 영속 실행, HN 146점); ego-lite ⭐1,612 L4c/L6 (인간+에이전트 공유 라이브 브라우저, 인증 세션 상속, JS API, 속도 2.5× 주장); claude-thermos L2 (멀티에이전트 유휴 구간 프롬프트 캐시 워밍 프록시, API 비용 ~20% 절감 주장); open-multi-agent ⭐6,700 L2 (TypeScript 런타임 DAG 자동 생성, 체크포인트 복구, 멀티 모델, MIT). reference-levels.md: 변경 없음. 50/50 테스트. 레지스트리: claude-opus-5 추가. |
 | 2026-07-23 | 데일리 스캔 (4개 문서): serena ⭐26,793 L4c (MCP 코드 인텔리전스+편집 툴킷, 6× 교차 참조 후 최초 전담 항목); screenpipe ⭐20,400 L5 (YC S26 런치, 24시간 로컬 화면 녹화 패시브 앰비언트 컨텍스트 — 최초 서브타입 신호); onecli ⭐2,571 L5/L4c (자격증명 볼트 게이트웨이, 에이전트에 원본 키 미노출 — 최초 "에이전트 자격증명 게이트웨이" 신호); awesome-claude-skills ⭐69,282 L4b (최대 Claude 스킬 어그리게이터, 1,000+ 스킬 + 78개 Composio SaaS 커넥터). OmniRoute: 3× 스타 성장 업데이트 (8.5k→26.8k, 22일). reference-levels.md: 정규 변경 없음. 50/50 테스트. 레지스트리: 추가 없음. |
 | 2026-07-22 | 데일리 스캔 (5개 문서): ai-agent-book ⭐14,349 L1–L5 (에이전트 엔지니어링 교재, GitHub 트렌딩 전체 2위, 88개 실행 프로젝트, "Agent = LLM + Context + Tools"); text-to-cad ⭐9,090 L4b (최초 물리 세계 도메인 스킬팩 — CAD/URDF/G-code/Bambu Labs/SendCutSend, Build123d+OpenCASCADE); i-have-adhd ⭐6,811 L4b (10규칙 출력 규율 스킬, 크로스 에이전트 플러그인 매니페스트, 최초 설치형 출력 규율 스킬); Buzz L6/L4 (Block 오픈소스 워크스페이스, Nostr Ed25519 키페어 에이전트 아이덴티티, 213 HN점); Poolside Laguna S 2.1 L1 (118B/8B-활성 MoE 코딩 모델, OpenRouter $0.10/$0.20/1M, pool 하네스 동반). reference-levels.md: 변경 없음 (2신호 조건 미충족). 50/50 테스트. 레지스트리: 추가 없음. |
 | 2026-07-20 | 데일리 스캔 (4개 문서 합계): fastmcp ⭐26.5k L4(PrefectHQ Python MCP 프레임워크, 전체 MCP 서버 ~70%, Prefect Horizon 엔터프라이즈 게이트웨이, GitHub Trending); open-swe ⭐10.4k L2(LangChain 비동기 SWE 에이전트, 샌드박스 격리, 멀티채널 디스패치, **"비동기 SWE 하네스" 2신호 확인**); openwiki ⭐12.6k L5(LangChain 코드베이스 위키 CLI, OKF 형식, CI/CD 네이티브, 15일 만에 12.6k 스타, **"에이전트 최적화 문서 레이어" 2신호 확인**); AstrBot ⭐37k L2/L6(IM 채널 하네스, 14+ 플랫폼). reference-levels.md: 2026-07-20 로그에 3개 신호 항목 추가; 2개 2신호 패턴 확인(정식 분류 변경 없음; 미심사례 규칙 적용). 50/50 테스트. 레지스트리: 추가 없음. |
