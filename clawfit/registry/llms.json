@@ -148,5 +148,15 @@
     "cost_per_1k_tokens": 0.001,
     "context_window": 1050000,
     "network": "online"
+  },
+  {
+    "id": "claude-opus-5",
+    "name": "Claude Opus 5",
+    "provider": "anthropic",
+    "tasks": ["research", "code-gen", "data-analysis", "qa"],
+    "latency": "high",
+    "cost_per_1k_tokens": 0.005,
+    "context_window": 1000000,
+    "network": "online"
   }
 ]
