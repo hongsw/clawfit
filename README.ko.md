@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-07-24)
+## 🔥 지금 가장 뜨거운 것들 (2026-07-25)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[Claude Opus 5](https://www.anthropic.com/news/claude-opus-5)** | 오늘 Anthropic 플래그십 출시 (HN 446점). 입력 비용 Opus 4 $15/M → **$5/M** (67% 인하), ARC-AGI 3 3× 향상, SWE 최고 성능 주장. 패스트 모드(2× 가격, 2.5× 속도). llms.json에 `claude-opus-5` 추가. | LLM |
-| **[humanlayer/acp](https://github.com/humanlayer/acp)** | Kubernetes 네이티브 에이전트 스케줄러. 에이전트·도구·태스크·도구 호출을 CRD로 모델링. 각 도구 호출마다 체크포인트로 영속 실행, 인간 승인 게이트와 전문가 연락 채널이 일등 시민 기본 요소. MCP 도구 통합, OpenTelemetry 내장. HN 146점. | L2/L5 |
-| **[citrolabs/ego-lite ⭐1,612](https://github.com/citrolabs/ego-lite)** | 에이전트마다 격리된 헤드리스 브라우저를 쓰는 기존 패턴을 역전. 에이전트가 사용자의 macOS 라이브 브라우저(인증 세션·쿠키·북마크 상속)를 격리된 Space 내에서 공유. JS 함수 API로 도구 호출 왕복 감소. 속도 2.5× 향상 주장. | L4c/L6 |
-| **[izeigerman/claude-thermos](https://github.com/izeigerman/claude-thermos)** | 멀티에이전트 세션의 유휴 구간 동안 Claude 프롬프트 캐시를 살려두는 투명 역방향 프록시. 메인 에이전트 대기·서브에이전트 실행 패턴을 감지해 5분 TTL 만료 전 최소 워밍 요청 전송. API 비용 ~20% 절감 주장. 코드 변경 불필요. | L2 |
-| **[open-multi-agent/open-multi-agent ⭐6,700](https://github.com/open-multi-agent/open-multi-agent)** | 목표를 입력하면 코디네이터가 런타임에 태스크 DAG를 자동 생성 — 그래프 직접 작성 불필요. 체크포인트 기반 복구·토큰/비용 예산·루프 감지·안정적 실행 ID. Claude·GPT·Gemini·DeepSeek 멀티 모델. MIT. | L2 |
-| **[oraios/serena ⭐26,793](https://github.com/oraios/serena)** | 스캔 코퍼스에서 가장 많이 교차 참조된 MCP 툴킷. 시맨틱 코드 검색·정의 이동·레퍼런스 탐색·읽기/쓰기 편집을 MCP 도구 호출로 노출 — MCP 호환 에이전트에 IDE급 코드 인텔리전스. 16개월 지속 개발. | L4c |
-| **[diegosouzapw/OmniRoute ⭐28,487](https://github.com/diegosouzapw/OmniRoute)** | 290개 AI 프로바이더·500+ 모델·11개 토큰 압축 엔진을 MIT 라이선스 단일 게이트웨이에 번들. 24일간 8,500→28,487 스타. 오늘도 GitHub 트렌딩. | L7 |
-| **[mediar-ai/screenpipe ⭐20,400](https://github.com/mediar-ai/screenpipe)** | YC S26. 화면+오디오 24시간 로컬 녹화, 타임스탬프 DB 저장, MCP로 에이전트 노출. 코퍼스 최초 **패시브 앰비언트 컨텍스트** 서브타입. | L5 |
+| **[can1357/oh-my-pi ⭐19.7k](https://github.com/can1357/oh-my-pi)** | LSP + DAP + MCP를 하위 프로세스가 아닌 네이티브 툴 원시형으로 내장한 터미널 코딩 에이전트. Rust 엔진 ~55k 줄, 내장 도구 32개, LLM 백엔드 40+개, 콘텐츠 해시 기반 에딧(stale-read 방지). 2025년 12월 이후 릴리즈 ~400건. oh-my-pi 두 번째 시그널; 풀 L2 프로덕션 에이전트로는 최초 전담 평가. | L2 |
+| **[MODSetter/SurfSense ⭐15.5k](https://github.com/MODSetter/SurfSense)** | 오픈소스 NotebookLM 대안. Reddit·YouTube·TikTok·Google Search/Maps·Amazon 등 10+ 라이브 소셜/웹 스크레이퍼를 REST 엔드포인트와 MCP 도구로 동시 노출 — 에이전트가 `surf_reddit`·`surf_web`을 MCP 툴콜로 직접 호출. "라이브 데이터 커넥터 MCP 서버" 서브 타입 최초 시그널. | L4c/L5 |
+| **UK AISI/Caisi Kimi K3 사이버 역량 평가** | UK AI 안전연구소(AISI) + 국제AI안전센터(Caisi) 공동 발행, NIST 게재, HN 114점. 프로덕션 프론티어 코딩 모델 대상 공식 정부 공격적 사이버 역량 평가 최초 공개. Kimi K3는 현재 추적 중인 최상위 모델(FrontierSWE 81.2%). `governance_need: hard` 프로필 권고 시 `safety_assessments` 공시 필드가 필요함을 시사. | L1 거버넌스 |
+| **NousResearch/hermes-agent v0.19.0 "Quicksilver"** | 첫 턴 TTFT ~80% 감소(하네스 레이어 스트리밍 파이프라인, 40+ LLM 백엔드 전체 적용) + 실시간 추론 스트림 기본 활성화. 검증 시 `latency: medium → low` 재분류 가능 — 현재 필터 탈락 프로필 재포함 대상. 여섯 번째 시그널; L6 인터페이스 투명성 차원 최초 추가. | L1/L6 |
+| **[OpenDCAI/DataFlow ⭐6.97k](https://github.com/OpenDCAI/DataFlow)** | SFT 데이터셋·RAG 지식 베이스 생성을 위한 LLM 기반 데이터 준비 파이프라인. DataFlow Agent가 자연어 프롬프트에서 파이프라인 DAG를 동적 조립 — "LLM이 목표로부터 실행 DAG를 구성" 패턴 두 번째 에코시스템 시그널(첫 번째: open-multi-agent 2026-07-24). Ray 분산 실행; Apache 2.0. | L5 |
+| **Claude Opus 5 (Anthropic)** | 프론티어 추론 모델($15/$75 per 1M tokens, 200k 컨텍스트) 2026-07-24 `llms.json` 등록. SWE-bench Verified 72.5%, GPQA Diamond 78.0% 기록 — 현재 clawfit 레지스트리 내 `task: research` 및 `task: code-gen` 프로필 최고 점수 엔트리. | L1 LLM |
+| **[open-multi-agent ⭐6.7k](https://github.com/open-multi-agent/open-multi-agent)** | TypeScript 멀티에이전트 프레임워크. 코디네이터 LLM이 런타임에 작업 DAG 생성 — 개발자가 그래프를 직접 그릴 필요 없음. 체크포인트 복구, 루프 감지, 계획 승인 게이트, 토큰/비용 예산 강제. TypeScript 네이티브 MIT 라이선스. "런타임 DAG 계획" L2 서브 타입 최초 시그널. | L2 |
+| **[humanlayer/acp](https://github.com/humanlayer/acp)** | Kubernetes 네이티브 에이전트 제어 플레인: 에이전트·도구·작업·툴콜을 CRD로 모델링 — `kubectl`로 가시화, 표준 클러스터 모니터링으로 알림. 내구적 체크포인트-재개 실행, 인간 승인 게이트 퍼스트클래스 도구, MCP 호환, OpenTelemetry 내장. 클러스터 인프라 필요 최초 L2 하네스 신호. | L2/L5 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (512개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (481개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-07-25 | 데일리 스캔 (5개 문서): oh-my-pi ⭐19.7k L2(풀 코딩 에이전트 — LSP/DAP/MCP 네이티브, Rust 엔진, 릴리즈 400+건, 콘텐츠 해시 에딧, 두 번째 시그널); SurfSense ⭐15.5k L4c/L5(NotebookLM 대안 + MCP 네이티브 라이브 소셜/웹 커넥터, "라이브 데이터 커넥터 MCP 서버" 최초 시그널); DataFlow ⭐6.97k L5(LLM 기반 SFT/RAG 데이터 준비, DataFlow Agent = "LLM이 DAG 조립" 두 번째 에코 시그널, Ray 분산); Hermes v0.19.0 "Quicksilver"(L1 TTFT ~80% 감소 + 실시간 추론 스트림 기본 활성화, 여섯 번째 시그널, latency 재분류 대기); UK AISI/Caisi Kimi K3 사이버 평가(HN 114점, NIST 게재, 최초 정부 공격적 역량 평가, `safety_assessments` 스키마 갭). reference-levels.md: 5-신호 발견 로그 + 감사 추가. 50/50 테스트. 레지스트리: 추가 없음. |
 | 2026-07-24 | 데일리 스캔 (5개 문서): Claude Opus 5 (Anthropic 플래그십 오늘 출시, 입력 $5/M, ARC-AGI 3 3× 향상, HN 446점 — **llms.json +1** `claude-opus-5`); HumanLayer ACP L2/L5 (Kubernetes 네이티브 에이전트 스케줄러, 에이전트·도구·태스크 CRD, 체크포인트 영속 실행, HN 146점); ego-lite ⭐1,612 L4c/L6 (인간+에이전트 공유 라이브 브라우저, 인증 세션 상속, JS API, 속도 2.5× 주장); claude-thermos L2 (멀티에이전트 유휴 구간 프롬프트 캐시 워밍 프록시, API 비용 ~20% 절감 주장); open-multi-agent ⭐6,700 L2 (TypeScript 런타임 DAG 자동 생성, 체크포인트 복구, 멀티 모델, MIT). reference-levels.md: 변경 없음. 50/50 테스트. 레지스트리: claude-opus-5 추가. |
 | 2026-07-23 | 데일리 스캔 (4개 문서): serena ⭐26,793 L4c (MCP 코드 인텔리전스+편집 툴킷, 6× 교차 참조 후 최초 전담 항목); screenpipe ⭐20,400 L5 (YC S26 런치, 24시간 로컬 화면 녹화 패시브 앰비언트 컨텍스트 — 최초 서브타입 신호); onecli ⭐2,571 L5/L4c (자격증명 볼트 게이트웨이, 에이전트에 원본 키 미노출 — 최초 "에이전트 자격증명 게이트웨이" 신호); awesome-claude-skills ⭐69,282 L4b (최대 Claude 스킬 어그리게이터, 1,000+ 스킬 + 78개 Composio SaaS 커넥터). OmniRoute: 3× 스타 성장 업데이트 (8.5k→26.8k, 22일). reference-levels.md: 정규 변경 없음. 50/50 테스트. 레지스트리: 추가 없음. |
 | 2026-07-22 | 데일리 스캔 (5개 문서): ai-agent-book ⭐14,349 L1–L5 (에이전트 엔지니어링 교재, GitHub 트렌딩 전체 2위, 88개 실행 프로젝트, "Agent = LLM + Context + Tools"); text-to-cad ⭐9,090 L4b (최초 물리 세계 도메인 스킬팩 — CAD/URDF/G-code/Bambu Labs/SendCutSend, Build123d+OpenCASCADE); i-have-adhd ⭐6,811 L4b (10규칙 출력 규율 스킬, 크로스 에이전트 플러그인 매니페스트, 최초 설치형 출력 규율 스킬); Buzz L6/L4 (Block 오픈소스 워크스페이스, Nostr Ed25519 키페어 에이전트 아이덴티티, 213 HN점); Poolside Laguna S 2.1 L1 (118B/8B-활성 MoE 코딩 모델, OpenRouter $0.10/$0.20/1M, pool 하네스 동반). reference-levels.md: 변경 없음 (2신호 조건 미충족). 50/50 테스트. 레지스트리: 추가 없음. |
