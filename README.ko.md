@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-07-25)
+## 🔥 지금 가장 뜨거운 것들 (2026-07-26)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[can1357/oh-my-pi ⭐19.7k](https://github.com/can1357/oh-my-pi)** | LSP + DAP + MCP를 하위 프로세스가 아닌 네이티브 툴 원시형으로 내장한 터미널 코딩 에이전트. Rust 엔진 ~55k 줄, 내장 도구 32개, LLM 백엔드 40+개, 콘텐츠 해시 기반 에딧(stale-read 방지). 2025년 12월 이후 릴리즈 ~400건. oh-my-pi 두 번째 시그널; 풀 L2 프로덕션 에이전트로는 최초 전담 평가. | L2 |
-| **[MODSetter/SurfSense ⭐15.5k](https://github.com/MODSetter/SurfSense)** | 오픈소스 NotebookLM 대안. Reddit·YouTube·TikTok·Google Search/Maps·Amazon 등 10+ 라이브 소셜/웹 스크레이퍼를 REST 엔드포인트와 MCP 도구로 동시 노출 — 에이전트가 `surf_reddit`·`surf_web`을 MCP 툴콜로 직접 호출. "라이브 데이터 커넥터 MCP 서버" 서브 타입 최초 시그널. | L4c/L5 |
-| **UK AISI/Caisi Kimi K3 사이버 역량 평가** | UK AI 안전연구소(AISI) + 국제AI안전센터(Caisi) 공동 발행, NIST 게재, HN 114점. 프로덕션 프론티어 코딩 모델 대상 공식 정부 공격적 사이버 역량 평가 최초 공개. Kimi K3는 현재 추적 중인 최상위 모델(FrontierSWE 81.2%). `governance_need: hard` 프로필 권고 시 `safety_assessments` 공시 필드가 필요함을 시사. | L1 거버넌스 |
-| **NousResearch/hermes-agent v0.19.0 "Quicksilver"** | 첫 턴 TTFT ~80% 감소(하네스 레이어 스트리밍 파이프라인, 40+ LLM 백엔드 전체 적용) + 실시간 추론 스트림 기본 활성화. 검증 시 `latency: medium → low` 재분류 가능 — 현재 필터 탈락 프로필 재포함 대상. 여섯 번째 시그널; L6 인터페이스 투명성 차원 최초 추가. | L1/L6 |
-| **[OpenDCAI/DataFlow ⭐6.97k](https://github.com/OpenDCAI/DataFlow)** | SFT 데이터셋·RAG 지식 베이스 생성을 위한 LLM 기반 데이터 준비 파이프라인. DataFlow Agent가 자연어 프롬프트에서 파이프라인 DAG를 동적 조립 — "LLM이 목표로부터 실행 DAG를 구성" 패턴 두 번째 에코시스템 시그널(첫 번째: open-multi-agent 2026-07-24). Ray 분산 실행; Apache 2.0. | L5 |
-| **Claude Opus 5 (Anthropic)** | 프론티어 추론 모델($15/$75 per 1M tokens, 200k 컨텍스트) 2026-07-24 `llms.json` 등록. SWE-bench Verified 72.5%, GPQA Diamond 78.0% 기록 — 현재 clawfit 레지스트리 내 `task: research` 및 `task: code-gen` 프로필 최고 점수 엔트리. | L1 LLM |
-| **[open-multi-agent ⭐6.7k](https://github.com/open-multi-agent/open-multi-agent)** | TypeScript 멀티에이전트 프레임워크. 코디네이터 LLM이 런타임에 작업 DAG 생성 — 개발자가 그래프를 직접 그릴 필요 없음. 체크포인트 복구, 루프 감지, 계획 승인 게이트, 토큰/비용 예산 강제. TypeScript 네이티브 MIT 라이선스. "런타임 DAG 계획" L2 서브 타입 최초 시그널. | L2 |
-| **[humanlayer/acp](https://github.com/humanlayer/acp)** | Kubernetes 네이티브 에이전트 제어 플레인: 에이전트·도구·작업·툴콜을 CRD로 모델링 — `kubectl`로 가시화, 표준 클러스터 모니터링으로 알림. 내구적 체크포인트-재개 실행, 인간 승인 게이트 퍼스트클래스 도구, MCP 호환, OpenTelemetry 내장. 클러스터 인프라 필요 최초 L2 하네스 신호. | L2/L5 |
+| **오픈 웨이트 AI, Kubernetes의 순간을 맞다** | HN 296점, 239 댓글. Kubernetes의 궤적: 복잡한 엔터프라이즈 전용 인프라 → 기본 배포 기판으로 상품화. 오픈 웨이트 AI에 적용된다면 독점 클라우드 API가 기본값에서 선택지로 이동 — clawfit의 `network` 및 `hardware` 필터 차원 재편 신호. 특정 도구 아님, 에코시스템 거시 신호. | 크로스 레이어 |
+| **Claude 5 세대 모델용 컨텍스트 엔지니어링 규칙** | Claude Opus 5 이후 Anthropic 컨텍스트 엔지니어링 가이드라인이 "단순화된 시스템 프롬프트가 복잡한 프롬프트와 동등한 성능" 주장. specsmaxxing(2026-05-03) 패턴의 반대 시그널. 검증 시 대형 CLAUDE.md 구조 내장 L2 도구에 수익 감소 가능. HN 121점 + GeekNews 프런트. | L2 |
+| **[jgravelle/jcodemunch-mcp ⭐2.2k](https://github.com/jgravelle/jcodemunch-mcp)** | tree-sitter 기반 AST 인덱싱으로 심볼 수준 코드 검색을 MCP 툴콜로 제공. 1회 인덱싱 후 심볼 조회·영향 반경 분석·데드코드 감지를 저비용으로 반복 쿼리. 코드 탐색 토큰 비용 95%+ 절감 주장. "코드 인텔리전스 MCP 서버" 서브 타입 두 번째 시그널(첫 번째: serena ⭐26.8k, 2026-07-23). Claude Code·Cursor·Windsurf·Continue 호환. | L4c |
+| **[sktkkoo/yorishiro](https://github.com/sktkkoo/yorishiro)** | AI 에이전트를 주인공으로 설계한 macOS 터미널. 기존 AI-터미널 통합(인간 주체, AI 보조)을 역전 — 에이전트가 1차 사용자, 인간이 관찰자. 코딩 에이전트 TUI(Grok Build, Terax)와 구별되는 에이전트 네이티브 *호스트* 환경 포지셔닝. "에이전트 네이티브 터미널 기판" 최초 시그널. | L1 |
+| **[can1357/oh-my-pi ⭐19.7k](https://github.com/can1357/oh-my-pi)** | LSP + DAP + MCP를 하위 프로세스가 아닌 네이티브 툴 원시형으로 내장한 터미널 코딩 에이전트. Rust 엔진 ~55k 줄, 내장 도구 32개, LLM 백엔드 40+개, 콘텐츠 해시 기반 에딧. 2025년 12월 이후 릴리즈 ~400건. 두 번째 시그널; 풀 L2 프로덕션 에이전트 최초 전담 평가. | L2 |
+| **[MODSetter/SurfSense ⭐15.5k](https://github.com/MODSetter/SurfSense)** | 오픈소스 NotebookLM 대안. Reddit·YouTube·TikTok·Google Maps·Amazon 등 10+ 라이브 소셜/웹 스크레이퍼를 REST 엔드포인트와 MCP 도구로 동시 노출. 에이전트가 `surf_reddit`·`surf_web`을 MCP 툴콜로 직접 호출. "라이브 데이터 커넥터 MCP 서버" 최초 시그널. | L4c/L5 |
+| **Claude Opus 5 (Anthropic)** | 프론티어 추론 모델($15/$75 per 1M tokens, 200k 컨텍스트) `llms.json` 등록. SWE-bench Verified 72.5%, GPQA Diamond 78.0% — 현재 clawfit 레지스트리 내 `task: research`, `task: code-gen` 최고 점수 엔트리. | L1 LLM |
+| **UK AISI/Caisi Kimi K3 사이버 역량 평가** | 정부 AI 안전 연구소(UK AISI + Caisi) 공동 발행, NIST 게재. 프로덕션 프론티어 코딩 모델 대상 최초 공식 공격적 사이버 역량 평가. Kimi K3(FrontierSWE 81.2%) 평가 대상. `governance_need: hard` 프로필에 `safety_assessments` 필드 필요성 시사. HN 114점. | L1 거버넌스 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (481개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (522개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-07-26 | 데일리 스캔 (5개 문서): Yorishiro L1(macOS 에이전트 네이티브 터미널 호스트, Show HN — 에이전트가 1차 사용자, 인간이 관찰자, 최초 시그널); 오픈 웨이트 AI Kubernetes 순간(HN 296점, 크로스 레이어 거시 신호); Claude 5 컨텍스트 엔지니어링 규칙(L2 하네스 설계 원칙, 단순화 프롬프트 = 성능 동등, HN 121점 + GeekNews — specsmaxxing 반대 신호); 28.9M 파라미터 LLM on $8 MCU(L7/하드웨어 에지 티어 최초 시그널); jcodemunch-mcp ⭐2.2k L4c(tree-sitter AST 심볼 수준 코드 검색 MCP 서버, "코드 인텔리전스 MCP" 두 번째 시그널). reference-levels.md: 2026-07-26 발견 로그 + 스키마 갭 4개. 50/50 테스트. 레지스트리: 추가 없음. |
 | 2026-07-25 | 데일리 스캔 (5개 문서): oh-my-pi ⭐19.7k L2(풀 코딩 에이전트 — LSP/DAP/MCP 네이티브, Rust 엔진, 릴리즈 400+건, 콘텐츠 해시 에딧, 두 번째 시그널); SurfSense ⭐15.5k L4c/L5(NotebookLM 대안 + MCP 네이티브 라이브 소셜/웹 커넥터, "라이브 데이터 커넥터 MCP 서버" 최초 시그널); DataFlow ⭐6.97k L5(LLM 기반 SFT/RAG 데이터 준비, DataFlow Agent = "LLM이 DAG 조립" 두 번째 에코 시그널, Ray 분산); Hermes v0.19.0 "Quicksilver"(L1 TTFT ~80% 감소 + 실시간 추론 스트림 기본 활성화, 여섯 번째 시그널, latency 재분류 대기); UK AISI/Caisi Kimi K3 사이버 평가(HN 114점, NIST 게재, 최초 정부 공격적 역량 평가, `safety_assessments` 스키마 갭). reference-levels.md: 5-신호 발견 로그 + 감사 추가. 50/50 테스트. 레지스트리: 추가 없음. |
 | 2026-07-24 | 데일리 스캔 (5개 문서): Claude Opus 5 (Anthropic 플래그십 오늘 출시, 입력 $5/M, ARC-AGI 3 3× 향상, HN 446점 — **llms.json +1** `claude-opus-5`); HumanLayer ACP L2/L5 (Kubernetes 네이티브 에이전트 스케줄러, 에이전트·도구·태스크 CRD, 체크포인트 영속 실행, HN 146점); ego-lite ⭐1,612 L4c/L6 (인간+에이전트 공유 라이브 브라우저, 인증 세션 상속, JS API, 속도 2.5× 주장); claude-thermos L2 (멀티에이전트 유휴 구간 프롬프트 캐시 워밍 프록시, API 비용 ~20% 절감 주장); open-multi-agent ⭐6,700 L2 (TypeScript 런타임 DAG 자동 생성, 체크포인트 복구, 멀티 모델, MIT). reference-levels.md: 변경 없음. 50/50 테스트. 레지스트리: claude-opus-5 추가. |
 | 2026-07-23 | 데일리 스캔 (4개 문서): serena ⭐26,793 L4c (MCP 코드 인텔리전스+편집 툴킷, 6× 교차 참조 후 최초 전담 항목); screenpipe ⭐20,400 L5 (YC S26 런치, 24시간 로컬 화면 녹화 패시브 앰비언트 컨텍스트 — 최초 서브타입 신호); onecli ⭐2,571 L5/L4c (자격증명 볼트 게이트웨이, 에이전트에 원본 키 미노출 — 최초 "에이전트 자격증명 게이트웨이" 신호); awesome-claude-skills ⭐69,282 L4b (최대 Claude 스킬 어그리게이터, 1,000+ 스킬 + 78개 Composio SaaS 커넥터). OmniRoute: 3× 스타 성장 업데이트 (8.5k→26.8k, 22일). reference-levels.md: 정규 변경 없음. 50/50 테스트. 레지스트리: 추가 없음. |
