@@ -2712,7 +2712,7 @@
         "small",
         "mid"
       ],
-      "network": "online",
+      "network": "hybrid",
       "setup_complexity": "low",
       "latency": "medium"
     }
@@ -3228,7 +3228,8 @@
       ],
       "pricing_tier": "free",
       "tasks": [
-        "qa"
+        "qa",
+        "security-testing"
       ],
       "roles": [
         "developer",
@@ -3240,7 +3241,7 @@
         "mid",
         "large"
       ],
-      "network": "online",
+      "network": "hybrid",
       "setup_complexity": "low",
       "latency": "medium"
     }
@@ -3459,6 +3460,40 @@
       "network": "online",
       "setup_complexity": "low",
       "latency": "high"
+    }
+  },
+  {
+    "id": "grok-build",
+    "name": "Grok Build",
+    "category": "developer_terminal_agent",
+    "level": 1,
+    "license": "Proprietary",
+    "primary_language": "Rust",
+    "url": "https://github.com/xai-org/grok-build",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "xAI's open-source TUI coding agent. Full-screen terminal with codebase analysis, file editing, shell execution, web search, and long-running task management. ACP (Agent Client Protocol) support for editor embedding. Headless mode for CI/CD. Powered by Grok models via xAI auth.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 7,
+      "optimal_maturity": 4,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "research"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "medium"
     }
   }
 ]
