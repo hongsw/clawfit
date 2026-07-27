@@ -2140,7 +2140,7 @@
     "url": "https://github.com/OpenBMB/VoxCPM",
     "source_type": "github",
     "comparison_priority": "ecosystem",
-    "notes": "Tokenizer-free TTS for multilingual speech generation by OpenBMB. 11k+ stars. Lower latency voice output layer for agent pipelines; fills Level 7 voice output gap alongside Ghost Pepper (input). Multilingual by architecture.",
+    "notes": "Tokenizer-free TTS for multilingual speech generation by OpenBMB. 11k+ stars. Lower latency voice output layer for agent pipelines; fills Level 7 voice output gap alongside Ghost Pepper (input). Multilingual by architecture. Open-source model can run locally (hybrid).",
     "org_fit": {
       "min_maturity": 3,
       "max_maturity": 8,
@@ -2148,7 +2148,6 @@
       "features": [],
       "pricing_tier": "free",
       "tasks": [
-        "research",
         "summarization"
       ],
       "roles": [
@@ -2161,7 +2160,7 @@
         "small",
         "mid"
       ],
-      "network": "online",
+      "network": "hybrid",
       "setup_complexity": "medium",
       "latency": "low"
     }
