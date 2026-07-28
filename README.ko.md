@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-07-27)
+## 🔥 지금 가장 뜨거운 것들 (2026-07-28)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
+| **Bun Zig→Rust — 64개 Claude Code 인스턴스 동시 실행** | 535,496줄을 11일, $165k로 마이그레이션. 64개 병렬 에이전트, ~50개 동적 워크플로. 100% CI 통과 후 병합. 역대 최대 규모 AI 보조 코드 마이그레이션 사례. 반대 신호: Zig 창시자 "미검토 슬롭" 비판 — CI 통과 ≠ 관용 코드 품질. | L2 사례 연구 |
+| **[HKUDS/OpenSpace ⭐7,137](https://github.com/HKUDS/OpenSpace)** | AI 에이전트용 스킬 관리 레이어: 동적 검색 + 실행 결과 추적 + 3가지 제어된 진화(FIX/DERIVED/CAPTURED). 최초 "피드백 루프 스킬 시스템" 시그널 — 기존 L4b 시그널은 모두 정적 스킬 취급. 866 포크(비율 이례적으로 높음). 스키마 갭: `skill_evolution`. | L4b / L5 |
+| **Kimi Linear 어텐션 아키텍처 (HN 211점)** | MoonshotAI 60+ 연구자 공동 논문. KDA(Kimi Delta Attention)+MLA 하이브리드. KV 캐시 75% 절감, 1M 컨텍스트에서 디코딩 처리량 6×. 검증 시 오프라인 장거리 컨텍스트 에이전트 하드웨어 티어 문턱 변경. 스키마 갭: `attention_type`. | L1 |
+| **Anthropic 오픈 웨이트 공식 입장 (HN #1, 322점)** | Anthropic이 오픈 웨이트 모델을 "공익재"로 공식 규정. 최초 프론티어 랩 제1자 오픈 웨이트 지지 신호. 3가지 정책 공약: 중국 칩 수출 제한·대규모 증류 타겟팅·전 모델 의무 안전 검사. clawfit hybrid/offline 추천 경로 정당성 강화. | 정책 |
+| **[vudovn/ag-kit ⭐7,950](https://github.com/vudovn/ag-kit)** | Google Antigravity 플랫폼 대상 TypeScript 하네스. 전문 에이전트 20개, 재사용 스킬 47개, 슬래시 커맨드 워크플로 13개, 지속 메모리, MCP, 네이티브 안전 훅. Google-AI 우선 하네스 최초 시그널. 스키마 갭: `primary_llm_target`. | L2 |
 | **[mastra-ai/mastra ⭐26.6k](https://github.com/mastra-ai/mastra)** | TypeScript 네이티브 AI 에이전트 프레임워크. 40+ 프로바이더 라우팅, 그래프 기반 워크플로, 3계층 메모리, MCP 서버 호스팅. 17k+ 커밋, Apache 2.0. clawfit 레지스트리 최초 TypeScript L2 시그널. 스키마 갭: `stack_language`. | L2 |
-| **Microsoft MAI-Cyber-1-Flash + MDASH** | 보안 특화 LLM + MDASH(취약점 식별·복구 멀티에이전트 하네스). 2026-07-27 출시. CyberGym 95.95%, 선두 모델 대비 50% 비용 주장. 엔터프라이즈 도메인 특화 모델 + 비용 계층 에스컬레이션 라우팅의 실제 배포 사례. 공개 저장소 없음. | L1/L2 |
-| **[AlmanacCode/codealmanac ⭐703](https://github.com/AlmanacCode/codealmanac)** | AI 코딩 에이전트를 위한 로컬 유지 마크다운 위키. 코드만으로는 전달할 수 없는 아키텍처 결정·불변식·워크플로 제약을 저장. 3개 라이프사이클 에이전트(build/ingest/garden). openwiki(2026-07-20)와 함께 L5 "큐레이션 코드베이스 컨텍스트" 두 번째 시그널. | L5 |
-| **[RyanAlberts/best-of-Agent-Harnesses ⭐404](https://github.com/RyanAlberts/best-of-Agent-Harnesses)** | 140+ 하네스 카탈로그. MCP 서버(`recommend`, `pick_harness`, `compare` 툴콜), `harnesses.json`, `llms.txt` 제공. 에이전트가 MCP로 하네스 추천을 쿼리 가능. clawfit의 잠재적 MCP 표면 설계에 직접 관련된 최초 "에이전트 쿼리 가능 하네스 카탈로그" 시그널. | L4 |
-| **Netflix 인하우스 LLM 서빙** | Netflix 엔지니어링 블로그: 기존 ML 서빙 인프라에 vLLM + Triton 통합. TensorRT-LLM 대신 vLLM 선택 근거, Python vs. vLLM Triton 백엔드 차이, Red-Black vs. Versioned 배포 전략 문서화. 하이퍼스케일러의 오픈소스 추론 스택 수렴 신호. | L7 |
-| **[dmsdc-ai/telepty](https://github.com/dmsdc-ai) (Show GN)** | 여러 개발자 머신에 분산된 AI CLI 세션(Claude Code 등)을 위한 경량 컨트롤 플레인. 단일 머신 하네스(oh-my-pi, Hermes)와 멀티에이전트 플랫폼(rowboat, multica) 사이의 미추적 구조적 갭 신호. 최초 시그널. 스키마 갭: `deployment_scope`. | L2–L3 |
-| **[experientiallabs/world-model-optimizer](https://github.com/experientiallabs/world-model-optimizer) (HN 20점)** | 증류를 통해 소형 모델로 프론티어 품질 추론을 절반 비용에 제공 주장. 에이전트 관련 태스크에서 검증 시 clawfit LLM 비용 가정에 직접 영향. 초기 시그널; 조직 미확인. 스키마 갭: `distillation_available`. | L1 |
+| **Microsoft MAI-Cyber-1-Flash + MDASH** | 보안 특화 LLM + MDASH 멀티에이전트 취약점 하네스. CyberGym 95.95%, 선두 모델 대비 50% 비용 주장. 엔터프라이즈 도메인 특화 모델 + 비용 계층 에스컬레이션 라우팅 실제 배포 사례. 공개 저장소 없음. | L1/L2 |
 | **[can1357/oh-my-pi ⭐19.7k](https://github.com/can1357/oh-my-pi)** | LSP + DAP + MCP를 네이티브 툴 원시형으로 내장한 터미널 코딩 에이전트. Rust 엔진, 내장 도구 32개, LLM 백엔드 40+개, ~400 릴리즈. 풀 L2 프로덕션 에이전트 고빈도 참조 항목. | L2 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (529개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (533개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-07-28 | 데일리 스캔 (5개 문서, 2회 실행): Anthropic 오픈 웨이트 입장(HN #1 322점, 정책 시그널 — 최초 프론티어 랩 제1자 오픈 웨이트 지지); ag-kit ⭐7,950 L2(Google Antigravity TypeScript 하네스, Google-AI 우선 하네스 최초 시그널); HKUDS/OpenSpace ⭐7,137 L4b(피드백 루프 스킬 관리 — FIX/DERIVED/CAPTURED 진화, 최초 자기개선 스킬 시스템 시그널); Kimi Linear 어텐션(HN 211점, L1 — KDA+MLA 하이브리드, KV 캐시 75% 절감, 1M ctx 처리량 6×); Bun Zig→Rust 사례 연구(64개 에이전트, 535k줄, 11일, $165k — 동적 워크플로 역대 최대 규모 프로덕션 벤치마크). reference-levels.md: 5개 발견 로그 + 감사 추가. 50/50 테스트. 레지스트리: 추가 없음. |
 | 2026-07-27 | 데일리 스캔 (7개 문서, 2회 실행): mastra ⭐26.6k L2(TypeScript 네이티브 AI 프레임워크, 40+ 프로바이더, 그래프 워크플로, MCP 호스팅 — 최초 TS L2 시그널); MAI-Cyber-1-Flash + MDASH L1/L2(Microsoft 보안 LLM + 멀티에이전트 취약점 하네스, 오늘 출시); codealmanac ⭐703 L5(AI 에이전트용 큐레이션 코드베이스 위키); best-of-agent-harnesses ⭐404 L4(MCP 노출 하네스 레지스트리); Netflix LLM 서빙 L7(vLLM+Triton 프로덕션 아키텍처 블로그); telepty L2–L3(멀티머신 에이전트 세션 컨트롤); world-model-optimizer L1(증류 추론 주장). reference-levels.md: 7개 발견 로그 항목 추가; 정규 변경 없음. 50/50 테스트. 레지스트리: 추가 없음. |
 | 2026-07-26 | 데일리 스캔 (5개 문서): Yorishiro L1(macOS 에이전트 네이티브 터미널 호스트, Show HN — 에이전트가 1차 사용자, 인간이 관찰자, 최초 시그널); 오픈 웨이트 AI Kubernetes 순간(HN 296점, 크로스 레이어 거시 신호); Claude 5 컨텍스트 엔지니어링 규칙(L2 하네스 설계 원칙, 단순화 프롬프트 = 성능 동등, HN 121점 + GeekNews — specsmaxxing 반대 신호); 28.9M 파라미터 LLM on $8 MCU(L7/하드웨어 에지 티어 최초 시그널); jcodemunch-mcp ⭐2.2k L4c(tree-sitter AST 심볼 수준 코드 검색 MCP 서버, "코드 인텔리전스 MCP" 두 번째 시그널). reference-levels.md: 2026-07-26 발견 로그 + 스키마 갭 4개. 50/50 테스트. 레지스트리: 추가 없음. |
 | 2026-07-25 | 데일리 스캔 (5개 문서): oh-my-pi ⭐19.7k L2(풀 코딩 에이전트 — LSP/DAP/MCP 네이티브, Rust 엔진, 릴리즈 400+건, 콘텐츠 해시 에딧, 두 번째 시그널); SurfSense ⭐15.5k L4c/L5(NotebookLM 대안 + MCP 네이티브 라이브 소셜/웹 커넥터, "라이브 데이터 커넥터 MCP 서버" 최초 시그널); DataFlow ⭐6.97k L5(LLM 기반 SFT/RAG 데이터 준비, DataFlow Agent = "LLM이 DAG 조립" 두 번째 에코 시그널, Ray 분산); Hermes v0.19.0 "Quicksilver"(L1 TTFT ~80% 감소 + 실시간 추론 스트림 기본 활성화, 여섯 번째 시그널, latency 재분류 대기); UK AISI/Caisi Kimi K3 사이버 평가(HN 114점, NIST 게재, 최초 정부 공격적 역량 평가, `safety_assessments` 스키마 갭). reference-levels.md: 5-신호 발견 로그 + 감사 추가. 50/50 테스트. 레지스트리: 추가 없음. |
