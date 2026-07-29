@@ -1525,6 +1525,7 @@
         "native-desktop"
       ],
       "tasks": [
+        "code-gen",
         "summarization",
         "qa"
       ],
@@ -2299,7 +2300,9 @@
       "features": [],
       "pricing_tier": "free",
       "tasks": [
-        "research"
+        "code-gen",
+        "research",
+        "orchestration"
       ],
       "roles": [
         "developer"
@@ -2930,7 +2933,8 @@
       ],
       "pricing_tier": "freemium",
       "tasks": [
-        "code-gen"
+        "code-gen",
+        "orchestration"
       ],
       "roles": [
         "developer",
@@ -3189,6 +3193,7 @@
       "features": [],
       "pricing_tier": "freemium",
       "tasks": [
+        "orchestration",
         "summarization"
       ],
       "roles": [
