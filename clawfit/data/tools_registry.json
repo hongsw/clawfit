@@ -126,7 +126,9 @@
       "features": [],
       "pricing_tier": "free",
       "tasks": [
-        "code-gen"
+        "code-gen",
+        "research",
+        "qa"
       ],
       "roles": [
         "developer"
@@ -1162,7 +1164,8 @@
       "features": [],
       "pricing_tier": "free",
       "tasks": [
-        "code-gen"
+        "code-gen",
+        "qa"
       ],
       "roles": [
         "developer"
@@ -3497,6 +3500,44 @@
       ],
       "network": "online",
       "setup_complexity": "low",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "openwork",
+    "name": "OpenWork",
+    "category": "workspace_coding_agent",
+    "level": 2,
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/different-ai/openwork",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "Open-source alternative to Claude Cowork, built on OpenCode. Team workspace with shared agentic coding sessions.",
+    "org_fit": {
+      "min_maturity": 2,
+      "max_maturity": 7,
+      "optimal_maturity": 4,
+      "features": [
+        "team-sharing"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "research",
+        "orchestration"
+      ],
+      "roles": [
+        "developer",
+        "pm"
+      ],
+      "team_size": [
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "online",
+      "setup_complexity": "medium",
       "latency": "medium"
     }
   }
