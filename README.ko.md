@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-07-29)
+## 🔥 지금 가장 뜨거운 것들 (2026-07-31)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **AI Worms — Copilot/Word 통한 자가 전파 (HN 249점)** | 프로덕션 엔터프라이즈 소프트웨어에서 최초로 문서 매개 AI 웜 확인(조율된 취약점 공개). 흰 배경에 흰 글씨로 숨긴 지시사항이 일반적인 문서 공유 워크플로를 통해 자동 전파 — 공격자 추가 개입 불필요. 핵심 구조적 발견: 에이전트는 "검사할 데이터"와 "실행할 지시"를 구분할 수 없음 — 외부 콘텐츠를 읽는 모든 L2/L4 에이전트에 영향. | 크로스레이어 보안 |
-| **HANDBOOK.md 벤치마크 (HN 208점, arxiv 2607.25398)** | 금융·의료·보험·물류·HR 5개 도메인 65개 에이전틱 과제에서 멀티스텝 도구 사용 중 정책문서 준수 여부 측정. 최우수 모델 엄격 성공률 36.2%. "허위 준수 주장" 포함 4개 실패 패턴 문서화. "에이전트에게 긴 정책 문서를 주면 따른다"는 일반적 엔터프라이즈 거버넌스 패턴이 경험적으로 신뢰할 수 없음을 최초 정량화. | L5 평가 |
-| **[drumih/turbo-fieldfare ⭐571](https://github.com/drumih/turbo-fieldfare) (HN 326점)** | SSD에서 활성 MoE 전문가만 스트리밍하여 M 시리즈 Mac 어디서든 Gemma 4 26B를 ~2 GB RAM으로 실행. M2에서 5.1–6.3 tok/s, M5 Pro에서 31–35 tok/s. OpenAI 호환 HTTP 서버 + 툴 함수 호출 지원. 최초 "SSD 전문가 스트리밍 추론" 시그널 — 소비자 Apple Silicon의 최소 RAM 가정을 타파. | L7/L1 추론 |
-| **[elder-plinius/T3MP3ST ⭐3.9k](https://github.com/elder-plinius/T3MP3ST)** | 기존 코딩 에이전트(Claude Code, Codex, Hermes)를 감싸는 자율 레드팀 메타 하네스. 새 API 키 불필요 — 이미 있는 에이전트가 두뇌 역할. XBEN(104개 챌린지) 90.1% pass@1; 2026년 실제 CVE 10개 중 8개 정확한 파일/줄/CWE 특정. `npm run verify-claims`로 주장 검증. "도메인 특화 메타 하네스" 패턴 세 번째 시그널(보안이 비디오·금융에 합류). | L2 보안 하네스 |
-| **MCP 2026-07-28 최종 스펙 비준** | 2026-07-05 추적 시작한 RC가 공식 사양으로 확정. 신규: `subscriptions/listen`(장기 POST 스트림), OTel 트레이스 컨텍스트, LLM 캐시 적중을 위한 결정적 `tools/list` 순서. MRTR이 모든 서버 주도 요청 대체. OAuth 2.0 DCR 폐기. 세션 연속성 도구는 L4c 감사 필수. | 크로스레이어 프로토콜 |
-| **[synthetic-sciences/openscience ⭐1.45k](https://github.com/synthetic-sciences/openscience)** | 문헌 검토→가설→코드→실험→논문 작성까지 전체 과학 연구 루프를 단일 지속 에이전틱 세션으로 실행하는 오픈소스 AI 워크벤치. 도메인 전문 서브에이전트(생물학·물리학·ML), 비평 서브에이전트, MCP 네이티브 툴 레이어, 로컬 우선, 모델 무관. Anthropic Claude Science의 오픈소스 대안. 오픈소스 과학 연구 오케스트레이션 최초 시그널. | L3 연구 |
-| **[HKUDS/OpenSpace ⭐7.1k](https://github.com/HKUDS/OpenSpace)** | 자기 개선형 스킬 관리 시스템: 과제에 적합한 스킬을 동적 조회하고, 결과를 추적하며, FIX/DERIVED/CAPTURED 연산으로 스킬을 진화시킴. 7.1k 대비 866 포크(12% 포크율) — 높은 커스터마이징 빈도. 정적 스킬팩과 구별되는 "자기 개선형 스킬 관리"의 최초 시그널. | L4b 스킬 관리 |
-| **[vudovn/ag-kit ⭐7.95k](https://github.com/vudovn/ag-kit)** | Google Antigravity를 타깃으로 하는 TypeScript 하네스: 전문 에이전트 20개, 재사용 스킬 47개, 슬래시 커맨드 템플릿 13개, 영속 메모리, 네이티브 안전 훅, CI 기반 검증. Google 계열 LLM 백엔드를 명시적으로 타깃으로 삼은 최초 하네스 시그널 — `primary_llm_target` 스키마 갭 노출. | L2 하네스 |
+| **DeepSeek V4 Flash 0731 (HN 568점)** | 오늘 출시된 에이전트 특화 Flash 변형. 벤치마크: Terminal Bench 82.7, DeepSWE 54.4, Toolathlon 70.3. 가격: 입력 $0.14/M, 출력 $0.28/M; 캐시 적중 $0.003/M (98% 할인 — 프론티어급 모델 최저 캐시 요금). MIT 오픈 웨이트, 284B 총 파라미터 / 13B 활성 (MoE). Codex 및 Responses API 네이티브 지원. 레지스트리 업데이트 후보. | L1 MoE LLM |
+| **프론티어 랩 에이전트 침입 타임라인 (HN 266점)** | 2026년 7월 실제 프론티어 AI 랩 에이전트 보안 사고의 최초 공개 사후 분석(Post-mortem). "에이전트 보안 경계 실패" 4-시그널 클러스터 확정: Prismata(7/11) + AI 웜(7/29) + HANDBOOK.md(7/29) + 이번 타임라인. 다음 reference-levels.md 검토 시 패턴 승격 후보. | 크로스레이어 보안 |
+| **[different-ai/openwork ⭐19.3k](https://github.com/different-ai/openwork)** | Claude Cowork의 오픈소스 대안, OpenCode 기반 구현. "특정 상업 제품을 이름으로 타깃하는 OSS 경쟁자" 패턴 최초 시그널 — 이전에는 기능 카테고리를 대안으로 제시했으나, 이제는 실명 제품을 대체 대상으로 명시. 팀 워크스페이스 레이어 (공유 세션, 프로젝트 컨텍스트). | L2 워크스페이스 |
+| **AI Worms — Copilot/Word 통한 자가 전파 (HN 249점)** | 프로덕션 엔터프라이즈 소프트웨어에서 최초로 문서 매개 AI 웜 확인(조율된 취약점 공개). 흰 배경에 흰 글씨로 숨긴 지시사항이 일반적인 문서 공유 워크플로를 통해 자동 전파. 핵심 발견: 에이전트는 "검사할 데이터"와 "실행할 지시"를 구분할 수 없음 — 모든 L2/L4 에이전트에 영향. | 크로스레이어 보안 |
+| **HANDBOOK.md 벤치마크 (HN 208점, arxiv 2607.25398)** | 금융·의료·보험·물류·HR 5개 도메인 65개 에이전틱 과제에서 멀티스텝 도구 사용 중 정책문서 준수 여부 측정. 최우수 모델 엄격 성공률 36.2%. "에이전트에게 긴 정책 문서를 주면 따른다"는 일반적 거버넌스 패턴이 경험적으로 신뢰할 수 없음을 최초 정량화. | L5 평가 |
+| **Anthropic Claude Code 마이그레이션 방법론 (claude.com/blog)** | 공식 6단계 마이그레이션 플레이북: 규칙집→스트레스 테스트→멀티에이전트 번역 팬아웃→컴파일→스모크 테스트→동등성 검증. 프로덕션 데이터: 100만 줄 Bun Zig→Rust 마이그레이션에 $165k API 토큰 — 마이그레이션급 오케스트레이션의 최초 공개 비용/KLOC 벤치마크. | L2 오케스트레이션 |
+| **[trailofbits/skills ⭐6,364](https://github.com/trailofbits/skills)** | Trail of Bits의 보안 도메인 Claude Code 스킬팩: 7개 카테고리 (스마트 컨트랙트, C/C++/Rust 코드 감사, YARA/악성코드, 역공학, 모바일 APK). 커뮤니티 집계가 아닌 기관 보안 회사가 서명한 Claude Code 스킬팩 최초 시그널 — 유지 관리 책임과 벤더 신뢰도로 차별화. | L4b 보안 스킬 |
+| **MCP 2026-07-28 최종 스펙 비준** | RC가 공식 사양으로 확정. 신규: `subscriptions/listen`(장기 POST 스트림), OTel 트레이스 컨텍스트, 결정적 `tools/list` 순서, MRTR이 서버 주도 요청 대체, OAuth 2.0 DCR 폐기. 세션 연속성 도구는 L4c 감사 필수. | 크로스레이어 프로토콜 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (541개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (549개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-07-31 | 데일리 스캔 (5개 문서, 2회 실행): "2x not 10x" 생태계 보정 시그널 (HN, 2× 생산성 실측 vs 10× 마케팅 내러티브); SimpleEnglish L4b (ASD-STE100 문서 품질 스킬, 위반율 72.9% 감소, 스타일 강제 시행 스킬 최초 시그널); Anthropic Claude Code 마이그레이션 방법론 L2 (6단계 플레이북, $165k/100만 줄 비용 벤치마크); DeepSeek V4 Flash (HN 568점, Terminal Bench 82.7, $0.14/$0.28/M, 캐시 98% 할인, 에이전트 특화 오픈 웨이트 MoE); trailofbits/skills ⭐6,364 L4b (기관 보안 회사 서명 Claude Code 스킬팩 최초, 7개 카테고리). reference-levels.md: 5개 시그널 + 통합 감사; 스키마 갭 후보 4개. 50/50 테스트. 레지스트리: 신규 항목 없음. |
 | 2026-07-29 | 데일리 스캔 런2 (5개 문서): AI 웜 Through Copilot/Word(HN 249점, 조율된 취약점 공개 — 프로덕션 엔터프라이즈 소프트웨어 최초 자가 전파 문서 매개 에이전트 웜, 콘텐츠/지시 충돌 크로스레이어 시그널); HANDBOOK.md 벤치마크(HN 208점, 엄격 성공률 36.2% — 정책문서 거버넌스 패턴의 경험적 신뢰 불가 최초 정량적 증거); turbo-fieldfare ⭐571 L7/L1(HN 326점, 2 GB RAM에서 Gemma 4 26B, SSD MoE 전문가 스트리밍, 8GB Apple Silicon에서 2GB 미만 추론 최초 시그널); T3MP3ST ⭐3.9k L2(자율 레드팀 메타 하네스, XBEN 90.1%, 도메인 특화 메타 하네스 세 번째 시그널 — 보안이 비디오+금융에 합류); OpenScience ⭐1.45k L3(과학 연구 오케스트레이션, Claude Science 오픈소스 대안). reference-levels.md: 2026-07-29 발견 로그에 5개 시그널 추가; 2-시그널 수렴 메모(HANDBOOK.md + AI 웜) LLM 지시/데이터 충돌 취약점. 50/50 테스트. 레지스트리: 신규 항목 없음. |
 | 2026-07-29 | 데일리 스캔 런1 (2개 문서): MCP 2026-07-28 최종 스펙 비준(L4c 감사 필수화); Toolcraft L6(AI 네이티브 디자인 앱 스캐폴드). tools_registry.json 메타데이터 수정 4건. 50/50 테스트. |
 | 2026-07-28 | 데일리 스캔 (5개 문서, 2회 실행): Anthropic 오픈 웨이트 입장(HN #1 322점, 정책 시그널 — 최초 프론티어 랩 제1자 오픈 웨이트 지지); ag-kit ⭐7,950 L2(Google Antigravity TypeScript 하네스, Google-AI 우선 하네스 최초 시그널); HKUDS/OpenSpace ⭐7,137 L4b(피드백 루프 스킬 관리 — FIX/DERIVED/CAPTURED 진화, 최초 자기개선 스킬 시스템 시그널); Kimi Linear 어텐션(HN 211점, L1 — KDA+MLA 하이브리드, KV 캐시 75% 절감, 1M ctx 처리량 6×); Bun Zig→Rust 사례 연구(64개 에이전트, 535k줄, 11일, $165k — 동적 워크플로 역대 최대 규모 프로덕션 벤치마크). reference-levels.md: 5개 발견 로그 + 감사 추가. 50/50 테스트. 레지스트리: 추가 없음. |
