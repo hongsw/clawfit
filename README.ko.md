@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-08-02)
+## 🔥 지금 가장 뜨거운 것들 (2026-08-03)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **Karpathy "Pelican" 트윗 — Opus 5 2시간 $10 창작 세션 (HN #4, 119점)** | Andrej Karpathy(Anthropic)가 "자전거 타는 펠리컨" SVG 벤치마크를 '이전' 기준점으로 사용하면서, Claude Opus 5가 반지의 제왕 첫 단락을 입력받아 ~2시간에 ~$10(토큰 1M)으로 three.js 5,500줄을 생성한 사례를 '이후' 기준점으로 제시. 주장: 프론티어 모델이 해당 벤치마크가 측정하려 했던 작업 범주를 넘어섰다. 창작·절차적 코딩을 총 세션 비용 기준으로 처음 앵커링한 데이터 포인트. | 생태계 보정 시그널 |
-| **[NomaDamas/k-skill ⭐6,726](https://github.com/NomaDamas/k-skill) (GitHub Trending)** | AI 에이전트(Claude Code, Cursor, Cline)를 위한 한국어 스킬 컬렉션. JavaScript 구현, MCP 의존 없음. 문서 요약·법률 리서치·한국 API 커넥터 등 한국어 워크플로 대상. 코퍼스 내 최초 지역별 L4b 스킬팩 — 기존 항목은 도메인 특화지 지역 특화 아님. 스키마 갭: `locale: [global | ko | ja | zh | ...]`. | L4b 로케일 스킬팩 |
-| **Cursor 사용량 대시보드에서 비용 정보 삭제 (HN 293점, 127댓글)** | Cursor가 조용히 사용량 대시보드·CSV 내보내기에서 토큰당 비용 내역과 토큰 수를 제거. 높은 HN 참여도는 상업용 AI 도구의 불투명성과 개발자 비용 가시성 기대 간 긴장을 표면화. "독점 에이전트 비용 불투명" 패턴의 첫 프로덕션 사례. 스코어링 함의: 투명한 청구 미보장 독점 폐쇄형 IDE에서 `monthly_budget` 필터 신뢰도 저하. | 크로스레이어 거버넌스 |
-| **[VideoLingo ⭐18,016](https://github.com/Huanshere/VideoLingo) (GitHub Trending Python, +48개 별)** | 완전 자동 영상 현지화 파이프라인: 다운로드 → WhisperX 전사 → NLP 분절 → 3단계 LLM 루프 → TTS 더빙. Translate-Reflect-Adapt LLM 체인(번역→비판→문화적 적응)이 코딩 워크플로의 쓰기-검토-수정 패턴을 자연어 번역에 적용. 모델 무관: Claude Sonnet, GPT-4, Gemini, DeepSeek, Grok. 최신성 주의: v3.0.1은 2025년 2월 — 2026년 주요 릴리즈 미확인. | L4 영상 현지화 |
-| **[tradingview-mcp ⭐3,756](https://github.com/atilaahmettaner/tradingview-mcp) (GitHub Trending Python)** | 자격증명 없이 37개 금융 시장 데이터 도구(백테스팅·가격 피드·기술적 분석·스크리너·Reddit+RSS 감성)를 MCP 호환 에이전트에게 노출하는 자체 호스팅 MCP 서버. "라이브 데이터 커넥터 MCP 서버" 패턴 두 번째 시그널(첫 번째: SurfSense 2026-07-25, 웹/소셜 도메인). 교차일 2-시그널 쌍(7/25 + 8/2). | L4 금융 MCP 데이터 |
-| **Cerebras Knowledge — 기업 내부 KB (GeekNews 45점 × 3일)** | Cerebras 내부 지식 베이스(Slack, 코드 저장소, 문서, DB 통합)의 GeekNews 3회 연속 등장. 공개 레포 없음 — 내부 시스템. 패턴 신호: AI 에이전트를 위한 기업 규모 지식 집계는 추측이 아닌 실증된 운영 필요. L4a 도구 보정 시그널: `team_size: solo/small` 상한이 대형 조직 프로파일에서 과소 지정될 가능성. | L4a 엔터프라이즈 메모리 |
-| **[yc-software/qm](https://github.com/yc-software/qm) (HN 634점)** | YC 지원 팀 단위 에이전트 하네스: Slack + 웹 이중 인터페이스, 직원별 격리 워크스페이스 + 공유 스킬, 세 가지 거버넌스 모드(Strict/Auto/Dangerous), 백그라운드 크론 작업. 승인 워크플로 거버넌스 내장 최초 팀 단위 하네스. | L2 팀 하네스 |
-| **[zhaoxuya520/reverse-skill ⭐11,681](https://github.com/zhaoxuya520/reverse-skill) (GitHub Trending #4 어제)** | 허가된 역공학·침투 테스트 에이전트 스킬 라우터 팩. 라우터 아키텍처 + 자기 진화 KB 주장, fork 비율 15.2% — 보안 스킬 클러스터 최고. 보안 도메인 네 번째 시그널. | L4b 보안 스킬 라우터 |
+| **[callstack/agent-device ⭐3,900](https://github.com/callstack/agent-device) (GeekNews, 2026-08-03)** | AI 에이전트가 iOS, Android, tvOS, Flutter, React Native UI를 네이티브 접근성 스냅샷으로 제어할 수 있는 CLI. 스크린샷 OCR 없음, Appium 래퍼 없음. browser-use(웹 DOM)와 구조적 유사체이지만 모바일 접근성 트리 대상. Callstack(React Native 코어 유지관리팀) 개발. 에이전트 실행을 CI/CD 테스트 스크립트로 내보내기 가능. L6 컴퓨터 사용 서브타입의 모바일 디바이스 제어 첫 번째 시그널. | L6 모바일 컴퓨터 사용 |
+| **[garagehq/nightcrawler ⭐293](https://github.com/garagehq/nightcrawler) (HN Show HN 86점, 2026-08-03)** | Android 기기에서 온디바이스 LLM(LFM2.5-1.2B, 폰 GPU)으로 완전 자동 운영하는 레드팀 에이전트. 정찰→열거→익스플로잇→리포트까지 전 주기 온디바이스 처리 — 외부 클라우드 LLM 호출 없음. 번들 CVE DB + 공격 플레이북으로 sub-2B 모델이 구조화된 보안 태스크를 수행 가능. 보안 카테고리 특유의 HN 마찰에도 86점. 모바일 GPU 에이전트 추론 티어 첫 번째 시그널. | L1/L7 온디바이스 보안 |
+| **[micro/mu ⭐112](https://github.com/micro/mu) (HN Show HN, 2026-08-03)** | 웹 검색·뉴스·날씨·금융·메일·스토리지·캘린더·이미지 생성 등 67개 도구를 단일 MCP 설정 항목으로 묶은 Go 바이너리. 각 도메인별 실제 인프라(자체 SMTP + DKIM, 검색 인덱스, 앱 샌드박스) 운영 — 얇은 API 프록시가 아님. 레지스트리 엔트리 추가. "메가 집계형 MCP 엔드포인트" 첫 번째 시그널. | L4c MCP 집계기 |
+| **graph-tool-call (SonAIengine — GeekNews, 2026-08-03)** | MCP 서버 5개 이상(GitHub + Slack + DB + 브라우저 + 내부 API) 동시 연결 시 에이전트 정확도가 반복적으로 저하되는 현상을 기록. 해결책으로 모델이 도구를 보기 전 도구 선택 공간을 좁히는 그래프 기반 라우팅 레이어 `graph-tool-call` 개발. Mu와 같은 날 시그널: 집계기(N→1 압축) vs. 라우터(디스패치 전 필터) — 동일 근본 원인에 대한 두 가지 서로 다른 완화책. "MCP 도구 포화" 패턴 최초 명명. | 크로스레이어 하네스 |
+| **[graham33/nixos-dgx-spark](https://github.com/graham33/nixos-dgx-spark) (HN 88점, 2026-08-03)** | NixOS를 NVIDIA DGX Spark(GB10 Grace Blackwell, ~1 PFLOP, ~$3,000)에서 실행: OS·드라이버·추론 런타임을 flake.nix에 고정해 결정론적으로 재현 가능한 배포. 소비자 데스크탑(RTX Spark)과 클러스터 사이의 새로운 하드웨어 티어. `deployment_model: nix-reproducible` 개념 첫 도입 — 에어갭 AI 인프라에서의 재현 가능 배포. | L7 하드웨어 티어 |
+| **[NomaDamas/k-skill ⭐6,726](https://github.com/NomaDamas/k-skill) (GitHub Trending)** | AI 에이전트(Claude Code, Cursor, Cline)를 위한 한국어 스킬 컬렉션. JavaScript 구현, MCP 의존 없음. 코퍼스 내 최초 지역별 L4b 스킬팩. 스키마 갭: `locale: [global | ko | ja | zh | ...]`. | L4b 로케일 스킬팩 |
+| **[tradingview-mcp ⭐3,756](https://github.com/atilaahmettaner/tradingview-mcp) (GitHub Trending Python)** | 자격증명 없이 37개 금융 시장 데이터 도구를 MCP 호환 에이전트에게 노출하는 자체 호스팅 MCP 서버. "라이브 데이터 커넥터 MCP 서버" 패턴 두 번째 시그널(첫 번째: SurfSense 2026-07-25). | L4 금융 MCP 데이터 |
+| **Cursor 사용량 대시보드에서 비용 정보 삭제 (HN 293점, 127댓글)** | Cursor가 조용히 사용량 대시보드·CSV 내보내기에서 토큰당 비용 내역과 토큰 수를 제거. "독점 에이전트 비용 불투명" 패턴의 첫 프로덕션 사례. `monthly_budget` 필터가 청구 투명성이 보장되지 않는 독점 폐쇄형 IDE에서 신뢰도 저하. | 크로스레이어 거버넌스 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (561개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (566개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-08-03 | 데일리 스캔 (5개 문서, 2회 실행): callstack/agent-device ⭐3,900 L6 (GeekNews — 접근성 트리 기반 모바일 디바이스 제어 CLI, L6 모바일 컴퓨터 사용 서브타입 첫 시그널); garagehq/nightcrawler ⭐293 L1/L7 (HN Show HN 86점 — Android GPU 온디바이스 LLM 보안 에이전트, CVE DB+플레이북 번들로 sub-2B 가능); micro/mu ⭐112 L4c (HN Show HN — 67개 도구 MCP 메가 집계기, 도메인별 실제 인프라, 첫 시그널, 레지스트리 추가); graph-tool-call L4c×L2 (GeekNews — "MCP 도구 포화" 장애 패턴 최초 명명, 5개 이상 서버에서 정확도 저하); NixOS-DGX-Spark L7 (HN 88점 — Grace Blackwell 데스크탑 티어 + NixOS 재현 가능성). reference-levels.md: 2026-08-03 발견 로그 두 런 모두 업데이트(시그널 5개). 50/50 테스트. 레지스트리: mu-micro 추가. |
 | 2026-08-02 | 데일리 스캔 (6개 문서, 2회 실행): Karpathy Pelican/Opus 5 (HN #4, 119점 — 프론티어 모델 벤치마크 초월, 2시간 $10 three.js 5,500줄, 첫 창작 세션 비용 앵커); NomaDamas/k-skill ⭐6,726 (GitHub Trending — 첫 로케일 특화 L4b 스킬팩, 한국어); Cursor 비용 불투명 (HN 293점, 첫 "독점 에이전트 비용 불투명" 패턴 시그널); VideoLingo ⭐18,016 L4 (GitHub Trending Python, Translate-Reflect-Adapt LLM 루프, 최신성 주의); tradingview-mcp ⭐3,756 L4 (37개 금융 MCP 도구, 무자격증명, 라이브 데이터 커넥터 패턴 두 번째 시그널); Cerebras Knowledge L4a (GeekNews 45점 ×3일, 기업 KB 수요 패턴). reference-levels.md: 2026-08-02 섹션에 6개 발견 로그 추가(런1 3개 + 런2 3개). 50/50 테스트. 레지스트리: 신규 항목 없음. |
 | 2026-08-01 | 데일리 스캔 (5개 문서, 2회 실행): reverse-skill ⭐11,681 L4b (GitHub Trending #4, 보안 스킬 라우터 팩 — 네 번째 보안 도메인 시그널, router-manifest 아키텍처, fork 비율 15.2%); WASTE L7 (HN 305점, 소비자 머신에서 Kimi K3 2.78T NVMe 웨이트 스트리밍, turbo-fieldfare와 함께 `ssd-streamed` 두 번째 시그널 교차일 2-시그널 확정); Fermisense $500 RL 파인튜닝 > 프론티어 (87.3% vs 76.9%, 68-340× 비용 절감, HuggingFace 가중치 공개 — 에이전틱 작업 RL 파인튜닝 > 프론티어 API 최초 프로덕션 사례); QM 하네스 L2 (HN 634점, YC, 팀 거버넌스 모드); Manifest LLM 라우터 중단 (안티패턴 Post-mortem, clawfit 비-라우터 설계 검증). reference-levels.md: 2026-08-01 발견 로그(5개 시그널); 정규 변경 없음. 50/50 테스트. 레지스트리: 신규 항목 없음. |
 | 2026-07-31 | 데일리 스캔 (5개 문서, 2회 실행): "2x not 10x" 생태계 보정 시그널 (HN, 2× 생산성 실측 vs 10× 마케팅 내러티브); SimpleEnglish L4b (ASD-STE100 문서 품질 스킬, 위반율 72.9% 감소, 스타일 강제 시행 스킬 최초 시그널); Anthropic Claude Code 마이그레이션 방법론 L2 (6단계 플레이북, $165k/100만 줄 비용 벤치마크); DeepSeek V4 Flash (HN 568점, Terminal Bench 82.7, $0.14/$0.28/M, 캐시 98% 할인, 에이전트 특화 오픈 웨이트 MoE); trailofbits/skills ⭐6,364 L4b (기관 보안 회사 서명 Claude Code 스킬팩 최초, 7개 카테고리). reference-levels.md: 5개 시그널 + 통합 감사; 스키마 갭 후보 4개. 50/50 테스트. 레지스트리: 신규 항목 없음. |
