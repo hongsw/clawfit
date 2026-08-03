@@ -1916,8 +1916,7 @@
         "summarization"
       ],
       "roles": [
-        "researcher",
-        "exec"
+        "researcher"
       ],
       "team_size": [
         "solo",
@@ -3579,6 +3578,44 @@
       ],
       "network": "online",
       "setup_complexity": "medium",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "mu-micro",
+    "name": "Mu",
+    "category": "mcp_tool_aggregator",
+    "level": "4c",
+    "license": "AGPL-3.0",
+    "primary_language": "Go",
+    "url": "https://github.com/micro/mu",
+    "source_type": "github",
+    "comparison_priority": "ecosystem",
+    "notes": "Single Go binary bundling 67 tools (web search, news, weather, markets, mail, file storage, calendar, image generation) behind one MCP endpoint. Runs real infrastructure per domain: own SMTP server with DKIM, search index, app sandbox, wallet system — not thin API wrappers. 4,004 commits, 112 stars (2026-08-03). Self-hostable or hosted at micro.mu. First 'mega-aggregator' L4c entry: collapses N MCP server configs into one endpoint, mitigating the MCP tool-saturation failure pattern.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [
+        "mcp"
+      ],
+      "pricing_tier": "freemium",
+      "tasks": [
+        "research",
+        "summarization",
+        "data-analysis"
+      ],
+      "roles": [
+        "developer",
+        "researcher"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
       "latency": "medium"
     }
   }
