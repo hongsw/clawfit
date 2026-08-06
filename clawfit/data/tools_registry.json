@@ -720,8 +720,8 @@
       "pricing_tier": "free",
       "tasks": [
         "code-gen",
-        "research",
-        "data-analysis"
+        "qa",
+        "research"
       ],
       "roles": [
         "developer"
@@ -759,7 +759,7 @@
       "tasks": [
         "code-gen",
         "research",
-        "data-analysis"
+        "orchestration"
       ],
       "roles": [
         "developer",
@@ -794,10 +794,12 @@
       ],
       "pricing_tier": "free",
       "tasks": [
-        "code-gen"
+        "code-gen",
+        "orchestration"
       ],
       "roles": [
-        "developer"
+        "developer",
+        "pm"
       ],
       "team_size": [
         "small",
@@ -2056,6 +2058,7 @@
         "summarization"
       ],
       "roles": [
+        "developer",
         "researcher"
       ],
       "team_size": [

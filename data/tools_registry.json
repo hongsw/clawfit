@@ -720,8 +720,8 @@
       "pricing_tier": "free",
       "tasks": [
         "code-gen",
-        "research",
-        "data-analysis"
+        "qa",
+        "research"
       ],
       "roles": [
         "developer"
@@ -759,7 +759,7 @@
       "tasks": [
         "code-gen",
         "research",
-        "data-analysis"
+        "orchestration"
       ],
       "roles": [
         "developer",
@@ -794,10 +794,12 @@
       ],
       "pricing_tier": "free",
       "tasks": [
-        "code-gen"
+        "code-gen",
+        "orchestration"
       ],
       "roles": [
-        "developer"
+        "developer",
+        "pm"
       ],
       "team_size": [
         "small",
@@ -2056,6 +2058,7 @@
         "summarization"
       ],
       "roles": [
+        "developer",
         "researcher"
       ],
       "team_size": [
@@ -2367,7 +2370,7 @@
     "url": "https://github.com/jamiepine/voicebox",
     "source_type": "github",
     "comparison_priority": "ecosystem",
-    "notes": "Open-source voice synthesis studio. TypeScript-first; higher-level than VoxCPM. Voice cloning, style transfer, multi-speaker management. 19,049\u2605 (surpasses VoxCPM). Natural pairing for TypeScript-first orgs building voice-enabled agent interfaces. Self-hostable MIT license.",
+    "notes": "Open-source voice synthesis studio. TypeScript-first; higher-level than VoxCPM. Voice cloning, style transfer, multi-speaker management. 48,651\u2605 as of 2026-08-04 (GitHub Trending #16, up from 19,049\u2605 \u2014 155% star growth since last recorded). Natural pairing for TypeScript-first orgs building voice-enabled agent interfaces. Self-hostable MIT license.",
     "org_fit": {
       "min_maturity": 2,
       "max_maturity": 7,
