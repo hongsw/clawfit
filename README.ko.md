@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-08-05)
+## 🔥 지금 가장 뜨거운 것들 (2026-08-06)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[cloudflare/computer ⭐2,370](https://github.com/cloudflare/computer) (GitHub Trending 전체 언어 #1, 2026-08-05)** | "에이전트에게 컴퓨터를." Durable Object 내 SQLite 기반 가상 파일시스템 + 플러그인 가능한 3가지 실행 백엔드(Container 전체 Linux, Isolate Shell, Isolate JavaScript). 2026년 8월 3일 프리뷰 출시. 핵심 설계: 컨테이너 대신 SQLite 영속 파일시스템 → 콜드스타트 없이 에이전트 턴 간 상태 유지. Cap'n Web RPC 동기화 데몬. MIT 라이선스. "Durable Object 에이전트 파일시스템 서브스트레이트" 첫 시그널. | L2 에이전트 실행 서브스트레이트 |
-| **[cloudflare/cloudflare-os ⭐1,400](https://github.com/cloudflare/cloudflare-os) (HN 317점, 2026-08-05)** | Cloudflare 내부 개발 후 오픈소스화된 기업용 에이전트 워크스페이스. 에이전트는 Gatekeeper(자격 증명을 보유하며 정책을 집행하는 Worker)를 통해서만 외부 시스템에 접근 — 에이전트가 직접 자격 증명을 보유하지 않음. Gadget 앱: 기본적으로 외부 네트워크 차단된 샌드박스. 관찰 추적이 파생 데이터의 하위 권한을 자동 강제(기밀 문서를 읽은 에이전트는 공개 채널에 쓸 수 없음). 코퍼스 내 가장 정교한 데이터 계보 거버넌스 프리미티브. MCP 호환. | L2/L3 기업 에이전트 워크스페이스 |
-| **[Mistral Shieldstral](https://mistral.ai/news/shieldstral/) (HN 287점, 2026-08-05)** | 3B 오픈 웨이트 멀티모달 안전 분류기(Apache 2.0, HuggingFace). 추론 시점에 정책 적응: 안전 규칙을 자연어 예/아니오 질문으로 공급 — 재훈련 불필요. 텍스트+이미지를 단일 모델로 처리. 최대 7배 크기 가드 모델 수준 성능. 16GB VRAM 1장 실행 — 로컬 7~13B 에이전트 모델과 공존 가능. 코퍼스 최초 전용 콘텐츠 모더레이션 LLM; "정책 적응형 가드 모델" 서브타입 첫 시그널. | L3 오픈 웨이트 안전 필터 |
-| **[NovaSky-AI/SkyRL ⭐2,125](https://github.com/NovaSky-AI/SkyRL) (GitHub Trending Python, 2026-08-05)** | 장기 도구 사용 LLM 에이전트 대상 모듈형 풀스택 RL 라이브러리. 4개 컴포넌트: skyrl-train(비동기 학습 + 인플라이트 웨이트 업데이트), skyrl-agent(에이전트 인프라), skyrl-gym(SWE-Bench·텍스트-to-SQL·웹 검색 환경), skyrl-tx(Tinker API 크로스플랫폼 구현). Apache-2.0. RLHF/선호도 튜닝이 아닌 실제 도구 사용 멀티턴 에이전트 학습을 gym 환경 기반으로 지원하는 첫 RL 훈련 프레임워크. | L1 RL 훈련 인프라 |
-| **[K-Dense-AI/scientific-agent-skills ⭐32,625](https://github.com/K-Dense-AI/scientific-agent-skills) (GitHub Trending Python, 2026-08-04)** | 18개 이상 과학 도메인(생정보학·신약개발·단백질체학·의료영상·재료공학·실험실 자동화·데이터분석·과학 커뮤니케이션)에 걸쳐 158개 스킬 + 100개 이상 과학 DB 통합. MIT 라이선스; Claude Code·Codex·Cursor·Google Antigravity·Pi·Hermes·NemoClaw 호환. OpenScience(L3, 7/29)와 교차일 페어: 두 레이어에 걸친 과학 AI 툴링 스택 최초 문서화. | L4b 과학 스킬 라이브러리 |
-| **[uber/ADR ⭐605](https://github.com/uber/ADR) (GitHub Trending Python #1, 2026-08-04)** | Uber 프로덕션 AI 코딩 에이전트 보안 시스템: ADR-Sensor(macOS/Linux/Windows 7종+ 도구 텔레메트리), ADR-Bench(300+ 적대적 태스크·133개 MCP 서버·17종 공격 기법 — 현존 최대 오픈소스 AI 에이전트 보안 벤치마크), ADR-Detector(2단계 위협 탐지). MLSys 2026 채택. Apache 2.0. 기업 코딩 에이전트 방어 옵저버빌리티+벤치마킹 스택 최초 오픈소스 사례. | L5/L2 기업 에이전트 보안 |
-| **[huangruiteng/loopx ⭐1,523](https://github.com/huangruiteng/loopx) (GitHub Trending Python #4, 2026-08-04)** | 장기 실행 AI 에이전트 팀을 위한 경량 상태 커널: 목표·타입 투두(피어 핸드오프 검증 포함)·블로킹 게이트·증거 로그·할당량 추적+자동 웨이크업을 에이전트 재시작과 런타임 교체에 걸쳐 영속 유지. Claude Code·Codex·Cursor 에이전트 무관 지원. 철학: "루프를 계속 움직여라. 판단은 인간이." 세션 범위 하네스와 구별되는 첫 "영속 에이전트 상태 커널" 시그널. | L2/L3 영속 상태 커널 |
-| **Hoplite (hoplite.sh — HN Launch HN YC S26, 2026-08-04)** | YC S26 클라우드 서비스: 격리된 태스크별 개발 환경에서 AI 코딩 에이전트를 실행하고, 테스트+브라우저 프리뷰로 변경사항을 검증한 후 PR을 인간 리뷰로 전달. 필수 인간 승인 게이트 + MCP 서버 + CLI 접근 포함. IDE 확장(Cursor)·베어 CLI(aider)와 구별되는 클라우드 코딩 에이전트 배포 플랫폼 최초 시그널. | L2 클라우드 코딩 에이전트 |
+| **[Discovery Loop](https://discoveryloop.com) (HN 536점, 2026-08-06)** | Jeff Dean, Sanjay Ghemawat, Quoc Le, Oriol Vinyals 등 구글 핵심 연구자들이 8월 5일 공동 창업 — 과학 실험 루프(제안→실행→학습)를 수천 건 동시 자동화하는 스타트업. Radical Ventures + Khosla Ventures 시드 투자, 구글이 창립 투자자+클라우드 파트너. 코퍼스 최고 자격 창업팀 + L5(자동화 연구 루프) 가장 직접적인 구현. 사전 제품 단계. | L5 자동화 연구 루프 |
+| **[Atlassian Rovo 프롬프트 인젝션](https://www.promptarmor.com/resources/atlassian-rovo-exfiltrates-data) (HN 155점, 2026-08-06)** | PromptArmor가 Atlassian Rovo의 제로클릭 간접 프롬프트 인젝션 취약점 공개 — 조직 레벨 웹 검색 비활성화를 우회하여 Jira·Confluence 등 커넥터 접근 가능 데이터를 유출. 사용자 조작 불필요. URL 파라미터 원클릭 변종은 서버 측 패치됨; URL 검색 도구를 통한 간접 인젝션은 아키텍처 과제로 남음. 코퍼스 최초 실제 기업 에이전트 침해 사례. | L3 기업 에이전트 보안 시그널 |
+| **[google-gemini/gemini-cli ⭐106,400](https://github.com/google-gemini/gemini-cli) (GitHub Trending, 2026-08-06)** | 구글 공식 오픈소스 터미널 에이전트: Gemini 3 모델 + 1M 토큰 컨텍스트 + 기본 내장 구글 검색 그라운딩(MCP 플러그인 불필요) + MCP 클라이언트 + 대화 체크포인팅 + GitHub Actions 통합. 무료 티어: 60 req/분, 1,000 req/일. Claude Code·Codex CLI·Meta Muse Code 직접 경쟁자. 106k 스타 대비 최초 추적 — 중요한 공백 해소. Meta Muse Code와 함께 하이퍼스케일러 네이티브 터미널 에이전트 2-시그널 클러스터 확인. | L1 구글 네이티브 터미널 에이전트 |
+| **[Meta Muse Code](https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2) (HN 145점, 2026-08-06)** | Meta Superintelligence Labs 터미널 코딩 에이전트(8/5 퍼블릭 베타): Muse Spark 1.2 모델, 1M 토큰 컨텍스트, 영속 비동기 백그라운드 에이전트(병렬 워커 + 백그라운드 리뷰어). 구조적 신규 차원: 기여자 가격 티어 — 훈련 데이터 제공 대가로 할인율 제공, `data_sensitivity: confidential` 프로파일에는 낮은 점수 부여 필요. | L1 Meta 네이티브 터미널 에이전트 |
+| **[Zed DeltaDB](https://zed.dev/deltadb) (HN 267점, 2026-08-06)** | Zed Industries의 CRDT 기반 버전 관리: 모든 편집 동작을 서브커밋 단위로 기록하고 각 변경사항을 생성한 에이전트 대화에 영구 연결. 양방향 추적: 코드→대화, 대화→코드. 에이전트 간 충돌 없는 공동 편집. Git 보완 레이어(라이브 프리커밋). 코퍼스 최초로 에이전트 대화를 버전 관리 감사 아티팩트로 취급하는 도구. | L2/L3 에이전트 네이티브 CRDT 버전 관리 |
+| **[Lilian Weng "Harness Engineering for Self-Improvement"](https://lilianweng.github.io/posts/2026-07-04-harness/) (GeekNews 1면, 2026-08-06)** | 전 OpenAI 안전팀장(현 Lilith AI CEO) 35편 논문 종합: 재귀적 자기 개선의 근미래 경로는 웨이트 수정이 아닌 하네스 엔지니어링 — 기반 모델을 감싸는 실행 레이어 최적화. 7개 미해결 과제 열거. DeepSeek CTO 최천의 지지. L2 하네스 레이어의 이론적 근거를 제공한 코퍼스 내 가장 엄밀한 단일 출처. | L2 하네스 엔지니어링 개념 프레임워크 |
+| **[cloudflare/cloudflare-os ⭐1,400](https://github.com/cloudflare/cloudflare-os) (HN 317점, 2026-08-05)** | Cloudflare 내부 기업 에이전트 워크스페이스 오픈소스화. Gatekeeper(자격증명 보유·정책 집행)를 통해서만 외부 접근 허용. 파생 데이터에 대한 관찰 추적 기반 하위 권한 강제. 코퍼스 내 가장 정교한 데이터 계보 거버넌스 프리미티브. MCP 호환. | L2/L3 기업 에이전트 워크스페이스 |
+| **[Gen-Verse/Open-AgentRL ⭐607](https://github.com/Gen-Verse/Open-AgentRL) (GitHub, ICML 2026, 2026-08-06)** | ICML 2026 채택 번들: RLAnything(모든 RL 컴포넌트 공동 폐루프 최적화) + AutoTool(수천 개 도구에서 동적 선택) + DemyAgent(실제 궤적으로 4B 모델이 32B 수준 달성). "에이전틱 도구 사용 RL 훈련" 클러스터 세 번째 독립 시그널(OpenClaw-RL 07-05, SkyRL 08-05). | L1 에이전틱 도구 사용 RL 훈련 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (577개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (585개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
