@@ -3621,5 +3621,39 @@
       "setup_complexity": "low",
       "latency": "medium"
     }
+  },
+  {
+    "id": "swarm-forge",
+    "name": "swarm-forge",
+    "category": "tmux_multi_agent_coordinator",
+    "level": 2,
+    "license": "unknown",
+    "primary_language": "Clojure",
+    "url": "https://github.com/unclebob/swarm-forge",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "tmux-based multi-agent swarm coordinator by Robert C. Martin (Uncle Bob). Role-separated git worktrees per agent (spec, code, refactor, architect, harden, QA). Daemon-mediated handoff protocol via validated message files — no shared state. Configurable agent packs (two-pack, four-pack, six-pack). Multi-backend: claude, copilot, codex, grok in same swarm. Constitution files (layered prompt files) enforce per-role discipline. 1,827★ (GitHub Trending 2026-08-08). Clojure implementation signals research/prototype intent.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 9,
+      "optimal_maturity": 6,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "qa"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "medium",
+      "latency": "medium"
+    }
   }
 ]
