@@ -415,7 +415,7 @@
         "solo",
         "small"
       ],
-      "network": "online",
+      "network": "hybrid",
       "setup_complexity": "low",
       "latency": "low"
     }
@@ -3653,6 +3653,45 @@
       ],
       "network": "online",
       "setup_complexity": "medium",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "agency_agents",
+    "name": "agency-agents",
+    "category": "agent_persona_library",
+    "level": "4b",
+    "license": "MIT",
+    "primary_language": "Shell",
+    "url": "https://github.com/msitarzewski/agency-agents",
+    "source_type": "github",
+    "comparison_priority": "secondary",
+    "notes": "230+ role-persona agent configurations for 18+ professional divisions (engineering, design, marketing, sales, legal, etc.). Desktop installer app; harness-agnostic — works with Claude Code, Cursor, Aider, Copilot, Windsurf and 8+ others. Role-driven (not task-driven) persona library.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": [],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "research",
+        "orchestration"
+      ],
+      "roles": [
+        "developer",
+        "pm",
+        "exec",
+        "researcher"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
       "latency": "medium"
     }
   }
