@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-08-14)
+## 🔥 지금 가장 뜨거운 것들 (2026-08-15)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[deepseek-ai/deepseek-harness ⭐93.7k](https://github.com/deepseek-ai/deepseek-harness) (GitHub Trending, 2026-08-14)** | Cordis 플러그인-컴포지션 프레임워크 기반 코딩 에이전트 — 고정 동작 코어 없음. 도구 실행·컨텍스트 관리·모델 라우팅·출력 포맷 등 모든 기능이 플러그인이며 시작 시 의존성 선언 후 조합. 93.7k 스타에도 공식 릴리스 제로. "설정 가능한 하네스"와 "확장"의 구분이 사라지는 플러그인 그래프만 존재하는 구조. | L2 플러그인-컴포지션 코딩 에이전트 하네스 |
-| **[GLM-5.3](https://z.ai) (HN 928점, 2026-08-14)** | Zhipu AI의 네 번째 GLM-5.x 릴리스 — 시리즈 최고 HN 참여도(928점 vs GLM-5.1 217점). "창발적 사이버 역량"을 안전 위험이 아닌 제품 기능으로 마케팅한 최초의 추적 LLM. 코딩 훈련에서 보안 능력이 창발했다는 프레이밍. 오픈 웨이트 여부 스캔 시점 미확인. | L1 마케팅된 보안 역량을 가진 프론티어 코딩 LLM |
-| **[hugohe3/ppt-master ⭐46.8k](https://github.com/hugohe3/ppt-master) (GitHub Python Trending +383 오늘, 2026-08-14)** | 자체 설명: "에이전트 지원 AI 도구 내부에서 실행되는 워크플로우(스킬)". PDF·DOCX·주제어를 네이티브 PPTX 객체(도형·전환·데이터 차트·오디오 나레이션)로 변환. 커스텀 .pptx 템플릿 지원. Claude·GPT·Gemini·Kimi 호환. 포크 3.8k(fork 비율 ~8%). 주요 산출물이 네이티브 오피스 문서인 최초 L4b 스킬. | L4b 오피스 문서 생성 에이전트 스킬 + L6 비즈니스 문서 출력 |
-| **[holaboss-ai/holaOS ⭐7.1k](https://github.com/holaboss-ai/holaOS) (GitHub Trending, 2026-08-14)** | Claude Code·Codex·네이티브 holaOS 에이전트를 동시에 실행하는 Electron 기반 AI 워크스페이스. 오케스트레이션이 아닌 격리된 공간(Space)에서 플레인파일 공유 메모리로 병렬 운영. HolaApps 마켓플레이스: Notion·브라우저·커스텀 도구를 에이전트와 나란히 실행. OAuth 통합 100+. BYOK + 내장 Kimi K3·GLM 5.2·GPT 5.6·Claude Opus 5. Modified Apache 2.0. | L2 동시 멀티 에이전트 데스크탑 워크스페이스 + L6 내장 앱 마켓플레이스 |
-| **[Unsloth Desktop](https://github.com/unslothai/unsloth) (GeekNews 프론트, 2026-08-14)** | 로컬 모델 실행·노코드 파인튜닝·에이전트 연결을 하나로 묶은 무료 오픈소스 Tauri 앱(macOS/Windows/Linux). `unsloth start claude` 단일 명령으로 로컬 파인튜닝된 GGUF/MLX 모델을 Claude Code의 공급자로 연결. PDF/CSV/JSON 업로드 기반 노코드 LoRA + 풀 파인튜닝(2× 빠름, VRAM 70% 절약 주장). Cloudflare HTTPS 터널로 원격 서빙. 부모 레포 71.4k 스타. | L7 로컬 모델 라이프사이클 데스크탑 앱 + L2 단일 명령 에이전트 브리지 |
-| **[msitarzewski/agency-agents ⭐142k](https://github.com/msitarzewski/agency-agents) (GitHub Trending #2, 2026-08-11)** | 엔지니어링·디자인·마케팅·법무 등 18개 이상 직군에 걸친 230+ AI 에이전트 역할-페르소나 정의, 각각 성공 지표 포함. macOS/Linux/Windows 데스크탑 설치앱. Claude Code·Copilot·Cursor·Aider·Windsurf 등 8+ 플랫폼 지원. 태스크 스킬이 아닌 에이전트 *정체성*을 부여하는 구조적 차별점. | L4b 역할-페르소나 에이전트 설정 라이브러리 |
-| **[Meta Muse Glimmer 30B](https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model) (HN 765점, 2026-08-10)** | 코퍼스 내 최초 에이전틱 워크플로우 훈련 오픈 웨이트 모델. 30B, 4-bit 18–20 GB(RTX 4090 적합). 추론 깊이 제어(low/medium/high/xhigh). SWE-Bench Verified 76%. Apache 2.0. AMD·NVIDIA 동일날 하드웨어 가이드. | L1 로컬 GPU 배포용 오픈 웨이트 에이전틱 특화 모델 |
-| **[Docker Sandboxes](https://www.docker.com/blog/docker-sandboxes/) (HN 518점, 2026-08-10)** | 에이전트 실행 안전용 Docker 첫 네이티브 제품: 마이크로VM 격리로 "YOLO 모드" 자율성 제공. Docker Desktop 불필요. **Docker AI Governance**: 조직 전체 MCP 정책 시행. Claude Code·Gemini CLI·Codex·OpenCode·Kiro 지원. | L7 마이크로VM 에이전트 실행 격리 + L2 조직 MCP 거버넌스 |
+| **[NVIDIA/NemoClaw ⭐22.2k](https://github.com/NVIDIA/NemoClaw) (GTC Taipei 2026-03 → trending 2026-08-15)** | 코퍼스 최초 "완전한 에이전트 보안 스택": OpenShell 샌드박스 + Nemotron 로컬 추론 + Privacy Router(요청별 클라우드/로컬 정책 라우팅) + NemoClaw CLI 라이프사이클 관리를 단일 설치 명령으로 제공. Privacy Router가 핵심 신규 요소 — 데이터 정책에 따라 추론 호출이 클라우드 API로 나가도 되는지, 로컬 모델로만 처리해야 하는지 요청별로 판단. **이번 주 3개 벤더 에이전트 격리 클러스터**: Docker(마이크로VM)·Anthropic(OS 네이티브)·NVIDIA(K3s-in-Docker). | L1 통합 보안 에이전트 런타임 스택 + L7 Privacy Router 거버넌스 |
+| **[anthropic-experimental/sandbox-runtime ⭐~5k](https://github.com/anthropic-experimental/sandbox-runtime) (2026-05 리서치 프리뷰 → trending 2026-08-15)** | 컨테이너 없이 OS 수준에서 에이전트/MCP 프로세스를 격리하는 Anthropic 오픈소스 도구. macOS: Seatbelt `sandbox-exec`, Linux: `bubblewrap` + seccomp BPF, Windows: WFP 이그레스 + NTFS ACL. 자식 프로세스까지 제한 전파(샌드박스 탈출 방지). MCP 서버 샌드박싱이 핵심 사용 사례 — 서버 코드 수정 없이 외부 MCP 서버를 권한 경계로 감쌈. Apache-2.0, TypeScript. | L7 OS 네이티브 에이전트 프로세스 격리 + L1 런타임 보안 기반 |
+| **[cordiverse/cordis ⭐3.9k](https://github.com/cordiverse/cordis) (GitHub Trending #1, 2026-08-15, v4.0.0-rc.8)** | deepseek-ai/deepseek-harness(93.7k★)의 기반 TypeScript 메타-프레임워크. deepseek-harness의 모든 기능(LLM 어댑터·도구·파일 접근·에이전트 루프)이 cordis 플러그인으로 구현됨. "시공간 합성성": 플러그인이 공간(의존성 그래프)과 시간(라이프사이클 훅) 제약을 선언. v4.0.0-rc.8 게시(2026-08-10)로 트렌딩 1위 달성. v4 브레이킹 체인지가 deepseek-harness 플러그인 생태계에 미치는 영향 모니터링 중. | L2 플러그인-컴포지션 메타-프레임워크(deepseek-harness 기반) |
+| **[whiteguo233/OpenBiliClaw ⭐2.5k](https://github.com/whiteguo233/OpenBiliClaw) (GitHub Python Trending, 2026-07)** | 12개 플랫폼(B站·유튜브·X·레딧·웨이보 등)의 콘텐츠를 사용자 소유 심리 프로파일(Soul Engine)로 로컬 SQLite에 저장하는 프라이버시 퍼스트 콘텐츠 발견 에이전트. 새 패턴: **Agent Bridge** — 22개 도구를 외부 에이전트 플랫폼(OpenClaw·Hermes·WorkBuddy)에 노출해 앱 자체가 다른 에이전트의 도구 소스가 됨. deepseek-harness 플러그인도 제공. | L6 콘텐츠 발견 에이전트 + L2 에이전트 브리지(소비자 앱-도구-소스 패턴) |
+| **[MakazhanAlpamys/Soup ⭐1.6k](https://github.com/MakazhanAlpamys/Soup) (GitHub Python Trending, GIGAZINE 2026-08)** | 단일 YAML + 레이어 스트리밍으로 LLM 파인튜닝: 고정된 베이스 모델은 RAM에, GPU에는 디코더 레이어 하나씩만 전달 → 4 GB VRAM 노트북(RTX 3050)에서 8B 모델 파인튜닝 성공(피크 3.32 GB / 119.6 tok/s 실측). 23개 훈련 방식, 142개 레시피, 17개 내보내기 포맷. Unsloth Desktop과 같은 주에 등장 → 소비자 GPU(≤4 GB) 파인튜닝이 2026년 현실적 워크플로우임을 두 신호로 확인. | L1 모델 적응 인프라(레이어 스트리밍 파인튜닝) |
+| **[deepseek-ai/deepseek-harness ⭐93.7k](https://github.com/deepseek-ai/deepseek-harness) (GitHub Trending, 2026-08-14)** | Cordis 플러그인 컴포지션 기반 코딩 에이전트 — 고정 동작 코어 없음, 모든 기능이 플러그인. 93.7k 스타에도 공식 릴리스 제로. | L2 플러그인-컴포지션 코딩 에이전트 하네스 |
+| **[holaboss-ai/holaOS ⭐7.1k](https://github.com/holaboss-ai/holaOS) (GitHub Trending, 2026-08-14)** | Claude Code·Codex·네이티브 에이전트를 공유 플레인파일 메모리로 동시 실행하는 Electron 워크스페이스. HolaApps 마켓플레이스, OAuth 100+. Modified Apache 2.0. | L2 동시 멀티 에이전트 데스크탑 워크스페이스 |
+| **[Docker Sandboxes](https://www.docker.com/blog/docker-sandboxes/) (HN 518점, 2026-08-10)** | 에이전트 실행 안전용 Docker 첫 네이티브 제품: 마이크로VM 격리 + Docker AI Governance 조직 전체 MCP 정책 시행. | L7 마이크로VM 에이전트 격리 + L2 조직 MCP 거버넌스 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (617개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (626개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
