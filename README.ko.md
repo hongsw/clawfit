@@ -1,6 +1,6 @@
 # clawfit
 
-> AI 에이전트 + LLM + 하드웨어 추천 엔진 — **162+ 도구**, **7레이어 생태계 맵**, **573개 리서치워치 문서**, **10차원 스코어링**
+> AI 에이전트 + LLM + 하드웨어 추천 엔진 — **162+ 도구**, **7레이어 생태계 맵**, **647개 리서치워치 문서**, **10차원 스코어링**
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.7%2B-blue)](pyproject.toml)
@@ -61,7 +61,7 @@
 | 지표 | 수치 |
 |------|------|
 | 에코시스템 맵 추적 도구 (7레이어) | **162+** |
-| 리서치워치 신호 문서 | **186개** |
+| 리서치워치 신호 문서 | **647개** |
 | 추천 레지스트리 LLM | **11개** |
 | 추천 레지스트리 에이전트 패턴 | **4개** |
 | 추천 레지스트리 하드웨어 프로필 | **5개** |
@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-08-18)
+## 🔥 지금 가장 뜨거운 것들 (2026-08-19)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[chaitanyagiri/munder-difflin ⭐1,883](https://github.com/chaitanyagiri/munder-difflin) (GitHub Trending, 2026-08-18)** | Claude Code·Codex·Antigravity·OpenCode·Crush·Kimi·Grok·pi.dev·Ollama/vLLM 등 10+ 코딩 에이전트 CLI를 node-pty로 감싸 GOD 에이전트 슈퍼바이저가 조율하는 Electron 데스크톱 앱. 에이전트별 메일박스·비용 회로 차단기(steer→constrain→stop)·단일 커미터 git 설계·OTel 추적·Monaco IDE+Pixi.js 사무실 UI. 기존 CLI를 SDK 변경 없이 래핑하는 최초 L2 하네스 패턴. | L2 멀티 에이전트 CLI 하네스 |
+| **[Cerebras CS-4](https://www.cerebras.ai/cs4) (HN 416pts, 2026-08-19)** | Cerebras 4세대 랙 스케일 웨이퍼 스케일 AI 추론 가속기: WSE-3 Turbo 웨이퍼 3개, GPU 대비 추론 속도 30× 향상 주장, 10조 파라미터 이상 모델에서 초당 1,000+ 토큰, CS-3 대비 전력 효율 10×. "에이전틱 AI"를 명시적으로 포지셔닝한 최초 Cerebras 하드웨어. 이번 분기 첫 출하; 공개 가격 미정. `hardware_type: wafer_scale` 서브타입 최초 신호. | L7 웨이퍼 스케일 추론 하드웨어 |
+| **[volcengine/OpenViking ⭐30,030](https://github.com/volcengine/OpenViking) (GitHub Trending, 2026-08-19)** | ByteDance/Volcengine의 AI 에이전트용 통합 컨텍스트 데이터베이스: 영구 메모리·지식 RAG·스킬/도구 스토리지를 단일 자기 진화형 저장소로 통합(에이전트가 읽기뿐 아니라 쓰기도 자율 수행). 세 시스템을 개별 배선하는 현재 패턴에 도전. 출시 첫날 일별 트렌딩 213★. | L3/L4 통합 에이전트 컨텍스트 DB |
+| **[Ornith-1.5](https://ornith.ai/ornith_1_5.html) (HN 85pts, 2026-08-19)** | Ornith-1.0(2026년 6월 추적) 대비 대폭 업그레이드: 모델이 자체 훈련 태스크 생성 → 태스크별 스캐폴드 구성 → RL 롤아웃까지 3단계 클로즈드 루프를 GRPO로 동시 최적화. 397B MoE·35B MoE·9B Dense 3종, MIT 라이선스. L1/L5 경계를 가장 강력하게 허무는 신호. | L1/L5 클로즈드 루프 자기 개선 모델 |
+| **[kenn-io/docbank](https://github.com/kenn-io/docbank) (GeekNews 10pts, 2026-08-19)** | "인간과 에이전트가 협력하여 문서를 관리·검색·검증하는 자기 주권 문서 시스템." 명시적 인간+에이전트 공동 저작 및 검증 설계로, 일반적인 RAG 파이프라인과 차별화. `data_sensitivity: confidential` 프로필에 맞는 온프레미스 문서 기반 에이전트 플로우에 적합. | L3 로컬 퍼스트 인간+에이전트 문서 시스템 |
+| **[chaitanyagiri/munder-difflin ⭐2,590](https://github.com/chaitanyagiri/munder-difflin) (GitHub Trending, 2026-08-18)** | Claude Code·Codex·Antigravity·OpenCode·Crush·Kimi·Grok·pi.dev·Ollama/vLLM 등 10+ 코딩 에이전트 CLI를 node-pty로 감싸 GOD 에이전트 슈퍼바이저가 조율하는 Electron 데스크톱 앱. 에이전트별 메일박스·비용 회로 차단기(steer→constrain→stop)·단일 커미터 git 설계·OTel 추적·Monaco IDE+Pixi.js 사무실 UI. 기존 CLI를 SDK 변경 없이 래핑하는 최초 L2 하네스 패턴. | L2 멀티 에이전트 CLI 하네스 |
 | **[machine0 — YC S26](https://machine0.io) (HN Launch HN, 2026-08-18)** | 장기 실행 에이전트용 영구 NixOS VM($0.013/시간 CPU ~ $39.336/시간 8×H200). CLI + MCP 서버로 에이전트가 직접 VM을 프로비저닝·시작·중단. 자격증명·MCP 서버·프롬프트·환경 변수 자동 주입(Claude Code·Codex가 자동으로 감지). 정적 IP + HTTPS 엔드포인트, 99.99% 업타임 SLA. e2b(단기 에피소드)와 클라우드 VM 사이의 공백을 채우는 최초 영구 에이전트 컴퓨트 기판. | L7 영구 에이전트 컴퓨트 |
 | **[Cursor Origin](https://cursor.com/changelog/origin-code-hosting) (HN 233pts, 2026-08-18)** | Cursor IDE가 코드 호스팅 플랫폼 출시: 저장소 호스팅, PR 관리(diff·커밋 타임라인·병합), 호스팅된 코드에 대한 AI 에이전트 쿼리를 Cursor 내에서 통합. GitHub와 양방향 PR 댓글 동기화 지원. IDE × 코드 호스팅 × 에이전트 표면을 Cursor 단독 레이어로 통합한 최초 사례. | L6 AI IDE + 코드 호스팅 |
-| **[docling-project/docling ⭐65,062](https://github.com/docling-project/docling) (GitHub Trending Python, v2.93 출시 2026-08-18)** | IBM Research 문서 AI: PDF(레이아웃/표/수식/코드 인식)·DOCX·PPTX·XLSX·HTML·EPUB·오디오·이메일 → Markdown/JSON/DocLang/XML. v2.93에서 Docling-Graph 추가: 문서를 Pydantic 객체 노드와 타입 지정 의미관계로 구성된 방향성 지식 그래프로 변환(법률·금융·과학 도메인). 로컬 전용 처리로 `data_sensitivity: confidential` 프로필 대응. LangChain·LlamaIndex·CrewAI·Haystack 네이티브 통합. | L4 문서 AI 역량 |
 | **Stripe, OpenRouter를 $70억+ 인수 (Bloomberg/HN, 2026-08-17)** | 결제 인프라 기업이 주요 LLM 라우팅 익스체인지(300+ 모델, 월 100조 토큰)를 인수. OpenRouter의 중립성 유지 여부 불확실 — `governance_need: hard`, `data_sensitivity: confidential` 프로필의 컴플라이언스 위험 상승. 2026년 5월 시리즈 B 대비 3개월 만에 5× 밸류에이션. | L7 M&A / 라우팅 거버넌스 |
-| **[titanwings/colleague-skill ⭐23,124](https://github.com/titanwings/colleague-skill) (GitHub Trending, 2026-08-17)** | 전문가 지식을 배포 가능한 페르소나 스킬로 증류: 페르소나+업무 2레이어 추출로 Claude Code·Hermes·OpenClaw·Codex·DeepSeek Harness에서 실행되는 스킬 번들 컴파일. arXiv:2605.31264 학술 검증. 하네스 독립적 페르소나 스킬이라는 새로운 L4 하위 타입. | L4 페르소나 스킬 증류 |
-| **[akitaonrails/ai-memory ⭐2,606](https://github.com/akitaonrails/ai-memory) (GitHub Trending, 2026-08-17)** | Rust 단일 바이너리: 코딩 에이전트 CLI 20+ 지원, SessionStart 핸드오프(Claude Code 중단 → Codex 시작 → 컨텍스트 그대로 이어받기). git 버전 관리 마크다운 위키, FTS5+엔티티+그래프 이웃 혼합 검색, MCP 데몬. '벤더 핸드오프' 문제를 해결하는 최초 도구. | L5 크로스 벤더 에이전트 메모리 |
-| **[Blaizzy/mlx-audio ⭐7,746](https://github.com/Blaizzy/mlx-audio) (GitHub Trending Python, 2026-08-17)** | Apple Silicon용 통합 TTS/STT/음악 추론 라이브러리: TTS 모델 30+, STT 모델 15+, 3~8비트 양자화, OpenAI 호환 REST API. oMLX(2026-08-16)와 결합 시 `hardware: local_mac` 프로필에서 클라우드 없이 완전 에이전트 음성 파이프라인 구성. | L7 Apple Silicon 오디오 추론 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (642개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (647개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-08-19 | 데일리 스캔 (5개 문서, 2회 실행): OpenViking ⭐30k L3/L4 (Volcengine 통합 메모리+RAG+스킬 컨텍스트 DB, 자기 진화형 — 에이전트가 자율적으로 쓰기 수행, 3-시스템 배선 패턴에 도전); Cerebras CS-4 L7 (HN 416pts — 랙 스케일 웨이퍼 스케일 AI 가속기, WSE-3 Turbo 3개, GPU 대비 30× 추론 주장, 10조+ 파라미터 모델에서 초당 1,000+ 토큰, CS-3 대비 와트당 효율 10×, 에이전틱 AI 명시적 포지셔닝, `hardware_type: wafer_scale` 최초 신호, 공개 가격 미정); Ornith-1.5 L1/L5 (HN 85pts — 클로즈드 루프 자기 개선: 모델이 훈련 태스크+스캐폴드+RL 롤아웃을 GRPO로 동시 최적화, 3종 MIT; 두 번째 Ornith 신호, L1/L5 경계 붕괴 신호); fx L1 (HN 60pts — 소형 네이티브 코딩 에이전트 랜딩 페이지; 레포 확인 필요); Docbank L3 (GeekNews 10pts — 로컬 퍼스트 인간+에이전트 문서 시스템, 검증 기능 포함, 온프레미스, `data_sensitivity: confidential` 적합). reference-levels.md: 변경 없음(2-신호 규칙 미충족). 50/50 테스트. 레지스트리: 신규 항목 없음. |
 | 2026-08-18 | 데일리 스캔 (4개 문서, 2회 실행): munder-difflin ⭐1.9k L2/L6 (CLI 10+ 에이전트를 node-pty로 래핑·GOD 에이전트 슈퍼바이저·회로 차단기·OTel·Monaco+Pixi.js+칸반 Electron 데스크톱); machine0 YC S26 L7 ($0.013~$39.336/시간, NixOS 영구 VM, CLI+MCP 프로비저닝, 자격증명·MCP 서버 자동 주입, 정적 IP — e2b 에피소드식 대비 최초 영구 에이전트 컴퓨트 기판); Cursor Origin L6/L7 (HN 233pts — Cursor IDE, 양방향 GitHub 동기화·PR 관리·에이전트 쿼리 통합 코드 호스팅 출시; IDE × 저장소 표면 통합, 말뭉치 최초 IDE+코드호스팅 결합); docling v2.93 ⭐65k L4/L5 (IBM Research, PDF/DOCX/PPTX 등 처리, Docling-Graph 지식 그래프 출력 신규 추가, 로컬 전용 `data_sensitivity: confidential` 대응, LangChain·LlamaIndex·CrewAI·Haystack 네이티브). 정규 분류 변경 없음(2신호 규칙 충족 없음). 50/50 테스트. 레지스트리: 신규 항목 없음. |
 | 2026-08-17 | 데일리 스캔 (6개 문서, 2회 실행): Stripe, OpenRouter $70억+ 인수 (Bloomberg/HN — L7 M&A, `governance_need: hard` 프로필 컴플라이언스 신호, Series B 대비 3개월 만에 5× 밸류에이션); MathCode ⭐622 L2/L5 (Lean 4 수학 형식화 코딩 에이전트, 반복 정리 증명 루프, Mathlib 보조 정리 검색, 0.4초/검사, `task: math-formalization` 신규 하위 타입); colleague-skill ⭐23.1k L4 (전문가 페르소나 증류→하네스 독립 스킬 번들, 5개 하네스, arXiv:2605.31264, 165+ 기여자, L4 페르소나 서브타입 최초); ai-memory ⭐1.9k L5 (Rust 단일 바이너리, 크로스 벤더 코딩 에이전트 메모리, CLI 20+ SessionStart 핸드오프, git 버전 마크다운 위키, FTS5+그래프+벡터 혼합 검색, MCP 데몬); mlx-audio ⭐7.7k L7 (Apple MLX TTS/STT/음악 통합, TTS 30+ 모델, Qwen3-TTS 음성 복제, OpenAI 호환 REST API, 스트리밍 TTS; oMLX와 결합 시 로컬-맥 완전 에이전트 음성 스택); Speko YC S26 L7 (음성 AI 라우터, STT 21+ 모델, 9개 언어 벤치마크, 500ms 미만 페일오버, OpenAI 프로토콜, MCP, 최초 음성 전문 라우팅 레이어). 정규 분류 변경 없음(Apple Silicon oMLX+mlx-audio: 서로 다른 레이어). 50/50 테스트. 레지스트리: 신규 항목 없음. |
 | 2026-08-16 | 데일리 스캔 (5개 문서): MoneyPrinterTurbo ⭐104k L2/L4b (AI 비디오 파이프라인 하네스 최초, 12+ LLM 프로바이더, Ollama/LiteLLM 로컬 모델 지원, 에이전트 호출 가능 AI Agent 모드; 비디오 콘텐츠 제작 도메인 L2 하네스 최초 추적); Chestnut eGPU dock (HN 109점, L7/L1, ASM2464PD USB4/PCIe 브리지 C 펌웨어 오픈소스, $249/$799, AI 인접 하드웨어 최초 오픈소스 컨트롤러 펌웨어; `laptop_egpu_usb4` 토폴로지 갭); oMLX ⭐18.8k L1/L7 (Apple Silicon 다중 모델 LRU, RAM→SSD KV 캐시 계층화, 재시작 후에도 KV 블록 유지; Anthropic+OpenAI API 단일 프로세스); TimesFM 2.5 ⭐27.6k L1/L4 (200M 파라미터 제로샷 시계열 예측, 2026년 3월 AGENTS.md 추가; LLM 아닌 도메인 모델 최초 에이전트 호출 스펙 보유; BigQuery ML+Vertex+구글 스프레드시트); THUDM/SLIME ⭐8k L1 (Megatron+SGLang RL 사후 학습, Data Buffer 브리지, 에이전틱 RL+도구 사용 학습; GLM-4.7→5.2 프로덕션; 최초 독립 문서). 2-시그널 규칙 미충족; 정규 분류 변경 없음. 50/50 테스트. 레지스트리: 신규 항목 없음. |
