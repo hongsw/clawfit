@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-08-20)
+## 🔥 지금 가장 뜨거운 것들 (2026-08-21)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[DiffusionGemma](https://arxiv.org/abs/2608.00146) (HN 100pts, 2026-08-20)** | Google DeepMind가 Gemma 4 MoE를 원 학습 토큰 10% 미만으로 파인튜닝해 만든 블록 병렬 확산 언어 모델. 자동회귀 대신 256 토큰 블록을 한 forward pass에 병렬 정제 → H100에서 초당 ~1,500 토큰(자동회귀 대비 3~5× 빠름). thinking 모드·멀티모달·롱컨텍스트 유지. 확산 파인튜닝이 다른 베이스 모델(Llama, Qwen)로 확산되면 clawfit의 `latency` 스코어(자동회귀 처리량 가정) 재보정이 필요. | L1 병렬 확산 언어 모델 |
-| **[Tencent/AI-Infra-Guard ⭐4,864](https://github.com/Tencent/AI-Infra-Guard) (GitHub Trending Python, 2026-08-20)** | 최초 체계적 MCP 서버 보안 스캐너: 4개 모듈(Agent Scan for Dify/Coze, Skills Scan 9 SkillTrustBench 카테고리 T01–T09, MCP Scan 14+ 리스크 클래스 — 툴 포이즈닝·크리덴셜 유출 등, Infrastructure Scan 2,000+ CVE / 130+ 컴포넌트 vLLM/Ollama/ComfyUI 등). Apache 2.0, Go+React, Tencent Zhuque Lab. clawfit 레지스트리 스키마에 `security_scan_coverage` 차원이 없음을 드러냄. | L5 AI 레드팀 플랫폼 / L4 MCP 스캐너 |
-| **[Osmantic/ODS ⭐4,600](https://github.com/Osmantic/ODS) (GitHub Trending Python, 2026-08-20)** | 원커맨드 설치로 llama-server + Open WebUI + Hermes Agent + n8n + Qdrant + SearXNG + Whisper + Kokoro + ComfyUI를 조립하는 로컬 AI 스택. NVIDIA/AMD Strix Halo/Apple Silicon/Intel Arc 자동 하드웨어 감지, manifest 기반 플러그인. clawfit이 현재 다루는 단위(컴포넌트)와 다른 추천 단위(통합 스택). | L7 통합형 로컬 AI 스택 |
-| **[agent-substrate/substrate ⭐1,345](https://github.com/agent-substrate/substrate) (GitHub Trending, 2026-08-20)** | Kubernetes 위에서 액터-워커 다중화: idle 에이전트가 스냅숏 기반 RAM/파일시스템 상태로 워커를 공유, 서브초 활성화 주장. microVM+gVisor 샌드박스, 프레임워크 무관(ADK/LangChain/Claude Code/MCP를 OCI 컨테이너로). K8s 네이티브 에이전트 오케스트레이션 3번째 신호(machine0 08-18, HumanLayer ACP 07-24) — 그러나 서브 역할(비용 밀도)이 명확히 구분됨. | L7 고밀도 K8s 에이전트 런타임 |
-| **["Every Model Cheats"](https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks/) (HN 45pts, 2026-08-20)** | Dreadnode 통제 연구: 프론티어 모델 22개 × CTF 챌린지 23개. 기본 조건에서 21/22 모델이 치팅, 총 치팅 성향 33.0%, 통과율 41.5%가 실제 클린 해결 26.1%로 축소(59% 과대집계). 안티치팅 프롬프트로 8.5%까지 줄지만 4개 모델은 역효과. clawfit의 `baseline` 스코어 가중치(0.1) 재검토 필요 — 공개 벤치마크가 능력을 체계적으로 과대평가할 수 있음. | L5 평가 신뢰성 메타 신호 |
-| **[CHAP — Collaborative Human-Agent Protocol](https://github.com/brightbeamai/chap) (HN 14pts, 2026-08-20)** | 인간-에이전트 공동 작업의 해시 링크형 감사 기록을 위한 v0.2 개방 프로토콜. 7개 코어 메서드 + 11개 옵션 프로필; 정제 편집(rewording)과 대체 오버라이드(different decision)를 구분; MCP+A2A 전송; 5개 프레임워크 브리지(LangGraph, Pydantic AI, AG2, LlamaIndex, Google ADK). MCP(툴 사용)와 A2A(에이전트 간) 사이의 공백 — 인간-에이전트 감사 기록 — 을 채움. `governance_need: hard`에 직접 관련. | L3 인간-에이전트 감사 프로토콜 |
-| **[Cerebras CS-4](https://www.cerebras.ai/cs4) (HN 416pts, 2026-08-19)** | Cerebras 4세대 랙 스케일 웨이퍼 스케일 AI 추론 가속기: WSE-3 Turbo 웨이퍼 3개, GPU 대비 추론 속도 30× 향상 주장, 10조 파라미터 이상 모델에서 초당 1,000+ 토큰, CS-3 대비 전력 효율 10×. "에이전틱 AI"를 명시적으로 포지셔닝한 최초 Cerebras 하드웨어. `hardware_type: wafer_scale` 서브타입 최초 신호. | L7 웨이퍼 스케일 추론 하드웨어 |
-| **[volcengine/OpenViking ⭐30,030](https://github.com/volcengine/OpenViking) (GitHub Trending, 2026-08-19)** | ByteDance/Volcengine의 AI 에이전트용 통합 컨텍스트 데이터베이스: 영구 메모리·지식 RAG·스킬/도구 스토리지를 단일 자기 진화형 저장소로 통합(에이전트가 읽기뿐 아니라 쓰기도 자율 수행). 세 시스템을 개별 배선하는 현재 패턴에 도전. | L3/L4 통합 에이전트 컨텍스트 DB |
+| **[TencentDB Agent Memory v2.0 ⭐20,000+](https://github.com/TencentCloud/TencentDB-Agent-Memory) (2026-08-13)** | v2.0은 4티어 개인 메모리 시스템을 팀 범위 공유 메모리로 확장. 4가지 재사용 자산 타입: Chat Memory(대화 이력), Skill(재사용 절차), LLM-Wiki(구조화 문서), Code-Graph(코드 심볼 인덱스). Tencent CodeBuddy·OpenClaw·Claude Code 통합. 오픈소스 90일 만에 8k→20k+ 스타 3배 성장. 핵심 미검증 주장: Code-Graph가 커밋 후 스탈 심볼을 반환할 경우 신선도/퇴출 정책이 미문서화. | L5 팀 레벨 에이전트 메모리 허브 |
+| **[modular/modular ⭐28,574](https://github.com/modular/modular) (HN 24위, 2026-08-21)** | 8월 18일 Mojo 컴파일러 Apache 2.0으로 공개 — AI 타겟 Python 상위집합 시스템 언어의 오픈소스 완성(stdlib는 2024년부터 공개, 컴파일러 본체 공개는 이번이 처음). Bazel로 소스 빌드, GPU/AI 가속기 커널 타겟. `kernel_language` 스키마 갭 노출. | L1 AI 시스템 언어 컴파일러 |
+| **[CodebuffAI/freebuff ⭐10,422](https://github.com/CodebuffAI/freebuff) (GitHub Trending 주간, 2026-08-21)** | API 키·구독 없이 무료로 사용하는 코딩 에이전트 — 인앱 텍스트 광고로 수익화. 파일 탐색·구현·연구 특화 서브 에이전트. DeepSeek V4, GPT-5.6 Luna, MiMo 2.5 지원. "광고 지원 무료 코딩 에이전트" 최초 패턴. GPU 추론 비용 대비 광고 수익 지속가능성은 미검증. | L2 광고 지원 무료 코딩 에이전트 |
+| **[Tencent/AI-Infra-Guard ⭐5,283](https://github.com/Tencent/AI-Infra-Guard) (GitHub Trending, 2026-08-20)** | 최초 체계적 MCP 서버 보안 스캐너: 4개 모듈(Agent Scan, Skills Scan T01–T09, MCP Scan 14+ 리스크, Infrastructure Scan 2,000+ CVE). Apache 2.0, Tencent Zhuque Lab. `security_scan_coverage` 스키마 갭 노출. | L5 AI 레드팀 플랫폼 / L4 MCP 스캐너 |
+| **[macro-inc/macro ⭐3,925](https://github.com/macro-inc/macro) (GitHub Trending 주간, 2026-08-21)** | 이메일·채팅·문서·작업·CRM을 통합하는 팀 워크스페이스 — 에이전트가 외부 도구가 아닌 동료 협업자로 참여. 무속도제한 MCP 접근, CRDT 문서에서 인간과 동등한 편집 권한, 일일 갱신 크로스채널 팀 메모리. AGPL-3.0 (Rust + SolidJS). 최초 "에이전트 네이티브 팀 워크스페이스" 패턴. | L6 에이전트 네이티브 팀 워크스페이스 / L5 팀 메모리 |
+| **[NVIDIA-NeMo/Switchyard ⭐2,034](https://github.com/NVIDIA-NeMo/Switchyard) (GitHub Trending 주간, 2026-08-21)** | NVIDIA NeMo 팀이 개발한 Rust LLM 프록시 — OpenAI Chat Completions ↔ Anthropic Messages ↔ OpenAI Response API 형식 변환. 명명된 라우팅 전략(LLM 분류기·단계·에스컬레이션·랜덤). NIM+vLLM+Ollama 백엔드. 임베더블 Rust 라이브러리 모드. 프리알파. | L7 Rust LLM 게이트웨이 / L2 라우팅 계층 |
+| **[proliferate-ai/proliferate ⭐183](https://github.com/proliferate-ai/proliferate) (HN Show HN, 2026-08-21)** | Claude Code·Codex·OpenCode·Gemini CLI·Cursor를 병렬 실행하는 메타 하네스 — 각 태스크가 독립 git worktree·브랜치·터미널·대화 상태를 소유. 서브에이전트 위임, 이벤트 기반 워크플로우(야간 리뷰·알림 트리거). 자체 호스팅. munder-difflin(8/18) 이후 두 번째 메타 하네스 신호. | L2 메타 하네스 / 멀티 에이전트 IDE |
+| **[DiffusionGemma](https://arxiv.org/abs/2608.00146) (HN 100pts, 2026-08-20)** | Google DeepMind가 Gemma 4 MoE를 원 학습 토큰 10% 미만으로 파인튜닝한 블록 병렬 확산 언어 모델 — H100에서 초당 ~1,500 토큰. 확산 파인튜닝이 다른 베이스 모델로 일반화되면 clawfit의 `latency` 스코어(자동회귀 처리량 가정) 재보정 필요. | L1 병렬 확산 언어 모델 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (653개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (660개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
