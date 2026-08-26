@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-08-25)
+## 🔥 지금 가장 뜨거운 것들 (2026-08-26)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[katanemo/plano ⭐7,000+](https://github.com/katanemo/plano) (GitHub, 2026-08-25)** | 에이전틱 앱을 위한 AI 네이티브 프록시/데이터 플레인. Envoy 기반으로 LLM 라우팅·OTel 트레이싱·가드레일 필터 체인을 에이전트 코드 외부에 YAML 선언으로 중앙화. 라우팅 판단에 4B 경량 모델 사용(고비용 범용 LLM 불필요). `routing_layer`/`observability_tier` 스키마 갭 확인: Plano 뒤에 배포된 에이전트와 직접 API 호출은 인프라 성숙도가 의미 있게 다름. | L5/L2 에이전트 데이터 플레인 |
-| **[Hot Chips 2026: CUDA → RISC-V](https://chipsandcheese.com/hot-chips-2026-cuda-targets-riscv) (Hacker News, 2026-08-25)** | NVIDIA가 CUDA 프로그래밍 모델을 RISC-V ISA로 확장. 독점 GPU 실리콘에서 CUDA를 분리하는 시도. 오픈 ISA 범용 RISC-V 칩(SiFive, Ventana, Alibaba T-Head류)에서 CUDA 커널 실행 가능성 열림. `desktop-gpu` 아래 저비용·저전력 하드웨어 새 서브티어 예고. Hot Chips 2026 NVIDIA 공식 발표. 12–18개월 배포 지평. | L1 하드웨어 서브스트레이트 신호 |
-| **[marin-community/marin ⭐2,039](https://github.com/marin-community/marin) (GitHub Trending Python, 2026-08-25)** | Stanford CRFM 오픈소스 파운데이션 모델 연구 프레임워크. 전체 학습 라이프사이클(데이터 큐레이션→토크나이제이션→사전학습→사후학습→평가) 포괄. 핵심 차별점: 실패 실험도 성공과 함께 공개. Delphi 스케일링 스위트: 3e18~1e23 FLOPs 컴퓨트 최적 레시피·체크포인트·스케일링 법칙 공개. 10,143+ 커밋. `training_transparency` 스키마 갭 예고. | L1 학습 서브스트레이트 |
-| **[wanxingai/LightAgent ⭐1,200](https://github.com/wanxingai/LightAgent) (GitHub, 2026-08-25)** | LangChain·LlamaIndex 의존성 없이 만든 경량 Python MCP 에이전트 프레임워크. v0.10.0(2026년 8월)에서 이벤트 소싱 런타임 + 체크포인팅 추가 — 세션 이력을 구조화된 이벤트 로그로 저장해 재생·감사·단계별 복구 가능. MCP 퍼스트클래스 지원(클라이언트+서버), LightSwarm 다중 에이전트 위임, LightFlow DAG 워크플로, 승인 게이트 가드레일. `dependency_weight`/`auditability` 스키마 갭. | L2/L4 경량 MCP 프레임워크 |
-| **[CelestoAI/SmolVM ⭐787](https://github.com/CelestoAI/SmolVM) (웹 검색, 2026-08-25)** | Firecracker/QEMU/libkrun 세 VMM 백엔드를 통합 API로 감싼 오픈소스 마이크로VM 샌드박스. 500ms 미만 부팅, 스냅샷/일시정지/재개, VNC 브라우저 자동화, 이그레스 도메인 허용 목록. 셀프호스팅 + Apache 2.0 — 클라우드 SaaS 대안(Freestyle, 2026-04-07)과 구별. Apple Silicon 프리뷰(libkrun). `execution_isolation` 스키마 갭. | L2 오픈소스 마이크로VM 샌드박스 |
-| **[AgriciDaniel/claude-obsidian ⭐11,711](https://github.com/AgriciDaniel/claude-obsidian) (GitHub Trending, 2026-08-24)** | Obsidian 볼트를 에이전트 지식 세컨드 브레인으로 활용하는 로컬 퍼스트 도구. 15개 전문 스킬(capture, ground, connect, maintain)이 복리 지식 루프를 구성. Claude Code가 트랜잭션 기반 뮤테이션으로 볼트 내부에 직접 접근. LYT, PARA, Zettelkasten 지원. kepano/obsidian-skills(플러그인으로서의 스킬)와 구별: claude-obsidian은 Claude가 볼트 안으로 들어간다. | L5/L4 로컬 지식 세컨드 브레인 |
-| **[Untrivial-ai/agent-orchestrator ⭐9,900](https://github.com/Untrivial-ai/agent-orchestrator) (GitHub Trending, 2026-08-23)** | 격리된 git 워크트리를 통해 26+ 코딩 에이전트(Claude Code·GitHub Copilot·Cursor·Aider 등)를 조율하는 플릿 관리 IDE. CI 수정 루프·머지 충돌·PR 리뷰를 자율 처리. 에이전트 선택을 배포 세부 사항으로 취급하는 최초의 L2 도구. | L2/L3 플릿 관리 IDE |
-| **[TryCaspian/caspian-sdk ⭐871](https://github.com/TryCaspian/caspian-sdk) (Show HN 2026-08-21, 2026-08-24)** | 9개+ 채널(Slack·Discord·Telegram·WhatsApp·Instagram·이메일·SMS·X·Linear)에 단일 `on_message` 핸들러. 채널별 네이티브 렌더링(Slack Block Kit, Discord 임베드, Telegram 키보드). 선언형 오버랩 정책: `queue`, `debounce`, `drop`, `parallel`. 650+ 테스트. CopilotKit/channels-sdk와 구별: Caspian은 채널 전반에 걸친 영속적 에이전트 정체성 제공 — 에이전트가 인간을 따라간다. | L6/L4 멀티채널 에이전트 정체성 |
+| **[Trail of Bits: VM이 AI 에이전트를 격리 못 한다](https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/) (Hacker News, 71점, 2026-08-26)** | QEMU/KVM VM에서 AI 에이전트가 세 가지 방식으로 탈출 시연: 미패치 CVE 악용, 라이브러리 취약점 체인, QEMU VAPIC+KVM+libslirp 제로데이 트리플. Firecracker 기반 마이크로VM이 상대적으로 강한 격리 제공. "VM에 에이전트 가두면 안전"이라는 암묵적 가정이 실증적으로 도전받음. `execution_isolation` 스키마 갭. | L7 보안 — VM 격리 실증 연구 |
+| **[tt-a1i/archify ⭐17,437](https://github.com/tt-a1i/archify) (GitHub Trending, 2026-08-26)** | 5가지 다이어그램 타입(아키텍처·워크플로·시퀀스·데이터 플로·라이프사이클)의 인터랙티브 자립형 HTML 생성 에이전트 스킬. Architecture Delta로 코드 변경의 구조적 영향을 머지 전 시각화. 타입 검증된 JSON 중간 표현으로 결정론적 검증 가능. Claude Code·Cursor·opencode·Codex CLI·Raven 지원. | L4 크로스 런타임 스킬 |
+| **[Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next) (Hacker News, 443점, 2026-08-26)** | Alibaba Qwen4 아키텍처 프리뷰: 125B 파라미터 / 6B 활성화 MoE, 하이브리드 Gated DeltaNet + Sparse Attention, 262k 네이티브 컨텍스트(1M 확장 가능), 플래그십 대비 12배 저렴. 독립 벤치마크 확인 시 `latency: medium / budget: low` 구간 레지스트리 재편 가능성. | L1 기반 모델 — Qwen4 프리뷰 |
+| **[DuckLabs, AWS에 합류 (DuckDB ⭐40,659)](https://www.aboutamazon.com/news/company-news/aws-ducklabs) (Hacker News, 762점, 2026-08-26)** | AWS가 DuckDB 개발사 DuckLabs 인수. DuckDB 오픈소스는 DuckDB Foundation 아래 MIT 라이선스 유지, 창업자가 계속 리드. DuckDB는 katanemo/plano 트레이스 저장·에이전트 평가 프레임워크·데이터 파이프라인에 내장. 중립 OSS 업스트림이 상업적 소유가 되는 구조적 리스크 모니터링 필요. | L7/L5 인프라 인수 |
+| **[ConardLi/garden-skills ⭐10,847](https://github.com/ConardLi/garden-skills) (GitHub Trending, 2026-08-26)** | 5개 프로덕션 스킬(웹 디자인·이미지 생성·지식 검색·문서 작성)을 6개 런타임에서 동시 지원: Claude Code·Claude.ai 웹·Cursor·Codex CLI·Gemini CLI·OpenCode. 소비자 인터페이스(Claude.ai 웹) 포함이 주목할 만함. `kb-retriever`가 로컬 지식베이스 컨텍스트 초과 문제 해결 — `network: offline` 구성에 관련. | L4 크로스 런타임 스킬 컬렉션 |
+| **[Apple M6 및 M5 Ultra](https://apple.com) (Hacker News, 918점, 2026-08-26)** | 오늘 최고 주목도 하드웨어 이벤트. M6는 온디바이스 추론 성능 상한 상향, M5 Ultra는 192–384 GB 유니파이드 메모리로 대형 로컬 모델 지원. MLX·LM Studio·Ollama·OMLX 에코시스템이 즉시 타겟팅. 오프라인·기밀 데이터 에이전트 워크로드 직접 수혜. | L1 로컬 하드웨어 서브스트레이트 |
+| **[katanemo/plano ⭐7,000+](https://github.com/katanemo/plano) (GitHub, 2026-08-25)** | Envoy 기반 AI 네이티브 에이전트 프록시/데이터 플레인. LLM 라우팅·OTel 트레이싱·가드레일 필터 체인을 코드 변경 없이 YAML 선언으로 중앙화. 라우팅에 4B 경량 모델 사용. `routing_layer`/`observability_tier` 스키마 갭. | L5/L2 에이전트 데이터 플레인 |
+| **[AgriciDaniel/claude-obsidian ⭐11,711](https://github.com/AgriciDaniel/claude-obsidian) (GitHub Trending, 2026-08-24)** | Obsidian 볼트를 에이전트 지식 세컨드 브레인으로 활용. 15개 전문 스킬이 복리 지식 루프(capture→ground→connect→maintain) 구성. Claude Code가 트랜잭션 뮤테이션으로 볼트 내부에 직접 접근. `knowledge_vault`/`knowledge_format` 스키마 갭. | L5/L4 로컬 지식 세컨드 브레인 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (681개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (691개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
