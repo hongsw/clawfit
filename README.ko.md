@@ -99,19 +99,19 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-08-30)
+## 🔥 지금 가장 뜨거운 것들 (2026-08-31)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[THU-MAIC/OpenMAIC ⭐22,000+](https://github.com/THU-MAIC/OpenMAIC) (GitHub Trending, 2026-08-30)** | 교사·학생·평가자 에이전트가 구조화된 역할로 협력하는 TypeScript 다중 에이전트 교실 하네스. 오늘 +907 스타. OpenExecutive와 함께 "명명된 역할 전문가 팀 + 통합 출력 오케스트레이터" L3 서브타입 두 번째 당일 확인 — PaperOrchestra(2026-08-23) 이후 세 번째 시그널. | L3 다중 에이전트 교실 |
-| **[tencent/Hy4-preview — 770B MoE, Apache 2.0](https://github.com/tencent/Hy4-preview) (HF Trending, 2026-08-28)** | 770B MoE(49B active/pass), 1M 컨텍스트, Gated DSA + IndexCache + iHC 아키텍처. 출시 당일 Apache 2.0 오픈소스 공개. GLM-5.3-Flash와 함께 "오픈 웨이트 가성비 프론티어 티어" 시장 카테고리 2-시그널 확인 — 48시간 내 세 개 프론티어 랩. | L1 오픈 웨이트 프론티어 MoE |
-| **[NVIDIA-NeMo/labs-OO-Agents (NOOA) ⭐1,900](https://github.com/NVIDIA-NeMo/labs-OO-Agents) (GitHub, 2026-08-29)** | 에이전트 = Python 클래스; 필드=상태, 메서드=기능, 독스트링=프롬프트, 타입 어노테이션=계약. `...` 바디 LLM 지원 메서드, AST 검증, 모듈 차단 목록(심층 방어). GPT-5.5로 SWE-bench 82.2% 검증. L1(REPL/LLM 루프)과 L2(클래스-as-에이전트 구조) 동시 점유. | L1/L2 OOP 에이전트 런타임 |
-| **[tashfeenahmed/freellmapi ⭐21,473](https://github.com/tashfeenahmed/freellmapi) (GitHub Trending, 2026-08-28)** | 34개 무료 티어 제공사 통합 라우터(Google, Groq, Cerebras, Mistral, NVIDIA, HuggingFace 등); 월 74억 토큰; 6개 라우팅 전략; AES-256-GCM 암호화; OpenAI·Anthropic·Gemini·Ollama API 에뮬레이션. `budget: 0` 갭 — 21k+ 스타로 검증된 커뮤니티 카테고리. | L7 무료 티어 LLM 라우터 |
-| **[SenteLabsAI/OpenExecutive ⭐3,000](https://github.com/SenteLabsAI/OpenExecutive) (GeekNews 27점, 2026-08-30)** | 전략·재무·HR·법무·운영·마케팅·제품·이사회 8개 전문 에이전트가 단일 통합 목소리 오케스트레이터를 통해 조율. 이중 레이어 RAG, SQLite 크로스세션 에피소딕 메모리, Haiku/Sonnet/Opus 모델 계층화. AI로 개발팀이 해고된 엔지니어들이 만든 프로젝트. | L3/L5/L6 전문가 팀 |
-| **[zai-org/GLM-5.3-Flash — 320B/18B active, MIT](https://github.com/zai-org/GLM-5.3-Flash) (HF Trending 2위, 2026-08-28)** | GLM-5 시리즈 최초 멀티모달 모델; 320B total/18B active MoE; 하이브리드 희소+선형 어텐션; GLM-5.2 대비 1/10 가격(자체 보고). Hy4-preview와 함께 "오픈 웨이트 가성비 프론티어 티어" 2-시그널 완성. MIT 라이선스 — 이 티어 최저 마찰 라이선스. | L1 가성비 프론티어 MoE |
-| **[JordyZomer/lemmalog ⭐190](https://github.com/JordyZomer/lemmalog) (GeekNews, 2026-08-30)** | LLM 에이전트 메모리를 위한 Rust Datalog 엔진(MCP 서버로 제공). 철회 가능한 결론: 입력 사실이 무효화되면 의존하는 모든 파생 결론이 자동 철회. 출처 추적 체인(why() 쿼리), 시간 유효성 구간, 45배 컨텍스트 압축. Claude Code 등 MCP 호환 호스트에 즉시 연결 가능. | L5/L4 논리 기반 에이전트 메모리 |
+| **[debpalash/VoiceStudio ⭐12,613](https://github.com/debpalash/VoiceStudio) (GitHub Trending Python, 2026-08-31)** | Tauri 데스크탑 앱 + MCP 서버 + 에이전트 스킬(omnivoice, oss-maintainer). 646개 언어 음성 복제, localhost:3900 OpenAI 호환 API, AGPL-3.0. VoiceMem과 함께 음성 네이티브 에이전트 인프라 두 번째 당일 시그널 — 메모리(VoiceMem)와 I/O 플랫폼(VoiceStudio) 서로 다른 서브타입. | L7/L4 음성 + MCP 에이전트 스킬 |
+| **[calpaterson/memoryfield](https://github.com/calpaterson/memoryfield) (HN 126점, 2026-08-31)** | 이식 가능한 에이전트 메모리 파일 포맷: Markdown 페이지 + SQLite 벡터 인덱스 + ZIP 패키지. memoryfield-spec(⭐13), memoryfield-tool, memoryfield-skill 세 리포. Lemmalog(2026-08-30)에 이어 구조화 메모리 아키텍처 두 번째 시그널(크로스데이). | L5/L4 이식 가능한 메모리 포맷 |
+| **[VoiceMem](https://huggingface.co/papers/2608.26005) (HF 170 추천, 2026-08-31)** | 음성 에이전트용 스트리밍 이중 뇌 메모리: 좌뇌(스키마→엔티티 사실 검색) + 우뇌(페르소나/감정 노드). 134ms 검색 지연, 76.39 평균(Mem0 대비 +24.12). 음성 활동 감지 침묵 창 내 완료 설계. | L5/L7 음성 네이티브 메모리 |
+| **[FreeToken](https://arxiv.org/abs/2608.16157) (HF 104 추천, 2026-08-31)** | 엣지 네이티브 MoE 서빙: CPU+GPU+NVMe 이기종 풀, 대역폭 적응형 실행. 8GB 노트북 GPU에 35B 모델, 워크스테이션에 GLM-5.2 753B. AirLLM·waste-nvme에 이은 세 번째 엣지 추론 시그널. flashml.ai 출시(클로즈드). | L1/L7 엣지 MoE 서빙 |
+| **[patent-disclosure-skill ⭐6,171](https://github.com/ranfysvalle02/patent-disclosure-skill) (GitHub Trending, 2026-08-31)** | 크로스 하네스 특허 명세 생성 에이전트 스킬. 도메인 특화 L4 스킬팩의 최신 사례. | L4 도메인 특화 스킬 |
+| **[THU-MAIC/OpenMAIC ⭐26,555](https://github.com/THU-MAIC/OpenMAIC) (GitHub Trending, 최근)** | 교사·학생·평가자 에이전트가 구조화된 역할로 협력하는 TypeScript 다중 에이전트 교실 하네스. "명명된 역할 전문가 팀 + 통합 출력 오케스트레이터" L3 서브타입 확인. | L3 다중 에이전트 교실 |
+| **[NVIDIA-NeMo/labs-OO-Agents (NOOA) ⭐1,900](https://github.com/NVIDIA-NeMo/labs-OO-Agents) (GitHub, 최근)** | 에이전트 = Python 클래스; 필드=상태, 메서드=기능, 독스트링=프롬프트. GPT-5.5로 SWE-bench 82.2% 검증. L1과 L2 동시 점유. | L1/L2 OOP 에이전트 런타임 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (675개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (712개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -134,6 +134,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-08-31 | 데일리 스캔 (5개 문서): debpalash/VoiceStudio ⭐12,613 L7/L4 (GitHub Trending Python — Tauri 앱, MCP 서버, 에이전트 스킬, 646개 언어, OpenAI 호환 API, AGPL-3.0); calpaterson/memoryfield L5/L4 (HN 126점 — 이식 가능한 에이전트 메모리 파일 포맷: Markdown + SQLite 벡터 인덱스 + ZIP); VoiceMem L5/L7 (HF 170 추천 — 스트리밍 이중 뇌 메모리, 134ms 검색, 76.39 평균, Mem0 대비 +24.12); FreeToken L1/L7 (HF 104 추천 — 엣지 네이티브 MoE 서빙, 대역폭 적응형, 35B on 8GB GPU, 세 번째 엣지 추론 시그널); Code as Worlds L2/L5 (HF 38 추천, 당일 일간 논문 — 실행 가능한 Python 세계 표현 물리적 추론). **2-시그널 참고:** 음성 네이티브 인프라 (VoiceMem + VoiceStudio — 서로 다른 서브타입, 정규 변경 없음); 구조화 메모리 (memoryfield, Lemmalog와 크로스데이 쌍). 레지스트리: 신규 항목 없음. 50/50 테스트. |
 | 2026-08-30 | 데일리 스캔 (5개 문서, 2회 실행): OpenMAIC ⭐22k+ L3 (GitHub Trending — TypeScript 다중 에이전트 교실, 교사/학생/평가자, 오늘 +907 스타); Domain-Driven Agents L2 (HN — DDD 경계 컨텍스트 → 에이전트 범위, 집계 → 상태 있는 에이전트 경계); braintrustdata/agentbehavior L5 (GeekNews — 버전 관리 행동 스펙 프레임워크, OpenAPI와 유사한 역할); Lemmalog ⭐190 L5/L4 (GeekNews — Rust Datalog 엔진 MCP 서버, 철회 가능한 결론, 출처 체인, 45배 컨텍스트 압축); OpenExecutive ⭐3,000 L3/L5/L6 (GeekNews 27점 — 8개 전문 에이전트 팀, 이중 레이어 RAG, SQLite 에피소딕 메모리, Haiku/Sonnet/Opus 계층화). **2-시그널 확인:** 명명된 역할 전문가 팀 L3 서브타입 (OpenMAIC + OpenExecutive = PaperOrchestra 이후 세 번째 시그널; 발견 로그 추가, 정규 섹션 변경 없음). 레지스트리: 신규 항목 없음. 50/50 테스트. |
 | 2026-08-29 | 데일리 스캔 (5개 문서, 2회 실행): arxiv 2608.23691 — 자율 수학적 발견 L5/L2 (HN — 오픈 월드 벤치마크, 추측+검증+문헌 검색 역할, 두 번째 오픈 월드 연구 루프 시그널); NOOA ⭐1,900 L1/L2 (GitHub — NVIDIA OOP Python 에이전트 런타임, GPT-5.5로 SWE-bench 82.2%); Gemini 3.5 Transcribe L1/L6 (GeekNews — 4.0% WER 스트리밍, Chirp 3 대비 70% 빠른 최종 전사); agentconnect ⭐725 L3/L6 (GeekNews — 오픈소스 Slack/GitHub/Discord 다중 에이전트 협업, ACP 호환); ApodexAI/FrontierAgent ⭐1,300 L1/L2/L5 (HF 논문 4위, 200 추천 — 35B Apodex 1.1 Mini, AgentOS 크로스 에이전트 상태, 오픈 웨이트). 정규 분류 변경 없음. 레지스트리: 신규 항목 없음. 50/50 테스트. |
 | 2026-08-28 | 데일리 스캔 (5개 문서): tencent/Hy4-preview ⭐202 L1 (HF Trending — 770B/49B active MoE, 1M 컨텍스트, Gated DSA + IndexCache, Apache 2.0, 출시 당일); zai-org/GLM-5.3-Flash L1 (HF Trending 2위, 1,470 좋아요 — 320B/18B active MoE, GLM-5 최초 멀티모달, 하이브리드 어텐션, MIT, GLM-5.2 대비 1/10 가격); arxiv 2608.09888 BDH-CQ L1 연구 (HF 논문 1위, 760 추천 — 150M 파라미터, $0.0007/ARC-AGI-1 작업, 파레토 프론티어 돌파); freellmapi ⭐21,473 L7 (GitHub Trending — 34개 무료 제공사, 74억 토큰/월, 6개 라우팅 전략); JetBrains/go-modern-guidelines ⭐2,533 L4 (GitHub Trending — AI 에이전트용 모던 Go 가이드라인, 훈련 데이터 지연 + 빈도 편향 패턴). **2-시그널 확인:** 오픈 웨이트 가성비 프론티어 티어 (Hy4-preview + GLM-5.3-Flash, 48시간 내 세 프론티어 랩). 레지스트리: 신규 항목 없음. 50/50 테스트. |
