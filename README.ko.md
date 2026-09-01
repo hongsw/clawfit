@@ -99,19 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-08-31)
+## 🔥 지금 가장 뜨거운 것들 (2026-09-01)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[debpalash/VoiceStudio ⭐12,613](https://github.com/debpalash/VoiceStudio) (GitHub Trending Python, 2026-08-31)** | Tauri 데스크탑 앱 + MCP 서버 + 에이전트 스킬(omnivoice, oss-maintainer). 646개 언어 음성 복제, localhost:3900 OpenAI 호환 API, AGPL-3.0. VoiceMem과 함께 음성 네이티브 에이전트 인프라 두 번째 당일 시그널 — 메모리(VoiceMem)와 I/O 플랫폼(VoiceStudio) 서로 다른 서브타입. | L7/L4 음성 + MCP 에이전트 스킬 |
-| **[calpaterson/memoryfield](https://github.com/calpaterson/memoryfield) (HN 126점, 2026-08-31)** | 이식 가능한 에이전트 메모리 파일 포맷: Markdown 페이지 + SQLite 벡터 인덱스 + ZIP 패키지. memoryfield-spec(⭐13), memoryfield-tool, memoryfield-skill 세 리포. Lemmalog(2026-08-30)에 이어 구조화 메모리 아키텍처 두 번째 시그널(크로스데이). | L5/L4 이식 가능한 메모리 포맷 |
-| **[VoiceMem](https://huggingface.co/papers/2608.26005) (HF 170 추천, 2026-08-31)** | 음성 에이전트용 스트리밍 이중 뇌 메모리: 좌뇌(스키마→엔티티 사실 검색) + 우뇌(페르소나/감정 노드). 134ms 검색 지연, 76.39 평균(Mem0 대비 +24.12). 음성 활동 감지 침묵 창 내 완료 설계. | L5/L7 음성 네이티브 메모리 |
-| **[FreeToken](https://arxiv.org/abs/2608.16157) (HF 104 추천, 2026-08-31)** | 엣지 네이티브 MoE 서빙: CPU+GPU+NVMe 이기종 풀, 대역폭 적응형 실행. 8GB 노트북 GPU에 35B 모델, 워크스테이션에 GLM-5.2 753B. AirLLM·waste-nvme에 이은 세 번째 엣지 추론 시그널. flashml.ai 출시(클로즈드). | L1/L7 엣지 MoE 서빙 |
-| **[patent-disclosure-skill ⭐6,171](https://github.com/ranfysvalle02/patent-disclosure-skill) (GitHub Trending, 2026-08-31)** | 크로스 하네스 특허 명세 생성 에이전트 스킬. 도메인 특화 L4 스킬팩의 최신 사례. | L4 도메인 특화 스킬 |
-| **[THU-MAIC/OpenMAIC ⭐26,555](https://github.com/THU-MAIC/OpenMAIC) (GitHub Trending, 최근)** | 교사·학생·평가자 에이전트가 구조화된 역할로 협력하는 TypeScript 다중 에이전트 교실 하네스. "명명된 역할 전문가 팀 + 통합 출력 오케스트레이터" L3 서브타입 확인. | L3 다중 에이전트 교실 |
-| **[NVIDIA-NeMo/labs-OO-Agents (NOOA) ⭐1,900](https://github.com/NVIDIA-NeMo/labs-OO-Agents) (GitHub, 최근)** | 에이전트 = Python 클래스; 필드=상태, 메서드=기능, 독스트링=프롬프트. GPT-5.5로 SWE-bench 82.2% 검증. L1과 L2 동시 점유. | L1/L2 OOP 에이전트 런타임 |
+| **[openclaw/openclaw ⭐388,500](https://github.com/openclaw/openclaw) (GeekNews, 2026-09-01)** | v2.0 최대 릴리스: 16,000+ PR, 933명 기여자, 멀티플레이어 공유 세션, 브라우저 앱 전면 재설계, ChatGPT/Claude 구독 활용 온보딩, WhatsApp/Telegram/Slack/Discord 채널 통합, ClawHub 플러그인 마켓플레이스. 어제 스캔의 OpenClaw-RL 혼동 오류 수정. | L6/L4 소비자용 AI 플랫폼 |
+| **[Gitlawb/openclaude ⭐31,162](https://github.com/Gitlawb/openclaude) (GitHub Trending, 2026-09-01)** | "하나의 CLI로 클라우드 API와 로컬 모델 백엔드 모두" — 20+ 프로바이더 어댑터, MCP 일급 지원, gRPC 헤드리스 서버 모드, VS Code 확장 번들, 대화 포크/재개/백그라운드. L2 "프로바이더 무관 멀티백엔드 CLI 하네스" 첫 시그널. | L2/L4 멀티백엔드 CLI |
+| **[OPSA arxiv 2608.31046](https://huggingface.co/papers/2608.31046) (HF 88 추천, 2026-09-01 일간 논문)** | 온폴리시 증류는 교사 지식 전달이 아니라 저확률 토큰 억제로 작동 — 고정 음성 이점(negative advantage)이 교사 제공 이점과 동일 성능. OPSA: 엔트로피 적응형, 지도 없이 학습. Qwen3-1.7B AIME24 +35.41 Avg@32 (+263%). 모델 공개. | L1 학습 방법론 |
+| **[DreamX-Creator arxiv 2608.31106](https://huggingface.co/papers/2608.31106) (HF 86 추천, 2026-09-01 일간 논문)** | 7B 컴팩트 모델이 오디오와 비디오 스트림을 네이티브로 동시 잡음 제거. Gated Cross-Modal Attention: 전반부 독립, 후반부 결합. 양식별 피드백 RL, 1단계 2K 오토리그레시브 정제기. 7B 생성기 + 2K 정제기 모두 공개. AMAP-ML(알리바바 맵). | L7/L1 오디오-비디오 생성 |
+| **[PaperGym arxiv 2608.31119](https://huggingface.co/papers/2608.31119) (HF 34 추천, 2026-09-01 일간 논문)** | 각 논문이 RL 학습 환경: 목표+배경→질문, 방법+실험→루브릭. 기준 누출 3.7%(경쟁 대비 11.90%~34.10%). OPSD + GRPO 2단계. Qwen3-8B ResearchQA 73.48(Kimi K2.6 초과). PaperGym-20k + 벤치마크 2종 공개. ZJU-REAL. | L3/L1 연구 에이전트 학습 |
+| **[debpalash/VoiceStudio ⭐13,531](https://github.com/debpalash/VoiceStudio) (GitHub Trending Python, 2026-08-31)** | Tauri 데스크탑 앱 + MCP 서버 + 에이전트 스킬(omnivoice, oss-maintainer). 646개 언어 음성 복제, localhost:3900 OpenAI 호환 API, AGPL-3.0. MCP + 에이전트 스킬 + OpenAI 호환 API를 하나의 로컬 바이너리로 결합한 최초 음성 플랫폼. | L7/L4 음성 + MCP |
+| **[VoiceMem](https://huggingface.co/papers/2608.26005) (HF 173 추천, 2026-08-31)** | 음성 에이전트용 스트리밍 이중 뇌 메모리. 134ms 검색(음성 활동 감지 침묵 창 내 완료). 76.39 평균(Mem0 대비 +24.12). | L5/L7 음성 네이티브 메모리 |
+| **[FreeToken](https://arxiv.org/abs/2608.16157) (HF 105 추천, 2026-08-31)** | 엣지 네이티브 MoE 서빙: CPU+GPU+NVMe 이기종 풀, 대역폭 적응형 실행. 8GB 노트북 GPU에 35B, 워크스테이션에 753B. 세 번째 엣지 추론 시그널. | L1/L7 엣지 MoE 서빙 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (712개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (717개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -134,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-09-01 | 데일리 스캔 (5개 문서): openclaw/openclaw ⭐388.5k L6/L4 (GeekNews — v2.0, 멀티플레이어 세션, ClawHub 마켓플레이스, WhatsApp/텔레그램/Slack/디스코드/시그널 통합, MIT; 2026-08-31 오인식 수정: Gen-Verse/OpenClaw-RL과 별개 프로젝트); Gitlawb/openclaude ⭐31.2k L2/L4 (GitHub Trending 전체 언어 — 제공자 무관 20+ 백엔드 CLI 하네스, MCP 네이티브, gRPC 헤드리스, VS Code 번들, MIT, L2 "제공자 무관 다중 백엔드 CLI" 첫 시그널); OPSA HF 1위(88 추천) L1 (HF 일간 논문 — 온폴리시 자체 적응, OPD가 저확률 토큰 억제로 작동한다는 발견, 감독 없는 엔트로피 적응 추론, Qwen3-1.7B +35.41 AIME24 +263%); DreamX-Creator HF 2위(86 추천) L7/L1 (HF 일간 논문 — 7B 네이티브 조인트 오디오-비디오 동시 디노이징, Gated Cross-Modal Attention, 2K Refiner, AMAP-ML/알리바바 맵스, L7 컴팩트 오픈 오디오-비디오 생성 첫 시그널); PaperGym(34 추천) L3/L1 (HF 일간 논문 — 논문별 RL 훈련 환경, 기준 누출 3.7%, OPSD+GRPO 2단계, PaperGym-20k 코퍼스+PaperGym-Innov+PaperGym-Design 벤치마크 공개). 정규 분류 변경 없음. 레지스트리: 신규 항목 없음. 50/50 테스트. |
 | 2026-08-31 | 데일리 스캔 (5개 문서): debpalash/VoiceStudio ⭐12,613 L7/L4 (GitHub Trending Python — Tauri 앱, MCP 서버, 에이전트 스킬, 646개 언어, OpenAI 호환 API, AGPL-3.0); calpaterson/memoryfield L5/L4 (HN 126점 — 이식 가능한 에이전트 메모리 파일 포맷: Markdown + SQLite 벡터 인덱스 + ZIP); VoiceMem L5/L7 (HF 170 추천 — 스트리밍 이중 뇌 메모리, 134ms 검색, 76.39 평균, Mem0 대비 +24.12); FreeToken L1/L7 (HF 104 추천 — 엣지 네이티브 MoE 서빙, 대역폭 적응형, 35B on 8GB GPU, 세 번째 엣지 추론 시그널); Code as Worlds L2/L5 (HF 38 추천, 당일 일간 논문 — 실행 가능한 Python 세계 표현 물리적 추론). **2-시그널 참고:** 음성 네이티브 인프라 (VoiceMem + VoiceStudio — 서로 다른 서브타입, 정규 변경 없음); 구조화 메모리 (memoryfield, Lemmalog와 크로스데이 쌍). 레지스트리: 신규 항목 없음. 50/50 테스트. |
 | 2026-08-30 | 데일리 스캔 (5개 문서, 2회 실행): OpenMAIC ⭐22k+ L3 (GitHub Trending — TypeScript 다중 에이전트 교실, 교사/학생/평가자, 오늘 +907 스타); Domain-Driven Agents L2 (HN — DDD 경계 컨텍스트 → 에이전트 범위, 집계 → 상태 있는 에이전트 경계); braintrustdata/agentbehavior L5 (GeekNews — 버전 관리 행동 스펙 프레임워크, OpenAPI와 유사한 역할); Lemmalog ⭐190 L5/L4 (GeekNews — Rust Datalog 엔진 MCP 서버, 철회 가능한 결론, 출처 체인, 45배 컨텍스트 압축); OpenExecutive ⭐3,000 L3/L5/L6 (GeekNews 27점 — 8개 전문 에이전트 팀, 이중 레이어 RAG, SQLite 에피소딕 메모리, Haiku/Sonnet/Opus 계층화). **2-시그널 확인:** 명명된 역할 전문가 팀 L3 서브타입 (OpenMAIC + OpenExecutive = PaperOrchestra 이후 세 번째 시그널; 발견 로그 추가, 정규 섹션 변경 없음). 레지스트리: 신규 항목 없음. 50/50 테스트. |
 | 2026-08-29 | 데일리 스캔 (5개 문서, 2회 실행): arxiv 2608.23691 — 자율 수학적 발견 L5/L2 (HN — 오픈 월드 벤치마크, 추측+검증+문헌 검색 역할, 두 번째 오픈 월드 연구 루프 시그널); NOOA ⭐1,900 L1/L2 (GitHub — NVIDIA OOP Python 에이전트 런타임, GPT-5.5로 SWE-bench 82.2%); Gemini 3.5 Transcribe L1/L6 (GeekNews — 4.0% WER 스트리밍, Chirp 3 대비 70% 빠른 최종 전사); agentconnect ⭐725 L3/L6 (GeekNews — 오픈소스 Slack/GitHub/Discord 다중 에이전트 협업, ACP 호환); ApodexAI/FrontierAgent ⭐1,300 L1/L2/L5 (HF 논문 4위, 200 추천 — 35B Apodex 1.1 Mini, AgentOS 크로스 에이전트 상태, 오픈 웨이트). 정규 분류 변경 없음. 레지스트리: 신규 항목 없음. 50/50 테스트. |
