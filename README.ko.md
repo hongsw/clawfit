@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-09-01)
+## 🔥 지금 가장 뜨거운 것들 (2026-09-02)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[openclaw/openclaw ⭐388,500](https://github.com/openclaw/openclaw) (GeekNews, 2026-09-01)** | v2.0 최대 릴리스: 16,000+ PR, 933명 기여자, 멀티플레이어 공유 세션, 브라우저 앱 전면 재설계, ChatGPT/Claude 구독 활용 온보딩, WhatsApp/Telegram/Slack/Discord 채널 통합, ClawHub 플러그인 마켓플레이스. 어제 스캔의 OpenClaw-RL 혼동 오류 수정. | L6/L4 소비자용 AI 플랫폼 |
-| **[Gitlawb/openclaude ⭐31,162](https://github.com/Gitlawb/openclaude) (GitHub Trending, 2026-09-01)** | "하나의 CLI로 클라우드 API와 로컬 모델 백엔드 모두" — 20+ 프로바이더 어댑터, MCP 일급 지원, gRPC 헤드리스 서버 모드, VS Code 확장 번들, 대화 포크/재개/백그라운드. L2 "프로바이더 무관 멀티백엔드 CLI 하네스" 첫 시그널. | L2/L4 멀티백엔드 CLI |
-| **[OPSA arxiv 2608.31046](https://huggingface.co/papers/2608.31046) (HF 88 추천, 2026-09-01 일간 논문)** | 온폴리시 증류는 교사 지식 전달이 아니라 저확률 토큰 억제로 작동 — 고정 음성 이점(negative advantage)이 교사 제공 이점과 동일 성능. OPSA: 엔트로피 적응형, 지도 없이 학습. Qwen3-1.7B AIME24 +35.41 Avg@32 (+263%). 모델 공개. | L1 학습 방법론 |
-| **[DreamX-Creator arxiv 2608.31106](https://huggingface.co/papers/2608.31106) (HF 86 추천, 2026-09-01 일간 논문)** | 7B 컴팩트 모델이 오디오와 비디오 스트림을 네이티브로 동시 잡음 제거. Gated Cross-Modal Attention: 전반부 독립, 후반부 결합. 양식별 피드백 RL, 1단계 2K 오토리그레시브 정제기. 7B 생성기 + 2K 정제기 모두 공개. AMAP-ML(알리바바 맵). | L7/L1 오디오-비디오 생성 |
-| **[PaperGym arxiv 2608.31119](https://huggingface.co/papers/2608.31119) (HF 34 추천, 2026-09-01 일간 논문)** | 각 논문이 RL 학습 환경: 목표+배경→질문, 방법+실험→루브릭. 기준 누출 3.7%(경쟁 대비 11.90%~34.10%). OPSD + GRPO 2단계. Qwen3-8B ResearchQA 73.48(Kimi K2.6 초과). PaperGym-20k + 벤치마크 2종 공개. ZJU-REAL. | L3/L1 연구 에이전트 학습 |
-| **[debpalash/VoiceStudio ⭐13,531](https://github.com/debpalash/VoiceStudio) (GitHub Trending Python, 2026-08-31)** | Tauri 데스크탑 앱 + MCP 서버 + 에이전트 스킬(omnivoice, oss-maintainer). 646개 언어 음성 복제, localhost:3900 OpenAI 호환 API, AGPL-3.0. MCP + 에이전트 스킬 + OpenAI 호환 API를 하나의 로컬 바이너리로 결합한 최초 음성 플랫폼. | L7/L4 음성 + MCP |
-| **[VoiceMem](https://huggingface.co/papers/2608.26005) (HF 173 추천, 2026-08-31)** | 음성 에이전트용 스트리밍 이중 뇌 메모리. 134ms 검색(음성 활동 감지 침묵 창 내 완료). 76.39 평균(Mem0 대비 +24.12). | L5/L7 음성 네이티브 메모리 |
-| **[FreeToken](https://arxiv.org/abs/2608.16157) (HF 105 추천, 2026-08-31)** | 엣지 네이티브 MoE 서빙: CPU+GPU+NVMe 이기종 풀, 대역폭 적응형 실행. 8GB 노트북 GPU에 35B, 워크스테이션에 753B. 세 번째 엣지 추론 시그널. | L1/L7 엣지 MoE 서빙 |
+| **[FrontierHarness Eval](https://frontierharness.org) (HN 36 pts, 2026-09-02)** | 최초 통제된 멀티 하네스 벤치마크: 9개 하네스, 12개 구성, 동일 모델(Kimi K3), 동일 인프라. 품질 선두(Codex 66.7%) ≠ 비용 선두(Exo Harness $1.05/작업). 하네스별 비용 17배 차이 — 하네스 선택이 에르고노믹스가 아닌 경제적 결정임을 보여주는 첫 실증 데이터. | L5 멀티 하네스 벤치마크 |
+| **[Quasar 438B](https://multiversecomputing.com/resources/introducing-quasar-438b-europe-s-leading-ai-model) (HN 137 pts, 2026-09-02)** | Multiverse Computing의 첫 400B+ 엔터프라이즈 추론 모델. Terminal-Bench v2.1: 69.3; Intelligence Index 43; 추론 포함 500토큰 15.3초. API 전용(CompactifAI). 이 코퍼스 최초 유럽산 400B+ 모델. 가격 확인 후 레지스트리 후보. | L1 엔터프라이즈 추론 모델 |
+| **[truefoundry/trueforge ⭐5,100](https://github.com/truefoundry/trueforge) (GeekNews, 2026-09-02)** | 풀스택 에이전트 실행 하네스(자체 호스팅 서비스): MCP 도구, 스킬, 샌드박스 실행, 사람 승인 체크포인트, 이중 로컬/호스팅 배포(SQLite vs. Postgres+Redis), 생성형 UI. "프로바이더 무관 멀티백엔드 하네스" 두 번째 시그널(어제 OpenClaude에 이어). | L2/L4 에이전트 실행 하네스 |
+| **[OpenMAIC ⭐29,000+](https://github.com/THU-MAIC/OpenMAIC) (GitHub Trending, 2026-09-02)** | 오늘 하루 +3,128 스타(2026-08-30 추적 시 22k; 현재 29k+); 가속 중. 다중 에이전트 교실 하네스 — 교사, 코치, 평가자, 동료 에이전트가 하나의 세션에서 협력. 코딩 외 도메인에서도 다중 에이전트 오케스트레이션 채택이 가속됨을 확인. | L3/L4 다중 에이전트 오케스트레이션 |
+| **[openclaw/openclaw ⭐388,500](https://github.com/openclaw/openclaw) (GeekNews, 2026-09-01)** | v2.0: 16,000+ PR, 933명 기여자, 멀티플레이어 공유 세션, 브라우저 앱 전면 재설계, ClawHub 플러그인 마켓플레이스. 이 코퍼스 최대 소비자용 AI 어시스턴트 릴리스. | L6/L4 소비자용 AI 플랫폼 |
+| **[Gitlawb/openclaude ⭐31,162](https://github.com/Gitlawb/openclaude) (GitHub Trending, 2026-09-01)** | "하나의 CLI로 클라우드 API와 로컬 모델 백엔드 모두" — 20+ 프로바이더 어댑터, MCP 일급 지원, gRPC 헤드리스 서버 모드. L2 "프로바이더 무관 멀티백엔드 CLI 하네스" 첫 시그널. | L2/L4 멀티백엔드 CLI |
+| **[OPSA arxiv 2608.31046](https://huggingface.co/papers/2608.31046) (HF 88 추천, 2026-09-01)** | 온폴리시 증류는 교사 지식 전달이 아닌 저확률 토큰 억제로 작동. OPSA: 엔트로피 적응형, 지도 없이 학습. Qwen3-1.7B AIME24 +263%. 확인 시 소형 모델과 대형 모델 간 품질 격차 축소 의미. | L1 학습 방법론 |
+| **[VoiceMem](https://huggingface.co/papers/2608.26005) (HF 173 추천, 2026-08-31)** | 음성 에이전트용 스트리밍 이중 뇌 메모리. 134ms 검색(음성 활동 감지 침묵 창 내 완료). 76.39 평균(Mem0 대비 +24.12). 음성 전환 타이밍 제약을 중심으로 설계된 최초 메모리 아키텍처. | L5/L7 음성 네이티브 메모리 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (717개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (722개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
