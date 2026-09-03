@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-09-02)
+## 🔥 지금 가장 뜨거운 것들 (2026-09-03)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[FrontierHarness Eval](https://frontierharness.org) (HN 36 pts, 2026-09-02)** | 최초 통제된 멀티 하네스 벤치마크: 9개 하네스, 12개 구성, 동일 모델(Kimi K3), 동일 인프라. 품질 선두(Codex 66.7%) ≠ 비용 선두(Exo Harness $1.05/작업). 하네스별 비용 17배 차이 — 하네스 선택이 에르고노믹스가 아닌 경제적 결정임을 보여주는 첫 실증 데이터. | L5 멀티 하네스 벤치마크 |
-| **[Quasar 438B](https://multiversecomputing.com/resources/introducing-quasar-438b-europe-s-leading-ai-model) (HN 137 pts, 2026-09-02)** | Multiverse Computing의 첫 400B+ 엔터프라이즈 추론 모델. Terminal-Bench v2.1: 69.3; Intelligence Index 43; 추론 포함 500토큰 15.3초. API 전용(CompactifAI). 이 코퍼스 최초 유럽산 400B+ 모델. 가격 확인 후 레지스트리 후보. | L1 엔터프라이즈 추론 모델 |
-| **[truefoundry/trueforge ⭐5,100](https://github.com/truefoundry/trueforge) (GeekNews, 2026-09-02)** | 풀스택 에이전트 실행 하네스(자체 호스팅 서비스): MCP 도구, 스킬, 샌드박스 실행, 사람 승인 체크포인트, 이중 로컬/호스팅 배포(SQLite vs. Postgres+Redis), 생성형 UI. "프로바이더 무관 멀티백엔드 하네스" 두 번째 시그널(어제 OpenClaude에 이어). | L2/L4 에이전트 실행 하네스 |
-| **[OpenMAIC ⭐29,000+](https://github.com/THU-MAIC/OpenMAIC) (GitHub Trending, 2026-09-02)** | 오늘 하루 +3,128 스타(2026-08-30 추적 시 22k; 현재 29k+); 가속 중. 다중 에이전트 교실 하네스 — 교사, 코치, 평가자, 동료 에이전트가 하나의 세션에서 협력. 코딩 외 도메인에서도 다중 에이전트 오케스트레이션 채택이 가속됨을 확인. | L3/L4 다중 에이전트 오케스트레이션 |
-| **[openclaw/openclaw ⭐388,500](https://github.com/openclaw/openclaw) (GeekNews, 2026-09-01)** | v2.0: 16,000+ PR, 933명 기여자, 멀티플레이어 공유 세션, 브라우저 앱 전면 재설계, ClawHub 플러그인 마켓플레이스. 이 코퍼스 최대 소비자용 AI 어시스턴트 릴리스. | L6/L4 소비자용 AI 플랫폼 |
-| **[Gitlawb/openclaude ⭐31,162](https://github.com/Gitlawb/openclaude) (GitHub Trending, 2026-09-01)** | "하나의 CLI로 클라우드 API와 로컬 모델 백엔드 모두" — 20+ 프로바이더 어댑터, MCP 일급 지원, gRPC 헤드리스 서버 모드. L2 "프로바이더 무관 멀티백엔드 CLI 하네스" 첫 시그널. | L2/L4 멀티백엔드 CLI |
-| **[OPSA arxiv 2608.31046](https://huggingface.co/papers/2608.31046) (HF 88 추천, 2026-09-01)** | 온폴리시 증류는 교사 지식 전달이 아닌 저확률 토큰 억제로 작동. OPSA: 엔트로피 적응형, 지도 없이 학습. Qwen3-1.7B AIME24 +263%. 확인 시 소형 모델과 대형 모델 간 품질 격차 축소 의미. | L1 학습 방법론 |
-| **[VoiceMem](https://huggingface.co/papers/2608.26005) (HF 173 추천, 2026-08-31)** | 음성 에이전트용 스트리밍 이중 뇌 메모리. 134ms 검색(음성 활동 감지 침묵 창 내 완료). 76.39 평균(Mem0 대비 +24.12). 음성 전환 타이밍 제약을 중심으로 설계된 최초 메모리 아키텍처. | L5/L7 음성 네이티브 메모리 |
+| **[Uber 70%+ 에이전트 PR](https://www.uber.com/us/en/blog/efficient-software-factory/) (GeekNews, 2026-09-03)** | Uber, 전체 PR의 70% 이상을 에이전트가 작성하며 3,600개 이상의 에이전트 스킬이 일일 30,000+ 회 실행됨을 공개. 주요 엔지니어링 조직 최초로 에이전트가 PR 다수를 담당하는 엔터프라이즈 운영 사례. 스킬 단위 자동화가 기업 성숙도 패턴으로 부상 — 단일 모놀리식 에이전트가 아닌 분산 스킬 구조. | L3 엔터프라이즈 에이전트 운영 |
+| **[WebLLM](https://github.com/mlc-ai/web-llm) (HN, 2026-09-03)** | WebGPU를 통해 서버 없이 브라우저에서 직접 LLM 추론 — 초기 모델 다운로드 후 완전 오프라인 동작. 에이전트 배포 기판으로 '브라우저'를 최초로 도입(클라우드/온프레미스/엣지/로컬 → + 브라우저). 레지스트리 추가. | L1 브라우저 네이티브 추론 |
+| **[pacifio/Atlas](https://github.com/pacifio/atlas) (GitHub Trending, 2026-09-03)** | Rust로 작성된 에이전트 네이티브 소스 컨트롤: 동시 실행 코딩 에이전트에 명명된 정체성과 분리된 변경 스트림 부여, 하나의 인터페이스에서 전체 조회 가능. git 래퍼가 아닌 커스텀 변경 추적 레이어 — 버전 컨트롤을 에이전트 조율 원시 요소로 다루는 최초 추적 도구. 레지스트리 추가. | L2 에이전트 소스 컨트롤 |
+| **[superlinked/sie](https://github.com/superlinked/sie) (GitHub Trending, 2026-09-03)** | 임베딩 + 리랭커 + LLM을 하나의 배포 단위로 묶는 프로덕션 추론 클러스터. 현재 에이전트는 세 가지를 별도 서비스로 조합해야 하지만 sie가 전체 스택을 패키지화. 이전 추적 제외(최신성 부족) 후 트렌딩 재등장 — 실제 신규 채택 가속 신호. | L1 번들 추론 기판 |
+| **[vercel-labs/Portless](https://github.com/vercel-labs/portless) (GitHub Trending, 2026-09-03)** | 일회성 포트 번호 대신 안정적인 명명된 로컬 URL — 사람과 에이전트 모두를 위해 명시적으로 설계. 에이전트가 로컬 서비스를 호출할 때의 포트 번호 마찰 제거; MCP 서버 검색 패턴과 상호 보완. | L4 로컬 서비스 검색 |
+| **[FrontierHarness Eval](https://frontierharness.org) (HN 36 pts, 2026-09-02)** | 최초 통제된 멀티 하네스 벤치마크: 9개 하네스, 12개 구성, 동일 모델(Kimi K3). 품질 선두(Codex 66.7%) ≠ 비용 선두(Exo Harness $1.05/작업). 하네스별 비용 17배 차이 — 하네스 선택이 경제적 결정임을 보여주는 첫 실증 데이터. | L5 멀티 하네스 벤치마크 |
+| **[truefoundry/trueforge ⭐5,100](https://github.com/truefoundry/trueforge) (GeekNews, 2026-09-02)** | 풀스택 에이전트 실행 하네스(자체 호스팅): MCP 도구, 스킬, 샌드박스 실행, 사람 승인 체크포인트, 이중 로컬/호스팅 배포, 생성형 UI. "프로바이더 무관 멀티백엔드 하네스" 두 번째 시그널. | L2/L4 에이전트 실행 하네스 |
+| **[OpenMAIC ⭐29,000+](https://github.com/THU-MAIC/OpenMAIC) (GitHub Trending, 2026-09-02)** | 오늘 하루 +3,128 스타(2026-08-30 시 22k; 현재 29k+); 가속 중. 다중 에이전트 교실 하네스 — 교사/코치/평가자/동료 에이전트 협력. 코딩 외 도메인에서도 다중 에이전트 오케스트레이션 채택 가속 확인. | L3/L4 다중 에이전트 오케스트레이션 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (722개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (727개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-09-03 | 데일리 스캔 (5개 문서): Uber 70%+ 에이전트 PR L3 (GeekNews — 3,600 스킬, 30k 일일 실행, 최대 규모 엔터프라이즈 코딩 에이전트 배포 확인); WebLLM L1 (HN — WebGPU 브라우저 네이티브 LLM 추론, 서버 불필요, 5번째 배포 기판 '브라우저' 도입; 레지스트리 추가); pacifio/Atlas L2 (GitHub Trending — Rust 에이전트 네이티브 소스 컨트롤, 에이전트 명명 정체성, 개별 변경 스트림; 레지스트리 추가); superlinked/sie L1 (GitHub Trending — 임베딩+리랭커+LLM 번들 추론 클러스터, 트렌딩 재등장); vercel-labs/Portless L4 (GitHub Trending — 에이전트용 명명된 로컬 URL, 포트 마찰 제거). 정규 분류 변경 없음. 레지스트리: 2개 신규 항목(WebLLM, Atlas). 50/50 테스트. |
 | 2026-09-01 | 데일리 스캔 (5개 문서): openclaw/openclaw ⭐388.5k L6/L4 (GeekNews — v2.0, 멀티플레이어 세션, ClawHub 마켓플레이스, WhatsApp/텔레그램/Slack/디스코드/시그널 통합, MIT; 2026-08-31 오인식 수정: Gen-Verse/OpenClaw-RL과 별개 프로젝트); Gitlawb/openclaude ⭐31.2k L2/L4 (GitHub Trending 전체 언어 — 제공자 무관 20+ 백엔드 CLI 하네스, MCP 네이티브, gRPC 헤드리스, VS Code 번들, MIT, L2 "제공자 무관 다중 백엔드 CLI" 첫 시그널); OPSA HF 1위(88 추천) L1 (HF 일간 논문 — 온폴리시 자체 적응, OPD가 저확률 토큰 억제로 작동한다는 발견, 감독 없는 엔트로피 적응 추론, Qwen3-1.7B +35.41 AIME24 +263%); DreamX-Creator HF 2위(86 추천) L7/L1 (HF 일간 논문 — 7B 네이티브 조인트 오디오-비디오 동시 디노이징, Gated Cross-Modal Attention, 2K Refiner, AMAP-ML/알리바바 맵스, L7 컴팩트 오픈 오디오-비디오 생성 첫 시그널); PaperGym(34 추천) L3/L1 (HF 일간 논문 — 논문별 RL 훈련 환경, 기준 누출 3.7%, OPSD+GRPO 2단계, PaperGym-20k 코퍼스+PaperGym-Innov+PaperGym-Design 벤치마크 공개). 정규 분류 변경 없음. 레지스트리: 신규 항목 없음. 50/50 테스트. |
 | 2026-08-31 | 데일리 스캔 (5개 문서): debpalash/VoiceStudio ⭐12,613 L7/L4 (GitHub Trending Python — Tauri 앱, MCP 서버, 에이전트 스킬, 646개 언어, OpenAI 호환 API, AGPL-3.0); calpaterson/memoryfield L5/L4 (HN 126점 — 이식 가능한 에이전트 메모리 파일 포맷: Markdown + SQLite 벡터 인덱스 + ZIP); VoiceMem L5/L7 (HF 170 추천 — 스트리밍 이중 뇌 메모리, 134ms 검색, 76.39 평균, Mem0 대비 +24.12); FreeToken L1/L7 (HF 104 추천 — 엣지 네이티브 MoE 서빙, 대역폭 적응형, 35B on 8GB GPU, 세 번째 엣지 추론 시그널); Code as Worlds L2/L5 (HF 38 추천, 당일 일간 논문 — 실행 가능한 Python 세계 표현 물리적 추론). **2-시그널 참고:** 음성 네이티브 인프라 (VoiceMem + VoiceStudio — 서로 다른 서브타입, 정규 변경 없음); 구조화 메모리 (memoryfield, Lemmalog와 크로스데이 쌍). 레지스트리: 신규 항목 없음. 50/50 테스트. |
 | 2026-08-30 | 데일리 스캔 (5개 문서, 2회 실행): OpenMAIC ⭐22k+ L3 (GitHub Trending — TypeScript 다중 에이전트 교실, 교사/학생/평가자, 오늘 +907 스타); Domain-Driven Agents L2 (HN — DDD 경계 컨텍스트 → 에이전트 범위, 집계 → 상태 있는 에이전트 경계); braintrustdata/agentbehavior L5 (GeekNews — 버전 관리 행동 스펙 프레임워크, OpenAPI와 유사한 역할); Lemmalog ⭐190 L5/L4 (GeekNews — Rust Datalog 엔진 MCP 서버, 철회 가능한 결론, 출처 체인, 45배 컨텍스트 압축); OpenExecutive ⭐3,000 L3/L5/L6 (GeekNews 27점 — 8개 전문 에이전트 팀, 이중 레이어 RAG, SQLite 에피소딕 메모리, Haiku/Sonnet/Opus 계층화). **2-시그널 확인:** 명명된 역할 전문가 팀 L3 서브타입 (OpenMAIC + OpenExecutive = PaperOrchestra 이후 세 번째 시그널; 발견 로그 추가, 정규 섹션 변경 없음). 레지스트리: 신규 항목 없음. 50/50 테스트. |
