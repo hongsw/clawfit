@@ -3694,5 +3694,55 @@
       "setup_complexity": "low",
       "latency": "medium"
     }
+  },
+  {
+    "id": "webllm",
+    "name": "WebLLM",
+    "category": "inference_substrate",
+    "level": 1,
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/mlc-ai/web-llm",
+    "source_type": "github",
+    "comparison_priority": "supplemental",
+    "notes": "Browser-native LLM inference via WebGPU. Runs open-weight models (Llama, Mistral, Phi) fully client-side after model download. Zero server-side exposure at inference time. mlc-ai org.",
+    "org_fit": {
+      "min_maturity": 4,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": ["offline-inference", "browser-native", "privacy-preserving"],
+      "pricing_tier": "free",
+      "tasks": ["code-gen", "research", "summarization"],
+      "roles": ["developer", "researcher"],
+      "team_size": ["solo", "small", "mid"],
+      "network": "offline",
+      "setup_complexity": "medium",
+      "latency": "high"
+    }
+  },
+  {
+    "id": "pacifio-atlas",
+    "name": "Atlas (Agent Source Control)",
+    "category": "agent_coordination",
+    "level": 2,
+    "license": "MIT",
+    "primary_language": "Rust",
+    "url": "https://github.com/pacifio/atlas",
+    "source_type": "github",
+    "comparison_priority": "supplemental",
+    "notes": "Source control layer for multiple concurrent coding agents. Tracks changes per agent, enables cross-agent querying. Agent-native version control rather than a git wrapper.",
+    "org_fit": {
+      "min_maturity": 6,
+      "max_maturity": 10,
+      "optimal_maturity": 7,
+      "features": ["multi-agent", "change-tracking", "agent-identity"],
+      "pricing_tier": "free",
+      "tasks": ["code-gen", "orchestration"],
+      "roles": ["developer", "devops"],
+      "team_size": ["small", "mid", "large"],
+      "network": "online",
+      "setup_complexity": "high",
+      "latency": "low"
+    }
   }
 ]
