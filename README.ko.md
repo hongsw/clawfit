@@ -1,6 +1,6 @@
 # clawfit
 
-> AI 에이전트 + LLM + 하드웨어 추천 엔진 — **162+ 도구**, **7레이어 생태계 맵**, **675개 리서치워치 문서**, **10차원 스코어링**
+> AI 에이전트 + LLM + 하드웨어 추천 엔진 — **162+ 도구**, **7레이어 생태계 맵**, **754개 리서치워치 문서**, **10차원 스코어링**
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.7%2B-blue)](pyproject.toml)
@@ -61,7 +61,7 @@
 | 지표 | 수치 |
 |------|------|
 | 에코시스템 맵 추적 도구 (7레이어) | **162+** |
-| 리서치워치 신호 문서 | **675개** |
+| 리서치워치 신호 문서 | **754개** |
 | 추천 레지스트리 LLM | **11개** |
 | 추천 레지스트리 에이전트 패턴 | **4개** |
 | 추천 레지스트리 하드웨어 프로필 | **5개** |
@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-09-07)
+## 🔥 지금 가장 뜨거운 것들 (2026-09-08)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[jo-inc/camofox-browser ⭐9.5k](https://github.com/jo-inc/camofox-browser) (GitHub 트렌딩, 2026-09-07)** | AI 에이전트용 스텔스 헤드리스 브라우저 REST 서버 — Camoufox Firefox 포크를 C++ 수준 핑거프린트 스푸핑으로 래핑. ~90% DOM 스냅샷 압축, 엘리먼트 참조 시스템, 세션 지속성. Cloudflare Turnstile과 주요 봇 탐지 시스템을 우회. 이 로그 최초 탐지 저항 브라우저 서버. v1.14.0 2026년 8월. | L4 주 / L6 부 |
-| **[mukul975/cve-mcp-server ⭐1.5k](https://github.com/mukul975/cve-mcp-server) (GitHub Python 트렌딩, 2026-09-07)** | 21개 API(NVD, EPSS, CISA KEV, MITRE ATT&CK, Shodan, VirusTotal, MalwareBazaar)에 걸친 27개 보안 인텔리전스 도구 MCP 서버. `triage_cve` 오케스트레이터가 단일 도구 호출로 CVE 심각도와 완화 방법을 병렬 합성. METATRON에 이어 `task: security` 분류 갭 두 시그널 확인. | L4 주 / L5 부 |
-| **[xyTom/coding-tools-mcp ⭐1k](https://github.com/xyTom/coding-tools-mcp) (GitHub Python 트렌딩, 2026-09-07)** | 모델 중립적 코딩 런타임 MCP 서버: 19개 도구(파일, 실행, git, 런타임), 3단계 권한 모델(safe/trusted/dangerous), Linux Landlock 커널 파일시스템 격리. Claude Code, Cursor, Gemini CLI, Windsurf, VS Code 지원 — 에이전트 종속 없음. 이 로그 OS 수준 커널 샌드박싱 최초 시그널. | L4 주 / L2 부 |
-| **[OpenLAIR/dr-claw ⭐1k](https://github.com/OpenLAIR/dr-claw) (HF 일간 논문, 2026-09-07)** | Claude Code와 Gemini CLI를 감사 가능한 human-in-the-loop 오케스트레이션으로 래핑: 영속 상태 객체, 재사용 가능한 스킬 라이브러리, 멀티 실행기 조정. 논문(arXiv 2609.00365)이 실행기를 고정하고 하네스만 변경하여 리서치 품질에 대한 하네스 기여도를 경험적으로 분리. "바이브 리서치" 명명 워크플로 패턴. | L2 주 / L3 부 |
-| **[maziyarpanahi/openmed ⭐5.2k](https://github.com/maziyarpanahi/openmed) (GitHub Python 트렌딩, 2026-09-06)** | 로컬 퍼스트 헬스케어 AI: 2,200+ 의료 모델, HIPAA 제로 유출 보장, MCP 서버, FastAPI REST, iOS/Android/브라우저 바인딩. 비용·레이턴시가 아닌 규제 컴플라이언스가 로컬 추론의 주요 설계 동인인 이 로그 최초 도구. | L1 주 / L4 부 |
-| **[sooryathejas/METATRON ⭐3.9k](https://github.com/sooryathejas/METATRON) (GitHub Python 트렌딩, 2026-09-06)** | AI 침투 테스트 도우미: Ollama 로컬 LLM, nmap/nikto/CVE 조회, 제로 유출(대상 데이터가 클라우드 미도달), MariaDB 스캔 이력. cve-mcp-server와 함께 이틀 연속 보안 도메인 시그널로 `task: security` 분류 갭 확인. | L1 주 / L2 부 |
-| **[experientiallabs/experiential ⭐1.8k](https://github.com/experientiallabs/experiential) (GitHub 트렌딩, 2026-09-06)** | 적응형 모델 게이트웨이: 런타임에 강제되는 에이전트별 지출 한도; 프로덕션 트래픽이 학습 라우팅 정책을 훈련. 네 번째 `pricing_access_pattern` 시그널, 최초 학습 정책 변형. | L2 적응형 모델 게이트웨이 |
-| **[Anthropic 페르마의 마지막 정리 / P2M](https://github.com/anthropics/fermats-last-theorem) (HN 707 pts, 2026-09-05)** | 다중 에이전트 하네스가 Lean 4로 페르마의 마지막 정리 증명: 29,511개 정리, 1,300만 줄, 11일. DAG 기반 조율 — 리프 에이전트 병렬 처리, 결과 트리 전파, 중복 경로 제거. 장기 형식 증명 태스크에서 DAG 구조 다중 에이전트 조율의 경험적 검증. | L2 주 / L3 부 |
+| **[sickn33/agentic-awesome-skills ⭐46.2k](https://github.com/sickn33/agentic-awesome-skills) v17.0.0 (2026-09-08)** | 2,115+ Claude Code 스킬; v17.0.0 휴대용 번들(스킬+스키마+증거 링크), AAS Core 오케스트레이션(에이전트 제안 → 인간 승인 → 불변 실행 계획), 증거 기반 그라운드 프로필. 이 로그 최고 별 개수 스킬 카탈로그. | L4 주 / L3 부 |
+| **[AgriciDaniel/claude-ads ⭐9k](https://github.com/AgriciDaniel/claude-ads) (마켓플레이스 2026-03-13)** | 12개 광고 플랫폼 Claude Code 도메인 스킬. 기본 읽기 전용; 쓰기는 명시적 기능 게이트 필요. 결정론적 점수 규칙, 버전 관리 JSON 출력. coding-tools-mcp(2026-09-07)와 함께 **기능 게이트 쓰기 패턴 2-시그널 확인**. | L4 주 (L4b 도메인) |
+| **[thesysdev/openui ⭐8.3k](https://github.com/thesysdev/openui) (Product Hunt #4 2026-03-11)** | OpenUI Lang: 스트리밍 우선 모델 네이티브 UI 마크업 언어(JSON 대비 최대 67% 토큰 절감). LangChain/LangGraph 통합, Claude Code 에이전트 스킬. 이 로그 모델 네이티브 마크업 생성형 UI 최초 시그널. | L6 주 / L4 부 |
+| **Claude Fable 5.1 / Mythos 5.1 (Anthropic, 2026-09-01)** | 캐시 읽기 가격 75% 인하: $1.00 → $0.25/M 토큰. 캐싱 집약 에이전트 워크플로에서 유효 비용 22–45% 절감. Mythos 5.1은 검증된 사이버보안/생명과학 조직만 접근 가능. | L1 생태계 시그널 |
+| **[OpenBMB/MiniCPM ⭐10.6k](https://github.com/OpenBMB/MiniCPM) — MiniCPM5-2B (2026-09-07)** | 에이전트 특화 SFT 학습 2B 온디바이스 모델. SGLang 네이티브 도구 호출, Ollama 지원, Apache-2.0. 이 로그 도구 호출 전용 학습 최초 2B급 모델. | L1 주 / L7 부 |
+| **[jo-inc/camofox-browser ⭐9.5k](https://github.com/jo-inc/camofox-browser) (GitHub 트렌딩, 2026-09-07)** | AI 에이전트용 스텔스 헤드리스 브라우저 REST 서버. C++ 수준 핑거프린트 스푸핑, ~90% DOM 압축, 세션 지속성. 이 로그 최초 탐지 저항 에이전트 브라우저 서버. | L4 주 / L6 부 |
+| **[mukul975/cve-mcp-server ⭐1.5k](https://github.com/mukul975/cve-mcp-server) (GitHub Python 트렌딩, 2026-09-07)** | 21개 API 27개 보안 인텔리전스 도구 MCP 서버. METATRON과 함께 `task: security` 분류 갭 두 시그널 확인. | L4 주 / L5 부 |
+| **[xyTom/coding-tools-mcp ⭐1k](https://github.com/xyTom/coding-tools-mcp) (GitHub Python 트렌딩, 2026-09-07)** | 모델 중립적 코딩 런타임 MCP 서버: 19개 도구, 3단계 권한(safe/trusted/dangerous), Linux Landlock 커널 격리. claude-ads와 함께 기능 게이트 쓰기 패턴 확인. | L4 주 / L2 부 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (748개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (754개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-09-08 | 데일리 스캔 2차 실행 (5개 문서): Claude Fable 5.1/Mythos 5.1 L1 생태계 (2026-09-01 — 캐시 읽기 75% 인하 $1→$0.25/M 토큰, Mythos 5.1 사이버보안/생명과학 제한 접근; 세 번째 프런티어 모델 접근 제어 시그널); OpenBMB/MiniCPM5-2B ⭐10.6k L1/L7 (2026-09-07 — 에이전트 특화 SFT 학습 2B 온디바이스 모델, SGLang 도구 호출, Ollama 지원, Apache-2.0; 도구 호출 전용 학습 최초 2B급 모델); sickn33/agentic-awesome-skills v17.0.0 ⭐46.2k L4/L3 (오늘 출시 — 휴대용 번들, AAS Core HITL 오케스트레이션, 그라운드 프로필; 이 로그 최고 별 개수 스킬 카탈로그); thesysdev/openui ⭐8.3k L6/L4 (Product Hunt #4 2026-03-11 — OpenUI Lang 스트리밍 생성형 UI, JSON 대비 최대 67% 토큰 절감, Claude Code 에이전트 스킬; 모델 네이티브 마크업 생성형 UI 최초 시그널); AgriciDaniel/claude-ads ⭐9k L4 도메인 스킬 (마켓플레이스 2026-03-13 — 12개 광고 플랫폼, 기본 읽기 전용, 기능 게이트 쓰기, 결정론적 점수; **기능 게이트 쓰기 패턴 2-시그널 확인** coding-tools-mcp 2026-09-07과 함께). 레지스트리: 0개 신규 항목(스키마 갭). 테스트 50/50 통과. |
 | 2026-09-07 | 데일리 스캔 (4개 문서): jo-inc/camofox-browser ⭐9.5k L4/L6 (GitHub 트렌딩 전체 언어 — Camoufox Firefox 포크 기반 스텔스 헤드리스 브라우저 REST 서버, C++ 수준 핑거프린트 스푸핑, ~90% DOM 압축, 엘리먼트 참조 시스템, 세션 지속성, v1.14.0 2026년 8월; 이 로그 최초 탐지 저항 브라우저 서버; `web_access_mode` 스키마 갭 확인); mukul975/cve-mcp-server ⭐1.5k L4/L5 (GitHub Python 트렌딩 — 21개 API 27개 보안 인텔리전스 도구 MCP 서버, triage_cve 병렬 오케스트레이터, CISA KEV 컴플라이언스 트리거, 250개 포크; METATRON에 이어 task:security 분류 갭 두 번째 시그널 확인; compliance_context 스키마 갭); xyTom/coding-tools-mcp ⭐1k L4/L2 (GitHub Python 트렌딩 — 모델 중립적 19개 도구 MCP 서버, 3단계 권한 모델 safe/trusted/dangerous, Linux Landlock 커널 격리, Claude Code+Cursor+Gemini CLI+Windsurf+VS Code 지원, 169개 포크; OS 수준 샌드박싱 이 로그 최초 시그널; 모델 중립적 MCP 코딩 런타임 두 번째 독립 구현 확인); OpenLAIR/dr-claw ⭐1k L2/L3 (HF 일간 논문 arXiv 2609.00365 — Claude Code+Gemini CLI 래핑 감사 가능 리서치 워크스페이스, 영속 상태 객체, 재사용 스킬 라이브러리, 멀티 실행기 조정, human-in-the-loop 게이트; 논문이 실행기 고정 후 하네스만 변경하여 하네스 기여도 경험적 분리; "바이브 리서치" 명명 워크플로 패턴; AGPL-3.0). 분류 변경 없음. 레지스트리: 신규 항목 없음(결정론적 가격 데이터 없음). 테스트 50/50 통과. |
 | 2026-09-06 | 데일리 스캔 2차 실행 (4개 문서): maziyarpanahi/openmed ⭐5.2k L1/L4 (GitHub Python 트렌딩 — 로컬 퍼스트 헬스케어 AI, 2,200+ 의료 모델, HIPAA 제로 유출, MCP 서버, FastAPI REST, iOS/Android/브라우저, HF 스프링 2026 오픈소스 1위; 규제 컴플라이언스가 주요 로컬 추론 동인인 최초 도구); sooryathejas/METATRON ⭐3.9k L1/L2 (GitHub Python 트렌딩 — Ollama 로컬 LLM AI 침투 테스트, nmap/whois/whatweb/nikto/CVE 조회, 제로 유출, MariaDB 스캔 기록; openmed와 함께 컴플라이언스 기반 로컬 추론 L1 동기 두 번째 시그널); experientiallabs/experiential ⭐1.8k +568★/일 L2 (GitHub 트렌딩 — 적응형 모델 게이트웨이, 사용자·에이전트별 지출 한도, 프로덕션 트래픽 학습 라우터, 3계층 모델 접근; pricing_access_pattern 네 번째 시그널, 학습 정책 라우팅 최초 변형); XHToken/Spark-X2.5-4B L1 (HF 트렌딩 — 컴팩트 4B 오픈 웨이트, 하이브리드 어텐션 1M 컨텍스트, MOPD 다중 교사 증류, 200+ 언어; 특정 하네스를 아키텍처 동기로 명시한 최초 모델: Claude Code/Codex/OpenClaw/Hermes). 빌딩 패턴: 컴플라이언스 기반 로컬 추론 (openmed + METATRON = 같은 날 2-시그널; 정규 변경 없음). reference-levels.md: 2차 실행 발견 로그 추가. 레지스트리: 신규 항목 없음. 50/50 테스트. |
 | 2026-09-05 | 데일리 스캔 2차 실행 (5개 문서): Anthropic 페르마/P2M L2/L3 (HN 707 pts — DAG 기반 다중 에이전트 수학 증명, 2만9천 정리, 1,300만 줄 Lean, 11일); Spotify Portal L2 (HN 219 pts — Claude Code 내 훅+스크립트+스킬 모델 라우팅, 90% 토큰 절감); radixark/miles L5 (GitHub Python Trending — 엔터프라이즈 RL 사후 학습, v0.1 2026년 8월); magnitudedev/magnitude L1/L2 (GitHub Trending +686★ — 하드웨어 프로파일 로컬 추론, 에이전트 네이티브); AI 사고 대응 역량 저하 담론 (HN 299 pts — SRE 역량 침식 세 번째 시그널). 정규 분류 변경 없음. 레지스트리: 0개 신규 항목. 50/50 테스트. |
