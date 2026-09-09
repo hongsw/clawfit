@@ -61,7 +61,7 @@
 | 지표 | 수치 |
 |------|------|
 | 에코시스템 맵 추적 도구 (7레이어) | **162+** |
-| 리서치워치 신호 문서 | **754개** |
+| 리서치워치 신호 문서 | **766개** |
 | 추천 레지스트리 LLM | **11개** |
 | 추천 레지스트리 에이전트 패턴 | **4개** |
 | 추천 레지스트리 하드웨어 프로필 | **5개** |
@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-09-08)
+## 🔥 지금 가장 뜨거운 것들 (2026-09-09)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **[sickn33/agentic-awesome-skills ⭐46.2k](https://github.com/sickn33/agentic-awesome-skills) v17.0.0 (2026-09-08)** | 2,115+ Claude Code 스킬; v17.0.0 휴대용 번들(스킬+스키마+증거 링크), AAS Core 오케스트레이션(에이전트 제안 → 인간 승인 → 불변 실행 계획), 증거 기반 그라운드 프로필. 이 로그 최고 별 개수 스킬 카탈로그. | L4 주 / L3 부 |
-| **[AgriciDaniel/claude-ads ⭐9k](https://github.com/AgriciDaniel/claude-ads) (마켓플레이스 2026-03-13)** | 12개 광고 플랫폼 Claude Code 도메인 스킬. 기본 읽기 전용; 쓰기는 명시적 기능 게이트 필요. 결정론적 점수 규칙, 버전 관리 JSON 출력. coding-tools-mcp(2026-09-07)와 함께 **기능 게이트 쓰기 패턴 2-시그널 확인**. | L4 주 (L4b 도메인) |
-| **[thesysdev/openui ⭐8.3k](https://github.com/thesysdev/openui) (Product Hunt #4 2026-03-11)** | OpenUI Lang: 스트리밍 우선 모델 네이티브 UI 마크업 언어(JSON 대비 최대 67% 토큰 절감). LangChain/LangGraph 통합, Claude Code 에이전트 스킬. 이 로그 모델 네이티브 마크업 생성형 UI 최초 시그널. | L6 주 / L4 부 |
-| **Claude Fable 5.1 / Mythos 5.1 (Anthropic, 2026-09-01)** | 캐시 읽기 가격 75% 인하: $1.00 → $0.25/M 토큰. 캐싱 집약 에이전트 워크플로에서 유효 비용 22–45% 절감. Mythos 5.1은 검증된 사이버보안/생명과학 조직만 접근 가능. | L1 생태계 시그널 |
-| **[OpenBMB/MiniCPM ⭐10.6k](https://github.com/OpenBMB/MiniCPM) — MiniCPM5-2B (2026-09-07)** | 에이전트 특화 SFT 학습 2B 온디바이스 모델. SGLang 네이티브 도구 호출, Ollama 지원, Apache-2.0. 이 로그 도구 호출 전용 학습 최초 2B급 모델. | L1 주 / L7 부 |
-| **[jo-inc/camofox-browser ⭐9.5k](https://github.com/jo-inc/camofox-browser) (GitHub 트렌딩, 2026-09-07)** | AI 에이전트용 스텔스 헤드리스 브라우저 REST 서버. C++ 수준 핑거프린트 스푸핑, ~90% DOM 압축, 세션 지속성. 이 로그 최초 탐지 저항 에이전트 브라우저 서버. | L4 주 / L6 부 |
-| **[mukul975/cve-mcp-server ⭐1.5k](https://github.com/mukul975/cve-mcp-server) (GitHub Python 트렌딩, 2026-09-07)** | 21개 API 27개 보안 인텔리전스 도구 MCP 서버. METATRON과 함께 `task: security` 분류 갭 두 시그널 확인. | L4 주 / L5 부 |
-| **[xyTom/coding-tools-mcp ⭐1k](https://github.com/xyTom/coding-tools-mcp) (GitHub Python 트렌딩, 2026-09-07)** | 모델 중립적 코딩 런타임 MCP 서버: 19개 도구, 3단계 권한(safe/trusted/dangerous), Linux Landlock 커널 격리. claude-ads와 함께 기능 게이트 쓰기 패턴 확인. | L4 주 / L2 부 |
+| **DeepSeek V4.1 Flash (공식 출시 2026-09-10)** | 새 아키텍처, 네이티브 멀티모달(텍스트+이미지+음성), 427 tok/s, V4 Pro 대비 V4 Flash 가격에 성능 능가 주장. 9월 8일부터 베타 제한 공개. 가격 확인 시 네이티브 멀티모달 통합 최초 Flash급 모델 — clawfit 레이턴시/비용 스코어링에 직접 영향. | L1 주 |
+| **[affaan-m/ECC ⭐255k](https://github.com/affaan-m/ECC) (GitHub 트렌딩, 2026-09-09)** | Claude Code, Codex, Opencode, Cursor를 동시에 지원하는 크로스 에이전트 하네스 — 스킬, 인스팅트, 메모리, 보안, 리서치 퍼스트 방법론 하나의 프레임워크로. 하루 +1,427 트렌딩 스타. 이 로그 가장 빠르게 성장한 하네스 레이어 프로젝트 중 하나. | L2 주 |
+| **Meta Muse — Meta 개인 AI 에이전트 (HN 607점, 2026-09-09)** | 세분화된 선호 학습, 패시브 앰비언트 컨텍스트 캡처, 크로스앱 메모리. 영속 메모리 아키텍처로 개인 AI 에이전트를 공개 출시한 최초의 주요 소비자 기술 기업. | L3/L5 주 |
+| **[argonautlabs/deltafin (HN 195점, 2026-09-09)](https://github.com/argonautlabsai/deltafin)** | 4개 SSD에서 가중치 스트리밍으로 MacBook Pro에서 Kimi K3 (2.8T 파라미터)를 1 tok/s로 실행. 모델 크기와 VRAM/RAM 제약 분리 — clawfit 현행 레이턴시 스코어링의 "대형 모델=클라우드" 가정을 깬다. | L1/하드웨어 |
+| **[Tencent/teamai-cli ⭐2.8k](https://github.com/Tencent/teamai-cli) (GitHub 트렌딩, 2026-09-09)** | 최초 엔터프라이즈 주도(Tencent) 크로스 에이전트 팀 관리 CLI: 스킬, 규칙, 문서, MCP 설정, 훅을 공유 git 저장소를 통해 7개 이상 AI 코딩 에이전트에 배포. Team Context 레이어가 코드베이스 지식 그래프 구축. 팀 스케일 L3 SSOT 패턴. | L3 주 / L4 부 |
+| **[openai/plugins ⭐6.1k](https://github.com/openai/plugins) (GitHub 트렌딩, 2026-09-09)** | OpenAI 공식 Codex 플러그인 에코시스템: `.codex-plugin/plugin.json` 매니페스트가 스킬+에이전트+MCP 설정을 플러그인 단위로 번들. Figma, Notion, iOS, macOS, Netlify, Expo, Google Slides 플러그인 이미 출시. L4 기능 번들 레이어에 대한 OpenAI의 공식 답변. | L4 주 |
+| **[sickn33/agentic-awesome-skills ⭐46.2k](https://github.com/sickn33/agentic-awesome-skills) v17.0.0 (2026-09-08)** | 휴대용 번들 포맷(스킬+스키마+증거 링크), AAS Core HITL 오케스트레이션(에이전트 제안→인간 승인→불변 계획). 이 로그 최고 별 개수 스킬 카탈로그. coding-tools-mcp와 함께 기능 게이트 쓰기 패턴 2-시그널 확인. | L4 주 / L3 부 |
+| **[vastsa/PI-Desktop ⭐1.6k](https://github.com/vastsa/PI-Desktop) (GitHub 트렌딩, 2026-09-09)** | 로컬 퍼스트 AI 코딩 에이전트 데스크톱: Electron + Rust 코어 + 스킬/MCP/서브에이전트/플러그인. 세 가지 운영 모드: Agent(자율), Plan(실행 전 검토), Goal(목표에서 분해). 멀티 프로바이더, LGPL-3.0. 명시적 모드 전환 갖춘 최초 데스크톱 네이티브 에이전트 워크스페이스. | L2 주 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (754개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (766개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-09-09 (2차 실행) | 5개 문서: DeepSeek V4.1 Flash L1 (HN 351점 — 새 아키텍처, 네이티브 멀티모달, 427 tok/s, V4 Pro 능가, 공식 출시 9월 10일; 연속 3일 멀티모달 시그널; 가격 확인 후 clawfit 비용 스코어링 영향); Tencent/teamai-cli ⭐2.8k L3/L4 (GitHub 트렌딩 — 크로스 에이전트 팀 관리 CLI, 7개 이상 에이전트, git 기반 스킬/규칙/MCP/훅 배포, Team Context 지식 그래프; 이 로그 최초 엔터프라이즈 주도 크로스 에이전트 팀 동기화 CLI); openai/plugins ⭐6.1k L4 (GitHub 트렌딩 — Codex 플러그인 에코시스템, .codex-plugin/plugin.json 번들 포맷, Figma/Notion/iOS/macOS/Netlify/Expo 플러그인; OpenAI 공식 L4 기능 번들 레이어); vastsa/PI-Desktop ⭐1.6k L2 (GitHub 트렌딩 — 로컬 퍼스트 데스크톱 에이전트 워크스페이스, Electron+Rust, Agent/Plan/Goal 모드, 스킬+MCP+서브에이전트+플러그인; 명시적 모드 전환 갖춘 최초 데스크톱 네이티브 에이전트 워크스페이스; Apache Maka와 함께 로컬 퍼스트 워크스페이스 2-시그널 빌딩 패턴); Desert Ant Labs L1/L7 (HN 294점 — 온디바이스 AI 랩, 18개 프로덕션 모델 2MB–284MB, Swift/Kotlin/JS SDK, Core ML/LiteRT/WebAssembly; 100★ 임계값 미만이나 공식 프레임워크 예외 처리; 디바이스당 가격, 토큰당 아님). reference-levels.md: 2-시그널 빌딩 패턴 노트(Apache Maka + PI-Desktop = 로컬 퍼스트 워크스페이스 패턴). 레지스트리: 0개 신규 항목. 50/50 테스트. |
 | 2026-09-08 | 데일리 스캔 2차 실행 (5개 문서): Claude Fable 5.1/Mythos 5.1 L1 생태계 (2026-09-01 — 캐시 읽기 75% 인하 $1→$0.25/M 토큰, Mythos 5.1 사이버보안/생명과학 제한 접근; 세 번째 프런티어 모델 접근 제어 시그널); OpenBMB/MiniCPM5-2B ⭐10.6k L1/L7 (2026-09-07 — 에이전트 특화 SFT 학습 2B 온디바이스 모델, SGLang 도구 호출, Ollama 지원, Apache-2.0; 도구 호출 전용 학습 최초 2B급 모델); sickn33/agentic-awesome-skills v17.0.0 ⭐46.2k L4/L3 (오늘 출시 — 휴대용 번들, AAS Core HITL 오케스트레이션, 그라운드 프로필; 이 로그 최고 별 개수 스킬 카탈로그); thesysdev/openui ⭐8.3k L6/L4 (Product Hunt #4 2026-03-11 — OpenUI Lang 스트리밍 생성형 UI, JSON 대비 최대 67% 토큰 절감, Claude Code 에이전트 스킬; 모델 네이티브 마크업 생성형 UI 최초 시그널); AgriciDaniel/claude-ads ⭐9k L4 도메인 스킬 (마켓플레이스 2026-03-13 — 12개 광고 플랫폼, 기본 읽기 전용, 기능 게이트 쓰기, 결정론적 점수; **기능 게이트 쓰기 패턴 2-시그널 확인** coding-tools-mcp 2026-09-07과 함께). 레지스트리: 0개 신규 항목(스키마 갭). 테스트 50/50 통과. |
 | 2026-09-07 | 데일리 스캔 (4개 문서): jo-inc/camofox-browser ⭐9.5k L4/L6 (GitHub 트렌딩 전체 언어 — Camoufox Firefox 포크 기반 스텔스 헤드리스 브라우저 REST 서버, C++ 수준 핑거프린트 스푸핑, ~90% DOM 압축, 엘리먼트 참조 시스템, 세션 지속성, v1.14.0 2026년 8월; 이 로그 최초 탐지 저항 브라우저 서버; `web_access_mode` 스키마 갭 확인); mukul975/cve-mcp-server ⭐1.5k L4/L5 (GitHub Python 트렌딩 — 21개 API 27개 보안 인텔리전스 도구 MCP 서버, triage_cve 병렬 오케스트레이터, CISA KEV 컴플라이언스 트리거, 250개 포크; METATRON에 이어 task:security 분류 갭 두 번째 시그널 확인; compliance_context 스키마 갭); xyTom/coding-tools-mcp ⭐1k L4/L2 (GitHub Python 트렌딩 — 모델 중립적 19개 도구 MCP 서버, 3단계 권한 모델 safe/trusted/dangerous, Linux Landlock 커널 격리, Claude Code+Cursor+Gemini CLI+Windsurf+VS Code 지원, 169개 포크; OS 수준 샌드박싱 이 로그 최초 시그널; 모델 중립적 MCP 코딩 런타임 두 번째 독립 구현 확인); OpenLAIR/dr-claw ⭐1k L2/L3 (HF 일간 논문 arXiv 2609.00365 — Claude Code+Gemini CLI 래핑 감사 가능 리서치 워크스페이스, 영속 상태 객체, 재사용 스킬 라이브러리, 멀티 실행기 조정, human-in-the-loop 게이트; 논문이 실행기 고정 후 하네스만 변경하여 하네스 기여도 경험적 분리; "바이브 리서치" 명명 워크플로 패턴; AGPL-3.0). 분류 변경 없음. 레지스트리: 신규 항목 없음(결정론적 가격 데이터 없음). 테스트 50/50 통과. |
 | 2026-09-06 | 데일리 스캔 2차 실행 (4개 문서): maziyarpanahi/openmed ⭐5.2k L1/L4 (GitHub Python 트렌딩 — 로컬 퍼스트 헬스케어 AI, 2,200+ 의료 모델, HIPAA 제로 유출, MCP 서버, FastAPI REST, iOS/Android/브라우저, HF 스프링 2026 오픈소스 1위; 규제 컴플라이언스가 주요 로컬 추론 동인인 최초 도구); sooryathejas/METATRON ⭐3.9k L1/L2 (GitHub Python 트렌딩 — Ollama 로컬 LLM AI 침투 테스트, nmap/whois/whatweb/nikto/CVE 조회, 제로 유출, MariaDB 스캔 기록; openmed와 함께 컴플라이언스 기반 로컬 추론 L1 동기 두 번째 시그널); experientiallabs/experiential ⭐1.8k +568★/일 L2 (GitHub 트렌딩 — 적응형 모델 게이트웨이, 사용자·에이전트별 지출 한도, 프로덕션 트래픽 학습 라우터, 3계층 모델 접근; pricing_access_pattern 네 번째 시그널, 학습 정책 라우팅 최초 변형); XHToken/Spark-X2.5-4B L1 (HF 트렌딩 — 컴팩트 4B 오픈 웨이트, 하이브리드 어텐션 1M 컨텍스트, MOPD 다중 교사 증류, 200+ 언어; 특정 하네스를 아키텍처 동기로 명시한 최초 모델: Claude Code/Codex/OpenClaw/Hermes). 빌딩 패턴: 컴플라이언스 기반 로컬 추론 (openmed + METATRON = 같은 날 2-시그널; 정규 변경 없음). reference-levels.md: 2차 실행 발견 로그 추가. 레지스트리: 신규 항목 없음. 50/50 테스트. |
