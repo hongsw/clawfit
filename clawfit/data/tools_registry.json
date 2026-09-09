@@ -3744,5 +3744,55 @@
       "setup_complexity": "high",
       "latency": "low"
     }
+  },
+  {
+    "id": "ecc",
+    "name": "ECC",
+    "category": "harness_wrapper",
+    "level": 2,
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "url": "https://github.com/affaan-m/ECC",
+    "source_type": "github",
+    "comparison_priority": "supplemental",
+    "notes": "Cross-agent harness optimization framework covering Claude Code, Codex, Opencode, and Cursor. Bundles skills, instincts, memory, and security practices into one research-first methodology. 254k stars as of 2026-09-09.",
+    "org_fit": {
+      "min_maturity": 3,
+      "max_maturity": 8,
+      "optimal_maturity": 5,
+      "features": ["cross-agent", "skills", "memory", "security"],
+      "pricing_tier": "free",
+      "tasks": ["code-gen", "research", "orchestration"],
+      "roles": ["developer"],
+      "team_size": ["solo", "small", "mid"],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "apache-maka",
+    "name": "Apache Maka",
+    "category": "agent_orchestration",
+    "level": 3,
+    "license": "Apache-2.0",
+    "primary_language": "Java",
+    "url": "https://github.com/apache/maka",
+    "source_type": "github",
+    "comparison_priority": "supplemental",
+    "notes": "Local-first workspace for assigning tasks to AI agents and viewing execution logs. Apache Software Foundation project — implies long-term governance and enterprise support. Runs on-prem with no external LLM dependency required.",
+    "org_fit": {
+      "min_maturity": 5,
+      "max_maturity": 10,
+      "optimal_maturity": 7,
+      "features": ["local-first", "governance", "audit-logs", "on-prem"],
+      "pricing_tier": "free",
+      "tasks": ["orchestration", "research", "code-gen"],
+      "roles": ["developer", "devops", "exec"],
+      "team_size": ["mid", "large"],
+      "network": "offline",
+      "setup_complexity": "medium",
+      "latency": "medium"
+    }
   }
 ]
