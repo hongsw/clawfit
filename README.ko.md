@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-09-09)
+## 🔥 지금 가장 뜨거운 것들 (2026-09-10)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **DeepSeek V4.1 Flash (공식 출시 2026-09-10)** | 새 아키텍처, 네이티브 멀티모달(텍스트+이미지+음성), 427 tok/s, V4 Pro 대비 V4 Flash 가격에 성능 능가 주장. 9월 8일부터 베타 제한 공개. 가격 확인 시 네이티브 멀티모달 통합 최초 Flash급 모델 — clawfit 레이턴시/비용 스코어링에 직접 영향. | L1 주 |
-| **[affaan-m/ECC ⭐255k](https://github.com/affaan-m/ECC) (GitHub 트렌딩, 2026-09-09)** | Claude Code, Codex, Opencode, Cursor를 동시에 지원하는 크로스 에이전트 하네스 — 스킬, 인스팅트, 메모리, 보안, 리서치 퍼스트 방법론 하나의 프레임워크로. 하루 +1,427 트렌딩 스타. 이 로그 가장 빠르게 성장한 하네스 레이어 프로젝트 중 하나. | L2 주 |
+| **DeepSeek V4.1 Flash ⭐1.2k HF — 공식 출시 2026-09-10** | 입력 토큰당 $0.003/M 확정. 552B MoE 백본, 1M 컨텍스트, 네이티브 멀티모달(텍스트+이미지+음성). KV Cache HBM 이전 세대 대비 1/4로 감소. 9월 14일부터 deepseek-v4-pro 모든 트래픽 여기로 라우팅. Flash급 최초 멀티모달+확정 가격 모델. | L1 주 |
+| **Cognition SWE-2 — 최초 조(兆) 파라미터 RL 모델 (HN 128점, 2026-09-10)** | Kimi K3 포스트 트레이닝 (2.8T). Terminal-Bench 2.1 92.8%; FrontierCode 1.1 Main 50.0% — Fable 5.1과 1점 차, 64% 저렴 주장. Devin Desktop/CLI/Web/Fusion에 배포. 벤치마크는 자체 보고; 독립 검증 대기. | L1 주 |
+| **SWE-Bench Pro Verified (arXiv 2609.08149, HF 18 upvotes, 2026-09-10)** | SWE-Bench Pro 수정 버전: 리워드 해킹(정답 유출)과 태스크 품질 문제 제거. "일부 모델이 기존 보고보다 현저히 낮은 성능." 이 로그에서 SWE-Bench Pro 복제 조건부 레지스트리 결정에 직접 영향. | L5 주 |
+| **[affaan-m/ECC ⭐255k](https://github.com/affaan-m/ECC) (GitHub 트렌딩, 2026-09-09)** | Claude Code, Codex, Opencode, Cursor를 동시 지원하는 크로스 에이전트 하네스 — 스킬, 인스팅트, 메모리, 보안, 리서치 퍼스트 방법론. 이 로그에서 가장 빠르게 성장한 하네스 레이어 프로젝트 중 하나. | L2 주 |
 | **Meta Muse — Meta 개인 AI 에이전트 (HN 607점, 2026-09-09)** | 세분화된 선호 학습, 패시브 앰비언트 컨텍스트 캡처, 크로스앱 메모리. 영속 메모리 아키텍처로 개인 AI 에이전트를 공개 출시한 최초의 주요 소비자 기술 기업. | L3/L5 주 |
-| **[argonautlabs/deltafin (HN 195점, 2026-09-09)](https://github.com/argonautlabsai/deltafin)** | 4개 SSD에서 가중치 스트리밍으로 MacBook Pro에서 Kimi K3 (2.8T 파라미터)를 1 tok/s로 실행. 모델 크기와 VRAM/RAM 제약 분리 — clawfit 현행 레이턴시 스코어링의 "대형 모델=클라우드" 가정을 깬다. | L1/하드웨어 |
-| **[Tencent/teamai-cli ⭐2.8k](https://github.com/Tencent/teamai-cli) (GitHub 트렌딩, 2026-09-09)** | 최초 엔터프라이즈 주도(Tencent) 크로스 에이전트 팀 관리 CLI: 스킬, 규칙, 문서, MCP 설정, 훅을 공유 git 저장소를 통해 7개 이상 AI 코딩 에이전트에 배포. Team Context 레이어가 코드베이스 지식 그래프 구축. 팀 스케일 L3 SSOT 패턴. | L3 주 / L4 부 |
-| **[openai/plugins ⭐6.1k](https://github.com/openai/plugins) (GitHub 트렌딩, 2026-09-09)** | OpenAI 공식 Codex 플러그인 에코시스템: `.codex-plugin/plugin.json` 매니페스트가 스킬+에이전트+MCP 설정을 플러그인 단위로 번들. Figma, Notion, iOS, macOS, Netlify, Expo, Google Slides 플러그인 이미 출시. L4 기능 번들 레이어에 대한 OpenAI의 공식 답변. | L4 주 |
-| **[sickn33/agentic-awesome-skills ⭐46.2k](https://github.com/sickn33/agentic-awesome-skills) v17.0.0 (2026-09-08)** | 휴대용 번들 포맷(스킬+스키마+증거 링크), AAS Core HITL 오케스트레이션(에이전트 제안→인간 승인→불변 계획). 이 로그 최고 별 개수 스킬 카탈로그. coding-tools-mcp와 함께 기능 게이트 쓰기 패턴 2-시그널 확인. | L4 주 / L3 부 |
-| **[vastsa/PI-Desktop ⭐1.6k](https://github.com/vastsa/PI-Desktop) (GitHub 트렌딩, 2026-09-09)** | 로컬 퍼스트 AI 코딩 에이전트 데스크톱: Electron + Rust 코어 + 스킬/MCP/서브에이전트/플러그인. 세 가지 운영 모드: Agent(자율), Plan(실행 전 검토), Goal(목표에서 분해). 멀티 프로바이더, LGPL-3.0. 명시적 모드 전환 갖춘 최초 데스크톱 네이티브 에이전트 워크스페이스. | L2 주 |
+| **[Tencent/teamai-cli ⭐3.7k](https://github.com/Tencent/teamai-cli) (GitHub 트렌딩, 2026-09-09)** | 최초 엔터프라이즈 주도(Tencent) 크로스 에이전트 팀 관리 CLI: 스킬, 규칙, 문서, MCP 설정, 훅을 공유 git 저장소를 통해 7개 이상 AI 코딩 에이전트에 배포. 팀 스케일 L3 SSOT 패턴. | L3 주 / L4 부 |
+| **[openai/plugins ⭐6.1k](https://github.com/openai/plugins) (GitHub 트렌딩, 2026-09-09)** | OpenAI 공식 L4 기능 번들 포맷: `.codex-plugin/plugin.json` 매니페스트가 스킬+에이전트+MCP 설정을 플러그인 단위로 번들. Figma, Notion, Netlify, Expo 플러그인 이미 출시. | L4 주 |
+| **[sickn33/agentic-awesome-skills ⭐46.2k](https://github.com/sickn33/agentic-awesome-skills) v17.0.0 (2026-09-08)** | 휴대용 번들 포맷과 AAS Core HITL 오케스트레이션(에이전트 제안→인간 승인→불변 계획). 이 로그 최고 별 개수 스킬 카탈로그. | L4 주 / L3 부 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (766개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (771개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
