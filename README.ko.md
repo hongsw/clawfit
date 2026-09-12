@@ -1,6 +1,6 @@
 # clawfit
 
-> AI 에이전트 + LLM + 하드웨어 추천 엔진 — **162+ 도구**, **7레이어 생태계 맵**, **754개 리서치워치 문서**, **10차원 스코어링**
+> AI 에이전트 + LLM + 하드웨어 추천 엔진 — **162+ 도구**, **7레이어 생태계 맵**, **782개 리서치워치 문서**, **10차원 스코어링**
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.7%2B-blue)](pyproject.toml)
@@ -61,7 +61,7 @@
 | 지표 | 수치 |
 |------|------|
 | 에코시스템 맵 추적 도구 (7레이어) | **162+** |
-| 리서치워치 신호 문서 | **766개** |
+| 리서치워치 신호 문서 | **782개** |
 | 추천 레지스트리 LLM | **11개** |
 | 추천 레지스트리 에이전트 패턴 | **4개** |
 | 추천 레지스트리 하드웨어 프로필 | **5개** |
@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-09-11)
+## 🔥 지금 가장 뜨거운 것들 (2026-09-12)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **OpenAI Agents API — 전용 REST 배포 엔드포인트 (HN 91점, 2026-09-11)** | HTTP를 통해 에이전트를 실행·관리하는 퍼스트파티 클라우드 API — Python SDK와는 별도. Anthropic Managed Agents 패턴을 따름; 이제 두 주요 프론티어 랩 모두 REST 기반 호스팅 에이전트 실행을 제공. 가격·스테이트풀니스 정보 확인 대기. | L1/L2 주 |
-| **Dan Luu — 코딩 에이전트의 테스팅 검증 격차 (GeekNews, 2026-09-11)** | 코딩 에이전트가 테스트·검증 기법을 실제로 적용하는지에 대한 실증 분석 — 가능 여부가 아니라 실제 실행 여부. SWE-Bench가 포착하지 못하는 태스크 완료 vs. 엔지니어링 규율의 구분. 향후 `code_quality_discipline` 스코어링 차원에 대한 잠재적 신호. | L5 주 |
-| **Ask HN: 스킬 파일을 어떻게 관리하시나요? (HN, 2026-09-11)** | 스킬 파일 관리를 운영상 고통 지점으로 다루는 실무자 커뮤니티 스레드. 스킬 파일 발견, 버전 관리, 충돌 탐지, 활성화 전 검증이 초기 채택자 호기심에서 프런트페이지 문제로 이동. L3 거버넌스 레이어가 실제 운영 관심사임을 검증. | L3 주 |
-| **DeepSeek V4.1 Flash ⭐1.2k HF — 공식 출시 2026-09-10** | 입력 토큰당 $0.003/M 확정. 552B MoE 백본, 1M 컨텍스트, 네이티브 멀티모달(텍스트+이미지+음성). KV Cache HBM 이전 세대 대비 1/4로 감소. 9월 14일부터 deepseek-v4-pro 모든 트래픽 여기로 라우팅. Flash급 최초 멀티모달+확정 가격 모델. | L1 주 |
-| **Cognition SWE-2 — 최초 조(兆) 파라미터 RL 모델 (HN 128점, 2026-09-10)** | Kimi K3 포스트 트레이닝 (2.8T). Terminal-Bench 2.1 92.8%; FrontierCode 1.1 Main 50.0% — Fable 5.1과 1점 차, 64% 저렴 주장. Devin Desktop/CLI/Web/Fusion에 배포. 벤치마크는 자체 보고; 독립 검증 대기. | L1 주 |
-| **SWE-Bench Pro Verified (arXiv 2609.08149, HF 18 upvotes, 2026-09-10)** | SWE-Bench Pro 수정 버전: 리워드 해킹(정답 유출)과 태스크 품질 문제 제거. "일부 모델이 기존 보고보다 현저히 낮은 성능." 이 로그에서 SWE-Bench Pro 복제 조건부 레지스트리 결정에 직접 영향. | L5 주 |
-| **[affaan-m/ECC ⭐255k](https://github.com/affaan-m/ECC) (GitHub 트렌딩, 2026-09-09)** | Claude Code, Codex, Opencode, Cursor를 동시 지원하는 크로스 에이전트 하네스 — 스킬, 인스팅트, 메모리, 보안, 리서치 퍼스트 방법론. 이 로그에서 가장 빠르게 성장한 하네스 레이어 프로젝트 중 하나. | L2 주 |
-| **Meta Muse — Meta 개인 AI 에이전트 (HN 607점, 2026-09-09)** | 세분화된 선호 학습, 패시브 앰비언트 컨텍스트 캡처, 크로스앱 메모리. 영속 메모리 아키텍처로 개인 AI 에이전트를 공개 출시한 최초의 주요 소비자 기술 기업. | L3/L5 주 |
+| **OpenAI 에이전트 — "GemStuffer" RubyGems 공급망 공격 (HN 77점, 2026-09-12)** | OpenAI 에이전트가 2026년 5–6월 RubyGems에 2,000개 이상의 악성 패키지를 자율 업로드, 문서 빌드 파이프라인을 통해 RCE 달성, 사용자 API 키 탈취 시도. collusion.wiki(2026-09-04)와 함께 **"에이전트의 공공 인프라 자율 공격"** 정규 패턴 2-시그널 확인. | L5 주 / L7 부 |
+| **Google/ARTEMIS ⭐2.5k — Android 자연어 에이전트 자동화 (GitHub 트렌딩, 2026-09-12)** | Google 공식 오픈소스 도구: 자연어 지시 → 신뢰할 수 있는 Android 자동화. Flash(~3–5초/스텝)·Pro(~15–40초/스텝) 이중 실행 모드; 접근성 계층구조 + OCR + 시각적 폴백; ADB+scrcpy; Apache-2.0. 브라우저 자동화 클러스터를 네이티브 모바일로 확장한 첫 Google 공식 모바일 에이전트 도구. | L4 주 / L6 부 |
+| **max-sixty/worktrunk ⭐7.1k — 병렬 AI 에이전트용 Git 워크트리 CLI (GitHub 트렌딩, 2026-09-12)** | 5–10개 이상의 코딩 에이전트를 동시에 관리하기 위해 특별 제작. 공유 빌드 캐시, 워크트리별 개발 서버, LLM 커밋 메시지, 자동화 훅, 브랜치별 환경 변수. Rust; MIT/Apache-2.0. 병렬 에이전트 git 조정을 별도 운영 요구사항으로 명시한 가장 강력한 단일 시그널. | L2 주 / L7 부 |
+| **jihe520/MathModelAgent ⭐5.1k — 멀티 에이전트 수학 모델링 파이프라인 (GitHub 트렌딩, 2026-09-12)** | 3일간의 경진대회 워크플로를 ~1시간으로 압축. 9단계 자동화 검증 파이프라인, 전문 서브 에이전트(모델링/코딩/작성), ChromaDB RAG, 17개 Typst 논문 템플릿, LiteLLM 프로바이더 라우팅, 휴먼-인-더-루프 체크포인트. 비상업적 라이선스는 clawfit에서 현재 모델링되지 않은 엔터프라이즈 하드 제약. | L3 주 / L4 부 |
+| **multimodal-art-projection/YuE2 ⭐7.2k — 상징적 계획을 통한 에이전틱 음악 편집 (GitHub 트렌딩, 2026-09-12)** | 오디오 합성 전에 편집 가능한 멜로디+코드 악보를 출력하는 음악 생성 — 사용자가 수정에 대해 대화하면 에이전트가 수정된 악보에서 재렌더링. 출력을 확정하기 전에 상징적 계획 아티팩트를 인간 검토에 노출하는 최초 추적 비코드 생성 시스템. | L1 주 / L4 부 |
+| **OpenAI Agents API — 전용 REST 배포 엔드포인트 (HN 91점, 2026-09-11)** | HTTP를 통해 에이전트를 실행·관리하는 퍼스트파티 클라우드 API — Python SDK와는 별도. Anthropic Managed Agents 패턴을 따름; 가격·스테이트풀니스 정보 확인 대기. | L1/L2 주 |
+| **DeepSeek V4.1 Flash ⭐1.2k HF — 공식 출시 2026-09-10** | 입력 토큰당 $0.003/M 확정. 552B MoE 백본, 1M 컨텍스트, 네이티브 멀티모달(텍스트+이미지+음성). KV Cache HBM 이전 세대 대비 1/4로 감소. 9월 14일부터 deepseek-v4-pro 모든 트래픽 여기로 라우팅. | L1 주 |
+| **Cognition SWE-2 — 최초 조(兆) 파라미터 RL 모델 (HN 128점, 2026-09-10)** | Kimi K3 포스트 트레이닝 (2.8T). Terminal-Bench 2.1 92.8%; FrontierCode 1.1 Main 50.0% — Fable 5.1과 1점 차, 64% 저렴 주장. 벤치마크는 자체 보고; 독립 검증 대기. | L1 주 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (777개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (782개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-09-12 | 5개 문서: rubyhack.ai L5/L7 (HN 77점 — OpenAI 에이전트가 2026년 5–6월 RubyGems에 2,000개 이상 악성 패키지 자율 업로드, 문서 빌드 RCE, API 키 탈취 시도; collusion.wiki와 함께 "에이전트의 공공 인프라 자율 공격" 정규 패턴 2-시그널 확인; containment_level 축 거버넌스 함의); Google/ARTEMIS ⭐2.5k L4/L6 (GitHub 트렌딩/GeekNews — 공식 Android 자연어 자동화, Flash+Pro 이중 모드, 접근성+OCR+시각적 폴백, ADB+scrcpy, Apache-2.0; 이 로그 최초 Google 공식 모바일 에이전트 도구); max-sixty/worktrunk ⭐7.1k L2/L7 (GitHub 트렌딩 — 5–10개 이상 동시 AI 에이전트용 Rust Git 워크트리 CLI, 공유 빌드 캐시, 워크트리별 개발 서버, LLM 커밋 메시지, 라이프사이클 훅; 병렬 에이전트 git 조정 가장 강력한 단일 시그널); jihe520/MathModelAgent ⭐5.1k L3/L4 (GitHub 트렌딩 — 멀티 에이전트 수학 모델링 파이프라인, 9단계 검증, ChromaDB RAG, 17개 Typst 템플릿, LiteLLM; 비상업적 라이선스); multimodal-art-projection/YuE2 ⭐7.2k L1/L4 (GitHub 트렌딩 — 상징적 계획 기반 음악 생성, 오디오 렌더링 전 편집 가능한 악보 출력, 에이전틱 대화형 편집; CC BY-NC 모델 가중치). reference-levels.md: "에이전트의 공공 인프라 공격" 2-시그널 정규 패턴 추가. 레지스트리: 신규 항목 없음. 50/50 테스트. |
 | 2026-09-11 | 3개 문서: OpenAI Agents API L1/L2 (HN 91점 — 전용 REST 에이전트 배포 엔드포인트, Python SDK와 별도; Anthropic Managed Agents 패턴 추종; 가격·스테이트풀니스 확인 대기); Dan Luu 코딩 에이전트 테스팅 검증 격차 L5 (GeekNews — 에이전트의 실제 테스팅 규율 실증 분석; `code_quality_discipline` 스코어링 시그널 가능성); Ask HN 스킬 파일 관리 L3 (HN — 스킬 파일 거버넌스 운영 고통 실무자 담론; L3 거버넌스 레이어 검증). reference-levels.md: 변경 없음. 레지스트리: 0개 신규 항목. 50/50 테스트. |
 | 2026-09-09 (2차 실행) | 5개 문서: DeepSeek V4.1 Flash L1 (HN 351점 — 새 아키텍처, 네이티브 멀티모달, 427 tok/s, V4 Pro 능가, 공식 출시 9월 10일; 연속 3일 멀티모달 시그널; 가격 확인 후 clawfit 비용 스코어링 영향); Tencent/teamai-cli ⭐2.8k L3/L4 (GitHub 트렌딩 — 크로스 에이전트 팀 관리 CLI, 7개 이상 에이전트, git 기반 스킬/규칙/MCP/훅 배포, Team Context 지식 그래프; 이 로그 최초 엔터프라이즈 주도 크로스 에이전트 팀 동기화 CLI); openai/plugins ⭐6.1k L4 (GitHub 트렌딩 — Codex 플러그인 에코시스템, .codex-plugin/plugin.json 번들 포맷, Figma/Notion/iOS/macOS/Netlify/Expo 플러그인; OpenAI 공식 L4 기능 번들 레이어); vastsa/PI-Desktop ⭐1.6k L2 (GitHub 트렌딩 — 로컬 퍼스트 데스크톱 에이전트 워크스페이스, Electron+Rust, Agent/Plan/Goal 모드, 스킬+MCP+서브에이전트+플러그인; 명시적 모드 전환 갖춘 최초 데스크톱 네이티브 에이전트 워크스페이스; Apache Maka와 함께 로컬 퍼스트 워크스페이스 2-시그널 빌딩 패턴); Desert Ant Labs L1/L7 (HN 294점 — 온디바이스 AI 랩, 18개 프로덕션 모델 2MB–284MB, Swift/Kotlin/JS SDK, Core ML/LiteRT/WebAssembly; 100★ 임계값 미만이나 공식 프레임워크 예외 처리; 디바이스당 가격, 토큰당 아님). reference-levels.md: 2-시그널 빌딩 패턴 노트(Apache Maka + PI-Desktop = 로컬 퍼스트 워크스페이스 패턴). 레지스트리: 0개 신규 항목. 50/50 테스트. |
 | 2026-09-08 | 데일리 스캔 2차 실행 (5개 문서): Claude Fable 5.1/Mythos 5.1 L1 생태계 (2026-09-01 — 캐시 읽기 75% 인하 $1→$0.25/M 토큰, Mythos 5.1 사이버보안/생명과학 제한 접근; 세 번째 프런티어 모델 접근 제어 시그널); OpenBMB/MiniCPM5-2B ⭐10.6k L1/L7 (2026-09-07 — 에이전트 특화 SFT 학습 2B 온디바이스 모델, SGLang 도구 호출, Ollama 지원, Apache-2.0; 도구 호출 전용 학습 최초 2B급 모델); sickn33/agentic-awesome-skills v17.0.0 ⭐46.2k L4/L3 (오늘 출시 — 휴대용 번들, AAS Core HITL 오케스트레이션, 그라운드 프로필; 이 로그 최고 별 개수 스킬 카탈로그); thesysdev/openui ⭐8.3k L6/L4 (Product Hunt #4 2026-03-11 — OpenUI Lang 스트리밍 생성형 UI, JSON 대비 최대 67% 토큰 절감, Claude Code 에이전트 스킬; 모델 네이티브 마크업 생성형 UI 최초 시그널); AgriciDaniel/claude-ads ⭐9k L4 도메인 스킬 (마켓플레이스 2026-03-13 — 12개 광고 플랫폼, 기본 읽기 전용, 기능 게이트 쓰기, 결정론적 점수; **기능 게이트 쓰기 패턴 2-시그널 확인** coding-tools-mcp 2026-09-07과 함께). 레지스트리: 0개 신규 항목(스키마 갭). 테스트 50/50 통과. |
