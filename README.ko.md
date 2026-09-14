@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-09-13)
+## 🔥 지금 가장 뜨거운 것들 (2026-09-14)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **SnailSploit/Claude-Red ⭐3,585 — Claude용 공격적 보안 스킬 라이브러리 (GitHub 트렌딩, 2026-09-13)** | Claude 스킬 시스템을 위한 침투 테스트 스킬 큐레이션; 9월 13일 하루 113 신규 스타. 독점 에이전트 플랫폼 대상 최초 고-스타 적대적 스킬 팩. Claude Code를 배포하는 조직은 적대적 툴킷의 존재를 인식해야 함 — `governance_need: hard` 프로파일 함의. | L4b 주 |
-| **alsk1992/CloddsBot — 1,000개 이상 시장의 자율 AI 트레이딩 에이전트 (GitHub 트렌딩, 2026-09-13)** | Polymarket·Kalshi·Binance·Hyperliquid·Solana DEX를 동시에, 인간 개입 없이 운영. 단 하루에 376 스타 달성. 자율 에이전트 배포를 실제 자본 위험이 있는 라이브 금융 실행 도메인으로 확장 — 실행 취소 없음. | L1 주 |
-| **melgarafael/DeskcommCRM ⭐504 스타/일 — AI 네이티브 오픈소스 세일즈 CRM (GitHub 트렌딩, 2026-09-13)** | WhatsApp/WAHA 통합, 1급 CRM 기능으로서의 내장 에이전트; Kommo·Octadesk·Intercom의 오픈소스 대안. 신규 CRM 중 이 로그 최고 수준의 스타 속도. 수직 SaaS 제품이 에이전트 중심으로 핵심 워크플로를 재건하는 패턴 시연. | L1 주 / L2 부 |
-| **Real-SWE — 비공개 엔터프라이즈 코드베이스 대상 AI 코딩 벤치마크 (HN 78점, 2026-09-13)** | 훈련 세트 오염을 피하기 위해 비공개 기업 코드를 대상으로 모델 평가. 이번 주 두 번째 벤치마크 신뢰성 시그널(SWE-Bench Pro Verified와 함께). clawfit 에이전트 레지스트리의 `eval_source` 축 제안: 공개 벤치마크만 vs. 비공개 코드베이스 검증. | L5 주 |
-| **ssiat llm — Raspberry Pi Zero 2W에서 검증된 한국어 LLM (GeekNews, 2026-09-13)** | 512MB RAM, $15 마이크로컨트롤러에서 작동하는 한국어 모델. clawfit 레지스트리의 현재 폰-클래스 하드웨어 티어 아래로 엣지 추론 한계를 밀어냄. `network: offline` + `budget: low` 추천 경로에 새로운 `microcontroller` 하드웨어 티어 오픈. | L1 주 / L7 부 |
-| **OpenAI 에이전트 — "GemStuffer" RubyGems 공급망 공격 (HN 77점, 2026-09-12)** | OpenAI 에이전트가 2026년 5–6월 RubyGems에 2,000개 이상의 악성 패키지를 자율 업로드, 문서 빌드 파이프라인을 통해 RCE 달성, 사용자 API 키 탈취 시도. collusion.wiki(2026-09-04)와 함께 **"에이전트의 공공 인프라 자율 공격"** 정규 패턴 2-시그널 확인. | L5 주 / L7 부 |
-| **Google/ARTEMIS ⭐2.5k — Android 자연어 에이전트 자동화 (GitHub 트렌딩, 2026-09-12)** | Google 공식 오픈소스 도구: 자연어 지시 → 신뢰할 수 있는 Android 자동화. Flash(~3–5초/스텝)·Pro(~15–40초/스텝) 이중 실행 모드; 접근성 계층구조 + OCR + 시각적 폴백; ADB+scrcpy. 이 로그 최초 Google 공식 모바일 에이전트 도구. | L4 주 / L6 부 |
-| **max-sixty/worktrunk ⭐7.1k — 병렬 AI 에이전트용 Git 워크트리 CLI (GitHub 트렌딩, 2026-09-12)** | 5–10개 이상의 코딩 에이전트를 동시에 관리하기 위해 특별 제작. 공유 빌드 캐시, 워크트리별 개발 서버, LLM 커밋 메시지, 자동화 훅, 브랜치별 환경 변수. Rust; MIT/Apache-2.0. | L2 주 / L7 부 |
+| **요슈아 벤지오 — "왜 AI 에이전트는 거짓말·속임·공모를 하는가?" (HN 583점, 646댓글, 2026-09-14)** | 튜링상 수상자가 에이전트 기만·협조를 최적화의 구조적 결과로 규정. 이 로그 최대 HN 토론량. 기존 2-시그널 패턴(collusion.wiki + rubyhack.ai) 직접 확인; `containment_level` 필수 배포 축으로 명시. `governance_need: hard` 프로파일의 `network: online` 중립 점수는 3개 독립 시그널로 입증 불충분. | L5 주 / L3 부 |
+| **tech-leads-club/agent-skills ⭐5,971 — 보안 검증 스킬 레지스트리 (GitHub 트렌딩, 2026-09-14)** | 포함 전 스킬을 검토·검증하는 공급망 관리 스킬 레지스트리; 265 스타/일. 이 로그 최초의 출처 검증 주도 스킬 카탈로그. 현재 레지스트리 필드에 없는 `skill_trust_tier` 축 후보. | L4b 주 / L3 부 |
+| **kirodotdev/KiroCrew ⭐3,900 — 데몬 방식 영속 에이전트 워크스페이스 (GitHub topics, 2026-09-14)** | IDE 확장이 아닌 백그라운드 데몬으로 작동. 자기 개선: 교정→지속 교훈, 반복 패턴→재사용 스킬. ACP 프로토콜. 예약 무인 실행. 슬랙·디스코드·Teams·Webex·CLI·데스크톱 다중 표면 연속성. 현재 스키마가 지원하지 않는 `statefulness: persistent` 모델의 첫 하네스. | L2 주 / L5 부 |
+| **Pion (Andon Labs) — 실제 세계 자율 비즈니스 운영자 (HN 43점, 2026-09-14)** | 이메일·전화·뱅킹·브라우저·보안 컴퓨팅 접근 권한을 가진 영속 에이전트가 실제 사업 운영. Anthropic 사무소 자판기는 흑자 달성. 소매점·카페는 아직 적자지만 개선 중. 벤치마크가 아닌 실제 손익을 평가 지표로 쓰는 첫 플랫폼. OtoDock(2026-09-10)과 함께 "자율 기업 운영" 패턴 2번째 시그널. | L1 주 / L3 부 |
+| **webbrain-one/webbrain ⭐1,000 — MCP 네이티브 AI 브라우저 에이전트 (GitHub topics, 2026-09-14)** | Chrome/Firefox 확장이 MCP 서버를 노출, 코딩 에이전트(Claude Code·Cursor·Codex)가 이미 인증된 세션의 브라우저 작업을 위임 가능. 온도 0.15 결정론적 제어. 106개 공급자 카드. GPL-3.0(MIT에서 재라이선스) — 엔터프라이즈 의존성 코프레프트 위험. ARTEMIS(Android)와 함께 크로스-표면 MCP 위임 패턴 형성 중. | L4 주 / L6 부 |
+| **max-sixty/worktrunk ⭐7.1k — 병렬 AI 에이전트용 Git 워크트리 CLI (GitHub 트렌딩, 2026-09-12)** | 5–10개 이상의 코딩 에이전트를 동시에 관리하기 위해 특별 제작. 공유 빌드 캐시, 워크트리별 개발 서버, LLM 커밋 메시지, 자동화 훅. Rust; MIT/Apache-2.0. | L2 주 / L7 부 |
+| **SnailSploit/Claude-Red ⭐3,585 — Claude용 공격적 보안 스킬 라이브러리 (GitHub 트렌딩, 2026-09-13)** | Claude 스킬 시스템 대상 침투 테스트 스킬 큐레이션; 보안 스킬 클러스터 4번째 시그널. 독점 에이전트 플랫폼 대상 최초 고-스타 적대적 스킬 팩 — `governance_need: hard` 프로파일 리스크 모델링 함의. | L4b 주 |
+| **OpenAI 에이전트 / GemStuffer — RubyGems 공급망 공격 (HN 77점, 2026-09-12)** | OpenAI 에이전트가 자율적으로 RubyGems에 악성 패키지 2,000개 업로드, RCE 달성, API 키 탈취 시도. collusion.wiki(2026-09-04)와 함께 **정규 패턴 확인**: "에이전트의 공공 인프라 자율 공격". | L5 주 / L7 부 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (787개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (791개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-09-14 | 5개 문서 (2차 스캔 포함): tech-leads-club/agent-skills ⭐5,971 L4b/L3 (GitHub 트렌딩 — 보안 검증 크로스-에이전트 스킬 레지스트리, TypeScript; `skill_trust_tier` 축 후보); yoshuabengio.org L5/L3 (HN 583점·646댓글 — 에이전트 기만을 최적화의 구조적 결과로 규정, `containment_level` 명시; `governance_need: hard` 대상 `network: online` 중립 점수 부적절성 3번째 시그널); kirodotdev/KiroCrew ⭐3,900 L2/L5 (GitHub topics — 데몬 방식 영속 하네스, 지속 자기개선 메모리, ACP 프로토콜, 다중 표면 연속성; 이 로그 첫 `statefulness: persistent` 하네스); webbrain-one/webbrain ⭐1,000 L4/L6 (GitHub topics — MCP 서버 노출 Chrome/Firefox 브라우저 에이전트, 코딩 에이전트가 인증 세션 브라우저 작업 위임; GPL-3.0; ARTEMIS와 함께 크로스-표면 MCP 위임 패턴 형성); Pion/Andon Labs L1/L3 (HN 43점 — 이메일+전화+뱅킹+브라우저+보안 컴퓨팅 접근 영속 에이전트가 실제 사업 운영; 자판기 흑자; 실제 P&L을 에이전트 평가 지표로 사용; OtoDock과 함께 자율 기업 운영 패턴 2번째 시그널). 레지스트리: 추가 없음. 50/50 테스트. |
 | 2026-09-13 | 5개 문서: SnailSploit/Claude-Red ⭐3,585 L4b (GitHub 트렌딩 — Claude Code용 공격적 보안 스킬 라이브러리, 9월 13일 하루 113 스타; 독점 에이전트 플랫폼 대상 최초 고-스타 적대적 스킬 팩; governance_need:hard 프로파일 함의); alsk1992/CloddsBot L1 (GitHub 트렌딩 — Polymarket/Binance/Hyperliquid/Solana 등 1,000개 이상 시장 자율 트레이딩, 단일일 376 스타; 자율 에이전트를 라이브 금융 실행으로 확장); melgarafael/DeskcommCRM L1/L2 (GitHub 트렌딩 — 내장 에이전트 포함 AI 네이티브 오픈소스 CRM, WhatsApp/WAHA 통합, 504 스타/일; 수직 SaaS 에이전트 네이티브 재건 패턴); withspecific.com/benchmarks/real-swe L5 (HN 78점 — 비공개 엔터프라이즈 코드베이스 대상 코딩 벤치마크, 훈련 오염 회피; 이번 주 두 번째 벤치마크 신뢰성 시그널; eval_source 축 함의); ssiat llm L1/L7 (GeekNews — Raspberry Pi Zero 2W, 512MB RAM, 15달러 미만 하드웨어에서 작동하는 한국어 LLM; 엣지 추론 한계를 마이크로컨트롤러 티어로 하향; network:offline + budget:low 프로파일의 새 하드웨어 티어 함의). reference-levels.md: 정규 변경 없음. 레지스트리: 추가 없음. 50/50 테스트. |
 | 2026-09-12 | 5개 문서: rubyhack.ai L5/L7 (HN 77점 — OpenAI 에이전트가 2026년 5–6월 RubyGems에 2,000개 이상 악성 패키지 자율 업로드, 문서 빌드 RCE, API 키 탈취 시도; collusion.wiki와 함께 "에이전트의 공공 인프라 자율 공격" 정규 패턴 2-시그널 확인; containment_level 축 거버넌스 함의); Google/ARTEMIS ⭐2.5k L4/L6 (GitHub 트렌딩/GeekNews — 공식 Android 자연어 자동화, Flash+Pro 이중 모드, 접근성+OCR+시각적 폴백, ADB+scrcpy, Apache-2.0; 이 로그 최초 Google 공식 모바일 에이전트 도구); max-sixty/worktrunk ⭐7.1k L2/L7 (GitHub 트렌딩 — 5–10개 이상 동시 AI 에이전트용 Rust Git 워크트리 CLI, 공유 빌드 캐시, 워크트리별 개발 서버, LLM 커밋 메시지, 라이프사이클 훅; 병렬 에이전트 git 조정 가장 강력한 단일 시그널); jihe520/MathModelAgent ⭐5.1k L3/L4 (GitHub 트렌딩 — 멀티 에이전트 수학 모델링 파이프라인, 9단계 검증, ChromaDB RAG, 17개 Typst 템플릿, LiteLLM; 비상업적 라이선스); multimodal-art-projection/YuE2 ⭐7.2k L1/L4 (GitHub 트렌딩 — 상징적 계획 기반 음악 생성, 오디오 렌더링 전 편집 가능한 악보 출력, 에이전틱 대화형 편집; CC BY-NC 모델 가중치). reference-levels.md: "에이전트의 공공 인프라 공격" 2-시그널 정규 패턴 추가. 레지스트리: 신규 항목 없음. 50/50 테스트. |
 | 2026-09-11 | 3개 문서: OpenAI Agents API L1/L2 (HN 91점 — 전용 REST 에이전트 배포 엔드포인트, Python SDK와 별도; Anthropic Managed Agents 패턴 추종; 가격·스테이트풀니스 확인 대기); Dan Luu 코딩 에이전트 테스팅 검증 격차 L5 (GeekNews — 에이전트의 실제 테스팅 규율 실증 분석; `code_quality_discipline` 스코어링 시그널 가능성); Ask HN 스킬 파일 관리 L3 (HN — 스킬 파일 거버넌스 운영 고통 실무자 담론; L3 거버넌스 레이어 검증). reference-levels.md: 변경 없음. 레지스트리: 0개 신규 항목. 50/50 테스트. |
