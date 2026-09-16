@@ -3594,7 +3594,7 @@
     "url": "https://github.com/micro/mu",
     "source_type": "github",
     "comparison_priority": "ecosystem",
-    "notes": "Single Go binary bundling 67 tools (web search, news, weather, markets, mail, file storage, calendar, image generation) behind one MCP endpoint. Runs real infrastructure per domain: own SMTP server with DKIM, search index, app sandbox, wallet system — not thin API wrappers. 4,004 commits, 112 stars (2026-08-03). Self-hostable or hosted at micro.mu. First 'mega-aggregator' L4c entry: collapses N MCP server configs into one endpoint, mitigating the MCP tool-saturation failure pattern.",
+    "notes": "Single Go binary bundling 67 tools (web search, news, weather, markets, mail, file storage, calendar, image generation) behind one MCP endpoint. Runs real infrastructure per domain: own SMTP server with DKIM, search index, app sandbox, wallet system \u2014 not thin API wrappers. 4,004 commits, 112 stars (2026-08-03). Self-hostable or hosted at micro.mu. First 'mega-aggregator' L4c entry: collapses N MCP server configs into one endpoint, mitigating the MCP tool-saturation failure pattern.",
     "org_fit": {
       "min_maturity": 3,
       "max_maturity": 8,
@@ -3632,7 +3632,7 @@
     "url": "https://github.com/unclebob/swarm-forge",
     "source_type": "github",
     "comparison_priority": "secondary",
-    "notes": "tmux-based multi-agent swarm coordinator by Robert C. Martin (Uncle Bob). Role-separated git worktrees per agent (spec, code, refactor, architect, harden, QA). Daemon-mediated handoff protocol via validated message files — no shared state. Configurable agent packs (two-pack, four-pack, six-pack). Multi-backend: claude, copilot, codex, grok in same swarm. Constitution files (layered prompt files) enforce per-role discipline. 1,827★ (GitHub Trending 2026-08-08). Clojure implementation signals research/prototype intent.",
+    "notes": "tmux-based multi-agent swarm coordinator by Robert C. Martin (Uncle Bob). Role-separated git worktrees per agent (spec, code, refactor, architect, harden, QA). Daemon-mediated handoff protocol via validated message files \u2014 no shared state. Configurable agent packs (two-pack, four-pack, six-pack). Multi-backend: claude, copilot, codex, grok in same swarm. Constitution files (layered prompt files) enforce per-role discipline. 1,827\u2605 (GitHub Trending 2026-08-08). Clojure implementation signals research/prototype intent.",
     "org_fit": {
       "min_maturity": 4,
       "max_maturity": 9,
@@ -3666,7 +3666,7 @@
     "url": "https://github.com/msitarzewski/agency-agents",
     "source_type": "github",
     "comparison_priority": "secondary",
-    "notes": "230+ role-persona agent configurations for 18+ professional divisions (engineering, design, marketing, sales, legal, etc.). Desktop installer app; harness-agnostic — works with Claude Code, Cursor, Aider, Copilot, Windsurf and 8+ others. Role-driven (not task-driven) persona library.",
+    "notes": "230+ role-persona agent configurations for 18+ professional divisions (engineering, design, marketing, sales, legal, etc.). Desktop installer app; harness-agnostic \u2014 works with Claude Code, Cursor, Aider, Copilot, Windsurf and 8+ others. Role-driven (not task-driven) persona library.",
     "org_fit": {
       "min_maturity": 3,
       "max_maturity": 8,
@@ -3710,11 +3710,26 @@
       "min_maturity": 4,
       "max_maturity": 8,
       "optimal_maturity": 5,
-      "features": ["offline-inference", "browser-native", "privacy-preserving"],
+      "features": [
+        "offline-inference",
+        "browser-native",
+        "privacy-preserving"
+      ],
       "pricing_tier": "free",
-      "tasks": ["code-gen", "research", "summarization"],
-      "roles": ["developer", "researcher"],
-      "team_size": ["solo", "small", "mid"],
+      "tasks": [
+        "code-gen",
+        "research",
+        "summarization"
+      ],
+      "roles": [
+        "developer",
+        "researcher"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
       "network": "offline",
       "setup_complexity": "medium",
       "latency": "high"
@@ -3735,11 +3750,25 @@
       "min_maturity": 6,
       "max_maturity": 10,
       "optimal_maturity": 7,
-      "features": ["multi-agent", "change-tracking", "agent-identity"],
+      "features": [
+        "multi-agent",
+        "change-tracking",
+        "agent-identity"
+      ],
       "pricing_tier": "free",
-      "tasks": ["code-gen", "orchestration"],
-      "roles": ["developer", "devops"],
-      "team_size": ["small", "mid", "large"],
+      "tasks": [
+        "code-gen",
+        "orchestration"
+      ],
+      "roles": [
+        "developer",
+        "devops"
+      ],
+      "team_size": [
+        "small",
+        "mid",
+        "large"
+      ],
       "network": "online",
       "setup_complexity": "high",
       "latency": "low"
@@ -3760,11 +3789,26 @@
       "min_maturity": 3,
       "max_maturity": 8,
       "optimal_maturity": 5,
-      "features": ["cross-agent", "skills", "memory", "security"],
+      "features": [
+        "cross-agent",
+        "skills",
+        "memory",
+        "security"
+      ],
       "pricing_tier": "free",
-      "tasks": ["code-gen", "research", "orchestration"],
-      "roles": ["developer"],
-      "team_size": ["solo", "small", "mid"],
+      "tasks": [
+        "code-gen",
+        "research",
+        "orchestration"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
       "network": "online",
       "setup_complexity": "low",
       "latency": "medium"
@@ -3780,17 +3824,33 @@
     "url": "https://github.com/apache/maka",
     "source_type": "github",
     "comparison_priority": "supplemental",
-    "notes": "Local-first workspace for assigning tasks to AI agents and viewing execution logs. Apache Software Foundation project — implies long-term governance and enterprise support. Runs on-prem with no external LLM dependency required.",
+    "notes": "Local-first workspace for assigning tasks to AI agents and viewing execution logs. Apache Software Foundation project \u2014 implies long-term governance and enterprise support. Runs on-prem with no external LLM dependency required.",
     "org_fit": {
       "min_maturity": 5,
       "max_maturity": 10,
       "optimal_maturity": 7,
-      "features": ["local-first", "governance", "audit-logs", "on-prem"],
+      "features": [
+        "local-first",
+        "governance",
+        "audit-logs",
+        "on-prem"
+      ],
       "pricing_tier": "free",
-      "tasks": ["orchestration", "research", "code-gen"],
-      "roles": ["developer", "devops", "exec"],
-      "team_size": ["mid", "large"],
-      "network": "offline",
+      "tasks": [
+        "orchestration",
+        "research",
+        "code-gen"
+      ],
+      "roles": [
+        "developer",
+        "devops",
+        "exec"
+      ],
+      "team_size": [
+        "mid",
+        "large"
+      ],
+      "network": "hybrid",
       "setup_complexity": "medium",
       "latency": "medium"
     }

@@ -3594,7 +3594,7 @@
     "url": "https://github.com/micro/mu",
     "source_type": "github",
     "comparison_priority": "ecosystem",
-    "notes": "Single Go binary bundling 67 tools (web search, news, weather, markets, mail, file storage, calendar, image generation) behind one MCP endpoint. Runs real infrastructure per domain: own SMTP server with DKIM, search index, app sandbox, wallet system — not thin API wrappers. 4,004 commits, 112 stars (2026-08-03). Self-hostable or hosted at micro.mu. First 'mega-aggregator' L4c entry: collapses N MCP server configs into one endpoint, mitigating the MCP tool-saturation failure pattern.",
+    "notes": "Single Go binary bundling 67 tools (web search, news, weather, markets, mail, file storage, calendar, image generation) behind one MCP endpoint. Runs real infrastructure per domain: own SMTP server with DKIM, search index, app sandbox, wallet system \u2014 not thin API wrappers. 4,004 commits, 112 stars (2026-08-03). Self-hostable or hosted at micro.mu. First 'mega-aggregator' L4c entry: collapses N MCP server configs into one endpoint, mitigating the MCP tool-saturation failure pattern.",
     "org_fit": {
       "min_maturity": 3,
       "max_maturity": 8,
@@ -3632,7 +3632,7 @@
     "url": "https://github.com/unclebob/swarm-forge",
     "source_type": "github",
     "comparison_priority": "secondary",
-    "notes": "tmux-based multi-agent swarm coordinator by Robert C. Martin (Uncle Bob). Role-separated git worktrees per agent (spec, code, refactor, architect, harden, QA). Daemon-mediated handoff protocol via validated message files — no shared state. Configurable agent packs (two-pack, four-pack, six-pack). Multi-backend: claude, copilot, codex, grok in same swarm. Constitution files (layered prompt files) enforce per-role discipline. 1,827★ (GitHub Trending 2026-08-08). Clojure implementation signals research/prototype intent.",
+    "notes": "tmux-based multi-agent swarm coordinator by Robert C. Martin (Uncle Bob). Role-separated git worktrees per agent (spec, code, refactor, architect, harden, QA). Daemon-mediated handoff protocol via validated message files \u2014 no shared state. Configurable agent packs (two-pack, four-pack, six-pack). Multi-backend: claude, copilot, codex, grok in same swarm. Constitution files (layered prompt files) enforce per-role discipline. 1,827\u2605 (GitHub Trending 2026-08-08). Clojure implementation signals research/prototype intent.",
     "org_fit": {
       "min_maturity": 4,
       "max_maturity": 9,
