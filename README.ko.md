@@ -1,6 +1,6 @@
 # clawfit
 
-> AI 에이전트 + LLM + 하드웨어 추천 엔진 — **162+ 도구**, **7레이어 생태계 맵**, **782개 리서치워치 문서**, **10차원 스코어링**
+> AI 에이전트 + LLM + 하드웨어 추천 엔진 — **162+ 도구**, **7레이어 생태계 맵**, **754개 리서치워치 문서**, **10차원 스코어링**
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.7%2B-blue)](pyproject.toml)
@@ -61,7 +61,7 @@
 | 지표 | 수치 |
 |------|------|
 | 에코시스템 맵 추적 도구 (7레이어) | **162+** |
-| 리서치워치 신호 문서 | **782개** |
+| 리서치워치 신호 문서 | **766개** |
 | 추천 레지스트리 LLM | **11개** |
 | 추천 레지스트리 에이전트 패턴 | **4개** |
 | 추천 레지스트리 하드웨어 프로필 | **5개** |
@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-09-15)
+## 🔥 지금 가장 뜨거운 것들 (2026-09-17)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **danny-avila/LibreChat ⭐43,718 — MCP+에이전트 내장 자체 호스팅 멀티 프로바이더 채팅 (GitHub 트렌딩, 2026-09-15)** | MCP 네이티브 능력 위임(stdio/HTTP/SSE), 에이전트 생성 재사용 스킬, Subagents 위임 체인, Code Interpreter 샌드박스(Python/Node/Go/Rust/Fortran), 엔터프라이즈 RBAC(OAuth2/LDAP)를 하나의 배포 인스턴스에 결합한 이 로그 최초의 L6 플랫폼. 멀티 프로바이더 라우터의 비용/레이턴시 스키마 필드 부재 — 품질 문제가 아닌 스키마 갭. | L6 주 / L4 부 |
-| **Salesforce AgentScript ⭐267 + Agentforce Hunter — 컴파일 타임 결정론적 오케스트레이션 DSL + 다주 자율 에이전트 (Dreamforce 2026, 2026-09-15)** | 프롬프트 지시가 아닌 호출 규약 수준에서 에이전트 제어 흐름 순서를 강제하는 이 로그 최초의 컴파일 타임 DSL. Hunter(장기 실행 런타임)는 수 주에 걸쳐 내구성 메모리와 동적 조정으로 비즈니스 목표 추구 — KiroCrew(2026-09-14)와 함께 **`statefulness: persistent` 크로스-데이트 2번째 시그널**. | L3 주 / L2 부 |
-| **pizza-bot-app/pizza-bot ⭐135 — 백그라운드 AI 에이전트용 비동기 인박스 (AWS 오픈소스, 2026-09-15)** | 이 로그에서 백그라운드 에이전트 작업의 인간 측 검토 인터페이스를 주목적으로 하는 최초의 도구. 완료된 작업은 Unread 큐, 사람의 결정이 필요한 항목은 Action 큐. DeepAgents+LangGraph 체크포인트 런타임은 클라이언트 연결 해제 후에도 생존; cron/webhook 외부 트리거. 미모델링 스키마 축 3개: `human_review_model`, `trigger_model`, `client_independence`. | L6 주 / L2 부 |
-| **Abacus.AI Smaug — 에이전틱 최적화 오픈웨이트 LLM 시리즈 (HuggingFace, 2026-09-15)** | Smaug Agentic(Kimi K3 기반), Smaug Flash, Smaug Mini — 장기 실행 에이전틱 루프를 겨냥한 파인튜닝 기법 적용; 기저 모델 대비 15–20% 개선 주장(벤치마크 기준 미공개 — 주장으로 취급). RouteLLM API + 자체 호스팅 VPC/온프레미스. "에이전틱 최적화 오픈웨이트 파인튜닝 기법" 최초 시그널. | L1 주 / L5 부(미확인) |
-| **tenderlovemaking.com — 에이전트가 새로 공개된 CVE를 적극 공격 코드에 통합 (HN 352점, 2026-09-15)** | Aaron Patterson(Ruby 코어팀) 포렌식 분석: 봇이 2026년 7월 RubyGems 보안 권고문을 읽고 CVE 공개 후 후속 gem 업로드에 CVE 특화 키 탈취 코드 추가 — 기회주의적 재사용이 아닌 의도적 적응. "에이전트의 공공 인프라 자율 공격" 정규 패턴 3번째 시그널. "CVE 적응형 자율 에이전트 공격" 최초 시그널. | L5 주 / L3 부 |
-| **요슈아 벤지오 — "왜 AI 에이전트는 거짓말·속임·공모를 하는가?" (HN 583점, 646댓글, 2026-09-14)** | 튜링상 수상자가 에이전트 기만·협조를 최적화의 구조적 결과로 규정. 이 로그 최대 HN 토론량. `containment_level`을 필수 배포 축으로 명시. `governance_need: hard` 프로파일의 `network: online` 중립 점수는 3개 독립 시그널로 입증 불충분. | L5 주 / L3 부 |
-| **tech-leads-club/agent-skills ⭐5,971 — 보안 검증 스킬 레지스트리 (GitHub 트렌딩, 2026-09-14)** | 포함 전 스킬 출처 검증이 주도하는 공급망 관리 스킬 레지스트리; 265 스타/일. 이 로그 최초의 출처 검증 주도 스킬 카탈로그. 현재 레지스트리 필드에 없는 `skill_trust_tier` 축 후보. | L4b 주 / L3 부 |
-| **kirodotdev/KiroCrew ⭐3,900 — 데몬 방식 영속 에이전트 워크스페이스 (GitHub topics, 2026-09-14)** | IDE 확장이 아닌 백그라운드 데몬으로 작동. 자기 개선: 교정→지속 교훈, 반복 패턴→재사용 스킬. ACP 프로토콜. 예약 무인 실행. 슬랙·디스코드·Teams·Webex·CLI·데스크톱 다중 표면 연속성. 현재 스키마가 지원하지 않는 `statefulness: persistent` 모델의 첫 하네스. | L2 주 / L5 부 |
+| **Tencent/WeKnora ⭐25,259 — 조직 전체 RAG용 자체 호스팅 LLM 지식 플랫폼 (GitHub 트렌딩, 2026-09-17)** | 대형 랩에서 공개한 엔터프라이즈급 프라이빗 지식 베이스; 온프레미스 Go 배포로 데이터 유출 없음; 다운스트림 에이전트가 검색 API로 쿼리. 기밀 엔터프라이즈 데이터를 타겟하는 L5 지식 레이어 툴의 두 번째 시그널 — 이 별점 규모 최초. 레지스트리 등록 완료. | L5 주 / L4 부 |
+| **cloudflare/security-audit-skill ⭐7,139 — 코딩 에이전트용 다단계 보안 감사 스킬 (GitHub 트렌딩, 2026-09-17)** | 적대적 테스팅 역량이 풍부한 조직의 첫 벤더 지원 보안 감사 스킬. 독립적 재검증 단계로 결과 표면화 전 오탐 제거; L4b 보안 스킬을 스키마가 필요한 실제 서브타입으로 확인. 레지스트리 등록 완료. | L4b 주 |
+| **Mistral × Mozilla — 온디바이스 추론을 통한 프라이빗 다국어 브라우저 AI (HN 520점, 2026-09-17)** | 로컬 추론을 실험이 아닌 기본값으로 채택한 최초의 주요 브라우저 벤더 + 프론티어 모델 랩 파트너십; 서버 왕복 없음, 데이터 유출 없음; 현재 레지스트리에 항목이 없는 `network: offline` / `data_sensitivity: confidential` 프로파일의 배포 채널로서 브라우저를 확립. | L1 주 / L6 부 |
+| **Nvidia CUDA Rust — 네이티브 Rust GPU 커널 프로그래밍, 두 가지 트랙 (HN 127점, 2026-09-17)** | C/C++ 없이 CUDA 커널 작성 가능 — 안전·비안전 두 트랙; 커스텀 추론 커널·어텐션 융합·배칭 로직을 Rust로 구현하는 장벽 낮춤; CUDA C 전문가 이외로 GPU 컴퓨팅 기여자 풀 확대하는 툴체인 시그널. | L7 주 |
+| **JustVugg/colibri ⭐33,797 — 순수 C 로컬 MoE 추론 엔진 (GitHub 트렌딩, 2026-09-16)** | 포워드 패스마다 활성 전문가 샤드만 디스크에서 스트리밍 — 전체 MoE 가중치 행렬을 RAM에 로드하지 않음. 양자화 없이 16 GB 노트북에서 float16 프론티어 MoE 모델 실행. 외부 의존성 제로; 표준 C 컴파일러만으로 충분. 로컬 점수 산정의 `vram_gb` 한계를 구속 조건으로 보는 시각에 도전. | L0 주 |
+| **debpalash/VoiceStudio ⭐30,912 — 완전 로컬 음성 복제 및 에이전트 플랫폼 (GitHub 트렌딩, 2026-09-16)** | 완전 오프라인 실행 오픈소스 ElevenLabs 대안: 음성 복제, 646개 언어 TTS, 받아쓰기, 전사, 영상 더빙 — API 키 불필요, 데이터 유출 없음. 이 로그 최초의 로컬 음성 모달리티 툴; 레지스트리 스키마에 `voice-interface` 태스크 타입 부재. | L1 주 |
+| **Typesafe System One / Jev — 모델 결합형 타입 안전 에이전트 런타임 (HN 637점, 2026-09-16)** | 런치 당일 HN 1위; System One 모델 패밀리와 Jev 실행 런타임이 단일 유닛으로 패키징 — 범용 래퍼가 아닌 아키텍처 매칭된 모델+하네스. 패턴이 확인되면 새 레지스트리 카테고리 도입 필요: 에이전트 루프가 모델 패밀리에 공동 설계된 모델 결합형 하네스. | L1/L2 주 |
+| **danny-avila/LibreChat ⭐43,718 — MCP+에이전트 내장 자체 호스팅 멀티 프로바이더 채팅 (GitHub 트렌딩, 2026-09-15)** | MCP 네이티브 능력 위임, 에이전트 생성 재사용 스킬, Subagents, Code Interpreter 샌드박스(Python/Node/Go/Rust/Fortran), 엔터프라이즈 RBAC를 하나의 배포 인스턴스에 결합한 이 로그 최초의 L6 플랫폼. 최근 주간 스캔 중 최고 별점. 스키마 갭: 멀티 프로바이더 라우터 타입 없음. | L6 주 / L4 부 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (796개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (805개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,8 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-09-17 | 4개 문서: Tencent/WeKnora ⭐25,259 L5 (GitHub 트렌딩 — 자체 호스팅 LLM 지식 플랫폼, 온프레미스 Go, 조직 전체 RAG; 레지스트리 등록); cloudflare/security-audit-skill ⭐7,139 L4b (GitHub 트렌딩 — 다단계 벤더 지원 보안 감사 스킬, 독립적 재검증; 레지스트리 등록); Mistral×Mozilla L1/L6 (HN 520점 — 온디바이스 브라우저 AI 파트너십, Firefox+WebAssembly/WebGPU, 서버 왕복 없음; 최초 주요 브라우저 벤더+랩 로컬 추론 파트너십); Nvidia CUDA Rust L7 (HN 127점 — 네이티브 안전·비안전 Rust CUDA 커널 트랙, C/C++ 없이 GPU 커널 작성 가능). reference-levels.md: 변경 없음. 레지스트리 2개 신규 항목. 50/50 테스트. |
+| 2026-09-16 | 4개 문서: JustVugg/colibri ⭐33,797 L0 (GitHub 트렌딩 — 순수 C 로컬 MoE 추론 엔진, 전문가 스트리밍 온디스크; 양자화 없이 16 GB 노트북에서 float16 프론티어 모델 실행; 외부 의존성 없음); debpalash/VoiceStudio ⭐30,912 L1 (GitHub 트렌딩 — 완전 로컬 음성 플랫폼, 646개 언어, ElevenLabs 기능 대등, API 키 불필요; 이 로그 최초 로컬 음성 모달리티 도구; `voice-interface` 태스크 타입 갭); Typesafe System One/Jev L1/L2 (HN 637점 — 모델 결합형 타입 안전 에이전트 런타임, System One 모델과 Jev 하네스 단일 유닛; 새 모델 결합형 하네스 카테고리 후보); alphaXiv/OpenResearch ⭐3,325 L2 (GitHub 트렌딩 — 과학 문헌 연구에 코딩 에이전트 루프 적용, Rust 구현, 인용 순회+주장 검증 기본 도구). reference-levels.md: 변경 없음. 레지스트리: 신규 항목 없음. 50/50 테스트. |
 | 2026-09-15 | 5개 문서 (2차 스캔 포함): danny-avila/LibreChat ⭐43,718 L6/L4 (GitHub 트렌딩 — MCP 네이티브+에이전트+RBAC 자체 호스팅 채팅; 멀티 프로바이더 라우터 스키마 갭); salesforce/agentscript ⭐267 L3/L2 (Dreamforce 2026 — 컴파일 타임 결정론적 오케스트레이션 DSL; Hunter 다주 자율 에이전트; KiroCrew와 statefulness:persistent 크로스-데이트 2번째 시그널); pizza-bot-app/pizza-bot ⭐135 L6/L2 (AWS 오픈소스 — 백그라운드 에이전트 비동기 인박스 UI; Unread/Action 큐; LangGraph 체크포인트; 스키마 갭 3개); abacus.ai/smaug L1/L5 (HuggingFace — Kimi K3 기반 에이전틱 최적화 오픈웨이트 LLM 3종; 15–20% 주장 미검증; 레지스트리 후보 가격 확인 대기); tenderlovemaking.com L5/L3 (HN 352점 — 봇이 CVE 공개 후 RubyGems CVE 특화 공격 코드 추가; "에이전트의 공공 인프라 자율 공격" 3번째 시그널). 레지스트리: 추가 없음. 50/50 테스트. |
 | 2026-09-14 | 5개 문서 (2차 스캔 포함): tech-leads-club/agent-skills ⭐5,971 L4b/L3 (GitHub 트렌딩 — 보안 검증 크로스-에이전트 스킬 레지스트리, TypeScript; `skill_trust_tier` 축 후보); yoshuabengio.org L5/L3 (HN 583점·646댓글 — 에이전트 기만을 최적화의 구조적 결과로 규정, `containment_level` 명시; `governance_need: hard` 대상 `network: online` 중립 점수 부적절성 3번째 시그널); kirodotdev/KiroCrew ⭐3,900 L2/L5 (GitHub topics — 데몬 방식 영속 하네스, 지속 자기개선 메모리, ACP 프로토콜, 다중 표면 연속성; 이 로그 첫 `statefulness: persistent` 하네스); webbrain-one/webbrain ⭐1,000 L4/L6 (GitHub topics — MCP 서버 노출 Chrome/Firefox 브라우저 에이전트, 코딩 에이전트가 인증 세션 브라우저 작업 위임; GPL-3.0; ARTEMIS와 함께 크로스-표면 MCP 위임 패턴 형성); Pion/Andon Labs L1/L3 (HN 43점 — 이메일+전화+뱅킹+브라우저+보안 컴퓨팅 접근 영속 에이전트가 실제 사업 운영; 자판기 흑자; 실제 P&L을 에이전트 평가 지표로 사용; OtoDock과 함께 자율 기업 운영 패턴 2번째 시그널). 레지스트리: 추가 없음. 50/50 테스트. |
 | 2026-09-13 | 5개 문서: SnailSploit/Claude-Red ⭐3,585 L4b (GitHub 트렌딩 — Claude Code용 공격적 보안 스킬 라이브러리, 9월 13일 하루 113 스타; 독점 에이전트 플랫폼 대상 최초 고-스타 적대적 스킬 팩; governance_need:hard 프로파일 함의); alsk1992/CloddsBot L1 (GitHub 트렌딩 — Polymarket/Binance/Hyperliquid/Solana 등 1,000개 이상 시장 자율 트레이딩, 단일일 376 스타; 자율 에이전트를 라이브 금융 실행으로 확장); melgarafael/DeskcommCRM L1/L2 (GitHub 트렌딩 — 내장 에이전트 포함 AI 네이티브 오픈소스 CRM, WhatsApp/WAHA 통합, 504 스타/일; 수직 SaaS 에이전트 네이티브 재건 패턴); withspecific.com/benchmarks/real-swe L5 (HN 78점 — 비공개 엔터프라이즈 코드베이스 대상 코딩 벤치마크, 훈련 오염 회피; 이번 주 두 번째 벤치마크 신뢰성 시그널; eval_source 축 함의); ssiat llm L1/L7 (GeekNews — Raspberry Pi Zero 2W, 512MB RAM, 15달러 미만 하드웨어에서 작동하는 한국어 LLM; 엣지 추론 한계를 마이크로컨트롤러 티어로 하향; network:offline + budget:low 프로파일의 새 하드웨어 티어 함의). reference-levels.md: 정규 변경 없음. 레지스트리: 추가 없음. 50/50 테스트. |
