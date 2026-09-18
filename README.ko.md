@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-09-17)
+## 🔥 지금 가장 뜨거운 것들 (2026-09-18)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
+| **Tencent/BrowserSkill ⭐1,302★ 당일 — AI 에이전트용 실제 브라우저 세션 공유 (GitHub 트렌딩 #4 TypeScript, 2026-09-18)** | 에이전트가 별도의 헤드리스 브라우저를 띄우는 대신 사용자의 실행 중 브라우저에서 쿠키·확장·로그인 정보를 그대로 상속 — CAPTCHA, 인증 플로우, 세션 쿠키 관리 문제를 우회. MCP 위임 방식 브라우저 에이전트와 구조적으로 다름; `data_sensitivity: confidential` 프로파일에서 별도 프로세스에 자격 증명 복사가 허용되지 않는 환경에 해당. | L4 주 / L6 부 |
+| **Bend — AI 코딩 실수를 막는 증명 검증 언어 (HN 225점, 2026-09-18)** | 언어 레벨에서 형식 증명으로 정확성을 강제 — AI 생성 코드 오류에 대한 명시적 대안으로 포지셔닝; CPU·GPU 실행 지원. 하네스·평가 레이어가 아닌 언어 레이어에서 AI 코딩 실수를 해결하는 첫 추적 도구; AgentScript 컴파일 타임 결정론, Real-SWE 벤치마크와 상호 참조. | L1/L3 주 |
+| **Skillsync (YC W26) — 크로스-에이전트 AI 세션 이식성 (HN 41점, 2026-09-18)** | AI 채팅 세션을 서로 다른 에이전트·프로바이더 간에 이식 가능하게 함 — Claude Code에서 시작한 세션을 Cursor에서 이어받거나 프로바이더 전환 시 컨텍스트 유지. 인터-에이전트 세션 핸드오프를 핵심 목적으로 하는 첫 추적 도구; 현재 `statefulness` 필드는 단일 런타임 내 지속성만 모델링. YC W26 배치. | L2 주 |
 | **Tencent/WeKnora ⭐25,259 — 조직 전체 RAG용 자체 호스팅 LLM 지식 플랫폼 (GitHub 트렌딩, 2026-09-17)** | 대형 랩에서 공개한 엔터프라이즈급 프라이빗 지식 베이스; 온프레미스 Go 배포로 데이터 유출 없음; 다운스트림 에이전트가 검색 API로 쿼리. 기밀 엔터프라이즈 데이터를 타겟하는 L5 지식 레이어 툴의 두 번째 시그널 — 이 별점 규모 최초. 레지스트리 등록 완료. | L5 주 / L4 부 |
 | **cloudflare/security-audit-skill ⭐7,139 — 코딩 에이전트용 다단계 보안 감사 스킬 (GitHub 트렌딩, 2026-09-17)** | 적대적 테스팅 역량이 풍부한 조직의 첫 벤더 지원 보안 감사 스킬. 독립적 재검증 단계로 결과 표면화 전 오탐 제거; L4b 보안 스킬을 스키마가 필요한 실제 서브타입으로 확인. 레지스트리 등록 완료. | L4b 주 |
-| **Mistral × Mozilla — 온디바이스 추론을 통한 프라이빗 다국어 브라우저 AI (HN 520점, 2026-09-17)** | 로컬 추론을 실험이 아닌 기본값으로 채택한 최초의 주요 브라우저 벤더 + 프론티어 모델 랩 파트너십; 서버 왕복 없음, 데이터 유출 없음; 현재 레지스트리에 항목이 없는 `network: offline` / `data_sensitivity: confidential` 프로파일의 배포 채널로서 브라우저를 확립. | L1 주 / L6 부 |
-| **Nvidia CUDA Rust — 네이티브 Rust GPU 커널 프로그래밍, 두 가지 트랙 (HN 127점, 2026-09-17)** | C/C++ 없이 CUDA 커널 작성 가능 — 안전·비안전 두 트랙; 커스텀 추론 커널·어텐션 융합·배칭 로직을 Rust로 구현하는 장벽 낮춤; CUDA C 전문가 이외로 GPU 컴퓨팅 기여자 풀 확대하는 툴체인 시그널. | L7 주 |
 | **JustVugg/colibri ⭐33,797 — 순수 C 로컬 MoE 추론 엔진 (GitHub 트렌딩, 2026-09-16)** | 포워드 패스마다 활성 전문가 샤드만 디스크에서 스트리밍 — 전체 MoE 가중치 행렬을 RAM에 로드하지 않음. 양자화 없이 16 GB 노트북에서 float16 프론티어 MoE 모델 실행. 외부 의존성 제로; 표준 C 컴파일러만으로 충분. 로컬 점수 산정의 `vram_gb` 한계를 구속 조건으로 보는 시각에 도전. | L0 주 |
 | **debpalash/VoiceStudio ⭐30,912 — 완전 로컬 음성 복제 및 에이전트 플랫폼 (GitHub 트렌딩, 2026-09-16)** | 완전 오프라인 실행 오픈소스 ElevenLabs 대안: 음성 복제, 646개 언어 TTS, 받아쓰기, 전사, 영상 더빙 — API 키 불필요, 데이터 유출 없음. 이 로그 최초의 로컬 음성 모달리티 툴; 레지스트리 스키마에 `voice-interface` 태스크 타입 부재. | L1 주 |
-| **Typesafe System One / Jev — 모델 결합형 타입 안전 에이전트 런타임 (HN 637점, 2026-09-16)** | 런치 당일 HN 1위; System One 모델 패밀리와 Jev 실행 런타임이 단일 유닛으로 패키징 — 범용 래퍼가 아닌 아키텍처 매칭된 모델+하네스. 패턴이 확인되면 새 레지스트리 카테고리 도입 필요: 에이전트 루프가 모델 패밀리에 공동 설계된 모델 결합형 하네스. | L1/L2 주 |
 | **danny-avila/LibreChat ⭐43,718 — MCP+에이전트 내장 자체 호스팅 멀티 프로바이더 채팅 (GitHub 트렌딩, 2026-09-15)** | MCP 네이티브 능력 위임, 에이전트 생성 재사용 스킬, Subagents, Code Interpreter 샌드박스(Python/Node/Go/Rust/Fortran), 엔터프라이즈 RBAC를 하나의 배포 인스턴스에 결합한 이 로그 최초의 L6 플랫폼. 최근 주간 스캔 중 최고 별점. 스키마 갭: 멀티 프로바이더 라우터 타입 없음. | L6 주 / L4 부 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (805개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (808개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-09-18 | 3개 문서: Tencent/BrowserSkill ⭐1,302★ L4/L6 (GitHub 트렌딩 #4 TypeScript — 실제 브라우저 세션 에이전트 공유, 사용자 쿠키·로그인 상속, 헤드리스 미사용; MCP 위임 방식과 구조적으로 다른 세션 공존; `browser_sharing_model` 축 후보); Bend L1/L3 (HN 225점 — AI 코딩 실수 대응 증명 검증 언어, CPU+GPU, 언어 레벨 형식 증명; 이 로그 최초 언어 레이어 정확성 제어 추적 도구); Skillsync (YC W26) L2 (HN 41점 — 크로스-에이전트 세션 이식성, 런타임·프로바이더 간 컨텍스트 유지; `portability_model` 축 후보). reference-levels.md: 변경 없음. 레지스트리: 추가 없음. 50/50 테스트. |
 | 2026-09-17 | 4개 문서: Tencent/WeKnora ⭐25,259 L5 (GitHub 트렌딩 — 자체 호스팅 LLM 지식 플랫폼, 온프레미스 Go, 조직 전체 RAG; 레지스트리 등록); cloudflare/security-audit-skill ⭐7,139 L4b (GitHub 트렌딩 — 다단계 벤더 지원 보안 감사 스킬, 독립적 재검증; 레지스트리 등록); Mistral×Mozilla L1/L6 (HN 520점 — 온디바이스 브라우저 AI 파트너십, Firefox+WebAssembly/WebGPU, 서버 왕복 없음; 최초 주요 브라우저 벤더+랩 로컬 추론 파트너십); Nvidia CUDA Rust L7 (HN 127점 — 네이티브 안전·비안전 Rust CUDA 커널 트랙, C/C++ 없이 GPU 커널 작성 가능). reference-levels.md: 변경 없음. 레지스트리 2개 신규 항목. 50/50 테스트. |
 | 2026-09-16 | 4개 문서: JustVugg/colibri ⭐33,797 L0 (GitHub 트렌딩 — 순수 C 로컬 MoE 추론 엔진, 전문가 스트리밍 온디스크; 양자화 없이 16 GB 노트북에서 float16 프론티어 모델 실행; 외부 의존성 없음); debpalash/VoiceStudio ⭐30,912 L1 (GitHub 트렌딩 — 완전 로컬 음성 플랫폼, 646개 언어, ElevenLabs 기능 대등, API 키 불필요; 이 로그 최초 로컬 음성 모달리티 도구; `voice-interface` 태스크 타입 갭); Typesafe System One/Jev L1/L2 (HN 637점 — 모델 결합형 타입 안전 에이전트 런타임, System One 모델과 Jev 하네스 단일 유닛; 새 모델 결합형 하네스 카테고리 후보); alphaXiv/OpenResearch ⭐3,325 L2 (GitHub 트렌딩 — 과학 문헌 연구에 코딩 에이전트 루프 적용, Rust 구현, 인용 순회+주장 검증 기본 도구). reference-levels.md: 변경 없음. 레지스트리: 신규 항목 없음. 50/50 테스트. |
 | 2026-09-15 | 5개 문서 (2차 스캔 포함): danny-avila/LibreChat ⭐43,718 L6/L4 (GitHub 트렌딩 — MCP 네이티브+에이전트+RBAC 자체 호스팅 채팅; 멀티 프로바이더 라우터 스키마 갭); salesforce/agentscript ⭐267 L3/L2 (Dreamforce 2026 — 컴파일 타임 결정론적 오케스트레이션 DSL; Hunter 다주 자율 에이전트; KiroCrew와 statefulness:persistent 크로스-데이트 2번째 시그널); pizza-bot-app/pizza-bot ⭐135 L6/L2 (AWS 오픈소스 — 백그라운드 에이전트 비동기 인박스 UI; Unread/Action 큐; LangGraph 체크포인트; 스키마 갭 3개); abacus.ai/smaug L1/L5 (HuggingFace — Kimi K3 기반 에이전틱 최적화 오픈웨이트 LLM 3종; 15–20% 주장 미검증; 레지스트리 후보 가격 확인 대기); tenderlovemaking.com L5/L3 (HN 352점 — 봇이 CVE 공개 후 RubyGems CVE 특화 공격 코드 추가; "에이전트의 공공 인프라 자율 공격" 3번째 시그널). 레지스트리: 추가 없음. 50/50 테스트. |
