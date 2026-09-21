@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-09-20)
+## 🔥 지금 가장 뜨거운 것들 (2026-09-21)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **browserbase/stagehand v4 ⭐24,600 — 하이브리드 NL+Playwright 브라우저 자동화 SDK (GitHub 트렌딩 + GeekNews, 2026-09-20)** | 자연어 지시와 Playwright 코드가 같은 스크립트에서 혼용 가능한 듀얼 API 설계 — AI 추론이 느리거나 비쌀 때 개발자가 저수준 제어로 전환 가능. L4c 브라우저 자동화 서브클러스터 다섯 번째 신호; v4 속도/토큰 효율 주장(2배 속도, 80% 토큰 절감)은 벤더 자체 보고이며 미검증. | L4c 주 |
-| **coder/coder ⭐15,945 — 명시적 에이전트 위임이 있는 엔터프라이즈 CDE (GitHub 트렌딩, 2026-09-20)** | "LLM 자격증명이 워크스페이스 밖에 유지된다"를 거버넌스 설계 원칙으로 명시한 최초 추적 도구 — ZCode 프라이버시 사건에 대한 직접적 아키텍처 응답. 워크스페이스 템플릿이 에이전트 접근 권한을 정의; 제로트러스트가 기본 포지션. "거버넌스된 에이전트 워크스페이스를 갖춘 엔터프라이즈 CDE" 패턴의 첫 단일 신호. | L2 주 |
-| **vercel-labs/json-render ⭐17,154 — 가드레일 생성형 UI (GitHub 트렌딩, 2026-09-20)** | AI 출력이 호출자가 선언한 컴포넌트 스키마에 한정 — LLM은 호스트 앱이 명시적으로 허용한 컴포넌트만 렌더링 가능. 멀티플랫폼 지원(React, Vue, Svelte, React Native, Next.js, PDF, 이메일, 터미널). 2026-09-08 openui와 크로스날짜 "제한적 생성형 UI" 패턴 두 번째 신호; 메커니즘 차이로 인해 서브타입 공식화는 보류. | L6 주 |
-| **OpenJev — 오픈 확률적 LLM 아키텍처 (HN 534점, 2026-09-19)** | Jev 아키텍처의 첫 고-참여도 오픈웨이트 구현 — 생성된 텍스트 대신 선택지에 대한 보정된 확률 분포 반환. 구조적 선택 맥락에서 할루시네이션을 제거; 여러 독립 팀이 동시에 복제 구현 중으로 에코시스템 초기 형성 신호. | L1 주 |
-| **미군 AI 할루시네이션 — 허위 정보 보고서 사건 (HN 367점, 2026-09-19)** | 최초 확인된 고위험 운영 AI 할루시네이션 사건(CNN 보도) — 군사 분석 보고서의 함선 식별 데이터가 인간 검토 2단계를 통과한 후 발각. 에이전틱 파이프라인에서의 다층 감독 실패 검증; `governance_need: hard` 프로파일의 `containment_level` 직접 시그널. | L5 / 거버넌스 |
-| **ZCode — 자동 깃 히스토리 업로드 프라이버시 사건 (HN 247점, 2026-09-19)** | 추적 중인 L1 중국 코딩 에이전트 ZCode가 세션 시작 시 사용자 상호작용 없이 전체 깃 워크스페이스 히스토리를 Zhipu AI 클라우드로 자동 업로드한 사실 발견. 추적 중인 L1 코딩 에이전트의 첫 확인된 프라이버시 사건; `data_sensitivity: confidential` 에이전트 선택 하드 필터 강화. | L1 주 |
-| **HarnessTax — 코딩 에이전트 하네스 비용 벤치마크 (GeekNews, 2026-09-19)** | 동일한 기본 모델에서 하네스 레이어 토큰 비용 오버헤드를 명시적으로 측정하는 최초 벤치마크 — 모델 능력이 아닌 하네스 선택만으로 최대 5배 비용 차이 발생. 모델 중심 비용 가정에 도전하며 LLM과 독립된 clawfit 스코어링 차원으로 하네스 선택 검증. | L2 주 |
-| **Tencent/BrowserSkill ⭐1,302★ 당일 — AI 에이전트용 실제 브라우저 세션 공유 (GitHub 트렌딩 #4 TypeScript, 2026-09-18)** | 에이전트가 별도의 헤드리스 브라우저를 띄우는 대신 사용자의 실행 중 브라우저에서 쿠키·확장·로그인 정보를 그대로 상속 — CAPTCHA, 인증 플로우, 세션 쿠키 관리 문제를 우회. MCP 위임 방식 브라우저 에이전트와 구조적으로 다름; `data_sensitivity: confidential` 프로파일에 해당. | L4 주 / L6 부 |
+| **Exfiltrate Your Weights — API 제공사 모델 가중치 추출 기법 (HN 600점, 248댓글, 2026-09-21)** | API 전용 추론 제공사에서 모델 가중치를 추출하는 구체적 기법을 문서화 — "클라우드 API = 모델 기밀성 보장"이 신뢰할 수 없음을 실증. ZCode(2026-09-19)의 반대 방향: ZCode는 에이전트가 사용자 데이터를 유출; 이건 사용자/공격자가 벤더 모델 가중치를 유출. 클라우드 추론 양방향 보안 위험의 두 번째 독립 신호; `governance_need: hard` → `network: offline` 점수 근거 강화. | L3/L5 거버넌스 |
+| **Pirate Face — LLM 모델 보존 플랫폼 (HN 415점, 131댓글, 2026-09-21)** | 게시자 삭제 위험에 처한 오픈웨이트 모델 파일을 미러링·보존하는 플랫폼 — 모델 가용성을 능력과 별개의 거버넌스 문제로 부상시킴. `hardware: local-gpu` 및 `network: offline` 프로파일은 모델 파일의 영속성을 가정하는데, 이 신호가 그 가정에 도전. "인프라로서의 모델 아카이빙" 최초 추적 신호. | L1 아카이빙 |
+| **BuilderIO/agent-native ⭐5,188 — 풀스택 UI+에이전트 공유 액션 레이어 (GitHub 트렌딩, 2026-09-21)** | 5천 스타 임계값 돌파: 에이전트와 UI가 동일한 액션 정의 공유 — 도구 스펙과 UI 핸들러의 이중 유지보수 불필요. Builder.io는 연구 기관이 아닌 프로덕션 CMS 회사. 순수 백엔드 오케스트레이션(LangGraph, CrewAI)과 아키텍처적으로 다름; 에이전트가 UI 상태를 직접 구동해야 하는 풀스택 개발자 대상. | L2 주 / L6 부 |
+| **Google Open Agentic Orchestrator — Google 오픈소스 에이전트 오케스트레이션 (HN 84점, 2026-09-21)** | Google이 LangGraph·CrewAI·AutoGen과 동일한 오픈소스 오케스트레이션 시장에 진입 — 주요 하이퍼스케일러의 L2 하네스 레이어 진입 신호. "Agent Executor"라는 명칭은 대화 오케스트레이션보다 안정적 태스크 실행에 집중함을 시사. 확인된 GitHub 레포·스타 수 없음; 초기 관심도 추적 중. | L2 주 |
+| **browserbase/stagehand v4 ⭐24,600 — 하이브리드 NL+Playwright 브라우저 자동화 SDK (GitHub 트렌딩 + GeekNews, 2026-09-20)** | 자연어 지시와 Playwright 코드가 같은 스크립트에서 혼용 가능한 듀얼 API — AI 추론이 느리거나 비쌀 때 저수준 제어로 전환 가능. L4c 브라우저 자동화 서브클러스터 다섯 번째 신호; v4 속도/토큰 주장(2배 속도, 80% 절감)은 벤더 자체 보고이며 미검증. | L4c 주 |
+| **coder/coder ⭐15,945 — 명시적 에이전트 위임이 있는 엔터프라이즈 CDE (GitHub 트렌딩, 2026-09-20)** | "LLM 자격증명이 워크스페이스 밖에 유지된다"를 거버넌스 설계 원칙으로 명시한 최초 추적 도구 — ZCode 프라이버시 사건에 대한 직접적 아키텍처 응답. 워크스페이스 템플릿이 에이전트 접근 권한을 정의; 제로트러스트 기본 포지션. | L2 주 |
+| **vercel-labs/json-render ⭐17,154 — 가드레일 생성형 UI (GitHub 트렌딩, 2026-09-20)** | AI 출력이 호출자가 선언한 컴포넌트 스키마에 한정 — LLM은 호스트 앱이 명시적으로 허용한 컴포넌트만 렌더링 가능. 멀티플랫폼 지원(React, Vue, Svelte, React Native, Next.js, PDF, 이메일, 터미널). 2026-09-08 openui와 크로스날짜 두 번째 "제한적 생성형 UI" 신호. | L6 주 |
+| **HarnessTax — 코딩 에이전트 하네스 비용 벤치마크 (GeekNews, 2026-09-19)** | 동일한 기본 모델에서 하네스 레이어 토큰 비용 오버헤드를 격리 측정하는 최초 벤치마크 — 모델 능력이 아닌 하네스 선택만으로 최대 5배 비용 차이. 모델 중심 비용 가정에 도전; LLM과 독립된 clawfit 스코어링 차원으로 하네스 선택 검증. | L2 주 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (819개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (823개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-09-21 | 4개 문서: Exfiltrate Your Weights L3/L5 (HN 600점 — API 제공사 모델 가중치 추출 기법 문서화; ZCode 2026-09-19와 함께 클라우드 추론 양방향 보안 위험 두 번째 크로스날짜 신호; `model_ip_risk` 축 후보); Pirate Face L1-아카이빙 (HN 415점 — 오픈웨이트 모델 파일 보존 플랫폼; "인프라로서의 모델 아카이빙" 최초 신호; 로컬 배포 프로파일 `model_availability_risk` 축 후보); BuilderIO/agent-native ⭐5,188 L2/L6 (GitHub 트렌딩 — UI+에이전트 공유 액션 레이어, 도구 스펙+UI 핸들러 이중 유지보수 불필요; Builder.io 프로덕션 CMS 회사; 가격 데이터 확인 후 레지스트리 후보); Google Open Agentic Orchestrator L2 (HN 84점 — Google 오픈소스 오케스트레이션, LangGraph/CrewAI/AutoGen과 직접 경쟁; GitHub 레포 미확인; 초기 관심도 추적). reference-levels.md: 변경 없음. 레지스트리: 신규 항목 없음. 50/50 테스트. |
 | 2026-09-20 | 5개 문서: stagehand v4 L4c (GitHub 트렌딩 + GeekNews — browserbase/stagehand v4 하이브리드 NL+Playwright 브라우저 자동화 SDK, ⭐24,600; L4c 브라우저 신호 5번째; v4 속도/토큰 주장 미검증); coder L2 (GitHub 트렌딩 — coder/coder 에이전트 위임이 있는 엔터프라이즈 CDE, ⭐15,945; "거버넌스된 에이전트 워크스페이스" 첫 신호; LLM 자격증명 워크스페이스 외부 유지 아키텍처; 레지스트리 보류, 자체 호스팅으로 비용 미확정); json-render L6 (GitHub 트렌딩 — vercel-labs/json-render 가드레일 생성형 UI, ⭐17,154; AI가 호출자 선언 컴포넌트 스키마에 한정; 2026-09-08 openui와 크로스날짜 두 번째 제한적-UI 신호; 메커니즘 차이로 서브타입 공식화 보류); px0 L4 (GeekNews — px0-ai/px0 경량 코드 검사 사이드카, ⭐1,300; Go 바이너리 ~20MB RAM; 이번 스캔 최약 신호); higgsfield 프리-L1 (GitHub 트렌딩 Python — higgsfield-ai/higgsfield 대형 모델 학습용 GPU 오케스트레이션, ⭐5,264; DeepSpeed ZeRO-3 + FSDP; L1-L7 범위 외). reference-levels.md: 2026-09-20 디스커버리 로그 섹션 추가; 정식 변경 없음. 레지스트리: 추가 없음. 50/50 테스트. |
 | 2026-09-19 | 4개 문서: OpenJev L1 (HN 534점 — 생성 텍스트 대신 보정된 옵션 확률 반환하는 오픈 확률적 LLM 아키텍처; 여러 독립 복제 구현 형성 중; 구조적 선택 맥락의 할루시네이션 제거); 미군 AI 할루시네이션 L5/거버넌스 (HN 367점 — CNN 보도, 운영 사건, 함선 식별 데이터가 인간 검토 2단계 통과; 다층 감독 실패 검증; `governance_need: hard` 프로파일 `containment_level` 시그널); ZCode 프라이버시 사건 L1 (HN 247점 — 추적 중인 코딩 에이전트가 세션 시작 시 전체 깃 워크스페이스 히스토리를 Zhipu AI 클라우드로 자동 업로드; 추적 중인 L1 에이전트 첫 프라이버시 사건; `data_sensitivity: confidential` 필터 강화); HarnessTax L2 (GeekNews — 동일 모델에서 하네스 레이어 오버헤드 측정 최초 벤치마크, 최대 5배 비용 차이; 모델과 독립된 하네스 비용 주요 동인 검증). reference-levels.md: 변경 없음. 레지스트리: 추가 없음. 50/50 테스트. |
 | 2026-09-18 | 3개 문서: Tencent/BrowserSkill ⭐1,302★ L4/L6 (GitHub 트렌딩 #4 TypeScript — 실제 브라우저 세션 에이전트 공유, 사용자 쿠키·로그인 상속, 헤드리스 미사용; MCP 위임 방식과 구조적으로 다른 세션 공존; `browser_sharing_model` 축 후보); Bend L1/L3 (HN 225점 — AI 코딩 실수 대응 증명 검증 언어, CPU+GPU, 언어 레벨 형식 증명; 이 로그 최초 언어 레이어 정확성 제어 추적 도구); Skillsync (YC W26) L2 (HN 41점 — 크로스-에이전트 세션 이식성, 런타임·프로바이더 간 컨텍스트 유지; `portability_model` 축 후보). reference-levels.md: 변경 없음. 레지스트리: 추가 없음. 50/50 테스트. |
