@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-09-18)
+## 🔥 지금 가장 뜨거운 것들 (2026-09-22)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **Tencent/BrowserSkill ⭐1,302★ 당일 — AI 에이전트용 실제 브라우저 세션 공유 (GitHub 트렌딩 #4 TypeScript, 2026-09-18)** | 에이전트가 별도의 헤드리스 브라우저를 띄우는 대신 사용자의 실행 중 브라우저에서 쿠키·확장·로그인 정보를 그대로 상속 — CAPTCHA, 인증 플로우, 세션 쿠키 관리 문제를 우회. MCP 위임 방식 브라우저 에이전트와 구조적으로 다름; `data_sensitivity: confidential` 프로파일에서 별도 프로세스에 자격 증명 복사가 허용되지 않는 환경에 해당. | L4 주 / L6 부 |
-| **Bend — AI 코딩 실수를 막는 증명 검증 언어 (HN 225점, 2026-09-18)** | 언어 레벨에서 형식 증명으로 정확성을 강제 — AI 생성 코드 오류에 대한 명시적 대안으로 포지셔닝; CPU·GPU 실행 지원. 하네스·평가 레이어가 아닌 언어 레이어에서 AI 코딩 실수를 해결하는 첫 추적 도구; AgentScript 컴파일 타임 결정론, Real-SWE 벤치마크와 상호 참조. | L1/L3 주 |
-| **Skillsync (YC W26) — 크로스-에이전트 AI 세션 이식성 (HN 41점, 2026-09-18)** | AI 채팅 세션을 서로 다른 에이전트·프로바이더 간에 이식 가능하게 함 — Claude Code에서 시작한 세션을 Cursor에서 이어받거나 프로바이더 전환 시 컨텍스트 유지. 인터-에이전트 세션 핸드오프를 핵심 목적으로 하는 첫 추적 도구; 현재 `statefulness` 필드는 단일 런타임 내 지속성만 모델링. YC W26 배치. | L2 주 |
-| **Tencent/WeKnora ⭐25,259 — 조직 전체 RAG용 자체 호스팅 LLM 지식 플랫폼 (GitHub 트렌딩, 2026-09-17)** | 대형 랩에서 공개한 엔터프라이즈급 프라이빗 지식 베이스; 온프레미스 Go 배포로 데이터 유출 없음; 다운스트림 에이전트가 검색 API로 쿼리. 기밀 엔터프라이즈 데이터를 타겟하는 L5 지식 레이어 툴의 두 번째 시그널 — 이 별점 규모 최초. 레지스트리 등록 완료. | L5 주 / L4 부 |
-| **cloudflare/security-audit-skill ⭐7,139 — 코딩 에이전트용 다단계 보안 감사 스킬 (GitHub 트렌딩, 2026-09-17)** | 적대적 테스팅 역량이 풍부한 조직의 첫 벤더 지원 보안 감사 스킬. 독립적 재검증 단계로 결과 표면화 전 오탐 제거; L4b 보안 스킬을 스키마가 필요한 실제 서브타입으로 확인. 레지스트리 등록 완료. | L4b 주 |
-| **JustVugg/colibri ⭐33,797 — 순수 C 로컬 MoE 추론 엔진 (GitHub 트렌딩, 2026-09-16)** | 포워드 패스마다 활성 전문가 샤드만 디스크에서 스트리밍 — 전체 MoE 가중치 행렬을 RAM에 로드하지 않음. 양자화 없이 16 GB 노트북에서 float16 프론티어 MoE 모델 실행. 외부 의존성 제로; 표준 C 컴파일러만으로 충분. 로컬 점수 산정의 `vram_gb` 한계를 구속 조건으로 보는 시각에 도전. | L0 주 |
-| **debpalash/VoiceStudio ⭐30,912 — 완전 로컬 음성 복제 및 에이전트 플랫폼 (GitHub 트렌딩, 2026-09-16)** | 완전 오프라인 실행 오픈소스 ElevenLabs 대안: 음성 복제, 646개 언어 TTS, 받아쓰기, 전사, 영상 더빙 — API 키 불필요, 데이터 유출 없음. 이 로그 최초의 로컬 음성 모달리티 툴; 레지스트리 스키마에 `voice-interface` 태스크 타입 부재. | L1 주 |
-| **danny-avila/LibreChat ⭐43,718 — MCP+에이전트 내장 자체 호스팅 멀티 프로바이더 채팅 (GitHub 트렌딩, 2026-09-15)** | MCP 네이티브 능력 위임, 에이전트 생성 재사용 스킬, Subagents, Code Interpreter 샌드박스(Python/Node/Go/Rust/Fortran), 엔터프라이즈 RBAC를 하나의 배포 인스턴스에 결합한 이 로그 최초의 L6 플랫폼. 최근 주간 스캔 중 최고 별점. 스키마 갭: 멀티 프로바이더 라우터 타입 없음. | L6 주 / L4 부 |
+| **Meta Muse 제로-데이 — 미문서 엔드포인트를 통한 상업용 AI 에이전트 설정 하이재킹 (HN 204점, 2026-09-22)** | 비특권 로컬 프로세스가 `endo_voyager_dictation_endpoint`를 수정해 Muse의 전체 기능 영역(오디오, 인증, 컨텍스트)을 공격자 제어 서버로 리디렉션. ZCode 무단 git 히스토리 업로드(2026-09-19) 이후 이번 주 두 번째 상업용 AI 에이전트 설정 레이어 공격. `config_endpoint_exposure` 축 후보. | L3 주 / L5 부 |
+| **krillinai/OpenCreator ⭐12.2k — Codex CLI + MCP + Skills 크리에이티브 워크스페이스 (GitHub 트렌딩 TypeScript, 2026-09-22)** | 커스텀 에이전트 코드가 아닌 표준 에이전트 프리미티브(Codex CLI 런타임 + MCP + 재사용 스킬 팩)로 조립된 첫 추적 도메인 애플리케이션. 크리에이티브 프로덕션 대상: 동영상 번역, 더빙, 아바타, 스틱 피겨 애니메이션. `task: creative-production` 레지스트리 미지원; Codex 비용 패스-스루로 가격 불투명. | L4 주 / L1 부 / L6 부 |
+| **wrr/drop ⭐137 — 코딩 에이전트 전용 루트리스 Linux 샌드박스 (Show HN 109점, 2026-09-22)** | README에서 샌드박싱을 에이전트 안전 프리미티브로 명시한 최초 추적 도구. 루트 권한 불필요; Linux 네임스페이스 + 선택적 gVisor + Pasta 네트워크 격리. 레지스트리의 `hardware: local` + `governance_need: hard` 조합에 샌드박스 권장 항목 없음 — 해당 갭을 채우는 첫 도구. | L7 주 |
+| **Tencent/BrowserSkill ⭐1,302★ 당일 — AI 에이전트용 실제 브라우저 세션 공유 (GitHub 트렌딩 #4 TypeScript, 2026-09-18)** | 에이전트가 별도의 헤드리스 브라우저를 띄우는 대신 사용자의 실행 중 브라우저에서 쿠키·확장·로그인 정보를 그대로 상속 — CAPTCHA, 인증 플로우, 세션 쿠키 관리 문제를 우회. MCP 위임 방식과 구조적으로 다름; `data_sensitivity: confidential` 프로파일에서 자격 증명 복사가 허용되지 않는 환경에 해당. | L4 주 / L6 부 |
+| **Tencent/WeKnora ⭐25,259 — 조직 전체 RAG용 자체 호스팅 LLM 지식 플랫폼 (GitHub 트렌딩, 2026-09-17)** | 대형 랩의 엔터프라이즈급 프라이빗 지식 베이스; 온프레미스 Go 배포로 데이터 유출 없음; 다운스트림 에이전트가 검색 API로 쿼리. 기밀 데이터 타겟 L5 지식 레이어 툴 두 번째 시그널. 레지스트리 등록 완료. | L5 주 / L4 부 |
+| **cloudflare/security-audit-skill ⭐7,139 — 코딩 에이전트용 다단계 보안 감사 스킬 (GitHub 트렌딩, 2026-09-17)** | 적대적 테스팅 역량이 풍부한 조직의 첫 벤더 지원 보안 감사 스킬. 독립적 재검증 단계로 오탐 제거; L4b 보안 스킬이 스키마가 필요한 실제 서브타입임을 확인. 레지스트리 등록 완료. | L4b 주 |
+| **JustVugg/colibri ⭐33,797 — 순수 C 로컬 MoE 추론 엔진 (GitHub 트렌딩, 2026-09-16)** | 포워드 패스마다 활성 전문가 샤드만 디스크에서 스트리밍. 양자화 없이 16 GB 노트북에서 float16 프론티어 MoE 모델 실행. 외부 의존성 없음; 표준 C 컴파일러만으로 충분. 로컬 점수 산정의 `vram_gb` 한계를 구속 조건으로 보는 시각에 도전. | L0 주 |
+| **debpalash/VoiceStudio ⭐30,912 — 완전 로컬 음성 복제 및 에이전트 플랫폼 (GitHub 트렌딩, 2026-09-16)** | 완전 오프라인 ElevenLabs 대안: 음성 복제, 646개 언어 TTS, 영상 더빙 — API 키 불필요. 이 로그 최초 로컬 음성 모달리티 도구; `voice-interface` 태스크 타입 갭. | L1 주 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (808개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (811개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -135,6 +135,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-09-22 | 3개 문서: Meta Muse 제로-데이 L3/L5 (HN 204점 — 미문서 `endo_voyager_dictation_endpoint` 키를 통한 상업용 AI 에이전트 설정 하이재킹; ZCode 2026-09-19 이후 4일 만에 두 번째 설정 공격 시그널; `config_endpoint_exposure` 축 후보); krillinai/OpenCreator ⭐12.2k L4/L1/L6 (GitHub 트렌딩 TypeScript — Codex CLI + MCP + Skills 크리에이티브 워크스페이스, 구 KrillinAI; 표준 에이전트 프리미티브로 조립된 첫 도메인 애플리케이션; 레지스트리 후보 보류: 결정론적 비용/레이턴시 데이터 없음, `task: creative-production` 열거형 갭); wrr/drop ⭐137 L7 (Show HN 109점 — 코딩 에이전트 전용 루트리스 Linux 샌드박스, 네임스페이스 + gVisor + Pasta; 샌드박싱을 에이전트 안전 프리미티브로 명시한 최초 도구; 1k★ 추적 대기). reference-levels.md: 보충 실행 항목 추가. 레지스트리: 추가 없음. 50/50 테스트. |
 | 2026-09-18 | 3개 문서: Tencent/BrowserSkill ⭐1,302★ L4/L6 (GitHub 트렌딩 #4 TypeScript — 실제 브라우저 세션 에이전트 공유, 사용자 쿠키·로그인 상속, 헤드리스 미사용; MCP 위임 방식과 구조적으로 다른 세션 공존; `browser_sharing_model` 축 후보); Bend L1/L3 (HN 225점 — AI 코딩 실수 대응 증명 검증 언어, CPU+GPU, 언어 레벨 형식 증명; 이 로그 최초 언어 레이어 정확성 제어 추적 도구); Skillsync (YC W26) L2 (HN 41점 — 크로스-에이전트 세션 이식성, 런타임·프로바이더 간 컨텍스트 유지; `portability_model` 축 후보). reference-levels.md: 변경 없음. 레지스트리: 추가 없음. 50/50 테스트. |
 | 2026-09-17 | 4개 문서: Tencent/WeKnora ⭐25,259 L5 (GitHub 트렌딩 — 자체 호스팅 LLM 지식 플랫폼, 온프레미스 Go, 조직 전체 RAG; 레지스트리 등록); cloudflare/security-audit-skill ⭐7,139 L4b (GitHub 트렌딩 — 다단계 벤더 지원 보안 감사 스킬, 독립적 재검증; 레지스트리 등록); Mistral×Mozilla L1/L6 (HN 520점 — 온디바이스 브라우저 AI 파트너십, Firefox+WebAssembly/WebGPU, 서버 왕복 없음; 최초 주요 브라우저 벤더+랩 로컬 추론 파트너십); Nvidia CUDA Rust L7 (HN 127점 — 네이티브 안전·비안전 Rust CUDA 커널 트랙, C/C++ 없이 GPU 커널 작성 가능). reference-levels.md: 변경 없음. 레지스트리 2개 신규 항목. 50/50 테스트. |
 | 2026-09-16 | 4개 문서: JustVugg/colibri ⭐33,797 L0 (GitHub 트렌딩 — 순수 C 로컬 MoE 추론 엔진, 전문가 스트리밍 온디스크; 양자화 없이 16 GB 노트북에서 float16 프론티어 모델 실행; 외부 의존성 없음); debpalash/VoiceStudio ⭐30,912 L1 (GitHub 트렌딩 — 완전 로컬 음성 플랫폼, 646개 언어, ElevenLabs 기능 대등, API 키 불필요; 이 로그 최초 로컬 음성 모달리티 도구; `voice-interface` 태스크 타입 갭); Typesafe System One/Jev L1/L2 (HN 637점 — 모델 결합형 타입 안전 에이전트 런타임, System One 모델과 Jev 하네스 단일 유닛; 새 모델 결합형 하네스 카테고리 후보); alphaXiv/OpenResearch ⭐3,325 L2 (GitHub 트렌딩 — 과학 문헌 연구에 코딩 에이전트 루프 적용, Rust 구현, 인용 순회+주장 검증 기본 도구). reference-levels.md: 변경 없음. 레지스트리: 신규 항목 없음. 50/50 테스트. |
