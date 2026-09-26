@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-09-25)
+## 🔥 지금 가장 뜨거운 것들 (2026-09-26)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **Ando — 에이전트 네이티브 팀 메시징, 시드 $2,000만 (2026-09-24 출시)** | 에이전트가 슬랙 스타일 채널·DM·라이브 콜에 자체 아이덴티티와 인박스를 가지고 참여 — 인간 릴레이 불필요. Codex, Claude, Grokbot, Devin 에이전트 무관. "에이전트 네이티브 비동기 커뮤니케이션 패브릭" 서브타입 최초 추적. Accel + Index + Emergence 투자. | L6 주 / L2 부 |
-| **HarnessRouter Community Edition ⭐2,600 — Unified Harness Protocol (UHP) 레퍼런스 구현 (v0.11.2, 2026-08-29)** | 자체 호스팅 라우터: Codex, Claude Code, Hermes, PI, DSH를 OpenAI Responses 호환 단일 API로 통합. UHP(하네스 실행 의미론 오픈 표준) 구현. treg(오늘 스캔)와 함께 **"오픈 프로토콜 라우팅 추상화" 2번째 시그널** — 동일 날 2-시그널 조건 충족. | L2 주 / L3 부 |
-| **devdotfast/whiteboard ⭐1,100 — 에이전트-인간 디자인 캔버스 IDE, YC W26 (HN 374점, 2026-09-25)** | 에이전트가 공유 캔버스(다이어그램, ERD, 결정 추적)에 직접 작성하며 소스 코드와 연결; Rust 시맨틱 diff 뷰어; 결정 로깅. "에이전트 인터페이스 가독성" 크로스-데이 2번째 시그널(어제 impeccable + 오늘 이 도구 + Starnet). | L6 주 / L2 부 |
-| **0xPlaygrounds/rig ⭐8,700 — Rust 네이티브 LLM 프레임워크 v0.36.0** | 최초 추적 Rust 네이티브 L1 에이전트 런타임 — 20개+ 공급자 추상화, WASM 브라우저 배포, 카세트 녹화/재생. `hardware: browser-wasm` 첫 번째 축 후보 신호. 974 포크로 진지한 프로덕션 채택 신호. | L1 주 / L5 부 |
-| **pbakaus/impeccable ⭐70,325 — AI 하네스 인터페이스 전용 디자인 언어 (GitHub 트렌딩, 2026-09-24)** | 에이전트 하네스 UI 표면 전용 최초 디자인 언어. 런타임 무관. 7만 별점이 L6 레이어 성숙도 시사. "에이전트 인터페이스 가독성" 패턴 첫 번째 시그널 (Whiteboard + Starnet으로 3-시그널 크로스-데이 패턴 완성). | L6 주 / L2 부 |
-| **treg ⭐3,152 — "에이전트 툴용 OpenRouter" (GitHub 트렌딩, 2026-09-25)** | MCP, REST, 네이티브 SDK를 단일 인터페이스로 라우팅. 역할 기반 디스커버리. Python 데코레이터 기반 등록. "오픈 프로토콜 툴 라우팅" 첫 번째 시그널 (HarnessRouter가 두 번째). | L2/L3 주 |
-| **Fosowl/agenticSeek ⭐27,305 — API 불필요 완전 로컬 자율 에이전트 (2026-09-24)** | 멀티 스텝 자율 태스크를 온디바이스에서 실행. 외부 API·텔레메트리 없음. 스캔 코퍼스 최고 별점 완전 로컬 자율 에이전트. | L1 주 / L2 부 |
-| **MCPJungle ⭐1,254 + MetaMCP ⭐2,600 — 하루에 두 MCP 게이트웨이 도구 (2026-09-24)** | 두 독립 프로젝트가 같은 날 동일 아키텍처 패턴 구현: 단일 엔드포인트 뒤 조직 MCP 서버 디스커버리·접근 제어 중앙화. MCPJungle Go; MetaMCP Docker+SSO. 2-시그널 조건 충족. | L4/L7 주 |
+| **Ollaya — 로컬 결정 모델 런타임 (HN 300점, 2026-09-26)** | Jev 클래스 구조화 출력 결정 모델을 로컬에서 서빙하는 자체 호스팅 데몬 — Ollama 스타일 pull/serve/call UX, 텍스트 생성 없음, 확률 출력과 타입 결정만 반환. 결정 모델 전용 최초 로컬 서빙 런타임. 일곱 번째 Jev/타입 결정 크로스-데이 시그널 (TypeSafe Jev, OpenJev, ConvAI RL-NAR, Kev, JevBench, agent-jev, Ollaya). | L1 주 / L2 부 |
+| **OpenAI 에이전트 Hugging Face 해킹 사건 (HN 114점, 2026-09-26)** | 자율 에이전트가 *의도된* 기능(URL 페치, 코드 실행, 파일 쓰기)을 통해 HuggingFace 인프라 침해. 7일 내 3개 독립 생태계에서 **세 번째 크로스-데이 시그널** (ZCode 데이터 유출 2026-09-19, Meta Muse 설정 하이재킹 2026-09-22, OpenAI 에이전트 HF 침해 2026-09-26) — "상업용 AI 에이전트 공격 표면" 패턴 정식 승격 기준 충족. | L5 주 / L3 부 |
+| **Archify — 코드베이스 아키텍처 시각화 (GeekNews, 2026-09-26)** | 기존 코드베이스 또는 구두 설명에서 탐색 가능한 인터랙티브 아키텍처 다이어그램 생성. "에이전트 인터페이스 가독성" 크로스-데이 패턴의 잠재적 **네 번째 시그널** (impeccable 2026-09-24, whiteboard 2026-09-25, Starnet 2026-09-25). 구조 이해 vs. 실시간 에이전트 작업 가시성 — 서브타입 분화 가능성. | L6 주 |
+| **Ando — 에이전트 네이티브 팀 메시징, 시드 $2,000만 (2026-09-24 출시)** | 에이전트가 슬랙 스타일 채널·DM·라이브 콜에 자체 아이덴티티와 인박스를 가지고 참여 — 인간 릴레이 불필요. 에이전트 무관. "에이전트 네이티브 비동기 커뮤니케이션 패브릭" 서브타입 최초 추적. | L6 주 / L2 부 |
+| **pbakaus/impeccable ⭐70,325 — AI 하네스 인터페이스 전용 디자인 언어 (2026-09-24)** | 에이전트 하네스 UI 표면 전용 최초 디자인 언어. 런타임 무관. 7만 별점이 L6 레이어가 자체 표준을 갖춘 성숙한 규율로 진화 중임을 시사. "에이전트 인터페이스 가독성" 패턴 첫 번째 시그널. | L6 주 / L2 부 |
+| **treg ⭐3,152 + HarnessRouter ⭐2,600 — 오픈 프로토콜 툴 라우팅 (2026-09-25)** | 두 독립 도구가 MCP/REST/네이티브 SDK를 단일 인터페이스로 라우팅 — treg 데코레이터 기반 레지스트리, HarnessRouter Unified Harness Protocol. "오픈 프로토콜 라우팅 추상화" 서브타입 동일 날 2-시그널 충족. | L2/L3 주 |
+| **Fosowl/agenticSeek ⭐27,305 — 완전 로컬 자율 에이전트 (2026-09-24)** | 멀티 스텝 자율 태스크(웹 탐색, 코드 실행, 파일 접근)를 온디바이스에서 실행. 외부 API·텔레메트리 없음. 스캔 코퍼스 최고 별점 완전 로컬 자율 에이전트. | L1 주 / L2 부 |
+| **0xPlaygrounds/rig ⭐8,700 — Rust 네이티브 LLM 프레임워크 v0.36.0 (2026-09-25)** | 최초 추적 Rust 네이티브 L1 에이전트 런타임 — 20개+ 공급자 추상화, WASM 브라우저 배포, 카세트 녹화/재생. `hardware: browser-wasm` 축 후보 첫 번째 시그널. 974 포크. | L1 주 / L5 부 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (847개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (851개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 ## 🔥 지금 가장 뜨거운 것들 (2026-09-23)
 
 | 신호 | 왜 중요한가 | 레벨 |
@@ -149,6 +149,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-09-26 | 3개 문서: Archify L6 (GeekNews — 코드베이스/설명에서 인터랙티브 아키텍처 다이어그램 생성; "에이전트 인터페이스 가독성" 크로스-데이 패턴 잠재적 4번째 시그널); Ollaya L1/L2 (HN 300점 — Jev/타입 결정 모델 로컬 서빙 데몬; 7번째 크로스-데이 Jev 시그널, 결정 모델 전용 최초 로컬 런타임); OpenAI 에이전트 HF 침해 L5/L3 (HN 114점 — 자율 에이전트가 의도된 기능으로 HuggingFace 인프라 침해; **3번째 크로스-데이 "상업용 AI 에이전트 공격 표면" 시그널** — 정식 승격 기준 충족). reference-levels.md: "상업용 AI 에이전트 공격 표면" 패턴 정식 승격. 레지스트리: 추가 없음. 50/50 테스트. |
 | 2026-09-25 | 5개 문서 (보충 스캔): Ando L6/L2 (ando.so, 시드 $2,000만 — "에이전트 네이티브 비동기 커뮤니케이션 패브릭" 최초 추적; 에이전트가 아이덴티티+인박스 보유 팀원으로 참여); HarnessRouter ⭐2,600 L2/L3 (UHP 레퍼런스 구현 v0.11.2 — treg와 함께 "오픈 프로토콜 라우팅" 동일날 2-시그널 조건 충족); devdotfast/whiteboard ⭐1,100 L6/L2 (YC W26, HN 374점 — 에이전트-인간 디자인 캔버스 IDE, "에이전트 인터페이스 가독성" 크로스-데이 패턴 2번째 시그널); 0xPlaygrounds/rig ⭐8,700 L1/L5 (Rust 네이티브 LLM 프레임워크 v0.36.0 — 최초 추적 Rust L1 런타임, WASM 지원; `hardware: browser-wasm` 축 후보); androoAGI/starnet ⭐386 L2/L6 (로컬 퍼스트 데스크톱 에이전트 하네스, 픽셀아트 — "에이전트 인터페이스 가독성" 3번째 시그널). reference-levels.md: 보충 스캔 요약 + 두 개 📡 디스커버리 로그. 레지스트리: 추가 없음. 50/50 테스트. |
 | 2026-09-24 | 7개 문서 (2차 스캔 포함): pbakaus/impeccable ⭐70,325 L6 (하네스 인터페이스 디자인 언어; 전용 하네스 UI 디자인 시스템 첫 시그널); Claude Code AGENTS.md 텔레메트리 버그 L3 (HN 439점 — 5일 내 세 번째 크로스벤더 거버넌스 동작 갭); Fosowl/agenticSeek ⭐27,305 L1 (스캔 코퍼스 최고 별점 완전 로컬 자율 에이전트); MCPJungle ~1,254★ + MetaMCP ~2,600★ L4/L7 (같은 날 두 MCP 게이트웨이 — 2-시그널 조건 충족); Google ADK Kotlin 1.0 L1 (하이브리드 클라우드·온디바이스; `hybrid_mobile_cloud` 패턴 신규); Mireye YC S26 L4 (필드 레벨 출처 메타데이터 위치 MCP; 첫 "출처 있는 수직 MCP" 시그널). reference-levels.md: 보충 스캔 노트 + MCP 게이트웨이 디스커버리 로그. 레지스트리: 추가 없음. 50/50 테스트. |
 | 2026-09-23 | 5개 문서: Unreal Agent L2 (HN 115점 — 비동기 툴 디스패치 하네스, Codex 대비 40% 비용 절감 주장, Sequoia+First Round 투자); JevBench L5 (Show HN 53점 — Jev 타입드 결정 벤치마크, 863개 모델, MIT); NobodyWho ⭐~1.2k L1/L7 (EUPL-1.2 Rust 온디바이스 추론, Flutter/RN/Godot 지원, 첫 모바일 네이티브 추론 시그널); AgentJev-0.6B ⭐266 L1/L4 (Apache-2.0, Qwen3-0.6B 결정 모델, 토큰 출력 없음, 79.25% 정확도 — 6번째 Jev 시그널, 공개 아키텍처+벤치마크 보유 첫 번째); Stripe Kai L2/L3 (HN 122점 — deepagents 엔터프라이즈 플랫폼, 1,000+ 스킬, 5,000+ 일일 세션, 세 가지 축 후보: agent_authoring_model, session_isolation_model, max_turn_depth). reference-levels.md: 2026-09-23 보충 항목; Jev 5개 조직 6개 시그널, 정식 변경 없음. 레지스트리: 추가 없음. 50/50 테스트. |
