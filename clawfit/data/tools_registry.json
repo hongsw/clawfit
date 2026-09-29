@@ -1490,7 +1490,8 @@
       "features": [
         "mcp",
         "multi-agent",
-        "peer-messaging"
+        "peer-messaging",
+        "offline"
       ],
       "tasks": [
         "code-gen"
@@ -1503,7 +1504,7 @@
         "small",
         "mid"
       ],
-      "network": "online",
+      "network": "offline",
       "setup_complexity": "low",
       "latency": "low"
     }
