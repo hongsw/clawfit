@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-09-29)
+## 🔥 지금 가장 뜨거운 것들 (2026-09-30)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **OpenAI Dots — 상시 작동 지속형 에이전틱 어시스턴트 (DevDay 2026, HN 197점)** | 소비자 규모로 출시된 최초의 지속형 자율 에이전트 — "dot"이 24/7 작동하며 세션을 넘나들어 목표를 추구하고, 전화 통화·이메일·슬랙 답장·구매를 자동 처리(승인 게이트). GPT-6 Astra 구동; Pro 플랜 포함; 4,000개+ 앱 통합. `persistent_autonomous_assistant` 패턴 최초 상용 레퍼런스. | L6 주 / L2 부 / L4 부 |
-| **OpenAI GPT-6.1 Sol — $2/M 입력, Astra급 성능 (DevDay 2026, HN 293점)** | 입력 $2, 출력 $10, 캐시 $0.10/M 토큰 — GPT-6 Astra 대비 약 1/5 가격으로 에이전틱 코딩·컴퓨터 사용에서 Astra 수준 성능. API: `gpt-6.1-sol`; reasoning.effort 지원. Ember-1(9/28)에 이어 `cost_tiered_reasoning_models` **두 번째 크로스-데이 시그널** 확인. | L1 주 |
-| **PostHog/jeeves ⭐211 — 추론 강화 Jev 호환 분류기 (HN 187점)** | Qwen3.5-9B 기반 LoRA + CISPO RL 파인튜닝; 체인오브쏫 추론, 깊이 조절 가능; 이중 레이턴시 프로파일 0.3s/3.3s; JevBench 0.935 vs Jev 0.866. PostHog(상용 분석 회사)가 프로덕션용으로 구축. **오늘 firelex/jeff와 함께 `jev_compatible_decision_model` 투-시그널 규칙 충족.** | L1 주 |
-| **firelex/jeff — Jev 호환 0.8B 결정 모델 (HN 202점)** | 파라미터 0.8B, 레이턴시 ~30ms, 가정용 GPU로 학습 가능; 생성 텍스트가 아닌 확률/점수 반환. 에이전트 파이프라인 내 라우팅 오라클로서 경량 로컬 분류기 수요 신호. jeeves와 함께 패턴 두 번째 시그널. | L1 주 |
-| **vespper.com — SOTA Docx MCP 서버, YC F24 (HN 런치)** | YC F24 스타트업의 MCP 기반 docx 파싱·편집·생성 서버. "특화 문서 포맷 MCP 서버" 서브타입 최초 시그널 — 코드 중심 MCP와 엔터프라이즈 문서 워크플로 간 간극 해소. | L4 주 |
-| **777genius/agent-teams-ai ⭐2,200 — 칸반 멀티에이전트 팀 오케스트레이션, v2.17.1 (9/28)** | 에이전트들이 서로 태스크를 맡고 메시지를 주고받으며 작업을 피어 리뷰. 300개+ 모델, 200개+ LLM 공급자. `declarative_agent_team_topology` 패턴 세 번째 크로스-데이 시그널 확인 — 정식 L3 분류 추천. | L3 주 / L2 부 |
-| **Ember-1 — Kimi K3 기반 토큰 효율 추론 LLM (Fireworks Research, HN 561점, 9/28)** | 40% 토큰 절감 주장(A/B 검증), Doximity 임상 벤치마크 파레토 프론티어. "추론 토큰 경제" 최초 시그널 — GPT-6.1 Sol(오늘)로 패턴 확인됨. | L1 주 |
-| **sgl-project/sglang ⭐36,500 — RL 인식 LLM 서빙 인프라, v0.5.20 (9/28)** | 전 세계 40만+ GPU; 레딕스 트리 캐시 적중률 43.8→60.8%; RL 롤아웃 샘플링 마스크. 에이전트가 실제 실행되는 기반 인프라. | L7 주 / L5 부 |
+| **OpenAI Decisions API — Luna 기반 제약형 분류 엔드포인트 (DevDay 2026-09-29)** | 질문·고정 응답 집합·컨텍스트를 입력하면 150ms 안에 하나의 답변과 신뢰도 점수 반환(기본 Luna 대비 10배 빠름). `jev_compatible_decision_model` 패턴의 **세 번째 크로스-조직 시그널** — 첫 클라우드 호스팅·퍼스트파티 API 구현(jeff·jeeves는 OSS 자체 호스팅). 정식 분류 승격 조건 충족. 가격 미공개; 레지스트리 보류. | L1 주 / L4 부 |
+| **ninjahawk/livenerf ⭐760 — 모델 성능 드리프트 트래커 (HN 828점)** | Claude Opus 5.5 출시 후 성능 저하를 일별로 추적: 78문항 고정 패널, 페어드 비교, 클러스터 표준오차, 동시 Opus 5 대조군, 토큰 수 선행 지표. **포스트-릴리스 모델 드리프트 트래커 최초 시그널** — 레지스트리 점수 신선도 문제를 직접적으로 다룸. | L5 주 |
+| **pydantic/pydantic-ai ⭐20,294 — 타입 안전 멀티모델 에이전트 하네스 (GitHub Trending Python)** | 엔드투엔드 정적 타입 안전성(mypy/pyright), 멀티모델 스트링 스와핑, 실시간 음성, 8개 엔진 내구성 실행(Temporal·DBOS·Prefect 등), OpenTelemetry 네이티브, Pydantic Graph·Evals 동반 패키지. MIT. **타입 안전 우선 에이전트 하네스 최초 시그널** — 2만 별 프레임워크 최초 문서화. | L2 주 / L5 부 |
+| **nobodywho-ooo/nobodywho ⭐~1,500 — 모바일 퍼스트 크로스플랫폼 추론 엔진 (GeekNews)** | Android/Kotlin·iOS/Swift·Flutter·React Native·Godot에서 온디바이스 GGUF 추론. 내장 TTS+STT+VAD; 문법 생성 기반 구조화 툴 콜링; OpenAI 호환 로컬 서버. **모바일 퍼스트 크로스플랫폼 추론 엔진 최초 시그널** — 게임 엔진(Godot) 내 AI 추론 첫 시그널. EUPL-1.2. | L1 주 / L4 부 |
+| **jeffhajewski/latticedb ⭐711 — 통합 임베디드 그래프+벡터+전문 검색 메모리 저장소 (GeekNews)** | 단일 파일 임베디드 프로퍼티-그래프 DB에 HNSW 벡터 검색과 BM25 전문 검색 내장 — 서버 없음·설정 없음. 0.13 μs 노드 조회, 1M 벡터 10-NN 0.83 ms; 체인지피드; Python/TS/Go/Java. MIT. **통합 임베디드 에이전트 메모리 저장소 최초 시그널** — 그래프DB+벡터DB+전문검색 다중 시스템 스택 대체. | L5 주 |
+| **OpenAI Dots — 상시 작동 지속형 에이전틱 어시스턴트 (DevDay 2026, HN 197점)** | 소비자 규모 최초 지속형 자율 에이전트 상용 배포 — 24/7 작동, 세션 초월 목표 추구, 전화·이메일·슬랙·구매 자동 처리(승인 게이트). GPT-6 Astra 구동; Pro 플랜 포함. `persistent_autonomous_assistant` 패턴 최초 상용 레퍼런스. | L6 주 / L2 부 / L4 부 |
+| **OpenAI GPT-6.1 Sol — $2/M 입력, Astra급 성능 (DevDay 2026, HN 293점)** | 입력 $2, 출력 $10, 캐시 $0.10/M — GPT-6 Astra 1/5 가격으로 에이전틱 코딩·컴퓨터 사용에서 Astra 수준 성능. `gpt-6.1-sol`; reasoning.effort 지원. `cost_tiered_reasoning_models` 패턴 두 번째 크로스-데이 시그널 확인. | L1 주 |
+| **PostHog/jeeves ⭐211 — 추론 강화 Jev 호환 분류기 (HN 187점, 9/29)** | Qwen3.5-9B + LoRA + CISPO RL; 0.3–3.3s 이중 레이턴시; JevBench 0.935. PostHog 프로덕션 목적 구축. `jev_compatible_decision_model` 두 번째 크로스-조직 시그널 — 오늘 세 번째(Decisions API)로 패턴 확인 완료. | L1 주 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (861개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (865개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 ## 🔥 지금 가장 뜨거운 것들 (2026-09-27)
 
 | 신호 | 왜 중요한가 | 레벨 |
@@ -163,6 +163,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-09-30 | 5개 문서 (2회 실행): nobodywho ⭐~1,500 L1/L4 (GeekNews — 모바일 퍼스트 크로스플랫폼 GGUF 추론: Android/iOS/Flutter/RN/Godot; TTS+STT+VAD; 구조화 툴콜링; **모바일+게임엔진 추론 최초 시그널**); livenerf ⭐760 L5 (HN 828점 — Opus 5.5 출시 후 성능 드리프트 일별 추적; **포스트-릴리스 모델 드리프트 트래커 최초 시그널**); latticedb ⭐711 L5 (GeekNews — 임베디드 그래프+벡터+전문검색 통합; **통합 에이전트 메모리 저장소 최초 시그널**); OpenAI Decisions API L1/L4 (DevDay — Luna 기반 150ms 제약형 분류; **`jev_compatible_decision_model` 세 번째 크로스-조직 시그널** — 정식 승격 조건 충족); pydantic-ai ⭐20,294 L2/L5 (GitHub Trending — 타입 안전 에이전트 하네스, 8엔진 내구성 실행; **타입 안전 우선 하네스 최초 시그널**). reference-levels.md: 9/30 스캔 업데이트(1→5개 문서); `jev_compatible_decision_model` 📡 노트 갱신. 레지스트리: 추가 없음. 50/50 테스트. |
 | 2026-09-29 | 5개 문서: PostHog/jeeves ⭐211 L1 (HN 187점 — 추론 Jev 호환 9B 분류기, CISPO RL, 확산 드래프터; **투-시그널 규칙 충족** `jev_compatible_decision_model`); firelex/jeff L1 (HN 202점 — 0.8B Jev 결정 모델, ~30ms); vespper docx MCP L4 (YC F24 — docx MCP 서버, 최초 문서 포맷 특화 MCP 서버 시그널); OpenAI GPT-6.1 Sol L1 (DevDay 2026, HN 293점 — $2/$10/$0.10/M 토큰, Astra급 성능; Ember-1과 함께 `cost_tiered_reasoning_models` **두 번째 크로스-데이 시그널**); OpenAI Dots L6/L2/L4 (DevDay 2026, HN 197점 — 상시 지속형 에이전트, 전화·이메일·구매, 4k+ 앱 통합). reference-levels.md: 9/29 요약 + 두 개 📡 노트 추가. 레지스트리: 추가 없음. 50/50 테스트. |
 | 2026-09-28 | 6개 문서 (2차 스캔 포함): deepfates/imp ⭐94 L2 (HN 38점 — DSPy를 Elixir/BEAM OTP로 완전 포팅, Python 외부 첫 DSPy 크로스 생태계 확장); sgl-project/sglang ⭐36,500 L7/L5 (v0.5.20 — 40만+ GPU RL 인식 LLM 서빙, 레딕스 트리 캐싱 43.8→60.8%); agent0ai/agent-zero ⭐19,331 L2 (v2.13 9/23 — 컴퓨터 사용 데스크탑 하네스, 100개+ 플러그인, 텔레그램/WhatsApp); 777genius/agent-teams-ai ⭐2,200 L3 (v2.17.1 — 칸반 멀티에이전트 오케스트레이션, **`declarative_agent_team_topology` 3번째 시그널** 크로스-데이 확인); Ember-1 L1-LLM (Fireworks, HN 561점 — Kimi K3 기반 40% 토큰 절감, "추론 토큰 경제" 축 최초 시그널); cloudflare/cf ⭐163 L4 (오픈 베타 — Cloudflare 공식 에이전틱 CLI, 3k+ API 작업, `cf cli search`). reference-levels.md: Sep 28 + Sep 27 디스커버리 로그 추가; `declarative_agent_team_topology` 3번째 크로스-데이 시그널 확인, 정식 분류 추천. 레지스트리: 추가 없음. 50/50 테스트. |
 | 2026-09-27 | 5개 문서 (2차 실행): mobile-next/mobile-mcp ⭐7,332 L4 (GitHub 트렌딩 — 접근성 트리 모바일 MCP; 접근성 트리 우선 패턴 두 번째 크로스-데이 시그널); Drawgent L4/L7 (HN 프론트페이지 — ACP 통한 라이브 Excalidraw 캔버스 코딩 에이전트; "공유 시각 캔버스 에이전트 인터페이스" 첫 시그널); mvschwarz/openrig ⭐804 L2/L3 (GitHub 트렌딩 — 선언적 YAML RigSpec 멀티에이전트 팀 오케스트레이터; "런타임 구성으로서의 선언적 에이전트 팀 토폴로지" 첫 시그널); TencentCloud/Octop ⭐5,240 L2/L3 (GitHub 트렌딩 주간 — 자체 호스팅 멀티유저 멀티에이전트 플랫폼 AgentTeams 코디네이터; "선언적 에이전트 팀 토폴로지" 패턴 두 번째 시그널 — 2-시그널 기준 충족); microsoft/data-formulator ⭐17,418 L4/L6 (GitHub 트렌딩 — DataAgent 기반 반복 데이터 분석, Data Threads 브랜치 탐색, LiteLLM 멀티 LLM; 분석 워크플로우 DataAgent 패턴 첫 시그널). reference-levels.md: 2026-09-27 항목 2→5 문서 업데이트; "declarative_agent_team_topology" 2-시그널 디스커버리 로그 추가. 레지스트리: 추가 없음. 50/50 테스트. |
