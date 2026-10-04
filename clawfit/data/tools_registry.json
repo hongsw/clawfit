@@ -1558,7 +1558,7 @@
     "url": "https://github.com/obra/superpowers",
     "source_type": "github",
     "comparison_priority": "secondary",
-    "notes": "Agentic skills framework + software development methodology. Shell-first for maximum runtime compatibility. 231k stars (2026-06-18; was 145k at first entry) — largest harness/SSOT repo in taxonomy. 'That works' framing targets reliability over novelty. Explicitly targets team productivity, not just individual developers.",
+    "notes": "Agentic skills framework + software development methodology. Shell-first for maximum runtime compatibility. 294k stars (2026-10-04; was 231k 2026-06-18, 145k at first entry) — largest harness/SSOT repo in taxonomy. 'That works' framing targets reliability over novelty. Explicitly targets team productivity, not just individual developers.",
     "org_fit": {
       "min_maturity": 4,
       "max_maturity": 9,
@@ -3785,7 +3785,7 @@
     "url": "https://github.com/affaan-m/ECC",
     "source_type": "github",
     "comparison_priority": "supplemental",
-    "notes": "Cross-agent harness optimization framework covering Claude Code, Codex, Opencode, and Cursor. Bundles skills, instincts, memory, and security practices into one research-first methodology. 254k stars as of 2026-09-09.",
+    "notes": "Cross-agent harness optimization framework covering Claude Code, Codex, Opencode, and Cursor. Bundles skills, instincts, memory, and security practices into one research-first methodology. 272k stars as of 2026-10-04.",
     "org_fit": {
       "min_maturity": 3,
       "max_maturity": 8,
