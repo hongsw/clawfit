@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-10-03)
+## 🔥 지금 가장 뜨거운 것들 (2026-10-04)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **Aleph Alpha Kolibri — 78B MoE Apache 2.0 소버린 독일어 LLM (오늘 출시, HN 657점)** | 총 78B / 토큰당 활성 3B 파라미터; 262k 네이티브 / 1M 검증 컨텍스트; 독일어+영어; Apache 2.0 HuggingFace 공개. **이 규모에서 제한 없는 라이선스를 가진 최초의 소버린 오픈웨이트 유럽 LLM** — EU AI Act·GDPR 데이터 레지던시 준수 규제 엔터프라이즈, 온프레미스 배포, 툴 호출·RAG 설계. | L1 주 |
-| **p-e-w/heretic ⭐33,000 — 방향성 어블레이션으로 LLM 정렬 자동 제거 (GitHub Trending Python)** | 재학습 없이 로컬 트랜스포머 모델의 안전 정렬을 제거 — 직교화 + TPE 파라미터 최적화로 거부 방향 벡터 소거. 밀집·멀티모달·MoE·하이브리드 모델 지원. KL 분기 0.16 달성(수동 어블리터레이션 1.04 대비). **주류 웨이트 레벨 정렬 제거 자동화 최초 시그널** — 33k★은 틈새 연구를 넘어선 생태계 성숙 신호. AGPL-3.0. | L1 주 |
-| **stillwet.art / aliceisjustplaying/claude-paint — AI 절차적 유화 (HN 352점)** | LLM이 이미지 생성 모델 없이 Rust 코드를 작성해 Kubelka–Munk 물리 페인트 엔진으로 유화를 그림. Claude Opus 5.5 세션 21회 이상. 크로스 모델 구성 수렴 독립 관찰. **확산이 아닌 결정론적 시뮬레이션 코드를 통해 LLM 내재 시각 지식이 발현된 최초 시그널.** MIT. | L6 주 |
-| **chatgpt.com/features/sites — ChatGPT 대화형 앱 빌더 + 호스팅 배포 (HN 331점)** | 사용자가 앱을 설명하면 ChatGPT가 대화 중에 생성·배포 — 코드 에디터 없음, 배포 단계 없음. **Claude Artifacts와 함께 두 번째 주요 LLM 네이티브 대화형 앱 배포 플랫폼** — `conversational_app_publisher` L6 서브타입 2-시그널 규칙 충족. 이 기능이 이제 플랫폼 기본 기능임을 시사. | L6 주 |
-| **datalab-to/chandra ⭐12,397 — Chandra 2 레이아웃 보존 문서 OCR (GitHub Trending Python)** | 테이블 구조·양식 필드·필기·수식을 보존하며 HTML/Markdown/JSON 출력하는 비전-언어 OCR 모델. 90개 이상 언어. 이중 추론 모드: 로컬 HuggingFace 또는 vLLM 서버. Apache 2.0 코드. **독립형 L4 문서 인텔리전스 능력으로서 레이아웃 보존 OCR 최초 시그널** — 하네스(LlamaIndex Extract)·범용 VLM과 구별되는 고유 카테고리. | L4 주 |
-| **ledge.sh — 내장 MCP 서버를 갖춘 실행 가능한 Markdown 노트북 (GeekNews, 2026-10-03)** | Markdown 노트에서 셸, Python, SQL, TypeScript, AI 프롬프트를 인라인 실행. MCP 서버 내장: 에이전트가 노트를 읽고 생성·편집 가능. 원격 SSH 실행; 프로필 기반 시크릿; git/iCloud/Dropbox 동기화. 개발자 노트북과 에이전트 접근 가능 워크스페이스의 L6/L4 교차점 점유. | L6 주 / L4 부 |
-| **D4Vinci/Scrapling ⭐85,200 — 안티봇 적응형 웹 추출 + MCP (GitHub Trending Python, 10/2)** | TLS 핑거프린트 위장, Cloudflare Turnstile 우회, DOM 재설계 시 선택자 생존을 위한 요소 유사도 알고리즘. MCP 서버 네이티브. **안티봇 인식 적응형 웹 추출 최초 시그널** — 브라우저 제어·정적 HTML 스크래핑과 구별되는 독립 L4 서브타입. BSD-3-Clause. | L4 주 |
-| **LlamaIndex Extract v2.5 — 구조적 추론 기반 문서 추출 에이전트 하네스 (10/1)** | 문서 복잡도에 따른 적응적 처리; Agentic 티어 89.8→95.8% 정확도; 인용 정확도 46.8→80.6%. **독립 L2 서브타입으로서 문서 추출 에이전트 하네스 최초 시그널** — Chandra 2(OCR)와 상위 계층에서 상보적. LlamaCloud SaaS. | L2 주 |
+| **Niko1221/Strata ⭐10,200 — 소비자 하드웨어에서 125B 파라미터 모델 추론 (HN 345점)** | C++ 엔진이 Qwen3.8-Flash-Next (125B)를 단일 소비자 PC의 GPU VRAM·RAM·NVMe SSD에 분산 실행. OpenAI/Anthropic API 호환; 원클릭 Windows/Linux 설치. **125B+ 규모 계층형 메모리 소비자 추론 최초 시그널** — `hardware: local` 추천 상한선이 ~34B에서 125B급으로 확장. | L7 주 |
+| **MCP 9월 28일 엔터프라이즈 릴리스 — Agentic AI Foundation 거버넌스 이정표** | 무상태 라우팅 확정; Okta 엔터프라이즈 관리 인증; MCP Apps·Tasks 공식 확장으로 졸업; 240개 회원사; Anthropic 기여 비율 50% 미만. **Anthropic 다수 이후 첫 번째 MCP 거버넌스 릴리스** — 프로토콜이 스타트업 API가 아닌 Kubernetes처럼 운영됨. 12개월 공식 폐기 정책. | L4 주 |
+| **Upstage Solar Mini 4 — 35B/3B 활성 MoE LLM, 입력 $0.10/M 토큰 (2026년 10월 1일)** | 총 35B / 토큰당 활성 3B (MoE); 512K 컨텍스트; 에이전트 최적화 (AutomationBench-AA 22.3%); 양자화 시 H100 단일 GPU 실행. **sub-10B-활성 MoE 모델 포지셔닝 두 번째 시그널** — Aleph Alpha Kolibri의 3B 활성 아키텍처와 독립적으로 수렴. | L1 주 |
+| **"에이전트에게 메모리가 아닌 문서가 필요하다" — 아키텍처 시그널 (HN 302점)** | 에이전트 신뢰성은 에피소딕 메모리가 아닌 고품질 구조화 문서(프롬프트·예시·스키마)에서 온다는 주장. `statefulness` 차원 재프레이밍: 문서가 영속 상태, 메모리는 시기상조 최적화. | L3 주 / L5 부 |
+| **llm-d/llm-d ⭐4,700 — CNCF 샌드박스 Kubernetes 분산 LLM 추론 (v0.7, 2026년 5월)** | Red Hat·Google Cloud·IBM Research·CoreWeave·NVIDIA 공동 개발. 프리픽스-캐시 인식 라우팅, KV-캐시 계층형 오프로드, 분리된 프리필/디코드. **최초 CNCF 거버넌스 Kubernetes 네이티브 LLM 서빙 스택** — 클라우드 API와 로컬 노트북 사이의 세 번째 배포 모드(온프레미스 GPU 클러스터) 도입. | L7 주 |
+| **Aleph Alpha Kolibri — 78B MoE Apache 2.0 소버린 유럽 LLM (HN 657점, 10/3)** | 총 78B / 토큰당 활성 3B; 262k 네이티브 / 1M 검증 컨텍스트; 독일어+영어; Apache 2.0. **제한 없는 라이선스를 가진 최초의 소버린 오픈웨이트 유럽 LLM** — EU AI Act·GDPR 데이터 레지던시, 온프레미스 배포, 툴 호출·RAG. | L1 주 |
+| **p-e-w/heretic ⭐33,000 — 방향성 어블레이션으로 LLM 정렬 자동 제거 (10/3)** | 재학습 없이 로컬 트랜스포머 모델 안전 정렬 제거. KL 분기 0.16 달성(수동 1.04 대비). **웨이트 레벨 정렬 제거 자동화 주류화 최초 시그널** — 33k★ 생태계 성숙 확인. AGPL-3.0. | L1 주 |
+| **"하네스가 곧 회사다" — 기업 전략 시그널 (GeekNews, blog.sshh.io)** | 독점적 하네스를 구축하는 기업이 조직 정체성을 하네스 자체에 맞춰 재편한다는 주장 — Ramp·Stripe·DoorDash를 초기 선도 기업으로 명시. **세 번째 하네스 시대 전략 테제** (Tunguz 2026년 6월 이후); 소프트웨어가 아닌 회사 자체를 하네스로 규정한 최초 시그널. | L2 전략 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (876개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (896개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 ## 🔥 지금 가장 뜨거운 것들 (2026-09-27)
 
 | 신호 | 왜 중요한가 | 레벨 |
