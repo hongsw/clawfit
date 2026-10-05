@@ -99,20 +99,23 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-10-04)
+## 🔥 지금 가장 뜨거운 것들 (2026-10-05)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **Niko1221/Strata ⭐10,200 — 소비자 하드웨어에서 125B 파라미터 모델 추론 (HN 345점)** | C++ 엔진이 Qwen3.8-Flash-Next (125B)를 단일 소비자 PC의 GPU VRAM·RAM·NVMe SSD에 분산 실행. OpenAI/Anthropic API 호환; 원클릭 Windows/Linux 설치. **125B+ 규모 계층형 메모리 소비자 추론 최초 시그널** — `hardware: local` 추천 상한선이 ~34B에서 125B급으로 확장. | L7 주 |
-| **MCP 9월 28일 엔터프라이즈 릴리스 — Agentic AI Foundation 거버넌스 이정표** | 무상태 라우팅 확정; Okta 엔터프라이즈 관리 인증; MCP Apps·Tasks 공식 확장으로 졸업; 240개 회원사; Anthropic 기여 비율 50% 미만. **Anthropic 다수 이후 첫 번째 MCP 거버넌스 릴리스** — 프로토콜이 스타트업 API가 아닌 Kubernetes처럼 운영됨. 12개월 공식 폐기 정책. | L4 주 |
-| **Upstage Solar Mini 4 — 35B/3B 활성 MoE LLM, 입력 $0.10/M 토큰 (2026년 10월 1일)** | 총 35B / 토큰당 활성 3B (MoE); 512K 컨텍스트; 에이전트 최적화 (AutomationBench-AA 22.3%); 양자화 시 H100 단일 GPU 실행. **sub-10B-활성 MoE 모델 포지셔닝 두 번째 시그널** — Aleph Alpha Kolibri의 3B 활성 아키텍처와 독립적으로 수렴. | L1 주 |
-| **"에이전트에게 메모리가 아닌 문서가 필요하다" — 아키텍처 시그널 (HN 302점)** | 에이전트 신뢰성은 에피소딕 메모리가 아닌 고품질 구조화 문서(프롬프트·예시·스키마)에서 온다는 주장. `statefulness` 차원 재프레이밍: 문서가 영속 상태, 메모리는 시기상조 최적화. | L3 주 / L5 부 |
-| **llm-d/llm-d ⭐4,700 — CNCF 샌드박스 Kubernetes 분산 LLM 추론 (v0.7, 2026년 5월)** | Red Hat·Google Cloud·IBM Research·CoreWeave·NVIDIA 공동 개발. 프리픽스-캐시 인식 라우팅, KV-캐시 계층형 오프로드, 분리된 프리필/디코드. **최초 CNCF 거버넌스 Kubernetes 네이티브 LLM 서빙 스택** — 클라우드 API와 로컬 노트북 사이의 세 번째 배포 모드(온프레미스 GPU 클러스터) 도입. | L7 주 |
+| **"에이전트 코딩의 묵시록 4기사" — 조직 규모 실패 모드 (GeekNews, 10/5)** | 에이전트 코딩 도입으로 발생하는 네 가지 조직 위험 정리: 허술함(AI 코드 검토 없이 병합), 소외(개발자가 자신의 코드베이스와 단절), 기술 저하(주니어 엔지니어의 기초 학습 우회), 팀 역학 약화(페어 프로그래밍·지식 이전 소멸). 에이전트 코딩 고채택 선도 집단인 한국 개발자 커뮤니티 발 시그널. **에이전트 코딩 조직 규모 실패 모드 최초 시그널** — org_fit 점수의 `min_maturity` 보정에 직접 영향. | L2 주 / L5 부 |
+| **Meta Muse Gadgets — AI 에이전트를 커스텀 물리 하드웨어에 연결하는 오픈소스 SDK (GeekNews, 10/5)** | Meta의 오픈소스 SDK가 Muse AI 에이전트를 물리 장치(화면·마이크·버튼·센서)에 연결. 로보틱스나 음성 전용이 아닌 소비자/메이커 하드웨어를 겨냥한 커스텀 에이전트 컨트롤 패널 및 주변 인터페이스 대상. **AI 에이전트용 주요 플랫폼 최초 오픈소스 물리 표면 SDK** — 현행 cloud/local/edge 분류를 넘어 `hardware: custom-device` 신규 카테고리 가능성 시사. | L6 주 / L4 부 |
+| **PicoMQ — 에이전트 대화 스트림용 S3 기반 실시간 스트림 서버 (GeekNews, 10/5)** | 채팅 메시지·디바이스 이벤트·태스크·에이전트 대화를 S3를 내구성 백엔드 스토어로 저장·전달. 일시적 인메모리 메모리와 풀 DB 오버헤드 사이의 중간 경로: 저렴한 내구성 스토리지 + 실시간 전달. **에이전트 대화 전달 전용 S3 기반 스트림 전송 최초 시그널** — `statefulness: session` 점수의 인프라 레이어 재개 가능성에 관련. | L7 주 / L4 부 |
 | **Aleph Alpha Kolibri — 78B MoE Apache 2.0 소버린 유럽 LLM (HN 657점, 10/3)** | 총 78B / 토큰당 활성 3B; 262k 네이티브 / 1M 검증 컨텍스트; 독일어+영어; Apache 2.0. **제한 없는 라이선스를 가진 최초의 소버린 오픈웨이트 유럽 LLM** — EU AI Act·GDPR 데이터 레지던시, 온프레미스 배포, 툴 호출·RAG. | L1 주 |
-| **p-e-w/heretic ⭐33,000 — 방향성 어블레이션으로 LLM 정렬 자동 제거 (10/3)** | 재학습 없이 로컬 트랜스포머 모델 안전 정렬 제거. KL 분기 0.16 달성(수동 1.04 대비). **웨이트 레벨 정렬 제거 자동화 주류화 최초 시그널** — 33k★ 생태계 성숙 확인. AGPL-3.0. | L1 주 |
-| **"하네스가 곧 회사다" — 기업 전략 시그널 (GeekNews, blog.sshh.io)** | 독점적 하네스를 구축하는 기업이 조직 정체성을 하네스 자체에 맞춰 재편한다는 주장 — Ramp·Stripe·DoorDash를 초기 선도 기업으로 명시. **세 번째 하네스 시대 전략 테제** (Tunguz 2026년 6월 이후); 소프트웨어가 아닌 회사 자체를 하네스로 규정한 최초 시그널. | L2 전략 |
+| **p-e-w/heretic ⭐33,000 — 방향성 어블레이션으로 LLM 정렬 자동 제거 (GitHub Trending Python, 10/3)** | 재학습 없이 로컬 트랜스포머 모델 안전 정렬 제거. KL 분기 0.16 달성(수동 1.04 대비). **웨이트 레벨 정렬 제거 자동화 주류화 최초 시그널** — 33k★ 생태계 성숙 확인. AGPL-3.0. | L1 주 |
+| **Niko1221/Strata ⭐10,200 — 소비자 하드웨어에서 125B 파라미터 모델 추론 (HN 345점, 10/4)** | C++ 엔진이 Qwen3.8-Flash-Next (125B)를 단일 소비자 PC의 GPU VRAM·RAM·NVMe SSD에 분산 실행. OpenAI/Anthropic API 호환; 원클릭 Windows/Linux 설치. **125B+ 규모 계층형 메모리 소비자 추론 최초 시그널** — `hardware: local` 추천 상한선이 ~34B에서 125B급으로 확장. | L7 주 |
+| **MCP 9월 28일 엔터프라이즈 릴리스 — Agentic AI Foundation 거버넌스 이정표 (10/4)** | 무상태 라우팅 확정; Okta 엔터프라이즈 관리 인증; MCP Apps·Tasks 공식 확장으로 졸업; 240개 회원사; Anthropic 기여 비율 50% 미만. **Anthropic 다수 이후 첫 번째 MCP 거버넌스 릴리스** — 프로토콜이 스타트업 API가 아닌 Kubernetes처럼 운영됨. 12개월 공식 폐기 정책. | L4 주 |
+| **"하네스가 곧 회사다" — 기업 전략 시그널 (GeekNews, blog.sshh.io, 10/4)** | 독점적 하네스를 구축하는 기업이 조직 정체성을 하네스 자체에 맞춰 재편한다는 주장 — Ramp·Stripe·DoorDash를 초기 선도 기업으로 명시. **세 번째 하네스 시대 전략 테제** (Tunguz 2026년 6월 이후); 소프트웨어가 아닌 회사 자체를 하네스로 규정한 최초 시그널. | L2 전략 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (896개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (899개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+
+---
+
 ## 🔥 지금 가장 뜨거운 것들 (2026-09-27)
 
 | 신호 | 왜 중요한가 | 레벨 |
@@ -163,6 +166,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-10-05 | 3개 문서: "에이전트 코딩의 묵시록 4기사" L2/L5 (GeekNews — 허술함·소외·기술 저하·팀 역학 약화, 에이전트 코딩 조직 규모 실패 모드 최초 시그널; org_fit `min_maturity` 보정 필요); Meta Muse Gadgets L6/L4 (GeekNews — Meta 오픈소스 SDK로 Muse AI를 화면·마이크·버튼·센서에 연결; AI 에이전트용 주요 플랫폼 물리 표면 SDK 최초 시그널; `hardware: custom-device` 카테고리 후보); PicoMQ L7/L4 (GeekNews — S3 기반 에이전트 대화 전달 실시간 스트림 서버 최초 시그널; `statefulness: session` 재개 가능성 인프라에 관련). reference-levels.md: 2026-10-05 디스커버리 로그 추가. 레지스트리: 추가 없음. 50/50 테스트. |
 | 2026-10-03 | 5개 문서: Aleph Alpha Kolibri L1 (HN 657점 — 78B MoE Apache 2.0 소버린 독일어 LLM; 이 규모 비제한 라이선스 유럽 오픈웨이트 LLM 최초 시그널); p-e-w/heretic ⭐33k L1 (GitHub Trending Python — 방향성 어블레이션 + TPE 최적화로 LLM 정렬 자동 제거; AGPL-3.0; 웨이트 레벨 정렬 제거 자동화 최초 시그널); datalab-to/chandra ⭐12.4k L4 (GitHub Trending Python — Chandra 2 레이아웃 보존 OCR → HTML/Markdown/JSON; 90개+ 언어; 필기·표·수식; 독립 L4 문서 인텔리전스 최초 시그널); aliceisjustplaying/claude-paint L6 (HN 352점 — LLM이 Rust Kubelka–Munk 물리 엔진 코드로 유화 생성; 이미지 생성 모델 미사용; 절차적 시뮬레이션 시각 아트 최초 시그널); chatgpt.com/sites L6 (HN 331점 — ChatGPT 대화형 앱 빌더 + 호스팅; `conversational_app_publisher` 두 번째 시그널). 핫 테이블 추가: ledge.sh L6/L4 (GeekNews — 실행 가능한 Markdown MCP 노트북). 📡 `conversational_app_publisher` 2-시그널 규칙 충족 (Claude Artifacts + ChatGPT Sites); 정식 분류 변경 없음 (양쪽 모두 상업용 전용). 레지스트리: 추가 없음. 50/50 테스트. |
 | 2026-10-02 | 5개 문서 (2차 실행): D4Vinci/Scrapling ⭐85,200 L4 (GitHub Trending Python — 네이티브 MCP 서버 포함 적응형 웹 스크래핑, TLS 핑거프린트 위장, Cloudflare Turnstile 우회, DOM 변경 생존 셀렉터; **안티봇 웹 추출+MCP 최초 L4 시그널**); bfl.ai/FLUX.3 Image L1/L4 (HN 109점 — 컴포지셔널 멀티모달 모델, 에이전트 바운딩 박스 레이아웃, 10개 레퍼런스, 네이티브 4K, 로봇 행동; **FLUX.3 최초 시그널**); earendil.com/Pi Durable L2 (HN 187점 — Pi 런타임 퍼스트파티 내구성 실행, 외부 프레임워크 불필요; **에이전트-네이티브 퍼스트파티 내구성 실행 최초 시그널**); llamaindex.ai/Extract v2.5 L2 (10/1 릴리즈 — 전용 문서 추출 에이전트 하네스, 구조적 추론, Cost Effective 87.1→93.9 F1, Agentic 인용 46.8→80.6; **전용 문서 추출 하네스 최초 시그널**); Janus Go GGUF Vulkan L1 (HN 44점 — Vulkan 기반 CUDA-없는 Go 추론; **Vulkan-first Go GGUF 최초 시그널**). reference-levels.md: 10/2 스캔 2→5개 문서 갱신. 레지스트리: 추가 없음. 50/50 테스트. |
 | 2026-10-01 | 5개 문서 (2차 실행): earendil.com/codemode L4/L2 (HN 593점 — 하네스 사이드 신뢰 JS MCP 오케스트레이션 샌드박스; 지연 툴 로딩; 세션 트랜스크립트 상태; **하네스 사이드 신뢰 MCP 실행 샌드박스 최초 시그널**); Cloudflare/clef L1/L4/L7 (HN 1위, 170점 — Apache 2.0 오픈 웨이트 엣지 결정 모델; Clef-flash 38.8ms, 비전 인코더, 64k, Jev 호환; RL 파인튜닝 플랫폼; **`jev_compatible_decision_model` 4번째 크로스-조직 시그널**; 분류 모델용 RL-as-a-service 최초); ifixai-ai/iFixAi ⭐18,254 L5/L4 (GitHub Trending — 에이전트 컴플라이언스 감사, 60검사/25카테고리, EU AI법 매핑, 멀티 판정인; **컴플라이언스 중심 에이전트 감사 최초 시그널**); Figma MCP 화이트리스트 L4/L2 (HN 111점 — 애플리케이션 계층 MCP 클라이언트 신원 화이트리스트, Pi HTTP 403 차단; **MCP 서버 사이드 신원 거버넌스 최초 시그널**; Codemode와 함께 `mcp_trust_governance_gap` 메타 패턴 2-시그널 확인); tile-ai/tilelang ⭐8,039 L7/L1 (GitHub Trending — TVM 기반 GPU/NPU 커널 DSL; CUDA/ROCm/Metal4/Ascend950; DeepSeek V4; **멀티 벤더 ML 추론 커널 DSL 최초 시그널**). reference-levels.md: 2026-10-01 갱신(1→5개 문서); 📡 jev_compatible_decision_model 4번째 시그널(Clef 엣지+비전+오픈웨이트); 📡 mcp_trust_governance_gap 새 메타 패턴(동일날 2-시그널). 레지스트리: 추가 없음. 50/50 테스트. |
