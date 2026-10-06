@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-10-05)
+## 🔥 지금 가장 뜨거운 것들 (2026-10-06)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **"에이전트 코딩의 묵시록 4기사" — 조직 규모 실패 모드 (GeekNews, 10/5)** | 에이전트 코딩 도입으로 발생하는 네 가지 조직 위험 정리: 허술함(AI 코드 검토 없이 병합), 소외(개발자가 자신의 코드베이스와 단절), 기술 저하(주니어 엔지니어의 기초 학습 우회), 팀 역학 약화(페어 프로그래밍·지식 이전 소멸). 에이전트 코딩 고채택 선도 집단인 한국 개발자 커뮤니티 발 시그널. **에이전트 코딩 조직 규모 실패 모드 최초 시그널** — org_fit 점수의 `min_maturity` 보정에 직접 영향. | L2 주 / L5 부 |
-| **Meta Muse Gadgets — AI 에이전트를 커스텀 물리 하드웨어에 연결하는 오픈소스 SDK (GeekNews, 10/5)** | Meta의 오픈소스 SDK가 Muse AI 에이전트를 물리 장치(화면·마이크·버튼·센서)에 연결. 로보틱스나 음성 전용이 아닌 소비자/메이커 하드웨어를 겨냥한 커스텀 에이전트 컨트롤 패널 및 주변 인터페이스 대상. **AI 에이전트용 주요 플랫폼 최초 오픈소스 물리 표면 SDK** — 현행 cloud/local/edge 분류를 넘어 `hardware: custom-device` 신규 카테고리 가능성 시사. | L6 주 / L4 부 |
-| **PicoMQ — 에이전트 대화 스트림용 S3 기반 실시간 스트림 서버 (GeekNews, 10/5)** | 채팅 메시지·디바이스 이벤트·태스크·에이전트 대화를 S3를 내구성 백엔드 스토어로 저장·전달. 일시적 인메모리 메모리와 풀 DB 오버헤드 사이의 중간 경로: 저렴한 내구성 스토리지 + 실시간 전달. **에이전트 대화 전달 전용 S3 기반 스트림 전송 최초 시그널** — `statefulness: session` 점수의 인프라 레이어 재개 가능성에 관련. | L7 주 / L4 부 |
-| **Aleph Alpha Kolibri — 78B MoE Apache 2.0 소버린 유럽 LLM (HN 657점, 10/3)** | 총 78B / 토큰당 활성 3B; 262k 네이티브 / 1M 검증 컨텍스트; 독일어+영어; Apache 2.0. **제한 없는 라이선스를 가진 최초의 소버린 오픈웨이트 유럽 LLM** — EU AI Act·GDPR 데이터 레지던시, 온프레미스 배포, 툴 호출·RAG. | L1 주 |
-| **p-e-w/heretic ⭐33,000 — 방향성 어블레이션으로 LLM 정렬 자동 제거 (GitHub Trending Python, 10/3)** | 재학습 없이 로컬 트랜스포머 모델 안전 정렬 제거. KL 분기 0.16 달성(수동 1.04 대비). **웨이트 레벨 정렬 제거 자동화 주류화 최초 시그널** — 33k★ 생태계 성숙 확인. AGPL-3.0. | L1 주 |
-| **Niko1221/Strata ⭐10,200 — 소비자 하드웨어에서 125B 파라미터 모델 추론 (HN 345점, 10/4)** | C++ 엔진이 Qwen3.8-Flash-Next (125B)를 단일 소비자 PC의 GPU VRAM·RAM·NVMe SSD에 분산 실행. OpenAI/Anthropic API 호환; 원클릭 Windows/Linux 설치. **125B+ 규모 계층형 메모리 소비자 추론 최초 시그널** — `hardware: local` 추천 상한선이 ~34B에서 125B급으로 확장. | L7 주 |
-| **MCP 9월 28일 엔터프라이즈 릴리스 — Agentic AI Foundation 거버넌스 이정표 (10/4)** | 무상태 라우팅 확정; Okta 엔터프라이즈 관리 인증; MCP Apps·Tasks 공식 확장으로 졸업; 240개 회원사; Anthropic 기여 비율 50% 미만. **Anthropic 다수 이후 첫 번째 MCP 거버넌스 릴리스** — 프로토콜이 스타트업 API가 아닌 Kubernetes처럼 운영됨. 12개월 공식 폐기 정책. | L4 주 |
-| **"하네스가 곧 회사다" — 기업 전략 시그널 (GeekNews, blog.sshh.io, 10/4)** | 독점적 하네스를 구축하는 기업이 조직 정체성을 하네스 자체에 맞춰 재편한다는 주장 — Ramp·Stripe·DoorDash를 초기 선도 기업으로 명시. **세 번째 하네스 시대 전략 테제** (Tunguz 2026년 6월 이후); 소프트웨어가 아닌 회사 자체를 하네스로 규정한 최초 시그널. | L2 전략 |
+| **Mistral Large 4 — 1T/49B 활성 MoE, 오픈웨이트 10월 말 출시 (HN 1,022점, 10/6)** | 총 1조 / 활성 49B 파라미터; 멀티모달 네이티브; 입력 $1.36/M·출력 $4.18/M; AutomationBench 59.9%, DeepSWE 61.7%, 취약점 재현 82%. **Reflection Beam과 함께 10월 6일 프론티어급 오픈웨이트 MoE 두-시그널 규칙 충족** — `data_sensitivity: confidential` 조직의 자체 호스팅 거버넌스 트레이드오프를 앞당김. | L1 주 |
+| **Vals.ai Opus 5.5 — 형식 검증 가능한 결과물을 생산하는 멀티에이전트 연구 루프 (HN 448점, 10/6)** | 10개 Opus 5.5 에이전트가 공유 메시지 보드(15시간)에서 실온 자기 반도체 후보를 발견하고 17,895행 Lean 검증 수학 증명을 생성. 형식 검증 수락은 기계 확인 가능. **형식 검증 가능한 학술 기여를 생산한 최초의 멀티에이전트 과학 연구 루프 시그널** — 고자율 `statefulness: persistent` 에이전트 설정에서 `task: research` 세분화 필요성 시사. | L5 주 / L3 부 |
+| **Reflection Beam — 501B/23B 활성 MoE, Apache 2.0, SWE Bench Pro 77.2% (HN 277점, 10/6)** | 501B 총 / 23B 활성 희소 MoE; Apache 2.0 (웨이트 10월 2026); 256K–1M 컨텍스트; MCP Atlas 78.7% — MCP 툴 사용 벤치마크를 도입한 최초의 오픈웨이트 모델. **MCP Atlas에서 벤치마크된 최초의 오픈웨이트 모델** — 웨이트 공개 시 `hardware: self-hosted` 추천 후보로 진입. | L1 주 |
+| **morluto/rea ⭐8,100 — MCP를 통한 에이전트 리버스 엔지니어링 (GitHub Trending, 10/6)** | MIT 라이선스 MCP 서버로 Claude Code/Codex/Cursor를 Hopper/Ghidra/IDA Pro에 라우팅하여 바이너리·Electron·.NET·Android APK·펌웨어 분석 — 로컬 전용, 업로드 없음. 세 단계 모델: Decompile → Understand → Recreate. **최초의 "클로즈드소스 코드 이해 L4 MCP 툴"** — `data_sensitivity: confidential` 조직의 독점·레거시 스택에 적용 가능. | L4 주 / L2 부 |
+| **AI-Native SDLC 플레이북 — 에이전트 코딩 조직 프로세스 재설계 (GeekNews, 10/6)** | 에이전트가 구현할 때 SDLC 병목이 코드 작성에서 기획·검토로 이동한다고 주장. 스펙 기반 워크플로우, 자동화 검토 게이트, 에이전트 간 검토 위임을 명시. **에이전트 코딩 ROI 전제조건으로 조직 프로세스 재설계를 확인하는 세 번째 전략 시그널** — `org_fit.min_maturity` 및 `setup_complexity` 점수에 직접 반영. | L2 / L5 분석 |
+| **Agent Guard ⭐31 — 코딩 에이전트를 위한 로컬 비밀 스캐닝 가드레일 (GeekNews, 10/6)** | 세 겹 방어: Claude Code/Codex 플러그인이 위험한 `.env` 읽기 차단, Git 사전 커밋 훅이 gitleaks 8.30+으로 스테이징 파일 스캔, GitHub Actions CI 스캔. 텔레메트리 없음; macOS + Linux; MIT. **코딩 에이전트 플러그인 레이어의 로컬 자격증명 스캐닝 가드레일 최초 시그널** — `governance_need` 점수에서 아직 다루지 않은 OWASP 비밀 유출 위험 대응. | L2 주 / L4 부 |
+| **DeepSeek/DeepGEMM ⭐8,600 — FP8/MoE/MQA 추론 CUDA 커널 (GitHub Trending, 10/6)** | FP8/FP4/BF16 GEMM, 통신 오버랩 MoE 연산 퓨전, MQA 스코어링. DeepJIT: 런타임 커널 컴파일, 설치 시 CUDA 빌드 불필요. SM90/SM100 + Ascend NPU. **Beam·Mistral Large 4의 MoE 아키텍처를 직접 가속하는 인프라 시그널** — 자체 호스팅 프론티어 MoE 배포에 관련. | L7 주 |
+| **"에이전트 코딩의 묵시록 4기사" — 조직 규모 실패 모드 (GeekNews, 10/5)** | 에이전트 코딩 도입으로 발생하는 네 가지 조직 위험: 허술함, 소외, 기술 저하, 팀 역학 약화. 고채택 선도 집단인 한국 개발자 커뮤니티 발 시그널. **에이전트 코딩 조직 규모 실패 모드 최초 시그널** — `min_maturity` 보정에 직접 영향. | L2 / L5 분석 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (899개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (905개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
