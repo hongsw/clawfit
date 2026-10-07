@@ -1,6 +1,6 @@
 # clawfit
 
-> AI 에이전트 + LLM + 하드웨어 추천 엔진 — **162+ 도구**, **7레이어 생태계 맵**, **754개 리서치워치 문서**, **10차원 스코어링**
+> AI 에이전트 + LLM + 하드웨어 추천 엔진 — **162+ 도구**, **7레이어 생태계 맵**, **911개 리서치워치 문서**, **10차원 스코어링**
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.7%2B-blue)](pyproject.toml)
@@ -61,7 +61,7 @@
 | 지표 | 수치 |
 |------|------|
 | 에코시스템 맵 추적 도구 (7레이어) | **162+** |
-| 리서치워치 신호 문서 | **766개** |
+| 리서치워치 신호 문서 | **911개** |
 | 추천 레지스트리 LLM | **11개** |
 | 추천 레지스트리 에이전트 패턴 | **4개** |
 | 추천 레지스트리 하드웨어 프로필 | **5개** |
@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-10-06)
+## 🔥 지금 가장 뜨거운 것들 (2026-10-07)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **Mistral Large 4 — 1T/49B 활성 MoE, 오픈웨이트 10월 말 출시 (HN 1,022점, 10/6)** | 총 1조 / 활성 49B 파라미터; 멀티모달 네이티브; 입력 $1.36/M·출력 $4.18/M; AutomationBench 59.9%, DeepSWE 61.7%, 취약점 재현 82%. **Reflection Beam과 함께 10월 6일 프론티어급 오픈웨이트 MoE 두-시그널 규칙 충족** — `data_sensitivity: confidential` 조직의 자체 호스팅 거버넌스 트레이드오프를 앞당김. | L1 주 |
-| **Vals.ai Opus 5.5 — 형식 검증 가능한 결과물을 생산하는 멀티에이전트 연구 루프 (HN 448점, 10/6)** | 10개 Opus 5.5 에이전트가 공유 메시지 보드(15시간)에서 실온 자기 반도체 후보를 발견하고 17,895행 Lean 검증 수학 증명을 생성. 형식 검증 수락은 기계 확인 가능. **형식 검증 가능한 학술 기여를 생산한 최초의 멀티에이전트 과학 연구 루프 시그널** — 고자율 `statefulness: persistent` 에이전트 설정에서 `task: research` 세분화 필요성 시사. | L5 주 / L3 부 |
-| **Reflection Beam — 501B/23B 활성 MoE, Apache 2.0, SWE Bench Pro 77.2% (HN 277점, 10/6)** | 501B 총 / 23B 활성 희소 MoE; Apache 2.0 (웨이트 10월 2026); 256K–1M 컨텍스트; MCP Atlas 78.7% — MCP 툴 사용 벤치마크를 도입한 최초의 오픈웨이트 모델. **MCP Atlas에서 벤치마크된 최초의 오픈웨이트 모델** — 웨이트 공개 시 `hardware: self-hosted` 추천 후보로 진입. | L1 주 |
-| **morluto/rea ⭐8,100 — MCP를 통한 에이전트 리버스 엔지니어링 (GitHub Trending, 10/6)** | MIT 라이선스 MCP 서버로 Claude Code/Codex/Cursor를 Hopper/Ghidra/IDA Pro에 라우팅하여 바이너리·Electron·.NET·Android APK·펌웨어 분석 — 로컬 전용, 업로드 없음. 세 단계 모델: Decompile → Understand → Recreate. **최초의 "클로즈드소스 코드 이해 L4 MCP 툴"** — `data_sensitivity: confidential` 조직의 독점·레거시 스택에 적용 가능. | L4 주 / L2 부 |
-| **AI-Native SDLC 플레이북 — 에이전트 코딩 조직 프로세스 재설계 (GeekNews, 10/6)** | 에이전트가 구현할 때 SDLC 병목이 코드 작성에서 기획·검토로 이동한다고 주장. 스펙 기반 워크플로우, 자동화 검토 게이트, 에이전트 간 검토 위임을 명시. **에이전트 코딩 ROI 전제조건으로 조직 프로세스 재설계를 확인하는 세 번째 전략 시그널** — `org_fit.min_maturity` 및 `setup_complexity` 점수에 직접 반영. | L2 / L5 분석 |
-| **Agent Guard ⭐31 — 코딩 에이전트를 위한 로컬 비밀 스캐닝 가드레일 (GeekNews, 10/6)** | 세 겹 방어: Claude Code/Codex 플러그인이 위험한 `.env` 읽기 차단, Git 사전 커밋 훅이 gitleaks 8.30+으로 스테이징 파일 스캔, GitHub Actions CI 스캔. 텔레메트리 없음; macOS + Linux; MIT. **코딩 에이전트 플러그인 레이어의 로컬 자격증명 스캐닝 가드레일 최초 시그널** — `governance_need` 점수에서 아직 다루지 않은 OWASP 비밀 유출 위험 대응. | L2 주 / L4 부 |
-| **DeepSeek/DeepGEMM ⭐8,600 — FP8/MoE/MQA 추론 CUDA 커널 (GitHub Trending, 10/6)** | FP8/FP4/BF16 GEMM, 통신 오버랩 MoE 연산 퓨전, MQA 스코어링. DeepJIT: 런타임 커널 컴파일, 설치 시 CUDA 빌드 불필요. SM90/SM100 + Ascend NPU. **Beam·Mistral Large 4의 MoE 아키텍처를 직접 가속하는 인프라 시그널** — 자체 호스팅 프론티어 MoE 배포에 관련. | L7 주 |
-| **"에이전트 코딩의 묵시록 4기사" — 조직 규모 실패 모드 (GeekNews, 10/5)** | 에이전트 코딩 도입으로 발생하는 네 가지 조직 위험: 허술함, 소외, 기술 저하, 팀 역학 약화. 고채택 선도 집단인 한국 개발자 커뮤니티 발 시그널. **에이전트 코딩 조직 규모 실패 모드 최초 시그널** — `min_maturity` 보정에 직접 영향. | L2 / L5 분석 |
+| **simular-ai/Agent-S ⭐12,550 — 계획+그라운딩 이중 모델 컴퓨터-사용, OSWorld 72.6% (TMLR 2026, 10/7)** | 대형 추론 LLM(계획)과 전문 그라운딩 모델(UI-TARS-72B, 픽셀 수준 동작)로 컴퓨터-사용 문제를 분리. Behavior Best-of-N 샘플링으로 OSWorld 72.6% 달성 — 보고된 인간 수준(~72%) 초과 최초 결과. 윈도우·안드로이드 제로샷 전이. Apache 2.0. **"계획+그라운딩 이중 아키텍처 범용 컴퓨터-사용" 최초 시그널** — 그라운딩 모델 선택이 clawfit 스코어링에서 1등급 변수로 부상. | L6 주 / L7 부 |
+| **Mancode (whitelonng/mancode) ⭐363 — 과잉 엔지니어링 방지 코딩 에이전트 하네스 (GitHub, 10/7)** | 구현 전 6가지 질문 게이트 강제(어떤 문제인가, 기존 코드 재사용 가능한가, 최소 변경은 무엇인가, 새 추상화 불필요한가, 최소 검증 경로는, 알려지지 않은 것은?). 5단계 강도 모드(`solo` → `/manteam`). 세션 간 Continuity 런타임, PII 스크러빙 내장. AGPL-3.0. **"LLM 과잉 엔지니어링을 명시적으로 겨냥한 규율 강제 하네스" 최초 시그널** — 대부분 하네스의 역량 확장 기본값을 역전. | L2 주 / L3 부 |
+| **nlpodyssey/openai-agents-go ⭐273 — Go용 OpenAI Agents SDK 포트, MCP 지원 (GitHub, 10/7)** | Go로 완전한 프리미티브 패리티(에이전트, 핸드오프, 가드레일, 구조화 출력); Anthropic 공식 Go MCP SDK로 MCP 통합; 프로바이더 무관; 오늘 푸시. Python 오버헤드가 제약인 Go 네이티브 배포에서 에이전트 파이프라인 가능. **"MCP 지원 포함 OpenAI Agents SDK의 Go 네이티브 포트" 최초 시그널** — L1 프리미티브 세트가 Go 프로덕션 환경으로 진입 확인. | L1 주 / L4 부 |
+| **Quail (fsdatalab/quail) — SQL+LLM KV-캐시 쿼리 인식 공동 최적화 (GeekNews, 10/7)** | SQL 쿼리 연산자 순서와 LLM KV-캐시 스케줄링을 하나의 최적화 문제로 처리; 튜닝된 vLLM 대비 평균 1.84× 속도 향상(특정 워크로드 최대 14×). "KV 후회" 지표 도입. MIT, 오픈웨이트 전용. **"SQL 쿼리 계획과 LLM 추론 공동 최적화" 최초 시그널** — 배치 중심 코딩 에이전트의 지연/비용 보정에 관련. | L7 주 / L4 부 |
+| **OpenTPU (fesens/OpenTPU) ⭐204 — 커뮤니티 FPGA AI 가속기, Qwen3/LFM2.5 실행 (HN 210점, 10/7)** | 단일 저장소에 전체 스택: RTL(Verilog) + ISA + 시뮬레이터 + 컴파일러 + 프로파일러; Kintex-7 PCIe 카드에서 현대 모델 실행. **"현대 LLM 실행 커뮤니티 풀스택 FPGA AI 가속기" 최초 시그널** — `hardware: local`을 FPGA 영역으로 확장, 에어갭 `data_sensitivity: confidential` 배포에 관련. | L7 주 |
+| **Mistral Large 4 — 1T/49B 활성 MoE, 오픈웨이트 10월 말 출시 (HN 1,022점, 10/6)** | AutomationBench 59.9%, DeepSWE 61.7%, 취약점 재현 82%; 입력 $1.36/M. **Reflection Beam과 함께 2026년 10월 프론티어 오픈웨이트 MoE 두-시그널 규칙 충족** — 웨이트 공개 시 `data_sensitivity: confidential` 조직의 자체 호스팅 거버넌스 트레이드오프를 앞당김. | L1 주 |
+| **Vals.ai Opus 5.5 — 형식 검증 결과물을 생산하는 멀티에이전트 연구 루프 (HN 448점, 10/6)** | 10개 Opus 5.5 에이전트가 공유 메시지 보드(15시간)에서 실온 자기 반도체 후보 발견 + 17,895행 Lean 수락 증명 생성. **기계 확인 가능한 형식 검증 결과를 생산한 최초 멀티에이전트 과학 연구 루프** — 고자율 영속 배포에서 `task: research` 세분화 필요성 시사. | L5 주 / L3 부 |
+| **morluto/rea ⭐8,100 — MCP를 통한 에이전트 리버스 엔지니어링 (GitHub Trending, 10/6)** | Claude Code/Codex/Cursor를 Hopper/Ghidra/IDA Pro에 라우팅; 로컬 전용, 업로드 없음; Decompile→Understand→Recreate 파이프라인. **최초의 클로즈드소스 이해 L4 MCP 툴** — `data_sensitivity: confidential` 조직의 독점·레거시 스택에 적용 가능. | L4 주 / L2 부 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (905개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (911개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -166,6 +166,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-10-07 | 5개 문서 (2회 실행): Agent S ⭐12.5k L6 (TMLR 2026 — 계획+그라운딩 이중 모델 컴퓨터-사용, OSWorld 72.6% 인간 수준 초과, Apache 2.0; 최초 이중 아키텍처 컴퓨터-사용 시그널); Mancode L2/L3 (GitHub — 6질문 사전 게이트 과잉 엔지니어링 방지 하네스, 5단계 강도 모드, AGPL-3.0; 규율 강제 하네스 최초 시그널); openai-agents-go L1/L4 (GitHub — OpenAI Agents SDK Go 포트, 공식 Go MCP SDK 통합, 오늘 푸시; Go 네이티브 OpenAI 에이전트 포트 최초 시그널); Quail L7/L4 (GeekNews — SQL+LLM KV-캐시 공동 최적화, vLLM 대비 1.84× 속도 향상, MIT); OpenTPU ⭐204 L7 (HN 210점 — 커뮤니티 풀스택 FPGA AI 가속기, Kintex-7에서 Qwen3/LFM2.5 실행; 최초 FPGA 스택 시그널). reference-levels.md: 2026-10-07 항목 2→5 시그널로 업데이트. 정식 분류 변경 없음. 레지스트리: 추가 없음. 50/50 테스트. |
 | 2026-10-05 | 3개 문서: "에이전트 코딩의 묵시록 4기사" L2/L5 (GeekNews — 허술함·소외·기술 저하·팀 역학 약화, 에이전트 코딩 조직 규모 실패 모드 최초 시그널; org_fit `min_maturity` 보정 필요); Meta Muse Gadgets L6/L4 (GeekNews — Meta 오픈소스 SDK로 Muse AI를 화면·마이크·버튼·센서에 연결; AI 에이전트용 주요 플랫폼 물리 표면 SDK 최초 시그널; `hardware: custom-device` 카테고리 후보); PicoMQ L7/L4 (GeekNews — S3 기반 에이전트 대화 전달 실시간 스트림 서버 최초 시그널; `statefulness: session` 재개 가능성 인프라에 관련). reference-levels.md: 2026-10-05 디스커버리 로그 추가. 레지스트리: 추가 없음. 50/50 테스트. |
 | 2026-10-03 | 5개 문서: Aleph Alpha Kolibri L1 (HN 657점 — 78B MoE Apache 2.0 소버린 독일어 LLM; 이 규모 비제한 라이선스 유럽 오픈웨이트 LLM 최초 시그널); p-e-w/heretic ⭐33k L1 (GitHub Trending Python — 방향성 어블레이션 + TPE 최적화로 LLM 정렬 자동 제거; AGPL-3.0; 웨이트 레벨 정렬 제거 자동화 최초 시그널); datalab-to/chandra ⭐12.4k L4 (GitHub Trending Python — Chandra 2 레이아웃 보존 OCR → HTML/Markdown/JSON; 90개+ 언어; 필기·표·수식; 독립 L4 문서 인텔리전스 최초 시그널); aliceisjustplaying/claude-paint L6 (HN 352점 — LLM이 Rust Kubelka–Munk 물리 엔진 코드로 유화 생성; 이미지 생성 모델 미사용; 절차적 시뮬레이션 시각 아트 최초 시그널); chatgpt.com/sites L6 (HN 331점 — ChatGPT 대화형 앱 빌더 + 호스팅; `conversational_app_publisher` 두 번째 시그널). 핫 테이블 추가: ledge.sh L6/L4 (GeekNews — 실행 가능한 Markdown MCP 노트북). 📡 `conversational_app_publisher` 2-시그널 규칙 충족 (Claude Artifacts + ChatGPT Sites); 정식 분류 변경 없음 (양쪽 모두 상업용 전용). 레지스트리: 추가 없음. 50/50 테스트. |
 | 2026-10-02 | 5개 문서 (2차 실행): D4Vinci/Scrapling ⭐85,200 L4 (GitHub Trending Python — 네이티브 MCP 서버 포함 적응형 웹 스크래핑, TLS 핑거프린트 위장, Cloudflare Turnstile 우회, DOM 변경 생존 셀렉터; **안티봇 웹 추출+MCP 최초 L4 시그널**); bfl.ai/FLUX.3 Image L1/L4 (HN 109점 — 컴포지셔널 멀티모달 모델, 에이전트 바운딩 박스 레이아웃, 10개 레퍼런스, 네이티브 4K, 로봇 행동; **FLUX.3 최초 시그널**); earendil.com/Pi Durable L2 (HN 187점 — Pi 런타임 퍼스트파티 내구성 실행, 외부 프레임워크 불필요; **에이전트-네이티브 퍼스트파티 내구성 실행 최초 시그널**); llamaindex.ai/Extract v2.5 L2 (10/1 릴리즈 — 전용 문서 추출 에이전트 하네스, 구조적 추론, Cost Effective 87.1→93.9 F1, Agentic 인용 46.8→80.6; **전용 문서 추출 하네스 최초 시그널**); Janus Go GGUF Vulkan L1 (HN 44점 — Vulkan 기반 CUDA-없는 Go 추론; **Vulkan-first Go GGUF 최초 시그널**). reference-levels.md: 10/2 스캔 2→5개 문서 갱신. 레지스트리: 추가 없음. 50/50 테스트. |
