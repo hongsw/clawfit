@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-10-12)
+## 🔥 지금 가장 뜨거운 것들 (2026-10-13)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **Sakana AI + UC Berkeley MASS — 다중 에이전트 자기지도를 통한 동질적 재귀 자기개선 (HN 프론트페이지, 10/12)** | 단일 LLM이 동시에 태스크 해결사, 워크플로 최적화기, 평가자로 작동. 내부 루프: 워크플로 탐색(가중치 고정). 외부 루프: LoRA로 최고 경로 증류. Qwen3.6-27B 승률 53.9→69.9%. 연구 벤치마크 향상(1.2–1.6× 토큰 효율), SWE-bench는 변화 없음(~0.95×). 안전 경고: RSI 세대를 거치며 공유 모델 맹점이 증폭. **L5에서 다중 에이전트 조정 + LoRA 증류를 통한 동질적 RSI 최초 시그널** — 벤치마크 분기(연구 ↑, 코딩 ↔)가 clawfit `primary_task` 축과 직접 매핑. | L5 주 |
-| **Uber MCP 게이트웨이 — 프로덕션에서 800+ MCP 서버, 5,000+ 툴 (GeekNews, 10/12)** | Uber Engineering의 프로덕션 MCP 게이트웨이: 컨트롤 플레인(MCP 레지스트리) + 데이터 플레인(프록시 게이트웨이) 분리. AutoCrawler(Cadence 워크플로)가 Uber IDL 레지스트리에서 API 자동 탐색. 기본값 비활성화 툴 활성화(승인 + 롤백). Muttley 서비스 메시 사이드카를 통한 PII 처리 및 권한 관리. **`enterprise-mcp-control-plane` 패턴 최초 시그널** — 정책 기반 자동 탐색을 포함한 컨트롤/데이터 플레인 분리. 공개된 최대 규모 프로덕션 MCP 배포. | L4 주 / L2 부 |
-| **"코딩 에이전트는 왜 이렇게 멍청할까?" — 오케스트레이션 계층에 대한 실무자 비판 (GeekNews 프론트페이지, 10/12)** | 모델이 아닌 오케스트레이션 및 계획 계층이 병목. 특정 실패 모드: 병렬화 가능 태스크의 순차 실행, 서브모델 위임 없음, 에이전트 자기인식 부재, 비구조적 계획, AFK 차단, 권고 수준 보안. "꿈의 에이전트" 사양: 서브태스크당 멀티모델 라우팅, 실제 OS 샌드박싱, 할당량 인식 모델 선택. **최초 실무자 수준 "에이전트 계층 병목" 시그널.** | L2/L3 담론 |
-| **dzhng/jevgrep ⭐2,600 — Jev 결정 모델을 통한 시맨틱 코드 검색 (GeekNews, 10/12)** | `jg "인증은 어디서 검사하지?"` — 패턴 매칭 대신 행동 설명으로 관련 파일, 읽기 단서, 소스 발췌문 반환. Jev를 폴더/파일/선언 전반의 관련성 판단기로 사용. CLI 우선, 에이전트 호출 가능. MIT. **`decision-model-backed code navigation` 최초 시그널** — "모든 것을 로딩하지 않으면 관련 파일을 찾지 못하는" 에이전트 실패 모드를 직접 해결. | L4 주 |
-| **PartsPlan — AI가 제조사 데이터시트를 근거로 답하게 하는 MCP 서버 (GeekNews Show GN, 10/12)** | 모든 답변이 출처인 데이터시트 페이지를 인용(IC, 센서, 모듈, 커넥터 도메인). 표준 MCP 프로토콜로 Claude Code/Cursor에 플러그인. **clawfit 필터에서 "전문 도메인 `primary_task` 누락" 세 번째 시그널** — iOS/SwiftUI(10/10), CAD(7/22)에 이어. 전문 기술 분야별 도메인 특화 MCP 서버 패턴 축적 중. | L4 주 |
-| **vercel/eve ⭐~3,500+ — Vercel의 파일시스템 우선 내구성 에이전트 프레임워크 (GeekNews / New Stack, 10/11)** | "에이전트를 위한 Next.js": 에이전트 = 디렉토리. Vercel Workflows 체크포인트. 휴먼-인-더-루프 게이트 + Vercel Sandbox + MCP 내장. Apache 2.0. **주요 프론트엔드 플랫폼 최초 "파일시스템 우선 컨벤션 기반 내구성 에이전트 프레임워크" 시그널.** | L1 주 / L2 공동 주 |
-| **repowise-dev/repowise ⭐7,514 — MCP 네이티브 코드베이스 콜 그래프 인텔리전스 (GitHub Trending Python, 10/11)** | 26개 언어 콜 그래프, 죽은 코드 감지, 변경 위험 점수, ADR + 커밋 + 에이전트 트랜스크립트 아키텍처 결정 캡처. django/django에서 31.6% 토큰 감소. **L4에서 "MCP 네이티브 코드베이스 콜 그래프 인텔리전스" 최초 시그널.** | L4 주 / L5 부 |
-| **headroomlabs-ai/headroom ⭐74,819 — LLM 에이전트용 콘텐츠 유형 인식 컨텍스트 압축 (GitHub Trending Python, 10/9)** | ContentRouter로 JSON/코드/산문을 전문 압축기에 라우팅. CacheAligner, 가역 CCR 캐시. 코드 변경 불필요한 MCP 서버 + 프록시 모드. **L4에서 구조적 콘텐츠 유형 인식 컨텍스트 압축 최초 시그널.** | L4 주 / L5 부 |
+| **GLM-Legal — Zhipu AI의 법률 도메인 특화 LLM (HN 655pt, 10/13)** | 판례, 법령, 계약서, 규제 문서로 파인튜닝. Harvey AI(법률 에이전트 제품) 및 GLM-5.x 범용 릴리스와 구별됨. **org_questions.json의 "전문 도메인 `primary_task` 누락" 세 번째 시그널** — 세 가지 독립 시그널(법률, 모바일 개발, 산업 하드웨어)로 `legal` 태스크 유형 확인됨. | L1 주 |
+| **"AI는 도구이고 잘 사용하려면 기술이 필요하다" — 사용자 AI 리터러시 병목 시그널 (HN 586pt, 10/13)** | 10/12 mtlynch의 엔지니어링 계층 비판을 보완하는 사용자 측 시각. AI 숙련도는 도구 접근성과 무관한 학습된 도메인 특화 기술. 고리터러시 사용자는 복합적 생산성 향상, 저리터러시 사용자는 AI 의존 증가 시 품질 저하. **"AI 도구 효과성 격차" 두 번째 담론 시그널** — `setup_complexity`와 더불어 미모델링 추천 축 `user_ai_proficiency` 필요성 시사. | L3/L6 담론 |
+| **Codex CLI 영구 백그라운드 데몬 — 거버넌스 시그널 (HN 424pt, 10/13)** | OpenAI Codex CLI가 명시적 동의 없이 기본 설치 시 자기 업데이트 백그라운드 데몬 설치. 개발자 커뮤니티에서 `--no-daemon` 플래그 및 투명한 설치 문서 요구. **"명시적 동의 없는 에이전트 코딩 도구 백그라운드 데몬" 최초 시그널** — `governance_need: hard` 프로파일에 직접적 영향; 코딩 에이전트의 OS 레벨 서비스 설치가 신뢰·감사 가능성 문제로 부상. | L2 주 |
+| **Intel Crescent Island — 480GB LPDDR5X AI 가속기 (HN 293pt, 10/13)** | 32개 Xe3P 코어, 256개 XMX 엔진, 350W 공냉, PCIe Gen5. HBM 대신 LPDDR5X 선택 — 최대 메모리 용량 우선, 최대 대역폭 우선 아님. 참조 카드 160GB, 보드 파트너는 최대 480GB 구성 가능. H2 2026 고객 샘플링; 연산 벤치마크 미공개. **추적 기록 최초 "Intel 이산형 AI GPU" 시그널** — 성능/와트 검증 시 NVIDIA 없이 `governance_need: hard` 온프레미스 배포 새 비용 티어 가능성. | L7 주 |
+| **Character.ai 챕터 11 — 소비자 AI 챗봇 시장 생존력 시그널 (HN 180pt, 10/13)** | 10월 12일 신청. Disney가 IP 라이선스에 2천만 달러 스토킹호스 입찰. 2024년 구글 27억 달러 딜에도 불구, 자산·부채 각 5천만~1억 달러. 청소년 안전 소송과 높은 서버 비용이 공동 원인. **"하이퍼스케일러 딜 이후 소비자 AI 챗봇 경제적 실패" 최초 시그널** — "AI 페르소나 IP"가 회수 가능 자산으로 부상; 소비자 대면 AI 안전 책임이 clawfit 미반영 거버넌스 차원으로 확인. | L6 주 |
+| **Apple Distributed MLX/RDMA Thunderbolt 5 — 로컬 클러스터 추론 시그널 (HN 178pt, 10/13)** | macOS 26.2 RDMA over Thunderbolt 5, JACCL 집합 통신 라이브러리. 4× M3 Ultra 데모 → 최대 768GB 통합 메모리로 400B+ 모델 추론. 레이턴시는 NVLink보다 높으나 추론 태스크에 적합. **"Apple Silicon 로컬 추론 기판" 두 번째 시그널** (oMLX 2026-08 이후) — 기존 Mac 기반 `governance_need: hard` + `network: offline` 배포에 새 GPU 없이 대형 모델 운용 가능. | L7 주 / L1 부 |
+| **baidu/Unlimited-OCR ⭐27,278 — 원샷 멀티페이지 문서 파싱 (GitHub Trending Python, 10/13)** | 3B 파라미터 MoE, R-SWA로 문서 길이와 무관하게 고정 메모리 사용. vLLM + SGLang 배포, MIT 라이선스. 청크 분할 OCR 파이프라인이 잃는 페이지 간 구조(표, 수식) 보존. **L4에서 "원샷 장기 문서 파싱을 에이전트 그라운딩 역량으로" 최초 시그널** — 컨텍스트 윈도우 채워지기 전 문서 그라운딩 실패 모드 해결. | L4 주 |
+| **Sakana AI + UC Berkeley MASS — 동질적 RSI (HN 프론트페이지, 10/12)** | 단일 LLM이 해결사·최적화기·평가자로 동시 작동. LoRA 증류. Qwen3.6-27B 승률 53.9→69.9%. 연구 벤치마크 향상, SWE-bench 변화 없음. **L5 동질적 RSI 최초 시그널** — 벤치마크 분기가 clawfit `primary_task` 축과 매핑. | L5 주 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (933개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (941개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
