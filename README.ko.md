@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-10-17)
+## 🔥 지금 가장 뜨거운 것들 (2026-10-18)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **Atlassian MCP — 220개 이상의 툴, 계층형 접근 모델, 25% 토큰 절감 (Atlassian Team26 Europe, 10/6 2026)** | Jira, Confluence, Bitbucket Cloud, Loom, Goals, Focus Areas를 커버하는 재구축 엔터프라이즈 MCP 서버. 읽기/쓰기/파괴적 작업 3계층 — 파괴적 작업은 에이전트 확인 필요. 이전 버전 대비 최대 25% 토큰 절감(내부 Claude 벤치마크). 커스텀 MCP 툴 빌드를 위한 Forge 확장 메커니즘. OAuth 2.1 + PKCE. **"대규모 엔터프라이즈 MCP 서버에 계층형 쓰기 접근 거버넌스가 내장"된 최초 시그널.** | L4 주 / L3 부 |
-| **DeepSeek V4.1-Flash-1017 — 일일 드롭에서 Terminal-Bench +36%, ProgramBench +43% (HuggingFace, 10/17 2026)** | "소규모 업데이트"라고 표현된 날짜 접미사 체크포인트가 에이전트 벤치마크에서 역량 티어 수준의 점프: Terminal-Bench 31.2→42.3, ProgramBench 20.3→29.1, Automation-Bench 54.8→60.5. 763B 파라미터, 1M 컨텍스트, MIT 라이선스. 아직 제공 인프라 없음. **LLM 데이터 유효 기간이 30일 이하로 단축되는 "일일 드롭 모델 명명 패턴" 최초 시그널.** | L1 주 / L7 부 |
-| **Neuralwatt — 프롬프트 캐시 효율의 독립 변수는 하네스 (HN 프론트페이지, 10/17 2026)** | 539개 세션 프로덕션 분석: 65개의 캐시 깨짐이 모두 하네스에서 발생(모델 아님). 오픈소스 클라이언트 간 캐시 적중률: 1.6%–11.1%. 구체적 버그 지목: OpenCode 1.x 플랜 모드 리마인더, omp 프루닝, MCP 서버 삽입 위치, 추론 플래그 변경. 캐시 적중률 10% 미만 시 약 2배 에너지 소비. **12일 내 세 번째 하네스 경제성 시그널** (Four Horsemen 장애 패턴, Martin Fowler 비용 교차점, Neuralwatt 에너지 풋프린트). | L2 주 / L7 부 |
-| **Claude Code 팀 REVIEW.md — PR 2배, 리버트 −40%, 평균 리뷰 라운드 2.08→1.32 (claude.dev, 10/17 2026)** | Claude Code 팀 코드의 90%를 Claude Code가 작성; CLAUDE.md(작성자 측)와 별도의 리뷰어 측 설정 파일 REVIEW.md 도입; 작성자 신원이 아닌 diff로 결정되는 위험 계층 분류기(Low/Medium/High); 과거 인시던트 기반 eval 세트. 정량 결과: 리뷰 커버리지 16%→54%, 5라운드 이상 비율 8.9%→1.5%. **리뷰어 측 하네스 설정 프리미티브로서 REVIEW.md 최초 시그널.** | L3 주 / L2 부 |
-| **Radware MCP Server Protection — MCP 공격 표면용 상용 보안 제품 (Radware, 10/14 2026)** | MCP 서버를 겨냥한 최초의 상용 네트워크 보안 제품. 대상: 인증 공격, DoS, 에이전트 활동 이상 모니터링. 퍼블릭/프라이빗 클라우드, Kubernetes, 하드웨어 데이터센터 지원. 맥락: MCP 서버 약 20만 개 노출, OWASP MCP Top 10 발행됨. **"상용 MCP 서버 방어"가 독립적인 제품 카테고리로 형성되는 최초 시그널.** | L4 주 / L3 부 |
-| **google/artemis ⭐12,021 — 네이티브 MCP 서버를 가진 Android 자동화 에이전트 (GitHub Trending Python, 10/16)** | MCP 지원 에이전트가 커스텀 통합 없이 Android 기기를 호출 가능. Flash(3–5초/단계)와 Pro(Planner/Operator/Checker, 15–40초/단계) 두 실행 프로필. 벤더 주장 AndroidWorld 99%+ (미검증). **"Android 자동화를 L4c MCP 호출 가능 에이전트 기능"으로 분류하는 최초 시그널.** | L4c 주 |
-| **Postgres 19 지연: AI 코드 리뷰가 품질 기준을 일정 내 통과 불가 수준으로 높임 (HN 85점, 10/16)** | 사이클당 ~40건 결함 보고서; 8–10개 기능 리버트; 릴리즈 11월로 연기. EDB 커미터 Peter Eisentraut 기록상 언급. **"AI 코드 리뷰가 메이저 OSS 릴리즈 거버넌스를 게이팅 수준에서 변경"하는 최초 시그널.** 오늘의 REVIEW.md 시그널과 함께: 두 독립 조직이 AI 리뷰로 프로덕션 품질을 게이팅하는 두 번째 시그널. | L2/L5 담론 |
-| **xerj-org/xerj ⭐7,599 — Elasticsearch 호환 AI 에이전트 툴 탐색 엔진 (GitHub Trending, 10/16)** | Rust 기반 툴 레지스트리·기능 엔드포인트용 인덱스. 자동 인덱싱으로 수동 매니페스트 모델 역전. LLM 의존성 없는 순수 인덱스 인프라. **L4c에서 "동적 에이전트 툴 탐색 인프라" 최초 시그널.** | L4c 주 |
+| **OpenCode 자격증명 유출 — 대규모 AI 코딩 에이전트 플랫폼 최초 보안 사고 (HN 699점, 10/18 2026)** | OpenCode(⭐215k) 사용자 자격증명 유출 공개 — 클라우드 인프라 침해, 모델 오류 아님. 5일 내 세 번째 코딩 에이전트 거버넌스 이벤트(Codex 데몬 동의 10/13, Radware MCP 공격 벡터 10/17, OpenCode 침해 오늘). **클라우드 호스팅 코딩 에이전트 플랫폼에 `platform_trust_risk` 어노테이션 후보로 3-시그널 규칙 충족.** `governance_need: hard` 프로필에서 자체 호스팅 대안(Goose, Aider, Roo Code) 상대적 우위 강화. | L2 주 / L3 부 |
+| **DeepSeek Search & Fetch API — 자사 LLM 제공자 검색+페치 그라운딩 $0.75/1000 (HN 443점, 10/18 2026)** | DeepSeek API 내 검색+페치 가용: `POST /v1/tools/search` + `/fetch`, 동일 자격증명·청구 체계. Claude Code와 Codex가 서버 측에서 이미 사용 중 (11/1 2026까지 무료). UI 스니펫 + 모델 요약 이중 설계. 권위 티어 + 재랭킹 점수 제공. **"LLM 제공자 네이티브 검색+페치 그라운딩 API" 최초 시그널.** `network: online` + `research` 태스크 추천에서 마찰 간격 축소. | L4 주 / L1 부 |
+| **Linux 7.2 LLM 패치 통계 — AI 지원 커밋 1,111건(7%), Sashiko 820건 크레딧 (LWN, 10/18 2026)** | LWN 개발 통계: AI Assisted-by 태그 7%(7.1 대비 3배 증가). Google Sashiko AI 리뷰어 252건 크레딧; 820건 추가 언급. Fixes-tag 급증. LWN이 패치 유지관리 품질 우려 제기. **3일 내 세 번째 메이저 오픈소스 거버넌스 시그널** (Postgres 19 10/16, claude.dev REVIEW.md 10/17, Linux 7.2 오늘). 토르발스 LKML: "Linux는 반AI 프로젝트가 아님; 싫으면 포크하거나 떠나라." | L5 주 / L3 부 |
+| **ahujasid/mcp-for-blender ⭐31,541 — 3D 크리에이티브 소프트웨어를 MCP 호출 가능 에이전트 기능으로 (GitHub Trending Python, 10/18 2026)** | MCP LLM이 소켓 브리지로 Blender 3D 완전 제어. `execute_blender_code` + `look` 포함 9개 MCP 툴 — `look`은 모델이 뷰포트를 렌더링하고 자신의 결과를 시각적으로 검증하는 최초 자기 검증 루프. 선택적 안전 모드. **"3D/DCC 소프트웨어를 MCP 에이전트 기능으로" 최초 시그널.** org_questions.json `primary_task: 3d-creative` 후보. | L4 주 / L6 부 |
+| **Sphinx (Show HN, 217점) — 푸시 전 AI 코드 퀴즈를 작성자 측 거버넌스 프리미티브로 (10/18 2026)** | Git 훅이 푸시 전 일시 정지: 새 리뷰어 모델이 diff만 읽고 동작 시나리오 질문을 출제. 오답이면 푸시 차단, 모든 `sphinx yolo` 우회는 로그로 기록. Codex·Claude Code·Cursor·OpenCode·Pi 지원. **독립적으로 구현된 병렬 구현 3개 확인.** REVIEW.md(10/17)의 리뷰어 측 대응으로 **"푸시 전 AI 코드 이해도 퀴즈" 최초 시그널.** | L3 주 / L2 부 |
+| **ASPIRE (NVlabs) ⭐537 — 진화적 탐색을 통한 자율 에이전트 스킬 발견 (GitHub Trending Python, 10/18 2026)** | NVIDIA+UT Austin+UIUC+UCB+CMU: 생성→실행→검증→저장 루프로 로봇 제어 스킬을 자율 발견하는 지속 학습 시스템. 정적 라이브러리가 아닌 에이전트가 스스로 카탈로그 구축. LIBERO-Pro 이전 SOTA 대비 +77%. **Sakana MASS(10/12)와 함께 "에이전트가 루프를 통해 새 역량 발견" 두 번째 시그널** — 로보틱스·리서치 두 도메인에서 같은 아키텍처 패턴 확인. | L4 주 / L5 부 |
+| **GNOME 개발자 하드웨어 리버스 엔지니어링 — Claude Code로 Linux 스캐너 드라이버 개발 (GeekNews, 10/18 2026)** | GNOME 기여자가 Claude Code로 USB 프로토콜을 하드웨어 트레이스에서 디코딩, 작동하는 Linux 스캐너 드라이버 + 카메라 화질 개선 완성. Linux 드라이버 커뮤니티의 첫 번째 하드웨어 RE 시그널. 전문 도메인 `primary_task` 공백 네 번째 확인(legal 10/13, scientific-research 10/15, mobile-dev 10/10, 하드웨어 RE 오늘). | L4 주 / L2 부 |
+| **Neuralwatt — 프롬프트 캐시 효율의 독립 변수는 하네스 (HN 프론트페이지, 10/17 2026)** | 539개 세션 프로덕션 분석: 65개 캐시 깨짐 전부 하네스에서 발생. 오픈소스 클라이언트 간 캐시 적중률: 1.6%–11.1%. 구체적 버그 지목: OpenCode 1.x 플랜 모드, omp 프루닝, MCP 서버 삽입 위치. 캐시 적중률 10% 미만 시 ~2배 에너지 소비. **12일 내 세 번째 하네스 경제성 시그널.** | L2 주 / L7 부 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (965개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (972개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
