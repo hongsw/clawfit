@@ -109,6 +109,44 @@
     }
   },
   {
+    "id": "gemini_cli",
+    "name": "Gemini CLI",
+    "category": "coding_cli_agent",
+    "level": 1,
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "url": "https://github.com/google-gemini/gemini-cli",
+    "source_type": "github",
+    "comparison_priority": "core",
+    "notes": "Google's official open-source terminal coding agent. 108k+ stars, Gemini 3 models, 1M context window, native Google Search grounding, MCP support, conversation checkpointing, GitHub Actions integration. Free tier: 1,000 req/day.",
+    "org_fit": {
+      "min_maturity": 2,
+      "max_maturity": 7,
+      "optimal_maturity": 4,
+      "features": [
+        "mcp",
+        "search-grounding"
+      ],
+      "pricing_tier": "freemium",
+      "tasks": [
+        "code-gen",
+        "research",
+        "qa"
+      ],
+      "roles": [
+        "developer"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
+      "latency": "medium"
+    }
+  },
+  {
     "id": "opencode",
     "name": "OpenCode",
     "category": "open_source_coding_agent",
