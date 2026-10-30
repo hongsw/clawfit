@@ -99,19 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-10-24)
+## 🔥 지금 가장 뜨거운 것들 (2026-10-30)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **Google Agent Compute Engine — AI 에이전트 전용 마이크로VM 샌드박스 (Google Cloud, 10/22 2026)** | 하네스(모델 호출 루프)와 샌드박스(하드웨어 격리 마이크로VM 내 툴 실행)를 구조적으로 분리. 게스트에 자격 증명 없음; virtio-vsock → SPIFFE 기반 자격 증명 주입 게이트웨이; DAX+CoW 스냅샷 복제로 고밀도 멀티에이전트 지원. **클라우드 AI 에이전트 전용 샌드박스 기판 최초 시그널** — 레이블만 붙인 VM과 다름. `task: code-gen`·`security-audit` 프로파일용 샌드박싱 격리 축 후보. | L7/L5 주 |
-| **Kimi K3.1 Pro — Moonshot AI 포스트 트레이닝 업데이트 (Moonshot AI Blog, 10/24 2026)** | K3 포스트 트레이닝 버전; 내부 벤치마크 기준 클레임 수준 환각률 23.4%→8.3%. 코딩 벤치마크 55.95%→61.2%. Highspeed 변형 2–3× 속도. **추적 코퍼스 중 단일 버전 최대 환각 감소.** 11월 4일 오픈 웨이트 예정; 가격 미공개로 레지스트리 보류. | L1 주 |
-| **makecindy/cindy ⭐4k — 멀티하네스 에이전트 클라이언트 (GitHub Trending, 10/24 2026)** | 작업 중 Claude Code↔Codex 전환 시 메모리·스킬·MCP 통합을 하네스 경계 너머로 유지. 데스크톱 Electron + 모바일 Expo/React Native, 사용자 계정만 사용, 별도 계정 불필요. **최초 "상태 유지 하네스 전환" 클라이언트 패턴.** clawfit 추천 단위가 프로젝트에서 태스크로 이동해야 함을 시사. | L2/L6 주 |
-| **Dessa — Block 풀 듀플렉스 음성 모델 (HN, 10/24 2026)** | 턴 방식이 아닌 동시 수신·발화가 가능한 최초 공개 모델. 개발사는 Block(Square/Cash App). **대화형 음성 에이전트의 핵심 누락 기본형** — 턴 기반 음성의 끼어들기 레이턴시 해결. 프론티어 LLM 랩 외부에서 음성 에이전트 인프라가 성숙하고 있음을 시사. | L6 주 |
-| **Corgi — 에이전트 터미널 멀티플렉서 (HN 프론트페이지, 10/24 2026)** | 복수 AI 코딩 에이전트(Claude Code·Codex·Pi·OpenCode)를 per-에이전트 상태 마커·diff 뷰·`top` 스타일 토큰 사용 추적과 함께 다중화·감독. `corgi --skill`로 에이전트가 Corgi 자체를 조작하도록 학습. **신규 "에이전트 슈퍼바이저" 하네스 레이어** — 원시 터미널과 GUI 오케스트레이션 프레임워크 사이. | L3 주 |
-| **Claude Duet — Anthropic 페어 프로그래밍 제품 (HN, 10/22 2026)** | Anthropic의 새로운 공동 저작 제품으로, Claude를 일회성 응답자가 아닌 지속적 세션 파트너로 포지셔닝. "채팅 보조자"와 "완전 자율 에이전트" 사이의 새로운 상호작용 모델 정립. **레이턴시와 상호작용성이 반자율 코딩 클래스의 주요 스코어링 차원.** | L1 주 |
-| **OpenAI Patch the Planet — 인프라 규모 에이전틱 취약점 공개 (HN, 10/22 2026)** | OpenAI가 인터넷 전체 라이브 인프라에서 취약점을 자율 발견·공개하는 조율된 멀티에이전트 시스템을 배포. 인간-AI 핸드오프 설계 내장. **인터넷 규모 적대적 에이전트 최초 프로덕션 배포.** `task: security-audit`의 평가 벤치마크가 운영 인프라가 됨. | L5 주 |
+| **Claude Code VS Code 확장 백도어 — Cursor 마켓플레이스 공급망 공격 (phorion.io, 10/30 2026)** | 백도어가 심어진 v2.1.313이 역방향 SSH 터널 설치 + `~/.ssh/authorized_keys` 공격자 키 삽입 + LaunchAgent 지속성 설치. 확장 제거해도 백도어 잔존. **AI 코딩 에이전트 배포 채널 대상 7주 내 세 번째 공급망 공격** (rubyhack 9/12, ZCode 9/19). 에이전트 확장 배포 채널 보안 컴패니언 축 노트 후보. | L2/L3 주 |
+| **Gemini 4 Carbon — AAII v5 1위, 환각률 상승 (Artificial Analysis, 10/30 2026)** | AAII v5 점수 59 (Argon 대비 +9), $4/$20 표준 가격 50% 론치 할인, 한정 출시. **핵심 역설: 환각률 4%→11% 증가**, 정확도는 48%→58% 향상. **벤치마크 순위와 사실 신뢰성이 반대 방향으로 갈라지는 첫 프론티어 모델.** 코딩 에이전트 2위. 공개 API 미출시로 레지스트리 보류. | L1 주 |
+| **lightpanda-io/browser ⭐38k — AI 네이티브 헤드리스 브라우저 + MCP 서버 (GitHub Trending, 10/30 2026)** | Zig로 작성된 헤드리스 브라우저(Chromium 포크 아님); 네이티브 MCP 서버로 클라이언트마다 격리된 브라우징 세션 제공; 자연어·슬래시 명령 구동 에이전트 모드. CDP/Playwright/Puppeteer 호환. 벤더 주장: Chromium 대비 16× 경량·9× 고속. AGPL-3.0. **"AI 네이티브 헤드리스 브라우저를 MCP 호출 가능 캐퍼빌리티로" 첫 독립 시그널.** | L4/L7 주 |
+| **JetBrains/thinkrail ⭐6.5k — pi 에이전트·SPEC.md 라이빙 스펙 에이전틱 IDE (GitHub Trending, 10/30 2026)** | JetBrains가 pi 에이전트를 git-worktree 격리 워크스페이스 + SPEC.md 에이전트 유지 스펙 문서로 감싼 전용 에이전틱 IDE. **기존 대형 IDE 벤더(JetBrains)가 에이전틱 IDE를 직접 출시한 첫 시그널.** 다국어 UI (EN/JA/RU/ZH/ES). **"에이전트 관리 설정 파일"의 두 번째 시그널** (SPEC.md + REVIEW.md). Apache 2.0. | L6/L2 주 |
+| **CopilotKit/OpenBot ⭐8.6k — 셀프호스팅 AI 동료 플랫폼 (GitHub Trending, 10/30 2026)** | 각 AI 동료(Bot)가 전용 Chromium 컨테이너 + 독자 파일 + 허가된 툴만 보유. 모든 액션은 실행 전 게이트웨이 검사·실행 후 로그. AG-UI 호환(LangGraph/CrewAI/Google ADK). 로그인 2FA 시 인간 테이크오버. **셀프호스팅 오픈소스 AI 동료 플랫폼 중 퍼-에이전트 브라우저 격리 + 퍼-액션 게이트웨이 승인 첫 시그널.** MIT. | L2/L6 주 |
+| **Google Agent Compute Engine — AI 에이전트 전용 마이크로VM 샌드박스 (Google Cloud, 10/22 2026)** | 하네스와 샌드박스를 구조적으로 분리; 게스트에 자격 증명 없음; virtio-vsock → SPIFFE 기반 게이트웨이; DAX+CoW 스냅샷 복제. **클라우드 AI 에이전트 전용 샌드박스 기판 최초 시그널.** | L7/L5 주 |
+| **Kimi K3.1 Pro — Moonshot AI 포스트 트레이닝 업데이트 (Moonshot AI Blog, 10/24 2026)** | 내부 벤치마크 기준 환각률 23.4%→8.3%, 코딩 55.95%→61.2%, Highspeed 2–3× 속도. **추적 코퍼스 중 단일 버전 최대 환각 감소.** 11/4 오픈 웨이트 예정; 레지스트리 보류. | L1 주 |
+| **makecindy/cindy ⭐4k — 멀티하네스 에이전트 클라이언트 (GitHub Trending, 10/24 2026)** | 작업 중 Claude Code↔Codex 전환 시 메모리·스킬·MCP 통합 유지. **최초 "상태 유지 하네스 전환" 패턴.** clawfit 추천을 태스크 단위로 재설정해야 함을 시사. | L2/L6 주 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (994개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (999개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -165,6 +166,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-10-30 | 5개 문서: phorion.io Claude Code VSX 백도어 (HN 455점 — Cursor 마켓플레이스에 백도어 v2.1.313; 역방향 SSH 터널 + SSH 키 삽입 + LaunchAgent 지속성; 세 번째 공급망 공격 시그널; L2/L3); Gemini 4 Carbon (AAII v5 1위 점수 59, $4/$20, 환각률 4%→11% — 벤치마크/신뢰성 역전; L1 레지스트리 보류); lightpanda-io/browser ⭐38k (Zig 헤드리스 브라우저, MCP 서버 클라이언트 격리, 에이전트 모드, AGPL-3.0; L4/L7 보류); JetBrains/thinkrail ⭐6.5k (에이전틱 IDE, pi 에이전트, git-worktree 워크스페이스, SPEC.md 라이빙 스펙; 대형 IDE 벤더 에이전틱 제품 최초; 에이전트 관리 설정 파일 두 번째 시그널; L6/L2); CopilotKit/OpenBot ⭐8.6k (셀프호스팅 AI 동료, 퍼-Bot Chromium 컨테이너, 퍼-액션 게이트웨이, AG-UI; L2/L6). reference-levels.md: 2026-10-30 발견 로그 추가; 정식 변경 없음 (공급망 3-시그널 클러스터 + 환각 역전 노트 + SPEC.md 2-시그널 노트). 레지스트리: 추가 없음. 테스트: 통과 (50/50). |
 | 2026-10-24 | 5개 문서 (2회 실행): Corgi (HN — 에이전트 터미널 멀티플렉서; 신규 "에이전트 슈퍼바이저" 하네스 레이어; per-에이전트 상태·diff 뷰·`top` 스타일 토큰 추적; `corgi --skill` 메타 레이어); Dessa (HN — Block 풀 듀플렉스 음성 모델; 동시 수신·발화 최초 공개 모델; 대화형 음성 에이전트 핵심 기본형; LLM 랩 외부 기원); makecindy/cindy ⭐4k (GitHub Trending — 상태 유지 하네스 전환 클라이언트, Claude Code↔Codex, 메모리·스킬·MCP 경계 초과 유지; 최초 "상태 유지 하네스 전환" 패턴; clawfit 태스크 단위 추천 시사); Google Agent Compute Engine (Google Cloud Blog — 에이전트 샌드박스 전용 마이크로VM 기판, 게스트 무자격증명, SPIFFE 워크로드 ID, virtio-vsock 경계, DAX+CoW 복제, RL 롤아웃용 포크 시맨틱스; 최초 "클라우드 AI 에이전트 전용 샌드박스 기판" 시그널; `hardware.json` 샌드박싱 격리 축 후보); Kimi K3.1 Pro (Moonshot AI Blog — 환각률 23.4%→8.3% 내부 벤치마크, 코딩 55.95%→61.2%, 11월 4일 오픈 웨이트, Highspeed 2–3× 변형, 1M 컨텍스트; 추적 코퍼스 최대 단일 버전 환각 감소; 가격 미공개로 레지스트리 보류). reference-levels.md: 2026-10-24 발견 로그 추가; 정식 변경 없음 (2-시그널 규칙 미충족; L1/L2/L6/L7 상이 패턴). 레지스트리: 추가 없음. 테스트: 통과 (50/50). |
 | 2026-10-22 | 4개 문서: Claude Duet (HN — Anthropic 페어 프로그래밍 제품; 새로운 반자율 코딩 상호작용 모델; "지속적 공동 저작 에이전트" 최초 시그널; 레이턴시/상호작용성이 주요 스코어링 차원); OpenAI Patch the Planet (HN — 인터넷 규모 조율된 멀티에이전트 취약점 공개; 인간-AI 핸드오프 설계 내장; `task: security-audit` 영향); Alter YC S25 (HN Launch — 멀티유저 에이전트 배포용 접근 제어 인프라; `governance` 차원; 목적 특화 멀티유저 에이전트 인증 최초 시그널); Anatomy (GeekNews — 코딩 에이전트용 인터랙티브 3D 다이어그램 스킬; 스킬 레이어 시각 결과물로 성숙; `task: visualization` 축 후보). reference-levels.md: 변경 없음 (2-시그널 규칙 미충족; 패턴 상이). 레지스트리: 추가 없음. 테스트: 통과 (50/50). |
 | 2026-10-21 | 6개 문서: DeepInfer (HN 2,100점 — DeepSeek 공식 추론 프레임워크; 모델 가중치~서빙 수직 통합; 최초 "모델 제공사 자체 추론 프레임워크" 시그널); ai-job-search ⭐3,861 오늘 (GitHub Trending — Claude Code 기반 취업 지원 플랫폼; 최초 "코딩 외 범용 워크플로 플랫폼으로서 Claude Code" 소비자 시그널); SlopCodeBench 10/2026 (HN 142점 — 실제 지저분한 코드 기반 코딩 에이전트 벤치마크; xhigh 추론 낭비 주장; 비용 필터 보정에 영향); Harness Engineering 101 (GeekNews — 300줄 프레임워크 없는 에이전트 튜토리얼; 추상화 확산에 대한 반동); Superlite (GeekNews — 스펙 기반 병렬 Claude Code 구현; 최초 "승인 피로 감소" L4 플러그인 시그널); Respan YC W24 (HN 41점 — Rust AI 게이트웨이 플러그인 아키텍처; 최초 Rust 네이티브 플러그인형 AI 게이트웨이 시그널). reference-levels.md: 변경 없음 (2-시그널 규칙 미충족; 패턴 상이). 레지스트리: 추가 없음. 테스트: 통과 (50/50). |
