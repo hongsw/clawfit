@@ -99,19 +99,19 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-11-02)
+## 🔥 지금 가장 뜨거운 것들 (2026-11-03)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
+| **가중치 공간 프로그래밍 — 재학습 없는 직접 모델 가중치 편집 (HN 1,734점, 11/3 2026)** | 오늘의 HN 최상위 포스트: 학습 없이 Qwen에 직접 가중치 편집을 적용해 모델 동작을 변경. 556개 댓글. **가중치 편집을 프로그래밍 패러다임으로 논의한 최초 광범위 커뮤니티 시그널** — 파인튜닝(전체 재학습), 프롬프트 엔지니어링(가중치 미변경)과 구분. 재현 가능하면 레지스트리에 새로운 LLM 품질 차원 도입. | L0/L1 주 |
+| **Momentic — 라이브 앱 대상 자율 QA 에이전트 (YC W24, HN 113점, 11/3 2026)** | AI 에이전트가 라이브 앱을 직접 실행해 런타임 버그를 발견 — 테스트 케이스 작성이 아닌 자율 QA. **"프로덕션 런칭 자율 QA 에이전트" 최초 시그널** — 정적 테스트와 프로덕션 결함 사이 갭 타겟. 73개 HN 댓글로 개발자 관심 확인. | L3 주 |
+| **llm-pick — 활성 구독 기반 경량 모델 추천 (GeekNews Show GN, 11/3 2026)** | 보유 구독 또는 API 키를 기준으로 코딩·디버깅·문서화에 맞는 AI 모델 추천. Cloudflare Pages, 백엔드 없음. **clawfit의 직접적 기능 유사체, LLM 선택 범위로 한정** — 에이전트·하드웨어 차원 없음. 한국어 커뮤니티 픽업은 비영어권 생태계 성장을 시사. | L2 주 |
 | **vercel-labs/agent-desktop ⭐8,908 — Rust 기반 데스크톱 접근성 트리 컴퓨터 사용 (GitHub Trending #1, 11/2 2026)** | OS 접근성 트리를 읽어 픽셀 매칭 없이 신뢰성 높은 데스크톱 컴퓨터 사용 제공. 약 60개 명령어; 기본 헤드리스 모드; 하네스용 Agent Skills 내장; macOS/Windows/Linux 지원. **"데스크톱 접근성 트리 컴퓨터 사용" 최초 시그널 — 픽셀 기반(Agent S)·모바일(mobile-mcp)과 구분.** Apache-2.0. | L6/L4 주 |
 | **Meituan LongCat-2.5 — 네이티브 멀티모달 에이전틱 MoE 프론티어 모델 (HN 45점, 11/2 2026)** | 1.6T 전체 / ~48B 활성 파라미터 MoE; 1M 토큰 컨텍스트; 텍스트+이미지 입력; 터미널·브라우저·GUI·스프레드시트 명시적 타겟. 입력 $0.30/출력 $1.20 (1M 토큰). **"소비자 플랫폼 기업 출신" 에이전틱 프론티어 모델 최초 시그널** — Meituan은 음식 배달·지역 서비스 기업, AI 전문 연구소 아님. | L1 주 |
-| **GPT-Rosalind-6 — 공유 GPT-6 Astra 가중치 위 도메인 게이트 접근 티어 (HN 39점, 10/30 2026)** | 생명과학 특화: GPT-6 Astra와 동일 가중치, 다른 거부 설정, 연구기관·기업·정부 파트너 대상 신뢰 접근 심사. 의약화학(+20.7pp)·유전체학(+21pp) 벤치마크 향상. 시스템 카드에서 일반 접근 대비 비인가 행동 비율 증가 명시. **"공유 가중치 위 도메인 게이트 접근 티어" 최초 시그널.** | L1/L3 주 |
 | **openqodex/openqodex ⭐1,100 — 코딩 에이전트 출력을 위한 두 번째 에이전트 코드 리뷰어 (GeekNews, 11/2 2026)** | 작성 에이전트가 자신의 출력을 리뷰하지 않도록, 독립된 Claude Code 또는 Codex 세션을 리뷰어로 디스패치. 증거 인용 제약; 22개 스캐너(gitleaks, semgrep); SARIF 출력; 푸시 게이트 훅. **"별도 리뷰어 에이전트" 패턴 최초 패키지 도구.** Apache-2.0. | L4/L2 주 |
 | **Subvocal (YC F26) — AI 도구 입력을 위한 무음 발화 웨어러블 (HN Show HN 114점, 11/2 2026)** | 표면 근전도로 무음 입술 움직임(서브보컬)을 텍스트로 변환; Claude·Cursor·ChatGPT를 인터페이스로 명시 타겟. 분당 200단어 주장(미검증). **"AI 도구 입력 인프라로서 음성/무음 입력" 클러스터 두 번째 시그널** (첫 번째: Handy 음성 받아쓰기, 11/1). $1.3M 투자 유치. | L6 주 |
-| **Prospero — 브라우저 런타임 없는 네이티브 C++ 코딩 하네스 (GeekNews, 11/2 2026)** | Dear ImGui UI; 동일 바이너리에서 로컬 모델 추론·원격 API 지원; Windows/macOS/Linux; Node.js/Electron 의존성 없음. **"브라우저 런타임 없는 네이티브 바이너리 코딩 하네스" 최초 시그널.** | L2 주 |
-| **Pixel Office — 픽셀 아트 시각화를 가진 멀티에이전트 CLI 오케스트레이션 (GeekNews, 11/2 2026)** | AI CLI 구독(Claude Code, Cursor, Gemini CLI)에 역할(백엔드 개발자, 리뷰어, 테스터)을 부여하고 픽셀 아트 사무실 UI에서 동시 작업을 시각화. **시각적 워크스페이스를 갖춘 최초 소비자 향 멀티에이전트 CLI 오케스트레이션 도구.** | L3 주 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (1022개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (1025개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -165,6 +165,8 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-11-03 | 3개 문서: 가중치 공간 프로그래밍 (HN 1,734점, 556댓글 — 재학습 없이 Qwen 직접 가중치 편집; 잠재적 신규 LLM 레지스트리 품질 차원; L0/L1); Momentic (YC W24, HN 113점 — AI 에이전트가 라이브 앱 실행해 런타임 버그 발견; "프로덕션 런칭 자율 QA 에이전트" 최초 시그널; L3); llm-pick (GeekNews Show GN — 활성 구독 기반 모델 추천, 코딩/디버깅/문서화; clawfit 직접 기능 유사체, LLM 전용 범위; L2). reference-levels.md: 변경 없음. 레지스트리: 추가 없음. 테스트: 통과 (50/50). |
+| 2026-11-02 | 7개 문서 (2회 실행): agent-desktop ⭐8.9k (Vercel Labs, GitHub Trending #1 — 데스크톱 접근성 트리 컴퓨터 사용, Rust, Agent Skills, 헤드리스; 최초 데스크톱 접근성 트리 컴퓨터 사용 시그널; L6/L4); LongCat-2.5 (Meituan, HN 45점 — 1.6T/48B MoE, 1M 컨텍스트, 네이티브 멀티모달, 에이전틱 우선, $0.30/$1.20; 소비자 플랫폼 기업 출신 에이전틱 프론티어 모델 최초 시그널; L1); openqodex ⭐1.1k (GeekNews — 코딩 에이전트 출력용 별도 리뷰어 에이전트; 증거 인용; SARIF; 푸시 게이트; L4/L2); Subvocal (YC F26, HN 114점 — AI 도구용 무음 발화 웨어러블, 음성 입력 클러스터 2번째 시그널; L6); GPT-Rosalind-6 (HN 39점 — 공유 GPT-6 Astra 가중치 위 생명과학 도메인 게이트 접근 티어; L1/L3); Prospero (GeekNews — 브라우저 런타임 없는 네이티브 C++ 코딩 하네스; L2); Pixel Office (GeekNews — 픽셀 아트 워크스페이스 UI 멀티에이전트 CLI 오케스트레이션; L3). reference-levels.md: 2026-11-02 발견 로그 + 📡 노트 5개; 정식 변경 없음. 레지스트리: 추가 없음. 테스트: 통과 (50/50). |
 | 2026-11-01 | 5개 문서: AiSOC ⭐6k (AI 네이티브 SOC + LLM 트리아지 + MCP; 최초 AI 네이티브 SOC MCP 레이어 시그널; L5/L4); Kronos ⭐45k (금융 캔들스틱 파운데이션 모델 AAAI 2026; 시계열 세 번째 신호·금융 도메인 최초; L1); 브라질 TRT8 판결 (의도적 프롬프트 인젝션 최초 법원 제재; L3); Handy ⭐36k (오프라인 Whisper STT, AI 도구 음성 입력; L6); Emergence World arXiv 6월 2026 (15일 멀티에이전트 평가; 개체군 붕괴; 모델 패밀리 민감 거버넌스; L5/L3). reference-levels.md: 2026-11-01 발견 로그 + 📡 노트 4개; 정식 변경 없음. 레지스트리: 추가 없음. 테스트: 통과 (50/50). |
 | 2026-10-31 | 8개 문서 (2회 실행): VOLTA-AUTODOXER (Cisco Talos, HN 168점 — 사후 수집 LLM 강화 단계와 거부 회피 멀티 모델 폴백 체인을 가진 최초 상용 악성코드; `anthropic/claude-opus-4.6` 주 → `moonshotai/kimi-k2` → `google/gemini-2.5-flash`; `Identity_Report.txt` → `AI_Analysis.txt` 수익화 점수; L3/L1); TanStack AI 1.0 ⭐3,300 (GitHub Trending — 1.0 안정 크로스프레임워크 AI SDK; 23개 제공자 어댑터; AG-UI 준수 스트림; 양방향 MCP; SKILL.md 포터블 스킬; 내구성 세션 실험적 하네스; MIT; L2/L4); Orkas-AI/Orkas ⭐6,018 (GitHub Trending — 로컬 우선 데스크탑 AI 팀; Commander + 16개 전문 에이전트; Claude Code/Codex/OpenCode를 dispatch_to/hand_off_to/run_worker를 통한 하위 작업자로 활용; L2/L6); Google Sleep Framework (Google Research, HN 프론트페이지 — 분리된 통합 단계를 통한 재앙적 망각 없는 베이스 모델 지속 학습; L5/L1); Martin Fowler "LLM Voice" (GeekNews 30점 — AI 생성 산문의 탐지 도구 사전 독자 반감을 "LLM Voice"로 명명; 선언적 사용 규범 제안; L6/L3); "Here be monsters" (GeekNews 39점 — 에이전틱 시대 개발자 역량 3계층 분류체계: 기본기/광범위성/적시 심화; 인간-에이전트 역량 갭 클러스터 다섯 번째 시그널; L3/L6); korea-data-mcp (GeekNews Show GN — DART 기업 공시·공공데이터포털·국가법령정보를 MCP 서버로; "국가 정부 공공데이터 MCP 서버" 최초 시그널; L4/L3); dbreunig 컨텍스트 엔지니어링 (GeekNews — "컨텍스트 엔지니어링" 명명 규율 두 번째 시그널; 2-시그널 규칙 충족; L2/L3). reference-levels.md: 2026-10-31 발견 로그 + 📡 노트 5개; 정식 변경 없음. 레지스트리: 추가 없음. 테스트: 통과 (50/50). |
 | 2026-10-30 | 5개 문서: phorion.io Claude Code VSX 백도어 (HN 455점 — Cursor 마켓플레이스에 백도어 v2.1.313; 역방향 SSH 터널 + SSH 키 삽입 + LaunchAgent 지속성; 세 번째 공급망 공격 시그널; L2/L3); Gemini 4 Carbon (AAII v5 1위 점수 59, $4/$20, 환각률 4%→11% — 벤치마크/신뢰성 역전; L1 레지스트리 보류); lightpanda-io/browser ⭐38k (Zig 헤드리스 브라우저, MCP 서버 클라이언트 격리, 에이전트 모드, AGPL-3.0; L4/L7 보류); JetBrains/thinkrail ⭐6.5k (에이전틱 IDE, pi 에이전트, git-worktree 워크스페이스, SPEC.md 라이빙 스펙; 대형 IDE 벤더 에이전틱 제품 최초; 에이전트 관리 설정 파일 두 번째 시그널; L6/L2); CopilotKit/OpenBot ⭐8.6k (셀프호스팅 AI 동료, 퍼-Bot Chromium 컨테이너, 퍼-액션 게이트웨이, AG-UI; L2/L6). reference-levels.md: 2026-10-30 발견 로그 추가; 정식 변경 없음 (공급망 3-시그널 클러스터 + 환각 역전 노트 + SPEC.md 2-시그널 노트). 레지스트리: 추가 없음. 테스트: 통과 (50/50). |
