@@ -1,7 +1,7 @@
 # Research Watch: Hex — Local Voice Dictation with Agent Skills Layer
 
-- Repo/Link: https://github.com/anomalyco/hex
-- Source: GitHub Trending (4,567 ⭐, 410 today, 2026-11-04)
+- Repo: https://github.com/anomalyco/hex (⭐4,567)
+- Source: GitHub Trending (410 today, 2026-11-04)
 
 ## Why this is worth watching
 
