@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-11-04)
+## 🔥 지금 가장 뜨거운 것들 (2026-11-06)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **FareedKhan-dev/kimi-k3-in-c ⭐10,130 — C99로 소비자 CPU에서 2.78T MoE 모델 실행 (GitHub Trending, 2026-11-04)** | 의존성 없는 C99 추론 엔진이 Kimi K3 MoE 전체 모델을 ~8.24 GB RAM만으로 노트북 CPU에서 실행 — GPU·BLAS·Python 불필요. MXFP4 양자화 + AVX2/SIMD 벡터화 + 선형 어텐션. **"C99 순수 구현 프론티어급 MoE 추론" 첫 시그널** — llama.cpp가 밀집 모델에 한 일을 MoE에 적용. 정확도가 검증되면 오프라인 로컬 프로필의 역량이 도약. | L7 주 |
-| **Anil-matcha/open-duet ⭐6,760 — 승인 모드 포함 셀프호스팅 AI 동료 팀 (GitHub Trending Python, 2026-11-04)** | 엔진 무관(Claude Code, Codex CLI, Gemini CLI, ACP, Ollama) 멀티에이전트 워크스페이스. 리드/전문가 위임, 에이전트별 메모리, 4단계 명시적 승인 모드(먼저 물어보기 / 편집 수락 / 대신 승인 / 계획만). 비동기 검토용 모바일 앱 포함. **"인간 승인 포함 지속 멀티에이전트 워크스페이스" 클러스터의 세 번째 시그널** — 승인 모드 분류체계는 clawfit의 autonomy_level 축 어휘 참고로 활용 가능. | L2/L3 주 |
-| **NVIDIA/auto-ontology ⭐4,441 — 엔터프라이즈 DB용 시맨틱 온톨로지 레이어, MCP 우선 (GitHub Trending, 2026-11-04)** | 데이터베이스 메타데이터에서 인증된 시맨틱 그래프(용어·SQL 속성·관계)를 구축하고 MCP 에이전트에 노출. 자기수정 Text-to-SQL 에이전트 루프; 4가지 설정 가능한 LLM 역할; 10개 DB 커넥터. **"인증된 시맨틱 컨텍스트 그라운딩" 첫 시그널** — 임베딩 전용 RAG 및 raw 스키마-in-context와 구별; 잘못된 DB 답변을 감사·수정 가능하게 만듦. | L4/L5 주 |
-| **anomalyco/hex ⭐4,567 — AGENTS.md + 스킬 레이어 포함 로컬 음성 받아쓰기 (GitHub Trending, 2026-11-04)** | 완전 온디바이스 음성 받아쓰기(Mac/Windows/Linux)에 `AGENTS.md`와 `skills/` 디렉터리로 코딩 에이전트 하네스 통합 의지 표명. **"오프라인 음성-텍스트 변환 AI 도구 입력" 두 번째 시그널** (cjpais/Handy, 11/1 이후) — 동일 서브타입 확인; 하네스 네이티브 음성 입력 패턴 주시. | L4b 주 |
-| **웨이트-스페이스 프로그래밍 — 재학습 없는 직접 모델 가중치 편집 (HN 1,734점, 2026-11-03)** | 최상위 HN 포스트: 학습 실행 없이 직접 가중치 편집으로 Qwen 모델 동작 변경; 댓글 556개. **가중치 편집을 "프로그래밍" 패러다임으로 처음 광범위하게 프레이밍** — 재현 가능한 도구가 뒤따르면 레지스트리 항목에 새로운 LLM 품질 차원 도입(패치 가능 vs. 고정 가중치). | L0/L1 주 |
-| **cjpais/Handy ⭐36,315 — AI 도구 입력용 오프라인 음성-텍스트 변환 (GitHub Trending, 2026-11-01)** | 키 누름으로 음성을 녹음하고 온디바이스(Whisper GPU / Parakeet V3 CPU)로 변환 후 모든 앱에 붙여넣는 Rust 앱. 클라우드 없음, MCP 서버 없음 — OS 클립보드 수준. **AI 코딩 도구 조작에 특화된 고별점 오프라인 음성 입력 첫 시그널** — 36k 별은 하네스 네이티브 음성 기능 이전부터 개발자 수요 확인. | L6 주 |
-| **shiyu-coder/Kronos ⭐45,180 — 금융 캔들스틱 파운데이션 모델 (GitHub Trending, 2026-11-01)** | OHLCV 시퀀스(K-라인)로 학습된 디코더 전용 TSFM; AAAI 2026 채택; 계층적 이산 토크나이저; 4가지 모델 크기(4.1M–499.2M 파라미터); 45+ 글로벌 거래소 커버리지. **세 번째 시계열 파운데이션 모델 시그널, 금융 캔들스틱 도메인 최초** — `task: financial-forecasting`을 확인된 레지스트리 갭으로 추가. | L1/L5 주 |
-| **vercel-labs/agent-desktop ⭐14,584 — Rust 접근성 트리 기반 데스크탑 컴퓨터 사용 (GitHub Trending, 2026-11-02)** | 접근성 트리(픽셀 아님)를 읽어 에이전트에 신뢰할 수 있는 데스크탑 컴퓨터 사용 환경 제공하는 Rust CLI. ~60 커맨드; Agent Skills 지원; macOS/Windows/Linux. **"데스크탑 접근성 트리 컴퓨터 사용" 첫 시그널** — 픽셀 기반(Agent S), mobile-mcp와 구별. | L6/L4 주 |
+| **KKKKhazix/agent-autoloop ⭐3,600 — 백그라운드 CLI 에이전트 스케줄러, v1.0.0 (GitHub Trending, 2026-11-06)** | 의존성 없는 Node.js 커널이 모든 CLI 에이전트(Claude Code, Codex, ACP)를 백그라운드에서 cron 또는 이벤트 트리거에 맞춰 실행; 결정이 필요할 때만 Feishu/Slack/Discord로 알림 발송. 추가 전용 이벤트 로그; 외부 텍스트를 프롬프트 연결이 아닌 데이터 파일로 처리; 8홉 제한. **"백그라운드 CLI 에이전트 스케줄러" 서브타입 첫 시그널** — UI 필요 플릿 매니저(Orca, Open Duet)와 구별. | L2 주 |
+| **miuuyy/Octopus-SI-OS ⭐707 — "에이전틱 OS" 리서치 프리뷰, Rust ~45,000 LOC (Dev.to, 2026-11-06)** | OS 스타일 프리미티브(인터페이스·아티팩트·런·워커·정책·마크)로 에이전트를 실행하는 리서치 프리뷰. 중앙 오케스트레이터 없음. 마크(marks)는 검증자 통과 후 기록되는 완료 증명. README 저자들이 "현재 LLM은 스스로 주도적으로 행동하지 않는다"고 솔직하게 명시. **"에이전틱 OS 서브스트레이트" 아키텍처 패턴 첫 시그널.** | L1 주 |
+| **ComputerUseAgent/AutoCua ⭐1,100 — 멀티플랫폼 컴퓨터 사용 에이전트 프레임워크 (munderdiffl.in, 2026-11-06)** | 단일 `pip install AutoCua`로 플랫폼별 모드(데스크탑/셸/브라우저/iOS/Android) 지원. OS 접근성 트리 + OCR 요소 선택. 부모→코더→스카우트 에이전트 체인; 자격증명 볼트. 10개 모델 프로바이더. **"멀티플랫폼 컴퓨터 사용" 클러스터 세 번째 시그널** — 데스크탑·브라우저·모바일을 하나의 라이브러리로 처리하는 첫 구현. | L2 주 |
+| **ruvnet/metaharness ⭐739 — 소유형 에이전트 하네스 생성 팩토리 (WebSearch, 2026-11-06)** | `npx metaharness`로 npm 배포 가능한 에이전트 하네스 패키지를 생성; 출력물에 CLI·MCP 서버·메모리 네임스페이스·스킬·거버넌스 정책 포함. 10개 호스트 어댑터; Darwin Mode 셀프튜닝 루프; 비용 라우터 내장; 19개 수직 템플릿. **"하네스 팩토리 / 메타-하네스 생성" 메타 레이어 첫 시그널.** | L2/L3 주 |
+| **Muvon/octomind ⭐615 — TOML 정책 가드레일 포함 Rust 단일 바이너리 하네스 (munderdiffl.in, 2026-11-06)** | Apache-2.0 단일 Rust 바이너리; `.agents/guardrails.toml`로 정책 선언(사전 호출 가드·결과 후 훅·검증자). 두 번째 LLM 슈퍼바이저가 완료 주장 검증. MCP 네이티브; CLI·데몬·WebSocket·ACP 서버 모드. **"에이전트 하네스 내 선언적 TOML 정책" 서브타입 첫 시그널** — 승인 프롬프트 모델과 달리 버전 관리·CI 비교·감사 가능. | L2/L3 주 |
+| **FareedKhan-dev/kimi-k3-in-c ⭐10,130 — C99로 소비자 CPU에서 2.78T MoE 실행 (GitHub Trending, 2026-11-04)** | 의존성 없는 C99 엔진이 Kimi K3 MoE 전체를 ~8.24 GB RAM에서 실행. MXFP4 + AVX2/SIMD + 선형 어텐션. **"C99 순수 구현 프론티어급 MoE 추론" 첫 시그널** — 정확도 검증 시 오프라인 로컬 프로필 역량 도약. | L7 주 |
+| **anomalyco/hex ⭐4,567 — AGENTS.md + 스킬 포함 로컬 음성 받아쓰기 (GitHub Trending, 2026-11-04)** | 완전 온디바이스 음성 받아쓰기에 `AGENTS.md`와 `skills/` 디렉터리. **"오프라인 음성-텍스트 AI 도구 입력" 두 번째 시그널** (Handy 이후) — 동일 서브타입 확인. | L4b 주 |
+| **웨이트-스페이스 프로그래밍 — 재학습 없는 직접 가중치 편집 (HN 1,734점, 2026-11-03)** | 직접 가중치 편집으로 Qwen 모델 동작 변경. **가중치 편집을 "프로그래밍" 패러다임으로 처음 광범위하게 프레이밍** — 도구화 시 새 LLM 품질 차원 도입. | L0/L1 주 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (1009개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (1014개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
