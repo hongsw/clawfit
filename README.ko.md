@@ -1,6 +1,6 @@
 # clawfit
 
-> AI 에이전트 + LLM + 하드웨어 추천 엔진 — **162+ 도구**, **7레이어 생태계 맵**, **911개 리서치워치 문서**, **10차원 스코어링**
+> AI 에이전트 + LLM + 하드웨어 추천 엔진 — **162+ 도구**, **7레이어 생태계 맵**, **1044개 리서치워치 문서**, **10차원 스코어링**
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.7%2B-blue)](pyproject.toml)
@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-11-06)
+## 🔥 지금 가장 뜨거운 것들 (2026-11-07)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **KKKKhazix/agent-autoloop ⭐3,600 — 백그라운드 CLI 에이전트 스케줄러, v1.0.0 (GitHub Trending, 2026-11-06)** | 의존성 없는 Node.js 커널이 모든 CLI 에이전트(Claude Code, Codex, ACP)를 백그라운드에서 cron 또는 이벤트 트리거에 맞춰 실행; 결정이 필요할 때만 Feishu/Slack/Discord로 알림 발송. 추가 전용 이벤트 로그; 외부 텍스트를 프롬프트 연결이 아닌 데이터 파일로 처리; 8홉 제한. **"백그라운드 CLI 에이전트 스케줄러" 서브타입 첫 시그널** — UI 필요 플릿 매니저(Orca, Open Duet)와 구별. | L2 주 |
-| **miuuyy/Octopus-SI-OS ⭐707 — "에이전틱 OS" 리서치 프리뷰, Rust ~45,000 LOC (Dev.to, 2026-11-06)** | OS 스타일 프리미티브(인터페이스·아티팩트·런·워커·정책·마크)로 에이전트를 실행하는 리서치 프리뷰. 중앙 오케스트레이터 없음. 마크(marks)는 검증자 통과 후 기록되는 완료 증명. README 저자들이 "현재 LLM은 스스로 주도적으로 행동하지 않는다"고 솔직하게 명시. **"에이전틱 OS 서브스트레이트" 아키텍처 패턴 첫 시그널.** | L1 주 |
-| **ComputerUseAgent/AutoCua ⭐1,100 — 멀티플랫폼 컴퓨터 사용 에이전트 프레임워크 (munderdiffl.in, 2026-11-06)** | 단일 `pip install AutoCua`로 플랫폼별 모드(데스크탑/셸/브라우저/iOS/Android) 지원. OS 접근성 트리 + OCR 요소 선택. 부모→코더→스카우트 에이전트 체인; 자격증명 볼트. 10개 모델 프로바이더. **"멀티플랫폼 컴퓨터 사용" 클러스터 세 번째 시그널** — 데스크탑·브라우저·모바일을 하나의 라이브러리로 처리하는 첫 구현. | L2 주 |
-| **ruvnet/metaharness ⭐739 — 소유형 에이전트 하네스 생성 팩토리 (WebSearch, 2026-11-06)** | `npx metaharness`로 npm 배포 가능한 에이전트 하네스 패키지를 생성; 출력물에 CLI·MCP 서버·메모리 네임스페이스·스킬·거버넌스 정책 포함. 10개 호스트 어댑터; Darwin Mode 셀프튜닝 루프; 비용 라우터 내장; 19개 수직 템플릿. **"하네스 팩토리 / 메타-하네스 생성" 메타 레이어 첫 시그널.** | L2/L3 주 |
-| **Muvon/octomind ⭐615 — TOML 정책 가드레일 포함 Rust 단일 바이너리 하네스 (munderdiffl.in, 2026-11-06)** | Apache-2.0 단일 Rust 바이너리; `.agents/guardrails.toml`로 정책 선언(사전 호출 가드·결과 후 훅·검증자). 두 번째 LLM 슈퍼바이저가 완료 주장 검증. MCP 네이티브; CLI·데몬·WebSocket·ACP 서버 모드. **"에이전트 하네스 내 선언적 TOML 정책" 서브타입 첫 시그널** — 승인 프롬프트 모델과 달리 버전 관리·CI 비교·감사 가능. | L2/L3 주 |
-| **FareedKhan-dev/kimi-k3-in-c ⭐10,130 — C99로 소비자 CPU에서 2.78T MoE 실행 (GitHub Trending, 2026-11-04)** | 의존성 없는 C99 엔진이 Kimi K3 MoE 전체를 ~8.24 GB RAM에서 실행. MXFP4 + AVX2/SIMD + 선형 어텐션. **"C99 순수 구현 프론티어급 MoE 추론" 첫 시그널** — 정확도 검증 시 오프라인 로컬 프로필 역량 도약. | L7 주 |
-| **anomalyco/hex ⭐4,567 — AGENTS.md + 스킬 포함 로컬 음성 받아쓰기 (GitHub Trending, 2026-11-04)** | 완전 온디바이스 음성 받아쓰기에 `AGENTS.md`와 `skills/` 디렉터리. **"오프라인 음성-텍스트 AI 도구 입력" 두 번째 시그널** (Handy 이후) — 동일 서브타입 확인. | L4b 주 |
-| **웨이트-스페이스 프로그래밍 — 재학습 없는 직접 가중치 편집 (HN 1,734점, 2026-11-03)** | 직접 가중치 편집으로 Qwen 모델 동작 변경. **가중치 편집을 "프로그래밍" 패러다임으로 처음 광범위하게 프레이밍** — 도구화 시 새 LLM 품질 차원 도입. | L0/L1 주 |
+| **milind-soni/OpenMausBot ⭐16.7k — 봇별 VM 격리 멀티모델 에이전트 하네스 (GitHub Trending, 2026-11-07)** | 각 봇(Claude Code, Codex, Grok CLI)이 별도 클라우드 VM에서 독립적인 도구 접근권과 연결 앱을 가짐. 소프트 가드레일이 아닌 OS 수준 격리. Apache 2.0, 자체 호스팅. **소비자급 멀티모델 하네스에서 "봇별 VM 격리" 첫 시그널** — `isolation_model: shared | process | vm` 스코어링 차원 후보. | L2 주 |
+| **ranxianglei/billion-context ⭐4.5k — 코딩 에이전트용 투명 컨텍스트 압축 플러그인 (GitHub Trending, 2026-11-07)** | 에이전트 API 호출을 가로채 전체 대화 기록을 시맨틱 요약으로 교체하고 필요 시 복원. 에이전트 코드 수정 불필요. 자체 보고 ~5배 토큰 절감(독립 검증 필요). **"투명 토큰 수준 프록시 압축" 첫 시그널** — 메모리 MCP 서버, Memorilla 잠재 공간 방식과 구별. | L4 주 |
+| **Memorilla (arxiv:2610.21375) — LLM을 위한 잠재 시맨틱 메모리 (HN 77점, 2026-11-07)** | 에이전트 상태를 텍스트 추가가 아닌 잠재 공간에 저장. 호출은 학습된 연산. RAG 대비 장기 태스크 성능 향상 주장. **"잠재 공간 에이전트 메모리" 첫 시그널** — 텍스트 저장 메모리 MCP와 직교; `memory_model: latent | retrieval | none` 스코어링 축 후보. | L4/L1 주 |
+| **github.com/telekom/sutura — 에이전트용 거버넌스 시맨틱 계층 데이터 접근 (GeekNews, 2026-11-07)** | 도이치텔레콤 OSS: 에이전트가 원시 스키마 대신 회사 명명 메트릭을 쿼리하여 결과가 공식 대시보드와 일치. **"거버넌스 시맨틱 레이어 데이터 접근" 첫 시그널** — `governance_need: hard` 및 `data-analysis` 프로필에 직접 관련. | L4/L3 주 |
+| **github.com/piercefreeman/waymark — 작업 그래프를 컴파일하는 워크플로우 엔진 (HN Show HN, 2026-11-07)** | Python 워크플로우 엔진이 정의 시점에 작업 DAG를 정적 분석하고 컴파일된 계획을 실행 — 재실행 부작용(LLM 중복 호출, 중복 쓰기) 제거. **에이전트 오케스트레이션 계층에서 "컴파일 타임 워크플로우 실행" 첫 시그널** — LangGraph, Prefect 등 재실행 기반 엔진과 구별. | L2 주 |
+| **KKKKhazix/agent-autoloop ⭐3,600 — 백그라운드 CLI 에이전트 스케줄러, v1.0.0 (GitHub Trending, 2026-11-06)** | 의존성 없는 Node.js 커널로 CLI 에이전트를 백그라운드에서 cron/이벤트 트리거 실행; 결정 필요 시만 알림. **"백그라운드 CLI 에이전트 스케줄러" 첫 시그널** — UI 필요 플릿 매니저와 구별. | L2 주 |
+| **FareedKhan-dev/kimi-k3-in-c ⭐10,130 — C99로 소비자 CPU에서 2.78T MoE 실행 (GitHub Trending, 2026-11-04)** | 의존성 없는 C99 엔진이 Kimi K3 MoE 전체를 ~8.24 GB RAM에서 실행. GPU 불필요. **"C99 순수 구현 프론티어급 MoE 추론" 첫 시그널** — 정확도 검증 시 오프라인 로컬 프로필 역량 도약. | L7 주 |
+| **miuuyy/Octopus-SI-OS ⭐707 — "에이전틱 OS" 리서치 프리뷰, Rust ~45k LOC (2026-11-06)** | OS 스타일 프리미티브로 에이전트 실행, 중앙 오케스트레이터 없음. 마크(marks)는 검증자 통과 후 완료 증명. **"에이전틱 OS 서브스트레이트" 아키텍처 패턴 첫 시그널.** | L1 주 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (1014개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (1044개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
