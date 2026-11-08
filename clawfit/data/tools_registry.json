@@ -3957,11 +3957,12 @@
       "pricing_tier": "free",
       "tasks": [
         "research",
-        "knowledge-management"
+        "summarization",
+        "data-analysis"
       ],
       "roles": [
         "developer",
-        "analyst",
+        "researcher",
         "exec"
       ],
       "team_size": [
@@ -3970,6 +3971,49 @@
       ],
       "network": "offline",
       "setup_complexity": "medium",
+      "latency": "medium"
+    }
+  },
+  {
+    "id": "google_skills",
+    "name": "google/skills",
+    "category": "domain_skill_pack",
+    "level": "4b",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "url": "https://github.com/google/skills",
+    "source_type": "github",
+    "comparison_priority": "primary",
+    "notes": "Official Google Agent Skills library — covers Google Workspace, Cloud, Maps, and other Google product APIs. 23,386★ GitHub Trending 2026-11-08. First-party counterpart to anthropics/skills; pure skills definitions with no harness lock-in.",
+    "org_fit": {
+      "min_maturity": 2,
+      "max_maturity": 9,
+      "optimal_maturity": 5,
+      "features": [
+        "google-workspace",
+        "google-cloud",
+        "composable"
+      ],
+      "pricing_tier": "free",
+      "tasks": [
+        "code-gen",
+        "research",
+        "summarization",
+        "qa"
+      ],
+      "roles": [
+        "developer",
+        "pm",
+        "researcher"
+      ],
+      "team_size": [
+        "solo",
+        "small",
+        "mid",
+        "large"
+      ],
+      "network": "online",
+      "setup_complexity": "low",
       "latency": "medium"
     }
   }
