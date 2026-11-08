@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-11-07)
+## 🔥 지금 가장 뜨거운 것들 (2026-11-08)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **milind-soni/OpenMausBot ⭐16.7k — 봇별 VM 격리 멀티모델 에이전트 하네스 (GitHub Trending, 2026-11-07)** | 각 봇(Claude Code, Codex, Grok CLI)이 별도 클라우드 VM에서 독립적인 도구 접근권과 연결 앱을 가짐. 소프트 가드레일이 아닌 OS 수준 격리. Apache 2.0, 자체 호스팅. **소비자급 멀티모델 하네스에서 "봇별 VM 격리" 첫 시그널** — `isolation_model: shared | process | vm` 스코어링 차원 후보. | L2 주 |
-| **ranxianglei/billion-context ⭐4.5k — 코딩 에이전트용 투명 컨텍스트 압축 플러그인 (GitHub Trending, 2026-11-07)** | 에이전트 API 호출을 가로채 전체 대화 기록을 시맨틱 요약으로 교체하고 필요 시 복원. 에이전트 코드 수정 불필요. 자체 보고 ~5배 토큰 절감(독립 검증 필요). **"투명 토큰 수준 프록시 압축" 첫 시그널** — 메모리 MCP 서버, Memorilla 잠재 공간 방식과 구별. | L4 주 |
-| **Memorilla (arxiv:2610.21375) — LLM을 위한 잠재 시맨틱 메모리 (HN 77점, 2026-11-07)** | 에이전트 상태를 텍스트 추가가 아닌 잠재 공간에 저장. 호출은 학습된 연산. RAG 대비 장기 태스크 성능 향상 주장. **"잠재 공간 에이전트 메모리" 첫 시그널** — 텍스트 저장 메모리 MCP와 직교; `memory_model: latent | retrieval | none` 스코어링 축 후보. | L4/L1 주 |
-| **github.com/telekom/sutura — 에이전트용 거버넌스 시맨틱 계층 데이터 접근 (GeekNews, 2026-11-07)** | 도이치텔레콤 OSS: 에이전트가 원시 스키마 대신 회사 명명 메트릭을 쿼리하여 결과가 공식 대시보드와 일치. **"거버넌스 시맨틱 레이어 데이터 접근" 첫 시그널** — `governance_need: hard` 및 `data-analysis` 프로필에 직접 관련. | L4/L3 주 |
-| **github.com/piercefreeman/waymark — 작업 그래프를 컴파일하는 워크플로우 엔진 (HN Show HN, 2026-11-07)** | Python 워크플로우 엔진이 정의 시점에 작업 DAG를 정적 분석하고 컴파일된 계획을 실행 — 재실행 부작용(LLM 중복 호출, 중복 쓰기) 제거. **에이전트 오케스트레이션 계층에서 "컴파일 타임 워크플로우 실행" 첫 시그널** — LangGraph, Prefect 등 재실행 기반 엔진과 구별. | L2 주 |
-| **KKKKhazix/agent-autoloop ⭐3,600 — 백그라운드 CLI 에이전트 스케줄러, v1.0.0 (GitHub Trending, 2026-11-06)** | 의존성 없는 Node.js 커널로 CLI 에이전트를 백그라운드에서 cron/이벤트 트리거 실행; 결정 필요 시만 알림. **"백그라운드 CLI 에이전트 스케줄러" 첫 시그널** — UI 필요 플릿 매니저와 구별. | L2 주 |
-| **FareedKhan-dev/kimi-k3-in-c ⭐10,130 — C99로 소비자 CPU에서 2.78T MoE 실행 (GitHub Trending, 2026-11-04)** | 의존성 없는 C99 엔진이 Kimi K3 MoE 전체를 ~8.24 GB RAM에서 실행. GPU 불필요. **"C99 순수 구현 프론티어급 MoE 추론" 첫 시그널** — 정확도 검증 시 오프라인 로컬 프로필 역량 도약. | L7 주 |
-| **miuuyy/Octopus-SI-OS ⭐707 — "에이전틱 OS" 리서치 프리뷰, Rust ~45k LOC (2026-11-06)** | OS 스타일 프리미티브로 에이전트 실행, 중앙 오케스트레이터 없음. 마크(marks)는 검증자 통과 후 완료 증명. **"에이전틱 OS 서브스트레이트" 아키텍처 패턴 첫 시그널.** | L1 주 |
+| **vercel-labs/agent-browser ⭐47.4k — AI 에이전트용 Rust 데몬+CLI 브라우저 자동화 (GitHub Trending, 2026-11-08)** | 백그라운드 데몬이 명령어 사이에 브라우저를 열어 두어 각 에이전트 단계가 한 줄 셸 호출로 처리됨. 접근성 트리 스냅샷에서 요소 참조(@e1) 반환 — HTML 파싱 불필요. 숨겨진·덮인 요소에서 명시적 실패. `agent-browser mcp`로 stdio MCP 서버 시작; 버전화된 스킬 팩 지원. 플러그 가능 백엔드: Chrome, Lightpanda, Obscura, iOS 시뮬레이터, 클라우드. **"에이전트용 브라우저 자동화" 클러스터 세 번째 시그널** — Vercel Labs가 브라우저·데스크탑·스킬을 아우르는 제어 플레인 형성 중. Apache 2.0. | L2/L4 주 |
+| **google/skills ⭐23k — Workspace, Cloud, Maps용 Google 공식 에이전트 스킬 라이브러리 (GitHub Trending, 2026-11-08)** | anthropics/skills, mattpocock/skills와 함께 같은 주에 세 주요 벤더가 공식 하네스 무관 스킬 팩을 출시한 스킬 계층 통합 순간. Drive, Workspace, Cloud API, Maps 커버. **"공식 벤더 스킬 라이브러리" 패턴 세 번째 시그널** — 안정적 L2 서브타입 형성 가능성. | L2 주 |
+| **Open Agent Memory Format — OpenTelemetry 방식 에이전트 메모리 표준 (HN 131점, 2026-11-08)** | LoreKit가 에이전트 메모리용 공유 데이터 모델·시맨틱 컨벤션·MCP 계약+적합성 테스트를 제안. *내보내기 이식성*과 *실시간 멀티에이전트 주소 지정*을 명시적으로 분리(기존 대부분의 제안은 내보내기만 다룸). 스토리지·랭킹은 벤더 경쟁 영역으로 남김. 구현 아티팩트 없음. **메모리 MCP 서버와 구별되는 "에이전트 메모리 상호운용 표준" 첫 시그널.** | L5 주 |
+| **MaxxBench — 코딩 에이전트 벤치마크 독립 검증 (HN 176점, 2026-11-08)** | DeepSWE 코딩 에이전트 점수를 독립적으로 재현·검증하고 도전. 선별된 평가가 아닌 실제 태스크 통과율 집중. 평가 신뢰성이 자체 제품 카테고리로 부상 중. 벤치마크 점수가 부풀려졌다면 clawfit의 `baseline` 가중치 재검토 필요. | L5 주 |
+| **코딩 에이전트 "Don't Ask Again" 비밀키 노출 — Claude Code (HN 114점, 2026-11-08)** | Apiiro가 Claude Code의 "다시 묻지 않기" 권한 우회로 1,122개 공개 GitHub 파일에 자격증명이 커밋된 사실 발견. 속도를 위한 권한 우회 기능이 무성 유출 경로 생성. `data_sensitivity: confidential` 및 `governance_need: hard` 스코어링 프로필에 직접 관련. | 거버넌스 횡단 |
+| **milind-soni/OpenMausBot ⭐16.7k — 봇별 VM 격리 멀티모델 에이전트 하네스 (GitHub Trending, 2026-11-07)** | 각 봇(Claude Code, Codex, Grok CLI)이 별도 클라우드 VM에서 독립적인 도구 접근권과 연결 앱을 가짐. OS 수준 격리로 손상된 MCP 서버가 한 봇의 VM에만 국한. **소비자급 멀티모델 하네스에서 "봇별 VM 격리" 첫 시그널.** | L2 주 |
+| **Memorilla (arxiv:2610.21375) — LLM을 위한 잠재 시맨틱 메모리 (HN 77점, 2026-11-07)** | 에이전트 상태를 텍스트 추가가 아닌 잠재 공간에 저장. 호출은 학습된 연산. RAG 대비 장기 태스크 성능 향상 주장. **"잠재 공간 에이전트 메모리" 첫 시그널** — 텍스트 저장 메모리 MCP와 직교; `memory_model: latent | retrieval | none` 축 후보. | L4/L1 주 |
+| **ranxianglei/billion-context ⭐4.5k — 투명 컨텍스트 압축 플러그인 (GitHub Trending, 2026-11-07)** | 에이전트 API 호출 가로채 전체 대화 기록을 시맨틱 요약으로 교체하고 필요 시 복원. 에이전트 코드 수정 불필요. 자체 보고 ~5배 토큰 절감(미검증). **"투명 토큰 수준 프록시 압축" 첫 시그널** — 메모리 MCP·잠재 공간 방식과 구별되는 두 번째 컨텍스트 관리 메커니즘. | L4 주 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (1044개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (1049개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -166,6 +166,9 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-11-08 | 5개 문서: vercel-labs/agent-browser ⭐47.4k (Rust 데몬 브라우저 CLI, MCP 서버, 버전화된 스킬 팩; L2/L4 세 번째 브라우저 자동화 시그널); google/skills ⭐23k (Google 공식 에이전트 스킬 Workspace/Cloud/Maps; L2 세 번째 공식 벤더 스킬 시그널); open-agent-memory-format (LoreKit OTel 방식 에이전트 메모리 상호운용 제안, HN 131점; L5 메모리 상호운용 표준 최초 시그널); MaxxBench (DeepSWE 벤치마크 독립 검증, HN 176점; L5); 코딩 에이전트 비밀키 노출 (Claude Code "Don't Ask Again" 1,122건 공개 자격증명, HN 114점; 거버넌스). reference-levels.md: 2026-11-08 발견 노트 + 📡 노트 2개 (브라우저 자동화 클러스터 3개 시그널; 메모리 상호운용 표준 최초). 레지스트리: 추가 없음. 테스트: 통과 (50/50). |
+| 2026-11-07 | 5개 문서: OpenMausBot ⭐16.7k (봇별 VM 격리 멀티모델 소비자 하네스, Apache 2.0; L2 첫 봇별 VM 격리 시그널); billion-context ⭐4.5k (투명 토큰 수준 컨텍스트 압축 플러그인, ~5배 토큰 절감 주장; L4 첫 투명-프록시-압축 시그널); Memorilla arxiv (잠재 공간 에이전트 메모리, RAG 대비 잠재 공간에 상태 저장; L4 첫 잠재-공간-메모리 시그널); Waymark (Python 컴파일 타임 워크플로우 엔진, 재실행 부작용 제거; L2 첫 컴파일-타임-워크플로우 시그널); sutura/도이치텔레콤 (에이전트용 거버넌스 시맨틱 메트릭 레이어; L4/L3 첫 거버넌스-시맨틱-레이어 시그널). reference-levels.md: 2026-11-07 스캔 노트 3→5개 문서 + 📡 노트 2개. 레지스트리: 추가 없음. 테스트: 통과 (50/50). |
+| 2026-11-06 | 5개 문서: agent-autoloop ⭐3.6k (백그라운드 CLI 에이전트 스케줄러, v1.0.0; L2 첫 백그라운드-스케줄러 시그널); AutoCua ⭐1.1k (멀티플랫폼 컴퓨터 사용 macOS/Win/Linux/iOS/Android; L2 세 번째 CUA 시그널); Octomind ⭐615 (Rust 단일 바이너리 하네스 TOML 가드레일; L2 첫 선언적-TOML-정책 시그널); metaharness ⭐739 v0.1.x (소유 브랜드 하네스 생성 팩토리; L2 첫 하네스-팩토리 시그널); Octopus-SI-OS ⭐707 (에이전틱 OS 리서치 프리뷰, Rust 45k LOC; L1 첫 에이전틱-OS 시그널). reference-levels.md: 2026-11-06 발견 로그 + 📡 노트 5개; 정식 변경 없음. 레지스트리: 추가 없음. 테스트: 통과 (50/50). |
 | 2026-11-04 | 5개 문서: kimi-k3-in-c ⭐10,130 (C99 순수 구현 2.78T MoE 소비자 CPU 추론; L7); open-duet ⭐6,760 (엔진 무관 멀티에이전트 워크스페이스, 4단계 승인 모드; L2/L3); auto-ontology ⭐4,441 NVIDIA (엔터프라이즈 DB 시맨틱 온톨로지 MCP 레이어; L4/L5); hex ⭐4,567 (로컬 음성 받아쓰기, AGENTS.md, 오프라인 음성 입력 두 번째 시그널; L4b); Caddie 맥 MCP 생산성 하네스 (L4b/L2). reference-levels.md: 2026-11-04 및 2026-11-03 발견 로그 추가; 정식 변경 없음. 레지스트리: 추가 없음. 테스트: 통과 (50/50). |
 | 2026-11-03 | 3개 문서: 가중치 공간 프로그래밍 (HN 1,734점, 556댓글 — 재학습 없이 Qwen 직접 가중치 편집; 잠재적 신규 LLM 레지스트리 품질 차원; L0/L1); Momentic (YC W24, HN 113점 — AI 에이전트가 라이브 앱 실행해 런타임 버그 발견; "프로덕션 런칭 자율 QA 에이전트" 최초 시그널; L3); llm-pick (GeekNews Show GN — 활성 구독 기반 모델 추천, 코딩/디버깅/문서화; clawfit 직접 기능 유사체, LLM 전용 범위; L2). reference-levels.md: 변경 없음. 레지스트리: 추가 없음. 테스트: 통과 (50/50). |
 | 2026-11-02 | 7개 문서 (2회 실행): agent-desktop ⭐8.9k (Vercel Labs, GitHub Trending #1 — 데스크톱 접근성 트리 컴퓨터 사용, Rust, Agent Skills, 헤드리스; 최초 데스크톱 접근성 트리 컴퓨터 사용 시그널; L6/L4); LongCat-2.5 (Meituan, HN 45점 — 1.6T/48B MoE, 1M 컨텍스트, 네이티브 멀티모달, 에이전틱 우선, $0.30/$1.20; 소비자 플랫폼 기업 출신 에이전틱 프론티어 모델 최초 시그널; L1); openqodex ⭐1.1k (GeekNews — 코딩 에이전트 출력용 별도 리뷰어 에이전트; 증거 인용; SARIF; 푸시 게이트; L4/L2); Subvocal (YC F26, HN 114점 — AI 도구용 무음 발화 웨어러블, 음성 입력 클러스터 2번째 시그널; L6); GPT-Rosalind-6 (HN 39점 — 공유 GPT-6 Astra 가중치 위 생명과학 도메인 게이트 접근 티어; L1/L3); Prospero (GeekNews — 브라우저 런타임 없는 네이티브 C++ 코딩 하네스; L2); Pixel Office (GeekNews — 픽셀 아트 워크스페이스 UI 멀티에이전트 CLI 오케스트레이션; L3). reference-levels.md: 2026-11-02 발견 로그 + 📡 노트 5개; 정식 변경 없음. 레지스트리: 추가 없음. 테스트: 통과 (50/50). |
