@@ -99,20 +99,19 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-11-13)
+## 🔥 지금 가장 뜨거운 것들 (2026-11-14)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **backnotprop/plannotator ⭐10,364 — 코딩 에이전트용 휴먼-인-더-루프 주석 워크스페이스 (GitHub Trending, 2026-11-13)** | 로컬 브라우저 기반 계획 검토, PR/MR 인라인 주석, 비동기 에이전트 인박스. Claude Code, Codex, Copilot CLI, Gemini CLI, OpenCode 등 10개 에이전트 지원. SLSA 출처 증명, 텔레메트리 없음. **"코딩 에이전트용 구조화된 휴먼-인-더-루프 주석 워크스페이스" 첫 시그널** — 승인 프롬프트 모델 및 인라인 리뷰 훅과 구별; `review_surface` 역량 차원 후보. | L2/L6 주 |
-| **Gemini 4 Hydrogen + Antigravity Orchestrator — 세션 내 모델 자동 전환 (HN 483점, 2026-11-13)** | Hydrogen은 일상 코딩용 빠른 실행 모델(AAII 51). Orchestrator는 단일 태스크 내에서 Carbon(계획·읽기)과 Hydrogen(편집)을 자동 라우팅하고 실패 시 Carbon으로 복귀. Terminal-Bench 4.1: Carbon 수준 성능, 쿼터 24% 절감, 19% 빠름. **"하네스에 의한 세션 내 자동 모델 전환" 첫 프로덕션 시그널** — 멀티 에이전트 별도 세션 방식 및 요청 시 라우팅과 구별. | L1/L2 주 |
-| **GoogleChrome/modern-web-guidance-src ⭐4,525 (오늘 +1,875) — 브라우저 팀 공식 에이전트 지식 베이스 (GitHub Trending, 2026-11-13)** | Chrome, Edge, Firefox, MDN 팀이 공동 관리하는 250개 최신 웹 기능 항목, 203개 사용 사례, 에이전트 컨텍스트 주입용 CLI(`search`/`retrieve`/`legacy-scan`). 평가 루프로 불필요 콘텐츠 제거. **"브라우저 팀 공식 에이전트 지식 베이스" 첫 시그널** — 커뮤니티 지식 파일 및 MDN 스크래퍼와 구별. | L4 주 |
-| **hyperionaidev/smolmaxxing ⭐607 — TV 박스·2013 iPad에서 LLM 실행 (HN 458점, 2026-11-13)** | 2GB 미만 기기 벤치마크: 샤오미 TV 박스, 탈옥 2013 아이패드, OnePlus 보급형 폰. 기기 맞춤 1비트 커널, A7 CPU 변형(dot-product 없음), 플래시 전문가 페이징, 가중치 스트리밍. 실패 포함 165개 실험 기록. llama-modchip(11-09, 64GB 워크스테이션)에 이어 **소형 기기 추론 두 번째 시그널** — 완전히 다른 기기 계층(2GB 미만 임베디드). | L7 주 |
-| **Brave Search API x402 — 자율 에이전트용 마이크로페이먼트 네이티브 검색 (HN 226점, 2026-11-13)** | 요청별 USDC 마이크로페이먼트, API 키·계정 불필요. HTTP 402 응답에 가격 포함; 에이전트가 서명 후 재시도해 결과 수신. 요청당 $0.005. 사람 개입 없이 에이전트가 검색 접근을 자체 프로비저닝 가능. **"자율 에이전트용 마이크로페이먼트 네이티브 API 접근" 첫 시그널** — API 키 관리, OAuth, 정적 자격증명 주입과 구별. | L4 주 |
-| **vercel-labs/agent-browser ⭐47,420 — 에이전트용 Rust 데몬 브라우저 CLI (GitHub Trending, 2026-11-08)** | 백그라운드 Rust 데몬이 브라우저 제어를 셸 명령으로 노출; `agent-browser mcp`로 MCP 서버 모드; 버전화 스킬팩; Chrome, Lightpanda, Obscura, iOS 시뮬레이터, 클라우드 백엔드. Vercel이 데스크톱·브라우저·역량을 하나의 컨트롤 플레인 스택으로 체계화 중. | L2/L4 주 |
-| **milind-soni/OpenMausBot ⭐16.7k — 봇별 VM 격리 멀티모델 에이전트 하네스 (GitHub Trending, 2026-11-07)** | 각 봇(Claude Code, Codex, Grok CLI)이 별도 클라우드 VM에서 격리된 도구 접근권을 가짐. 소프트 가드레일이 아닌 OS 수준 격리. **소비자급 멀티모델 하네스에서 "봇별 VM 격리" 첫 시그널** — `isolation_model: shared | process | vm` 스코어링 차원 후보. | L2 주 |
-| **llama-modchip — GPU 없이 64GB RAM에서 284B DeepSeek MoE (HN, 2026-11-09)** | llama.cpp 커널 패치 + 1.71비트 양자화로 DeepSeek-V4-Flash(284B, 활성 13B)를 CPU 워크스테이션에서 9~15 tok/s로 실행. smolmaxxing(오늘)과 함께 오프라인 추론 하드웨어 스펙트럼의 양 끝이 문서화됨. | L7 주 |
+| **QwenLM/qwen-code ⭐30.2k — Alibaba 오픈소스 터미널 코딩 에이전트 (GitHub Trending, 2026-11-14)** | Gemini CLI 포크에서 독립 개발(v0.1~). 멀티 프로바이더(OpenAI·Anthropic·Gemini·Qwen·Ollama·vLLM); SWE-bench Verified 76~78% (Qwen 3.7 Max); SubAgent+Agent Teams(실험적); Auto-Memory·스킬·MCP·LSP·컴퓨터-사용·브라우저-사용·데스크톱 앱·IDE 플러그인. 카테고리 내 최고 별점 오픈소스 코딩 에이전트. **레지스트리 등록 대기 중** — Qwen API 비용/레이턴시 데이터 필요. | L1/L2 주 |
+| **andrewyng/openworker ⭐19.2k — Andrew Ng의 데스크톱 AI 동료 앱 + 하네스 SDK (Python Trending, 2026-11-14)** | 데스크톱 앱(macOS, Windows) + 임베디드 Rust/TS 하네스 SDK. 런타임 멀티 프로바이더; aisuite 기반; Slack `@OpenWorker` 위임; 승인 게이트·감사 추적·Docker 샌드박스·25개 이상 커넥터+MCP. **"소비자 데스크톱 앱을 하네스 SDK 레퍼런스 구현으로 활용" 첫 시그널** — 순수 SDK 하네스, 웹 전용 코딩 에이전트와 구별. | L2/L6 주 |
+| **ag-ui-protocol/ag-ui ⭐17.3k — 독립 에이전트↔프론트엔드 스트리밍 프로토콜 (GitHub Trending, 2026-11-14)** | CopilotKit 서브노트에서 독립 조직·레포지토리로 승격. ~16개 이벤트 타입, 전송 계층 무관(SSE/WebSocket/웹훅), 양방향 상태 동기화, 프론트엔드 도구 호출 지원. MCP·A2A와 나란히 세 번째 에이전트 연결 프로토콜로 포지셔닝. | L6/L4 주 |
+| **ggml-org/ggml v1.0.0 — 텐서 라이브러리 API 안정화 마일스톤 (HN 380점, 2026-11-14)** | llama.cpp·whisper.cpp·stable-diffusion.cpp의 기반 C 라이브러리가 1.0 도달: 비권장 API 제거, RPC 버전 관리(비호환 피어 거부), FlashAttention across CUDA/Metal/Vulkan/SYCL/OpenCL/WebGPU/Hexagon. **Hexagon 백엔드 = 오프라인 추론 스펙트럼의 세 번째 계층** (64GB 워크스테이션 → 2GB 미만 임베디드 → Android 플래그십 SoC). 모든 `runtime: local` 레지스트리 항목의 위험 등급에 영향. | L1 기반 |
+| **Tencent/LoopForge ⭐798 — 코딩 에이전트용 팀 SOP 오케스트레이터 (GitHub Trending, 2026-11-14)** | Docker 샌드박스 내 기존 코딩 에이전트 CLI(Claude Code, Codex 등) 래핑; 역할 기반 분해(계획/구현/리뷰/테스트), 사람 승인 게이트, 실시간 실행 관리, 비용 보고, GitHub PR 전달. LoopForge Local은 코딩 어시스턴트 내부에서 실행. **"기존 코딩 에이전트 CLI를 감싸는 팀 SOP 계층" 첫 시그널.** | L2/L3 주 |
+| **Gemini 4 Hydrogen + Antigravity Orchestrator — 세션 내 모델 자동 전환 (HN 483점, 2026-11-13)** | Hydrogen(AAII 51)은 빠른 실행 모델. Orchestrator가 단일 태스크 내 Carbon(계획·읽기)↔Hydrogen(편집)을 자동 라우팅하고 실패 시 Carbon 복귀. Terminal-Bench 4.1: Carbon 수준 성능, 쿼터 24% 절감, 19% 빠름. **"하네스에 의한 세션 내 자동 모델 전환" 첫 프로덕션 시그널.** | L1/L2 주 |
+| **backnotprop/plannotator ⭐10,364 — 코딩 에이전트용 휴먼-인-더-루프 주석 워크스페이스 (GitHub Trending, 2026-11-13)** | 로컬 브라우저 기반 계획 검토, PR/MR 인라인 주석, 비동기 에이전트 인박스. Claude Code·Codex·Copilot CLI·Gemini CLI·OpenCode 등 10개 에이전트 지원. SLSA 출처 증명, 텔레메트리 없음. **"구조화된 휴먼-인-더-루프 주석 워크스페이스" 첫 시그널.** | L2/L6 주 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (1049개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (1056개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -166,6 +165,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-11-14 | 7개 문서 (2회 실행): arcee-ai/nac (장시간 에이전트 목표 정렬 하네스; L2 첫 장시간 배경 에이전트 드리프트 감지 시그널); modelsthatrun.dev (RTX 4090 실험 오픈 모델 하드웨어 벤치마크; 참고 데이터 소스); ggml v1.0.0 HN 380점 (C 텐서 라이브러리 API 안정화; Hexagon 백엔드 = 오프라인 추론 스펙트럼 세 번째 계층; L1 기반); andrewyng/openworker ⭐19.2k Python Trending (Andrew Ng의 데스크톱 AI 동료+하네스 SDK, aisuite 기반, Slack 위임; L2 소비자 데스크톱 레퍼런스 구현 첫 시그널); ag-ui-protocol/ag-ui ⭐17.3k (독립 조직, ~16 이벤트 타입, 양방향 상태 동기화; CopilotKit 서브노트에서 승격; L6 주); QwenLM/qwen-code ⭐30.2k (최고 별점 오픈소스 코딩 에이전트, Gemini CLI 포크·독립 개발, 76~78% SWE-bench; 레지스트리 등록 대기; L1/L2); Tencent/LoopForge ⭐798 (기존 코딩 에이전트 CLI 위 팀 SOP 오케스트레이터, Docker 샌드박스·승인 게이트·비용 보고; L2/L3 첫 팀-SOP-over-CLI 시그널). reference-levels.md: 2026-11-14 발견 로그 추가, 정식 섹션 변경 없음. 레지스트리: 추가 없음. 테스트: 통과 (50/50). |
 | 2026-11-13 | 5개 문서: plannotator ⭐10,364 (휴먼-인-더-루프 주석 워크스페이스, 계획 검토·PR 주석·에이전트 인박스; L2/L6 구조화된 휴먼-인-더-루프 워크스페이스 첫 시그널); modern-web-guidance-src ⭐4,525 Chrome+Edge+Firefox+MDN (공식 브라우저 팀 에이전트 지식 베이스, 평가 기반 가지치기 CLI; L4 첫 브라우저팀 에이전트 지식베이스 시그널); smolmaxxing ⭐607 (2GB 미만 TV박스·아이패드·폰 LLM 추론, A7 커널, 전문가 페이징, 165 실험; L7 소형 기기 추론 두 번째 시그널, llama-modchip과 다른 하위유형); Brave Search x402 HN 226점 (HTTP 402 프로토콜 기반 에이전트 마이크로페이먼트 검색 API, 계정·API 키 불필요, 요청당 $0.005; L4 마이크로페이먼트 네이티브 API 첫 시그널); Gemini 4 Hydrogen + Orchestrator HN 483점 (빠른 실행 모델 AAII 51 + 세션 내 Carbon↔Hydrogen 자동 전환; L1/L2 세션 내 자동 모델 전환 첫 프로덕션 시그널). reference-levels.md: 2026-11-13 및 2026-11-08 발견 로그 추가. 레지스트리: 추가 없음. 테스트: 통과 (50/50). |
 | 2026-11-04 | 5개 문서: kimi-k3-in-c ⭐10,130 (C99 순수 구현 2.78T MoE 소비자 CPU 추론; L7); open-duet ⭐6,760 (엔진 무관 멀티에이전트 워크스페이스, 4단계 승인 모드; L2/L3); auto-ontology ⭐4,441 NVIDIA (엔터프라이즈 DB 시맨틱 온톨로지 MCP 레이어; L4/L5); hex ⭐4,567 (로컬 음성 받아쓰기, AGENTS.md, 오프라인 음성 입력 두 번째 시그널; L4b); Caddie 맥 MCP 생산성 하네스 (L4b/L2). reference-levels.md: 2026-11-04 및 2026-11-03 발견 로그 추가; 정식 변경 없음. 레지스트리: 추가 없음. 테스트: 통과 (50/50). |
 | 2026-11-03 | 3개 문서: 가중치 공간 프로그래밍 (HN 1,734점, 556댓글 — 재학습 없이 Qwen 직접 가중치 편집; 잠재적 신규 LLM 레지스트리 품질 차원; L0/L1); Momentic (YC W24, HN 113점 — AI 에이전트가 라이브 앱 실행해 런타임 버그 발견; "프로덕션 런칭 자율 QA 에이전트" 최초 시그널; L3); llm-pick (GeekNews Show GN — 활성 구독 기반 모델 추천, 코딩/디버깅/문서화; clawfit 직접 기능 유사체, LLM 전용 범위; L2). reference-levels.md: 변경 없음. 레지스트리: 추가 없음. 테스트: 통과 (50/50). |
