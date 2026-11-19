@@ -99,20 +99,20 @@
 
 ---
 
-## 🔥 지금 가장 뜨거운 것들 (2026-11-18)
+## 🔥 지금 가장 뜨거운 것들 (2026-11-19)
 
 | 신호 | 왜 중요한가 | 레벨 |
 |------|------------|------|
-| **MAI Code 2 + Flash — Microsoft 2세대 엔터프라이즈 코딩 모델 쌍 (Microsoft Ignite, 2026-11-17)** | Opus 5.5 성능의 96%를 비용의 5%로 제공(50% 프로모션 가격 — 절대 가격 미공개); DeepSWE 1.1·Terminal Bench 2.1 벤치마크; 프론트엔드/UI 최적화; GitHub Copilot 즉시 제공. **"엔터프라이즈 가격 2세대 2단계 코딩 모델 쌍" 첫 시그널; 절대 가격 공개 전까지 레지스트리 보류.** | L1 주 |
-| **FrontierHarness Eval v1.1 — 22개 하네스, 5개 모델 비교 벤치마크 (Runta, 2026-11-17)** | v1.0의 9개→22개 구성, 5개 모델, 62개 태스크, 2만7천280회 실행; 핵심 발견: 최적 하네스는 모델마다 다름(중앙값 순위 11/22 이동); 고정 모델에서 하네스 비용 1.8–5.0배 변동; 스텝 수가 비용을 예측. **clawfit의 카테시안 곱 스코어링 가정에 도전 — 모델-하네스 상호작용 항이 필요.** | L5 주 |
-| **Maritime (YC F26) — 마이크로VM 격리 에이전트 네이티브 관리형 클라우드 (HN 론치, 2026-11-18)** | 에이전트당 영구 마이크로VM; 전체 생명주기 서비스(프로비저닝·슬립/웨이크·트리거·스케줄링·모니터링·롤백·에이전트별 지출 추적); Windows/Android/브라우저 커스텀 환경; 에이전트당 월 $1(2GB RAM). **"마이크로VM 생명주기 서비스를 갖춘 에이전트 네이티브 관리형 클라우드" 첫 시그널.** | L7 주 |
-| **ethanplusai/sellbird ⭐6,400 — 구독-CLI 기반 에이전틱 아웃리치 하네스 (GitHub Trending, 2026-11-18)** | 잠재 고객 발굴→이메일 검증→카피 작성→발송→답장 처리 전체 파이프라인을 Claude Code 또는 Codex CLI로 실행 — API 키 불필요, 구독 필수; AGPL-3.0; 기본 인간 승인. **"구독-CLI 기반 비즈니스 프로세스 자동화 하네스" 첫 시그널 — 과금 모델이 토큰 단위가 아닌 구독.** | L2 주 |
-| **Dodaios/Dodaios ⭐418 — 멀티 에이전트 데스크톱 감독 워크스페이스 (GitHub Trending, 2026-11-18)** | 음성·채팅 리드 오케스트레이터가 태스크를 분할하고 Claude Code·Codex를 나란히 실행; 에이전트별 git 워크트리; 신뢰 레이어(결제·자격증명·영구 삭제·첫 외부 접촉); 로컬 메모리 파일; Ollama 지원. **L6에서 "CEO형 멀티 에이전트 데스크톱 감독(에이전트별 워크트리 격리)" 첫 시그널.** | L6 주 |
-| **google-research/paper-orchestra — 멀티 에이전트 연구 논문 작성 프레임워크 (GitHub Trending, 2026-11-17)** | 완전 자동화 연구 논문 파이프라인(문헌 검토→초안→반복→인용); 멀티 에이전트 역할(리뷰어·작성자·인용 에이전트); Google Research 출처. **장형 구조 출력 멀티 에이전트 워크플로 L3 시그널.** | L3 주 |
+| **awslabs/cli-agent-orchestrator ⭐1,597 — AWS Labs 공식 멀티-CLI 오케스트레이션 하네스 (GitHub Trending, 2026-11-19)** | 슈퍼바이저 에이전트가 Claude Code·Kiro CLI·Codex CLI 워커를 tmux 격리 세션에서 조율; MCP `operations` 서버 인터페이스; Kubernetes/EKS 배포 경로. **첫 하이퍼스케일러 공식 멀티-CLI 오케스트레이션 시그널 — 커뮤니티 프로젝트(Dodaios, OpenMausBot)와 차별화.** | L2 주 |
+| **phone-harness/phone-harness ⭐5,108 — MCP·adb 기반 에이전트 폰 제어 (GitHub Trending, 2026-11-19)** | 에이전트가 실제 스마트폰을 제어(iPhone Mirroring+Apple Vision OCR, Android adb, 클라우드폰 MCP); 탈옥 불필요; 플랫폼 통합 헬퍼 레이어. **첫 에이전트-폰 인터페이스 시그널; 첫 `governance_need: device-access` 시그널 — SMS·인증앱·결제 접근은 파일시스템/클라우드 API 접근과 질적으로 다른 위험 프로파일.** | L6 주 |
+| **MAI Code 2 + Flash — Microsoft 2세대 엔터프라이즈 코딩 모델 쌍 (Microsoft Ignite, 2026-11-17)** | Opus 5.5 성능의 96%를 비용의 5%로 제공; DeepSWE 1.1·Terminal Bench 2.1 벤치마크; GitHub Copilot 즉시 제공. **"엔터프라이즈 가격 2세대 2단계 코딩 모델 쌍" 첫 시그널.** | L1 주 |
+| **FrontierHarness Eval v1.1 — 22개 하네스, 5개 모델 비교 벤치마크 (Runta, 2026-11-17)** | 22개 구성, 5개 모델, 62개 태스크, 2만7천280회 실행; 최적 하네스는 모델마다 다름(중앙값 순위 11/22 이동); 하네스 비용 1.8–5.0배 변동. **clawfit의 카테시안 곱 스코어링 가정에 도전.** | L5 주 |
+| **Maritime (YC F26) — 마이크로VM 격리 에이전트 네이티브 관리형 클라우드 (HN 론치, 2026-11-18)** | 에이전트당 영구 마이크로VM, 월 $1(2GB RAM); 전체 생명주기 서비스; Windows/Android/브라우저 커스텀 환경. **"마이크로VM 생명주기를 갖춘 에이전트 네이티브 관리형 클라우드" 첫 시그널.** | L7 주 |
+| **ethanplusai/sellbird ⭐6,400 — 구독-CLI 기반 에이전틱 아웃리치 하네스 (GitHub Trending, 2026-11-18)** | Claude Code 또는 Codex CLI를 통한 콜드 아웃리치 전체 파이프라인 — API 키 불필요, 구독 필수; AGPL-3.0. **"구독-CLI 기반 비즈니스 프로세스 자동화 하네스" 첫 시그널.** | L2 주 |
 | **Qwen4-Max — Alibaba 프론티어 MoE LLM (HN 800점, 2026-11-16)** | 총 2.4T / 활성 71B 파라미터, 입력 $1.50/M, 1M 컨텍스트, 네이티브 비전, DeepSWE 75.7%(Opus 5.5 동급). **레지스트리 등록 완료.** | L1 주 |
 | **Sierra Poppy (PAP) — 개인 에이전트↔비즈니스 접근 크로스 벤더 개방 프로토콜 (2026년 10월)** | .well-known/poppy.json; OAuth+MCP+OpenAPI; 35개 이상 디자인 파트너(Shopify·Stripe·Visa·OpenAI). **MCP 위에 위치하는 첫 크로스 벤더 개방 표준.** | L4/L6/L2 |
 
-전체 분석: [`docs/research-watch/`](docs/research-watch/) (1070개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
+전체 분석: [`docs/research-watch/`](docs/research-watch/) (1090개 문서) · 전체 맵: [`docs/reference-levels.md`](docs/reference-levels.md)
 
 ---
 
@@ -166,6 +166,7 @@
 
 | 날짜 | 변경 내용 |
 |------|----------|
+| 2026-11-19 | 추가 2개 문서 (2차 스캔): awslabs/cli-agent-orchestrator ⭐1.6k (AWS Labs 공식 멀티-CLI 슈퍼바이저, Claude Code·Kiro·Codex 워커 tmux 격리 세션, MCP operations 서버, EKS 배포; L2 첫 하이퍼스케일러 공식 멀티-CLI 오케스트레이션 시그널); phone-harness/phone-harness ⭐5.1k (에이전트가 실제 폰 제어, iPhone Mirroring+Vision OCR·Android adb·클라우드폰 MCP; 탈옥 불필요; L6 첫 에이전트-폰 인터페이스 시그널; 첫 device-access 거버넌스 계층 시그널). reference-levels.md: 2026-11-19 발견 로그 추가; 정식 섹션 변경 없음. 레지스트리: 0개. 테스트: 통과 (50/50). |
 | 2026-11-18 | 5개 문서: MAI Code 2+Flash (Microsoft Ignite — 2세대 엔터프라이즈 코딩 모델 쌍; Opus 5.5 성능 96%를 비용의 5%로 주장; Copilot GA; L1; 레지스트리 보류 — 절대 가격 미공개); FrontierHarness Eval v1.1 (22개 구성, 5개 모델, 2.7만회 실행; 최적 하네스는 모델마다 상이; 고정 모델에서 하네스 비용 1.8–5.0배; 스텝 수가 비용 예측; L5); Maritime YC F26 (에이전트 네이티브 마이크로VM 클라우드, 에이전트당 월 $1; L7 첫 에이전트 네이티브 클라우드 시그널); ethanplusai/sellbird ⭐6.4k (구독-CLI 에이전틱 아웃리치 하네스; API 키 불필요, Claude Code/Codex CLI 필수; L2 첫 구독 과금 하네스 시그널); Dodaios/Dodaios ⭐418 (멀티 에이전트 데스크톱 감독, 에이전트별 워크트리, 신뢰 레이어, Ollama; L6 첫 CEO형 오케스트레이션 시그널). reference-levels.md: 2026-11-18 발견 로그 추가; 정식 섹션 변경 없음. 레지스트리: 0개. 테스트: 통과 (50/50). |
 | 2026-11-16 | 5개 문서 (2026-11-16 2차 실행): Qwen4-Max (Alibaba MoE 2.4T/71B 활성, $1.50/M, 1M 컨텍스트, DeepSWE 75.7%, 네이티브 비전; llms.json 등록 완료; L1; Kimi K3.1 Pro와 함께 11월 2026 프론티어 MoE 코호트 2-시그널 규칙 충족); kajisho5/ffmpeg-skill ⭐6,445 (42개 FFmpeg 오퍼레이션 타입드 MCP 서버, `contract --json` 자기 기술 스키마, stdlib 전용; L4b 다섯 번째 도메인 전문 스킬팩 시그널 — 비디오/미디어 추가; `domain_skill_pack` 5-시그널 정당화); isair/jarvis ⭐2,312 (로컬 우선 크로스 플랫폼 데스크톱 AI, config.json MCP 커넥터, 지식 그래프 메모리 다이어리, Ollama 오프라인, 민감 정보 삭제; L6/L5 오프라인 MCP 개인 AI 어시스턴트 최초 시그널); Sierra Poppy/PAP (개인 에이전트 프로토콜 초안 0.1, .well-known/poppy.json, OAuth+MCP+OpenAPI, Shopify/Stripe/Visa/OpenAI 포함 35개 이상 디자인 파트너; L4/L6/L2 크로스 벤더 개인 에이전트↔비즈니스 접근 프로토콜 최초 시그널); vstorm/AgenticOS ⭐353 (셀프호스팅 엔터프라이즈 에이전트 거버넌스, 감사 추적+예산+승인+샌드박스; L2 엔터프라이즈 거버넌스 네이티브 셀프호스팅 하네스 최초 시그널). reference-levels.md: 2026-11-16 2차 실행 요약 추가; 📡 노트 4개 (11월 2026 MoE 코호트 2-시그널, 엔터프라이즈 거버넌스 하네스 최초, 오프라인 MCP 개인 어시스턴트 최초, 크로스벤더 비즈니스 접근 프로토콜 최초). 레지스트리: 1개 등록 (qwen4-max, $0.0015/1K, 1M 컨텍스트, 미디엄 레이턴시). 테스트: 통과 (50/50). |
 | 2026-11-14 | 7개 문서 (2회 실행): arcee-ai/nac (장시간 에이전트 목표 정렬 하네스; L2 첫 장시간 배경 에이전트 드리프트 감지 시그널); modelsthatrun.dev (RTX 4090 실험 오픈 모델 하드웨어 벤치마크; 참고 데이터 소스); ggml v1.0.0 HN 380점 (C 텐서 라이브러리 API 안정화; Hexagon 백엔드 = 오프라인 추론 스펙트럼 세 번째 계층; L1 기반); andrewyng/openworker ⭐19.2k Python Trending (Andrew Ng의 데스크톱 AI 동료+하네스 SDK, aisuite 기반, Slack 위임; L2 소비자 데스크톱 레퍼런스 구현 첫 시그널); ag-ui-protocol/ag-ui ⭐17.3k (독립 조직, ~16 이벤트 타입, 양방향 상태 동기화; CopilotKit 서브노트에서 승격; L6 주); QwenLM/qwen-code ⭐30.2k (최고 별점 오픈소스 코딩 에이전트, Gemini CLI 포크·독립 개발, 76~78% SWE-bench; 레지스트리 등록 대기; L1/L2); Tencent/LoopForge ⭐798 (기존 코딩 에이전트 CLI 위 팀 SOP 오케스트레이터, Docker 샌드박스·승인 게이트·비용 보고; L2/L3 첫 팀-SOP-over-CLI 시그널). reference-levels.md: 2026-11-14 발견 로그 추가, 정식 섹션 변경 없음. 레지스트리: 추가 없음. 테스트: 통과 (50/50). |
